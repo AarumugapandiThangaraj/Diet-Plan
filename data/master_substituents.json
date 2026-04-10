@@ -1,0 +1,262 @@
+[
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000001",
+        "allergen_category": "dairy_allergens",
+        "allergen_name": "milk",
+        "substitutes": [
+            {
+                "name": "Lactose-free milk",
+                "energy_kcal": "66",
+                "protein_g": "3.2",
+                "fat_g": "3.9",
+                "carbohydrate_g": "4.8",
+                "preparation": "prepared by enzymatic hydrolysis of lactose"
+            },
+            {
+                "name": "Fortified soy milk",
+                "energy_kcal": "45-60",
+                "protein_g": "3-4",
+                "fat_g": "1.5-3",
+                "carbohydrate_g": "2-4",
+                "preparation": "prepared by soaking, grinding and boiling soybeans"
+            },
+            {
+                "name": "Almond milk",
+                "energy_kcal": "15-25",
+                "protein_g": "0.5-1",
+                "fat_g": "1-2",
+                "carbohydrate_g": "0.5-2",
+                "preparation": "prepared by soaking, grinding and filtering almonds"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000002",
+        "allergen_category": "dairy_allergens",
+        "allergen_name": "cheese",
+        "substitutes": [
+            {
+                "name": "Vegan cheese",
+                "energy_kcal": "250-350",
+                "protein_g": "1-15",
+                "fat_g": "20-30",
+                "carbohydrate_g": "1-10",
+                "preparation": "prepared from soy or nuts with cultures"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000003",
+        "allergen_category": "dairy_allergens",
+        "allergen_name": "butter",
+        "substitutes": [
+            {
+                "name": "Vegan butter",
+                "energy_kcal": "680-720",
+                "protein_g": "0",
+                "fat_g": "75-80",
+                "carbohydrate_g": "0-1",
+                "preparation": "prepared from vegetable oils"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000004",
+        "allergen_category": "gluten_and_cereals",
+        "allergen_name": "wheat",
+        "substitutes": [
+            {
+                "name": "Rice flour",
+                "energy_kcal": "360",
+                "protein_g": "6",
+                "fat_g": "0.5",
+                "carbohydrate_g": "80",
+                "preparation": "prepared by milling rice"
+            },
+            {
+                "name": "Jowar",
+                "energy_kcal": "330",
+                "protein_g": "10",
+                "fat_g": "3",
+                "carbohydrate_g": "72",
+                "preparation": "prepared by grinding sorghum grains"
+            },
+            {
+                "name": "Bajra",
+                "energy_kcal": "340",
+                "protein_g": "11",
+                "fat_g": "5",
+                "carbohydrate_g": "67",
+                "preparation": "prepared by grinding pearl millet"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000005",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "peanut",
+        "substitutes": [
+            {
+                "name": "Roasted chana",
+                "energy_kcal": "380-400",
+                "protein_g": "20-22",
+                "fat_g": "6-7",
+                "carbohydrate_g": "60-65",
+                "preparation": "prepared by roasting chickpeas"
+            },
+            {
+                "name": "Pumpkin seeds",
+                "energy_kcal": "550-560",
+                "protein_g": "28-30",
+                "fat_g": "45-50",
+                "carbohydrate_g": "10-12",
+                "preparation": "prepared by drying and roasting seeds"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000006",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "cashew",
+        "substitutes": [
+            {
+                "name": "Almond",
+                "energy_kcal": "570",
+                "protein_g": "20-22",
+                "fat_g": "49-52",
+                "carbohydrate_g": "20-22",
+                "preparation": "prepared by drying and blanching almonds"
+            },
+            {
+                "name": "Melon seeds",
+                "energy_kcal": "550-560",
+                "protein_g": "28-30",
+                "fat_g": "47-49",
+                "carbohydrate_g": "15-17",
+                "preparation": "prepared by drying and roasting seeds"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000007",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "almond",
+        "substitutes": [
+            {
+                "name": "Cashew",
+                "energy_kcal": "550-570",
+                "protein_g": "18-20",
+                "fat_g": "42-46",
+                "carbohydrate_g": "30",
+                "preparation": "prepared by roasting cashew nuts"
+            },
+            {
+                "name": "Walnut",
+                "energy_kcal": "610-650",
+                "protein_g": "15-16",
+                "fat_g": "60-65",
+                "carbohydrate_g": "14",
+                "preparation": "prepared by drying walnuts"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000008",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "sesame_seeds",
+        "substitutes": [
+            {
+                "name": "Sunflower seeds",
+                "energy_kcal": "580-600",
+                "protein_g": "20-22",
+                "fat_g": "50-52",
+                "carbohydrate_g": "18-20",
+                "preparation": "prepared by drying and roasting seeds"
+            },
+            {
+                "name": "Pumpkin seeds",
+                "energy_kcal": "550-560",
+                "protein_g": "28-30",
+                "fat_g": "45-50",
+                "carbohydrate_g": "10-12",
+                "preparation": "prepared by drying and roasting seeds"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000009",
+        "allergen_category": "pulses_and_legumes",
+        "allergen_name": "soybean",
+        "substitutes": [
+            {
+                "name": "Pea protein",
+                "energy_kcal": "360-390",
+                "protein_g": "80-85",
+                "fat_g": "3-6",
+                "carbohydrate_g": "2-5",
+                "preparation": "prepared by protein isolation from peas"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000010",
+        "allergen_category": "eggs",
+        "allergen_name": "egg_white",
+        "substitutes": [
+            {
+                "name": "Tofu",
+                "energy_kcal": "70-80",
+                "protein_g": "8-10",
+                "fat_g": "4-5",
+                "carbohydrate_g": "2",
+                "preparation": "prepared by coagulating soy milk"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000012",
+        "allergen_category": "seafood",
+        "allergen_name": "fish",
+        "substitutes": [
+            {
+                "name": "Tofish",
+                "energy_kcal": "530-540",
+                "protein_g": "18-20",
+                "fat_g": "42-44",
+                "carbohydrate_g": "29",
+                "preparation": "prepared by marinating and smoking tofu"
+            },
+            {
+                "name": "Chicken",
+                "energy_kcal": "165-170",
+                "protein_g": "31-33",
+                "fat_g": "3.5-4.5",
+                "carbohydrate_g": "0",
+                "preparation": "prepared by grilling or baking chicken breast"
+            }
+        ]
+    },
+    {
+        "Subsitutes_ID": "SUBSTITUTE_000013",
+        "allergen_category": "meat",
+        "allergen_name": "chicken",
+        "substitutes": [
+            {
+                "name": "lamb",
+                "energy_kcal": "260-280",
+                "protein_g": "18",
+                "fat_g": "20-22",
+                "carbohydrate_g": "2-3",
+                "preparation": "fresh lamb meat, prepared by grilling or roasting"
+            },
+            {
+                "name": "pork",
+                "energy_kcal": "270-3000",
+                "protein_g": "23",
+                "fat_g": "22-24",
+                "carbohydrate_g": "2-3",
+                "preparation": "fresh pork meat, prepared by grilling or roasting"
+            }
+        ]
+    }
+]
