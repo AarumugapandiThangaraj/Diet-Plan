@@ -222,21 +222,6 @@ $$
 - Fiber: $14\,g$ per $1000$ kcal (minimum clamp: $25\,g/day$)
 - Water: $\text{target\_weight\_kg} \times (30\text{ to }35)\,ml/day$ (the UI also shows a single representative value)
 
-### 5.7 Web notes (what we “googled”)
-
-These are the concrete, externally-sourced anchors used for the defaults above:
-
-- **Protein minimum**: Harvard Nutrition Source (citing the National Academy of Medicine) states adults should get a *minimum* of $0.8\,g/kg/day$.
-- **Macro distribution guardrails (AMDR)**: NCBI Bookshelf DRI summary table lists adult ranges: Fat 20–35% of calories, Carbs 45–65%, Protein 10–35%.
-- **Underweight weight gain pace**: NHS suggests gaining weight gradually by adding about **300 to 500 extra calories/day**.
-- **Weight loss pace**: NHS suggests aiming to lose about **0.5 to 1 kg/week**.
-
-Using the project’s $7700\,kcal/kg$ approximation, losing $0.5$ to $1\,kg/week$ corresponds to roughly a $\sim 550$ to $1100\,kcal/day$ calorie deficit (as an estimate).
-
-Important: there is no single universal “protein by BMI class” standard; this project uses BMI-category presets as a product heuristic while staying within the above guardrails.
-
----
-
 ## 6) React UI (`Diet Plan/frontend/`)
 
 ### 6.1 UX flow
@@ -294,165 +279,10 @@ The planner targets calories/macros per slot using a fixed day distribution:
 - dinner: 15%
 - bedtime: 5%
 
-### 7.3 Candidate scoring (macro-aware)
 
-Each candidate is scored against expected per-slot macros using a weighted relative error:
+## 8) How to run
 
-- Calories weight (dominant)
-- Protein weight (strong)
-- Carbs weight
-- Fat weight
-
-This is used both to prune candidates per slot and to guide beam-search selection.
-
-Implementation detail: the JS planner slightly adjusts macro weights by BMI category to bias meal choices (e.g., overweight/obese cases weight fat-matching higher; underweight emphasizes calories/protein more).
-
-### 7.4 Beam search across meal-times
-
-Because meals are chosen across multiple meal-times, the planner searches combinations:
-
-1) Start with an empty state with totals = 0
-2) For each meal-time slot:
-  - combine current beam states with each candidate meal
-  - score partial totals vs expected totals for the portion of the day covered
-  - keep the top `beamSize` states
-3) After all slots, rank final beam states by distance to daily targets
-
-### 7.5 Randomness / shuffling
-
-To avoid generating identical results repeatedly:
-
-- candidates are shuffled (seeded RNG)
-- a small randomness term is added during partial scoring to break ties
-- final selection is sampled from the top-N best-ranked plans (`pickTop`)
-
-### 7.6 Multi-day generation
-
-`generateMealPlan()` supports `days = 1 | 3 | 7`.
-
-It generates plans day-by-day using different seeds and returns:
-- `plans[]` (one plan object per day)
-- `totalsByDay[]`
-
-Optional cross-day repeat avoidance is supported but should be used cautiously because it can reduce candidate availability.
-
----
-
-## 8) Optional RAG module (Python) — `Diet Plan/rag_meals_py/`
-
-This module is an alternative pipeline for **candidate retrieval**.
-
-### 8.1 What it does
-
-1) Reads `Diet Plan/data/master_meals_updated.json`
-2) Builds a per-meal “document” string containing:
-  - meal name
-  - goal, meal_time, diet_type
-  - ingredients/method
-  - nutritive_values
-3) Builds compact metadata used for filtering (goal, meal_time, diet_type, macro numbers)
-4) Indexes everything into a **persistent ChromaDB** collection
-
-### 8.2 Vector store
-
-Implemented in `Diet Plan/rag_meals_py/vectorstore.py`:
-- Storage: `chromadb.PersistentClient`
-- Similarity: cosine (HNSW)
-
-### 8.3 Embedding model (model information)
-
-Configured in `Diet Plan/rag_meals_py/config.py`:
-
-- Embedding model: `sentence-transformers/all-MiniLM-L6-v2`
-
-This is used by Chroma via `SentenceTransformerEmbeddingFunction`.
-
-### 8.4 Ingestion + manifest
-
-Implemented in `Diet Plan/rag_meals_py/ingest.py`:
-- computes an MD5 hash of `master_meals_updated.json`
-- stores a manifest (hash + count + timestamp)
-- skips re-ingestion if the file hasn’t changed and counts match
-
-This is intended to keep runtime planning fast.
-
-### 8.5 Planning (Python)
-
-`Diet Plan/rag_meals_py/planner.py`:
-- computes the same class of daily targets (BMI/BMR/TDEE + macros)
-- retrieves top-k meals per meal-time via vector query + metadata filters
-- uses beam search to choose one meal per meal-time
-
-Note: the Python planner’s meal distribution constants may differ from the React planner (both are configurable).
-
-### 8.6 Repository model artifacts (optional)
-
-In addition to the `Diet Plan/` folder, this repository contains a top-level `models/` directory with local model artifacts.
-
-These model artifacts are **not required** for the React-only planner, and they are also **not required** for the Chroma-based RAG indexing (which uses `sentence-transformers` embeddings). They are relevant if/when you integrate **LLM inference** for conversational planning, richer explanations, or model-assisted reranking.
-
-Observed model-related folders (based on the current workspace contents):
-
-- `models/llama-3-8b-base/`
-  - Contains HuggingFace-style model files such as `config.json`, tokenizer files, and safetensors index files.
-  - Intended use: local inference or fine-tuning in other parts of the repository.
-
-- `models/medgemma_diet_chatbot/`
-  - Contains PEFT adapter artifacts (`adapter_model.safetensors`, `adapter_config.json`) and tokenizer/template files.
-  - The model card metadata indicates it is a LoRA adapter for `google/medgemma-1.5-4b-it`.
-  - Intended use: load as an adapter on top of the base model to get a diet-chatbot style behavior.
-
-- `models/Food diet model/`
-  - Contains `gemma-2b-it-base/` and `gemma_nutrition_model/` directories.
-  - Intended use: Gemma-family base + a nutrition-focused variant (exact training and usage should be documented alongside these folders if you plan to distribute them).
-
-- `models/diet model 224/`
-  - Appears to contain local cache artifacts (`.cache/`).
-
-**Compliance note (important for patent/deployment documentation):**
-If you distribute this project or deploy it in production, track and comply with the license terms for each model family and weight file. Keep model cards and licensing files adjacent to the model artifacts.
-
-### 8.7 Future work: add a custom fine-tuned LLM (roadmap)
-
-Planned enhancement: integrate your own **fine-tuned LLM** into the system. This can be described as an optional module that improves natural-language interaction and/or plan quality while keeping hard constraints enforced.
-
-Recommended integration pattern:
-
-1) Keep the **constraint engine** deterministic (allergies, veg/non-veg, meal-time slots, goal tags).
-2) Use the fine-tuned LLM to provide one or more of:
-   - preference parsing (convert user text into structured constraints)
-   - explanation generation (“why these meals were selected”)
-   - candidate reranking suggestions (subject to deterministic safety filters)
-   - substitution suggestions (bounded by allergen safety rules)
-3) Final selection still goes through the planner scoring/beam-search (or an equivalent constrained optimizer).
-
-For a patent disclosure, this “LLM-assisted constrained optimizer” variant is a strong embodiment: it combines neural preference modeling with a deterministic constraint satisfaction and macro-matching planner.
-
----
-
-## 9) Why perfect nutrition matching is not always possible
-
-Even with macro-aware scoring, you will often see differences between “target” and “generated” totals because:
-
-1) **Discrete choices, fixed serving sizes**
-  - the planner selects whole meals as-is; it does not scale portion sizes
-
-2) **Limited candidates per meal_time + goal**
-  - if the dataset only contains a few options for a given meal_time+goal, the optimization space is small
-
-3) **Hard constraints can make the target infeasible**
-  - veg/non-veg selection + allergies can remove the meals that would make targets achievable
-
-4) **No “macro completion” mechanism**
-  - the current planner does not add supplemental items (e.g., “add 20g whey protein”) to close gaps
-
-For patent disclosure, this is important: the system is an **approximate optimizer** over a constrained discrete dataset.
-
----
-
-## 10) How to run
-
-### 10.1 Run the React app
+### 8.1 Run the React app
 
 From `Diet Plan/frontend`:
 
@@ -461,7 +291,7 @@ npm install
 npm run dev
 ```
 
-### 10.2 (Optional) Run Python RAG ingestion/planning
+### 8.2 (Optional) Run Python RAG ingestion/planning
 
 This repo’s main backend is outside `Diet Plan/`, but `rag_meals_py` is self-contained as a module.
 
@@ -474,58 +304,7 @@ Then you can import it from Python and call `ensure_ingested()`.
 
 ---
 
-## 11) Configuration knobs (important for experiments)
-
-React planner options (passed from UI):
-
-- `beamSize`: beam width
-- `perMealCandidates`: candidates per meal_time
-- `randomness`: small score noise to diversify results
-- `pickTop`: choose randomly among top-N final plans
-- `allowRelaxDiet`: if true, planner may relax diet preference in deep fallback
-- `avoidRepeatsAcrossDays`: if true, prevents repeating meals across days (may reduce feasibility)
-
-RAG module options:
-
-- `DEFAULT_TOP_K` and `BATCH_SIZE` in `rag_meals_py/config.py`
-- `EMBEDDING_MODEL` in `rag_meals_py/config.py`
-
----
-
-## 12) Patent drafting support: recommended sections to extract from this README
-
-If you’re preparing a patent application, you typically want to hand your attorney:
-
-1) **Technical field**
-  - personalized nutrition planning, discrete optimization over meal datasets, retrieval + ranking
-
-2) **Background / problem**
-  - hard to generate meal plans that satisfy calorie/macro targets while respecting meal-time structure, diet preference, allergies, and goal constraints
-
-3) **Summary of the invention** (system + method)
-  - system for computing targets and selecting meals via constrained optimization
-  - optional vector-indexed retrieval to produce semantically relevant candidates
-
-4) **Key inventive concepts (candidate claim directions)**
-  - meal-time constrained multi-objective scoring (calories + macro errors)
-  - beam-search planning across a day structure
-  - deterministic constraints + fallback hierarchy
-  - seeded randomization that maintains closeness while diversifying output
-  - optional ingestion manifest and persistent vector index for fast retrieval
-
-5) **Embodiments / variants**
-  - different meal distributions
-  - different macro weights
-  - adding portion scaling or “macro completion snacks”
-  - swapping embedding model / vector store
-  - adding additional goals, regional cuisines, medical conditions
-
-6) **Example flow**
-  - include sample user profile → computed targets → generated plan → daily totals
-
----
-
-## 13) Folder structure (Diet Plan only)
+## 9) Folder structure (Diet Plan only)
 
 ```
 Diet Plan/
