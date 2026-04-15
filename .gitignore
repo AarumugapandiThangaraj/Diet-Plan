@@ -1,0 +1,38 @@
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# --- Frontend (Vite/React) ---
+node_modules/
+dist/
+.vite/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# --- Logs ---
+*.log
+
+# --- Local env files (if ever added) ---
+.env
+.env.*
+
+# --- Agentic Architecture ---
+.tmp/
+credentials.json
+token.json
