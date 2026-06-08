@@ -1,0 +1,9650 @@
+[
+  {
+    "ID": "MEAL_EM_001",
+    "Name": "Warm Water with Lemon",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Warm Water with Lemon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0001",
+        "Name": "Warm Water with Lemon",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_002",
+    "Name": "Warm Water with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Warm Water with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0002",
+        "Name": "Warm Water with Honey",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_003",
+    "Name": "Strong Black Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Strong Black Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0003",
+        "Name": "Strong Black Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_004",
+    "Name": "Ivan-Chai (Herbal Tea)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Ivan-Chai (Herbal Tea) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0004",
+        "Name": "Ivan-Chai (Herbal Tea)",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_005",
+    "Name": "Rosehip Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Rosehip Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0005",
+        "Name": "Rosehip Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_006",
+    "Name": "Ginger Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Ginger Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0006",
+        "Name": "Ginger Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_007",
+    "Name": "Warm Oat Infusion",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Warm Oat Infusion prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0007",
+        "Name": "Warm Oat Infusion",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_008",
+    "Name": "Cucumber Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Cucumber Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0008",
+        "Name": "Cucumber Water",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_009",
+    "Name": "Coconut Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Coconut Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0009",
+        "Name": "Coconut Water",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_010",
+    "Name": "Lemon and Ginger Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Lemon and Ginger Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0010",
+        "Name": "Lemon and Ginger Water",
+        "Quantity": 255.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_011",
+    "Name": "Peppermint Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Peppermint Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0011",
+        "Name": "Peppermint Tea",
+        "Quantity": 255.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_012",
+    "Name": "Fennel Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Fennel Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0012",
+        "Name": "Fennel Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_013",
+    "Name": "Aloe Vera Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Aloe Vera Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0013",
+        "Name": "Aloe Vera Water",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_014",
+    "Name": "Warm Water with Mint",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Warm Water with Mint prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0014",
+        "Name": "Warm Water with Mint",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_015",
+    "Name": "Warm Water with Cinnamon",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Warm Water with Cinnamon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0015",
+        "Name": "Warm Water with Cinnamon",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_016",
+    "Name": "Hibiscus Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Hibiscus Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0016",
+        "Name": "Hibiscus Water",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_017",
+    "Name": "Green Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Green Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0017",
+        "Name": "Green Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_018",
+    "Name": "White Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian White Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0018",
+        "Name": "White Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_019",
+    "Name": "Rooibos Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Rooibos Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0019",
+        "Name": "Rooibos Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_020",
+    "Name": "Jasmine Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Jasmine Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0020",
+        "Name": "Jasmine Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_021",
+    "Name": "Oolong Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Oolong Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0021",
+        "Name": "Oolong Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_022",
+    "Name": "Earl Grey Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Earl Grey Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0022",
+        "Name": "Earl Grey Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_023",
+    "Name": "English Breakfast Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian English Breakfast Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0023",
+        "Name": "English Breakfast Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_024",
+    "Name": "Tulsi Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Tulsi Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0024",
+        "Name": "Tulsi Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_EM_025",
+    "Name": "Warm Water with Basil",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:00",
+    "Description": "Authentic Russian Warm Water with Basil prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0025",
+        "Name": "Warm Water with Basil",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_001",
+    "Name": "Syrniki with Smetana",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Syrniki with Smetana prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0324",
+        "Name": "Syrniki with Smetana",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_002",
+    "Name": "Oatmeal with Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Oatmeal with Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0028",
+        "Name": "Oatmeal with Walnuts",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten",
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_003",
+    "Name": "Buckwheat Kasha with Butter",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Buckwheat Kasha with Butter prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0325",
+        "Name": "Buckwheat Kasha with Butter",
+        "Quantity": 160.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_004",
+    "Name": "Millet Kasha with Pumpkin",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Millet Kasha with Pumpkin prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0031",
+        "Name": "Millet Kasha with Pumpkin",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_005",
+    "Name": "Rice Kasha with Berries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rice Kasha with Berries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0032",
+        "Name": "Rice Kasha with Berries",
+        "Quantity": 194.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_006",
+    "Name": "Blini with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0033",
+        "Name": "Blini with Honey",
+        "Quantity": 374.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_007",
+    "Name": "Tvorog with Berries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Tvorog with Berries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0034",
+        "Name": "Tvorog with Berries",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_008",
+    "Name": "Tvorog with Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Tvorog with Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0035",
+        "Name": "Tvorog with Walnuts",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_009",
+    "Name": "Semolina Kasha with Butter",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Semolina Kasha with Butter prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0036_0030",
+        "Name": "Semolina Kasha with Butter",
+        "Quantity": 215.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_010",
+    "Name": "Corn Kasha with Smetana",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Corn Kasha with Smetana prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0037_0027",
+        "Name": "Corn Kasha with Smetana",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_011",
+    "Name": "Apple Oladyi",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Apple Oladyi prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0038",
+        "Name": "Apple Oladyi",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_012",
+    "Name": "Buckwheat with Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Buckwheat with Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0039",
+        "Name": "Buckwheat with Milk",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_013",
+    "Name": "Oatmeal with Flax Seeds",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Oatmeal with Flax Seeds prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0040",
+        "Name": "Oatmeal with Flax Seeds",
+        "Quantity": 170.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten",
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_014",
+    "Name": "Rye Bread with Cheese",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Cheese prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0041",
+        "Name": "Rye Bread with Cheese",
+        "Quantity": 100.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_015",
+    "Name": "Fruit Salad with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Fruit Salad with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0042",
+        "Name": "Fruit Salad with Honey",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_016",
+    "Name": "Zapekanka (Cheese Casserole)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Zapekanka (Cheese Casserole) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0043",
+        "Name": "Zapekanka (Cheese Casserole)",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_017",
+    "Name": "Millet Kasha with Dried Apricots",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Millet Kasha with Dried Apricots prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0044_0045",
+        "Name": "Millet Kasha with Dried Apricots",
+        "Quantity": 240.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_018",
+    "Name": "Oatmeal with Apple and Cinnamon",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Oatmeal with Apple and Cinnamon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0046",
+        "Name": "Oatmeal with Apple and Cinnamon",
+        "Quantity": 382.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_019",
+    "Name": "Blini with Jam",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Jam prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0047",
+        "Name": "Blini with Jam",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_020",
+    "Name": "Yogurt with Granola",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Yogurt with Granola prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0048",
+        "Name": "Yogurt with Granola",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_021",
+    "Name": "Buckwheat with Mushrooms",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Buckwheat with Mushrooms prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0049",
+        "Name": "Buckwheat with Mushrooms",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_022",
+    "Name": "Rice Kasha with Pumpkin",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rice Kasha with Pumpkin prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0050",
+        "Name": "Rice Kasha with Pumpkin",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_023",
+    "Name": "Cottage Cheese with Smetana",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Cottage Cheese with Smetana prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0322",
+        "Name": "Cottage Cheese with Smetana",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_024",
+    "Name": "Tvorog with Apple and Carrot Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Apple and Carrot Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0052",
+        "Name": "Tvorog",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0053",
+        "Name": "Apple and Carrot Salad",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_025",
+    "Name": "Baked Apple with Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Baked Apple with Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0054",
+        "Name": "Baked Apple with Walnuts",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_026",
+    "Name": "Rye Bread with Nut Butter",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Nut Butter prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0055",
+        "Name": "Rye Bread with Nut Butter",
+        "Quantity": 70.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_027",
+    "Name": "Oatmeal with Pumpkin Seeds",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Oatmeal with Pumpkin Seeds prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0056",
+        "Name": "Oatmeal with Pumpkin Seeds",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_028",
+    "Name": "Millet with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Millet with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0057",
+        "Name": "Millet with Honey",
+        "Quantity": 165.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_029",
+    "Name": "Syrniki with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Syrniki with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0058",
+        "Name": "Syrniki with Honey",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_030",
+    "Name": "Yogurt with Blueberries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Yogurt with Blueberries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0059",
+        "Name": "Yogurt with Blueberries",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_031",
+    "Name": "Fried Eggs with Tomatoes",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Fried Eggs with Tomatoes prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0060",
+        "Name": "Fried Eggs with Tomatoes",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_032",
+    "Name": "Boiled Eggs with Rye Bread",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Boiled Eggs with Rye Bread prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0061",
+        "Name": "Boiled Eggs",
+        "Quantity": 100.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0062",
+        "Name": "Rye Bread",
+        "Quantity": 60.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_033",
+    "Name": "Rye Bread with Salmon and Dill",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Salmon and Dill prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0063",
+        "Name": "Rye Bread with Salmon and Dill",
+        "Quantity": 160.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_034",
+    "Name": "Blini with Smoked Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Smoked Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0064",
+        "Name": "Blini with Smoked Salmon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_035",
+    "Name": "Rye Bread with Sprats",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Sprats prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0065",
+        "Name": "Rye Bread with Sprats",
+        "Quantity": 293.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_036",
+    "Name": "Scrambled Eggs with Ham",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Scrambled Eggs with Ham prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0066",
+        "Name": "Scrambled Eggs with Ham",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_037",
+    "Name": "Omelette with Smoked Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Omelette with Smoked Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0067",
+        "Name": "Omelette with Smoked Salmon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_038",
+    "Name": "Rye Bread with Buzhenina (Boiled Pork)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Buzhenina (Boiled Pork) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_COMB_0062_BUZ",
+        "Name": "Rye Bread with Buzhenina",
+        "Quantity": 260.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_039",
+    "Name": "Blini with Minced Meat",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Minced Meat prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0069",
+        "Name": "Blini with Minced Meat",
+        "Quantity": 350.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_040",
+    "Name": "Pirozhki with Meat",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Pirozhki with Meat prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0070",
+        "Name": "Pirozhki with Meat",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_041",
+    "Name": "Boiled Egg with Chicken Liver Pate on Rye",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Chicken Liver Pate on Rye prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0071_0072",
+        "Name": "Boiled Egg with Chicken Liver Pate on Rye",
+        "Quantity": 270.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_042",
+    "Name": "Blini with Caviar",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Caviar prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0073",
+        "Name": "Blini with Caviar",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_043",
+    "Name": "Poached Eggs on Rye",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Poached Eggs on Rye prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0074",
+        "Name": "Poached Eggs on Rye",
+        "Quantity": 258.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_044",
+    "Name": "Scrambled Eggs with Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Scrambled Eggs with Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0075",
+        "Name": "Scrambled Eggs with Salmon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs",
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_045",
+    "Name": "Omelette with Cheese and Ham",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Omelette with Cheese and Ham prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0076",
+        "Name": "Omelette with Cheese and Ham",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_046",
+    "Name": "Boiled Egg with Salmon Roe",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Boiled Egg with Salmon Roe prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0071_0077",
+        "Name": "Boiled Egg with Salmon Roe",
+        "Quantity": 300.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs",
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_047",
+    "Name": "Rye Bread with Mackerel",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Mackerel prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0078",
+        "Name": "Rye Bread with Mackerel",
+        "Quantity": 273.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_048",
+    "Name": "Blini with Ham and Cheese",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Ham and Cheese prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0079",
+        "Name": "Blini with Ham and Cheese",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_049",
+    "Name": "Fried Egg on Toast with Cucumber Slices",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Fried Egg on Toast prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0080",
+        "Name": "Fried Egg on Toast",
+        "Quantity": 272.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0081",
+        "Name": "Cucumber Slices",
+        "Quantity": 127.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_050",
+    "Name": "Boiled Eggs with Caviar",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Boiled Eggs with Caviar prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0061_0082",
+        "Name": "Boiled Eggs with Caviar",
+        "Quantity": 300.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_051",
+    "Name": "Boiled Egg with Chicken Slices on Rye",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Chicken Slices on Rye prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0071_0083",
+        "Name": "Boiled Egg with Chicken Slices on Rye",
+        "Quantity": 260.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_052",
+    "Name": "Boiled Egg with Turkey Slices on Rye",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Turkey Slices on Rye prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0071_0084",
+        "Name": "Boiled Egg with Turkey Slices on Rye",
+        "Quantity": 260.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_053",
+    "Name": "Boiled Egg with Smoked Trout on Rye",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Smoked Trout on Rye prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0071_0085",
+        "Name": "Boiled Egg with Smoked Trout on Rye",
+        "Quantity": 260.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_054",
+    "Name": "Blini with Minced Chicken",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Blini with Minced Chicken prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0086",
+        "Name": "Blini with Minced Chicken",
+        "Quantity": 200.1,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_055",
+    "Name": "Omelette with Ham and Peppers",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Omelette with Ham and Peppers prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0087",
+        "Name": "Omelette with Ham and Peppers",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_056",
+    "Name": "Scrambled Eggs with Sausage",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Scrambled Eggs with Sausage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0088",
+        "Name": "Scrambled Eggs with Sausage",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_057",
+    "Name": "Scrambled Eggs with Tomatoes and Herbs",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Scrambled Eggs with Tomatoes and Herbs prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0089",
+        "Name": "Scrambled Eggs with Tomatoes and Herbs",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_058",
+    "Name": "Rye Bread with Salmon Roe",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Salmon Roe prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0090",
+        "Name": "Rye Bread with Salmon Roe",
+        "Quantity": 136.5,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_059",
+    "Name": "Rye Bread with Russian Sausage",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Rye Bread with Russian Sausage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0091",
+        "Name": "Rye Bread with Russian Sausage",
+        "Quantity": 260.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BR_060",
+    "Name": "Fried Egg with Ham",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:00",
+    "Description": "Authentic Russian Fried Egg with Ham prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0092_0093",
+        "Name": "Fried Egg with Ham",
+        "Quantity": 300.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_001",
+    "Name": "Glass of Kefir",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Glass of Kefir prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0094",
+        "Name": "Glass of Kefir",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_002",
+    "Name": "Glass of Ryazhenka",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Glass of Ryazhenka prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0095",
+        "Name": "Glass of Ryazhenka",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_003",
+    "Name": "Handful of Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Handful of Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0096",
+        "Name": "Handful of Walnuts",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_004",
+    "Name": "Tvorog with Smetana",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Tvorog with Smetana prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0323",
+        "Name": "Tvorog with Smetana",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_005",
+    "Name": "Dried Apricots and Almonds",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Dried Apricots and Almonds prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0045",
+        "Name": "Dried Apricots",
+        "Quantity": 40.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0097",
+        "Name": "Almonds",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_006",
+    "Name": "Prunes with Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Prunes with Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0098",
+        "Name": "Prunes with Walnuts",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_007",
+    "Name": "Glass of Mors",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Glass of Mors prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0099",
+        "Name": "Glass of Mors",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_008",
+    "Name": "Handful of Hazelnuts",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Handful of Hazelnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0100",
+        "Name": "Handful of Hazelnuts",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_009",
+    "Name": "Pear with Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Pear with Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0101",
+        "Name": "Pear with Walnuts",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_010",
+    "Name": "Rye Cracker with Cheese",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Rye Cracker with Cheese prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0102",
+        "Name": "Rye Cracker",
+        "Quantity": 60.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0103",
+        "Name": "Cheese",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_011",
+    "Name": "Glass of Kissel",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Glass of Kissel prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0104",
+        "Name": "Glass of Kissel",
+        "Quantity": 80.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_012",
+    "Name": "Bowl of Blueberries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Bowl of Blueberries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0105",
+        "Name": "Bowl of Blueberries",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_013",
+    "Name": "Chicory Drink",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Chicory Drink prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0106",
+        "Name": "Chicory Drink",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_014",
+    "Name": "Baked Apple with Cinnamon",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Baked Apple with Cinnamon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0107",
+        "Name": "Baked Apple with Cinnamon",
+        "Quantity": 391.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_015",
+    "Name": "Tomato Juice",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Tomato Juice prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0108",
+        "Name": "Tomato Juice",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_016",
+    "Name": "Dates with Walnuts",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Dates with Walnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0109",
+        "Name": "Dates with Walnuts",
+        "Quantity": 25.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_017",
+    "Name": "Glass of Prostokvasha",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Prostokvasha prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0110",
+        "Name": "Prostokvasha",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_018",
+    "Name": "Small Pirozhok with Cabbage",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Small Pirozhok with Cabbage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_COMB_0111_0112",
+        "Name": "Small Pirozhok with Cabbage",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_019",
+    "Name": "Handful of Cashews",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Handful of Cashews prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0113",
+        "Name": "Handful of Cashews",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_MM_020",
+    "Name": "Apple with Almond Butter",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "10:30",
+    "Description": "Authentic Russian Apple with Almond Butter prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0114",
+        "Name": "Apple",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0115",
+        "Name": "Almond Butter",
+        "Quantity": 15.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_001",
+    "Name": "Vegetable Borsch",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Vegetable Borsch prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0116",
+        "Name": "Vegetable Borsch",
+        "Quantity": 198.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_002",
+    "Name": "Mushroom Shchi",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mushroom Shchi prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0117",
+        "Name": "Mushroom Shchi",
+        "Quantity": 401.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_003",
+    "Name": "Vegetable Solyanka",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Vegetable Solyanka prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0118",
+        "Name": "Vegetable Solyanka",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_004",
+    "Name": "Pumpkin Soup",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Pumpkin Soup prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0119",
+        "Name": "Pumpkin Soup",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_005",
+    "Name": "Lentil Soup",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Lentil Soup prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0120",
+        "Name": "Lentil Soup",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_006",
+    "Name": "Buckwheat with Okroshka (Veg)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Okroshka (Veg) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0121",
+        "Name": "Buckwheat with Okroshka (Veg)",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_007",
+    "Name": "Mashed Potatoes with Cabbage",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Cabbage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0112",
+        "Name": "Cabbage",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_008",
+    "Name": "Vegetable Ragout",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Vegetable Ragout prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0123",
+        "Name": "Vegetable Ragout",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_009",
+    "Name": "Rice with Vinegret Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Vinegret Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0124",
+        "Name": "Vinegret Salad",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_010",
+    "Name": "Mashed Potatoes with Olivier Salad (Veg)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Olivier Salad (Veg) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 145.5,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0317",
+        "Name": "Olivier Salad (Veg)",
+        "Quantity": 254.5,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Mustard",
+      "Soy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_011",
+    "Name": "Boiled Potatoes with Stuffed Peppers (Veg)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Stuffed Peppers (Veg) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0126",
+        "Name": "Boiled Potatoes with Stuffed Peppers (Veg)",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_012",
+    "Name": "Barley with Mushrooms",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Barley with Mushrooms prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0127",
+        "Name": "Barley with Mushrooms",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_013",
+    "Name": "Quinoa with Vegetables",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Quinoa with Vegetables prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0128",
+        "Name": "Quinoa with Vegetables",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_014",
+    "Name": "Buckwheat with Baked Potato with Dill",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Baked Potato with Dill prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0129",
+        "Name": "Buckwheat with Baked Potato with Dill",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_015",
+    "Name": "Rice with Cabbage Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Cabbage Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0130",
+        "Name": "Cabbage Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_016",
+    "Name": "Mashed Potatoes with Roasted Beets",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Roasted Beets prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0131",
+        "Name": "Roasted Beets",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_017",
+    "Name": "Rice with Vegetables",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Vegetables prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0132",
+        "Name": "Rice with Vegetables",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_018",
+    "Name": "Millet with Pumpkin",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Millet with Pumpkin prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0133",
+        "Name": "Millet with Pumpkin",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_019",
+    "Name": "Boiled Potatoes with Lentil Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Lentil Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0134",
+        "Name": "Boiled Potatoes with Lentil Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_020",
+    "Name": "Chickpea Stew",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Chickpea Stew prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0135",
+        "Name": "Chickpea Stew",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_021",
+    "Name": "Buckwheat with Roasted Zucchini",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Roasted Zucchini prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0137",
+        "Name": "Roasted Zucchini",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_022",
+    "Name": "Mashed Potatoes with Steamed Broccoli",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Steamed Broccoli prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0138",
+        "Name": "Steamed Broccoli",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_023",
+    "Name": "Pea Soup (Veg)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Pea Soup (Veg) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0139",
+        "Name": "Pea Soup (Veg)",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_024",
+    "Name": "Buckwheat with Barley Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Barley Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0140",
+        "Name": "Buckwheat with Barley Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_025",
+    "Name": "Rice with Mushrooms",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Mushrooms prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0141",
+        "Name": "Rice with Mushrooms",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_026",
+    "Name": "Buckwheat with Root Vegetables",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Root Vegetables prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0142",
+        "Name": "Buckwheat with Root Vegetables",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_027",
+    "Name": "Mashed Potatoes with Onions",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Onions prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0327",
+        "Name": "Mashed Potatoes with Onions",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_028",
+    "Name": "Sorrel Soup (Veg)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Sorrel Soup (Veg) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0144",
+        "Name": "Sorrel Soup (Veg)",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_029",
+    "Name": "Baked Pumpkin with Pine Nuts",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Baked Pumpkin with Pine Nuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0145",
+        "Name": "Baked Pumpkin",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0146",
+        "Name": "Pine Nuts",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_030",
+    "Name": "Rice with Cucumber and Radish Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Cucumber and Radish Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0147",
+        "Name": "Cucumber and Radish Salad",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_031",
+    "Name": "Mashed Potatoes with Tomato Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Tomato Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0318",
+        "Name": "Tomato Salad",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_032",
+    "Name": "Bulgur with Peppers",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Bulgur with Peppers prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0149",
+        "Name": "Bulgur with Peppers",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_033",
+    "Name": "Pelmeni with Smetana",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Pelmeni with Smetana prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0150",
+        "Name": "Pelmeni with Smetana",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_034",
+    "Name": "Kotleti with Buckwheat",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Kotleti with Buckwheat prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0151",
+        "Name": "Kotleti",
+        "Quantity": 265.8,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 134.2,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_035",
+    "Name": "Rice with Steamed Cauliflower",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Steamed Cauliflower prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0153",
+        "Name": "Steamed Cauliflower",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_036",
+    "Name": "Boiled Potatoes with Eggplant with Garlic",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Eggplant with Garlic prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0154",
+        "Name": "Boiled Potatoes with Eggplant with Garlic",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_037",
+    "Name": "Boiled Potatoes with Cauliflower Steaks",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Cauliflower Steaks prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0156",
+        "Name": "Cauliflower Steaks",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_038",
+    "Name": "Borsch with Beef",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Borsch with Beef prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0157",
+        "Name": "Borsch with Beef",
+        "Quantity": 196.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_039",
+    "Name": "Shchi with Pork",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Shchi with Pork prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0158",
+        "Name": "Shchi with Pork",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_040",
+    "Name": "Meat Solyanka",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Meat Solyanka prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0159",
+        "Name": "Meat Solyanka",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_041",
+    "Name": "Ukha with Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Ukha with Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0160",
+        "Name": "Ukha with Salmon",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_042",
+    "Name": "Rassolnik with Beef",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rassolnik with Beef prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0161",
+        "Name": "Rassolnik with Beef",
+        "Quantity": 154.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_043",
+    "Name": "Beef Stroganoff",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Beef Stroganoff prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0162",
+        "Name": "Beef Stroganoff",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_044",
+    "Name": "Buckwheat with Chicken Kiev",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Chicken Kiev prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0163",
+        "Name": "Chicken Kiev",
+        "Quantity": 190.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_045",
+    "Name": "Golubtsi with Beef",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Golubtsi with Beef prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0164",
+        "Name": "Golubtsi with Beef",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_046",
+    "Name": "Rice with Grilled Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Grilled Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0165",
+        "Name": "Grilled Salmon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_047",
+    "Name": "Buckwheat with Baked Cod",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Baked Cod prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0166",
+        "Name": "Baked Cod",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_048",
+    "Name": "Chicken Stew",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Chicken Stew prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0167",
+        "Name": "Chicken Stew",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_049",
+    "Name": "Stuffed Peppers with Beef",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Stuffed Peppers with Beef prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0168",
+        "Name": "Stuffed Peppers with Beef",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_050",
+    "Name": "Beef Stew",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Beef Stew prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0169",
+        "Name": "Beef Stew",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_051",
+    "Name": "Rice with Fish Kotleti",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Fish Kotleti prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0170",
+        "Name": "Fish Kotleti",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs",
+      "Fish",
+      "Gluten",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_052",
+    "Name": "Buckwheat with Beef",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Beef prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0171",
+        "Name": "Beef",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_053",
+    "Name": "Mashed Potatoes with Meatballs in Tomato Sauce",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Meatballs in Tomato Sauce prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 133.6,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0172",
+        "Name": "Meatballs in Tomato Sauce",
+        "Quantity": 266.4,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_054",
+    "Name": "Chicken Soup",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Chicken Soup prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0173",
+        "Name": "Chicken Soup",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_055",
+    "Name": "Plov with Lamb",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Plov with Lamb prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0174",
+        "Name": "Plov with Lamb",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_056",
+    "Name": "Chicken Breast with Spinach",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Chicken Breast with Spinach prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0175",
+        "Name": "Chicken Breast",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0176",
+        "Name": "Spinach",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_057",
+    "Name": "Mashed Potatoes with Roasted Turkey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Roasted Turkey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0177",
+        "Name": "Roasted Turkey",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_058",
+    "Name": "Boiled Potatoes with Beef Tongue",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Beef Tongue prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0178",
+        "Name": "Beef Tongue",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_059",
+    "Name": "Rice with Grilled Sea Bass",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Grilled Sea Bass prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0179",
+        "Name": "Grilled Sea Bass",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_060",
+    "Name": "Buckwheat with Baked Trout",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Baked Trout prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0180",
+        "Name": "Baked Trout",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_061",
+    "Name": "Rabbit Stew",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rabbit Stew prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0181",
+        "Name": "Rabbit Stew",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_062",
+    "Name": "Duck with Apples",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Duck with Apples prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0182",
+        "Name": "Duck with Apples",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_063",
+    "Name": "Boiled Potatoes with Pike Perch with Vegetables",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Pike Perch with Vegetables prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0183",
+        "Name": "Pike Perch with Vegetables",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_064",
+    "Name": "Buckwheat with Beef Liver with Onions",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Beef Liver with Onions prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0184",
+        "Name": "Buckwheat with Beef Liver with Onions",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_065",
+    "Name": "Rice with Chicken Cutlets",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Rice with Chicken Cutlets prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0185",
+        "Name": "Chicken Cutlets",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_066",
+    "Name": "Mashed Potatoes with Steamed Cod",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Steamed Cod prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0186",
+        "Name": "Steamed Cod",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Fish",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_067",
+    "Name": "Mashed Potatoes with Roasted Chicken",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Mashed Potatoes with Roasted Chicken prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0187",
+        "Name": "Roasted Chicken",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_068",
+    "Name": "Buckwheat with Beef and Cabbage Stew",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Buckwheat with Beef and Cabbage Stew prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0188",
+        "Name": "Beef and Cabbage Stew",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_069",
+    "Name": "Boiled Potatoes with Grilled Mackerel",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Grilled Mackerel prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0189",
+        "Name": "Grilled Mackerel",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_LU_070",
+    "Name": "Boiled Potatoes with Salmon Salad",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "Authentic Russian Boiled Potatoes with Salmon Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0190",
+        "Name": "Boiled Potatoes with Salmon Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_001",
+    "Name": "Kefir",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Kefir prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0191",
+        "Name": "Kefir",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_002",
+    "Name": "Ryazhenka",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Ryazhenka prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0192",
+        "Name": "Ryazhenka",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_003",
+    "Name": "Yogurt",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Yogurt prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0193",
+        "Name": "Yogurt",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_004",
+    "Name": "Pumpkin Seeds",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Pumpkin Seeds prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0194",
+        "Name": "Pumpkin Seeds",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_005",
+    "Name": "Cottage Cheese with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Cottage Cheese with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0195",
+        "Name": "Cottage Cheese with Honey",
+        "Quantity": 371.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_006",
+    "Name": "Pear",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Pear prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0196",
+        "Name": "Pear",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_007",
+    "Name": "Dried Berries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Dried Berries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0197",
+        "Name": "Dried Berries",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_008",
+    "Name": "Rye Bread with Avocado",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Rye Bread with Avocado prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0198",
+        "Name": "Rye Bread with Avocado",
+        "Quantity": 273.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_009",
+    "Name": "Banana",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Banana prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0199",
+        "Name": "Banana",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_010",
+    "Name": "Carrot Sticks",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Carrot Sticks prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0200",
+        "Name": "Carrot Sticks",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_011",
+    "Name": "Cucumber with Cottage Cheese",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Cucumber with Cottage Cheese prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0201",
+        "Name": "Cucumber",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0051",
+        "Name": "Cottage Cheese",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_012",
+    "Name": "Pistachios",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Pistachios prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0202",
+        "Name": "Pistachios",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_013",
+    "Name": "Prunes",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Prunes prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0203",
+        "Name": "Prunes",
+        "Quantity": 40.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_014",
+    "Name": "Dried Apricots",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Dried Apricots prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0045",
+        "Name": "Dried Apricots",
+        "Quantity": 40.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_015",
+    "Name": "Mors Drink",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Mors Drink prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0204",
+        "Name": "Mors Drink",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_016",
+    "Name": "Orange Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Orange Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0205",
+        "Name": "Orange Slices",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_017",
+    "Name": "Grapefruit",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Grapefruit prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0206",
+        "Name": "Grapefruit",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_018",
+    "Name": "Kiwi",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Kiwi prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0207",
+        "Name": "Kiwi",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_019",
+    "Name": "Baked Apple",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Baked Apple prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0208",
+        "Name": "Baked Apple",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_020",
+    "Name": "Hazelnuts",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Hazelnuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0209",
+        "Name": "Hazelnuts",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_021",
+    "Name": "Sunflower Seeds",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Sunflower Seeds prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0210",
+        "Name": "Sunflower Seeds",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_022",
+    "Name": "Rye Toast",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Rye Toast prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0211",
+        "Name": "Rye Toast",
+        "Quantity": 60.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_023",
+    "Name": "Celery with Nut Butter",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Celery with Nut Butter prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0212",
+        "Name": "Celery",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0213",
+        "Name": "Nut Butter",
+        "Quantity": 15.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_024",
+    "Name": "Dates",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Dates prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0214",
+        "Name": "Dates",
+        "Quantity": 40.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_025",
+    "Name": "Beetroot Juice",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Beetroot Juice prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0215",
+        "Name": "Beetroot Juice",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_026",
+    "Name": "Apple Juice",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Apple Juice prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0216",
+        "Name": "Apple Juice",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_027",
+    "Name": "Cashews",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Cashews prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0217",
+        "Name": "Cashews",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_028",
+    "Name": "Pecans",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Pecans prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0218",
+        "Name": "Pecans",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_029",
+    "Name": "Brazil Nuts",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Brazil Nuts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0219",
+        "Name": "Brazil Nuts",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_030",
+    "Name": "Plum Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Plum Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0220",
+        "Name": "Plum Slices",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_031",
+    "Name": "Apricot Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Apricot Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0221",
+        "Name": "Apricot Slices",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_032",
+    "Name": "Peach Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Peach Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0222",
+        "Name": "Peach Slices",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_033",
+    "Name": "Melon Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Melon Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0223",
+        "Name": "Melon Slices",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_034",
+    "Name": "Watermelon Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Watermelon Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0224",
+        "Name": "Watermelon Slices",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_035",
+    "Name": "Cherries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Cherries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0225",
+        "Name": "Cherries",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_036",
+    "Name": "Grapes",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Grapes prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0226",
+        "Name": "Grapes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_037",
+    "Name": "Blueberries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Blueberries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0227",
+        "Name": "Blueberries",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_038",
+    "Name": "Raspberries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Raspberries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0228",
+        "Name": "Raspberries",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_039",
+    "Name": "Strawberries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Strawberries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0229",
+        "Name": "Strawberries",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_ES_040",
+    "Name": "Apple and Cucumber Slices",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Evening Snack"
+    ],
+    "Time": "17:00",
+    "Description": "Authentic Russian Apple and Cucumber Slices prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0114",
+        "Name": "Apple",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0081",
+        "Name": "Cucumber Slices",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_001",
+    "Name": "Lentil Stew",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Lentil Stew prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0230",
+        "Name": "Lentil Stew",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_002",
+    "Name": "Buckwheat with Cottage Cheese",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Cottage Cheese prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0051",
+        "Name": "Cottage Cheese",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_003",
+    "Name": "Rice with Baked Potato",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Baked Potato prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0231",
+        "Name": "Baked Potato",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_004",
+    "Name": "Barley with Root Vegetables",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Barley with Root Vegetables prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0232",
+        "Name": "Barley with Root Vegetables",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_005",
+    "Name": "Quinoa with Kale",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Quinoa with Kale prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0233",
+        "Name": "Quinoa",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0234",
+        "Name": "Kale",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_006",
+    "Name": "Vegetable Soup",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Vegetable Soup prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0235",
+        "Name": "Vegetable Soup",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_007",
+    "Name": "Mashed Potatoes with Beetroot Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Beetroot Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0319",
+        "Name": "Beetroot Salad",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_008",
+    "Name": "Boiled Potatoes with Grilled Tofu",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Grilled Tofu prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0237",
+        "Name": "Grilled Tofu",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Soy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_009",
+    "Name": "Pumpkin Risotto",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Pumpkin Risotto prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0238",
+        "Name": "Pumpkin Risotto",
+        "Quantity": 390.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_010",
+    "Name": "Mushroom Risotto",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mushroom Risotto prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0239",
+        "Name": "Mushroom Risotto",
+        "Quantity": 390.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_011",
+    "Name": "Mashed Potatoes with Zucchini Noodles",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Zucchini Noodles prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0240",
+        "Name": "Zucchini Noodles",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_012",
+    "Name": "Buckwheat with Baked Sweet Potato",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Baked Sweet Potato prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0241",
+        "Name": "Baked Sweet Potato",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_013",
+    "Name": "Rice with Roasted Carrots",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Roasted Carrots prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0242",
+        "Name": "Rice with Roasted Carrots",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_014",
+    "Name": "Rice with Steamed Asparagus",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Steamed Asparagus prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0326",
+        "Name": "Rice with Steamed Asparagus",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_015",
+    "Name": "Mashed Potatoes with Green Bean Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Green Bean Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0320",
+        "Name": "Green Bean Salad",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_016",
+    "Name": "Boiled Potatoes with Cucumber and Tomato Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Cucumber and Tomato Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0245",
+        "Name": "Boiled Potatoes with Cucumber and Tomato Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_017",
+    "Name": "Buckwheat with Greek Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Greek Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0246",
+        "Name": "Buckwheat with Greek Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_018",
+    "Name": "Rice with Caprese Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Caprese Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0247",
+        "Name": "Rice with Caprese Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_019",
+    "Name": "Mashed Potatoes with Roasted Bell Peppers",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Roasted Bell Peppers prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0248",
+        "Name": "Roasted Bell Peppers",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_020",
+    "Name": "Boiled Potatoes with Baked Brussels Sprouts",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Baked Brussels Sprouts prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0249",
+        "Name": "Baked Brussels Sprouts",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_021",
+    "Name": "Buckwheat with Steamed Cabbage",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Steamed Cabbage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0250",
+        "Name": "Steamed Cabbage",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_022",
+    "Name": "Boiled Potatoes with Grilled Dorado",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Grilled Dorado prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0251",
+        "Name": "Grilled Dorado",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_023",
+    "Name": "Buckwheat with Shashlik",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Shashlik prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0252",
+        "Name": "Shashlik",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_024",
+    "Name": "Rice with Baked Sea Bream with Lemon",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Baked Sea Bream with Lemon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0253",
+        "Name": "Rice with Baked Sea Bream with Lemon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_025",
+    "Name": "Steamed Halibut with Leeks",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Steamed Halibut with Leeks prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0254",
+        "Name": "Steamed White Fish with Leeks",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_026",
+    "Name": "Roasted Cauliflower with Turmeric",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Roasted Cauliflower with Turmeric prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0321",
+        "Name": "Roasted Cauliflower with Turmeric",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_027",
+    "Name": "Steamed Asparagus with Almonds",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Steamed Asparagus with Almonds prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0243",
+        "Name": "Steamed Asparagus",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0097",
+        "Name": "Almonds",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_028",
+    "Name": "Mashed Potatoes with Baked Eggplant",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Baked Eggplant prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0257",
+        "Name": "Baked Eggplant",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_029",
+    "Name": "Rice with Grilled Chicken Breast",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Grilled Chicken Breast prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0258",
+        "Name": "Grilled Chicken Breast",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_030",
+    "Name": "Buckwheat with Baked Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Baked Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0259",
+        "Name": "Baked Salmon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_031",
+    "Name": "Boiled Potatoes with Baked Chicken Thighs",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Baked Chicken Thighs prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0260",
+        "Name": "Baked Chicken Thighs",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_032",
+    "Name": "Boiled Eggs with Cucumber",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Eggs with Cucumber prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0061",
+        "Name": "Boiled Eggs",
+        "Quantity": 100.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0201",
+        "Name": "Cucumber",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Eggs"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_033",
+    "Name": "Buckwheat with Grilled Shrimp",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Grilled Shrimp prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0136",
+        "Name": "Buckwheat",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0261",
+        "Name": "Grilled Shrimp",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_034",
+    "Name": "Mashed Potatoes with Beef Liver",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Beef Liver prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0262",
+        "Name": "Beef Liver",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_035",
+    "Name": "Rice with Steamed Pike Perch",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Steamed Pike Perch prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0263",
+        "Name": "Steamed Pike Perch",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_036",
+    "Name": "Boiled Potatoes with Turkey Meatballs",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Turkey Meatballs prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0264",
+        "Name": "Turkey Meatballs",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_037",
+    "Name": "Baked Cod with Tomatoes",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Baked Cod with Tomatoes prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0265",
+        "Name": "Baked Cod with Tomatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_038",
+    "Name": "Beef with Bell Peppers",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Beef with Bell Peppers prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0266",
+        "Name": "Beef with Bell Peppers",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_039",
+    "Name": "Mashed Potatoes with Fish Cakes",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Fish Cakes prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0267",
+        "Name": "Fish Cakes",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Fish",
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_040",
+    "Name": "Grilled Chicken with Squash",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Grilled Chicken with Squash prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0268",
+        "Name": "Grilled Chicken",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0269",
+        "Name": "Squash",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_041",
+    "Name": "Boiled Potatoes with Beef Stir-fry",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Beef Stir-fry prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0155",
+        "Name": "Boiled Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0270",
+        "Name": "Beef Stir-fry",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten",
+      "Soy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_042",
+    "Name": "Rice with Steamed Salmon",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Steamed Salmon prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0271",
+        "Name": "Steamed Salmon",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_043",
+    "Name": "Buckwheat with Octopus Salad",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Octopus Salad prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0272",
+        "Name": "Buckwheat with Octopus Salad",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_044",
+    "Name": "Rice with Grilled Squid",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Grilled Squid prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0273",
+        "Name": "Grilled Squid",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_045",
+    "Name": "Mashed Potatoes with Roasted Lamb",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Roasted Lamb prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0274",
+        "Name": "Roasted Lamb",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_046",
+    "Name": "Roasted Duck with Cabbage",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Roasted Duck with Cabbage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0275",
+        "Name": "Roasted Duck",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0112",
+        "Name": "Cabbage",
+        "Quantity": 150.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_047",
+    "Name": "Boiled Potatoes with Steamed Trout with Herbs",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Boiled Potatoes with Steamed Trout with Herbs prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0276",
+        "Name": "Boiled Potatoes with Steamed Trout with Herbs",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_048",
+    "Name": "Lamb Stew with Prunes",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Lamb Stew with Prunes prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0277",
+        "Name": "Lamb Stew with Prunes",
+        "Quantity": 40.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_049",
+    "Name": "Beef Medallions with Green Beans",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Beef Medallions with Green Beans prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0278",
+        "Name": "Beef Medallions",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0279",
+        "Name": "Green Beans",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_050",
+    "Name": "Chicken Breast with Mushroom Sauce",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Chicken Breast with Mushroom Sauce prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0175",
+        "Name": "Chicken Breast",
+        "Quantity": 133.3,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0280",
+        "Name": "Mushroom Sauce",
+        "Quantity": 266.7,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_051",
+    "Name": "Roasted Venison with Berries",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Roasted Venison with Berries prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0281",
+        "Name": "Roasted Venison with Berries",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_052",
+    "Name": "Buckwheat with Grilled Octopus with Garlic",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Buckwheat with Grilled Octopus with Garlic prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0282",
+        "Name": "Buckwheat with Grilled Octopus with Garlic",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_053",
+    "Name": "Turkey Breast with Sage",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Turkey Breast with Sage prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0283",
+        "Name": "Turkey Breast",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0284",
+        "Name": "Sage",
+        "Quantity": 10.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_054",
+    "Name": "Rice with Grilled Quail",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Rice with Grilled Quail prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0152",
+        "Name": "Rice",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0285",
+        "Name": "Grilled Quail",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_DI_055",
+    "Name": "Mashed Potatoes with Baked Scallops",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "20:00",
+    "Description": "Authentic Russian Mashed Potatoes with Baked Scallops prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0122",
+        "Name": "Mashed Potatoes",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_0286",
+        "Name": "Baked Scallops",
+        "Quantity": 200.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy",
+      "Fish",
+      "Shellfish"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_001",
+    "Name": "Warm Milk with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Milk with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0287",
+        "Name": "Warm Milk with Honey",
+        "Quantity": 391.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_002",
+    "Name": "Valerian Root Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Valerian Root Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0288",
+        "Name": "Valerian Root Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_003",
+    "Name": "Lavender Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Lavender Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0289",
+        "Name": "Lavender Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_004",
+    "Name": "Turmeric Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Turmeric Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0290",
+        "Name": "Turmeric Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_005",
+    "Name": "Almond Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Almond Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0291",
+        "Name": "Almond Milk",
+        "Quantity": 275.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_006",
+    "Name": "Warm Rice Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Rice Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0292",
+        "Name": "Warm Rice Water",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_007",
+    "Name": "Spiced Nutmeg Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Spiced Nutmeg Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0293",
+        "Name": "Spiced Nutmeg Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_008",
+    "Name": "Linden Tea with Honey",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Linden Tea with Honey prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0294",
+        "Name": "Linden Tea with Honey",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_009",
+    "Name": "Mint and Lemon Water",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Mint and Lemon Water prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0295",
+        "Name": "Mint and Lemon Water",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_010",
+    "Name": "Beetroot Juice (Small)",
+    "Goal": [
+      "Skin Care",
+      "Hair Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Beetroot Juice (Small) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0296",
+        "Name": "Beetroot Juice (Small)",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_011",
+    "Name": "Lemon Balm Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Lemon Balm Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0297",
+        "Name": "Lemon Balm Tea",
+        "Quantity": 10.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_012",
+    "Name": "Passionflower Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Passionflower Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0298",
+        "Name": "Passionflower Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_013",
+    "Name": "Decaf Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Decaf Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0299",
+        "Name": "Decaf Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_014",
+    "Name": "Pumpkin Juice",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Pumpkin Juice prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0300",
+        "Name": "Pumpkin Juice",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_015",
+    "Name": "Oat Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Oat Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0301",
+        "Name": "Oat Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_016",
+    "Name": "Soy Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Soy Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0302",
+        "Name": "Soy Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_017",
+    "Name": "Rice Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Rice Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0303",
+        "Name": "Rice Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_018",
+    "Name": "Cashew Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Cashew Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0304",
+        "Name": "Cashew Milk",
+        "Quantity": 15.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_019",
+    "Name": "Hemp Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Hemp Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0305",
+        "Name": "Hemp Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_020",
+    "Name": "Spelt Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Spelt Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0306",
+        "Name": "Spelt Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_021",
+    "Name": "Linden Blossom Tea",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Linden Blossom Tea prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0307",
+        "Name": "Linden Blossom Tea",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_022",
+    "Name": "Warm Oat Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Oat Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0308",
+        "Name": "Warm Oat Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Gluten"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_023",
+    "Name": "Glass of Spelt Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Glass of Spelt Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0309",
+        "Name": "Glass of Spelt Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_024",
+    "Name": "Warm Almond Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Almond Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0310",
+        "Name": "Warm Almond Milk",
+        "Quantity": 15.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Nuts"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_025",
+    "Name": "Warm Water with Sea Buckthorn",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Water with Sea Buckthorn prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0311",
+        "Name": "Warm Water with Sea Buckthorn",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_026",
+    "Name": "Warm Water with Fresh Mint",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Water with Fresh Mint prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0312",
+        "Name": "Warm Water with Fresh Mint",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_027",
+    "Name": "Pumpkin Juice (Small)",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Pumpkin Juice (Small) prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0313",
+        "Name": "Pumpkin Juice (Small)",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_028",
+    "Name": "Warm Rice Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Warm Rice Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0314",
+        "Name": "Warm Rice Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "None"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_029",
+    "Name": "Spiced Milk with Nutmeg",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Spiced Milk with Nutmeg prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0315",
+        "Name": "Spiced Milk with Nutmeg",
+        "Quantity": 400.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "ID": "MEAL_BT_030",
+    "Name": "Glass of Sour Milk",
+    "Goal": [
+      "Skin Care"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "22:00",
+    "Description": "Authentic Russian Glass of Sour Milk prepared in a traditional home-style manner.",
+    "Foods": [
+      {
+        "ID": "FOOD_0316",
+        "Name": "Glass of Sour Milk",
+        "Quantity": 250.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": [
+      "Dairy"
+    ]
+  }
+]

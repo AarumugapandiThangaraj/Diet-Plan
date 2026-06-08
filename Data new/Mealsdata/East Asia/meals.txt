@@ -1,0 +1,2086 @@
+Early Morning East Asia Meals (35 Sessions)
+
+Meal 1: Warm Soy Milk
+Food 1: Warm Soy Milk
+Ingredients 1: Soybeans, Water, Sugar
+Session: Early Morning
+
+Meal 2: Plain Rice Congee
+Food 1: Rice Congee
+Ingredients 1: White Rice, Water
+Session: Early Morning
+
+Meal 3: Miso Soup
+Food 1: Miso Soup
+Ingredients 1: Miso Paste, Dashi, Tofu, Wakame, Scallions
+Session: Early Morning
+
+Meal 4: Steamed Mantou
+Food 1: Mantou
+Ingredients 1: Wheat Flour, Yeast, Sugar, Water
+Session: Early Morning
+
+Meal 5: Sweet Potato Congee
+Food 1: Sweet Potato Congee
+Ingredients 1: White Rice, Sweet Potato, Water
+Session: Early Morning
+
+Meal 6: Green Tea
+Food 1: Green Tea
+Ingredients 1: Green Tea Leaves, Water
+Session: Early Morning
+
+Meal 7: Tofu Brain
+Food 1: Douhua
+Ingredients 1: Silken Tofu, Soy Sauce, Scallions, Sesame Oil
+Session: Early Morning
+
+Meal 8: Black Sesame Soup
+Food 1: Black Sesame Soup
+Ingredients 1: Black Sesame Seeds, Rice Flour, Sugar, Water
+Session: Early Morning
+
+Meal 9: Clear Radish Soup
+Food 1: Radish Soup
+Ingredients 1: Daikon Radish, Kelp, Water, Salt
+Session: Early Morning
+
+Meal 10: Oolong Tea
+Food 1: Oolong Tea
+Ingredients 1: Oolong Tea Leaves, Water
+Session: Early Morning
+
+Meal 11: Barley Tea
+Food 1: Boricha
+Ingredients 1: Roasted Barley, Water
+Session: Early Morning
+
+Meal 12: Pumpkin Porridge
+Food 1: Hobakjuk
+Ingredients 1: Pumpkin, Glutinous Rice Flour, Sugar, Water
+Session: Early Morning
+
+Meal 13: Roasted Sweet Potato
+Food 1: Roasted Sweet Potato
+Ingredients 1: Sweet Potato
+Session: Early Morning
+
+Meal 14: Jasmine Tea
+Food 1: Jasmine Tea
+Ingredients 1: Jasmine Tea Leaves, Water
+Session: Early Morning
+
+Meal 15: Silken Tofu
+Food 1: Silken Tofu
+Ingredients 1: Silken Tofu, Soy Sauce, Ginger
+Session: Early Morning
+
+Meal 16: Rice Crackers
+Food 1: Senbei
+Ingredients 1: Rice Flour, Soy Sauce, Seaweed
+Session: Early Morning
+
+Meal 17: Hot Yuzu Tea
+Food 1: Yuzu Tea
+Ingredients 1: Yuzu Marmalade, Water
+Session: Early Morning
+
+Meal 18: Plum Tea
+Food 1: Maesil-cha
+Ingredients 1: Plum Extract, Water
+Session: Early Morning
+
+Meal 19: Warm Almond Milk
+Food 1: Almond Milk
+Ingredients 1: Almonds, Water, Sugar
+Session: Early Morning
+
+Meal 20: Red Bean Soup
+Food 1: Red Bean Soup
+Ingredients 1: Red Beans, Sugar, Water, Tangerine Peel
+Session: Early Morning
+
+Meal 21: Matcha
+Food 1: Matcha
+Ingredients 1: Matcha Powder, Water
+Session: Early Morning
+
+Meal 22: Chrysanthemum Tea
+Food 1: Chrysanthemum Tea
+Ingredients 1: Dried Chrysanthemum, Goji Berries, Water
+Session: Early Morning
+
+Meal 23: Asian Pear
+Food 1: Asian Pear
+Ingredients 1: Asian Pear
+Session: Early Morning
+
+Meal 24: Pickled Radish
+Food 1: Danmuji
+Ingredients 1: Daikon Radish, Vinegar, Sugar, Salt
+Session: Early Morning
+
+Meal 25: Seaweed Soup
+Food 1: Miyeok-guk
+Ingredients 1: Seaweed, Sesame Oil, Garlic, Soy Sauce, Water
+Session: Early Morning
+
+Meal 26: Edamame
+Food 1: Edamame
+Ingredients 1: Edamame, Salt
+Session: Early Morning
+
+Meal 27: Steamed Corn
+Food 1: Steamed Corn
+Ingredients 1: Corn, Water, Salt
+Session: Early Morning
+
+Meal 28: Tomato Tofu Soup
+Food 1: Tomato Tofu Soup
+Ingredients 1: Tomato, Silken Tofu, Water, Scallions, Salt
+Session: Early Morning
+
+Meal 29: Genmaicha
+Food 1: Genmaicha
+Ingredients 1: Green Tea Leaves, Roasted Brown Rice, Water
+Session: Early Morning
+
+Meal 30: Jujube Tea
+Food 1: Jujube Tea
+Ingredients 1: Dried Jujube, Water, Honey
+Session: Early Morning
+
+Meal 31: Persimmon
+Food 1: Persimmon
+Ingredients 1: Persimmon
+Session: Early Morning
+
+Meal 32: Pine Nut Porridge
+Food 1: Jatjuk
+Ingredients 1: Pine Nuts, White Rice, Water, Salt
+Session: Early Morning
+
+Meal 33: Lotus Root Tea
+Food 1: Lotus Root Tea
+Ingredients 1: Dried Lotus Root, Water
+Session: Early Morning
+
+Meal 34: Apple
+Food 1: Apple
+Ingredients 1: Apple
+Session: Early Morning
+
+Meal 35: Steamed Taro
+Food 1: Steamed Taro
+Ingredients 1: Taro Root, Sugar
+Session: Early Morning
+
+Breakfast East Asia Meals (35 Sessions)
+
+Meal 1: Scallion Pancake and Soy Milk
+Food 1: Scallion Pancake
+Ingredients 1: Wheat Flour, Scallions, Oil, Salt
+Food 2: Warm Soy Milk
+Ingredients 2: Soybeans, Water, Sugar
+Session: Breakfast
+
+Meal 2: Vegetable Baozi and Congee
+Food 1: Vegetable Baozi
+Ingredients 1: Wheat Flour, Bok Choy, Shiitake Mushroom, Yeast
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Breakfast
+
+Meal 3: Youtiao and Sweet Soy Milk
+Food 1: Youtiao
+Ingredients 1: Wheat Flour, Baking Powder, Oil
+Food 2: Sweet Soy Milk
+Ingredients 2: Soybeans, Water, Sugar
+Session: Breakfast
+
+Meal 4: Congee with Peanuts and Radish
+Food 1: Plain Congee
+Ingredients 1: White Rice, Water
+Food 2: Roasted Peanuts
+Ingredients 2: Peanuts, Salt
+Food 3: Pickled Radish
+Ingredients 3: Daikon Radish, Vinegar, Sugar
+Session: Breakfast
+
+Meal 5: Sweet Potato Pancake and Tea
+Food 1: Sweet Potato Pancake
+Ingredients 1: Sweet Potato, Glutinous Rice Flour, Sugar, Oil
+Food 2: Black Tea
+Ingredients 2: Black Tea Leaves, Water
+Session: Breakfast
+
+Meal 6: Dumplings and Vinegar
+Food 1: Jiaozi
+Ingredients 1: Wheat Wrapper, Cabbage, Carrot, Tofu
+Food 2: Black Vinegar Dip
+Ingredients 2: Black Vinegar, Soy Sauce
+Session: Breakfast
+
+Meal 7: Natto Rice and Miso Soup
+Food 1: Natto
+Ingredients 1: Fermented Soybeans, Soy Sauce, Mustard
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Food 3: Miso Soup
+Ingredients 3: Miso Paste, Kombu Dashi, Wakame
+Session: Breakfast
+
+Meal 8: Tomato Tofu Stir-fry and Rice
+Food 1: Tomato Tofu Stir-fry
+Ingredients 1: Tomato, Firm Tofu, Oil, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 9: Savory Douhua and Youtiao
+Food 1: Savory Douhua
+Ingredients 1: Silken Tofu, Soy Sauce, Scallions, Chili Oil
+Food 2: Youtiao
+Ingredients 2: Wheat Flour, Baking Powder, Oil
+Session: Breakfast
+
+Meal 10: Pumpkin Porridge and Lotus Root
+Food 1: Hobakjuk
+Ingredients 1: Pumpkin, Glutinous Rice Flour, Sugar
+Food 2: Braised Lotus Root
+Ingredients 2: Lotus Root, Soy Sauce, Sugar, Sesame Oil
+Session: Breakfast
+
+Meal 11: Vegetable Gimbap
+Food 1: Gimbap
+Ingredients 1: Short Grain Rice, Nori, Carrot, Spinach, Danmuji
+Session: Breakfast
+
+Meal 12: Mantou and Fermented Bean Curd
+Food 1: Mantou
+Ingredients 1: Wheat Flour, Yeast, Water
+Food 2: Fermented Bean Curd
+Ingredients 2: Fermented Tofu, Chili, Sesame Oil
+Session: Breakfast
+
+Meal 13: Shaobing and Soy Milk
+Food 1: Shaobing
+Ingredients 1: Wheat Flour, Sesame Seeds, Oil
+Food 2: Warm Soy Milk
+Ingredients 2: Soybeans, Water
+Session: Breakfast
+
+Meal 14: Braised Shiitake, Rice and Seaweed
+Food 1: Braised Shiitake
+Ingredients 1: Shiitake Mushroom, Soy Sauce, Sugar, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Food 3: Roasted Seaweed
+Ingredients 3: Nori
+Session: Breakfast
+
+Meal 15: Kimchi Fried Rice
+Food 1: Kimchi Fried Rice
+Ingredients 1: White Rice, Kimchi, Sesame Oil
+Food 2: Pan-fried Tofu
+Ingredients 2: Firm Tofu, Oil, Soy Sauce
+Session: Breakfast
+
+Meal 16: Braised Tofu and Rice
+Food 1: Braised Tofu
+Ingredients 1: Firm Tofu, Soy Sauce, Garlic, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 17: Sweet Potato Congee and Cucumber Salad
+Food 1: Sweet Potato Congee
+Ingredients 1: White Rice, Sweet Potato, Water
+Food 2: Cucumber Salad
+Ingredients 2: Cucumber, Garlic, Vinegar, Sesame Oil
+Session: Breakfast
+
+Meal 18: Cold Soba Noodles
+Food 1: Zaru Soba
+Ingredients 1: Buckwheat Noodles, Kombu Dashi, Soy Sauce, Scallions
+Session: Breakfast
+
+Meal 19: Udon Noodle Soup
+Food 1: Udon
+Ingredients 1: Udon Noodles, Kombu Dashi, Wakame, Scallions
+Session: Breakfast
+
+Meal 20: Peanut Congee and Mustard Greens
+Food 1: Peanut Congee
+Ingredients 1: White Rice, Peanuts, Water
+Food 2: Pickled Mustard Greens
+Ingredients 2: Mustard Greens, Salt
+Session: Breakfast
+
+Meal 21: Steamed Bok Choy and Rice
+Food 1: Steamed Bok Choy
+Ingredients 1: Bok Choy, Garlic, Soy Sauce, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 22: Red Bean Bun and Oolong Tea
+Food 1: Red Bean Bun
+Ingredients 1: Wheat Flour, Red Bean Paste, Yeast
+Food 2: Oolong Tea
+Ingredients 2: Oolong Tea Leaves, Water
+Session: Breakfast
+
+Meal 23: Miso Glazed Eggplant and Rice
+Food 1: Nasu Dengaku
+Ingredients 1: Eggplant, Miso Paste, Sugar, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 24: Spring Rolls and Green Tea
+Food 1: Spring Rolls
+Ingredients 1: Spring Roll Wrapper, Cabbage, Carrot, Glass Noodles, Oil
+Food 2: Green Tea
+Ingredients 2: Green Tea Leaves, Water
+Session: Breakfast
+
+Meal 25: Mapo Tofu and Rice
+Food 1: Mapo Tofu
+Ingredients 1: Soft Tofu, Doubanjiang, Sichuan Peppercorn, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 26: Pan-fried Taro Cake
+Food 1: Taro Cake
+Ingredients 1: Taro, Rice Flour, Shiitake Mushroom, Salt
+Session: Breakfast
+
+Meal 27: Braised Yuba and Congee
+Food 1: Braised Yuba
+Ingredients 1: Tofu Skin, Soy Sauce, Sugar
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Breakfast
+
+Meal 28: Radish Cake
+Food 1: Radish Cake
+Ingredients 1: Daikon Radish, Rice Flour, Shiitake Mushroom, Salt
+Session: Breakfast
+
+Meal 29: Sticky Rice Roll
+Food 1: Cifantuan
+Ingredients 1: Glutinous Rice, Youtiao, Pickled Radish, Peanuts
+Session: Breakfast
+
+Meal 30: Hotteok and Soy Milk
+Food 1: Hotteok
+Ingredients 1: Wheat Flour, Brown Sugar, Cinnamon, Peanuts
+Food 2: Warm Soy Milk
+Ingredients 2: Soybeans, Water
+Session: Breakfast
+
+Meal 31: Umeboshi Onigiri and Green Tea
+Food 1: Umeboshi Onigiri
+Ingredients 1: Short Grain Rice, Pickled Plum, Nori
+Food 2: Green Tea
+Ingredients 2: Green Tea Leaves, Water
+Session: Breakfast
+
+Meal 32: Chinese Chive Pocket
+Food 1: Jiucai Hezi
+Ingredients 1: Wheat Flour, Chinese Chives, Firm Tofu, Glass Noodles
+Session: Breakfast
+
+Meal 33: Tofu Salad and Rice
+Food 1: Cold Tofu Salad
+Ingredients 1: Silken Tofu, Soy Sauce, Sesame Oil, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 34: Steamed Cabbage and Rice
+Food 1: Steamed Cabbage
+Ingredients 1: Napa Cabbage, Soy Sauce, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Food 3: Miso Soup
+Ingredients 3: Miso Paste, Kombu Dashi, Wakame
+Session: Breakfast
+
+Meal 35: Sweet Potato and Barley Tea
+Food 1: Roasted Sweet Potato
+Ingredients 1: Sweet Potato
+Food 2: Barley Tea
+Ingredients 2: Roasted Barley, Water
+Session: Breakfast
+
+Breakfast East Asia Meals (35 Sessions)
+
+Meal 1: Pork and Century Egg Congee
+Food 1: Pork Congee
+Ingredients 1: White Rice, Lean Pork, Century Egg, Water, Scallions
+Session: Breakfast
+
+Meal 2: Ham and Egg Crepe
+Food 1: Dan Bing
+Ingredients 1: Wheat Flour, Egg, Ham, Scallions, Oil
+Session: Breakfast
+
+Meal 3: Pork Baozi and Soy Milk
+Food 1: Pork Baozi
+Ingredients 1: Wheat Flour, Minced Pork, Scallions, Ginger, Yeast
+Food 2: Warm Soy Milk
+Ingredients 2: Soybeans, Water, Sugar
+Session: Breakfast
+
+Meal 4: Chicken Porridge
+Food 1: Dakjuk
+Ingredients 1: White Rice, Chicken Breast, Garlic, Sesame Oil
+Session: Breakfast
+
+Meal 5: Spam, Egg and Rice
+Food 1: Fried Spam
+Ingredients 1: Spam, Oil
+Food 2: Fried Egg
+Ingredients 2: Egg, Oil
+Food 3: Steamed Rice
+Ingredients 3: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 6: Pork Wonton Soup
+Food 1: Wonton Soup
+Ingredients 1: Minced Pork, Wonton Wrapper, Chicken Broth, Scallions
+Session: Breakfast
+
+Meal 7: Shrimp Dumplings and Tea
+Food 1: Har Gow
+Ingredients 1: Shrimp, Tapioca Starch, Bamboo Shoots
+Food 2: Jasmine Tea
+Ingredients 2: Jasmine Tea Leaves, Water
+Session: Breakfast
+
+Meal 8: Pork and Shrimp Siu Mai
+Food 1: Siu Mai
+Ingredients 1: Minced Pork, Shrimp, Wheat Wrapper, Shiitake Mushroom
+Food 2: Oolong Tea
+Ingredients 2: Oolong Tea Leaves, Water
+Session: Breakfast
+
+Meal 9: Grilled Salmon Breakfast
+Food 1: Grilled Salmon
+Ingredients 1: Salmon, Salt, Oil
+Food 2: Tamagoyaki
+Ingredients 2: Egg, Soy Sauce, Sugar, Dashi
+Food 3: Steamed Rice
+Ingredients 3: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 10: Egg Bread and Milk
+Food 1: Gyeran-bbang
+Ingredients 1: Wheat Flour, Egg, Sugar, Milk, Butter
+Food 2: Milk
+Ingredients 2: Milk
+Session: Breakfast
+
+Meal 11: Beef Noodle Soup
+Food 1: Beef Noodle Soup
+Ingredients 1: Beef Shank, Wheat Noodles, Beef Broth, Bok Choy
+Session: Breakfast
+
+Meal 12: Tuna Gimbap
+Food 1: Tuna Gimbap
+Ingredients 1: Short Grain Rice, Canned Tuna, Mayonnaise, Nori, Danmuji
+Session: Breakfast
+
+Meal 13: Pork Floss Congee
+Food 1: Plain Congee
+Ingredients 1: White Rice, Water
+Food 2: Pork Floss
+Ingredients 2: Pork, Soy Sauce, Sugar
+Session: Breakfast
+
+Meal 14: Chicken Jianbing
+Food 1: Jianbing
+Ingredients 1: Mung Bean Flour, Egg, Chicken Breast, Hoisin Sauce
+Session: Breakfast
+
+Meal 15: Fish Congee
+Food 1: Fish Congee
+Ingredients 1: White Rice, White Fish Fillet, Ginger, Scallions
+Session: Breakfast
+
+Meal 16: Beef and Egg Sandwich
+Food 1: Beef Sandwich
+Ingredients 1: Sliced Bread, Sliced Beef, Egg, Mayonnaise
+Session: Breakfast
+
+Meal 17: Beef Scallion Pancake
+Food 1: Beef Scallion Pancake
+Ingredients 1: Wheat Flour, Sliced Beef, Scallions, Oil, Hoisin Sauce
+Session: Breakfast
+
+Meal 18: Pork Belly Slider
+Food 1: Gua Bao
+Ingredients 1: Wheat Flour, Braised Pork Belly, Pickled Mustard Greens, Peanuts
+Session: Breakfast
+
+Meal 19: Shrimp Spring Rolls
+Food 1: Shrimp Spring Rolls
+Ingredients 1: Spring Roll Wrapper, Shrimp, Cabbage, Glass Noodles, Oil
+Session: Breakfast
+
+Meal 20: Clam Miso Soup and Rice
+Food 1: Clam Miso Soup
+Ingredients 1: Miso Paste, Clams, Dashi, Wakame
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 21: Chicken Dumplings
+Food 1: Chicken Jiaozi
+Ingredients 1: Wheat Wrapper, Minced Chicken, Cabbage, Scallions
+Session: Breakfast
+
+Meal 22: Chawanmushi
+Food 1: Chawanmushi
+Ingredients 1: Egg, Shrimp, Chicken Breast, Dashi
+Session: Breakfast
+
+Meal 23: Beef Bone Soup
+Food 1: Seolleongtang
+Ingredients 1: Beef Bones, Beef Brisket, Glass Noodles, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Breakfast
+
+Meal 24: Pork Wontons in Chili Oil
+Food 1: Spicy Wontons
+Ingredients 1: Minced Pork, Wonton Wrapper, Chili Oil, Soy Sauce, Garlic
+Session: Breakfast
+
+Meal 25: Spam Musubi
+Food 1: Spam Musubi
+Ingredients 1: Short Grain Rice, Spam, Nori, Soy Sauce, Sugar
+Session: Breakfast
+
+Meal 26: Grilled Mackerel Breakfast
+Food 1: Grilled Mackerel
+Ingredients 1: Mackerel, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Food 3: Miso Soup
+Ingredients 3: Miso Paste, Dashi, Tofu, Wakame
+Session: Breakfast
+
+Meal 27: Bulgogi Gimbap
+Food 1: Bulgogi Gimbap
+Ingredients 1: Short Grain Rice, Marinated Beef, Nori, Carrot, Spinach
+Session: Breakfast
+
+Meal 28: Chicken Baozi
+Food 1: Chicken Baozi
+Ingredients 1: Wheat Flour, Minced Chicken, Shiitake Mushroom, Yeast
+Session: Breakfast
+
+Meal 29: Pork Potstickers
+Food 1: Guotie
+Ingredients 1: Wheat Wrapper, Minced Pork, Cabbage, Oil
+Session: Breakfast
+
+Meal 30: Seafood Pancake
+Food 1: Haemul Pajeon
+Ingredients 1: Wheat Flour, Scallions, Squid, Shrimp, Egg
+Session: Breakfast
+
+Meal 31: Shrimp Rice Noodle Roll
+Food 1: Shrimp Cheung Fun
+Ingredients 1: Rice Flour, Shrimp, Soy Sauce, Oil
+Session: Breakfast
+
+Meal 32: BBQ Pork Rice Noodle Roll
+Food 1: Char Siu Cheung Fun
+Ingredients 1: Rice Flour, BBQ Pork, Soy Sauce, Oil
+Session: Breakfast
+
+Meal 33: Meatball Congee
+Food 1: Meatball Congee
+Ingredients 1: White Rice, Pork Meatballs, Water, Scallions
+Session: Breakfast
+
+Meal 34: Chicken Mushroom Congee
+Food 1: Chicken Congee
+Ingredients 1: White Rice, Chicken Breast, Shiitake Mushroom, Water
+Session: Breakfast
+
+Meal 35: Macaroni Soup with Ham
+Food 1: Macaroni Soup
+Ingredients 1: Macaroni, Chicken Broth, Ham, Cabbage
+Session: Breakfast
+
+Lunch East Asia Meals (35 Sessions)
+
+Meal 1: Mapo Tofu and Rice
+Food 1: Mapo Tofu
+Ingredients 1: Soft Tofu, Doubanjiang, Sichuan Peppercorn, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 2: Cold Sesame Noodles
+Food 1: Sesame Noodles
+Ingredients 1: Wheat Noodles, Sesame Paste, Soy Sauce, Cucumber
+Session: Lunch
+
+Meal 3: Vegetable Stir-fry and Rice
+Food 1: Vegetable Stir-fry
+Ingredients 1: Broccoli, Carrot, Shiitake Mushroom, Soy Sauce, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 4: Fried Rice
+Food 1: Fried Rice
+Ingredients 1: White Rice, Carrot, Green Peas, Soy Sauce, Sesame Oil
+Session: Lunch
+
+Meal 5: Yuxiang Eggplant and Rice
+Food 1: Yuxiang Eggplant
+Ingredients 1: Eggplant, Garlic, Soy Sauce, Black Vinegar, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 6: Bibimbap
+Food 1: Bibimbap
+Ingredients 1: Short Grain Rice, Carrot, Spinach, Bean Sprouts, Gochujang
+Session: Lunch
+
+Meal 7: Braised Tofu with Bok Choy
+Food 1: Braised Tofu
+Ingredients 1: Firm Tofu, Bok Choy, Soy Sauce, Ginger, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 8: Miso Ramen
+Food 1: Miso Ramen
+Ingredients 1: Ramen Noodles, Miso Paste, Firm Tofu, Corn, Wakame
+Session: Lunch
+
+Meal 9: Vegetable Gimbap
+Food 1: Gimbap
+Ingredients 1: Short Grain Rice, Nori, Carrot, Spinach, Danmuji
+Session: Lunch
+
+Meal 10: Vegetable Tempura and Udon
+Food 1: Tempura
+Ingredients 1: Sweet Potato, Eggplant, Wheat Flour, Water, Oil
+Food 2: Udon
+Ingredients 2: Udon Noodles, Kombu Dashi, Soy Sauce, Scallions
+Session: Lunch
+
+Meal 11: Tteokbokki
+Food 1: Tteokbokki
+Ingredients 1: Rice Cakes, Gochujang, Sugar, Scallions, Water
+Session: Lunch
+
+Meal 12: Japchae
+Food 1: Japchae
+Ingredients 1: Glass Noodles, Spinach, Carrot, Soy Sauce, Sesame Oil
+Session: Lunch
+
+Meal 13: Sushi Rolls
+Food 1: Avocado Sushi
+Ingredients 1: Short Grain Rice, Nori, Avocado, Cucumber, Vinegar
+Session: Lunch
+
+Meal 14: Tomato Tofu Stir-fry and Rice
+Food 1: Tomato Tofu Stir-fry
+Ingredients 1: Tomato, Firm Tofu, Oil, Scallions, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 15: Dry Pot Cauliflower and Rice
+Food 1: Dry Pot Cauliflower
+Ingredients 1: Cauliflower, Dried Chili, Soy Sauce, Garlic, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 16: Buddhist Delight and Rice
+Food 1: Luohan Zhai
+Ingredients 1: Firm Tofu, Wood Ear Mushroom, Bamboo Shoots, Carrot, Soy Sauce
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 17: Cold Tofu Salad and Rice
+Food 1: Cold Tofu Salad
+Ingredients 1: Silken Tofu, Soy Sauce, Sesame Oil, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 18: Yakisoba
+Food 1: Yakisoba
+Ingredients 1: Yakisoba Noodles, Cabbage, Carrot, Yakisoba Sauce, Oil
+Session: Lunch
+
+Meal 19: Japanese Curry and Rice
+Food 1: Curry
+Ingredients 1: Curry Roux, Potato, Carrot, Onion, Water
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 20: Braised Shiitake and Rice
+Food 1: Braised Shiitake
+Ingredients 1: Shiitake Mushroom, Soy Sauce, Sugar, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 21: Spring Rolls and Congee
+Food 1: Spring Rolls
+Ingredients 1: Spring Roll Wrapper, Cabbage, Carrot, Oil
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Lunch
+
+Meal 22: Steamed Tofu and Rice
+Food 1: Steamed Tofu
+Ingredients 1: Silken Tofu, Garlic, Soy Sauce, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 23: Dan Dan Noodles
+Food 1: Dan Dan Noodles
+Ingredients 1: Wheat Noodles, Sesame Paste, Chili Oil, Preserved Mustard Greens, Soy Sauce
+Session: Lunch
+
+Meal 24: Garlic Bok Choy and Rice
+Food 1: Garlic Bok Choy
+Ingredients 1: Bok Choy, Garlic, Oil, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 25: Nasu Dengaku and Rice
+Food 1: Nasu Dengaku
+Ingredients 1: Eggplant, Miso Paste, Sugar, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 26: Kimchi Fried Rice
+Food 1: Kimchi Fried Rice
+Ingredients 1: White Rice, Kimchi, Sesame Oil, Scallions
+Session: Lunch
+
+Meal 27: Radish Cake
+Food 1: Radish Cake
+Ingredients 1: Daikon Radish, Rice Flour, Shiitake Mushroom, Salt
+Session: Lunch
+
+Meal 28: Soy Sauce Chow Mein
+Food 1: Chow Mein
+Ingredients 1: Wheat Noodles, Soy Sauce, Scallions, Bean Sprouts, Oil
+Session: Lunch
+
+Meal 29: Sesame Spinach Salad and Rice
+Food 1: Spinach Salad
+Ingredients 1: Spinach, Sesame Paste, Soy Sauce, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 30: Pan-Fried Tofu and Rice
+Food 1: Pan-Fried Tofu
+Ingredients 1: Firm Tofu, Gochugaru, Soy Sauce, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 31: Sweet and Sour Tofu and Rice
+Food 1: Sweet and Sour Tofu
+Ingredients 1: Firm Tofu, Black Vinegar, Sugar, Tomato Paste, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 32: Zaru Soba
+Food 1: Zaru Soba
+Ingredients 1: Buckwheat Noodles, Kombu Dashi, Soy Sauce, Scallions
+Session: Lunch
+
+Meal 33: Braised Daikon and Rice
+Food 1: Braised Daikon
+Ingredients 1: Daikon Radish, Soy Sauce, Mirin, Sugar, Kombu Dashi
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 34: Gyoza and Rice
+Food 1: Gyoza
+Ingredients 1: Wheat Wrapper, Cabbage, Shiitake Mushroom, Garlic, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 35: Seaweed Salad and Rice
+Food 1: Seaweed Salad
+Ingredients 1: Wakame, Sesame Oil, Vinegar, Soy Sauce, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Lunch East Asia Meals (35 Sessions)
+
+Meal 1: Beef Noodle Soup
+Food 1: Beef Noodle Soup
+Ingredients 1: Wheat Noodles, Beef Shank, Beef Broth, Bok Choy, Star Anise
+Session: Lunch
+
+Meal 2: Hainanese Chicken Rice
+Food 1: Hainanese Chicken
+Ingredients 1: Chicken, Ginger, Scallions, Sesame Oil
+Food 2: Chicken Fat Rice
+Ingredients 2: White Rice, Chicken Broth, Chicken Fat, Garlic
+Session: Lunch
+
+Meal 3: Pork Katsu Curry
+Food 1: Pork Katsu
+Ingredients 1: Pork Loin, Panko, Egg, Wheat Flour, Oil
+Food 2: Japanese Curry Rice
+Ingredients 2: Short Grain Rice, Curry Roux, Potato, Carrot
+Session: Lunch
+
+Meal 4: Teriyaki Chicken and Rice
+Food 1: Teriyaki Chicken
+Ingredients 1: Chicken Thigh, Soy Sauce, Mirin, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 5: Tonkotsu Ramen
+Food 1: Tonkotsu Ramen
+Ingredients 1: Ramen Noodles, Pork Broth, Chashu Pork, Soft Boiled Egg, Scallions
+Session: Lunch
+
+Meal 6: Bulgogi and Rice
+Food 1: Bulgogi
+Ingredients 1: Sliced Beef, Soy Sauce, Sugar, Pear Juice, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 7: Sweet and Sour Pork
+Food 1: Tangsuyuk
+Ingredients 1: Pork, Potato Starch, Vinegar, Sugar, Pineapple, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 8: Kung Pao Chicken
+Food 1: Kung Pao Chicken
+Ingredients 1: Chicken Breast, Peanuts, Dried Chili, Soy Sauce, Vinegar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 9: Salmon Teriyaki
+Food 1: Salmon Teriyaki
+Ingredients 1: Salmon, Soy Sauce, Mirin, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 10: Mapo Tofu with Pork
+Food 1: Mapo Tofu
+Ingredients 1: Soft Tofu, Minced Pork, Doubanjiang, Sichuan Peppercorn, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 11: Oyakodon
+Food 1: Oyakodon
+Ingredients 1: Short Grain Rice, Chicken Thigh, Egg, Onion, Dashi, Soy Sauce
+Session: Lunch
+
+Meal 12: Gyudon
+Food 1: Gyudon
+Ingredients 1: Short Grain Rice, Sliced Beef, Onion, Soy Sauce, Mirin
+Session: Lunch
+
+Meal 13: Pork Dumplings
+Food 1: Pork Jiaozi
+Ingredients 1: Wheat Wrapper, Minced Pork, Cabbage, Scallions, Ginger
+Session: Lunch
+
+Meal 14: Chicken Karaage and Rice
+Food 1: Karaage
+Ingredients 1: Chicken Thigh, Soy Sauce, Ginger, Potato Starch, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 15: Shrimp Fried Rice
+Food 1: Shrimp Fried Rice
+Ingredients 1: White Rice, Shrimp, Egg, Scallions, Soy Sauce, Oil
+Session: Lunch
+
+Meal 16: Spicy Pork Bulgogi
+Food 1: Jeyuk Bokkeum
+Ingredients 1: Sliced Pork, Gochujang, Soy Sauce, Onion, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 17: Kimchi Jjigae with Pork
+Food 1: Kimchi Jjigae
+Ingredients 1: Kimchi, Pork Belly, Tofu, Scallions, Gochugaru
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 18: Sushi Nigiri Assortment
+Food 1: Sushi Nigiri
+Ingredients 1: Short Grain Rice, Salmon, Tuna, Vinegar, Sugar
+Session: Lunch
+
+Meal 19: General Tso's Chicken
+Food 1: General Tso Chicken
+Ingredients 1: Chicken Thigh, Cornstarch, Soy Sauce, Vinegar, Sugar, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 20: Char Siu and Rice
+Food 1: Char Siu
+Ingredients 1: Pork Shoulder, Hoisin Sauce, Honey, Soy Sauce, Five Spice
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 21: Unadon
+Food 1: Unadon
+Ingredients 1: Short Grain Rice, Grilled Eel, Soy Sauce, Mirin, Sugar
+Session: Lunch
+
+Meal 22: Seafood Udon
+Food 1: Seafood Udon
+Ingredients 1: Udon Noodles, Dashi, Shrimp, Squid, Scallions
+Session: Lunch
+
+Meal 23: Beef and Broccoli
+Food 1: Beef and Broccoli
+Ingredients 1: Sliced Beef, Broccoli, Oyster Sauce, Soy Sauce, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 24: Hong Shao Rou
+Food 1: Braised Pork Belly
+Ingredients 1: Pork Belly, Soy Sauce, Sugar, Star Anise, Ginger
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 25: Shrimp Yakisoba
+Food 1: Shrimp Yakisoba
+Ingredients 1: Yakisoba Noodles, Shrimp, Cabbage, Carrot, Yakisoba Sauce
+Session: Lunch
+
+Meal 26: Bibimbap with Beef
+Food 1: Bibimbap
+Ingredients 1: Short Grain Rice, Minced Beef, Egg, Spinach, Gochujang
+Session: Lunch
+
+Meal 27: Chicken Chow Mein
+Food 1: Chicken Chow Mein
+Ingredients 1: Wheat Noodles, Chicken Breast, Cabbage, Soy Sauce, Scallions
+Session: Lunch
+
+Meal 28: Wonton Noodle Soup
+Food 1: Wonton Noodle Soup
+Ingredients 1: Egg Noodles, Pork Wontons, Chicken Broth, Bok Choy, Scallions
+Session: Lunch
+
+Meal 29: Shrimp Tempura Udon
+Food 1: Shrimp Tempura
+Ingredients 1: Shrimp, Wheat Flour, Water, Oil
+Food 2: Udon Noodle Soup
+Ingredients 2: Udon Noodles, Dashi, Soy Sauce, Mirin
+Session: Lunch
+
+Meal 30: Roast Duck and Rice
+Food 1: Roast Duck
+Ingredients 1: Duck, Hoisin Sauce, Five Spice, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 31: Steamed Fish with Soy Sauce
+Food 1: Steamed Fish
+Ingredients 1: White Fish, Soy Sauce, Ginger, Scallions, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 32: Yangnyeom Chicken and Rice
+Food 1: Yangnyeom Chicken
+Ingredients 1: Chicken, Potato Starch, Gochujang, Garlic, Sugar, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 33: Katsudon
+Food 1: Katsudon
+Ingredients 1: Short Grain Rice, Pork Katsu, Egg, Onion, Soy Sauce, Dashi
+Session: Lunch
+
+Meal 34: Sizzling Beef and Rice
+Food 1: Black Pepper Beef
+Ingredients 1: Sliced Beef, Black Pepper, Onion, Bell Pepper, Soy Sauce
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Lunch
+
+Meal 35: Samgyetang
+Food 1: Samgyetang
+Ingredients 1: Whole Chicken, Ginseng, Glutinous Rice, Garlic, Jujube
+Session: Lunch
+
+Mid Morning East Asia Meals (35 Sessions)
+
+Meal 1: Green Tea and Edamame
+Food 1: Green Tea
+Ingredients 1: Green Tea Leaves, Water
+Food 2: Edamame
+Ingredients 2: Edamame, Salt
+Session: Mid Morning
+
+Meal 2: Oolong Tea and Watermelon
+Food 1: Oolong Tea
+Ingredients 1: Oolong Tea Leaves, Water
+Food 2: Watermelon
+Ingredients 2: Watermelon
+Session: Mid Morning
+
+Meal 3: Soy Milk and Asian Pear
+Food 1: Soy Milk
+Ingredients 1: Soybeans, Water, Sugar
+Food 2: Asian Pear
+Ingredients 2: Asian Pear
+Session: Mid Morning
+
+Meal 4: Matcha and Mochi
+Food 1: Matcha
+Ingredients 1: Matcha Powder, Water
+Food 2: Mochi
+Ingredients 2: Glutinous Rice Flour, Sugar, Water
+Session: Mid Morning
+
+Meal 5: Barley Tea and Rice Crackers
+Food 1: Barley Tea
+Ingredients 1: Roasted Barley, Water
+Food 2: Rice Crackers
+Ingredients 2: Rice Flour, Soy Sauce
+Session: Mid Morning
+
+Meal 6: Chrysanthemum Tea and Jujube
+Food 1: Chrysanthemum Tea
+Ingredients 1: Dried Chrysanthemum, Water
+Food 2: Dried Jujube
+Ingredients 2: Jujube
+Session: Mid Morning
+
+Meal 7: Jasmine Tea and Pineapple
+Food 1: Jasmine Tea
+Ingredients 1: Jasmine Tea Leaves, Water
+Food 2: Pineapple
+Ingredients 2: Pineapple
+Session: Mid Morning
+
+Meal 8: Sweet Potato and Barley Tea
+Food 1: Steamed Sweet Potato
+Ingredients 1: Sweet Potato
+Food 2: Barley Tea
+Ingredients 2: Roasted Barley, Water
+Session: Mid Morning
+
+Meal 9: Steamed Corn
+Food 1: Steamed Corn
+Ingredients 1: Corn, Water, Salt
+Session: Mid Morning
+
+Meal 10: Plum Tea
+Food 1: Plum Tea
+Ingredients 1: Plum Extract, Water, Honey
+Session: Mid Morning
+
+Meal 11: Red Bean Soup
+Food 1: Red Bean Soup
+Ingredients 1: Red Beans, Sugar, Water
+Session: Mid Morning
+
+Meal 12: Sweet Tofu Brain
+Food 1: Sweet Douhua
+Ingredients 1: Silken Tofu, Sugar Syrup
+Session: Mid Morning
+
+Meal 13: Kombu Tea
+Food 1: Kombu Tea
+Ingredients 1: Dried Kombu, Water, Salt
+Session: Mid Morning
+
+Meal 14: Yakult and Apple
+Food 1: Yakult
+Ingredients 1: Fermented Milk, Sugar, Water
+Food 2: Apple
+Ingredients 2: Apple
+Session: Mid Morning
+
+Meal 15: Cantaloupe
+Food 1: Cantaloupe
+Ingredients 1: Cantaloupe
+Session: Mid Morning
+
+Meal 16: Yuzu Tea
+Food 1: Yuzu Tea
+Ingredients 1: Yuzu Marmalade, Water
+Session: Mid Morning
+
+Meal 17: Black Sesame Soup
+Food 1: Black Sesame Soup
+Ingredients 1: Black Sesame Seeds, Rice Flour, Sugar, Water
+Session: Mid Morning
+
+Meal 18: Persimmon
+Food 1: Persimmon
+Ingredients 1: Persimmon
+Session: Mid Morning
+
+Meal 19: Mung Bean Soup
+Food 1: Mung Bean Soup
+Ingredients 1: Mung Beans, Sugar, Water
+Session: Mid Morning
+
+Meal 20: Roasted Chestnuts
+Food 1: Roasted Chestnuts
+Ingredients 1: Chestnuts
+Session: Mid Morning
+
+Meal 21: Asian Pear and Green Tea
+Food 1: Asian Pear
+Ingredients 1: Asian Pear
+Food 2: Green Tea
+Ingredients 2: Green Tea Leaves, Water
+Session: Mid Morning
+
+Meal 22: Mango
+Food 1: Mango
+Ingredients 1: Mango
+Session: Mid Morning
+
+Meal 23: Grapes and White Tea
+Food 1: Grapes
+Ingredients 1: Grapes
+Food 2: White Tea
+Ingredients 2: White Tea Leaves, Water
+Session: Mid Morning
+
+Meal 24: Steamed Taro and Tea
+Food 1: Steamed Taro
+Ingredients 1: Taro Root, Sugar
+Food 2: Oolong Tea
+Ingredients 2: Oolong Tea Leaves, Water
+Session: Mid Morning
+
+Meal 25: Lychee
+Food 1: Lychee
+Ingredients 1: Lychee
+Session: Mid Morning
+
+Meal 26: Longan
+Food 1: Longan
+Ingredients 1: Longan
+Session: Mid Morning
+
+Meal 27: Ginger Tea and Rice Cake
+Food 1: Ginger Tea
+Ingredients 1: Ginger, Brown Sugar, Water
+Food 2: Rice Cake
+Ingredients 2: Glutinous Rice Flour, Water, Sugar
+Session: Mid Morning
+
+Meal 28: Lotus Root Tea
+Food 1: Lotus Root Tea
+Ingredients 1: Dried Lotus Root, Water
+Session: Mid Morning
+
+Meal 29: Mandarin Oranges
+Food 1: Mandarin Oranges
+Ingredients 1: Mandarin Orange
+Session: Mid Morning
+
+Meal 30: Dango and Matcha
+Food 1: Mitarashi Dango
+Ingredients 1: Glutinous Rice Flour, Soy Sauce, Sugar, Water
+Food 2: Matcha
+Ingredients 2: Matcha Powder, Water
+Session: Mid Morning
+
+Meal 31: Pomegranate
+Food 1: Pomegranate
+Ingredients 1: Pomegranate seeds
+Session: Mid Morning
+
+Meal 32: Roasted Peanuts and Tea
+Food 1: Roasted Peanuts
+Ingredients 1: Peanuts, Salt
+Food 2: Green Tea
+Ingredients 2: Green Tea Leaves, Water
+Session: Mid Morning
+
+Meal 33: Strawberry and Milk
+Food 1: Strawberry
+Ingredients 1: Strawberry
+Food 2: Milk
+Ingredients 2: Milk
+Session: Mid Morning
+
+Meal 34: Sweet Soy Milk
+Food 1: Sweet Soy Milk
+Ingredients 1: Soybeans, Water, Sugar
+Session: Mid Morning
+
+Meal 35: Honeydew Melon
+Food 1: Honeydew Melon
+Ingredients 1: Honeydew Melon
+Session: Mid Morning
+
+Evening East Asia Meals (35 Sessions)
+
+Meal 1: Tremella Mushroom Soup
+Food 1: Tremella Soup
+Ingredients 1: Tremella Mushroom, Goji Berries, Jujube, Water, Rock Sugar
+Session: Evening
+
+Meal 2: Black Sesame Sweet Soup
+Food 1: Black Sesame Soup
+Ingredients 1: Black Sesame Seeds, Rice Flour, Sugar, Water
+Session: Evening
+
+Meal 3: Seaweed Salad
+Food 1: Wakame Salad
+Ingredients 1: Wakame, Sesame Oil, Rice Vinegar, Sesame Seeds
+Session: Evening
+
+Meal 4: Red Bean and Walnut Soup
+Food 1: Red Bean Soup
+Ingredients 1: Red Beans, Walnuts, Sugar, Water
+Session: Evening
+
+Meal 5: Matcha and Edamame
+Food 1: Matcha
+Ingredients 1: Matcha Powder, Water
+Food 2: Edamame
+Ingredients 2: Edamame, Salt
+Session: Evening
+
+Meal 6: Walnut Congee
+Food 1: Walnut Congee
+Ingredients 1: White Rice, Walnuts, Water
+Session: Evening
+
+Meal 7: Tofu with Black Sesame Dressing
+Food 1: Tofu Salad
+Ingredients 1: Silken Tofu, Black Sesame Paste, Soy Sauce
+Session: Evening
+
+Meal 8: Goji Berry Tea and Pine Nuts
+Food 1: Goji Tea
+Ingredients 1: Goji Berries, Water
+Food 2: Pine Nuts
+Ingredients 2: Pine Nuts
+Session: Evening
+
+Meal 9: Roasted Seaweed Snacks
+Food 1: Roasted Nori
+Ingredients 1: Nori, Sesame Oil, Salt
+Session: Evening
+
+Meal 10: Jujube and Ginger Tea
+Food 1: Jujube Tea
+Ingredients 1: Jujube, Ginger, Water, Honey
+Session: Evening
+
+Meal 11: Wood Ear Mushroom Salad
+Food 1: Wood Ear Salad
+Ingredients 1: Wood Ear Mushroom, Garlic, Rice Vinegar, Sesame Oil
+Session: Evening
+
+Meal 12: Sweet Potato Soup
+Food 1: Sweet Potato Soup
+Ingredients 1: Sweet Potato, Ginger, Sugar, Water
+Session: Evening
+
+Meal 13: Almond Dessert
+Food 1: Almond Tofu
+Ingredients 1: Almond Milk, Agar Agar, Sugar
+Session: Evening
+
+Meal 14: Soy Milk and Pumpkin Seeds
+Food 1: Soy Milk
+Ingredients 1: Soybeans, Water, Sugar
+Food 2: Pumpkin Seeds
+Ingredients 2: Pumpkin Seeds
+Session: Evening
+
+Meal 15: Lotus Seed Paste Bun
+Food 1: Lotus Seed Bun
+Ingredients 1: Wheat Flour, Lotus Seeds, Sugar, Yeast
+Session: Evening
+
+Meal 16: Green Tea and Roasted Walnuts
+Food 1: Green Tea
+Ingredients 1: Green Tea Leaves, Water
+Food 2: Walnuts
+Ingredients 2: Walnuts
+Session: Evening
+
+Meal 17: Oolong Tea and Goji Berries
+Food 1: Oolong Tea
+Ingredients 1: Oolong Tea Leaves, Water
+Food 2: Goji Berries
+Ingredients 2: Goji Berries
+Session: Evening
+
+Meal 18: Steamed Kelp Roll
+Food 1: Kelp Roll
+Ingredients 1: Kelp, Tofu, Carrot, Soy Sauce
+Session: Evening
+
+Meal 19: Tremella and Papaya Dessert
+Food 1: Papaya Tremella Soup
+Ingredients 1: Tremella Mushroom, Papaya, Sugar, Water
+Session: Evening
+
+Meal 20: Black Bean Tea
+Food 1: Black Bean Tea
+Ingredients 1: Roasted Black Beans, Water
+Session: Evening
+
+Meal 21: Steamed Chestnuts and Black Tea
+Food 1: Chestnuts
+Ingredients 1: Chestnuts
+Food 2: Black Tea
+Ingredients 2: Black Tea Leaves, Water
+Session: Evening
+
+Meal 22: Peanut and Black Sesame Brittle
+Food 1: Sesame Brittle
+Ingredients 1: Peanuts, Black Sesame Seeds, Sugar
+Session: Evening
+
+Meal 23: Seaweed Soup
+Food 1: Miyeok-guk
+Ingredients 1: Seaweed, Sesame Oil, Soy Sauce, Water
+Session: Evening
+
+Meal 24: Adzuki Bean Mochi
+Food 1: Daifuku
+Ingredients 1: Glutinous Rice Flour, Red Beans, Sugar, Water
+Session: Evening
+
+Meal 25: Matcha Roll Cake
+Food 1: Matcha Roll Cake
+Ingredients 1: Wheat Flour, Egg, Matcha Powder, Cream, Sugar
+Session: Evening
+
+Meal 26: Chrysanthemum and Wolfberry Tea
+Food 1: Chrysanthemum Tea
+Ingredients 1: Chrysanthemum, Goji Berries, Water
+Session: Evening
+
+Meal 27: Pine Nut Porridge
+Food 1: Jatjuk
+Ingredients 1: Pine Nuts, White Rice, Water, Salt
+Session: Evening
+
+Meal 28: Boiled Soybeans
+Food 1: Soybeans
+Ingredients 1: Soybeans, Water, Salt
+Session: Evening
+
+Meal 29: Jujube Cake
+Food 1: Jujube Cake
+Ingredients 1: Jujube, Wheat Flour, Sugar, Egg
+Session: Evening
+
+Meal 30: Black Rice Congee
+Food 1: Black Rice Congee
+Ingredients 1: Black Rice, Water, Sugar
+Session: Evening
+
+Meal 31: Ginkgo Nut Dessert
+Food 1: Ginkgo Soup
+Ingredients 1: Ginkgo Nuts, Yuba, Sugar, Water
+Session: Evening
+
+Meal 32: Pumpkin Seeds and Green Tea
+Food 1: Pumpkin Seeds
+Ingredients 1: Pumpkin Seeds
+Food 2: Green Tea
+Ingredients 2: Green Tea Leaves, Water
+Session: Evening
+
+Meal 33: Kelp Knot Salad
+Food 1: Kelp Salad
+Ingredients 1: Kelp Knots, Garlic, Sesame Oil, Rice Vinegar
+Session: Evening
+
+Meal 34: Black Sesame Dumplings
+Food 1: Tangyuan
+Ingredients 1: Glutinous Rice Flour, Black Sesame Seeds, Sugar, Water
+Session: Evening
+
+Meal 35: Miso Soup with Wakame
+Food 1: Miso Soup
+Ingredients 1: Miso Paste, Dashi, Wakame
+Session: Evening
+
+Dinner East Asia Meals (35 Sessions)
+
+Meal 1: Tofu and Bok Choy Soup
+Food 1: Clear Tofu Soup
+Ingredients 1: Soft Tofu, Bok Choy, Vegetable Broth, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 2: Vegetable Stir-fry and Congee
+Food 1: Stir-fry
+Ingredients 1: Cabbage, Carrot, Mushroom, Soy Sauce
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Dinner
+
+Meal 3: Garlic Eggplant and Rice
+Food 1: Garlic Eggplant
+Ingredients 1: Eggplant, Garlic, Soy Sauce, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 4: Miso Udon Soup
+Food 1: Miso Udon
+Ingredients 1: Udon Noodles, Miso Paste, Dashi, Tofu, Wakame
+Session: Dinner
+
+Meal 5: Braised Daikon and Rice
+Food 1: Braised Daikon
+Ingredients 1: Daikon Radish, Carrot, Soy Sauce, Dashi
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 6: Garlic Spinach and Rice
+Food 1: Garlic Spinach
+Ingredients 1: Spinach, Garlic, Sesame Oil, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 7: Mapo Tofu
+Food 1: Mapo Tofu
+Ingredients 1: Soft Tofu, Mushroom, Doubanjiang, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 8: Veg Hot Pot
+Food 1: Hot Pot
+Ingredients 1: Vegetable Broth, Napa Cabbage, Tofu, Shiitake Mushroom
+Session: Dinner
+
+Meal 9: Lotus Root Stir-fry
+Food 1: Lotus Root
+Ingredients 1: Lotus Root, Soy Sauce, Sesame Oil, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 10: Braised Tofu and Rice
+Food 1: Braised Tofu
+Ingredients 1: Firm Tofu, Shiitake Mushroom, Soy Sauce, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 11: Water Spinach Stir-fry
+Food 1: Water Spinach
+Ingredients 1: Water Spinach, Garlic, Oyster Sauce
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 12: Yuba Roll and Rice
+Food 1: Yuba Roll
+Ingredients 1: Tofu Skin, Carrot, Mushroom, Soy Sauce
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 13: Japchae
+Food 1: Japchae
+Ingredients 1: Glass Noodles, Spinach, Carrot, Soy Sauce
+Session: Dinner
+
+Meal 14: Scallion Pancake and Soy Milk
+Food 1: Scallion Pancake
+Ingredients 1: Wheat Flour, Scallions, Oil, Salt
+Food 2: Soy Milk
+Ingredients 2: Soybeans, Water
+Session: Dinner
+
+Meal 15: Cold Sesame Noodles
+Food 1: Sesame Noodles
+Ingredients 1: Wheat Noodles, Sesame Paste, Soy Sauce, Cucumber
+Session: Dinner
+
+Meal 16: Tomato Tofu Stir-fry and Rice
+Food 1: Tomato Tofu Stir-fry
+Ingredients 1: Tomato, Firm Tofu, Oil, Scallions, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 17: Vegetable Dumpling Soup
+Food 1: Dumpling Soup
+Ingredients 1: Wheat Wrapper, Cabbage, Shiitake Mushroom, Vegetable Broth
+Session: Dinner
+
+Meal 18: Cucumber Salad and Congee
+Food 1: Cucumber Salad
+Ingredients 1: Cucumber, Garlic, Rice Vinegar, Sesame Oil
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Dinner
+
+Meal 19: Potato and Carrot Curry
+Food 1: Curry
+Ingredients 1: Curry Roux, Potato, Carrot, Onion, Water
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 20: Radish Cake and Soy Milk
+Food 1: Radish Cake
+Ingredients 1: Daikon Radish, Rice Flour, Shiitake Mushroom, Salt
+Food 2: Soy Milk
+Ingredients 2: Soybeans, Water
+Session: Dinner
+
+Meal 21: Pan-Fried Tofu and Rice
+Food 1: Pan-Fried Tofu
+Ingredients 1: Firm Tofu, Gochugaru, Soy Sauce, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 22: Seaweed Salad and Rice
+Food 1: Seaweed Salad
+Ingredients 1: Wakame, Sesame Oil, Rice Vinegar, Soy Sauce, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 23: Steamed Sweet Potato and Congee
+Food 1: Steamed Sweet Potato
+Ingredients 1: Sweet Potato
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Dinner
+
+Meal 24: Sweet and Sour Tofu
+Food 1: Sweet and Sour Tofu
+Ingredients 1: Firm Tofu, Black Vinegar, Sugar, Tomato Paste, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 25: Miso Glazed Eggplant
+Food 1: Nasu Dengaku
+Ingredients 1: Eggplant, Miso Paste, Sugar, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 26: Braised Shiitake Mushroom
+Food 1: Braised Shiitake
+Ingredients 1: Shiitake Mushroom, Soy Sauce, Sugar, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 27: Cold Tofu Salad
+Food 1: Cold Tofu Salad
+Ingredients 1: Silken Tofu, Soy Sauce, Sesame Oil, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 28: Pumpkin Congee
+Food 1: Pumpkin Congee
+Ingredients 1: White Rice, Pumpkin, Water
+Session: Dinner
+
+Meal 29: Dry Pot Cauliflower
+Food 1: Dry Pot Cauliflower
+Ingredients 1: Cauliflower, Dried Chili, Soy Sauce, Garlic, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 30: Buddhist Delight
+Food 1: Luohan Zhai
+Ingredients 1: Firm Tofu, Wood Ear Mushroom, Bamboo Shoots, Carrot, Soy Sauce
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 31: Soba Noodle Soup
+Food 1: Soba Noodle Soup
+Ingredients 1: Buckwheat Noodles, Kombu Dashi, Shiitake Mushroom, Soy Sauce
+Session: Dinner
+
+Meal 32: Zucchini Stir-fry
+Food 1: Zucchini Stir-fry
+Ingredients 1: Zucchini, Garlic, Sesame Oil, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 33: Edamame and Tofu Stir-fry
+Food 1: Edamame Tofu Stir-fry
+Ingredients 1: Edamame, Firm Tofu, Soy Sauce, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 34: Taro Root Soup
+Food 1: Taro Soup
+Ingredients 1: Taro Root, Vegetable Broth, Ginger
+Session: Dinner
+
+Meal 35: Pickled Radish and Congee
+Food 1: Pickled Radish
+Ingredients 1: Daikon Radish, Rice Vinegar, Sugar, Salt
+Food 2: Plain Congee
+Ingredients 2: White Rice, Water
+Session: Dinner
+
+Dinner East Asia Meals (35 Sessions)
+
+Meal 1: Steamed Fish and Rice
+Food 1: Steamed Fish
+Ingredients 1: White Fish, Soy Sauce, Ginger, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 2: Chicken Pho
+Food 1: Pho Ga
+Ingredients 1: Rice Noodles, Chicken Breast, Chicken Broth, Bean Sprouts, Basil
+Session: Dinner
+
+Meal 3: Dumpling Soup
+Food 1: Mandu-guk
+Ingredients 1: Wheat Wrapper, Minced Pork, Cabbage, Beef Broth
+Session: Dinner
+
+Meal 4: Kimchi Fried Rice
+Food 1: Kimchi Fried Rice
+Ingredients 1: White Rice, Kimchi, Sesame Oil, Egg
+Session: Dinner
+
+Meal 5: Steamed Egg and Rice
+Food 1: Steamed Egg
+Ingredients 1: Egg, Water, Salt, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 6: Beef and Enoki Roll
+Food 1: Beef Enoki Roll
+Ingredients 1: Sliced Beef, Enoki Mushroom, Soy Sauce, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 7: Steamed Chicken and Shiitake
+Food 1: Steamed Chicken
+Ingredients 1: Chicken Thigh, Shiitake Mushroom, Soy Sauce, Ginger
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 8: Shrimp and Asparagus
+Food 1: Shrimp Stir-fry
+Ingredients 1: Shrimp, Asparagus, Garlic, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 9: Tomato and Egg Stir-fry
+Food 1: Tomato Egg
+Ingredients 1: Tomato, Egg, Scallions, Salt, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 10: Cold Buckwheat Noodles
+Food 1: Naengmyeon
+Ingredients 1: Buckwheat Noodles, Beef Broth, Cucumber, Pear, Boiled Egg
+Session: Dinner
+
+Meal 11: Clam Soup and Rice
+Food 1: Clam Soup
+Ingredients 1: Clams, Water, Garlic, Scallions
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 12: Grilled Mackerel and Rice
+Food 1: Grilled Mackerel
+Ingredients 1: Mackerel, Salt, Lemon
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 13: Chicken Meatballs and Rice
+Food 1: Tsukune
+Ingredients 1: Minced Chicken, Onion, Soy Sauce, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 14: Steamed Pork Ribs
+Food 1: Steamed Ribs
+Ingredients 1: Pork Ribs, Black Bean Sauce, Garlic, Soy Sauce
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 15: Shrimp Congee
+Food 1: Shrimp Congee
+Ingredients 1: White Rice, Shrimp, Water, Ginger, Scallions
+Session: Dinner
+
+Meal 16: Sukiyaki Bowl
+Food 1: Sukiyaki
+Ingredients 1: Sliced Beef, Tofu, Napa Cabbage, Soy Sauce, Mirin
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 17: Chicken Corn Soup
+Food 1: Chicken Corn Soup
+Ingredients 1: Chicken Breast, Corn, Chicken Broth, Egg
+Session: Dinner
+
+Meal 18: Fish Ball Noodle Soup
+Food 1: Fish Ball Soup
+Ingredients 1: Rice Noodles, Fish Balls, Chicken Broth, Bok Choy
+Session: Dinner
+
+Meal 19: Steamed Dumplings
+Food 1: Xiaolongbao
+Ingredients 1: Wheat Wrapper, Minced Pork, Pork Broth Gelatin, Ginger
+Session: Dinner
+
+Meal 20: Steamed Clams
+Food 1: Sakamushi
+Ingredients 1: Clams, Sake, Scallions, Butter
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 21: Beef Noodle Soup
+Food 1: Beef Noodle Soup
+Ingredients 1: Wheat Noodles, Beef Shank, Beef Broth, Bok Choy, Star Anise
+Session: Dinner
+
+Meal 22: Hainanese Chicken Rice
+Food 1: Hainanese Chicken
+Ingredients 1: Chicken, Ginger, Scallions, Sesame Oil
+Food 2: Chicken Fat Rice
+Ingredients 2: White Rice, Chicken Broth, Chicken Fat, Garlic
+Session: Dinner
+
+Meal 23: Pork Katsu Curry
+Food 1: Pork Katsu
+Ingredients 1: Pork Loin, Panko, Egg, Wheat Flour, Oil
+Food 2: Japanese Curry Rice
+Ingredients 2: Short Grain Rice, Curry Roux, Potato, Carrot
+Session: Dinner
+
+Meal 24: Teriyaki Chicken
+Food 1: Teriyaki Chicken
+Ingredients 1: Chicken Thigh, Soy Sauce, Mirin, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 25: Tonkotsu Ramen
+Food 1: Tonkotsu Ramen
+Ingredients 1: Ramen Noodles, Pork Broth, Chashu Pork, Soft Boiled Egg, Scallions
+Session: Dinner
+
+Meal 26: Bulgogi and Rice
+Food 1: Bulgogi
+Ingredients 1: Sliced Beef, Soy Sauce, Sugar, Pear Juice, Sesame Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 27: Sweet and Sour Pork
+Food 1: Tangsuyuk
+Ingredients 1: Pork, Potato Starch, Vinegar, Sugar, Pineapple, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 28: Kung Pao Chicken
+Food 1: Kung Pao Chicken
+Ingredients 1: Chicken Breast, Peanuts, Dried Chili, Soy Sauce, Vinegar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 29: Salmon Teriyaki
+Food 1: Salmon Teriyaki
+Ingredients 1: Salmon, Soy Sauce, Mirin, Sugar
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 30: Oyakodon
+Food 1: Oyakodon
+Ingredients 1: Short Grain Rice, Chicken Thigh, Egg, Onion, Dashi, Soy Sauce
+Session: Dinner
+
+Meal 31: Gyudon
+Food 1: Gyudon
+Ingredients 1: Short Grain Rice, Sliced Beef, Onion, Soy Sauce, Mirin
+Session: Dinner
+
+Meal 32: Chicken Karaage
+Food 1: Karaage
+Ingredients 1: Chicken Thigh, Soy Sauce, Ginger, Potato Starch, Oil
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 33: Spicy Pork Bulgogi
+Food 1: Jeyuk Bokkeum
+Ingredients 1: Sliced Pork, Gochujang, Soy Sauce, Onion, Garlic
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+Meal 34: Wonton Noodle Soup
+Food 1: Wonton Noodle Soup
+Ingredients 1: Egg Noodles, Pork Wontons, Chicken Broth, Bok Choy, Scallions
+Session: Dinner
+
+Meal 35: Roast Duck and Rice
+Food 1: Roast Duck
+Ingredients 1: Duck, Hoisin Sauce, Five Spice, Salt
+Food 2: Steamed Rice
+Ingredients 2: Short Grain Rice, Water
+Session: Dinner
+
+
+Bed Time East Asia Meals (35 Sessions)
+
+Meal 1: Hot Soy Milk
+Food 1: Soy Milk
+Ingredients 1: Soybeans, Water, Sugar
+Session: Bed Time
+
+Meal 2: Chrysanthemum Tea
+Food 1: Chrysanthemum Tea
+Ingredients 1: Dried Chrysanthemum, Water
+Session: Bed Time
+
+Meal 3: Warm Milk and Honey
+Food 1: Milk
+Ingredients 1: Milk, Honey
+Session: Bed Time
+
+Meal 4: Plain Congee
+Food 1: Plain Congee
+Ingredients 1: White Rice, Water
+Session: Bed Time
+
+Meal 5: Jujube Tea
+Food 1: Jujube Tea
+Ingredients 1: Jujube, Water, Honey
+Session: Bed Time
+
+Meal 6: Lotus Seed Soup
+Food 1: Lotus Seed Soup
+Ingredients 1: Lotus Seeds, Rock Sugar, Water
+Session: Bed Time
+
+Meal 7: Warm Lemon Ginger Water
+Food 1: Lemon Ginger Water
+Ingredients 1: Lemon, Ginger, Water, Honey
+Session: Bed Time
+
+Meal 8: Sweet Potato Soup
+Food 1: Sweet Potato Soup
+Ingredients 1: Sweet Potato, Water, Sugar
+Session: Bed Time
+
+Meal 9: Roasted Barley Tea
+Food 1: Barley Tea
+Ingredients 1: Roasted Barley, Water
+Session: Bed Time
+
+Meal 10: Almond Milk
+Food 1: Almond Milk
+Ingredients 1: Almonds, Water, Sugar
+Session: Bed Time
+
+Meal 11: Lily Bulb Soup
+Food 1: Lily Bulb Soup
+Ingredients 1: Lily Bulb, Tremella Mushroom, Water, Rock Sugar
+Session: Bed Time
+
+Meal 12: Black Sesame Soup
+Food 1: Black Sesame Soup
+Ingredients 1: Black Sesame Seeds, Rice Flour, Sugar, Water
+Session: Bed Time
+
+Meal 13: Longan Tea
+Food 1: Longan Tea
+Ingredients 1: Longan, Jujube, Water
+Session: Bed Time
+
+Meal 14: Boiled Pear Broth
+Food 1: Boiled Pear
+Ingredients 1: Asian Pear, Rock Sugar, Water
+Session: Bed Time
+
+Meal 15: Ginkgo Nut Soup
+Food 1: Ginkgo Soup
+Ingredients 1: Ginkgo Nuts, Sugar, Water
+Session: Bed Time
+
+Meal 16: Clear Miso Broth
+Food 1: Miso Broth
+Ingredients 1: Miso Paste, Dashi, Water
+Session: Bed Time
+
+Meal 17: Taro Soup
+Food 1: Taro Soup
+Ingredients 1: Taro Root, Water, Sugar
+Session: Bed Time
+
+Meal 18: Buckwheat Tea
+Food 1: Buckwheat Tea
+Ingredients 1: Roasted Buckwheat, Water
+Session: Bed Time
+
+Meal 19: Watery Red Bean Soup
+Food 1: Red Bean Soup
+Ingredients 1: Red Beans, Water, Sugar
+Session: Bed Time
+
+Meal 20: Steamed Apple
+Food 1: Steamed Apple
+Ingredients 1: Apple
+Session: Bed Time
+
+Meal 21: Corn Silk Tea
+Food 1: Corn Silk Tea
+Ingredients 1: Corn Silk, Water
+Session: Bed Time
+
+Meal 22: Rice Water
+Food 1: Sungnyung
+Ingredients 1: Roasted Rice Crust, Water
+Session: Bed Time
+
+Meal 23: Yuzu Tea
+Food 1: Yuja Tea
+Ingredients 1: Yuzu Marmalade, Water
+Session: Bed Time
+
+Meal 24: Warm Oat Milk
+Food 1: Oat Milk
+Ingredients 1: Oats, Water
+Session: Bed Time
+
+Meal 25: Steamed Yam
+Food 1: Steamed Yam
+Ingredients 1: Chinese Yam
+Session: Bed Time
+
+Meal 26: Mung Bean Soup
+Food 1: Mung Bean Soup
+Ingredients 1: Mung Beans, Water, Sugar
+Session: Bed Time
+
+Meal 27: Osmanthus Tea
+Food 1: Osmanthus Tea
+Ingredients 1: Dried Osmanthus, Water
+Session: Bed Time
+
+Meal 28: Walnut Soup
+Food 1: Walnut Soup
+Ingredients 1: Walnuts, Rice Flour, Water, Sugar
+Session: Bed Time
+
+Meal 29: Mulberry Tea
+Food 1: Mulberry Tea
+Ingredients 1: Dried Mulberries, Water
+Session: Bed Time
+
+Meal 30: Soft Steamed Egg
+Food 1: Steamed Egg
+Ingredients 1: Egg, Water
+Session: Bed Time
+
+Meal 31: Silken Tofu
+Food 1: Silken Tofu
+Ingredients 1: Silken Tofu, Soy Sauce
+Session: Bed Time
+
+Meal 32: Bamboo Leaf Tea
+Food 1: Bamboo Tea
+Ingredients 1: Bamboo Leaves, Water
+Session: Bed Time
+
+Meal 33: Roasted Corn Tea
+Food 1: Corn Tea
+Ingredients 1: Roasted Corn Kernels, Water
+Session: Bed Time
+
+Meal 34: Soft Oatmeal
+Food 1: Oatmeal
+Ingredients 1: Oats, Water, Milk
+Session: Bed Time
+
+Meal 35: Warm Coconut Milk
+Food 1: Coconut Milk
+Ingredients 1: Coconut Extract, Water, Sugar
+Session: Bed Time

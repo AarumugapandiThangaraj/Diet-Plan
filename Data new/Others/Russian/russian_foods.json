@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "Borscht Soup",
+    "Cuisine": "Russian",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Quantity": 300.0,
+    "Unit": "g",
+    "Min_Quantity": 240.0,
+    "Max_Quantity": 360.0,
+    "Ingredients": [],
+    "Supports": [
+      "Skin Repair"
+    ],
+    "Preparation": "",
+    "Type": "Base",
+    "Warning": false,
+    "ID": "FOOD_RUS_0001"
+  },
+  {
+    "Name": "Sour Cream",
+    "Cuisine": "Russian",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Quantity": 30.0,
+    "Unit": "g",
+    "Min_Quantity": 24.0,
+    "Max_Quantity": 36.0,
+    "Ingredients": [],
+    "Supports": [
+      "Skin Repair"
+    ],
+    "Preparation": "",
+    "Type": "Base",
+    "Warning": false,
+    "ID": "FOOD_RUS_0002"
+  }
+]

@@ -1,0 +1,151 @@
+[
+    {
+        "allergen_ID": "ALLERGEN_000001",
+        "allergen_category": "dairy_allergens",
+        "allergen_name": "milk",
+        "nutritive_value": {
+            "energy_kcal": "66",
+            "protein_g": "3.2",
+            "fat_g": "3.9",
+            "carbohydrate_g": "4.8"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000002",
+        "allergen_category": "dairy_allergens",
+        "allergen_name": "cheese",
+        "nutritive_value": {
+            "energy_kcal": "330-370",
+            "protein_g": "22-25",
+            "fat_g": "27-30",
+            "carbohydrate_g": "1-3"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000003",
+        "allergen_category": "dairy_allergens",
+        "allergen_name": "butter",
+        "nutritive_value": {
+            "energy_kcal": "717",
+            "protein_g": "0.5-1",
+            "fat_g": "81",
+            "carbohydrate_g": "0-1"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000004",
+        "allergen_category": "gluten_and_cereals",
+        "allergen_name": "wheat",
+        "nutritive_value": {
+            "energy_kcal": "320",
+            "protein_g": "12",
+            "fat_g": "1.5",
+            "carbohydrate_g": "72",
+            "fiber_g": "10-12"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000005",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "peanut",
+        "nutritive_value": {
+            "energy_kcal": "560-590",
+            "protein_g": "24-26",
+            "fat_g": "48-50",
+            "carbohydrate_g": "16",
+            "fiber_g": "8-10"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000006",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "cashew",
+        "nutritive_value": {
+            "energy_kcal": "550-570",
+            "protein_g": "18-20",
+            "fat_g": "42-46",
+            "carbohydrate_g": "30",
+            "fiber_g": "3-4"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000007",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "almond",
+        "nutritive_value": {
+            "energy_kcal": "570",
+            "protein_g": "20-22",
+            "fat_g": "49-52",
+            "carbohydrate_g": "20-22",
+            "fiber_g": "12-14"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000008",
+        "allergen_category": "nuts_and_seeds",
+        "allergen_name": "sesame_seeds",
+        "nutritive_value": {
+            "energy_kcal": "570-600",
+            "protein_g": "18-20",
+            "fat_g": "48-50",
+            "carbohydrate_g": "23-25",
+            "fiber_g": "11-12"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000009",
+        "allergen_category": "pulses_and_legumes",
+        "allergen_name": "soybean",
+        "nutritive_value": {
+            "energy_kcal": "430-450",
+            "protein_g": "35-40",
+            "fat_g": "18-20",
+            "carbohydrate_g": "30",
+            "fiber_g": "8-10"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000010",
+        "allergen_category": "eggs",
+        "allergen_name": "egg_white",
+        "nutritive_value": {
+            "energy_kcal": "45-50",
+            "protein_g": "10-11",
+            "fat_g": "0",
+            "carbohydrate_g": "1"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000011",
+        "allergen_category": "eggs",
+        "allergen_name": "egg_yolk",
+        "nutritive_value": {
+            "energy_kcal": "300-320",
+            "protein_g": "15-16",
+            "fat_g": "26-28",
+            "carbohydrate_g": "3-4"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000012",
+        "allergen_category": "seafood",
+        "allergen_name": "fish",
+        "nutritive_value": {
+            "energy_kcal": "90-120",
+            "protein_g": "18-22",
+            "fat_g": "1-6",
+            "carbohydrate_g": "0"
+        }
+    },
+    {
+        "allergen_ID": "ALLERGEN_000013",
+        "allergen_category": "meat",
+        "allergen_name": "chicken",
+        "nutritive_value": {
+            "energy_kcal": "165",
+            "protein_g": "31",
+            "fat_g": "3.6",
+            "carbohydrate_g": "0"
+        }
+    }
+]

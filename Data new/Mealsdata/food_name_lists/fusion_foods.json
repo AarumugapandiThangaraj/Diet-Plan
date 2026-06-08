@@ -1,0 +1,2240 @@
+[
+  {
+    "ID": "FOOD_AF_006",
+    "Name": "Akara",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_008",
+    "Name": "Akkawi Cheese Fat_gayer",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_019",
+    "Name": "Almonds",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1108",
+    "Name": "Almonds and Pumpkin Seeds",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-56DB5672",
+    "Name": "Anchovies and Olives Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-6C01AEFF",
+    "Name": "Anchovy Toast",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-9B424124",
+    "Name": "Anchovy Toast with Tomato",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_305",
+    "Name": "Andhra Chicken Curry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_492",
+    "Name": "Andhra Fish Curry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_5E67ED95",
+    "Name": "Apple Cider Vinegar Drink",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B881BD7F",
+    "Name": "Apple Slices",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_262",
+    "Name": "Avial",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-3372C909BB",
+    "Name": "Avocado and Egg Sourdough Toast",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_MM_184",
+    "Name": "Badam Milk",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_6F6AC32D",
+    "Name": "Bagel",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_222",
+    "Name": "Baingan Bharta",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-8D89B0C6",
+    "Name": "Baked Cod Fillet with Balsamic Glaze",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_084",
+    "Name": "Baked Eggplant & Tomato Gratin",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_023",
+    "Name": "Baked Falafel Bites",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_022",
+    "Name": "Baked Kefta & Potato (Siniyet)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0026",
+    "Name": "Baked Stuffed Pasta Shells",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_010",
+    "Name": "Balaleet Base",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_043",
+    "Name": "Balaleet Evening Cup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_072",
+    "Name": "Bamia (Okra) Bezaar Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1441",
+    "Name": "Barley (Jau) Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-D11BE5A3",
+    "Name": "Barley Pilaf",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_019",
+    "Name": "Bean Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_025",
+    "Name": "Beef Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1486",
+    "Name": "Beetroot and Mint Soup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0141",
+    "Name": "Beetroot Carpaccio",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_017",
+    "Name": "Beetroot Hummus Dip",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_A797AD38",
+    "Name": "Belgian Waffles",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_096",
+    "Name": "Bhature",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_271",
+    "Name": "Biryani Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_F96E2D84",
+    "Name": "Black Coffee",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-05B00CFA",
+    "Name": "Blueberries Portion",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_023",
+    "Name": "Boiled Cassava",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A5AB406130",
+    "Name": "Bone Broth Cup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A9B5B408C0",
+    "Name": "Bone Broth Cup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0003",
+    "Name": "Bow Tie Pepperoni Pasta Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_104",
+    "Name": "Bread Pakora",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_4DE8833D",
+    "Name": "Breakfast Burrito",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A6ECB311",
+    "Name": "Breakfast Espresso",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-C0A16AA2",
+    "Name": "Breakfast Oat Milk Latte",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B515C0C9",
+    "Name": "Brewed Coffee",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-9E1EA003",
+    "Name": "Brown Lentil Soup with Balsamic Glaze",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-222C5A79",
+    "Name": "Brown Lentil Soup with Garlic & Rosemary",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A3701FE8",
+    "Name": "Brown Lentil Soup with Tahini Drizzle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-35E2E606",
+    "Name": "Brown Lentil Soup with Tomato & Oregano",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1368D5F5",
+    "Name": "Brown Lentil Soup with Walnut & Almond Sprinkle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_218",
+    "Name": "Cabbage Poriyal",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SEA_BT_017",
+    "Name": "Calamansi Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-6CE615160F",
+    "Name": "Calming Golden Milk with Turmeric",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_014",
+    "Name": "Camel Milk & Oat Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_008",
+    "Name": "Camel Milk Glow",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-2352A65C",
+    "Name": "Cannellini Bean Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-33AF8D5A",
+    "Name": "Caprese Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_056",
+    "Name": "Cardamom Breakfast Dip",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_059",
+    "Name": "Cardamom Rice Pudding",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1D06966F92",
+    "Name": "Carrot and Cucumber Sticks with Hummus",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-F0200A167A",
+    "Name": "Carrot and Cucumber Sticks with Hummus",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_MM_203",
+    "Name": "Carrot Juice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_012",
+    "Name": "Carrot Sticks",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_EV_346",
+    "Name": "Carrot Sticks",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1387",
+    "Name": "Celery Juice Shot",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_014",
+    "Name": "Chakalaka",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-17D9069436",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1E3740F687",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B197A3C9E1",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-79546437D7",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-05564FB5BD",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-4614366650",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-02EE97FE5C",
+    "Name": "Chamomile and Lemon Myrtle Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-09AC7228DF",
+    "Name": "Chamomile and Lemon Myrtle Tea 4",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0057",
+    "Name": "Chamomile Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_UN_502",
+    "Name": "Chamomile Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_895234CC",
+    "Name": "Chamomile Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_372",
+    "Name": "Chana Masala",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_037",
+    "Name": "Chebab (Emirati Pancakes)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_524C454E",
+    "Name": "Chia Pudding",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_312",
+    "Name": "Chicken 65",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_494",
+    "Name": "Chicken Changezi",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_131",
+    "Name": "Chicken Kheema Paratha",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_476",
+    "Name": "Chicken Kolhapuri",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_292",
+    "Name": "Chicken Korma",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-025",
+    "Name": "Chicken Machboos",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0040",
+    "Name": "Chicken Omelette",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_C980DDB2",
+    "Name": "Chicken Pesto Pasta",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_144",
+    "Name": "Chicken Salna",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-035",
+    "Name": "Chicken Soup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_103",
+    "Name": "Chickpea & Spinach Curry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_088",
+    "Name": "Chickpea & Spinach Curry (Light)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DFB568F3",
+    "Name": "Chickpea Salad with Balsamic Glaze",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-F9895B15",
+    "Name": "Chickpea Salad with Cumin & Coriander",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-3F292ABA",
+    "Name": "Chickpea Salad with Feta & Kalamata",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-89BC2468",
+    "Name": "Chickpea Salad with Garlic & Rosemary",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-488DB052",
+    "Name": "Chickpea Salad with Walnut & Almond Sprinkle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-041",
+    "Name": "Chickpea Tashreeb",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_328",
+    "Name": "Chilli Chicken",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_026",
+    "Name": "Cinnamon Baked Apple",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-042",
+    "Name": "Cooked Brown Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0239",
+    "Name": "Cottage Cheese with Pineapple",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1098",
+    "Name": "Cucumber and Tomato Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1077",
+    "Name": "Cucumber Mint Yogurt Dip with Carrots",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_228",
+    "Name": "Cucumber Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_048",
+    "Name": "Cumin & Coriander Seed Night Flush",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_409",
+    "Name": "Dal Dhokli",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_038",
+    "Name": "Date Aseeda",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_027",
+    "Name": "Date Energy Bars",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-003132F8",
+    "Name": "Deconstructed Falafel Wrap",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_010",
+    "Name": "Doro Wat",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1390",
+    "Name": "Dragon Fruit Cubes",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1381",
+    "Name": "Dried Apricots",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0E42A37A",
+    "Name": "Earl Grey Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-763BF87930",
+    "Name": "Edamame and Green Beans Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-2A8F73E582",
+    "Name": "Edamame and Green Beans Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-692F1398F2",
+    "Name": "Edamame and Green Beans Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-2DFD4BFE66",
+    "Name": "Edamame and Green Beans Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-C979F86567",
+    "Name": "Edamame and Green Beans Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-049",
+    "Name": "Egg and Sardine Israeli",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_143",
+    "Name": "Egg Dosa",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_313",
+    "Name": "Egg Fried Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_045",
+    "Name": "Emirati Date Bread Slice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_054",
+    "Name": "Emirati Date Cake Slice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_044",
+    "Name": "Emirati Lentil Rice (Ma'adous) Portion",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AE06C555",
+    "Name": "English Breakfast Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-0E4322C4",
+    "Name": "Espresso Shot",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_32A3EAE5",
+    "Name": "Everything Bagel",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_021",
+    "Name": "Fasolia White Bean Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-051",
+    "Name": "Fattet Hummus",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_033",
+    "Name": "Fennel & Star Anise Steep",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_165",
+    "Name": "Fish Cutlet",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0200",
+    "Name": "Fondue (Single Serving)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-055",
+    "Name": "Freekeh Lentil",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_028",
+    "Name": "Fried Chicken",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_124",
+    "Name": "Fried Egg",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_SIDE_001",
+    "Name": "Fried Plantains",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_003",
+    "Name": "Fufu",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_8F605AA4",
+    "Name": "Garden Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_016",
+    "Name": "Garden Veggie Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_168",
+    "Name": "Garlic Egg Drop Soup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DCEC8F0F",
+    "Name": "Gazpacho",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_018",
+    "Name": "Ginger Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1366",
+    "Name": "Grapefruit Half",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1380",
+    "Name": "Grapes Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-89E5A677",
+    "Name": "Greek Mountain Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-953F3C0B",
+    "Name": "Greek Yogurt Bowl with Honey & Walnuts",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-FC76306119",
+    "Name": "Greek Yogurt with Manuka Honey",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-3075405542",
+    "Name": "Greek Yogurt with Manuka Honey",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-95A9C95C9D",
+    "Name": "Green Banana and Rolled Oats Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-162DD09AAC",
+    "Name": "Green Banana and Rolled Oats Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1A522E40BA",
+    "Name": "Green Banana and Rolled Oats Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_042",
+    "Name": "Green Bean White Bean Braise",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_EV_338",
+    "Name": "Green Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_B3158E3B",
+    "Name": "Green Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_027",
+    "Name": "Grilled Pork",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_016",
+    "Name": "Grilled Tilapia",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_101",
+    "Name": "Grilled Veggie Skewers",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_015",
+    "Name": "Groundnut Soup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_025",
+    "Name": "Halloumi Veggie Skewers",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-067",
+    "Name": "Harees-Style Barley",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_017",
+    "Name": "Hibiscus Drink",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_EM_024",
+    "Name": "Hibiscus Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_056",
+    "Name": "Honey Fig Bite",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_071",
+    "Name": "Honey-Drizzled Regag Bread (Sweet)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_B9B1D132",
+    "Name": "Iced Coffee",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-639CFF5397",
+    "Name": "Ika Mata (Raw Fish Salad)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_005",
+    "Name": "Injera",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-073",
+    "Name": "Iraqi Sabzi Vegetable Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_234",
+    "Name": "Jeera Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_002",
+    "Name": "Jollof Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-5B44DDA2F1",
+    "Name": "Kangaroo Loin and Beetroot Salad 6",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_300",
+    "Name": "Karahi Chicken",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_134",
+    "Name": "Kerala Egg Roast",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_302",
+    "Name": "Kerala Fish Fry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_031",
+    "Name": "Knafeh Mini Cups",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_020",
+    "Name": "Labneh Balls with Za'atar",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-14C99616F7",
+    "Name": "Lean Lamb and Taro Root Mash",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-EDC10A71",
+    "Name": "Lemon Sardines with Dill & Yogurt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-91EC175A",
+    "Name": "Lemon Sardines with Tomato & Oregano",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SEA_B_042",
+    "Name": "Lemongrass Tofu",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_019",
+    "Name": "Lentil & Chard Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-813ACC3198",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-E800CC53A7",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A5D7FF702B",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-85D9FF4568",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-8BB54E3A03",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-CE47F76AAB",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-7A455E7508",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-2540956D50",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DD83DC2905",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DD61FB8C32",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-CDA9C9B121",
+    "Name": "Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-094",
+    "Name": "Lentil Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1AFB5139",
+    "Name": "Lentil Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_048",
+    "Name": "Loomi & Herb Roasted Baby Potatoes",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_045",
+    "Name": "Loomi Fava Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-51C200A85D",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-668EA1058E",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-0FA7653D3A",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-D40B8ABAB1",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A0A5BDC3DF",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-24878D1549",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-F1B81FD9E9",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-9B965E831F",
+    "Name": "Macadamia and Berry Quinoa Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-4CC83C29D4",
+    "Name": "Macadamia Crusted Snapper with Greens",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-E9015FADB3",
+    "Name": "Macadamia Crusted Snapper with Greens",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_296",
+    "Name": "Mangalorean Chicken Ghee Roast",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_090",
+    "Name": "Mango Chunks",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-101",
+    "Name": "Margoog Vegetable and White Bean Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_173BCD57",
+    "Name": "Mashed Potatoes",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_095D3FAF",
+    "Name": "Matcha Latte",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0297",
+    "Name": "Mediterranean Gnocchi",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-923CE2F6",
+    "Name": "Mediterranean Stuffed Eggplant",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_030",
+    "Name": "Medjool & Walnut Duo",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-5896D31C",
+    "Name": "Minestrone Soup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_031",
+    "Name": "Mini Paratha & Karak Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EV_UAE_010",
+    "Name": "Mini Za'atar Manakish",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_097",
+    "Name": "Mixed Heritage Bean Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_EV_339",
+    "Name": "Mixed Nuts",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_039",
+    "Name": "Mohalla Bread",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_013",
+    "Name": "Musabbaha (Warm Chickpea Dip)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-C9D87295",
+    "Name": "Mushroom Risotto",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0154",
+    "Name": "Nicoise Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_025",
+    "Name": "Nutty Labneh & Fruit Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1049",
+    "Name": "Oatmeal with Blueberries",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1096",
+    "Name": "Oats and Almond Milk Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_021",
+    "Name": "Okra Soup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-113",
+    "Name": "Okra Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_443",
+    "Name": "Onion Raita",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_MM_206",
+    "Name": "Onion Salad",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_232",
+    "Name": "Onion Tomato Raita",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_086",
+    "Name": "Onion Tomato Uttapam",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_078",
+    "Name": "Orange & Star Anise Sip",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1039",
+    "Name": "Oven-Baked Tomatoes with Spinach",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-D8ACB17532",
+    "Name": "Pacific Coconut Fish Curry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_123",
+    "Name": "Pan-fried Chicken Sausage",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DD3C4385",
+    "Name": "Pan-fried Tilapia with Feta & Kalamata",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_250",
+    "Name": "Panchmel Dal",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_007",
+    "Name": "Pap",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-9E55D49F5C",
+    "Name": "Papaya and Lime Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1153",
+    "Name": "Papaya and Pomegranate Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1069",
+    "Name": "Papaya Bowl with Seeds",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_060",
+    "Name": "Pecan Half (Premium)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_089",
+    "Name": "Peppermint & Licorice Steep",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_D1946762",
+    "Name": "Peppermint Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_066",
+    "Name": "Pineapple Chunks",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_024",
+    "Name": "Pistachio Date Milk",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1634",
+    "Name": "Pistachios and Dried Figs",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-FB410C94",
+    "Name": "Poached Eggs with Lemon & Herb",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_055",
+    "Name": "Pomegranate Cardamom Splash",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_045",
+    "Name": "Potato Curry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_035",
+    "Name": "Potato Masala",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_247",
+    "Name": "Potato Roast",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-F80EEC77D6",
+    "Name": "Prawn and Zucchini Noodle Stir-fry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-9FD3248613",
+    "Name": "Prawn and Zucchini Noodle Stir-fry",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0071",
+    "Name": "Prawn Fried Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B16C6457",
+    "Name": "Prosciutto-wrapped Figs",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-91B0E244",
+    "Name": "Pumpkin Seeds Handful",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_074",
+    "Name": "Pumpkin Thareed Broth",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_061",
+    "Name": "Pure Aloe Vera Juice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_040",
+    "Name": "Qar'a Red Lentil Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_110",
+    "Name": "Quail Eggs (Portion)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-115",
+    "Name": "Quzi-Style Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0083",
+    "Name": "Ratatouille",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-214A0789",
+    "Name": "Ricotta Toast with Figs",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B1B62CE0",
+    "Name": "Roasted Carrots with Tomato & Oregano",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-116",
+    "Name": "Roasted Cauliflower",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_105",
+    "Name": "Roasted Cauliflower (Zahra)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-BF54C67E",
+    "Name": "Roasted Cauliflower Steaks",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-CBD04F90",
+    "Name": "Roasted Cornish Hen with Cumin & Coriander",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-4011F277",
+    "Name": "Roasted Eggplant with Dill & Yogurt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-91FBC2BF",
+    "Name": "Roasted Eggplant with Olive Oil & Sea Salt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1462",
+    "Name": "Roasted Flaxseeds and Pumpkin Seeds",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-868E1617DE",
+    "Name": "Roasted Macadamia and Pepita Mix",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_037",
+    "Name": "Roasted Nut & Raisin Mix",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_041",
+    "Name": "Roasted Spiced Chickpeas",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-120",
+    "Name": "Roasted Vegetables",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_006",
+    "Name": "Roasted Walnuts",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_001",
+    "Name": "Rooibos Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_050",
+    "Name": "Rosemary & Honey Cognitive Calm",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_SNACK_001",
+    "Name": "Rusks",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_013",
+    "Name": "Sadza",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_025",
+    "Name": "Saffron Camel Milk Sip",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_064",
+    "Name": "Saffron Cauliflower Rice (Base)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_076",
+    "Name": "Saffron Chia Base",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-53C235B2",
+    "Name": "Sauteed Baby Spinach with Dill & Yogurt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1E36F44B",
+    "Name": "Sauteed Baby Spinach with Lemon & Herb",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-2FEAB787",
+    "Name": "Sauteed Baby Spinach with Walnut & Almond Sprinkle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B8394101",
+    "Name": "Seared Scallops with Tomato & Oregano",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-AE7DC5FCE4",
+    "Name": "Seaweed and Sesame Snack",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-E357B9055F",
+    "Name": "Seaweed and Sesame Snack",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_039",
+    "Name": "Semolina Upma",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_MM_198",
+    "Name": "Sesame Seed Drink",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_401",
+    "Name": "Sev Tomato Sabzi",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_001",
+    "Name": "Shakshuka",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_EM_UAE_034",
+    "Name": "Simsim Pinch",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_411",
+    "Name": "Sindhi Kadhi",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-FF0B15F1",
+    "Name": "Sliced Cantaloupe",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BF_UAE_078",
+    "Name": "Sliced Heritage Figs",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-6A2F16D5",
+    "Name": "Snack Tart Cherry Juice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1538",
+    "Name": "Soaked Walnuts and Dates",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-8FE06EA5",
+    "Name": "Spinach & Feta Pie",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1F025FCB",
+    "Name": "Steamed Brown Rice with Feta & Kalamata",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-21454806",
+    "Name": "Steamed Brown Rice with Lemon & Herb",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-58B393B5",
+    "Name": "Steamed Brown Rice with Olive Oil & Sea Salt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-44BC4D48",
+    "Name": "Steamed Brown Rice with Tomato & Oregano",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-3EB2C99C",
+    "Name": "Steamed Green Beans",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-1F05D809",
+    "Name": "Steamed Quinoa with Balsamic Glaze",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-701618B6",
+    "Name": "Steamed Quinoa with Dill & Yogurt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DD4F71EF",
+    "Name": "Steamed Quinoa with Feta & Kalamata",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-449B94A5",
+    "Name": "Steamed Quinoa with Lemon & Herb",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-83782AD8",
+    "Name": "Steamed Quinoa with Walnut & Almond Sprinkle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_MM_205",
+    "Name": "Steamed Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_024",
+    "Name": "Steamed Spinach",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_077",
+    "Name": "Steamed Vegetable Medley",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-132",
+    "Name": "Stuffed Grape Leaves",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_MM_187",
+    "Name": "Sugarcane Juice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_008",
+    "Name": "Suya",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_EV_359",
+    "Name": "Sweet Potato Chaat",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-135",
+    "Name": "Syrian Labneh",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-346262C2",
+    "Name": "Tart Cherry Juice Glass",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_4F2900F2",
+    "Name": "Toast",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1388",
+    "Name": "Toasted Pumpkin and Sesame Seeds",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_LU_264",
+    "Name": "Tomato Rasam",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_EM_002",
+    "Name": "Tulsi Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-26A9F91101",
+    "Name": "Tuna and Avocado Poke Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A4ABD71FB7",
+    "Name": "Tuna and Avocado Poke Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-2D15C27DE7",
+    "Name": "Tuna and Avocado Poke Bowl",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_0032",
+    "Name": "Turkey Cheese Sandwich",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-4167D36ED2",
+    "Name": "Turmeric and Manuka Honey Elixir",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_047",
+    "Name": "Upma",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_047",
+    "Name": "Valerian & Chamomile UAE Fusion",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_B9B27F09",
+    "Name": "Valerian Root Tea",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_DI_407",
+    "Name": "Veg Fried Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SEA_D_030",
+    "Name": "Vegetable Broth and Noodles",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_009",
+    "Name": "Vegetable Majboos",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_071",
+    "Name": "Vegetable Margougat Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-63A7BFC1",
+    "Name": "Vegetable Moussaka",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-149",
+    "Name": "Vegetable Quzi-Style Brown Rice",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_004",
+    "Name": "Vegetable Saloona (Stew)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_099",
+    "Name": "Vegetable Saloona Base",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-ME-150",
+    "Name": "Vegetable Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_BR_052",
+    "Name": "Vegetable Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_LN_UAE_111",
+    "Name": "Vermicelli Rice (Main Side)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_013",
+    "Name": "Walnut & Date Nibble",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-0585F8D3B7",
+    "Name": "Walnut and Chia Seed Bites",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-002589CD45",
+    "Name": "Walnut and Chia Seed Bites",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_1261",
+    "Name": "Walnut and Cinnamon Infused Milk",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-DC9C8E10",
+    "Name": "Warm Almond Milk",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_020",
+    "Name": "Warm Honey Drizzle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SA_UN_001",
+    "Name": "Warm Lemon Water",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SEA_BT_002",
+    "Name": "Warm Milk",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-86357059",
+    "Name": "Warm Milk with Honey",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_BT_UAE_049",
+    "Name": "Warm Soy Milk with Saffron Thread",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_066",
+    "Name": "Wheat Porridge (Base)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-25317D7E",
+    "Name": "Whole Grain Bread with Extra Virgin Olive Oil",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_DN_UAE_020",
+    "Name": "Whole Wheat Bread (Dinner)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_8454C9AF",
+    "Name": "Whole Wheat Crackers",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-7AE62DB9",
+    "Name": "Whole Wheat Pasta with Dill & Yogurt",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-7DB6C7CE",
+    "Name": "Whole Wheat Pasta with Feta & Kalamata",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A2385680",
+    "Name": "Whole Wheat Pasta with Walnut & Almond Sprinkle",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_MM_UAE_072",
+    "Name": "Whole Wheat Rice Cake",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_AF_020",
+    "Name": "Yam Fries",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-9DEEEE872D",
+    "Name": "Zesty Bone Broth",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-EE5F15A634",
+    "Name": "Zesty Bone Broth Cup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-8ACDB78624",
+    "Name": "Zesty Bone Broth Cup",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-A7DC377F69",
+    "Name": "Zesty Edamame and Green Beans Plate",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-B75B745874",
+    "Name": "Zesty Green Banana and Rolled Oats Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-3F79ECE06B",
+    "Name": "Zesty Green Banana and Rolled Oats Porridge",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-0C9B148E2E",
+    "Name": "Zesty Ika Mata (Raw Fish Salad)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-91A2A239DA",
+    "Name": "Zesty Ika Mata (Raw Fish Salad)",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD-66D5148369",
+    "Name": "Zesty Lentil and Kumara Stew",
+    "Cuisine": "Fusion & Global Trend",
+    "Type": ""
+  }
+]

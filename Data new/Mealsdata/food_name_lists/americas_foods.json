@@ -1,0 +1,2840 @@
+[
+  {
+    "ID": "FOOD_00C1D79B",
+    "Name": "Tart Cherry Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0143C1E8",
+    "Name": "Salsa",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_014EB9BF",
+    "Name": "Ratatouille",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0363D189",
+    "Name": "Roasted Chickpeas",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_039EBD21",
+    "Name": "Waldorf Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0461DC97",
+    "Name": "Roasted Potatoes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0474CF30",
+    "Name": "Shepherd's Pie",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_06CC30BA",
+    "Name": "Applesauce Cup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0736DD2C",
+    "Name": "Burrito",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_074F9190",
+    "Name": "Cold Milk",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_08090207",
+    "Name": "Asparagus",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0885BCF9",
+    "Name": "Small Pear",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_089C4DBE",
+    "Name": "Dried Figs",
+    "Cuisine": "Americas",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_095D3FAF",
+    "Name": "Matcha Latte",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_09F0EF1B",
+    "Name": "Sunflower Seeds",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_09FD701F",
+    "Name": "Sea Salt",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0A0A2391",
+    "Name": "Blueberries",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0AB84622",
+    "Name": "Pita Chips",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0ABC2CBF",
+    "Name": "Beef Empanadas",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0BCE0109",
+    "Name": "Infused Cucumber Water",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_0C852A7D",
+    "Name": "Chicken Fajitas",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0C8D2099",
+    "Name": "Polenta",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0D459017",
+    "Name": "Cream Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0D978FDA",
+    "Name": "Cheerios",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0DD24C0A",
+    "Name": "Soy Nuts",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0E42A37A",
+    "Name": "Earl Grey Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_0E931208",
+    "Name": "Egg",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_0FCE4B92",
+    "Name": "Lobster Roll",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_102D51D0",
+    "Name": "Peanut Butter",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_105A5F15",
+    "Name": "Risotto",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_114FD4B6",
+    "Name": "Cream Oatmeal",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_11BB9D33",
+    "Name": "Dutch Baby Pancake",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_11E0CE15",
+    "Name": "Bison Stew",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1518DC0D",
+    "Name": "Portobello Mushroom Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_15A8DE26",
+    "Name": "Grapes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_16FD0A04",
+    "Name": "Spaghetti",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_172E8750",
+    "Name": "Lamb Shanks",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_173BCD57",
+    "Name": "Mashed Potatoes",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_174946D6",
+    "Name": "Onion Frittata",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1752FD5F",
+    "Name": "Chicken Burrito Bowl",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_17EE9C2A",
+    "Name": "Dried Mango Slices",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_18507E69",
+    "Name": "Small Handful of Walnuts",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_186A8B72",
+    "Name": "Carrots",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_19136E39",
+    "Name": "Chips",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_197F23B3",
+    "Name": "Unknown Food FOOD_197F23B3",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_198E310C",
+    "Name": "Baked Oatmeal Bars",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_19ADA05A",
+    "Name": "Chicken Cacciatore",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1A511CD3",
+    "Name": "Wild Mushroom Pasta",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1A55DEFD",
+    "Name": "Butternut Squash Soup",
+    "Cuisine": "Americas",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1B319001",
+    "Name": "Small Cup of Soup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1B7B2481",
+    "Name": "Spaghetti Carbonara",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1C3C0347",
+    "Name": "Minestrone Soup",
+    "Cuisine": "Americas",
+    "Type": "Soups"
+  },
+  {
+    "ID": "FOOD_1D503DD3",
+    "Name": "Detox Green Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1DF10139",
+    "Name": "Fresh Orange Juice",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_1E3BBD7D",
+    "Name": "Sour Cream",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1F3473FA",
+    "Name": "Baked Ziti",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1F3870BE",
+    "Name": "Apple",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1FE642AC",
+    "Name": "Bratwurst",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_1FEFA82E",
+    "Name": "Granola",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_232232C1",
+    "Name": "English Muffin",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_23ED8A4E",
+    "Name": "Chia Seed Water",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2468DE34",
+    "Name": "Arroz Con Pollo",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_24986D32",
+    "Name": "Corned Beef Hash",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_25372B53",
+    "Name": "Carnitas Tacos",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_254485BB",
+    "Name": "Lentil Soup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_261722E7",
+    "Name": "Rack of Lamb",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2690DECA",
+    "Name": "Monte Cristo Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_26E1CFA7",
+    "Name": "Green Bean Casserole",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_274B4343",
+    "Name": "Frozen Yogurt Bark",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_27505FF1",
+    "Name": "Hard Boiled Eggs",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_277C78D5",
+    "Name": "Chicken Wrap",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2784AEDF",
+    "Name": "Low Sugar Granola",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_28B3C2BD",
+    "Name": "Energy Ball",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_295AB941",
+    "Name": "Breakfast Quesadilla",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_29DA0B7D",
+    "Name": "Cashews",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_2B14A105",
+    "Name": "Chicken Quesadilla",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_2B465E43",
+    "Name": "Fish Tacos",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2B5825CB",
+    "Name": "Shrimp Po Boy",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2BF93A8A",
+    "Name": "Tuna",
+    "Cuisine": "Americas",
+    "Type": "Main dish"
+  },
+  {
+    "ID": "FOOD_2C43FEDB",
+    "Name": "Small Piece of Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2CB10DC2",
+    "Name": "Turmeric Latte",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2CB5EEF8",
+    "Name": "Pasta Primavera",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_2CD5D80D",
+    "Name": "Breakfast Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2DC4E6CB",
+    "Name": "Baked Apple",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2EDC4741",
+    "Name": "French Dip Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2EE1B420",
+    "Name": "Enchiladas Verdes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2EF27B90",
+    "Name": "Eggplant Parmesan",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_2F3969C1",
+    "Name": "Chicken Parmigiana",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_2F4DB3CB",
+    "Name": "Oat Milk Latte",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_30FE51F7",
+    "Name": "Sliced Cucumber",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_31C91D84",
+    "Name": "Remoulade",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_32A3EAE5",
+    "Name": "Everything Bagel",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_32C75F4D",
+    "Name": "Gruyere Sous Vide Egg Bites",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_33DA7A40",
+    "Name": "Popcorn",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_34842E46",
+    "Name": "Shrimp",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_34902903",
+    "Name": "Beef",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_35F6A83A",
+    "Name": "Crackers",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3638555A",
+    "Name": "Pan Fried Trout",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3740B14C",
+    "Name": "Pecans",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_37ABB1C8",
+    "Name": "Swiss Omelette",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_37B0C1EB",
+    "Name": "Mussels in Garlic Wine Sauce",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_382B0549",
+    "Name": "Patty Melt",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_38F17723",
+    "Name": "Macaroni",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_396493AF",
+    "Name": "Pastrami on Rye",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3A04234C",
+    "Name": "Shrimp Scampi",
+    "Cuisine": "Americas",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_3B92AF16",
+    "Name": "Roasted Pumpkin Seeds",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_3BA1AA48",
+    "Name": "Magnesium Powder",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3C08C222",
+    "Name": "A few Strawberries",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3D7D2015",
+    "Name": "Nutmeg",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3DBB06DA",
+    "Name": "Fries",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_3E3CF6AD",
+    "Name": "Rice Pudding Cup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3EDCA650",
+    "Name": "Succotash",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_3F178066",
+    "Name": "Queso Dip",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_3F24E567",
+    "Name": "Lemon",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3FB70851",
+    "Name": "Fried Catfish",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_3FFDB0D9",
+    "Name": "Roasted Vegetable Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_404A6E35",
+    "Name": "Applesauce",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_41CCA9D9",
+    "Name": "Rice Cakes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_420B7922",
+    "Name": "Frozen Grapes",
+    "Cuisine": "Americas",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_42394F4A",
+    "Name": "Cuban Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_42BAC64E",
+    "Name": "Cinnamon",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_42E7020A",
+    "Name": "Aloe Vera Juice",
+    "Cuisine": "Americas",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_43BF9A0B",
+    "Name": "Beef Tacos",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_43EECCC3",
+    "Name": "Fruit Leather",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_441F6B33",
+    "Name": "Wheat Crackers",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4432C74B",
+    "Name": "Grilled Swordfish",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_45171007",
+    "Name": "Hard Boiled Egg",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_45A26ED3",
+    "Name": "Blueberry Scone",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_45B8DB8C",
+    "Name": "Berries",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_45F5A217",
+    "Name": "Beef Stew",
+    "Cuisine": "Americas",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_46015663",
+    "Name": "Lobster Tail",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_462903D4",
+    "Name": "Prune Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_465C6356",
+    "Name": "Walnuts",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_466CC3F5",
+    "Name": "Pumpkin Seeds",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4778AECD",
+    "Name": "Breakfast Pizza",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_47A63BA7",
+    "Name": "BLT Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_485EA8A2",
+    "Name": "Cobb Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_494CED86",
+    "Name": "Cottage Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_49D33CE5",
+    "Name": "Chicken Thighs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4B2B62AF",
+    "Name": "Small Beef Jerky Stick",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4B5F246A",
+    "Name": "Thai Chicken Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4B8FF95B",
+    "Name": "Hot Cocoa",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4BB52798",
+    "Name": "Greek Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4C33FDD1",
+    "Name": "Hummus",
+    "Cuisine": "Americas",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_4C9A0B9E",
+    "Name": "Gazpacho",
+    "Cuisine": "Americas",
+    "Type": "Soups"
+  },
+  {
+    "ID": "FOOD_4CF2C9F0",
+    "Name": "Zucchini Bread Slice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4D26ABD4",
+    "Name": "Corn on the Cob",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4D88A064",
+    "Name": "Guacamole",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_4DD64F65",
+    "Name": "Stuffed Bell Peppers",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_4E026537",
+    "Name": "Mushroom",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_4F2900F2",
+    "Name": "Toast",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_50019E15",
+    "Name": "Stuffed Cabbage Rolls",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_50C82AC2",
+    "Name": "Quiche Lorraine",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5221AA6C",
+    "Name": "Stuffed Acorn Squash",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_52381CEF",
+    "Name": "Sauerkraut",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_52411FF1",
+    "Name": "Baked Salmon",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_524B7220",
+    "Name": "Pomegranate Juice",
+    "Cuisine": "Americas",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_524C454E",
+    "Name": "Chia Pudding",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_5275CB41",
+    "Name": "Jam",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_52EC3AC8",
+    "Name": "Rice Krispies",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5315698D",
+    "Name": "Decaf Coffee",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_532DA817",
+    "Name": "Chili Con Carne",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_54FF1123",
+    "Name": "Pierogi",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_55F8F35F",
+    "Name": "Hush Puppies",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_57267E4E",
+    "Name": "Ants on a Log (Celery, Peanut Butter, Raisins)",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_57DEFB2D",
+    "Name": "Black Bean Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_596273DC",
+    "Name": "Ricotta Pancakes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5A1B1A90",
+    "Name": "Dried Cranberries",
+    "Cuisine": "Americas",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_5A6D69A4",
+    "Name": "Chicken Divan",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5B533F71",
+    "Name": "Small Bowl of Pretzels",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5C4B1BA3",
+    "Name": "Small Cup of Greek Yogurt",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5C514929",
+    "Name": "Coleslaw",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_5D34126D",
+    "Name": "Strawberries",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5D381B0B",
+    "Name": "Crab Legs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5DBE5DFF",
+    "Name": "Chia Seed Pudding",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5DEC0AA4",
+    "Name": "Hard Boiled Egg White",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5DF7F170",
+    "Name": "Tofu",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5E054FD5",
+    "Name": "Beef Lasagna",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5E519024",
+    "Name": "Watermelon Slices",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_5E67ED95",
+    "Name": "Apple Cider Vinegar Drink",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_5F19FEEB",
+    "Name": "Turkey Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5F59AF56",
+    "Name": "Smoked Salmon Lox",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_5FC73231",
+    "Name": "Date",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_603AFD68",
+    "Name": "Grapefruit Juice",
+    "Cuisine": "Americas",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_6118FDA2",
+    "Name": "Avocado",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_61219C28",
+    "Name": "Lentil Shepherd's Pie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_61491C07",
+    "Name": "Veal Saltimbocca",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_617A7CB7",
+    "Name": "Chimichanga",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_623FCD37",
+    "Name": "Yogurt",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6284A874",
+    "Name": "Zoodles",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_62CA4882",
+    "Name": "Egg Salad Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6308CEFE",
+    "Name": "Corn Chowder",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_639A2DC7",
+    "Name": "Barbecue Chicken",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_653D5048",
+    "Name": "Grilled Chicken Caesar Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_66BAB52A",
+    "Name": "Kale Chips",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_670FC84B",
+    "Name": "Mashed Avocado on Cracker",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6794D527",
+    "Name": "Spanish Omelette",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_67C0ECAF",
+    "Name": "Lime",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_69101C80",
+    "Name": "Tortilla",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_69F8D6C5",
+    "Name": "Shrimp Alfredo",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6A026D3C",
+    "Name": "Chicken Noodle Soup",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_6A3BC8B4",
+    "Name": "Herb Butter",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6A72929C",
+    "Name": "Clam Linguine",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_6B15C2F2",
+    "Name": "Chicken Parm Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6B8B8731",
+    "Name": "Goat Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6BD01ECF",
+    "Name": "Smoothie Bowl",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6BF256B6",
+    "Name": "Bison Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6D096986",
+    "Name": "Tuna Melt",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6D72300F",
+    "Name": "Meatloaf",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6E07BA71",
+    "Name": "Venison Steak",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6EBF3A6C",
+    "Name": "Lemon Ginger Water",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6F553F4A",
+    "Name": "Beef Fajitas",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6F6AC32D",
+    "Name": "Bagel",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_6FEF1924",
+    "Name": "Jelly Toast",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_70609451",
+    "Name": "Rice and Beans",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_714B5AF8",
+    "Name": "Grilled Chicken",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_71BC9244",
+    "Name": "Turkey Club Sandwich",
+    "Cuisine": "Americas",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_72B302BF",
+    "Name": "Banana",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_72FC13E6",
+    "Name": "Walnut",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_732C4BA1",
+    "Name": "Carrot Sticks",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_733A0317",
+    "Name": "Chicken Kiev",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_73895ECB",
+    "Name": "Italian Sausage",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_73D4C368",
+    "Name": "Meatball Sub",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_742929DC",
+    "Name": "Chicken",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_751305B9",
+    "Name": "Edamame",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_751A6B58",
+    "Name": "Banana Nut Muffins",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_756258A1",
+    "Name": "Bell Pepper Strips",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_75B75FB5",
+    "Name": "Tamales",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_76ABA95C",
+    "Name": "Spinach",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_77724EC6",
+    "Name": "Swedish Meatballs",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_77782D37",
+    "Name": "String Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_77C3DDCA",
+    "Name": "Chicken Stir Fry",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7813258E",
+    "Name": "Bacon",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_785A298F",
+    "Name": "Whole Wheat Waffles",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_786DBF8D",
+    "Name": "Fried Shrimp",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_798E81E0",
+    "Name": "Unknown Food FOOD_798E81E0",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_79A0CCD6",
+    "Name": "Cranberry Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_79AF0C17",
+    "Name": "Ham",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7A0DD1FA",
+    "Name": "Chicken Wings",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7A4D8C5A",
+    "Name": "Beef Wellington",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_7A7BA29D",
+    "Name": "Protein Bar",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7B1E94AD",
+    "Name": "Tofu Scramble",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7B4ED714",
+    "Name": "Sliced Banana",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7B727959",
+    "Name": "Pear Slices",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_7B73C3BD",
+    "Name": "Western Omelette",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7C5AC739",
+    "Name": "Feta Quiche",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7D31ED2F",
+    "Name": "Cheese Nachos",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7DACBC64",
+    "Name": "Tuna Salad on Greens",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7DD7E838",
+    "Name": "Dark Chocolate",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7E132C1D",
+    "Name": "Ropa Vieja",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7E405E42",
+    "Name": "Dirty Rice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7F249B45",
+    "Name": "Reuben Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7F3B6B90",
+    "Name": "Mustard",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7F442B66",
+    "Name": "Grits",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_7F4C93DE",
+    "Name": "Tomato Basil Soup",
+    "Cuisine": "Americas",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_80CEC6EC",
+    "Name": "Turkey Jerky",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8121553F",
+    "Name": "Vegetable Frittata",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_812EF74A",
+    "Name": "Almonds",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_81BE1213",
+    "Name": "Etouffee",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_823E36FA",
+    "Name": "Tzatziki",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_82FD932B",
+    "Name": "Hibiscus Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_834B0E0D",
+    "Name": "Bowl of Chili",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_83E4A96A",
+    "Name": "Fish",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8454C9AF",
+    "Name": "Whole Wheat Crackers",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_84DFB635",
+    "Name": "Denver Omelette",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_855440C1",
+    "Name": "Honey Water",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_85F4715D",
+    "Name": "Roasted Turkey",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_85F81759",
+    "Name": "Cornflakes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8694AE64",
+    "Name": "Handful of Mixed Nuts",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_87023B50",
+    "Name": "Beetroot Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_880A4104",
+    "Name": "Chicken Marsala",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_88337E82",
+    "Name": "Scallops",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8893DC16",
+    "Name": "Pear",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_88E1C812",
+    "Name": "Rooibos Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_89166DCD",
+    "Name": "Baked Cod",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_89487B31",
+    "Name": "Southwest Chicken Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_895234CC",
+    "Name": "Chamomile Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_898D3ED0",
+    "Name": "Breakfast Parfait",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_89BDD308",
+    "Name": "Wheatgrass Shot",
+    "Cuisine": "Americas",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_89DC9957",
+    "Name": "Scrambled Eggs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_89EEC680",
+    "Name": "Sliced Kiwi",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8A7080F7",
+    "Name": "Eggplant Rolatini",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8B04D7F7",
+    "Name": "Drawn Butter",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8B433670",
+    "Name": "Sausage",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8B823F49",
+    "Name": "Mint",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8CF7B8AD",
+    "Name": "Gravy",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_8E1F17B2",
+    "Name": "Ginger Smoothie Bowl",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8EE20279",
+    "Name": "Potato",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8F2868BA",
+    "Name": "Savory Oatmeal",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8F605AA4",
+    "Name": "Garden Salad",
+    "Cuisine": "Americas",
+    "Type": "salad"
+  },
+  {
+    "ID": "FOOD_8F7F563C",
+    "Name": "Apple Slices",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_8FA0E32D",
+    "Name": "Veggies",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_8FB538D9",
+    "Name": "Bacon and Egg",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9023BB7B",
+    "Name": "Split Pea Soup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_90443FB7",
+    "Name": "Baked Chicken Breast",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_91770548",
+    "Name": "Small Fruit Smoothie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_91A8B58C",
+    "Name": "Pepperoni Pizza Slice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_91AD3397",
+    "Name": "Cheese Cubes",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_92C0A2D4",
+    "Name": "Prunes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9343C245",
+    "Name": "Stuffed Flounder",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_93529B9B",
+    "Name": "Blueberry Pancakes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_95C9D335",
+    "Name": "Chicken Pot Pie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_95CD3FC0",
+    "Name": "Peaches",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_960FADCA",
+    "Name": "Tortilla Chips",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_96B95E42",
+    "Name": "Whole Wheat Biscuits",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_97EBD4F7",
+    "Name": "Pork Chops",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_98F0DC41",
+    "Name": "Salmon Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9A3573D4",
+    "Name": "Grated Apple",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9B3B1EE1",
+    "Name": "Dark Chocolate Square",
+    "Cuisine": "Americas",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_9B5DFD5E",
+    "Name": "Cucumber Slices",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9B6D00B3",
+    "Name": "Cauliflower Steaks",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_9BC07111",
+    "Name": "Kefir Smoothie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9CE5EFFF",
+    "Name": "Poached Egg",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9CEC95B6",
+    "Name": "Stuffing",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_9DC0233B",
+    "Name": "Orange Slices",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9DEE45A2",
+    "Name": "Pineapple",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_9F25EA2D",
+    "Name": "Clam Bake",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A01198B2",
+    "Name": "Duck Confit",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_A046FD02",
+    "Name": "Falafel Pita",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A22F1F33",
+    "Name": "Chicken Enchiladas",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A23526D3",
+    "Name": "Pot Pie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A2D12A59",
+    "Name": "Hoppin John",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A3152D45",
+    "Name": "Sweet Potato Hash",
+    "Cuisine": "Americas",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_A3187B7B",
+    "Name": "Handful of Almonds",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A36CA142",
+    "Name": "Small Smoothie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A4D4D735",
+    "Name": "Pumpkin Spice Waffles",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A5A596E2",
+    "Name": "Grilled Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A5FBE152",
+    "Name": "Small Cup of Bone Broth",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A686A5C5",
+    "Name": "Crab Cakes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A73D21F8",
+    "Name": "Smoothie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A797AD38",
+    "Name": "Belgian Waffles",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A8461E7F",
+    "Name": "Trail Mix",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_A860ED15",
+    "Name": "Ceviche",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A87F24D2",
+    "Name": "Philly Cheesesteak",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A88EE714",
+    "Name": "Turkey Roll-ups",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A8CF5643",
+    "Name": "Fruit Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_A9A2A7D1",
+    "Name": "Pot Roast",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AB21AA6F",
+    "Name": "Steak Salad",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AB49125B",
+    "Name": "Overnight Oats",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AC087BC3",
+    "Name": "Spaghetti Bolognese",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_AE06C555",
+    "Name": "English Breakfast Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_AE8607D9",
+    "Name": "Shrimp Fajitas",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AE9C17EB",
+    "Name": "Avocado Toast",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_AED09C1D",
+    "Name": "Leche de Tigre",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF03EEE3",
+    "Name": "Beef Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AFC4D1BD",
+    "Name": "Soldiers",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B0785983",
+    "Name": "Pulled Pork Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B15EF7B9",
+    "Name": "Pineapple Wedges",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B195573D",
+    "Name": "Coq Au Vin",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_B1FCF40F",
+    "Name": "Caprese Salad",
+    "Cuisine": "Americas",
+    "Type": "Salads"
+  },
+  {
+    "ID": "FOOD_B26610AE",
+    "Name": "French Toast",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_B2F50E9D",
+    "Name": "Watermelon Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B3125B38",
+    "Name": "Cajun Seafood Boil",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B3158E3B",
+    "Name": "Green Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_B39EC3AC",
+    "Name": "Hollandaise Sauce",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B3F952D5",
+    "Name": "Pepper",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B4B5433C",
+    "Name": "Beef Pot Roast",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B4F78EAD",
+    "Name": "Egg White Omelette",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B59B9FB2",
+    "Name": "Beef Jerky",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B5A55903",
+    "Name": "Peanut Butter Toast",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_B5F63E84",
+    "Name": "Breakfast Tacos",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B60EB83B",
+    "Name": "Honey",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B720B5D0",
+    "Name": "Acai Bowl",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B84903C9",
+    "Name": "Vegetable Risotto",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_B9B1D132",
+    "Name": "Iced Coffee",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_B9B27F09",
+    "Name": "Valerian Root Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_B9E6B828",
+    "Name": "Chlorophyll Water",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_BA509E48",
+    "Name": "Paella",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_BA603FA6",
+    "Name": "King Ranch Chicken",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_BAA87E61",
+    "Name": "Turkey Meatballs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_BAD216D1",
+    "Name": "Cottage Cheese Cup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_BD7E76F7",
+    "Name": "Muffin Top",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C0A0E51E",
+    "Name": "Peanut Butter Cracker",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C19C9FDB",
+    "Name": "Al Pastor Tacos",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C36DB3EB",
+    "Name": "Smoked Chicken Wings",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C3771D4A",
+    "Name": "Cocktail Sauce",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C3BEC794",
+    "Name": "Small Slice of Turkey",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C3C5DBFE",
+    "Name": "BBQ Spare Ribs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C548EA99",
+    "Name": "Corn",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C591B2EC",
+    "Name": "Chicken Salad Croissant",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C695283D",
+    "Name": "Lomo Saltado",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C6A031B3",
+    "Name": "Roasted Seaweed Snacks",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_C6A423F4",
+    "Name": "Beef Brisket",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C6BF70F8",
+    "Name": "Mixed Berries",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C7D9438E",
+    "Name": "Roasted Vegetable Medley",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C877D018",
+    "Name": "Salisbury Steak",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_C8D7DFFD",
+    "Name": "Sunflower Seeds in Shell",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C8FF2B9A",
+    "Name": "Granola Bar",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C97B3F58",
+    "Name": "Hash Browns",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_C980DDB2",
+    "Name": "Chicken Pesto Pasta",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_CA72BB7F",
+    "Name": "Muesli",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_CBC6F5A6",
+    "Name": "Tomato Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_CBE9A1B9",
+    "Name": "Pistachios",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_CD48AFC8",
+    "Name": "Veggie Wrap",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_CDC6EA50",
+    "Name": "Apple Cinnamon Porridge",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_CEC27203",
+    "Name": "Greek Yogurt",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D0498750",
+    "Name": "Quinoa Breakfast Bowl",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D0EB9319",
+    "Name": "Gyro Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D11C3822",
+    "Name": "Bouillabaisse",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_D1946762",
+    "Name": "Peppermint Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_D390691A",
+    "Name": "Cheesy Grits",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D4055A9F",
+    "Name": "Halibut",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D48BAC36",
+    "Name": "Celery",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D5529323",
+    "Name": "Cheese Croissant",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D60536F7",
+    "Name": "Almond Milk",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D64CCD1E",
+    "Name": "Veggie Stir Fry",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D74FDDE2",
+    "Name": "Butter",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D8444DC6",
+    "Name": "Brazil Nuts",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D854C317",
+    "Name": "Soft Boiled Eggs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D8565C75",
+    "Name": "Chia",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D86B94B7",
+    "Name": "Sausage Gumbo",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D8AB193E",
+    "Name": "Handful of Nuts",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D8DFB8DB",
+    "Name": "Blackened Fish",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_D972134A",
+    "Name": "Veggie Shmear",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_DA0FE7E1",
+    "Name": "Kefir Drink",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_DC13D2D2",
+    "Name": "Beef Stroganoff",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_DC1423D9",
+    "Name": "Veggie Lasagna",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_DC18C2C1",
+    "Name": "Smoked Pulled Pork",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_DD3BC675",
+    "Name": "Warm Milk",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_DEDE5831",
+    "Name": "Fried Chicken",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_DF318BF7",
+    "Name": "Hot Dog",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E046EBAE",
+    "Name": "Biscuits",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_E1449DDB",
+    "Name": "Half a Banana",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E296FC00",
+    "Name": "Poached Eggs on Asparagus",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E2BB1813",
+    "Name": "Carrot Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E4D4FB42",
+    "Name": "Melon Cubes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E56CE6DB",
+    "Name": "Chicken Piccata",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_E604927E",
+    "Name": "Fettuccine Alfredo",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E60C7FE0",
+    "Name": "Coconut Water",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_E809578D",
+    "Name": "Oatmeal",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EA279D4A",
+    "Name": "Sloppy Joes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EABDEAC2",
+    "Name": "Peppers",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EACD7BBF",
+    "Name": "Half a Turkey Sandwich",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EB55A881",
+    "Name": "Sweet Potato Chips",
+    "Cuisine": "Americas",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_EBB14554",
+    "Name": "Unknown Food FOOD_EBB14554",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EBE5BA6F",
+    "Name": "Beef Bourguignon",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_EBFAB0B3",
+    "Name": "Buckwheat Pancakes",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EC74BCA9",
+    "Name": "Celery Juice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EC83B42F",
+    "Name": "Pan Seared Salmon",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_ECBDB882",
+    "Name": "Milk",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_ECDEF206",
+    "Name": "Rice Cake",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_ED1A6C2F",
+    "Name": "Maple Syrup",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_ED8F5350",
+    "Name": "Almond Butter",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_ED974A42",
+    "Name": "Raspberries",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EFA661E3",
+    "Name": "Small Oat Cookie",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_EFBC7DDB",
+    "Name": "Cheddar Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F19721C3",
+    "Name": "Bran Muffin",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F257FFD1",
+    "Name": "Tuna Noodle Casserole",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F2B55A1C",
+    "Name": "Catfish Fillet",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F3553AA3",
+    "Name": "Clam Chowder",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F3773822",
+    "Name": "Tajin",
+    "Cuisine": "Americas",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_F418CEEE",
+    "Name": "Ginger Tea",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_F43429E7",
+    "Name": "Lamb Burger",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F43B1CEA",
+    "Name": "Veggie Pizza Slice",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F50404CC",
+    "Name": "Smoked Salmon Frittata",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F523B44F",
+    "Name": "Jambalaya",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F58635CF",
+    "Name": "Dragon Fruit Smoothie Bowl",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F60B3F16",
+    "Name": "Warm Water",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_F6E32439",
+    "Name": "Bulletproof Coffee",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_F7A89B31",
+    "Name": "Raisins",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F8D5337C",
+    "Name": "Quinoa",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F96E2D84",
+    "Name": "Black Coffee",
+    "Cuisine": "Americas",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_F98E4FCC",
+    "Name": "Chicken Tetrazzini",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_F9F9D34F",
+    "Name": "Dried Apricots",
+    "Cuisine": "Americas",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_FAA0B8B6",
+    "Name": "Warm Lemon Water",
+    "Cuisine": "Americas",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_FAE04A70",
+    "Name": "Ranch Dip",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_FB1DCE16",
+    "Name": "Grilled Ribeye Steak",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_FB8DA64F",
+    "Name": "Broccoli",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_FC3D1A96",
+    "Name": "Butternut Squash Ravioli",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_FCB6AA59",
+    "Name": "Chicken Fried Steak",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_FDF0904C",
+    "Name": "Shakshuka",
+    "Cuisine": "Americas",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_FEA0F1F6",
+    "Name": "Cheese",
+    "Cuisine": "Americas",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_FF6AF23F",
+    "Name": "Barbecue Ribs",
+    "Cuisine": "Americas",
+    "Type": "main"
+  }
+]

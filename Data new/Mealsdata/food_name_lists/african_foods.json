@@ -1,0 +1,206 @@
+[
+  {
+    "ID": "FOOD_AF_001",
+    "Name": "Rooibos Tea",
+    "Cuisine": "African",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_AF_002",
+    "Name": "Jollof Rice",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_003",
+    "Name": "Fufu",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_004",
+    "Name": "Egusi Soup",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_005",
+    "Name": "Injera",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_006",
+    "Name": "Akara",
+    "Cuisine": "African",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_AF_007",
+    "Name": "Pap",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_008",
+    "Name": "Suya",
+    "Cuisine": "African",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_AF_009",
+    "Name": "Shiro Wat",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_010",
+    "Name": "Doro Wat",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_011",
+    "Name": "Couscous",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_012",
+    "Name": "Fish Stew",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_013",
+    "Name": "Sadza",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_014",
+    "Name": "Chakalaka",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_015",
+    "Name": "Groundnut Soup",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_016",
+    "Name": "Grilled Tilapia",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_017",
+    "Name": "Hibiscus Drink",
+    "Cuisine": "African",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_AF_018",
+    "Name": "Ginger Tea",
+    "Cuisine": "African",
+    "Type": "drink"
+  },
+  {
+    "ID": "FOOD_AF_019",
+    "Name": "Bean Stew",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_020",
+    "Name": "Yam Fries",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_021",
+    "Name": "Okra Soup",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_022",
+    "Name": "Hard Boiled Eggs",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_023",
+    "Name": "Boiled Cassava",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_024",
+    "Name": "Steamed Spinach",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_025",
+    "Name": "Beef Stew",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_026",
+    "Name": "Goat Stew",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_027",
+    "Name": "Grilled Pork",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_028",
+    "Name": "Fried Chicken",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_029",
+    "Name": "Liver Stew",
+    "Cuisine": "African",
+    "Type": "soup"
+  },
+  {
+    "ID": "FOOD_AF_030",
+    "Name": "Meatballs",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_SNACK_001",
+    "Name": "Rusks",
+    "Cuisine": "African",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_AF_PROT_001",
+    "Name": "Grilled Chicken",
+    "Cuisine": "African",
+    "Type": "main"
+  },
+  {
+    "ID": "FOOD_AF_SIDE_001",
+    "Name": "Fried Plantains",
+    "Cuisine": "African",
+    "Type": "side"
+  },
+  {
+    "ID": "FOOD_AF_SIDE_002",
+    "Name": "Gomen",
+    "Cuisine": "African",
+    "Type": "side"
+  }
+]

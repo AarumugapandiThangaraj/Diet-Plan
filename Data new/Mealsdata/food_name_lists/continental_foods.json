@@ -1,0 +1,4520 @@
+[
+  {
+    "ID": "FOOD_0001",
+    "Name": "Snack Stackers",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0048",
+    "Name": "Banana Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_0246",
+    "Name": "Bruschetta",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0247",
+    "Name": "Cheese Balls",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0278",
+    "Name": "Spanish Bruschetta",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0284",
+    "Name": "Alpine Pasta",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0287",
+    "Name": "Italian Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0311",
+    "Name": "Alpine Gnocchi",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1037",
+    "Name": "Mixed Nuts (Almonds and Brazil Nuts)",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1045",
+    "Name": "Roasted Pumpkin Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1051",
+    "Name": "Sliced Apple with Peanut Butter",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1055",
+    "Name": "Boiled Sweet Corn",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1058",
+    "Name": "Whole Wheat Banana Walnut Muffin",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1067",
+    "Name": "Tomato and Cucumber Sandwich",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1071",
+    "Name": "Pumpkin Seed and Almond Trail Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1074",
+    "Name": "Ragi and Jaggery Cookies",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1077",
+    "Name": "Cucumber Mint Yogurt Dip with Carrots",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1078",
+    "Name": "Walnut and Fig Bliss Balls",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1079",
+    "Name": "Tomato Basil Soup",
+    "Cuisine": "Continental",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_1085",
+    "Name": "Roasted Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1086",
+    "Name": "Chicken Bone Broth",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1089",
+    "Name": "Baked Sweet Potato Fries",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1097",
+    "Name": "Avocado and Cacao Mousse",
+    "Cuisine": "Continental",
+    "Type": "Dessert/Snack"
+  },
+  {
+    "ID": "FOOD_1099",
+    "Name": "Walnuts and Raisins",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1101",
+    "Name": "Greek Yogurt with Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1102",
+    "Name": "Carrot and Ginger Soup",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1112",
+    "Name": "Roasted Red Bell Pepper Soup",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1114",
+    "Name": "Quinoa and Lentil Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1118",
+    "Name": "Kiwi and Chia Seed Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1120",
+    "Name": "Boiled Green Peas",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1122",
+    "Name": "Carrot and Tomato Soup",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1124",
+    "Name": "Roasted Soybeans",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1128",
+    "Name": "Carrot and Celery Soup",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1134",
+    "Name": "Tomato and Cucumber Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1136",
+    "Name": "Spinach and Cucumber Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1138",
+    "Name": "Hard Boiled Eggs with Black Pepper",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1140",
+    "Name": "Watermelon and Basil Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1142",
+    "Name": "Tomato and Basil Soup",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1148",
+    "Name": "Carrot and Beetroot Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1152",
+    "Name": "Hard Boiled Egg Whites with Turmeric",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1158",
+    "Name": "Roasted Bell Pepper Soup",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1160",
+    "Name": "Spinach and Celery Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1165",
+    "Name": "Guava and Pomegranate Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1167",
+    "Name": "Bottle Gourd (Lauki) Soup",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1171",
+    "Name": "Steamed Sweet Corn Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1172",
+    "Name": "Cabbage and Carrot Slaw",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1174",
+    "Name": "Sauted Mushrooms with Garlic",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1176",
+    "Name": "Tomato and Coriander Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1179",
+    "Name": "Cucumber and Dill Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1181",
+    "Name": "Sauted Spinach with Lemon",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1184",
+    "Name": "Beetroot and Mint Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1413",
+    "Name": "Lemon Tea with Mint",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1414",
+    "Name": "Mixed Nuts (Almonds and Walnuts)",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1415",
+    "Name": "Apple with Cinnamon Powder",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1416",
+    "Name": "Orange Segments",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1417",
+    "Name": "Strawberry and Banana Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1418",
+    "Name": "Sliced Pear",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1419",
+    "Name": "Roasted Pumpkin and Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1420",
+    "Name": "Kiwi and Chia Seed Drink",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1421",
+    "Name": "Cashew and Pistachio Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1483",
+    "Name": "Coconut Milk and Papaya Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1484",
+    "Name": "Oats and Almond Butter Balls",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1485",
+    "Name": "Pomegranate and Yogurt",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1486",
+    "Name": "Beetroot and Mint Soup",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1487",
+    "Name": "Pineapple and Cucumber Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1488",
+    "Name": "Avocado on Rice Cakes",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1489",
+    "Name": "Pumpkin Seeds and Walnuts Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1490",
+    "Name": "Iced Hibiscus Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_0002",
+    "Name": "Chorizo and Egg Burritos",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0003",
+    "Name": "Bow Tie Pepperoni Pasta Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0004",
+    "Name": "BLT Pasta Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0005",
+    "Name": "Cheese Tortellini Pesto Pasta Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0006",
+    "Name": "Baked Chicken Tenders",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0007",
+    "Name": "Easy Enchiladas",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0008",
+    "Name": "Fast Chicken and Rice",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0009",
+    "Name": "5 Ingredient Spaghetti",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0010",
+    "Name": "Chicken Breast with Honey Balsamic Glaze",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0011",
+    "Name": "Healthy Egg Salad Sandwich",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0012",
+    "Name": "Lunchbox Pizza Quesadilla",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0013",
+    "Name": "Ground Beef and Potatoes",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0014",
+    "Name": "Cheesy Turkey Burger",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0015",
+    "Name": "Tomato and Egg Muffin",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0016",
+    "Name": "Easy Cheese-Tomato Melt",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0017",
+    "Name": "Cheater's Chicken Noodle Soup",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0018",
+    "Name": "Ground Chicken Ranch Burger",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0019",
+    "Name": "Mushroom Quesadilla",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0020",
+    "Name": "Boston Fenway Franks",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0021",
+    "Name": "Original Praline Bacon",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0022",
+    "Name": "Lasagna",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0023",
+    "Name": "Skillet Beans 'n Wieners",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0024",
+    "Name": "Baked Buffalo Wings",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0025",
+    "Name": "Ratatouille in the Crock Pot",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0026",
+    "Name": "Baked Stuffed Pasta Shells",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0027",
+    "Name": "Roasted Butternut Squash-Quinoa Veggie Burger",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0028",
+    "Name": "Grilled Chicken Avocado Sandwich",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0029",
+    "Name": "Vegetable Stir-Fry with Soy Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0030",
+    "Name": "Chicken Pasta with Tomato Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0031",
+    "Name": "Egg Fried Rice",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0032",
+    "Name": "Turkey Cheese Sandwich",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0033",
+    "Name": "Chicken Fajita Wrap",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0034",
+    "Name": "Caprese Sandwich",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0035",
+    "Name": "Beef Stir Fry with Soy Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0036",
+    "Name": "Veggie Omelette",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0037",
+    "Name": "Chicken Salad with Dressing",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0038",
+    "Name": "Grilled Fish with Lemon Butter",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0039",
+    "Name": "Chicken Stir Fry with Vegetables",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0040",
+    "Name": "Chicken Omelette",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0041",
+    "Name": "Chicken Vegetable Soup",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0042",
+    "Name": "Egg and Vegetable Stir Fry",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0043",
+    "Name": "Chicken Capsicum Stir Fry",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0059",
+    "Name": "Chicken Noodle Soup",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0060",
+    "Name": "Chicken Wrap with Hummus",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0061",
+    "Name": "Grilled Paneer Sandwich",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0062",
+    "Name": "Chicken Shawarma Wrap",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0063",
+    "Name": "Grilled Fish with Mashed Potatoes",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0064",
+    "Name": "Chicken Fried Rice",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0065",
+    "Name": "Turkey Club Sandwich",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0066",
+    "Name": "Shepherd's Pie",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0067",
+    "Name": "Shrimp Pasta",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0068",
+    "Name": "BBQ Chicken Wings",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0069",
+    "Name": "Greek Salad with Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0070",
+    "Name": "Lemon Chicken with Rice",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0071",
+    "Name": "Prawn Fried Rice",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0072",
+    "Name": "Chicken Quesadilla",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0073",
+    "Name": "Stuffed Bell Pepper",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0074",
+    "Name": "Chicken Schnitzel with Coleslaw",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0075",
+    "Name": "Lentil and Mushroom Shepherd's Pie",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0076",
+    "Name": "Caprese Zucchini Noodles",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0077",
+    "Name": "Quinoa Veggie Burger",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0078",
+    "Name": "Creamy Arborio Mushroom Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0079",
+    "Name": "Greek Chickpea Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0080",
+    "Name": "Spinach & Ricotta Stuffed Shells",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0081",
+    "Name": "Veggie Pesto Wrap",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0082",
+    "Name": "Broccoli Cheddar Soup",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0083",
+    "Name": "Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0084",
+    "Name": "Sweet Potato & Black Bean Bowl",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0085",
+    "Name": "Grilled Chicken Caesar Wrap",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0086",
+    "Name": "Baked Salmon with Asparagus",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0087",
+    "Name": "Chicken Alfredo Penne",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0088",
+    "Name": "Tuna & White Bean Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0089",
+    "Name": "Double Decker Turkey Club",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0090",
+    "Name": "Beef Bolognese with Zoodles",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0091",
+    "Name": "Lemon Herb Chicken Quinoa",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0092",
+    "Name": "Shrimp Scampi",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0093",
+    "Name": "Chicken & Mushroom Crepes",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_5001",
+    "Name": "Pork Schnitzel with Potato Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0136",
+    "Name": "Mushroom Wellington",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0138",
+    "Name": "Spinach & Cheese Quiche",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0140",
+    "Name": "Greek Spanakopita",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0142",
+    "Name": "Zucchini Fritters",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0144",
+    "Name": "Cauliflower Steaks",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0146",
+    "Name": "Stuffed Eggplant (Imam Bayildi)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0148",
+    "Name": "Broccoli Pesto Pasta",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0151",
+    "Name": "Prawn Linguine",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0153",
+    "Name": "Chicken Piccata",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0155",
+    "Name": "Pork Belly Bao",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0157",
+    "Name": "Fish and Chips",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0159",
+    "Name": "Swedish Meatballs",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0161",
+    "Name": "Spanish Paella",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0163",
+    "Name": "Croque Monsieur",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0166",
+    "Name": "Veggie Shepherd's Pie",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0168",
+    "Name": "Mediterranean Quinoa Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_0170",
+    "Name": "Cacio e Pepe",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0172",
+    "Name": "Butternut Squash Soup",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0174",
+    "Name": "Caprese Zucchini Boats",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0176",
+    "Name": "Stuffed Bell Peppers (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0178",
+    "Name": "Tomato Basil Bruschetta (Meal Size)",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0180",
+    "Name": "Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0182",
+    "Name": "Lemon Garlic Butter Salmon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0184",
+    "Name": "Chicken Cacciatore",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0233",
+    "Name": "Pasta Primavera (Dinner Special) (Variation 2)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0234",
+    "Name": "Nicoise Salad (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0235",
+    "Name": "Pork Belly Banh Mi (Fusion)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0248",
+    "Name": "Italian Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0251",
+    "Name": "Mediterranean Caprese",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0252",
+    "Name": "Rustic Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0257",
+    "Name": "Mediterranean Baked Salmon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0259",
+    "Name": "Italian Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0269",
+    "Name": "Mediterranean Meatballs",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0270",
+    "Name": "Rustic Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0186",
+    "Name": "Seafood Paella",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0188",
+    "Name": "Spaghetti Carbonara",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0190",
+    "Name": "Tuna Nicoise Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0192",
+    "Name": "Creamy Tuscan Chicken",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0194",
+    "Name": "Pork Belly with Apples",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0222",
+    "Name": "Vegetable Lasagna (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0223",
+    "Name": "Chicken Caesar Wrap",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0224",
+    "Name": "Caprese Sandwich (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0225",
+    "Name": "Tuna Salad Sandwich",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0226",
+    "Name": "Mushroom Risotto (Dinner Special) (Variation 2)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0326",
+    "Name": "Mediterranean Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0330",
+    "Name": "French Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0331",
+    "Name": "Spanish Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0332",
+    "Name": "Hearty Baked Salmon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0333",
+    "Name": "Oven-baked Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0335",
+    "Name": "Alpine Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0337",
+    "Name": "Hearty Caprese",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0339",
+    "Name": "Spanish Minestrone",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0340",
+    "Name": "Oven-baked Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0341",
+    "Name": "French Gnocchi",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0271",
+    "Name": "French Roast Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0274",
+    "Name": "French Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0276",
+    "Name": "Rustic Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0282",
+    "Name": "Spanish Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0286",
+    "Name": "Tuscan Beef Stew",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0289",
+    "Name": "Rustic Pasta",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0305",
+    "Name": "Tuscan Gnocchi",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0308",
+    "Name": "Greek Meatballs",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0322",
+    "Name": "French Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0323",
+    "Name": "Modern Meatballs",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0342",
+    "Name": "Classic Ravioli",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0343",
+    "Name": "Classic Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0353",
+    "Name": "Mediterranean Turkey Breast",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0354",
+    "Name": "Modern Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0355",
+    "Name": "Gourmet Quiche",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0356",
+    "Name": "Gourmet Roast Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0357",
+    "Name": "Greek Lasagna",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0358",
+    "Name": "Spanish Lasagna",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0044",
+    "Name": "Scrambled Eggs on Toast",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0045",
+    "Name": "Oats Porridge with Banana",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_0236",
+    "Name": "Continental Sausage Hash",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0237",
+    "Name": "Eggs Florentine",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0238",
+    "Name": "Banana Walnut Pancakes",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0239",
+    "Name": "Cottage Cheese with Pineapple",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0255",
+    "Name": "Spanish Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0263",
+    "Name": "Mediterranean Shrimp Scampi",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0266",
+    "Name": "Mediterranean Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0267",
+    "Name": "Spanish Roast Chicken",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0273",
+    "Name": "French Minestrone",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0275",
+    "Name": "Mediterranean Beef Stew",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0217",
+    "Name": "Avocado Toast with Poached Egg",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0218",
+    "Name": "Shakshuka",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0219",
+    "Name": "French Toast with Maple Syrup",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0220",
+    "Name": "Overnight Oats with Chia and Berries",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0221",
+    "Name": "Hash Brown Skillet",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0228",
+    "Name": "Classic Eggs Benedict",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0229",
+    "Name": "Smoked Salmon Bagel",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0230",
+    "Name": "Full English Breakfast",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0231",
+    "Name": "Steak and Eggs",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0232",
+    "Name": "Breakfast Burrito",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0279",
+    "Name": "Alpine Minestrone",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0285",
+    "Name": "Tuscan Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0294",
+    "Name": "Italian Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0297",
+    "Name": "Mediterranean Gnocchi",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0298",
+    "Name": "Greek Caprese",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0300",
+    "Name": "Mediterranean Minestrone",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0302",
+    "Name": "French Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0307",
+    "Name": "Italian Caprese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0309",
+    "Name": "Greek Margherita Pizza",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0310",
+    "Name": "Greek Roast Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0312",
+    "Name": "Italian Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0317",
+    "Name": "Rustic Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1029",
+    "Name": "Smoked Salmon and Avocado Toast with Pumpkin Seeds",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1031",
+    "Name": "Chia Seed Pudding with Almond Milk",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1032",
+    "Name": "Sweet Potato Hash",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1033",
+    "Name": "Mushroom and Spinach Omelette",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1035",
+    "Name": "Oatmeal with Walnuts and Flaxseeds",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1036",
+    "Name": "Tomato and Basil Bruschetta on Whole Grain",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1038",
+    "Name": "Greek Yogurt Pancakes with Berries",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1039",
+    "Name": "Oven-Baked Tomatoes with Spinach",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1041",
+    "Name": "Smoothie with Kale and Apple",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1042",
+    "Name": "Scrambled Eggs with Bell Peppers",
+    "Cuisine": "Continental",
+    "Type": "Main Course or Side Dish"
+  },
+  {
+    "ID": "FOOD_1044",
+    "Name": "Quinoa Porridge",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1048",
+    "Name": "Avocado on Whole Wheat Toast",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1049",
+    "Name": "Oatmeal with Blueberries",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1050",
+    "Name": "Almond Flour Pancakes",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1053",
+    "Name": "Almond Milk and Banana Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1056",
+    "Name": "Strawberry Yogurt Parfait",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1057",
+    "Name": "Scrambled Eggs with Spinach",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1059",
+    "Name": "Berry Smoothie Bowl",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1061",
+    "Name": "Almond and Date Milkshake",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1062",
+    "Name": "Barley Porridge",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1063",
+    "Name": "Mushroom Omelette",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1066",
+    "Name": "Oatmeal with Almonds",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1073",
+    "Name": "Oats and Yogurt Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1075",
+    "Name": "Avocado Toast",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1080",
+    "Name": "Egg and Spinach Wrap",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1081",
+    "Name": "Kale and Pineapple Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1083",
+    "Name": "Chia Seed Pudding with Berries",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1087",
+    "Name": "Egg White Omelette with Bell Peppers",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1133",
+    "Name": "Egg White and Spinach Wrap",
+    "Cuisine": "Continental",
+    "Type": "Main Course or Snack"
+  },
+  {
+    "ID": "FOOD_1139",
+    "Name": "Grapefruit and Ginger Cooler",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1141",
+    "Name": "Almond and Cashew Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1143",
+    "Name": "Quinoa and Green Peas",
+    "Cuisine": "Continental",
+    "Type": "Main Course or Side Dish"
+  },
+  {
+    "ID": "FOOD_1145",
+    "Name": "Watermelon and Feta Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1147",
+    "Name": "Egg White and Avocado Toast",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1149",
+    "Name": "Oat and Almond Milk Porridge",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1150",
+    "Name": "Orange and Grapefruit Bowl",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1155",
+    "Name": "Sweet Potato and Spinach Hash",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1157",
+    "Name": "Quinoa and Almond Porridge",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1159",
+    "Name": "Walnut and Fig Mix",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1162",
+    "Name": "Papaya and Lemon Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1164",
+    "Name": "Beetroot and Apple Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1166",
+    "Name": "Ash Gourd (Winter Melon) Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1170",
+    "Name": "Pineapple and Turmeric Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1177",
+    "Name": "Carrot and Ginger Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1182",
+    "Name": "Kiwi and Cucumber Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1183",
+    "Name": "Papaya and Lemon Juice",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1186",
+    "Name": "Boiled Eggs with Black Pepper",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1326",
+    "Name": "Spinach and Mushroom Omelette",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1090",
+    "Name": "Strawberry and Spinach Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1094",
+    "Name": "Egg and Mushroom Bhurji",
+    "Cuisine": "Continental",
+    "Type": "Main Course or Snack"
+  },
+  {
+    "ID": "FOOD_1096",
+    "Name": "Oats and Almond Milk Porridge",
+    "Cuisine": "Continental",
+    "Type": "Breakfast/Snack"
+  },
+  {
+    "ID": "FOOD_1106",
+    "Name": "Strawberry and Almond Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1107",
+    "Name": "Boiled Egg Whites with Spinach",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1111",
+    "Name": "Oats and Egg White Omelet",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1116",
+    "Name": "Peanut Butter and Banana on Whole Wheat",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1121",
+    "Name": "Papaya and Yogurt Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1127",
+    "Name": "Orange and Strawberry Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1132",
+    "Name": "Kiwi and Strawberry Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1327",
+    "Name": "Avocado Toast with Cherry Tomatoes",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1328",
+    "Name": "Almond Butter Oatmeal",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1329",
+    "Name": "Papaya and Chia Seed Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1330",
+    "Name": "Greek Yogurt with Walnuts",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1331",
+    "Name": "Green Smoothie Bowl",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1332",
+    "Name": "Quinoa Porridge with Pumpkin Seeds",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1333",
+    "Name": "Berry and Flaxseed Parfait",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1334",
+    "Name": "Smoked Salmon on Rye Bread",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1335",
+    "Name": "Sweet Potato Hash with Spinach",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1336",
+    "Name": "Cucumber and Tomato Sandwich",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1337",
+    "Name": "Peanut Butter Banana Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1338",
+    "Name": "Carrot and Apple Juice with Oatmeal",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1339",
+    "Name": "Scrambled Tofu with Bell Peppers",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1340",
+    "Name": "Orange and Grapefruit Salad with Mint",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1341",
+    "Name": "Multigrain Bread with Boiled Egg",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1342",
+    "Name": "Kiwi and Strawberry Oat Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1343",
+    "Name": "Beetroot and Carrot Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1344",
+    "Name": "Chia Pudding with Almond Milk",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1345",
+    "Name": "Apple and Cinnamon Oatmeal",
+    "Cuisine": "Continental",
+    "Type": "Breakfast/Snack"
+  },
+  {
+    "ID": "FOOD_1346",
+    "Name": "Almond Butter on Multigrain Toast",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1425",
+    "Name": "Chia Seed Pudding with Almonds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1426",
+    "Name": "Walnut and Banana Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1427",
+    "Name": "Tofu and Spinach Wrap",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1428",
+    "Name": "Sweet Lime and Orange Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1429",
+    "Name": "Peanut Butter and Apple Toast",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1430",
+    "Name": "Green Smoothie (Spinach, Apple, Celery)",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1431",
+    "Name": "Watermelon and Mint Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1432",
+    "Name": "Pumpkin Seed and Oats Porridge",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1433",
+    "Name": "Sweet Potato and Apple Mash",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1434",
+    "Name": "Fresh Fig and Walnut Oatmeal",
+    "Cuisine": "Continental",
+    "Type": "Breakfast or Snack"
+  },
+  {
+    "ID": "FOOD_1399",
+    "Name": "Avocado Toast on Sourdough",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1400",
+    "Name": "Papaya and Chia Seed Smoothie Bowl",
+    "Cuisine": "Continental",
+    "Type": "Beverage/Snack"
+  },
+  {
+    "ID": "FOOD_1401",
+    "Name": "Oatmeal with Berries and Almonds",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_1402",
+    "Name": "Spinach and Tofu Scramble",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1403",
+    "Name": "Greek Yogurt with Walnuts and Honey",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1404",
+    "Name": "Soy Milk and Almond Protein Shake",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1405",
+    "Name": "Mixed Fruit Salad with Orange Juice Dressing",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1422",
+    "Name": "Quinoa and Black Bean Bowl",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1423",
+    "Name": "Papaya and Mango Smoothie",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1424",
+    "Name": "Cucumber and Mint Sandwiches",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1347",
+    "Name": "Cucumber Mint Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1348",
+    "Name": "Chicken Bone Broth with Boiled Egg",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1349",
+    "Name": "Boiled Eggs with Guacamole",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1350",
+    "Name": "Salmon and Cream Cheese Roll-up",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1351",
+    "Name": "Pomegranate and Yogurt Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1352",
+    "Name": "Egg White and Vegetable Scramble",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1353",
+    "Name": "Sweet Potato and Pumpkin Mash",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1354",
+    "Name": "Mashed Avocado and Sprouts Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1355",
+    "Name": "Almond Milk and Fig Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1356",
+    "Name": "Peanut Butter and Banana Wrap",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1435",
+    "Name": "Mixed Seed Granola with Almond Milk",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1436",
+    "Name": "Pear and Spinach Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1437",
+    "Name": "Avocado and Cucumber Wrap",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1438",
+    "Name": "Orange and Ginger Oatmeal",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1439",
+    "Name": "Pumpkin and Carrot Soup",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1440",
+    "Name": "Papaya Bowl with Lemon Zest",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1441",
+    "Name": "Barley (Jau) Porridge",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_1442",
+    "Name": "Strawberry and Almond Smoothie Bowl",
+    "Cuisine": "Continental",
+    "Type": "Beverage/Snack"
+  },
+  {
+    "ID": "FOOD_0046",
+    "Name": "Fruit Salad with Yogurt",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0047",
+    "Name": "Boiled Egg Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0249",
+    "Name": "Rustic Caprese",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0256",
+    "Name": "Rustic Quiche",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0260",
+    "Name": "Italian Minestrone",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0261",
+    "Name": "Spanish Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0272",
+    "Name": "French Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0277",
+    "Name": "Spanish Meatballs",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0280",
+    "Name": "Rustic Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0283",
+    "Name": "Rustic Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0290",
+    "Name": "Alpine Grilled Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0292",
+    "Name": "Alpine Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1040",
+    "Name": "Boiled Eggs with Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1043",
+    "Name": "Celery Sticks with Almond Butter",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1046",
+    "Name": "Steamed Edamame Beans",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1047",
+    "Name": "Carrot Sticks with Hummus",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1052",
+    "Name": "Cucumber and Mint Cooler",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1054",
+    "Name": "Celery and Green Apple Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1060",
+    "Name": "Watermelon Salad with Mint",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1064",
+    "Name": "Cucumber and Carrot Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1065",
+    "Name": "Green Tea with Lemon",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1068",
+    "Name": "Fresh Pomegranate Juice",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1095",
+    "Name": "Sliced Mango with Chia Seeds",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1098",
+    "Name": "Cucumber and Tomato Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1100",
+    "Name": "Green Tea and Lemon",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1103",
+    "Name": "Papaya and Pumpkin Seed Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1104",
+    "Name": "Tomato and Celery Juice",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1105",
+    "Name": "Coconut Water and Lime",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1108",
+    "Name": "Almonds and Pumpkin Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1109",
+    "Name": "Citrus Salad (Orange and Grapefruit)",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1110",
+    "Name": "Cucumber and Pineapple Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1113",
+    "Name": "Almonds and Dried Figs (Anjeer)",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1069",
+    "Name": "Papaya Bowl with Seeds",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1070",
+    "Name": "Spinach and Apple Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1072",
+    "Name": "Carrot and Orange Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1076",
+    "Name": "Coconut Milk and Pineapple Smoothie",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1082",
+    "Name": "Watermelon and Mint Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1084",
+    "Name": "Cucumber and Celery Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1088",
+    "Name": "Aloe Vera and Lemon Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1091",
+    "Name": "Mixed Berries with Almonds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1092",
+    "Name": "Kiwi and Apple Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1093",
+    "Name": "Pomegranate and Beetroot Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_0299",
+    "Name": "French Pork Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0301",
+    "Name": "Spanish Pasta",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0303",
+    "Name": "French Bruschetta",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0304",
+    "Name": "Rustic Meatballs",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0313",
+    "Name": "Spanish Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0314",
+    "Name": "Greek Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0315",
+    "Name": "Alpine Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_0316",
+    "Name": "Italian Baked Salmon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1030",
+    "Name": "Greek Yogurt Parfait with Mixed Berries and Walnuts",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1034",
+    "Name": "Carrot and Cucumber Sticks with Hummus",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1360",
+    "Name": "Fresh Orange Slices",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1361",
+    "Name": "Kiwi Fruit",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1362",
+    "Name": "Boiled Egg Whites",
+    "Cuisine": "Continental",
+    "Type": "Snack or Side Dish"
+  },
+  {
+    "ID": "FOOD_1363",
+    "Name": "Carrot Sticks with Lemon",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1364",
+    "Name": "Flaxseed Crackers",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1365",
+    "Name": "Pineapple Chunks",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1366",
+    "Name": "Grapefruit Half",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1367",
+    "Name": "Pear Slices",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1368",
+    "Name": "Pomegranate Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1369",
+    "Name": "Papaya Slices",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1115",
+    "Name": "Carrot and Apple Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1117",
+    "Name": "Watermelon and Mint Cooler",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1119",
+    "Name": "Celery and Apple Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1123",
+    "Name": "Pomegranate and Mint Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1125",
+    "Name": "Tomato and Ginger Juice",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1126",
+    "Name": "Almonds and Walnuts",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1129",
+    "Name": "Papaya and Lime Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1130",
+    "Name": "Orange and Carrot Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1131",
+    "Name": "Coconut Water with Chia Seeds",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1135",
+    "Name": "Apple and Beetroot Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1169",
+    "Name": "Aloe Vera and Mint Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1173",
+    "Name": "Strawberry and Almond Milk Shake",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1175",
+    "Name": "Pomegranate and Pear Salad",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1178",
+    "Name": "Lemon Water with Chia Seeds",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1180",
+    "Name": "Walnuts and Brazil Nuts Mix",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1185",
+    "Name": "Orange and Pomegranate Bowl",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1187",
+    "Name": "Cabbage and Apple Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1357",
+    "Name": "Watermelon Slices",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1358",
+    "Name": "Green Apple and Cinnamon",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1359",
+    "Name": "Walnut and Almond Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1370",
+    "Name": "Strawberry Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1371",
+    "Name": "Pecan Nuts",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1372",
+    "Name": "Carrot and Beetroot Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1373",
+    "Name": "Hemp Seed Energy Bite",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1374",
+    "Name": "Pomegranate and Mint Infusion",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1375",
+    "Name": "Pistachios",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1376",
+    "Name": "Warm Lemon Water",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1377",
+    "Name": "Pumpkin and Sunflower Seed Mix",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1378",
+    "Name": "Fresh Aloe Vera Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1379",
+    "Name": "Apple and Cinnamon Infused Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1137",
+    "Name": "Pineapple and Mint Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1144",
+    "Name": "Papaya and Cucumber Cooler",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1146",
+    "Name": "Orange and Spinach Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1151",
+    "Name": "Cucumber and Lemon Water",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1153",
+    "Name": "Papaya and Pomegranate Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1154",
+    "Name": "Soaked Black Raisins",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1156",
+    "Name": "Kiwi and Cucumber Cooler",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1161",
+    "Name": "Toasted Pumpkin and Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1163",
+    "Name": "Almond and Pistachio Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1168",
+    "Name": "Green Papaya Salad (Som Tum)",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_1380",
+    "Name": "Grapes Bowl",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1381",
+    "Name": "Dried Apricots",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1382",
+    "Name": "Brazil Nut",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1383",
+    "Name": "Lemon and Ginger Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1384",
+    "Name": "Hazelnut Portion",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1385",
+    "Name": "Apple Slices with Peanut Butter",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1386",
+    "Name": "Cashews",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1387",
+    "Name": "Celery Juice Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1388",
+    "Name": "Toasted Pumpkin and Sesame Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1389",
+    "Name": "Blackberry Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1390",
+    "Name": "Dragon Fruit Cubes",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1391",
+    "Name": "Roasted Almonds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1392",
+    "Name": "Mint and Lime Infusion",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1393",
+    "Name": "Grapefruit Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1394",
+    "Name": "Chia Seed Pudding (Small Portion)",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1395",
+    "Name": "Sunflower Seed Butter on Crackers",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1396",
+    "Name": "Walnut Halves",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1397",
+    "Name": "Lemon and Basil Infused Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1398",
+    "Name": "Blueberries",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1462",
+    "Name": "Roasted Flaxseeds and Pumpkin Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1463",
+    "Name": "ABC Juice (Apple, Beetroot, Carrot)",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1464",
+    "Name": "Cucumber and Mint Infused Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1465",
+    "Name": "Mixed Melon Salad (Watermelon, Muskmelon)",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_1466",
+    "Name": "Orange and Ginger Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1467",
+    "Name": "Papaya Bowl",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1468",
+    "Name": "Pistachios (Unsalted)",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1469",
+    "Name": "Pineapple and Mint Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1470",
+    "Name": "Hemp Seeds and Almond Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1471",
+    "Name": "Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1472",
+    "Name": "Green Apple and Spinach Juice",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1538",
+    "Name": "Soaked Walnuts and Dates",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1539",
+    "Name": "Orange and Ginger Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1540",
+    "Name": "Watermelon Cubes with Black Salt",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1541",
+    "Name": "Carrot and Celery Sticks",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1542",
+    "Name": "Mixed Nut Trail Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1543",
+    "Name": "Pumpkin Seeds and Raisins",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1544",
+    "Name": "Strawberry and Chia Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1545",
+    "Name": "Grapefruit Wedges",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1546",
+    "Name": "Beetroot and Lemon Juice",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1547",
+    "Name": "Oat Bran and Milk Drink",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1548",
+    "Name": "Aloe Vera and Lemon Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1628",
+    "Name": "Soaked Walnuts and Almonds",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1629",
+    "Name": "Black Raisins (Soaked) and Cashews",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1630",
+    "Name": "Pomegranate Juice (Fresh, Unstrained)",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1631",
+    "Name": "Aloe Vera and Lemon Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1632",
+    "Name": "Grapefruit Segments",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1633",
+    "Name": "Tomato and Basil Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1634",
+    "Name": "Pistachios and Dried Figs",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0049",
+    "Name": "Grilled Salmon with Asparagus",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0050",
+    "Name": "Vegetable Fried Rice",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0101",
+    "Name": "Margherita Pita Pizza",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_0102",
+    "Name": "Gnocchi with Gorgonzola Cream Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0103",
+    "Name": "Mediterranean Couscous Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_0104",
+    "Name": "Vegetable Pot Pie",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0105",
+    "Name": "Steak and Mashed Potatoes",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0106",
+    "Name": "Chicken Parmesan",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0107",
+    "Name": "Lemon Butter Baked Cod",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0108",
+    "Name": "Pork Chops with Apple Chutney",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0109",
+    "Name": "Spaghetti Bolognese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0110",
+    "Name": "Garlic Butter Shrimp with Zucchini",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0051",
+    "Name": "Mushroom Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0052",
+    "Name": "Grilled Chicken Breast with Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0053",
+    "Name": "Pasta Primavera",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0054",
+    "Name": "Chicken Caesar Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0095",
+    "Name": "Vegetable Lasagna",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0096",
+    "Name": "Eggplant Parmesan",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0097",
+    "Name": "Mushroom Stroganoff",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0098",
+    "Name": "Stuffed Bell Peppers",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0099",
+    "Name": "Creamy Tomato Basil Soup with Grilled Cheese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0100",
+    "Name": "Butternut Squash Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0111",
+    "Name": "Chicken Fajita Bowl",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0112",
+    "Name": "Shepherd's Pie (Beef)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0113",
+    "Name": "Baked Ziti with Sausage",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0114",
+    "Name": "Pan-Seared Duck Breast",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0115",
+    "Name": "Creamy Polenta with Mushrooms",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0116",
+    "Name": "Spinach and Feta Stuffed Portobello",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0117",
+    "Name": "Pasta Primavera (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0118",
+    "Name": "French Onion Soup",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0119",
+    "Name": "Margarita Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0120",
+    "Name": "Sweet Potato & Chickpea Curry",
+    "Cuisine": "Continental",
+    "Type": "curry"
+  },
+  {
+    "ID": "FOOD_0131",
+    "Name": "Chicken Caesar Salad (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0132",
+    "Name": "Duck Confit",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0133",
+    "Name": "Salmon and Quinoa Bowl",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0134",
+    "Name": "Beef Stroganoff",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0135",
+    "Name": "Eggplant Caviar with Crostini",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0137",
+    "Name": "Caprese Pasta Salad",
+    "Cuisine": "Continental",
+    "Type": "Side Dish"
+  },
+  {
+    "ID": "FOOD_0139",
+    "Name": "Potato Leek Soup",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_0141",
+    "Name": "Beetroot Carpaccio",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0143",
+    "Name": "Tomato Galette",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0145",
+    "Name": "Butternut Squash Ravioli",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0121",
+    "Name": "Ricotta and Spinach Cannelloni",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0122",
+    "Name": "Lentil Loaf",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0123",
+    "Name": "Cheese Fondue with Veggies",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0124",
+    "Name": "Falafel Wrap",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0125",
+    "Name": "Steak Frites",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0126",
+    "Name": "Chicken Cordon Bleu",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0127",
+    "Name": "Seared Scallops with Pea Puree",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0128",
+    "Name": "Pork Tenderloin with Mustard Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0129",
+    "Name": "Clam Linguine",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0130",
+    "Name": "Lamb Chops with Rosemary",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0165",
+    "Name": "Creamy Mushroom Pappardelle",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0167",
+    "Name": "Eggplant Parmigiana",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0169",
+    "Name": "French Onion Tart",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0171",
+    "Name": "Ratatouille (Traditional)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0173",
+    "Name": "Mushroom Risotto (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0175",
+    "Name": "Spinach & Ricotta Ravioli",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0177",
+    "Name": "Asparagus and Goat Cheese Tart",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0179",
+    "Name": "Cauliflower Cheese",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0181",
+    "Name": "Steak Tartare",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_5002",
+    "Name": "Pork Schnitzel",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0147",
+    "Name": "Vegetarian Cassoulet",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0149",
+    "Name": "Celeriac Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0150",
+    "Name": "Coq Au Vin",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0152",
+    "Name": "Beef Bourguignon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0154",
+    "Name": "Nicoise Salad",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0156",
+    "Name": "Lamb Shank with Mash",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0158",
+    "Name": "Chicken Milanese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0160",
+    "Name": "Duck Liver Pate with Toast",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0162",
+    "Name": "Beef Tartare",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0164",
+    "Name": "Trout Almondine",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0185",
+    "Name": "Beef Wellington",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0187",
+    "Name": "Duck a l'Orange",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0189",
+    "Name": "Chicken Cordon Bleu (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0191",
+    "Name": "Lamb Moussaka",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0193",
+    "Name": "Bouillabaisse",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0195",
+    "Name": "Truffle Mac and Cheese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0196",
+    "Name": "Vegetable Paella (Vegan)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0197",
+    "Name": "Gnocchi alla Sorrentina",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0198",
+    "Name": "Mushroom Stroganoff (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0199",
+    "Name": "Creamed Spinach with Garlic Toast",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0200",
+    "Name": "Fondue (Single Serving)",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0201",
+    "Name": "Coq Au Riesling",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0202",
+    "Name": "Pork Chops with Mustard Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0203",
+    "Name": "Classic French Omelette",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0204",
+    "Name": "Salisbury Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0205",
+    "Name": "Chicken Kyiv",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_5003",
+    "Name": "Mushroom Bourguignon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0207",
+    "Name": "Eggplant Rollatini",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0208",
+    "Name": "Polenta with Roasted Vegetables",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0209",
+    "Name": "Vegetarian Cassoulet (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0265",
+    "Name": "Alpine Meatballs",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0268",
+    "Name": "Tuscan Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0281",
+    "Name": "Spanish Margherita Pizza",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0288",
+    "Name": "Tuscan Bruschetta",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0291",
+    "Name": "Mediterranean Pasta",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0293",
+    "Name": "Alpine Quiche",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0295",
+    "Name": "Greek Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0296",
+    "Name": "Italian Ratatouille",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0306",
+    "Name": "Tuscan Meatballs",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0318",
+    "Name": "Greek Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0210",
+    "Name": "Broccoli and Cheddar Soup",
+    "Cuisine": "Continental",
+    "Type": "base"
+  },
+  {
+    "ID": "FOOD_0211",
+    "Name": "Asparagus Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0212",
+    "Name": "Steak Frites (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0213",
+    "Name": "Chicken Fricassee",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0214",
+    "Name": "Prawn Linguine in White Wine",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0215",
+    "Name": "Beef Stroganoff (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0216",
+    "Name": "Duck Liver Pate with Toast (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0227",
+    "Name": "Lamb Vindaloo",
+    "Cuisine": "Continental",
+    "Type": "curry"
+  },
+  {
+    "ID": "FOOD_0240",
+    "Name": "Lobster Thermidor",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0241",
+    "Name": "Chicken Cacciatore (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0242",
+    "Name": "Eggplant Parmesan (Dinner Special)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0243",
+    "Name": "Gnocchi with Gorgonzola Sauce",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0244",
+    "Name": "Pork Vindaloo (Traditional)",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0245",
+    "Name": "Ratatouille Stew",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0250",
+    "Name": "Tuscan Caprese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0253",
+    "Name": "Spanish Beef Stew",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0254",
+    "Name": "Greek Pork Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0258",
+    "Name": "Alpine Shrimp Scampi",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0262",
+    "Name": "Spanish Caprese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0264",
+    "Name": "Rustic Roast Chicken",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0319",
+    "Name": "Tuscan Steak",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0320",
+    "Name": "Bistro-style Beef Stew",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0321",
+    "Name": "Spanish Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0324",
+    "Name": "French Ravioli",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0325",
+    "Name": "Modern Caprese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0327",
+    "Name": "Rustic Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0328",
+    "Name": "Modern Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0329",
+    "Name": "Oven-baked Bruschetta",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0334",
+    "Name": "Bistro-style Lamb Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0336",
+    "Name": "Modern Beef Stew",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0338",
+    "Name": "Classic Bruschetta",
+    "Cuisine": "Continental",
+    "Type": "side dish"
+  },
+  {
+    "ID": "FOOD_0344",
+    "Name": "Hearty Margherita Pizza",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0345",
+    "Name": "Tuscan Chicken Alfredo",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0346",
+    "Name": "Gourmet Shrimp Scampi",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0347",
+    "Name": "Spanish Pork Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0348",
+    "Name": "Greek Baked Salmon",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0349",
+    "Name": "Gourmet Beef Stew",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0350",
+    "Name": "Gourmet Gnocchi",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0351",
+    "Name": "Alpine Risotto",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0352",
+    "Name": "Oven-baked Ravioli",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_1289",
+    "Name": "Warm Lemon Water with Cayenne Pepper",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1290",
+    "Name": "Soaked Almonds and Walnuts",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1291",
+    "Name": "Green Apple and Celery Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1292",
+    "Name": "Carrot and Ginger Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1293",
+    "Name": "Hot Water with Manuka Honey",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1294",
+    "Name": "Matcha Green Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1295",
+    "Name": "Mint and Cucumber Infused Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1296",
+    "Name": "Bamboo Extract Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1297",
+    "Name": "Beetroot and Pomegranate Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1298",
+    "Name": "Warm Water with Apple Cider Vinegar",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_0359",
+    "Name": "Oven-baked Pork Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0360",
+    "Name": "Classic Pork Chops",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0361",
+    "Name": "Oven-baked Lasagna",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0363",
+    "Name": "Classic Lasagna",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0366",
+    "Name": "Bistro-style Caprese",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0368",
+    "Name": "Modern Quiche",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0369",
+    "Name": "Gourmet Ravioli",
+    "Cuisine": "Continental",
+    "Type": "main course"
+  },
+  {
+    "ID": "FOOD_0371",
+    "Name": "Italian Gnocchi",
+    "Cuisine": "Continental",
+    "Type": "Main Course"
+  },
+  {
+    "ID": "FOOD_0055",
+    "Name": "Warm Lemon Water with Honey",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_0056",
+    "Name": "Green Tea with Dates",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1299",
+    "Name": "Fresh Guava Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1300",
+    "Name": "Cinnamon Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1301",
+    "Name": "Pumpkin Seed and Sunflower Seed Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1302",
+    "Name": "Oolong Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1315",
+    "Name": "Green Tea with Mint",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1316",
+    "Name": "ABC (Apple Beetroot Carrot) Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1317",
+    "Name": "Aloe Vera Juice",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1318",
+    "Name": "Chia Seed Water with Lemon",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1319",
+    "Name": "Flaxseed Smoothie Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1320",
+    "Name": "Papaya Cubes",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1321",
+    "Name": "Pomegranate Juice Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1322",
+    "Name": "Sunflower and Pumpkin Seed Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1323",
+    "Name": "Tomato Juice Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1324",
+    "Name": "Guava Slices",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1325",
+    "Name": "Orange Juice Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1406",
+    "Name": "Soaked Raisins (Kishmish) Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1407",
+    "Name": "Almond and Fig (Anjeer) Mix",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1408",
+    "Name": "Apple Cider Vinegar (ACV) Drink",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1409",
+    "Name": "Watermelon Rind Infused Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1410",
+    "Name": "Flaxseed Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1557",
+    "Name": "Soaked Cashews",
+    "Cuisine": "Continental",
+    "Type": "Snack"
+  },
+  {
+    "ID": "FOOD_1558",
+    "Name": "Tomato and Black Pepper Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1559",
+    "Name": "Ginger and Lemon Warm Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1560",
+    "Name": "Soaked Sunflower Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_0057",
+    "Name": "Chamomile Tea",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_0058",
+    "Name": "Banana with Peanut Butter",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1259",
+    "Name": "Pumpkin Seed and Warm Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1260",
+    "Name": "Chamomile Tea with Manuka Honey",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1261",
+    "Name": "Walnut and Cinnamon Infused Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1262",
+    "Name": "Peppermint and Spearmint Tea",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1411",
+    "Name": "Orange and Carrot Juice Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1412",
+    "Name": "Lemon and Honey Warm Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1549",
+    "Name": "Cucumber and Mint Detox Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1550",
+    "Name": "Aloe Vera and Honey Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1551",
+    "Name": "Soaked Almonds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1552",
+    "Name": "Soaked Pumpkin Seeds",
+    "Cuisine": "Continental",
+    "Type": "snack"
+  },
+  {
+    "ID": "FOOD_1553",
+    "Name": "Cinnamon and Honey Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1554",
+    "Name": "Walnut Water (Soaked Overnight)",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1555",
+    "Name": "Beetroot and Ginger Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1556",
+    "Name": "Wheatgrass Shot",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1263",
+    "Name": "Flaxseed Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1264",
+    "Name": "Aloe Vera and Cucumber Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1265",
+    "Name": "Warm Oat Milk with Nutmeg",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1266",
+    "Name": "Chia Seed Soaked Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1267",
+    "Name": "Hibiscus Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1268",
+    "Name": "Moringa Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1269",
+    "Name": "Sesame Seed and Almond Drink",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1270",
+    "Name": "Lavender Tea",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1271",
+    "Name": "Peanuts and Warm Soy Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage/Snack"
+  },
+  {
+    "ID": "FOOD_1272",
+    "Name": "Warm Water with Roasted Flaxseeds",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1495",
+    "Name": "Lemon Balm Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1496",
+    "Name": "Warm Water with Lemon and Mint",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1497",
+    "Name": "Warm Soy Milk with Vanilla",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1283",
+    "Name": "Warm Apple and Cinnamon Drink",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1284",
+    "Name": "Orange Blossom Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1285",
+    "Name": "Sunflower Seed Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1286",
+    "Name": "Cacao and Almond Milk (Sugar-Free Hot Chocolate)",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1287",
+    "Name": "Hazelnut Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1288",
+    "Name": "Warm Water with Mint and Lime",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1491",
+    "Name": "Chamomile and Mint Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1492",
+    "Name": "Peppermint Tea",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1493",
+    "Name": "Lavender Infused Tea",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1494",
+    "Name": "Cinnamon and Honey Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1273",
+    "Name": "Rooibos Tea",
+    "Cuisine": "Continental",
+    "Type": "beverage"
+  },
+  {
+    "ID": "FOOD_1274",
+    "Name": "Spirulina Drink",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1275",
+    "Name": "Ginger and Lemon Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1276",
+    "Name": "Coconut Water with a pinch of Chia Seeds",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1277",
+    "Name": "Cinnamon and Honey Water",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1278",
+    "Name": "Blackstrap Molasses Drink",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1279",
+    "Name": "Golden Milk with Maca Powder",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1280",
+    "Name": "Macadamia Nut Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1281",
+    "Name": "Jasmine Tea",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  },
+  {
+    "ID": "FOOD_1282",
+    "Name": "Hemp Seed Milk",
+    "Cuisine": "Continental",
+    "Type": "Beverage"
+  }
+]
