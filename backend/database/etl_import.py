@@ -25,6 +25,7 @@ from database.models.ingredient import Ingredient
 from database.models.food import Food, FoodIngredient
 from database.models.meal import Meal, MealFood
 from database.models.preference import UserPreference
+from database.models.substitute import Substitute
 
 # Core constants
 CUISINE_LIST = [
@@ -51,25 +52,25 @@ async def init_db():
     print("Database tables initialized successfully.")
 
 async def run_import():
-    data_root = Path(settings.data_root)
+    data_root = Path(__file__).resolve().parents[2] / "migration_backup" / "original_json_datasets"
     if not data_root.exists():
         print(f"Data root directory not found: {data_root}")
         return
 
-    # Resolve image mapping from master static files
-    master_mapping_file = data_root / "Images" / "master_image_mapping.json"
+    # Resolve image mapping from new assets mappings folder
+    mapping_file = Path(settings.mapping_root) / "image_mapping.json"
     image_mapping = {}
-    if master_mapping_file.exists():
+    if mapping_file.exists():
         try:
-            raw_map = json.loads(master_mapping_file.read_text(encoding="utf-8"))
+            raw_map = json.loads(mapping_file.read_text(encoding="utf-8"))
             for cuisine_folder, files in raw_map.items():
                 for filename, info in files.items():
                     fid = info.get("food_id")
                     if fid:
                         image_mapping[fid] = f"{cuisine_folder}/{filename}"
-            print(f"Loaded {len(image_mapping)} food image mappings from master.")
+            print(f"Loaded {len(image_mapping)} food image mappings from new assets location.")
         except Exception as e:
-            print(f"Error loading master image mapping: {e}")
+            print(f"Error loading image mapping: {e}")
 
     await init_db()
 
@@ -449,6 +450,39 @@ async def run_import():
                     print("Seeded default user preferences successfully.")
             except Exception as e:
                 print(f"Error seeding user preferences: {e}")
+
+        # 6. Ingredient Substitutes (Reference Seed Data)
+        print("Importing ingredient substitutes reference data...")
+        subs_file = Path(__file__).resolve().parents[1] / "assets" / "nutrition" / "master_substituents.json"
+        if not subs_file.exists():
+            subs_file = Path(__file__).resolve().parents[2] / "migration_backup" / "original_json_datasets" / "master_substituents.json"
+        if subs_file.exists():
+            try:
+                sub_data = json.loads(subs_file.read_text(encoding="utf-8"))
+                seeded_subs_count = 0
+                for item in sub_data:
+                    sub_id = item.get("Subsitutes_ID")
+                    allergen_name = item.get("allergen_name")
+                    if not sub_id or not allergen_name:
+                        continue
+                    
+                    # Check if already exists in DB
+                    stmt_sub = select(Substitute).filter_by(allergen_name=allergen_name)
+                    res_sub = await session.execute(stmt_sub)
+                    sub_obj = res_sub.scalar_one_or_none()
+                    if not sub_obj:
+                        sub_obj = Substitute(
+                            id=sub_id,
+                            allergen_category=item.get("allergen_category"),
+                            allergen_name=allergen_name,
+                            substitutes=item.get("substitutes") or []
+                        )
+                        session.add(sub_obj)
+                        seeded_subs_count += 1
+                await session.commit()
+                print(f"Seeded {seeded_subs_count} new ingredient substitutes successfully.")
+            except Exception as e:
+                print(f"Error seeding substitutes: {e}")
 
 if __name__ == "__main__":
     asyncio.run(run_import())

@@ -23,11 +23,22 @@ AsyncSessionLocal = async_sessionmaker(
     autoflush=False
 )
 
+from sqlalchemy.exc import SQLAlchemyError
+from exceptions.service import DatabaseException
+
 async def get_db():
     async with AsyncSessionLocal() as session:
         try:
             yield session
-            await session.commit()
-        except Exception:
-            await session.rollback()
-            raise
+            try:
+                await session.commit()
+            except SQLAlchemyError as ex:
+                await session.rollback()
+                raise DatabaseException("Transaction commit failed") from ex
+        except SQLAlchemyError as ex:
+            try:
+                await session.rollback()
+            except Exception:
+                pass
+            raise DatabaseException("Database session transaction encountered an error") from ex
+

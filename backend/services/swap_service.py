@@ -130,10 +130,12 @@ def get_meal_swap_options(
         "options": options[: max(1, int(top_n))],
     }
 
+from exceptions.domain import SwapEngineException
+
 def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 5, cuisine: str = "north_indian") -> Dict[str, Any]:
     meal_base = deepcopy(meal)
     if not (meal_base.get("foods_struct") or []):
-        raise ValueError("This meal cannot be swapped at food level because no structured food data is available.")
+        raise SwapEngineException("This meal cannot be swapped at food level because no structured food data is available.")
 
     meal_base = recompute_meal_from_foods(meal_base)
     meal_target_macros = _meal_macros(meal_base)
@@ -264,7 +266,7 @@ def get_ingredient_swap_options(*, meal: Dict[str, Any], ingredient_query: str, 
     }
 
 def apply_food_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "north_indian") -> Dict[str, Any]:
-    return _apply_food_replacement(meal, option)
+    return _apply_food_replacement(meal, option, cuisine=cuisine)
 
 def apply_ingredient_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "north_indian") -> Dict[str, Any]:
-    return _apply_ingredient_replacement(meal, option)
+    return _apply_ingredient_replacement(meal, option, cuisine=cuisine)

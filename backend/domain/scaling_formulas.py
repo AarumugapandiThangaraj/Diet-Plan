@@ -11,15 +11,21 @@ def _f(v: Any) -> float:
 def clamp(x: float, low: float, high: float) -> float:
     return max(low, min(high, x))
 
+from exceptions.domain import NutritionCalculationException
+
 def ensure_macros(macros: Dict[str, Any] | None) -> Dict[str, float]:
     m = macros or {}
-    return {
+    out = {
         "caloriesKcal": _f(m.get("caloriesKcal", 0.0)),
         "proteinG": _f(m.get("proteinG", 0.0)),
         "carbsG": _f(m.get("carbsG", 0.0)),
         "fatG": _f(m.get("fatG", 0.0)),
         "fiberG": _f(m.get("fiberG", 0.0)),
     }
+    for k, v in out.items():
+        if v < 0:
+            raise NutritionCalculationException(f"Negative value detected for macro key '{k}': {v}")
+    return out
 
 def scale_macros(macros: Dict[str, Any], factor: float) -> Dict[str, float]:
     base = ensure_macros(macros)
@@ -100,6 +106,8 @@ def _scale_ingredient(
 ) -> Dict[str, Any]:
     out = deepcopy(ing)
     base_qty = _f(out.get("quantity", 0.0))
+    if base_qty < 0:
+        raise NutritionCalculationException("Negative ingredient quantity detected")
 
     if base_qty > 0:
         req = base_qty * factor
@@ -133,6 +141,14 @@ def scale_meal_to_targets(
         base_macros = ensure_macros(base.get("_macros") or {})
 
     target = ensure_macros(target_macros)
+    if target.get("caloriesKcal", 0.0) < 0:
+        raise NutritionCalculationException("Target calories cannot be negative")
+
+    foods = base.get("foods_struct") or []
+    ingredients = base.get("ingredients_struct") or []
+    if not foods and not ingredients and base_macros["caloriesKcal"] <= 0:
+        raise NutritionCalculationException("Invalid meal composition: no foods, ingredients, or base calories present to scale")
+
     base_kcal = base_macros["caloriesKcal"]
     target_kcal = target["caloriesKcal"]
 

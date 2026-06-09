@@ -24,6 +24,9 @@ _meals_cache = {}
 
 from sqlalchemy import select
 from sqlalchemy.orm import selectinload, joinedload
+from sqlalchemy.exc import SQLAlchemyError
+from exceptions.base import ResourceNotFoundException
+from exceptions.repository import RepositoryException
 
 from config.constants import VALID_CUISINES, GRAM_UNITS
 from database.session import AsyncSessionLocal
@@ -48,11 +51,18 @@ from utils.normalizers import (
 _main_loop = None
 
 def set_main_loop(loop):
+    """
+    Sets the reference to the running asyncio event loop.
+    """
     global _main_loop
     _main_loop = loop
 
 # Resilient async runner helper
 def run_async(coro):
+    """
+    Schedules and executes an asynchronous coroutine synchronously,
+    handling active loop contexts resiliently.
+    """
     global _main_loop
     if _main_loop and _main_loop.is_running():
         future = asyncio.run_coroutine_threadsafe(coro, _main_loop)
@@ -73,6 +83,9 @@ def run_async(coro):
         return loop.run_until_complete(coro)
 
 def _sum_macros(items: Iterable[Dict[str, Any]]) -> Dict[str, float]:
+    """
+    Sums the macro nutrient properties of a collection of items (ingredients or foods).
+    """
     out = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
     for it in items:
         m = it.get("macros") or {}
@@ -84,6 +97,9 @@ def _sum_macros(items: Iterable[Dict[str, Any]]) -> Dict[str, float]:
     return out
 
 def _ingredients_to_text(items: Iterable[Dict[str, Any]]) -> str:
+    """
+    Converts list of ingredient dictionaries into a comma-separated readable string.
+    """
     out = []
     for ing in items:
         name = str(ing.get("name") or "").strip()
@@ -98,6 +114,9 @@ def _ingredients_to_text(items: Iterable[Dict[str, Any]]) -> str:
     return ", ".join(out)
 
 def _unit_is_gram(unit: Any) -> bool:
+    """
+    Checks if a portion unit string represents a gram measurement.
+    """
     return str(unit or "").strip().lower() in GRAM_UNITS
 
 def _ingredient_macros_for_quantity(
@@ -107,6 +126,9 @@ def _ingredient_macros_for_quantity(
     default_unit: str,
     conversions: Optional[Dict[str, float]] = None
 ) -> Dict[str, float]:
+    """
+    Computes scaled nutrient values for an ingredient based on quantity, unit, and conversion rules.
+    """
     return calculate_ingredient_contribution(base_macros, qty, unit, default_unit, conversions)
 
 def _build_ingredient_struct(
@@ -116,6 +138,9 @@ def _build_ingredient_struct(
     unit: str,
     swapable: Optional[bool] = None,
 ) -> Dict[str, Any]:
+    """
+    Builds a clean ingredient dictionary representing a specific portion of an ingredient.
+    """
     default_unit = str(base.get("default_unit") or "g")
     conversions = base.get("conversions")
     macros = _ingredient_macros_for_quantity(base.get("base_macros") or {}, quantity, unit, default_unit, conversions)
@@ -136,30 +161,39 @@ def _build_ingredient_struct(
     return out
 
 async def _load_ingredients_db() -> Dict[str, Dict[str, Any]]:
-    async with AsyncSessionLocal() as session:
-        stmt = select(Ingredient)
-        res = await session.execute(stmt)
-        ingredients = res.scalars().all()
-        out = {}
-        for ing in ingredients:
-            out[ing.id] = {
-                "id": ing.id,
-                "name": ing.name,
-                "default_unit": ing.default_unit,
-                "base_macros": {
-                    "caloriesKcal": ing.calories,
-                    "proteinG": ing.protein,
-                    "carbsG": ing.carbs,
-                    "fatG": ing.fat,
-                    "fiberG": ing.fiber
-                },
-                "conversions": ing.conversions,
-                "caution": ing.caution,
-                "notes": ing.notes
-            }
-        return out
+    """
+    Loads all ingredients from the PostgreSQL database and formats them as index dictionaries.
+    """
+    try:
+        async with AsyncSessionLocal() as session:
+            stmt = select(Ingredient)
+            res = await session.execute(stmt)
+            ingredients = res.scalars().all()
+            out = {}
+            for ing in ingredients:
+                out[ing.id] = {
+                    "id": ing.id,
+                    "name": ing.name,
+                    "default_unit": ing.default_unit,
+                    "base_macros": {
+                        "caloriesKcal": ing.calories,
+                        "proteinG": ing.protein,
+                        "carbsG": ing.carbs,
+                        "fatG": ing.fat,
+                        "fiberG": ing.fiber
+                    },
+                    "conversions": ing.conversions,
+                    "caution": ing.caution,
+                    "notes": ing.notes
+                }
+            return out
+    except SQLAlchemyError as ex:
+        raise RepositoryException("Failed to query ingredients from repository") from ex
 
 def ingredient_index_by_id(cuisine: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Retrieves the global ingredient catalog map by ID, loading it from the database on first demand.
+    """
     # In DB, ingredients are unified globally
     key = "global"
     if key in _ingredients_cache:
@@ -172,58 +206,67 @@ def ingredient_index_by_id(cuisine: str) -> Dict[str, Dict[str, Any]]:
         return data
 
 async def _load_foods_db(cuisine_name: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Loads foods associated with the specified cuisine from database, resolving their ingredient components.
+    """
     norm_cuisine = _normalize_cuisine(cuisine_name)
     ingredients_by_id = await _load_ingredients_db()
     
-    async with AsyncSessionLocal() as session:
-        stmt = (
-            select(Food)
-            .join(Food.cuisine)
-            .filter(Cuisine.name == norm_cuisine)
-            .options(selectinload(Food.ingredient_associations))
-        )
-        res = await session.execute(stmt)
-        foods = res.scalars().all()
-        
-        out = {}
-        for f in foods:
-            ingredients_struct = []
-            for ass in f.ingredient_associations:
-                ing_base = ingredients_by_id.get(ass.ingredient_id)
-                if ing_base:
-                    ingredients_struct.append(
-                        _build_ingredient_struct(
-                            ing_base,
-                            quantity=ass.quantity,
-                            unit=ass.unit,
-                            swapable=ass.swapable
-                        )
-                    )
+    try:
+        async with AsyncSessionLocal() as session:
+            stmt = (
+                select(Food)
+                .join(Food.cuisine)
+                .filter(Cuisine.name == norm_cuisine)
+                .options(selectinload(Food.ingredient_associations))
+            )
+            res = await session.execute(stmt)
+            foods = res.scalars().all()
             
-            out[f.id] = {
-                "id": f.id,
-                "name": f.name,
-                "quantity": f.quantity,
-                "unit": f.unit,
-                "min_quantity": f.min_quantity or 0.0,
-                "max_quantity": f.max_quantity or 0.0,
-                "ingredients_struct": ingredients_struct,
-                "macros": {
-                    "caloriesKcal": f.calories,
-                    "proteinG": f.protein,
-                    "carbsG": f.carbs,
-                    "fatG": f.fat,
-                    "fiberG": f.fiber
-                },
-                "supports": f.supports or [],
-                "type": f.type or "",
-                "preparation": f.preparation or "",
-                "description": f.description or "",
-                "image_url": f.image_url or ""
-            }
-        return out
+            out = {}
+            for f in foods:
+                ingredients_struct = []
+                for ass in f.ingredient_associations:
+                    ing_base = ingredients_by_id.get(ass.ingredient_id)
+                    if ing_base:
+                        ingredients_struct.append(
+                            _build_ingredient_struct(
+                                ing_base,
+                                quantity=ass.quantity,
+                                unit=ass.unit,
+                                swapable=ass.swapable
+                            )
+                        )
+                
+                out[f.id] = {
+                    "id": f.id,
+                    "name": f.name,
+                    "quantity": f.quantity,
+                    "unit": f.unit,
+                    "min_quantity": f.min_quantity or 0.0,
+                    "max_quantity": f.max_quantity or 0.0,
+                    "ingredients_struct": ingredients_struct,
+                    "macros": {
+                        "caloriesKcal": f.calories,
+                        "proteinG": f.protein,
+                        "carbsG": f.carbs,
+                        "fatG": f.fat,
+                        "fiberG": f.fiber
+                    },
+                    "supports": f.supports or [],
+                    "type": f.type or "",
+                    "preparation": f.preparation or "",
+                    "description": f.description or "",
+                    "image_url": f.image_url or ""
+                }
+            return out
+    except SQLAlchemyError as ex:
+        raise RepositoryException(f"Failed to query foods for cuisine '{cuisine_name}' from repository") from ex
 
 def food_index_by_id(cuisine: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Retrieves the food catalog index by food ID for a given cuisine, caching results in memory.
+    """
     if cuisine in _foods_cache:
         return _foods_cache[cuisine]
     with _db_lock:
@@ -234,6 +277,9 @@ def food_index_by_id(cuisine: str) -> Dict[str, Dict[str, Any]]:
         return data
 
 def _scale_food_instance(food_base: Dict[str, Any], *, quantity: float, unit: str, replaceable: bool) -> Dict[str, Any]:
+    """
+    Scales a food item instance's ingredients and macros proportionally based on a target quantity.
+    """
     base_qty = _to_number(food_base.get("quantity"), 0.0)
     scale = quantity / base_qty if base_qty > 0 else 1.0
 
@@ -282,86 +328,102 @@ def build_food_instance(
     unit: str,
     replaceable: bool = True,
 ) -> Optional[Dict[str, Any]]:
+    """
+    Constructs and scales a specific food/recipe portion by fetching the template from the cuisine index.
+    """
     base = food_index_by_id(cuisine).get(str(food_id))
     if not base:
         return None
     return _scale_food_instance(base, quantity=quantity, unit=unit, replaceable=replaceable)
 
 async def _load_meals_db(cuisine_name: str) -> List[Dict[str, Any]]:
+    """
+    Loads all meals belonging to a cuisine from PostgreSQL, resolving linked foods and ingredients.
+    """
     norm_cuisine = _normalize_cuisine(cuisine_name)
     foods_by_id = await _load_foods_db(cuisine_name)
 
-    async with AsyncSessionLocal() as session:
-        stmt = (
-            select(Meal)
-            .join(Meal.cuisine)
-            .filter(Cuisine.name == norm_cuisine)
-            .options(selectinload(Meal.food_associations))
-        )
-        res = await session.execute(stmt)
-        meals = res.scalars().all()
+    try:
+        async with AsyncSessionLocal() as session:
+            stmt = (
+                select(Meal)
+                .join(Meal.cuisine)
+                .filter(Cuisine.name == norm_cuisine)
+                .options(selectinload(Meal.food_associations))
+            )
+            res = await session.execute(stmt)
+            meals = res.scalars().all()
 
-        out = []
-        for m in meals:
-            # Map Foods list
-            foods_struct = []
-            for ass in m.food_associations:
-                f_base = foods_by_id.get(ass.food_id)
-                if f_base:
-                    foods_struct.append(
-                        _scale_food_instance(
-                            f_base,
-                            quantity=ass.quantity,
-                            unit=ass.unit,
-                            replaceable=ass.replaceable
+            out = []
+            for m in meals:
+                # Map Foods list
+                foods_struct = []
+                for ass in m.food_associations:
+                    f_base = foods_by_id.get(ass.food_id)
+                    if f_base:
+                        foods_struct.append(
+                            _scale_food_instance(
+                                f_base,
+                                quantity=ass.quantity,
+                                unit=ass.unit,
+                                replaceable=ass.replaceable
+                            )
                         )
-                    )
-            
-            if not foods_struct:
-                continue
+                
+                if not foods_struct:
+                    continue
 
-            ingredients_struct = []
-            for food_index, food in enumerate(foods_struct):
-                for ing_index, ing in enumerate(food.get("ingredients_struct") or []):
-                    flat = deepcopy(ing)
-                    flat["food_id"] = food.get("id")
-                    flat["food_name"] = food.get("name")
-                    flat["food_index"] = food_index
-                    flat["ingredient_index"] = ing_index
-                    ingredients_struct.append(flat)
+                ingredients_struct = []
+                for food_index, food in enumerate(foods_struct):
+                    for ing_index, ing in enumerate(food.get("ingredients_struct") or []):
+                        flat = deepcopy(ing)
+                        flat["food_id"] = food.get("id")
+                        flat["food_name"] = food.get("name")
+                        flat["food_index"] = food_index
+                        flat["ingredient_index"] = ing_index
+                        ingredients_struct.append(flat)
 
-            totals = compile_meal_macros(foods_struct)
-            
-            # Reconstruct list timings/sessions
-            sessions_list = m.sessions if isinstance(m.sessions, list) else [m.sessions]
-            meal_time = _normalize_meal_time(sessions_list)
+                totals = compile_meal_macros(foods_struct)
+                
+                # Reconstruct list timings/sessions
+                sessions_list = m.sessions if isinstance(m.sessions, list) else [m.sessions]
+                meal_time = _normalize_meal_time(sessions_list)
 
-            # Reconstruct diet type list or string
-            diet_type = _normalize_diet_type(m.diet_types)
+                # Reconstruct diet type list or string
+                diet_type = _normalize_diet_type(m.diet_types)
 
-            out.append({
-                "Meal_ID": m.id,
-                "meal_name": m.name,
-                "goal": normalize_goal_list(m.goal),
-                "meal_time": meal_time,
-                "time": m.scheduled_time or "",
-                "ingredients": _ingredients_to_text(ingredients_struct),
-                "ingredients_struct": ingredients_struct,
-                "foods_struct": foods_struct,
-                "method": m.description or "",
-                "nutritive_values": format_nutritive_values(totals),
-                "serving_size": "",
-                "caution": f"Allergens: {m.allergens}" if m.allergens else "",
-                "diet_type": diet_type,
-                "cuisine_type": cuisine_name,
-                "country": "India",
-                "image_ID": m.image_url or "",
-                "description": m.description or "",
-                "_macros": totals
-            })
-        return out
+                out.append({
+                    "Meal_ID": m.id,
+                    "meal_name": m.name,
+                    "goal": normalize_goal_list(m.goal),
+                    "meal_time": meal_time,
+                    "time": m.scheduled_time or "",
+                    "ingredients": _ingredients_to_text(ingredients_struct),
+                    "ingredients_struct": ingredients_struct,
+                    "foods_struct": foods_struct,
+                    "method": m.description or "",
+                    "nutritive_values": format_nutritive_values(totals),
+                    "serving_size": "",
+                    "caution": f"Allergens: {m.allergens}" if m.allergens else "",
+                    "diet_type": diet_type,
+                    "cuisine_type": cuisine_name,
+                    "country": "India",
+                    "image_ID": m.image_url or "",
+                    "description": m.description or "",
+                    "_macros": totals
+                })
+            return out
+    except SQLAlchemyError as ex:
+        raise RepositoryException(f"Failed to query meals for cuisine '{cuisine_name}' from repository") from ex
 
 def load_master_meals(cuisine: str) -> List[Dict[str, Any]]:
+    """
+    Loads the master list of meals for a given cuisine from database, using cached lists in memory where possible.
+    """
+    norm_cuisine = _normalize_cuisine(cuisine)
+    if norm_cuisine not in VALID_CUISINES:
+        raise ResourceNotFoundException(f"Cuisine '{cuisine}' is not supported.")
+        
     if cuisine in _meals_cache:
         return _meals_cache[cuisine]
     with _db_lock:
@@ -373,10 +435,16 @@ def load_master_meals(cuisine: str) -> List[Dict[str, Any]]:
 
 @lru_cache(maxsize=32)
 def meal_index_by_id(cuisine: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Returns a fast-lookup map of meal ID to meal dictionary.
+    """
     return {str(m["Meal_ID"]): m for m in load_master_meals(cuisine) if m.get("Meal_ID")}
 
 @lru_cache(maxsize=32)
 def ingredient_catalog_by_key(cuisine: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Returns a unified lookup map of ingredient snake_case keys to their default nutrition details.
+    """
     out: Dict[str, Dict[str, Any]] = {}
     ingredients_by_id = ingredient_index_by_id(cuisine)
     for entry in ingredients_by_id.values():
@@ -407,6 +475,9 @@ def ingredient_catalog_by_key(cuisine: str) -> Dict[str, Dict[str, Any]]:
 
 @lru_cache(maxsize=32)
 def food_catalog_by_key(cuisine: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Returns a unified lookup map of food/recipe snake_case keys to their macro nutrient and quantity configurations.
+    """
     out: Dict[str, Dict[str, Any]] = {}
     foods_by_id = food_index_by_id(cuisine)
     for entry in foods_by_id.values():

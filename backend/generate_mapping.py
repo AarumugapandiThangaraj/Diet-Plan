@@ -1,9 +1,9 @@
 import json
 import os
 
-META_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Data new", "Images", "south_asia", "meta.json"))
-IMAGES_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Data new", "Images", "south_asia", "images final"))
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "image_mapping.json")
+META_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "assets", "images", "south_asia", "meta.json"))
+IMAGES_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "assets", "images", "south_asia"))
+OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "assets", "mappings", "image_mapping.json")
 
 def main():
     if not os.path.exists(META_FILE):

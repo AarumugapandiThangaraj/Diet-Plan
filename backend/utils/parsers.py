@@ -10,6 +10,11 @@ import re
 from typing import Any, Dict, List
 
 def _to_number(x: Any, fallback: float = 0.0) -> float:
+    """
+    Safely converts an input value to a finite float. 
+    Extracts the first matching numeric regex substring if a string is provided.
+    Returns the fallback value if parsing fails or result is not finite.
+    """
     if isinstance(x, (int, float)) and math.isfinite(float(x)):
         return float(x)
     text = str(x or "").strip().replace(",", "")
@@ -25,11 +30,19 @@ def _to_number(x: Any, fallback: float = 0.0) -> float:
         return fallback
 
 def split_keywords(raw: Any) -> List[str]:
+    """
+    Splits a raw input string by common delimiters (commas, semicolons, slashes, or word 'and')
+    into a clean list of lowercased keyword tokens.
+    """
     s = str(raw or "").lower()
     parts = re.split(r"[,;/]|\band\b", s)
     return [p.strip() for p in parts if p and p.strip()]
 
 def parse_nutritive_values(text: Any) -> Dict[str, float]:
+    """
+    Parses macro nutrition values (calories, protein, carbs, fat, fiber) from a raw text block 
+    using regex patterns, falling back to 0.0 for unmatched nutrients.
+    """
     t = str(text or "")
     def m(rx: str) -> float:
         match = re.search(rx, t, flags=re.IGNORECASE)

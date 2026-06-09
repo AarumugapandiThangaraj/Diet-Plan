@@ -60,14 +60,18 @@ async def _save_preferences_async(prefs: dict) -> None:
             pref_obj.notes = prefs.get("notes") or []
         await session.commit()
 
+from sqlalchemy.exc import SQLAlchemyError
+from exceptions.repository import RepositoryException
+
 def load_preferences() -> dict:
     try:
         return run_async(_load_preferences_async())
-    except Exception:
-        return {"likes": [], "dislikes": [], "allergies": [], "notes": []}
+    except SQLAlchemyError as ex:
+        raise RepositoryException("Failed to load preferences from repository") from ex
 
 def save_preferences(prefs: dict) -> None:
     try:
         run_async(_save_preferences_async(prefs))
-    except Exception as e:
-        print(f"Error saving preferences: {e}")
+    except SQLAlchemyError as ex:
+        raise RepositoryException("Failed to save preferences to repository") from ex
+

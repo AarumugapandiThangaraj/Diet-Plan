@@ -6,7 +6,9 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_prefix="NUTRI_")
 
     ollama_model: str = "gemma3:4b"
-    data_root: str = str(Path(__file__).resolve().parents[2] / "Data new")
+    assets_root: str = str(Path(__file__).resolve().parents[1] / "assets")
+    image_root: str = str(Path(__file__).resolve().parents[1] / "assets" / "images")
+    mapping_root: str = str(Path(__file__).resolve().parents[1] / "assets" / "mappings")
     cache_size: int = 32
     database_url: str = os.getenv(
         "DATABASE_URL", 

@@ -5,6 +5,7 @@ from database.models.food import Food, FoodIngredient
 from database.models.meal import Meal, MealFood
 from database.models.preference import UserPreference
 from database.models.chat import ChatSession, ChatMessage
+from database.models.substitute import Substitute
 
 __all__ = [
     "Base",
@@ -17,4 +18,5 @@ __all__ = [
     "UserPreference",
     "ChatSession",
     "ChatMessage",
+    "Substitute",
 ]

@@ -8,12 +8,19 @@ from typing import Any, Dict
 from utils.parsers import _to_number
 
 def _fmt_num(x: float) -> str:
+    """
+    Formats a float value into a clean, human-readable string. 
+    Trims trailing decimals and zeroes where appropriate.
+    """
     f = float(x)
     if abs(f - round(f)) < 1e-9:
         return str(int(round(f)))
     return f"{f:.2f}".rstrip("0").rstrip(".")
 
 def format_nutritive_values(macros: Dict[str, Any]) -> str:
+    """
+    Constructs a formatted summary string showing the key macro nutrient metrics.
+    """
     kcal = _to_number(macros.get("caloriesKcal"), 0.0)
     protein = _to_number(macros.get("proteinG"), 0.0)
     carbs = _to_number(macros.get("carbsG"), 0.0)

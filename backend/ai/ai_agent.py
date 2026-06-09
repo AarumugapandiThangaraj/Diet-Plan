@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 logger = logging.getLogger("app.ai_agent")
 
+from exceptions.service import AIServiceException
 from repositories.meal_repository import load_master_meals
 from repositories.chat_repository import load_preferences, save_preferences
 from services.planner_service import fetch_daily_targets_service, get_meal_swap_options_service
@@ -55,14 +56,20 @@ Assistant: "It looks like you want to navigate to the Selected Meals page. Is th
 
 OLLAMA_MODEL = "gemma3:4b"
 
-def _call_ollama(messages: List[dict]) -> Optional[str]:
+def _call_ollama(messages: List[dict]) -> str:
     try:
         import ollama
+    except ImportError as e:
+        raise AIServiceException("Local Ollama library is not installed or available") from e
+
+    try:
         r = ollama.chat(model=OLLAMA_MODEL, messages=messages, options={"num_predict": 350, "temperature": 0.7})
-        return r["message"]["content"].strip()
+        content = r["message"]["content"].strip()
+        if not content:
+            raise AIServiceException("Received empty response from Ollama AI model")
+        return content
     except Exception as e:
-        logger.error(f"[Chat] Ollama: {e}", exc_info=True)
-        return None
+        raise AIServiceException(f"Ollama AI model communication failed: {str(e)}") from e
 
 def _search_meals(query: str, cuisine: str, top_k: int = 5) -> List[dict]:
     meals = load_master_meals(cuisine)
@@ -393,8 +400,8 @@ def process_chat_message(message: str, history: list, agent_name: str, context: 
         try:
             json.loads(am.group(1))
             action_payload = f"__CONFIRM_ACTION__|{am.group(1)}"
-        except:
-            pass
+        except json.JSONDecodeError as e:
+            raise AIServiceException("AI agent returned malformed JSON action block") from e
 
     qrm = re.search(r"<QUICK_REPLIES>([\s\S]*?)</QUICK_REPLIES>", reply_text, flags=re.IGNORECASE)
     is_verifying = qrm or re.search(r"\b(correct|right|proceed|want to)\b\s*\?", reply_text, re.IGNORECASE)
@@ -412,7 +419,7 @@ def process_chat_message(message: str, history: list, agent_name: str, context: 
                     else:
                         quick_replies.append({"label": l, "value": l.lower()})
                 reply_text = re.sub(r"<QUICK_REPLIES>[\s\S]*?</QUICK_REPLIES>", "", reply_text, flags=re.IGNORECASE).strip()
-            except:
+            except Exception:
                 pass
         else:
             quick_replies = [
@@ -424,8 +431,8 @@ def process_chat_message(message: str, history: list, agent_name: str, context: 
             try:
                 action = json.loads(am.group(1))
                 reply_text = re.sub(r"<ACTION>[\s\S]*?</ACTION>", "", reply_text).strip()
-            except:
-                pass
+            except json.JSONDecodeError as e:
+                raise AIServiceException("AI agent returned malformed JSON action block") from e
 
     return {
         "reply": reply_text,

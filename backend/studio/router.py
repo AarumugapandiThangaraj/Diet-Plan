@@ -72,7 +72,7 @@ def studio_meta(cuisine: str = "north_indian"):
 def studio_targets(req: TargetsRequest):
     profile_dict = _apply_cuisine(req.profile.model_dump())
     return fetch_daily_targets_service(profile_dict)
-
+    
 @router.post("/rank", response_model=RankResponse)
 def studio_rank(req: RankRequest):
     profile_dict = _apply_cuisine(req.profile.model_dump())
@@ -172,19 +172,16 @@ def studio_swap_meal_options(req: MealSwapOptionsRequest):
     if mt not in MEAL_TIME_ORDER:
         raise HTTPException(status_code=400, detail="mealTime is invalid.")
 
-    try:
-        return get_meal_swap_options_service(
-            profile=profile,
-            meal_time=mt,
-            current_meal_id=req.currentMealId,
-            target_macros=req.targetMacros,
-            exclude_meal_ids=req.excludeMealIds,
-            allowed_meal_ids=req.allowedMealIds,
-            top_n=req.topN,
-            cuisine=profile.get("cuisineType") or "north_indian"
-        )
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+    return get_meal_swap_options_service(
+        profile=profile,
+        meal_time=mt,
+        current_meal_id=req.currentMealId,
+        target_macros=req.targetMacros,
+        exclude_meal_ids=req.excludeMealIds,
+        allowed_meal_ids=req.allowedMealIds,
+        top_n=req.topN,
+        cuisine=profile.get("cuisineType") or "north_indian"
+    )
 
 @router.post("/swap/meal/apply", response_model=SwapMealApplyResponse)
 def studio_swap_meal_apply(req: MealSwapApplyRequest):
@@ -202,45 +199,33 @@ def studio_swap_meal_apply(req: MealSwapApplyRequest):
 
 @router.post("/swap/food/options", response_model=SwapFoodOptionsResponse)
 def studio_swap_food_options(req: FoodSwapOptionsRequest):
-    try:
-        cuisine = req.meal.get("cuisine_type") or "north_indian"
-        if isinstance(cuisine, list) and len(cuisine) > 0:
-            cuisine = cuisine[0]
-        return get_food_swap_options_service(meal=req.meal, food_name=req.foodName, top_n=req.topN, cuisine=str(cuisine))
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    if isinstance(cuisine, list) and len(cuisine) > 0:
+        cuisine = cuisine[0]
+    return get_food_swap_options_service(meal=req.meal, food_name=req.foodName, top_n=req.topN, cuisine=str(cuisine))
 
 @router.post("/swap/food/apply", response_model=SwapMealApplyResponse)
 def studio_swap_food_apply(req: FoodSwapApplyRequest):
-    try:
-        cuisine = req.meal.get("cuisine_type") or "north_indian"
-        if isinstance(cuisine, list) and len(cuisine) > 0:
-            cuisine = cuisine[0]
-        meal = apply_food_swap_service(meal=req.meal, option=req.option, cuisine=str(cuisine))
-        return {"meal": meal}
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    if isinstance(cuisine, list) and len(cuisine) > 0:
+        cuisine = cuisine[0]
+    meal = apply_food_swap_service(meal=req.meal, option=req.option, cuisine=str(cuisine))
+    return {"meal": meal}
 
 @router.post("/swap/ingredient/options", response_model=SwapIngredientOptionsResponse)
 def studio_swap_ingredient_options(req: IngredientSwapOptionsRequest):
-    try:
-        cuisine = req.meal.get("cuisine_type") or "north_indian"
-        if isinstance(cuisine, list) and len(cuisine) > 0:
-            cuisine = cuisine[0]
-        return get_ingredient_swap_options_service(meal=req.meal, ingredient_query=req.ingredientQuery, top_n=req.topN, cuisine=str(cuisine))
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    if isinstance(cuisine, list) and len(cuisine) > 0:
+        cuisine = cuisine[0]
+    return get_ingredient_swap_options_service(meal=req.meal, ingredient_query=req.ingredientQuery, top_n=req.topN, cuisine=str(cuisine))
 
 @router.post("/swap/ingredient/apply", response_model=SwapMealApplyResponse)
 def studio_swap_ingredient_apply(req: IngredientSwapApplyRequest):
-    try:
-        cuisine = req.meal.get("cuisine_type") or "north_indian"
-        if isinstance(cuisine, list) and len(cuisine) > 0:
-            cuisine = cuisine[0]
-        meal = apply_ingredient_swap_service(meal=req.meal, option=req.option, cuisine=str(cuisine))
-        return {"meal": meal}
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    if isinstance(cuisine, list) and len(cuisine) > 0:
+        cuisine = cuisine[0]
+    meal = apply_ingredient_swap_service(meal=req.meal, option=req.option, cuisine=str(cuisine))
+    return {"meal": meal}
 
 @router.post("/substitutes/from-ingredients", response_model=SubstitutesResponse)
 def studio_substitutes(req: SubstitutesRequest):

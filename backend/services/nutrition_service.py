@@ -26,6 +26,10 @@ from config.constants import (
 )
 
 def calculate_daily_targets(profile: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Computes all target nutrition goals (calories, protein, carbs, fat, fiber, water)
+    based on the user's age, gender, height, weight, activity level, and targets.
+    """
     age = _clamp(_to_safe_number(profile.get("age"), 30), 1, 120)
     height_cm = _clamp(_to_safe_number(profile.get("heightCm"), 165), 100, 250)
     weight_kg = _clamp(_to_safe_number(profile.get("weightKg"), 60), 20, 300)
