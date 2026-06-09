@@ -18,10 +18,49 @@ import asyncio
 import uuid
 from fastapi import Request
 from repositories.meal_repository import set_main_loop
+from schemas import HealthResponse, ErrorResponse
 
 setup_logging()
 
-app = FastAPI(title="Diet Plan Studio API")
+app = FastAPI(
+    title="Diet Plan Studio API",
+    description="AI-powered nutrition planning, meal recommendation, and dietary swap platform designed for customized wellness solutions.",
+    version="1.0.0",
+    contact={
+        "name": "Diet Plan Studio Support",
+        "email": "support@dietplanstudio.com",
+    },
+    openapi_tags=[
+        {
+            "name": "System",
+            "description": "General system health, uptime check, and system configuration information."
+        },
+        {
+            "name": "Planner",
+            "description": "Calculate daily calorie/macro targets and generate structured multi-day nutrition plans based on individual profiles."
+        },
+        {
+            "name": "Nutrition",
+            "description": "Rank, retrieve, and score meal/recipe candidates against customized calorie and macronutrient requirements."
+        },
+        {
+            "name": "Swaps",
+            "description": "Suggest and apply alternative options for whole meals, individual foods, or specific ingredients."
+        },
+        {
+            "name": "Substitutions",
+            "description": "Query specific ingredient substitutes based on database mappings and nutrient scaling ratios."
+        },
+        {
+            "name": "Chat",
+            "description": "Engage with an AI nutrition assistant for real-time preferences adjustments, recommendations, or conversational meal planning."
+        },
+        {
+            "name": "Images",
+            "description": "Serve recipe and food images resolved dynamically from database records."
+        }
+    ]
+)
 register_global_handlers(app)
 
 @app.middleware("http")
@@ -73,14 +112,60 @@ import json
 import os
 from fastapi.responses import FileResponse, JSONResponse
 
-@app.get("/api/health")
+@app.get(
+    "/api/health",
+    response_model=HealthResponse,
+    tags=["System"],
+    summary="Check API Health Status",
+    description="Provides a liveness check to verify if the server is healthy, up, and responsive.",
+    responses={
+        200: {
+            "description": "API server is healthy and operational.",
+            "model": HealthResponse
+        },
+        500: {
+            "description": "Internal server error indicating the system is unhealthy.",
+            "model": ErrorResponse
+        }
+    }
+)
 def health():
     """
     Liveness and health status check endpoint.
     """
     return {"ok": True}
 
-@app.get("/api/food-image/{food_id}")
+@app.get(
+    "/api/food-image/{food_id}",
+    tags=["Images"],
+    summary="Get Food Image File",
+    description=(
+        "Retrieves the local image file associated with a food/recipe ID. "
+        "Looks up the metadata details from the PostgreSQL database, resolves the relative file path "
+        "from the system configuration settings, and streams the raw image bytes back to the client. "
+        "Returns a 404 response if either the image record database lookup fails or the physical image file is missing on disk."
+    ),
+    responses={
+        200: {
+            "description": "Streaming image file response (e.g. image/jpeg, image/png).",
+            "content": {
+                "image/*": {}
+            }
+        },
+        404: {
+            "description": "Image database entry not found or physical file missing on disk.",
+            "content": {
+                "application/json": {
+                    "example": {"detail": "Image not found for food_id"}
+                }
+            }
+        },
+        500: {
+            "description": "Internal database or filesystem failure.",
+            "model": ErrorResponse
+        }
+    }
+)
 async def get_food_image(food_id: str):
     """
     Fetches the local image file path from the database metadata and streams it 

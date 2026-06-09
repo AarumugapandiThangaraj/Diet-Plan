@@ -48,6 +48,7 @@ def clean_cuisine_name(filename: str, parent_name: str) -> str:
 async def init_db():
     print("Initializing Database tables...")
     async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
     print("Database tables initialized successfully.")
 
@@ -203,7 +204,7 @@ async def run_import():
                     max_quantity=float(item.get("Max_Quantity") or item.get("max_quantity") or 0.0) or None,
                     unit=str(item.get("Unit") or "g").strip(),
                     supports=item.get("Supports") or [],
-                    preparation=str(item.get("Preparation") or "").strip(),
+                    preparation="\n".join(item.get("Preparation")) if isinstance(item.get("Preparation"), list) else str(item.get("Preparation") or "").strip(),
                     notes=str(item.get("Notes") or "").strip(),
                     warning=bool(item.get("Warning") or False),
                     calories=0.0,
