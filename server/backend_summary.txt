@@ -1,0 +1,354 @@
+
+### File: app.py
+- async def add_correlation_id(request, call_next)
+- async def startup_event()
+- def health()
+- async def get_food_image(food_id)
+
+### File: generate_mapping.py
+- def main()
+
+### File: schemas.py
+- class StudioProfile:
+  - def parse_age(cls, v)
+  - def parse_height(cls, v)
+  - def parse_weight(cls, v)
+- class TargetsRequest:
+- class RankRequest:
+- class BuildPlanRequest:
+- class SubstitutesRequest:
+- class MealSwapOptionsRequest:
+- class MealSwapApplyRequest:
+- class FoodSwapOptionsRequest:
+- class FoodSwapApplyRequest:
+- class IngredientSwapOptionsRequest:
+- class IngredientSwapApplyRequest:
+- class ChatMessage:
+- class ChatRequest:
+- class ChatResponse:
+- class StudioMetaResponse:
+- class DailyTargetsResponse:
+- class RankResponse:
+- class BuildPlanResponse:
+- class MealSwapOptionsResponse:
+- class SwapMealApplyResponse:
+- class SwapFoodOptionsResponse:
+- class SwapIngredientOptionsResponse:
+- class SubstitutesResponse:
+- class HealthResponse:
+- class ErrorDetail:
+- class ErrorResponse:
+- class DashboardRequest:
+- class DashboardDailyTargets:
+- class DashboardHealthMetrics:
+- class DashboardHydration:
+- class DashboardEnergySummary:
+- class DashboardMeal:
+- class DashboardResponse:
+- class ConsumeMealRequest:
+- class ConsumeMealResponse:
+- class LogHydrationRequest:
+- class LogHydrationResponse:
+
+### File: ai\ai_agent.py
+- def _call_ollama(messages)
+- def _search_meals(query, cuisine, top_k)
+- def _format_meal_context(meals)
+- def _format_plan_summary(ctx)
+- def _get_target_macros(ctx, profile, meal_time)
+- def _get_real_swap_options(profile_dict, meal_time, current_meal_id, allowed_meal_ids, top_n, target_macros)
+- def _extract_preferences(message, prefs)
+- def _fuzzy_match_field(raw_field)
+- def _fuzzy_match_value(field, raw_value)
+- def _detect_intent(msg, ctx)
+- def _build_intent_response(intent, data, ctx, prefs, agent_name)
+- def process_chat_message(message, history, agent_name, context)
+
+### File: config\constants.py
+
+### File: config\errors.py
+- def register_error_handlers(app)
+
+### File: config\logging.py
+- def setup_logging()
+
+### File: config\settings.py
+- class Settings:
+
+### File: database\base.py
+- class Base:
+- class TimestampMixin:
+
+### File: database\create_tables.py
+- async def create_tables()
+
+### File: database\etl_import.py
+- def clean_cuisine_name(filename, parent_name)
+- def jaro_winkler(s1, s2)
+- def normalize_ingredient_name(name)
+- def normalize_unit_name(unit)
+- class ETLPipeline:
+  - def __init__(self, data_root, dry_run, resolutions_file)
+  - def load_all_datasets(self)
+  - def validate_in_memory(self, image_mapping)
+  - def run(self, image_mapping)
+  - async def write_to_db(self, image_mapping)
+
+### File: database\session.py
+- async def get_db()
+
+### File: database\models\chat.py
+- class ChatSession:
+- class ChatMessage:
+
+### File: database\models\cuisine.py
+- class Cuisine:
+
+### File: database\models\food.py
+- class FoodIngredient:
+- class Food:
+
+### File: database\models\ingredient_alias.py
+- class IngredientAlias:
+
+### File: database\models\master_ingredient.py
+- class MasterIngredient:
+
+### File: database\models\meal.py
+- class MealFood:
+- class Meal:
+
+### File: database\models\preference.py
+- class UserPreference:
+
+### File: database\models\substitute.py
+- class Substitute:
+
+### File: database\models\user_meal_log.py
+- class UserMealLog:
+
+### File: database\models\user_plan.py
+- class UserPlan:
+
+### File: database\models\user_water_log.py
+- class UserWaterLog:
+
+### File: database\models\__init__.py
+
+### File: domain\conversion_engine.py
+- def _unit_is_gram(unit)
+- def convert_to_grams(qty, unit, default_unit, conversions)
+
+### File: domain\filters.py
+- def _is_probably_non_veg(meal)
+- def _contains_any(haystack, keywords)
+- def _is_meal_allowed(meal)
+
+### File: domain\meal_compiler.py
+- def compile_meal_macros(scaled_foods)
+
+### File: domain\models.py
+- class Ingredient:
+- class Food:
+- class Meal:
+
+### File: domain\nutrition_compiler.py
+- def calculate_ingredient_contribution(base_macros, qty, unit, default_unit, conversions)
+- def compile_food_macros(ingredients_list)
+
+### File: domain\nutrition_formulas.py
+- def normalize_activity_level(activity_level)
+- def _to_safe_number(value, fallback)
+- def _clamp(value, min_value, max_value)
+- def calculate_bmi(weight_kg, height_cm)
+- def calculate_target_weight_kg(height_cm, target_bmi)
+- def get_bmi_category(bmi)
+- def calculate_bmr(weight_kg, height_cm, age, gender)
+- def calculate_tdee(bmr_kcal, activity_level)
+- def _protein_g_per_kg_target(bmi_category)
+- def _fat_percent_preset(bmi_category)
+
+### File: domain\scaling_formulas.py
+- def _f(v)
+- def clamp(x, low, high)
+- def ensure_macros(macros)
+- def scale_macros(macros, factor)
+- def sum_ingredient_macros(ingredients)
+- def sum_food_macros(foods)
+- def ingredient_to_text(ing)
+- def ingredients_to_text(ingredients)
+- def recompute_meal_from_ingredients(meal)
+- def recompute_meal_from_foods(meal)
+- def _scale_ingredient(ing)
+- def scale_meal_to_targets(meal, target_macros)
+
+### File: domain\substitutes.py
+- def build_substitute_index()
+- def suggest_for_ingredients_text(ingredients)
+
+### File: domain\swap_engine.py
+- def _ratio(a, b)
+- def _clamp(x, low, high)
+- def _macro_error(actual, target)
+- def _meal_macros(meal)
+- def meal_for_plan_payload(meal)
+- def _meal_name_from_foods(foods)
+- def _flatten_meal_ingredients(meal)
+- def _resolve_source_ingredient(meal, query)
+- def _resolve_source_food(meal, query)
+- def _replacement_from_catalog(entry, source_ingredient)
+- def _replacement_food_from_catalog(entry, source_food)
+- def _candidate_keys_for_source(source_name)
+- def _candidate_food_keys_for_source(source_name)
+- def _apply_ingredient_replacement(meal, option, cuisine)
+- def _apply_food_replacement(meal, option, cuisine)
+
+### File: exceptions\base.py
+- class NutriException:
+- class ValidationException:
+- class ResourceNotFoundException:
+- class ConfigurationException:
+- class AuthenticationException:
+- class AuthorizationException:
+
+### File: exceptions\domain.py
+- class NutritionCalculationException:
+- class SwapEngineException:
+- class PlanGenerationException:
+
+### File: exceptions\handlers.py
+- def get_request_id()
+- def make_error_response(code, message, status_code, details)
+- def register_global_handlers(app)
+
+### File: exceptions\repository.py
+- class RepositoryException:
+
+### File: exceptions\service.py
+- class ServiceException:
+- class DatabaseException:
+- class AIServiceException:
+- class ExternalDependencyException:
+
+### File: repositories\chat_repository.py
+- def run_async(coro)
+- async def _load_preferences_async()
+- async def _save_preferences_async(prefs)
+- def load_preferences()
+- def save_preferences(prefs)
+
+### File: repositories\meal_repository.py
+- def set_main_loop(loop)
+- def run_async(coro)
+- def _sum_macros(items)
+- def _ingredients_to_text(items)
+- def _unit_is_gram(unit)
+- def _ingredient_macros_for_quantity(base_macros, qty, unit, default_unit, conversions)
+- def _build_ingredient_struct(base)
+- async def _load_ingredients_db()
+- def ingredient_index_by_id(cuisine)
+- async def _load_foods_db(cuisine_name)
+- def food_index_by_id(cuisine)
+- def _scale_food_instance(food_base)
+- def build_food_instance(cuisine, food_id)
+- async def _load_meals_db(cuisine_name)
+- def load_master_meals(cuisine)
+- def meal_index_by_id(cuisine)
+- def ingredient_catalog_by_key(cuisine)
+- def food_catalog_by_key(cuisine)
+
+### File: repositories\substitute_repository.py
+- def _normalize_name(value)
+- def normalize_key(value)
+- def extract_ingredient_name(token)
+- class SubstituteRepository:
+  - def __init__(self)
+  - async def initialize_cache(self)
+  - async def refresh_cache(self)
+
+### File: repositories\user_meal_log_repository.py
+- async def get_meal_consumption_logs(user_identifier, meal_date)
+- async def save_meal_consumption_log(user_identifier, meal_id, meal_date, consumed)
+
+### File: repositories\user_plan_repository.py
+- async def load_user_plan(user_identifier)
+- async def save_user_plan(user_identifier, start_date, end_date, plan_payload)
+
+### File: repositories\user_water_log_repository.py
+- async def get_water_consumption_log(user_identifier, log_date)
+- async def save_water_consumption_log(user_identifier, log_date, water_ml)
+
+### File: services\nutrition_service.py
+- def calculate_daily_targets(profile)
+
+### File: services\planner_service.py
+- def fetch_daily_targets_service(profile)
+- def fetch_ranked_meals_service(profile, meal_times, limit)
+- def get_meal_swap_options_service(profile, meal_time, current_meal_id, target_macros, exclude_meal_ids, allowed_meal_ids, top_n, cuisine)
+- def get_food_swap_options_service(meal, food_name, top_n, cuisine)
+- def get_ingredient_swap_options_service(meal, ingredient_query, top_n, cuisine)
+- def apply_food_swap_service(meal, option, cuisine)
+- def apply_ingredient_swap_service(meal, option, cuisine)
+- def strip_meal_payload(meal)
+- def strip_plan_payload(plan_data)
+- async def save_user_plan_service(user_identifier, days, plan_data)
+- async def get_active_user_plan_service(user_identifier)
+
+### File: services\ranking_service.py
+- def _relative_error(actual, target)
+- def _macro_weights(bmi_category)
+- def _macro_score(macros, expected, weights)
+- def _preview_scaled_macros(macros, expected)
+- def _normalized_meal_distribution(meal_times)
+- def session_target_macros(targets, meal_time, meal_times)
+- def _rank_view(meal, score, scaled_macros, scale_factor)
+- def rank_meals_for_meal_time()
+
+### File: services\swap_service.py
+- def get_meal_swap_options()
+- def get_food_swap_options()
+- def get_ingredient_swap_options()
+- def apply_food_swap_option()
+- def apply_ingredient_swap_option()
+
+### File: studio\chat.py
+- async def chat_endpoint(req)
+
+### File: studio\router.py
+- def _apply_cuisine(profile_dict)
+- def get_loaded_source_path(cuisine)
+- def studio_meta(cuisine)
+- def studio_targets(req)
+- def studio_rank(req)
+- async def studio_build_plan(req)
+- def studio_swap_meal_options(req)
+- def studio_swap_meal_apply(req)
+- def studio_swap_food_options(req)
+- def studio_swap_food_apply(req)
+- def studio_swap_ingredient_options(req)
+- def studio_swap_ingredient_apply(req)
+- def studio_substitutes(req)
+- async def studio_dashboard(user_id, req)
+- async def studio_consume_meal(req)
+- async def studio_log_hydration(req)
+
+### File: studio\__init__.py
+
+### File: utils\formatters.py
+- def _fmt_num(x)
+- def format_nutritive_values(macros)
+
+### File: utils\normalizers.py
+- def normalize_tag(value)
+- def _normalize_cuisine(value)
+- def normalize_goal(goal)
+- def normalize_goal_list(value)
+- def _normalize_meal_time(value)
+- def _normalize_diet_type(value)
+- def normalize_ingredient_key(value)
+- def normalize_food_key(value)
+
+### File: utils\parsers.py
+- def _to_number(x, fallback)
+- def split_keywords(raw)
+- def parse_nutritive_values(text)
