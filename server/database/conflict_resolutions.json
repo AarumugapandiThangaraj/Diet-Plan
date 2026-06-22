@@ -1,0 +1,1962 @@
+{
+  "lunch meat": {
+    "authoritative_id": "ING-000001",
+    "source_file": "ingredients master.json"
+  },
+  "cheese": {
+    "authoritative_id": "ING-000002",
+    "source_file": "ingredients master.json"
+  },
+  "ritz crackers": {
+    "authoritative_id": "ING-000003",
+    "source_file": "ingredients master.json"
+  },
+  "black pepper": {
+    "authoritative_id": "ING-000004",
+    "source_file": "ingredients master.json"
+  },
+  "paprika": {
+    "authoritative_id": "ING-000005",
+    "source_file": "ingredients master.json"
+  },
+  "chorizo": {
+    "authoritative_id": "ING-000006",
+    "source_file": "ingredients master.json"
+  },
+  "egg": {
+    "authoritative_id": "ING-000007",
+    "source_file": "ingredients master.json"
+  },
+  "onion": {
+    "authoritative_id": "ING-000008",
+    "source_file": "ingredients master.json"
+  },
+  "flour tortilla": {
+    "authoritative_id": "ING-000009",
+    "source_file": "ingredients master.json"
+  },
+  "bow tie pasta": {
+    "authoritative_id": "ING-000010",
+    "source_file": "ingredients master.json"
+  },
+  "pepperoni": {
+    "authoritative_id": "ING-000011",
+    "source_file": "ingredients master.json"
+  },
+  "italian dressing": {
+    "authoritative_id": "ING-000012",
+    "source_file": "ingredients master.json"
+  },
+  "parmesan cheese": {
+    "authoritative_id": "ING-000013",
+    "source_file": "ingredients master.json"
+  },
+  "italian seasoning": {
+    "authoritative_id": "ING-000014",
+    "source_file": "ingredients master.json"
+  },
+  "mayonnaise": {
+    "authoritative_id": "ING-000015",
+    "source_file": "ingredients master.json"
+  },
+  "lemon juice": {
+    "authoritative_id": "ING-000016",
+    "source_file": "ingredients master.json"
+  },
+  "sugar": {
+    "authoritative_id": "ING-000017",
+    "source_file": "ingredients master.json"
+  },
+  "rotini pasta": {
+    "authoritative_id": "ING-000018",
+    "source_file": "ingredients master.json"
+  },
+  "bacon": {
+    "authoritative_id": "ING-000019",
+    "source_file": "ingredients master.json"
+  },
+  "green onion": {
+    "authoritative_id": "ING-000020",
+    "source_file": "ingredients master.json"
+  },
+  "lettuce": {
+    "authoritative_id": "ING-000021",
+    "source_file": "ingredients master.json"
+  },
+  "dried basil": {
+    "authoritative_id": "ING-000022",
+    "source_file": "ingredients master.json"
+  },
+  "artichoke hearts": {
+    "authoritative_id": "ING-000023",
+    "source_file": "ingredients master.json"
+  },
+  "grape tomatoes": {
+    "authoritative_id": "ING-000024",
+    "source_file": "ingredients master.json"
+  },
+  "black olives": {
+    "authoritative_id": "ING-000025",
+    "source_file": "ingredients master.json"
+  },
+  "green bell pepper": {
+    "authoritative_id": "ING-000026",
+    "source_file": "ingredients master.json"
+  },
+  "cheese tortellini": {
+    "authoritative_id": "ING-000027",
+    "source_file": "ingredients master.json"
+  },
+  "olive oil": {
+    "authoritative_id": "ING-000028",
+    "source_file": "ingredients master.json"
+  },
+  "basil pesto": {
+    "authoritative_id": "ING-000029",
+    "source_file": "ingredients master.json"
+  },
+  "garlic": {
+    "authoritative_id": "ING-000030",
+    "source_file": "ingredients master.json"
+  },
+  "mozzarella cheese": {
+    "authoritative_id": "ING-000031",
+    "source_file": "ingredients master.json"
+  },
+  "chicken tenders": {
+    "authoritative_id": "ING-000032",
+    "source_file": "ingredients master.json"
+  },
+  "light mayonnaise": {
+    "authoritative_id": "ING-000033",
+    "source_file": "ingredients master.json"
+  },
+  "breadcrumbs": {
+    "authoritative_id": "ING-000034",
+    "source_file": "ingredients master.json"
+  },
+  "garlic powder": {
+    "authoritative_id": "ING-000036",
+    "source_file": "ingredients master.json"
+  },
+  "enchilada sauce": {
+    "authoritative_id": "ING-000038",
+    "source_file": "ingredients master.json"
+  },
+  "mexican blend cheese": {
+    "authoritative_id": "ING-000039",
+    "source_file": "ingredients master.json"
+  },
+  "corn tortilla": {
+    "authoritative_id": "ING-000040",
+    "source_file": "ingredients master.json"
+  },
+  "white rice": {
+    "authoritative_id": "ING-000041",
+    "source_file": "ingredients master.json"
+  },
+  "green peas": {
+    "authoritative_id": "ING-000042",
+    "source_file": "ingredients master.json"
+  },
+  "chicken breast": {
+    "authoritative_id": "ING-000043",
+    "source_file": "ingredients master.json"
+  },
+  "cooking oil": {
+    "authoritative_id": "ING-000044",
+    "source_file": "ingredients master.json"
+  },
+  "stir-fry sauce": {
+    "authoritative_id": "ING-000045",
+    "source_file": "ingredients master.json"
+  },
+  "spaghetti": {
+    "authoritative_id": "ING-000046",
+    "source_file": "ingredients master.json"
+  },
+  "salt": {
+    "authoritative_id": "ING-000050",
+    "source_file": "ingredients master.json"
+  },
+  "scallions": {
+    "authoritative_id": "ING-000051",
+    "source_file": "ingredients master.json"
+  },
+  "dijon mustard": {
+    "authoritative_id": "ING-000052",
+    "source_file": "ingredients master.json"
+  },
+  "whole grain bread": {
+    "authoritative_id": "ING-000053",
+    "source_file": "ingredients master.json"
+  },
+  "pizza sauce": {
+    "authoritative_id": "ING-000054",
+    "source_file": "ingredients master.json"
+  },
+  "shredded cheese": {
+    "authoritative_id": "ING-000055",
+    "source_file": "ingredients master.json"
+  },
+  "vegetable oil": {
+    "authoritative_id": "ING-000057",
+    "source_file": "ingredients master.json"
+  },
+  "cheddar cheese": {
+    "authoritative_id": "ING-000059",
+    "source_file": "ingredients master.json"
+  },
+  "worcestershire sauce": {
+    "authoritative_id": "ING-000060",
+    "source_file": "ingredients master.json"
+  },
+  "multigrain english muffin": {
+    "authoritative_id": "ING-000061",
+    "source_file": "ingredients master.json"
+  },
+  "whole wheat bread": {
+    "authoritative_id": "ING-000062",
+    "source_file": "ingredients master.json"
+  },
+  "egg noodles": {
+    "authoritative_id": "ING-000063",
+    "source_file": "ingredients master.json"
+  },
+  "chicken bouillon cube": {
+    "authoritative_id": "ING-000065",
+    "source_file": "ingredients master.json"
+  },
+  "ranch dressing mix": {
+    "authoritative_id": "ING-000068",
+    "source_file": "ingredients master.json"
+  },
+  "whole wheat tortilla": {
+    "authoritative_id": "ING-000069",
+    "source_file": "ingredients master.json"
+  },
+  "beef frank": {
+    "authoritative_id": "ING-000070",
+    "source_file": "ingredients master.json"
+  },
+  "hot dog bun": {
+    "authoritative_id": "ING-000071",
+    "source_file": "ingredients master.json"
+  },
+  "yellow mustard": {
+    "authoritative_id": "ING-000072",
+    "source_file": "ingredients master.json"
+  },
+  "sweet pickle relish": {
+    "authoritative_id": "ING-000073",
+    "source_file": "ingredients master.json"
+  },
+  "brown sugar": {
+    "authoritative_id": "ING-000074",
+    "source_file": "ingredients master.json"
+  },
+  "pecans": {
+    "authoritative_id": "ING-000075",
+    "source_file": "ingredients master.json"
+  },
+  "cane syrup": {
+    "authoritative_id": "ING-000076",
+    "source_file": "ingredients master.json"
+  },
+  "italian sausage": {
+    "authoritative_id": "ING-000077",
+    "source_file": "ingredients master.json"
+  },
+  "tomato paste": {
+    "authoritative_id": "ING-000078",
+    "source_file": "ingredients master.json"
+  },
+  "ricotta cheese": {
+    "authoritative_id": "ING-000079",
+    "source_file": "ingredients master.json"
+  },
+  "lasagna noodles": {
+    "authoritative_id": "ING-000080",
+    "source_file": "ingredients master.json"
+  },
+  "pork and beans": {
+    "authoritative_id": "ING-000081",
+    "source_file": "ingredients master.json"
+  },
+  "hot dogs": {
+    "authoritative_id": "ING-000082",
+    "source_file": "ingredients master.json"
+  },
+  "sweet onion": {
+    "authoritative_id": "ING-000083",
+    "source_file": "ingredients master.json"
+  },
+  "ketchup": {
+    "authoritative_id": "ING-000084",
+    "source_file": "ingredients master.json"
+  },
+  "honey mustard": {
+    "authoritative_id": "ING-000085",
+    "source_file": "ingredients master.json"
+  },
+  "chicken wings": {
+    "authoritative_id": "ING-000087",
+    "source_file": "ingredients master.json"
+  },
+  "hot sauce": {
+    "authoritative_id": "ING-000088",
+    "source_file": "ingredients master.json"
+  },
+  "margarine": {
+    "authoritative_id": "ING-000089",
+    "source_file": "ingredients master.json"
+  },
+  "cayenne pepper": {
+    "authoritative_id": "ING-000090",
+    "source_file": "ingredients master.json"
+  },
+  "eggplant": {
+    "authoritative_id": "ING-000092",
+    "source_file": "ingredients master.json"
+  },
+  "zucchini": {
+    "authoritative_id": "ING-000093",
+    "source_file": "ingredients master.json"
+  },
+  "pasta shells": {
+    "authoritative_id": "ING-000094",
+    "source_file": "ingredients master.json"
+  },
+  "tomato sauce": {
+    "authoritative_id": "ING-000095",
+    "source_file": "ingredients master.json"
+  },
+  "quinoa": {
+    "authoritative_id": "ING-000097",
+    "source_file": "ingredients master.json"
+  },
+  "gruyere cheese": {
+    "authoritative_id": "ING-000098",
+    "source_file": "ingredients master.json"
+  },
+  "whole grain bun": {
+    "authoritative_id": "ING-000099",
+    "source_file": "ingredients master.json"
+  },
+  "avocado": {
+    "authoritative_id": "ING-000101",
+    "source_file": "ingredients master.json"
+  },
+  "mixed vegetables": {
+    "authoritative_id": "ING-000102",
+    "source_file": "ingredients master.json"
+  },
+  "soy sauce": {
+    "authoritative_id": "ING-000103",
+    "source_file": "ingredients master.json"
+  },
+  "pasta": {
+    "authoritative_id": "ING-000104",
+    "source_file": "ingredients master.json"
+  },
+  "cooked rice": {
+    "authoritative_id": "ING-000105",
+    "source_file": "ingredients master.json"
+  },
+  "turkey slices": {
+    "authoritative_id": "ING-000106",
+    "source_file": "ingredients master.json"
+  },
+  "bread": {
+    "authoritative_id": "ING-000107",
+    "source_file": "ingredients master.json"
+  },
+  "mustard": {
+    "authoritative_id": "ING-000108",
+    "source_file": "ingredients master.json"
+  },
+  "fajita sauce": {
+    "authoritative_id": "ING-000109",
+    "source_file": "ingredients master.json"
+  },
+  "fish fillet": {
+    "authoritative_id": "ING-000112",
+    "source_file": "ingredients master.json"
+  },
+  "oil": {
+    "authoritative_id": "ING-000113",
+    "source_file": "ingredients master.json"
+  },
+  "capsicum": {
+    "authoritative_id": "ING-000115",
+    "source_file": "ingredients master.json"
+  },
+  "oats": {
+    "authoritative_id": "ING-000116",
+    "source_file": "ingredients master.json"
+  },
+  "milk": {
+    "authoritative_id": "ING-000117",
+    "source_file": "ingredients master.json"
+  },
+  "banana": {
+    "authoritative_id": "ING-000118",
+    "source_file": "ingredients master.json"
+  },
+  "mixed fruits": {
+    "authoritative_id": "ING-000119",
+    "source_file": "ingredients master.json"
+  },
+  "yogurt": {
+    "authoritative_id": "ING-000120",
+    "source_file": "ingredients master.json"
+  },
+  "spring onion": {
+    "authoritative_id": "ING-000123",
+    "source_file": "ingredients master.json"
+  },
+  "arborio rice": {
+    "authoritative_id": "ING-000124",
+    "source_file": "ingredients master.json"
+  },
+  "cucumber": {
+    "authoritative_id": "ING-000125",
+    "source_file": "ingredients master.json"
+  },
+  "croutons": {
+    "authoritative_id": "ING-000127",
+    "source_file": "ingredients master.json"
+  },
+  "caesar dressing": {
+    "authoritative_id": "ING-000128",
+    "source_file": "ingredients master.json"
+  },
+  "dates": {
+    "authoritative_id": "ING-000130",
+    "source_file": "ingredients master.json"
+  },
+  "chamomile tea bag": {
+    "authoritative_id": "ING-000131",
+    "source_file": "ingredients master.json"
+  },
+  "peanut butter": {
+    "authoritative_id": "ING-000132",
+    "source_file": "ingredients master.json"
+  },
+  "noodles": {
+    "authoritative_id": "ING-000133",
+    "source_file": "ingredients master.json"
+  },
+  "celery": {
+    "authoritative_id": "ING-000134",
+    "source_file": "ingredients master.json"
+  },
+  "hummus": {
+    "authoritative_id": "ING-000135",
+    "source_file": "ingredients master.json"
+  },
+  "paneer": {
+    "authoritative_id": "ING-000136",
+    "source_file": "ingredients master.json"
+  },
+  "garlic sauce": {
+    "authoritative_id": "ING-000137",
+    "source_file": "ingredients master.json"
+  },
+  "turkey breast": {
+    "authoritative_id": "ING-000138",
+    "source_file": "ingredients master.json"
+  },
+  "shrimp": {
+    "authoritative_id": "ING-000139",
+    "source_file": "ingredients master.json"
+  },
+  "red chili flakes": {
+    "authoritative_id": "ING-000140",
+    "source_file": "ingredients master.json"
+  },
+  "bbq sauce": {
+    "authoritative_id": "ING-000141",
+    "source_file": "ingredients master.json"
+  },
+  "feta cheese": {
+    "authoritative_id": "ING-000142",
+    "source_file": "ingredients master.json"
+  },
+  "red onion": {
+    "authoritative_id": "ING-000143",
+    "source_file": "ingredients master.json"
+  },
+  "olives": {
+    "authoritative_id": "ING-000144",
+    "source_file": "ingredients master.json"
+  },
+  "prawns": {
+    "authoritative_id": "ING-000145",
+    "source_file": "ingredients master.json"
+  },
+  "cabbage": {
+    "authoritative_id": "ING-000146",
+    "source_file": "ingredients master.json"
+  },
+  "cherry tomatoes": {
+    "authoritative_id": "ING-000149",
+    "source_file": "ingredients master.json"
+  },
+  "black beans": {
+    "authoritative_id": "ING-000151",
+    "source_file": "ingredients master.json"
+  },
+  "sweet potato": {
+    "authoritative_id": "ING-000152",
+    "source_file": "ingredients master.json"
+  },
+  "mixed salad greens": {
+    "authoritative_id": "ING-000153",
+    "source_file": "ingredients master.json"
+  },
+  "vegetable broth": {
+    "authoritative_id": "ING-000154",
+    "source_file": "ingredients master.json"
+  },
+  "chickpeas": {
+    "authoritative_id": "ING-000155",
+    "source_file": "ingredients master.json"
+  },
+  "jumbo pasta shells": {
+    "authoritative_id": "ING-000157",
+    "source_file": "ingredients master.json"
+  },
+  "marinara sauce": {
+    "authoritative_id": "ING-000158",
+    "source_file": "ingredients master.json"
+  },
+  "pesto sauce": {
+    "authoritative_id": "ING-000160",
+    "source_file": "ingredients master.json"
+  },
+  "broccoli": {
+    "authoritative_id": "ING-000161",
+    "source_file": "ingredients master.json"
+  },
+  "herbes de provence": {
+    "authoritative_id": "ING-000162",
+    "source_file": "ingredients master.json"
+  },
+  "lime juice": {
+    "authoritative_id": "ING-000163",
+    "source_file": "ingredients master.json"
+  },
+  "cumin powder": {
+    "authoritative_id": "ING-000164",
+    "source_file": "ingredients master.json"
+  },
+  "salmon": {
+    "authoritative_id": "ING-000165",
+    "source_file": "ingredients master.json"
+  },
+  "lemon": {
+    "authoritative_id": "ING-000166",
+    "source_file": "ingredients master.json"
+  },
+  "penne pasta": {
+    "authoritative_id": "ING-000167",
+    "source_file": "ingredients master.json"
+  },
+  "heavy cream": {
+    "authoritative_id": "ING-000168",
+    "source_file": "ingredients master.json"
+  },
+  "turkey breast slices": {
+    "authoritative_id": "ING-000171",
+    "source_file": "ingredients master.json"
+  },
+  "crushed tomatoes": {
+    "authoritative_id": "ING-000172",
+    "source_file": "ingredients master.json"
+  },
+  "linguine pasta": {
+    "authoritative_id": "ING-000174",
+    "source_file": "ingredients master.json"
+  },
+  "crepes": {
+    "authoritative_id": "ING-000175",
+    "source_file": "ingredients master.json"
+  },
+  "pork loin": {
+    "authoritative_id": "ING-000176",
+    "source_file": "ingredients master.json"
+  },
+  "apple cider vinegar": {
+    "authoritative_id": "ING-000177",
+    "source_file": "ingredients master.json"
+  },
+  "egg-free noodles": {
+    "authoritative_id": "ING-000178",
+    "source_file": "ingredients master.json"
+  },
+  "sour cream": {
+    "authoritative_id": "ING-000179",
+    "source_file": "ingredients master.json"
+  },
+  "salsa": {
+    "authoritative_id": "ING-000180",
+    "source_file": "ingredients master.json"
+  },
+  "tomato soup base": {
+    "authoritative_id": "ING-000181",
+    "source_file": "ingredients master.json"
+  },
+  "sage leaves": {
+    "authoritative_id": "ING-000182",
+    "source_file": "ingredients master.json"
+  },
+  "pita bread": {
+    "authoritative_id": "ING-000183",
+    "source_file": "ingredients master.json"
+  },
+  "potato gnocchi": {
+    "authoritative_id": "ING-000184",
+    "source_file": "ingredients master.json"
+  },
+  "gorgonzola cheese": {
+    "authoritative_id": "ING-000185",
+    "source_file": "ingredients master.json"
+  },
+  "walnuts": {
+    "authoritative_id": "ING-000186",
+    "source_file": "ingredients master.json"
+  },
+  "couscous": {
+    "authoritative_id": "ING-000187",
+    "source_file": "ingredients master.json"
+  },
+  "mixed root veggies": {
+    "authoritative_id": "ING-000188",
+    "source_file": "ingredients master.json"
+  },
+  "puff pastry sheet": {
+    "authoritative_id": "ING-000189",
+    "source_file": "ingredients master.json"
+  },
+  "flour": {
+    "authoritative_id": "ING-000190",
+    "source_file": "ingredients master.json"
+  },
+  "beef steak": {
+    "authoritative_id": "ING-000191",
+    "source_file": "ingredients master.json"
+  },
+  "green beans": {
+    "authoritative_id": "ING-000192",
+    "source_file": "ingredients master.json"
+  },
+  "pork chop": {
+    "authoritative_id": "ING-000194",
+    "source_file": "ingredients master.json"
+  },
+  "apple": {
+    "authoritative_id": "ING-000195",
+    "source_file": "ingredients master.json"
+  },
+  "fajita spice mix": {
+    "authoritative_id": "ING-000196",
+    "source_file": "ingredients master.json"
+  },
+  "ziti pasta": {
+    "authoritative_id": "ING-000197",
+    "source_file": "ingredients master.json"
+  },
+  "italian pork sausage": {
+    "authoritative_id": "ING-000198",
+    "source_file": "ingredients master.json"
+  },
+  "duck breast": {
+    "authoritative_id": "ING-000199",
+    "source_file": "ingredients master.json"
+  },
+  "baguette slice": {
+    "authoritative_id": "ING-000203",
+    "source_file": "ingredients master.json"
+  },
+  "tomato puree": {
+    "authoritative_id": "ING-000204",
+    "source_file": "ingredients master.json"
+  },
+  "coconut milk": {
+    "authoritative_id": "ING-000205",
+    "source_file": "ingredients master.json"
+  },
+  "curry powder": {
+    "authoritative_id": "ING-000206",
+    "source_file": "ingredients master.json"
+  },
+  "cannelloni tubes": {
+    "authoritative_id": "ING-000207",
+    "source_file": "ingredients master.json"
+  },
+  "nutmeg": {
+    "authoritative_id": "ING-000208",
+    "source_file": "ingredients master.json"
+  },
+  "emmental cheese": {
+    "authoritative_id": "ING-000209",
+    "source_file": "ingredients master.json"
+  },
+  "white wine": {
+    "authoritative_id": "ING-000210",
+    "source_file": "ingredients master.json"
+  },
+  "tahini": {
+    "authoritative_id": "ING-000211",
+    "source_file": "ingredients master.json"
+  },
+  "herb butter": {
+    "authoritative_id": "ING-000212",
+    "source_file": "ingredients master.json"
+  },
+  "ham": {
+    "authoritative_id": "ING-000213",
+    "source_file": "ingredients master.json"
+  },
+  "swiss cheese": {
+    "authoritative_id": "ING-000214",
+    "source_file": "ingredients master.json"
+  },
+  "sea scallops": {
+    "authoritative_id": "ING-000215",
+    "source_file": "ingredients master.json"
+  },
+  "mint": {
+    "authoritative_id": "ING-000216",
+    "source_file": "ingredients master.json"
+  },
+  "pork tenderloin": {
+    "authoritative_id": "ING-000217",
+    "source_file": "ingredients master.json"
+  },
+  "chicken broth": {
+    "authoritative_id": "ING-000218",
+    "source_file": "ingredients master.json"
+  },
+  "clams": {
+    "authoritative_id": "ING-000219",
+    "source_file": "ingredients master.json"
+  },
+  "duck leg": {
+    "authoritative_id": "ING-000222",
+    "source_file": "ingredients master.json"
+  },
+  "beef strips": {
+    "authoritative_id": "ING-000224",
+    "source_file": "ingredients master.json"
+  },
+  "puff pastry": {
+    "authoritative_id": "ING-000225",
+    "source_file": "ingredients master.json"
+  },
+  "egg wash": {
+    "authoritative_id": "ING-000226",
+    "source_file": "ingredients master.json"
+  },
+  "mozzarella pearls": {
+    "authoritative_id": "ING-000227",
+    "source_file": "ingredients master.json"
+  },
+  "pie crust": {
+    "authoritative_id": "ING-000229",
+    "source_file": "ingredients master.json"
+  },
+  "phyllo dough": {
+    "authoritative_id": "ING-000232",
+    "source_file": "ingredients master.json"
+  },
+  "beetroot": {
+    "authoritative_id": "ING-000233",
+    "source_file": "ingredients master.json"
+  },
+  "cauliflower": {
+    "authoritative_id": "ING-000236",
+    "source_file": "ingredients master.json"
+  },
+  "ravioli": {
+    "authoritative_id": "ING-000237",
+    "source_file": "ingredients master.json"
+  },
+  "celeriac": {
+    "authoritative_id": "ING-000238",
+    "source_file": "ingredients master.json"
+  },
+  "red wine": {
+    "authoritative_id": "ING-000239",
+    "source_file": "ingredients master.json"
+  },
+  "pearl onions": {
+    "authoritative_id": "ING-000240",
+    "source_file": "ingredients master.json"
+  },
+  "beef chuck": {
+    "authoritative_id": "ING-000241",
+    "source_file": "ingredients master.json"
+  },
+  "beef broth": {
+    "authoritative_id": "ING-000242",
+    "source_file": "ingredients master.json"
+  },
+  "pork belly": {
+    "authoritative_id": "ING-000244",
+    "source_file": "ingredients master.json"
+  },
+  "bao bun": {
+    "authoritative_id": "ING-000245",
+    "source_file": "ingredients master.json"
+  },
+  "hoisin sauce": {
+    "authoritative_id": "ING-000246",
+    "source_file": "ingredients master.json"
+  },
+  "lamb shank": {
+    "authoritative_id": "ING-000247",
+    "source_file": "ingredients master.json"
+  },
+  "beer": {
+    "authoritative_id": "ING-000248",
+    "source_file": "ingredients master.json"
+  },
+  "tartar sauce": {
+    "authoritative_id": "ING-000249",
+    "source_file": "ingredients master.json"
+  },
+  "minced beef/pork mix": {
+    "authoritative_id": "ING-000250",
+    "source_file": "ingredients master.json"
+  },
+  "lingonberry jam": {
+    "authoritative_id": "ING-000251",
+    "source_file": "ingredients master.json"
+  },
+  "duck liver": {
+    "authoritative_id": "ING-000252",
+    "source_file": "ingredients master.json"
+  },
+  "baguette": {
+    "authoritative_id": "ING-000253",
+    "source_file": "ingredients master.json"
+  },
+  "shallots": {
+    "authoritative_id": "ING-000254",
+    "source_file": "ingredients master.json"
+  },
+  "brandy": {
+    "authoritative_id": "ING-000255",
+    "source_file": "ingredients master.json"
+  },
+  "bomba rice": {
+    "authoritative_id": "ING-000256",
+    "source_file": "ingredients master.json"
+  },
+  "saffron": {
+    "authoritative_id": "ING-000257",
+    "source_file": "ingredients master.json"
+  },
+  "beef tenderloin": {
+    "authoritative_id": "ING-000258",
+    "source_file": "ingredients master.json"
+  },
+  "egg yolk": {
+    "authoritative_id": "ING-000259",
+    "source_file": "ingredients master.json"
+  },
+  "trout": {
+    "authoritative_id": "ING-000261",
+    "source_file": "ingredients master.json"
+  },
+  "pappardelle pasta": {
+    "authoritative_id": "ING-000262",
+    "source_file": "ingredients master.json"
+  },
+  "spinach (in filling)": {
+    "authoritative_id": "ING-000265",
+    "source_file": "ingredients master.json"
+  },
+  "ricotta (in filling)": {
+    "authoritative_id": "ING-000266",
+    "source_file": "ingredients master.json"
+  },
+  "mustard powder": {
+    "authoritative_id": "ING-000267",
+    "source_file": "ingredients master.json"
+  },
+  "fettuccine pasta": {
+    "authoritative_id": "ING-000268",
+    "source_file": "ingredients master.json"
+  },
+  "toast": {
+    "authoritative_id": "ING-000269",
+    "source_file": "ingredients master.json"
+  },
+  "mixed seafood": {
+    "authoritative_id": "ING-000271",
+    "source_file": "ingredients master.json"
+  },
+  "vinegar": {
+    "authoritative_id": "ING-000272",
+    "source_file": "ingredients master.json"
+  },
+  "guanciale/pancetta": {
+    "authoritative_id": "ING-000273",
+    "source_file": "ingredients master.json"
+  },
+  "bechamel sauce": {
+    "authoritative_id": "ING-000275",
+    "source_file": "ingredients master.json"
+  },
+  "sun-dried tomatoes": {
+    "authoritative_id": "ING-000277",
+    "source_file": "ingredients master.json"
+  },
+  "fish broth": {
+    "authoritative_id": "ING-000278",
+    "source_file": "ingredients master.json"
+  },
+  "macaroni pasta": {
+    "authoritative_id": "ING-000280",
+    "source_file": "ingredients master.json"
+  },
+  "truffle oil": {
+    "authoritative_id": "ING-000281",
+    "source_file": "ingredients master.json"
+  },
+  "cream cheese": {
+    "authoritative_id": "ING-000282",
+    "source_file": "ingredients master.json"
+  },
+  "garlic toast": {
+    "authoritative_id": "ING-000283",
+    "source_file": "ingredients master.json"
+  },
+  "cornstarch": {
+    "authoritative_id": "ING-000285",
+    "source_file": "ingredients master.json"
+  },
+  "riesling wine": {
+    "authoritative_id": "ING-000286",
+    "source_file": "ingredients master.json"
+  },
+  "whole grain mustard": {
+    "authoritative_id": "ING-000287",
+    "source_file": "ingredients master.json"
+  },
+  "white pepper": {
+    "authoritative_id": "ING-000288",
+    "source_file": "ingredients master.json"
+  },
+  "compound butter": {
+    "authoritative_id": "ING-000289",
+    "source_file": "ingredients master.json"
+  },
+  "maple syrup": {
+    "authoritative_id": "ING-000298",
+    "source_file": "ingredients master.json"
+  },
+  "almond milk": {
+    "authoritative_id": "ING-000300",
+    "source_file": "ingredients master.json"
+  },
+  "chia seeds": {
+    "authoritative_id": "ING-000301",
+    "source_file": "ingredients master.json"
+  },
+  "berries": {
+    "authoritative_id": "ING-000302",
+    "source_file": "ingredients master.json"
+  },
+  "lasagna sheets": {
+    "authoritative_id": "ING-000303",
+    "source_file": "ingredients master.json"
+  },
+  "rye bread": {
+    "authoritative_id": "ING-000305",
+    "source_file": "ingredients master.json"
+  },
+  "lamb": {
+    "authoritative_id": "ING-000306",
+    "source_file": "ingredients master.json"
+  },
+  "dry red chili": {
+    "authoritative_id": "ING-000307",
+    "source_file": "ingredients master.json"
+  },
+  "mustard oil": {
+    "authoritative_id": "ING-000308",
+    "source_file": "ingredients master.json"
+  },
+  "cumin seeds": {
+    "authoritative_id": "ING-000309",
+    "source_file": "ingredients master.json"
+  },
+  "smoked salmon": {
+    "authoritative_id": "ING-000314",
+    "source_file": "ingredients master.json"
+  },
+  "baked beans": {
+    "authoritative_id": "ING-000316",
+    "source_file": "ingredients master.json"
+  },
+  "green chili": {
+    "authoritative_id": "ING-000321",
+    "source_file": "ingredients master.json"
+  },
+  "buttermilk": {
+    "authoritative_id": "ING-000322",
+    "source_file": "ingredients master.json"
+  },
+  "cottage cheese": {
+    "authoritative_id": "ING-000323",
+    "source_file": "ingredients master.json"
+  },
+  "pineapple": {
+    "authoritative_id": "ING-000324",
+    "source_file": "ingredients master.json"
+  },
+  "lentils": {
+    "authoritative_id": "ING-000327",
+    "source_file": "ingredients master.json"
+  },
+  "pumpkin seeds": {
+    "authoritative_id": "ING-000329",
+    "source_file": "ingredients master.json"
+  },
+  "mixed berries": {
+    "authoritative_id": "ING-000342",
+    "source_file": "ingredients master.json"
+  },
+  "sunflower seeds": {
+    "authoritative_id": "ING-000344",
+    "source_file": "ingredients master.json"
+  },
+  "kale": {
+    "authoritative_id": "ING-000345",
+    "source_file": "ingredients master.json"
+  },
+  "cinnamon powder": {
+    "authoritative_id": "ING-000351",
+    "source_file": "ingredients master.json"
+  },
+  "blueberries": {
+    "authoritative_id": "ING-000355",
+    "source_file": "ingredients master.json"
+  },
+  "ginger": {
+    "authoritative_id": "ING-000361",
+    "source_file": "ingredients master.json"
+  },
+  "sweet corn kernels": {
+    "authoritative_id": "ING-000362",
+    "source_file": "ingredients master.json"
+  },
+  "whole wheat flour": {
+    "authoritative_id": "ING-000363",
+    "source_file": "ingredients master.json"
+  },
+  "watermelon": {
+    "authoritative_id": "ING-000366",
+    "source_file": "ingredients master.json"
+  },
+  "green tea leaves": {
+    "authoritative_id": "ING-000372",
+    "source_file": "ingredients master.json"
+  },
+  "ragi flour": {
+    "authoritative_id": "ING-000381",
+    "source_file": "ingredients master.json"
+  },
+  "dried figs": {
+    "authoritative_id": "ING-000386",
+    "source_file": "ingredients master.json"
+  },
+  "fresh basil leaves": {
+    "authoritative_id": "ING-000389",
+    "source_file": "ingredients master.json"
+  },
+  "coconut water": {
+    "authoritative_id": "ING-000392",
+    "source_file": "ingredients master.json"
+  },
+  "soy sauce (low sodium)": {
+    "authoritative_id": "ING-000394",
+    "source_file": "ingredients master.json"
+  },
+  "kiwi": {
+    "authoritative_id": "ING-000403",
+    "source_file": "ingredients master.json"
+  },
+  "pomegranate seeds": {
+    "authoritative_id": "ING-000404",
+    "source_file": "ingredients master.json"
+  },
+  "fresh spinach": {
+    "authoritative_id": "ING-000429",
+    "source_file": "ingredients master.json"
+  },
+  "ghee": {
+    "authoritative_id": "ING-000436",
+    "source_file": "ingredients master.json"
+  },
+  "turmeric powder": {
+    "authoritative_id": "ING-000439",
+    "source_file": "ingredients master.json"
+  },
+  "papaya": {
+    "authoritative_id": "ING-000440",
+    "source_file": "ingredients master.json"
+  },
+  "pistachios": {
+    "authoritative_id": "ING-000446",
+    "source_file": "ingredients master.json"
+  },
+  "guava": {
+    "authoritative_id": "ING-000447",
+    "source_file": "ingredients master.json"
+  },
+  "chaat masala": {
+    "authoritative_id": "ING-000448",
+    "source_file": "ingredients master.json"
+  },
+  "ash gourd": {
+    "authoritative_id": "ING-000449",
+    "source_file": "ingredients master.json"
+  },
+  "bottle gourd": {
+    "authoritative_id": "ING-000450",
+    "source_file": "ingredients master.json"
+  },
+  "pear": {
+    "authoritative_id": "ING-000457",
+    "source_file": "ingredients master.json"
+  },
+  "fresh coriander": {
+    "authoritative_id": "ING-000467",
+    "source_file": "ingredients master.json"
+  },
+  "firm tofu": {
+    "authoritative_id": "ING-000468",
+    "source_file": "ingredients master.json"
+  },
+  "whole wheat toast": {
+    "authoritative_id": "ING-000479",
+    "source_file": "ingredients master.json"
+  },
+  "edamame": {
+    "authoritative_id": "ING-000480",
+    "source_file": "ingredients master.json"
+  },
+  "baked falafel": {
+    "authoritative_id": "ING-000487",
+    "source_file": "ingredients master.json"
+  },
+  "whole wheat pasta": {
+    "authoritative_id": "ING-000493",
+    "source_file": "ingredients master.json"
+  },
+  "pumpkin": {
+    "authoritative_id": "ING-000497",
+    "source_file": "ingredients master.json"
+  },
+  "chicken keema": {
+    "authoritative_id": "ING-000500",
+    "source_file": "ingredients master.json"
+  },
+  "tofu": {
+    "authoritative_id": "ING-000504",
+    "source_file": "ingredients master.json"
+  },
+  "brown rice": {
+    "authoritative_id": "ING-000509",
+    "source_file": "ingredients master.json"
+  },
+  "mango": {
+    "authoritative_id": "ING-000513",
+    "source_file": "ingredients master.json"
+  },
+  "red lentils": {
+    "authoritative_id": "ING-000514",
+    "source_file": "ingredients master.json"
+  },
+  "garlic bread": {
+    "authoritative_id": "ING-000515",
+    "source_file": "ingredients master.json"
+  },
+  "brussels sprouts": {
+    "authoritative_id": "ING-000516",
+    "source_file": "ingredients master.json"
+  },
+  "peppermint leaves": {
+    "authoritative_id": "ING-000519",
+    "source_file": "ingredients master.json"
+  },
+  "spearmint leaves": {
+    "authoritative_id": "ING-000520",
+    "source_file": "ingredients master.json"
+  },
+  "oat milk": {
+    "authoritative_id": "ING-000522",
+    "source_file": "ingredients master.json"
+  },
+  "nutmeg powder": {
+    "authoritative_id": "ING-000523",
+    "source_file": "ingredients master.json"
+  },
+  "moringa powder": {
+    "authoritative_id": "ING-000525",
+    "source_file": "ingredients master.json"
+  },
+  "soy milk": {
+    "authoritative_id": "ING-000528",
+    "source_file": "ingredients master.json"
+  },
+  "roasted peanuts": {
+    "authoritative_id": "ING-000529",
+    "source_file": "ingredients master.json"
+  },
+  "rooibos tea bag": {
+    "authoritative_id": "ING-000530",
+    "source_file": "ingredients master.json"
+  },
+  "spirulina powder": {
+    "authoritative_id": "ING-000531",
+    "source_file": "ingredients master.json"
+  },
+  "maca powder": {
+    "authoritative_id": "ING-000533",
+    "source_file": "ingredients master.json"
+  },
+  "jasmine tea bag": {
+    "authoritative_id": "ING-000535",
+    "source_file": "ingredients master.json"
+  },
+  "matcha powder": {
+    "authoritative_id": "ING-000539",
+    "source_file": "ingredients master.json"
+  },
+  "bamboo leaf tea": {
+    "authoritative_id": "ING-000540",
+    "source_file": "ingredients master.json"
+  },
+  "oolong tea leaves": {
+    "authoritative_id": "ING-000542",
+    "source_file": "ingredients master.json"
+  },
+  "mixed greens": {
+    "authoritative_id": "ING-000544",
+    "source_file": "ingredients master.json"
+  },
+  "peanuts": {
+    "authoritative_id": "ING-000551",
+    "source_file": "ingredients master.json"
+  },
+  "almond butter": {
+    "authoritative_id": "ING-000558",
+    "source_file": "ingredients master.json"
+  },
+  "turmeric": {
+    "authoritative_id": "ING-000562",
+    "source_file": "ingredients master.json"
+  },
+  "mixed sprouts": {
+    "authoritative_id": "ING-000568",
+    "source_file": "ingredients master.json"
+  },
+  "dragon fruit": {
+    "authoritative_id": "ING-000578",
+    "source_file": "ingredients master.json"
+  },
+  "unsweetened soy milk": {
+    "authoritative_id": "ING-000585",
+    "source_file": "ingredients master.json"
+  },
+  "black tea leaves": {
+    "authoritative_id": "ING-000590",
+    "source_file": "ingredients master.json"
+  },
+  "mint chutney": {
+    "authoritative_id": "ING-000591",
+    "source_file": "ingredients master.json"
+  },
+  "sweet corn": {
+    "authoritative_id": "ING-000598",
+    "source_file": "ingredients master.json"
+  },
+  "raisins": {
+    "authoritative_id": "ING-000614",
+    "source_file": "ingredients master.json"
+  },
+  "wheatgrass": {
+    "authoritative_id": "ING-000617",
+    "source_file": "ingredients master.json"
+  },
+  "peas": {
+    "authoritative_id": "ING-000622",
+    "source_file": "ingredients master.json"
+  },
+  "radish": {
+    "authoritative_id": "ING-000624",
+    "source_file": "ingredients master.json"
+  },
+  "cloves": {
+    "authoritative_id": "ING-000625",
+    "source_file": "ingredients master.json"
+  },
+  "yellow bell pepper": {
+    "authoritative_id": "ING-000626",
+    "source_file": "ingredients master.json"
+  },
+  "mutton": {
+    "authoritative_id": "ING-000632",
+    "source_file": "ingredients master.json"
+  },
+  "chicken liver": {
+    "authoritative_id": "ING-000646",
+    "source_file": "ingredients master.json"
+  },
+  "coriander seeds": {
+    "authoritative_id": "ING-000650",
+    "source_file": "ingredients master.json"
+  },
+  "red chili powder": {
+    "authoritative_id": "ING-000652",
+    "source_file": "ingredients master.json"
+  },
+  "fenugreek seeds": {
+    "authoritative_id": "ING-000656",
+    "source_file": "ingredients master.json"
+  },
+  "asafoetida": {
+    "authoritative_id": "ING-000658",
+    "source_file": "ingredients master.json"
+  },
+  "sumac": {
+    "authoritative_id": "ING-000660",
+    "source_file": "ingredients master.json"
+  },
+  "lime": {
+    "authoritative_id": "ING-000662",
+    "source_file": "ingredients master.json"
+  },
+  "star anise": {
+    "authoritative_id": "ING-000666",
+    "source_file": "ingredients master.json"
+  },
+  "dried hibiscus flowers (karkadeh)": {
+    "authoritative_id": "ING-000676",
+    "source_file": "ingredients master.json"
+  },
+  "frankincense resin (luban)": {
+    "authoritative_id": "ING-000678",
+    "source_file": "ingredients master.json"
+  },
+  "mastic gum tears (mastika)": {
+    "authoritative_id": "ING-000680",
+    "source_file": "ingredients master.json"
+  },
+  "zhourat herbal blend": {
+    "authoritative_id": "ING-000682",
+    "source_file": "ingredients master.json"
+  },
+  "marmaraya (sage)": {
+    "authoritative_id": "ING-000684",
+    "source_file": "ingredients master.json"
+  },
+  "aniseed (yansoon)": {
+    "authoritative_id": "ING-000686",
+    "source_file": "ingredients master.json"
+  },
+  "habbat al barakah (black seeds)": {
+    "authoritative_id": "ING-000690",
+    "source_file": "ingredients master.json"
+  },
+  "basil seed (sabja)": {
+    "authoritative_id": "ING-000696",
+    "source_file": "ingredients master.json"
+  },
+  "laban": {
+    "authoritative_id": "ING-000704",
+    "source_file": "ingredients master.json"
+  },
+  "rooibos tea": {
+    "authoritative_id": "ING-000730",
+    "source_file": "ingredients master.json"
+  },
+  "jasmine tea": {
+    "authoritative_id": "ING-000732",
+    "source_file": "ingredients master.json"
+  },
+  "white tea": {
+    "authoritative_id": "ING-000734",
+    "source_file": "ingredients master.json"
+  },
+  "silver needle tea": {
+    "authoritative_id": "ING-000736",
+    "source_file": "ingredients master.json"
+  },
+  "licorice root": {
+    "authoritative_id": "ING-000746",
+    "source_file": "ingredients master.json"
+  },
+  "vanilla": {
+    "authoritative_id": "ING-000748",
+    "source_file": "ingredients master.json"
+  },
+  "date-pit": {
+    "authoritative_id": "ING-000800",
+    "source_file": "ingredients master.json"
+  },
+  "goji berry": {
+    "authoritative_id": "ING-000802",
+    "source_file": "ingredients master.json"
+  },
+  "dried mulberry": {
+    "authoritative_id": "ING-000804",
+    "source_file": "ingredients master.json"
+  },
+  "dried cranberry": {
+    "authoritative_id": "ING-000806",
+    "source_file": "ingredients master.json"
+  },
+  "grapes": {
+    "authoritative_id": "ING-000816",
+    "source_file": "ingredients master.json"
+  },
+  "mung beans": {
+    "authoritative_id": "ING-000832",
+    "source_file": "ingredients master.json"
+  },
+  "white beans": {
+    "authoritative_id": "ING-000844",
+    "source_file": "ingredients master.json"
+  },
+  "basmati rice": {
+    "authoritative_id": "ING-000846",
+    "source_file": "ingredients master.json"
+  },
+  "lupini beans (termis)": {
+    "authoritative_id": "ING-000848",
+    "source_file": "ingredients master.json"
+  },
+  "red snapper": {
+    "authoritative_id": "ING-000860",
+    "source_file": "ingredients master.json"
+  },
+  "mackerel": {
+    "authoritative_id": "ING-000862",
+    "source_file": "ingredients master.json"
+  },
+  "octopus": {
+    "authoritative_id": "ING-000888",
+    "source_file": "ingredients master.json"
+  },
+  "black seed oil": {
+    "authoritative_id": "ING-000950",
+    "source_file": "ingredients master.json"
+  },
+  "chicken fat": {
+    "authoritative_id": "ING-001008",
+    "source_file": "ingredients master.json"
+  },
+  "muesli": {
+    "authoritative_id": "ING-001042",
+    "source_file": "ingredients master.json"
+  },
+  "paratha": {
+    "authoritative_id": "ING-001072",
+    "source_file": "ingredients master.json"
+  },
+  "breadsticks": {
+    "authoritative_id": "ING-001086",
+    "source_file": "ingredients master.json"
+  },
+  "vermicelli": {
+    "authoritative_id": "ING-001094",
+    "source_file": "ingredients master.json"
+  },
+  "rice pudding (mahalabiya)": {
+    "authoritative_id": "ING-001096",
+    "source_file": "ingredients master.json"
+  },
+  "jam": {
+    "authoritative_id": "ING-001104",
+    "source_file": "ingredients master.json"
+  },
+  "labneh": {
+    "authoritative_id": "ING-001108",
+    "source_file": "ingredients master.json"
+  },
+  "halloumi cheese": {
+    "authoritative_id": "ING-001112",
+    "source_file": "ingredients master.json"
+  },
+  "okra": {
+    "authoritative_id": "ING-001114",
+    "source_file": "ingredients master.json"
+  },
+  "bitter gourd": {
+    "authoritative_id": "ING-001116",
+    "source_file": "ingredients master.json"
+  },
+  "ridge gourd": {
+    "authoritative_id": "ING-001118",
+    "source_file": "ingredients master.json"
+  },
+  "snake gourd": {
+    "authoritative_id": "ING-001120",
+    "source_file": "ingredients master.json"
+  },
+  "cluster beans": {
+    "authoritative_id": "ING-001136",
+    "source_file": "ingredients master.json"
+  },
+  "fenugreek leaves": {
+    "authoritative_id": "ING-001140",
+    "source_file": "ingredients master.json"
+  },
+  "coriander leaves": {
+    "authoritative_id": "ING-001150",
+    "source_file": "ingredients master.json"
+  },
+  "dill leaves": {
+    "authoritative_id": "ING-001152",
+    "source_file": "ingredients master.json"
+  },
+  "moringa leaves": {
+    "authoritative_id": "ING-001154",
+    "source_file": "ingredients master.json"
+  },
+  "taro root": {
+    "authoritative_id": "ING-001160",
+    "source_file": "ingredients master.json"
+  },
+  "yam": {
+    "authoritative_id": "ING-001162",
+    "source_file": "ingredients master.json"
+  },
+  "lotus root": {
+    "authoritative_id": "ING-001168",
+    "source_file": "ingredients master.json"
+  },
+  "water chestnut": {
+    "authoritative_id": "ING-001170",
+    "source_file": "ingredients master.json"
+  },
+  "vine leaves": {
+    "authoritative_id": "ING-001184",
+    "source_file": "ingredients master.json"
+  },
+  "tilapia": {
+    "authoritative_id": "ING-001202",
+    "source_file": "ingredients master.json"
+  },
+  "low-fat yogurt": {
+    "authoritative_id": "ING-001206",
+    "source_file": "ingredients master.json"
+  },
+  "peach": {
+    "authoritative_id": "ING-001224",
+    "source_file": "ingredients master.json"
+  },
+  "plum": {
+    "authoritative_id": "ING-001226",
+    "source_file": "ingredients master.json"
+  },
+  "anchovies": {
+    "authoritative_id": "ING-001234",
+    "source_file": "ingredients master.json"
+  },
+  "cardamom": {
+    "authoritative_id": "ING-001240",
+    "source_file": "ingredients master.json"
+  },
+  "bulgur": {
+    "authoritative_id": "ING-001254",
+    "source_file": "ingredients master.json"
+  },
+  "barley": {
+    "authoritative_id": "ING-001256",
+    "source_file": "ingredients master.json"
+  },
+  "pomegranate molasses": {
+    "authoritative_id": "ING-001272",
+    "source_file": "ingredients master.json"
+  },
+  "baking powder": {
+    "authoritative_id": "ING-001275",
+    "source_file": "ingredients master.json"
+  },
+  "bay leaf": {
+    "authoritative_id": "ING-001277",
+    "source_file": "ingredients master.json"
+  },
+  "bay leaves": {
+    "authoritative_id": "ING-001278",
+    "source_file": "ingredients master.json"
+  },
+  "chili": {
+    "authoritative_id": "ING-001279",
+    "source_file": "ingredients master.json"
+  },
+  "cream": {
+    "authoritative_id": "ING-001280",
+    "source_file": "ingredients master.json"
+  },
+  "fish sauce": {
+    "authoritative_id": "ING-001282",
+    "source_file": "ingredients master.json"
+  },
+  "fish stock": {
+    "authoritative_id": "ING-001283",
+    "source_file": "ingredients master.json"
+  },
+  "grated ginger": {
+    "authoritative_id": "ING-001286",
+    "source_file": "ingredients master.json"
+  },
+  "ground pork": {
+    "authoritative_id": "ING-001290",
+    "source_file": "ingredients master.json"
+  },
+  "jaggery": {
+    "authoritative_id": "ING-001295",
+    "source_file": "ingredients master.json"
+  },
+  "lobster": {
+    "authoritative_id": "ING-001298",
+    "source_file": "ingredients master.json"
+  },
+  "ashwagandha powder": {
+    "authoritative_id": "ING-001322",
+    "source_file": "ingredients master.json"
+  },
+  "bael fruit": {
+    "authoritative_id": "ING-001326",
+    "source_file": "ingredients master.json"
+  },
+  "beans": {
+    "authoritative_id": "ING-001332",
+    "source_file": "ingredients master.json"
+  },
+  "beef": {
+    "authoritative_id": "ING-001333",
+    "source_file": "ingredients master.json"
+  },
+  "bisi bele bath powder": {
+    "authoritative_id": "ING-001340",
+    "source_file": "ingredients master.json"
+  },
+  "broad beans": {
+    "authoritative_id": "ING-001348",
+    "source_file": "ingredients master.json"
+  },
+  "carrot": {
+    "authoritative_id": "ING-001356",
+    "source_file": "ingredients master.json"
+  },
+  "chayote": {
+    "authoritative_id": "ING-001363",
+    "source_file": "ingredients master.json"
+  },
+  "chicken": {
+    "authoritative_id": "ING-001364",
+    "source_file": "ingredients master.json"
+  },
+  "chicken sausage": {
+    "authoritative_id": "ING-001365",
+    "source_file": "ingredients master.json"
+  },
+  "chicken tikka": {
+    "authoritative_id": "ING-001366",
+    "source_file": "ingredients master.json"
+  },
+  "chickpea flour": {
+    "authoritative_id": "ING-001367",
+    "source_file": "ingredients master.json"
+  },
+  "cocoa powder": {
+    "authoritative_id": "ING-001373",
+    "source_file": "ingredients master.json"
+  },
+  "coconut oil": {
+    "authoritative_id": "ING-001374",
+    "source_file": "ingredients master.json"
+  },
+  "coconut slices": {
+    "authoritative_id": "ING-001375",
+    "source_file": "ingredients master.json"
+  },
+  "coriander powder": {
+    "authoritative_id": "ING-001378",
+    "source_file": "ingredients master.json"
+  },
+  "curry leaves": {
+    "authoritative_id": "ING-001383",
+    "source_file": "ingredients master.json"
+  },
+  "date syrup": {
+    "authoritative_id": "ING-001387",
+    "source_file": "ingredients master.json"
+  },
+  "dosa batter": {
+    "authoritative_id": "ING-001388",
+    "source_file": "ingredients master.json"
+  },
+  "dried red chili": {
+    "authoritative_id": "ING-001390",
+    "source_file": "ingredients master.json"
+  },
+  "drumstick": {
+    "authoritative_id": "ING-001392",
+    "source_file": "ingredients master.json"
+  },
+  "fennel powder": {
+    "authoritative_id": "ING-001400",
+    "source_file": "ingredients master.json"
+  },
+  "garam masala": {
+    "authoritative_id": "ING-001420",
+    "source_file": "ingredients master.json"
+  },
+  "gram flour": {
+    "authoritative_id": "ING-001429",
+    "source_file": "ingredients master.json"
+  },
+  "green mango": {
+    "authoritative_id": "ING-001435",
+    "source_file": "ingredients master.json"
+  },
+  "hibiscus flowers": {
+    "authoritative_id": "ING-001440",
+    "source_file": "ingredients master.json"
+  },
+  "mangosteen": {
+    "authoritative_id": "ING-001462",
+    "source_file": "ingredients master.json"
+  },
+  "meat masala": {
+    "authoritative_id": "ING-001463",
+    "source_file": "ingredients master.json"
+  },
+  "mint leaves": {
+    "authoritative_id": "ING-001472",
+    "source_file": "ingredients master.json"
+  },
+  "multigrain flour": {
+    "authoritative_id": "ING-001477",
+    "source_file": "ingredients master.json"
+  },
+  "neem leaves": {
+    "authoritative_id": "ING-001483",
+    "source_file": "ingredients master.json"
+  },
+  "parsley": {
+    "authoritative_id": "ING-001488",
+    "source_file": "ingredients master.json"
+  },
+  "peanut powder": {
+    "authoritative_id": "ING-001490",
+    "source_file": "ingredients master.json"
+  },
+  "poppy seeds": {
+    "authoritative_id": "ING-001497",
+    "source_file": "ingredients master.json"
+  },
+  "pork": {
+    "authoritative_id": "ING-001498",
+    "source_file": "ingredients master.json"
+  },
+  "potato": {
+    "authoritative_id": "ING-001504",
+    "source_file": "ingredients master.json"
+  },
+  "rambutan": {
+    "authoritative_id": "ING-001510",
+    "source_file": "ingredients master.json"
+  },
+  "rice": {
+    "authoritative_id": "ING-001520",
+    "source_file": "ingredients master.json"
+  },
+  "rice batter": {
+    "authoritative_id": "ING-001521",
+    "source_file": "ingredients master.json"
+  },
+  "rice flour": {
+    "authoritative_id": "ING-001523",
+    "source_file": "ingredients master.json"
+  },
+  "rose water": {
+    "authoritative_id": "ING-001536",
+    "source_file": "ingredients master.json"
+  },
+  "sambar powder": {
+    "authoritative_id": "ING-001541",
+    "source_file": "ingredients master.json"
+  },
+  "seer fish": {
+    "authoritative_id": "ING-001545",
+    "source_file": "ingredients master.json"
+  },
+  "semolina": {
+    "authoritative_id": "ING-001546",
+    "source_file": "ingredients master.json"
+  },
+  "soursop": {
+    "authoritative_id": "ING-001554",
+    "source_file": "ingredients master.json"
+  },
+  "spices": {
+    "authoritative_id": "ING-001559",
+    "source_file": "ingredients master.json"
+  },
+  "spinach": {
+    "authoritative_id": "ING-001560",
+    "source_file": "ingredients master.json"
+  },
+  "squid": {
+    "authoritative_id": "ING-001564",
+    "source_file": "ingredients master.json"
+  },
+  "tamarind paste": {
+    "authoritative_id": "ING-001576",
+    "source_file": "ingredients master.json"
+  },
+  "tomato": {
+    "authoritative_id": "ING-001588",
+    "source_file": "ingredients master.json"
+  },
+  "toor dal": {
+    "authoritative_id": "ING-001589",
+    "source_file": "ingredients master.json"
+  },
+  "triphala powder": {
+    "authoritative_id": "ING-001591",
+    "source_file": "ingredients master.json"
+  },
+  "tuna": {
+    "authoritative_id": "ING-001592",
+    "source_file": "ingredients master.json"
+  },
+  "turkey bacon": {
+    "authoritative_id": "ING-001593",
+    "source_file": "ingredients master.json"
+  },
+  "vangi bath powder": {
+    "authoritative_id": "ING-001596",
+    "source_file": "ingredients master.json"
+  },
+  "wheat flour": {
+    "authoritative_id": "ING-001600",
+    "source_file": "ingredients master.json"
+  },
+  "wheat noodles": {
+    "authoritative_id": "ING-001602",
+    "source_file": "ingredients master.json"
+  },
+  "wood apple": {
+    "authoritative_id": "ING-001608",
+    "source_file": "ingredients master.json"
+  },
+  "yeast": {
+    "authoritative_id": "ING-001610",
+    "source_file": "ingredients master.json"
+  },
+  "yellow moong dal": {
+    "authoritative_id": "ING-001611",
+    "source_file": "ingredients master.json"
+  },
+  "boiled egg": {
+    "authoritative_id": "ING-001625",
+    "source_file": "ingredients master.json"
+  },
+  "duck": {
+    "authoritative_id": "ING-001643",
+    "source_file": "ingredients master.json"
+  },
+  "black eyed beans": {
+    "authoritative_id": "ING-001720",
+    "source_file": "ingredients master.json"
+  },
+  "plantain": {
+    "authoritative_id": "ING-001721",
+    "source_file": "ingredients master.json"
+  },
+  "quail": {
+    "authoritative_id": "ING-001744",
+    "source_file": "ingredients master.json"
+  },
+  "rabbit": {
+    "authoritative_id": "ING-001745",
+    "source_file": "ingredients master.json"
+  },
+  "oat biscuits": {
+    "authoritative_id": "ING-001778",
+    "source_file": "ingredients master.json"
+  },
+  "granola": {
+    "authoritative_id": "ING-001792",
+    "source_file": "ingredients master.json"
+  },
+  "mustard sauce": {
+    "authoritative_id": "ING-001800",
+    "source_file": "ingredients master.json"
+  },
+  "brinjal": {
+    "authoritative_id": "ING-001821",
+    "source_file": "ingredients master.json"
+  },
+  "flaxseed": {
+    "authoritative_id": "ING-001831",
+    "source_file": "ingredients master.json"
+  },
+  "low-fat cottage cheese": {
+    "authoritative_id": "ING-001851",
+    "source_file": "ingredients master.json"
+  },
+  "mushrooms": {
+    "authoritative_id": "ING-001860",
+    "source_file": "ingredients master.json"
+  },
+  "vegetables": {
+    "authoritative_id": "ING-001880",
+    "source_file": "ingredients master.json"
+  },
+  "wheat": {
+    "authoritative_id": "ING-001882",
+    "source_file": "ingredients master.json"
+  },
+  "basil seeds": {
+    "authoritative_id": "ING-001916",
+    "source_file": "ingredients master.json"
+  },
+  "idli batter": {
+    "authoritative_id": "e70f68ea-1816-4281-a06c-1c3b906a250e",
+    "source_file": "ingredients-1.json"
+  },
+  "mixed dal": {
+    "authoritative_id": "1aae5d1f-884d-4531-915a-9612789af84c",
+    "source_file": "ingredients-1.json"
+  },
+  "dal": {
+    "authoritative_id": "8fc96b02-da54-4532-a8e0-c3a186724133",
+    "source_file": "ingredients-1.json"
+  },
+  "adai batter": {
+    "authoritative_id": "7a89e770-68b6-4ca7-b8c7-462a9bd40162",
+    "source_file": "ingredients-1.json"
+  },
+  "appam batter": {
+    "authoritative_id": "e00f42be-ce18-4163-a72e-96a09aa59794",
+    "source_file": "ingredients-1.json"
+  },
+  "moong dal batter": {
+    "authoritative_id": "7a5ff681-aa00-4e13-8e98-515d6f6362d5",
+    "source_file": "ingredients-1.json"
+  }
+}
