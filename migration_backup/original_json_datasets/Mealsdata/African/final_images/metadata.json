@@ -1,0 +1,682 @@
+[
+    {
+        "food_id": "FOOD_AF_001",
+        "food_name": "Rooibos Tea",
+        "cuisine": "African",
+        "image_path": "African\\african_images\\Akara.jpg",
+        "source_url": "https://shop.equalexchange.coop/cdn/shop/products/13309_Vanilla-Rooibos_02.jpg?v=1681303251&width=480",
+        "source_page": "https://shop.equalexchange.coop/products/organic-vanilla-rooibos-tea",
+        "title": "Organic Vanilla Rooibos Tea - Equal Exchange",
+        "validation": {
+            "is_valid": true,
+            "width": 480,
+            "height": 480,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 61.29,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Akara.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_002",
+        "food_name": "Jollof Rice",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Jollof Rice.jpg",
+        "source_url": "https://i.pinimg.com/originals/16/5b/0d/165b0d37cccfaa88e6e4e695931a6348.jpg",
+        "source_page": "https://www.pinterest.com/pin/ghanaian-jollof-rice-by-tei-hammond-recipe-by-tasty--122300946119317110/",
+        "title": "Ghanaian Jollof Rice By Tei Hammond Recipe by Tasty | African food ...",
+        "validation": {
+            "is_valid": true,
+            "width": 474,
+            "height": 474,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 39.29,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Jollof Rice.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_003",
+        "food_name": "Fufu",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Fufu.jpg",
+        "source_url": "https://s3-media0.fl.yelpcdn.com/bphoto/vq9vMCkUlvhpNT7LSu7jYA/348s.jpg",
+        "source_page": "https://www.yelp.com/biz/all-african-cuisines-santa-ana-2",
+        "title": "ALL AFRICAN CUISINES - Updated January 2026 - 116 Photos & 111 Reviews ...",
+        "validation": {
+            "is_valid": true,
+            "width": 348,
+            "height": 348,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 30.63,
+            "reason": ""
+        },
+        "candidate_idx": 2,
+        "local_path": "data/final_images\\Fufu.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_004",
+        "food_name": "Egusi Soup",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Egusi Soup.png",
+        "source_url": "https://www.afsf.com/media/website_pages/news/blog/bcook/recipe-the-ivorian-fufu/image-(2)_ccexpress.png",
+        "source_page": "https://www.afsf.com/news/blog/bcook/recipe-the-ivorian-fufu/",
+        "title": "AFSF French classes & Cultural Center in San Francisco - Recipe : The ...",
+        "validation": {
+            "is_valid": true,
+            "width": 400,
+            "height": 400,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 87.92,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Egusi Soup.png"
+    },
+    {
+        "food_id": "FOOD_AF_005",
+        "food_name": "Injera",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Injera.jpg",
+        "source_url": "https://thumbs.dreamstime.com/x/modern-ethiopian-haute-cuisine-dish-featuring-delicately-arranged-injera-platter-served-spiced-doro-wat-slow-cooked-chicken-364195553.jpg",
+        "source_page": "https://cartoondealer.com/image/364195553/modern-ethiopian-haute-cuisine-elegantly-plated-injera-spiced-stews.html",
+        "title": "Modern Ethiopian Haute Cuisine With Elegantly Plated Injera And Spiced ...",
+        "validation": {
+            "is_valid": true,
+            "width": 400,
+            "height": 301,
+            "aspect_ratio": 1.329,
+            "format": "JPEG",
+            "size_kb": 51.17,
+            "reason": ""
+        },
+        "candidate_idx": 5,
+        "local_path": "data/final_images\\Injera.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_008",
+        "food_name": "Suya",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Suya.png",
+        "source_url": "https://ellegourmet.ca/wp-content/uploads/2025/05/Beef-Suya-Nutty-Spiced-Beef-Skewers-480x480.png",
+        "source_page": "https://ellegourmet.ca/beef-suya-spiced-beef-skewers/",
+        "title": "Beef Sūya (Spiced Beef Skewers) - Elle Gourmet",
+        "validation": {
+            "is_valid": true,
+            "width": 480,
+            "height": 480,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 161.14,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Suya.png"
+    },
+    {
+        "food_id": "FOOD_AF_010",
+        "food_name": "Doro Wat",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Doro Wat.jpg",
+        "source_url": "https://oakandrowan.com/wp-content/uploads/2023/01/Doro-Wot-Ethiopian-Chicken-Stew-300x300.jpg",
+        "source_page": "https://oakandrowan.com/best-ethiopian-food/",
+        "title": "Top 13 Best Ethiopian Foods: Most Popular Dishes",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 300,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 23.99,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Doro Wat.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_011",
+        "food_name": "Couscous",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Couscous.jpg",
+        "source_url": "https://platedcravings.com/wp-content/uploads/2016/03/20-minute-Greek-Couscous-Salad-Plated-Cravings-4-360x480.jpg",
+        "source_page": "https://platedcravings.com/20-minute-greek-couscous-salad/",
+        "title": "20-minute Greek Couscous Salad - Plated Cravings",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 480,
+            "aspect_ratio": 0.75,
+            "format": "JPEG",
+            "size_kb": 41.23,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Couscous.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_012",
+        "food_name": "Fish Stew",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Fish Stew.jpg",
+        "source_url": "https://i.pinimg.com/474x/48/3b/6e/483b6ea6d2b70932dbd8798e33134f80.jpg",
+        "source_page": "https://www.pinterest.com/famu2005/fish/",
+        "title": "12 FISH ideas in 2025 | fish recipes, seafood recipes, fish dishes",
+        "validation": {
+            "is_valid": true,
+            "width": 474,
+            "height": 474,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 47.75,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Fish Stew.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_013",
+        "food_name": "Sadza",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Sadza.jpg",
+        "source_url": "https://eatwellabi.com/wp-content/uploads/2023/06/Sadza-10-360x352.jpg",
+        "source_page": "https://eatwellabi.com/east-african-cornmeal-sadza/",
+        "title": "East African Cornmeal - Sadza · eat well abi",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 352,
+            "aspect_ratio": 1.023,
+            "format": "JPEG",
+            "size_kb": 20.15,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Sadza.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_014",
+        "food_name": "Chakalaka",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Chakalaka.jpg",
+        "source_url": "https://l450v.alamy.com/450v/2tc3gww/chakalaka-refreshing-spicy-tomato-bean-relish-in-black-bowl-on-grey-concrete-table-south-africa-cuisine-flat-lay-close-up-2tc3gww.jpg",
+        "source_page": "https://www.alamy.com/traditional-south-africa-chakalaka-refreshing-spicy-tomato-bean-relish-in-white-bowl-on-white-wooden-table-vertical-view-from-above-close-up-image575837986.html",
+        "title": "traditional South Africa chakalaka, refreshing spicy tomato bean relish ...",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 395,
+            "aspect_ratio": 0.759,
+            "format": "JPEG",
+            "size_kb": 30.74,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Chakalaka.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_015",
+        "food_name": "Groundnut Soup",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Groundnut Soup.jpg",
+        "source_url": "https://lowcarbafrica.com/wp-content/uploads/2024/07/Groundnut-Soup-IG-1-360x480.jpg",
+        "source_page": "https://lowcarbafrica.com/banga-soup-palm-nut-soup/",
+        "title": "Banga Soup (Palm Nut Soup) - Low Carb Africa",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 480,
+            "aspect_ratio": 0.75,
+            "format": "JPEG",
+            "size_kb": 41.36,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Groundnut Soup.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_016",
+        "food_name": "Grilled Tilapia",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Grilled Tilapia.jpg",
+        "source_url": "https://aliyahsrecipesandtips.com/wp-content/uploads/2020/05/spicy-grilled-fish-300x300.jpg",
+        "source_page": "https://aliyahsrecipesandtips.com/spicy-grilled-tilapia-fish/",
+        "title": "Spicy Grilled Tilapia Fish",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 300,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 30.07,
+            "reason": ""
+        },
+        "candidate_idx": 6,
+        "local_path": "data/final_images\\Grilled Tilapia.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_017",
+        "food_name": "Hibiscus Drink",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Hibiscus Drink.png",
+        "source_url": "https://png.pngtree.com/png-vector/20250518/ourmid/pngtree-a-tall-elegant-glass-filled-with-deep-red-drink-accompanied-by-png-image_16321254.png",
+        "source_page": "https://pngtree.com/freepng/a-tall-elegant-glass-filled-with-deep-red-drink-accompanied-by-vibrant-pink-hibiscus-flower_21034413.html",
+        "title": "A Tall Elegant Glass Filled With Deep Red Drink Accompanied By Vibrant ...",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 360,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 68.51,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Hibiscus Drink.png"
+    },
+    {
+        "food_id": "FOOD_AF_018",
+        "food_name": "Ginger Tea",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Ginger Tea.jpg",
+        "source_url": "https://www.garboglass.com/data/watermark/20240614/666c0fd5e7cc5.jpg",
+        "source_page": "https://www.garboglass.com/glass-cup-and-saucer/luxury-tea-glass-cup-and-saucer-set-for-arab-and-dubai-market.html",
+        "title": "Luxury tea glass cup and saucer set for Arab and Dubai market factory ...",
+        "validation": {
+            "is_valid": true,
+            "width": 480,
+            "height": 379,
+            "aspect_ratio": 1.266,
+            "format": "JPEG",
+            "size_kb": 26.94,
+            "reason": ""
+        },
+        "candidate_idx": 5,
+        "local_path": "data/final_images\\Ginger Tea.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_019",
+        "food_name": "Bean Stew",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Bean Stew.png",
+        "source_url": "https://png.pngtree.com/png-vector/20241118/ourmid/pngtree-top-view-of-red-bean-chili-bowl-png-image_14482761.png",
+        "source_page": "https://pngtree.com/freepng/top-view-of-red-bean-chili-bowl_19492797.html",
+        "title": "Top View Of Red Bean Chili Bowl, Hearty Chili, Bean Stew, Spicy Dinner ...",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 360,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 192.41,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Bean Stew.png"
+    },
+    {
+        "food_id": "FOOD_AF_020",
+        "food_name": "Yam Fries",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Yam Fries.jpg",
+        "source_url": "https://www.allrecipes.com/thmb/Y3k7w0esoF9hhA-yWL5LIA3QErc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4529037-ee4222ecbf9e400cbff341aefd348695.jpg",
+        "source_page": "https://www.allrecipes.com/recipe/258731/air-fried-purple-yam-fries-with-sour-cream-sriracha-sauce/",
+        "title": "Air-Fried Purple Yam Fries with Sour Cream Sriracha Sauce Recipe",
+        "validation": {
+            "is_valid": true,
+            "width": 1500,
+            "height": 1500,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 126.58,
+            "reason": ""
+        },
+        "candidate_idx": 2,
+        "local_path": "data/final_images\\Yam Fries.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_021",
+        "food_name": "Okra Soup",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Okra Soup.jpg",
+        "source_url": "https://i.pinimg.com/736x/99/06/f9/9906f9c6904c74b846622ed686ed7e8f.jpg",
+        "source_page": "https://www.pinterest.com/pin/346355027606715933/",
+        "title": "Nigerian okra soup | African recipes nigerian food, Okra soup recipe ...",
+        "validation": {
+            "is_valid": true,
+            "width": 420,
+            "height": 420,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 56.21,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Okra Soup.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_022",
+        "food_name": "Hard Boiled Eggs",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Hard Boiled Eggs.jpg",
+        "source_url": "https://cravinghomecooked.com/wp-content/uploads/2020/01/perfect-hard-boiled-eggs-1-10-340x425.jpg",
+        "source_page": "https://cravinghomecooked.com/hard-boiled-eggs/",
+        "title": "Perfect Hard Boiled Eggs - Craving Home Cooked",
+        "validation": {
+            "is_valid": true,
+            "width": 340,
+            "height": 425,
+            "aspect_ratio": 0.8,
+            "format": "JPEG",
+            "size_kb": 44.62,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Hard Boiled Eggs.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_023",
+        "food_name": "Boiled Cassava",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Boiled Cassava.png",
+        "source_url": "https://i0.wp.com/www.thecreolemeltingpot.com/wp-content/uploads/2020/03/boiled-cassava1.png?zoom=3&resize=150,150&ssl=1",
+        "source_page": "https://www.thecreolemeltingpot.com/boiled-cassava-mayok-bwi/",
+        "title": "Boiled Cassava- Mayok Bwi - The Creole Melting Pot",
+        "validation": {
+            "is_valid": true,
+            "width": 450,
+            "height": 450,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 88.82,
+            "reason": ""
+        },
+        "candidate_idx": 6,
+        "local_path": "data/final_images\\Boiled Cassava.png"
+    },
+    {
+        "food_id": "FOOD_AF_024",
+        "food_name": "Steamed Spinach",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Steamed Spinach.jpg",
+        "source_url": "https://i.pinimg.com/736x/18/6e/ac/186eac4de8c7db9e5987788b361c9049.jpg",
+        "source_page": "https://www.pinterest.com/pin/271623421248113709/",
+        "title": "Lemon-Steamed Spinach | Recipe | Steamed spinach, Vegan refried beans ...",
+        "validation": {
+            "is_valid": true,
+            "width": 399,
+            "height": 400,
+            "aspect_ratio": 0.998,
+            "format": "JPEG",
+            "size_kb": 42.71,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Steamed Spinach.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_025",
+        "food_name": "Beef Stew",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Beef Stew.png",
+        "source_url": "https://png.pngtree.com/png-vector/20250303/ourmid/pngtree-delicious-beef-stew-in-rustic-bowl-overhead-view-of-hearty-winter-png-image_15699921.png",
+        "source_page": "https://pngtree.com/freepng/delicious-beef-stew-in-rustic-bowl-overhead-view-of-hearty-winter-recipe_20573481.html",
+        "title": "Delicious Beef Stew In Rustic Bowl Overhead View Of Hearty Winter ...",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 360,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 49.68,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Beef Stew.png"
+    },
+    {
+        "food_id": "FOOD_AF_026",
+        "food_name": "Goat Stew",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Goat Stew.jpg",
+        "source_url": "https://i.pinimg.com/474x/e6/4c/f1/e64cf1888865215d56f81434dc370738.jpg",
+        "source_page": "https://es.pinterest.com/mikeisan/decoración-de-platos-gourmet/",
+        "title": "28 ideas de Decoración de platos gourmet",
+        "validation": {
+            "is_valid": true,
+            "width": 474,
+            "height": 474,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 37.59,
+            "reason": ""
+        },
+        "candidate_idx": 6,
+        "local_path": "data/final_images\\Goat Stew.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_027",
+        "food_name": "Grilled Pork",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Grilled Pork.jpg",
+        "source_url": "https://i.pinimg.com/originals/d4/0f/13/d40f13eccbd2d14b0bc25e4d57432305.jpg",
+        "source_page": "https://www.pinterest.com/pin/341077371775088642/",
+        "title": "[pork belly] by @snowcology_ ・・・ Experimenting with my new high ...",
+        "validation": {
+            "is_valid": true,
+            "width": 1080,
+            "height": 1080,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 96.68,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Grilled Pork.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_028",
+        "food_name": "Fried Chicken",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Fried Chicken.jpg",
+        "source_url": "https://i.pinimg.com/474x/a6/f8/e8/a6f8e8c4c721120fce67bbcc64220636.jpg",
+        "source_page": "https://www.pinterest.com/safamedhat/chicken-plating/",
+        "title": "Chicken plating",
+        "validation": {
+            "is_valid": true,
+            "width": 474,
+            "height": 474,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 43.11,
+            "reason": ""
+        },
+        "candidate_idx": 4,
+        "local_path": "data/final_images\\Fried Chicken.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_029",
+        "food_name": "Liver Stew",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Liver Stew.jpg",
+        "source_url": "https://i.pinimg.com/474x/e6/4c/f1/e64cf1888865215d56f81434dc370738.jpg",
+        "source_page": "https://es.pinterest.com/mikeisan/decoración-de-platos-gourmet/",
+        "title": "28 ideas de Decoración de platos gourmet",
+        "validation": {
+            "is_valid": true,
+            "width": 474,
+            "height": 474,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 37.59,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Liver Stew.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_030",
+        "food_name": "Meatballs",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Meatballs.png",
+        "source_url": "https://www.ikea.com/images/a-plate-of-swedish-meatballs-served-with-mashed-potatoes-and-ca5f1a589ba81185e456300997656bbd.png?f=xxxs",
+        "source_page": "https://www.ikea.com/us/en/cat/ikea-food-restaurant-fb001/",
+        "title": "Swedish Food & Drinks - IKEA",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 300,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 9.63,
+            "reason": ""
+        },
+        "candidate_idx": 5,
+        "local_path": "data/final_images\\Meatballs.png"
+    },
+    {
+        "food_id": "FOOD_AF_SNACK_001",
+        "food_name": "Rusks",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Rusks.png",
+        "source_url": "http://jfkgrocery.com/cdn/shop/collections/rusk1-1.png?v=1712487159",
+        "source_page": "https://www.jfkgrocery.com/collections/rusk-biscuits",
+        "title": "Rusk/Biscuits - JFK Grocery Inc.",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 300,
+            "aspect_ratio": 1.0,
+            "format": "PNG",
+            "size_kb": 174.39,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Rusks.png"
+    },
+    {
+        "food_id": "FOOD_AF_PROT_001",
+        "food_name": "Grilled Chicken",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Grilled Chicken.jpg",
+        "source_url": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_150/jcfi4x9xt1rho0gwmcv2",
+        "source_page": "https://www.seamless.com/menu/the-patio--aurora-4400-fox-valley-center-dr-aurora/8456960",
+        "title": "The Patio- Aurora - Aurora, IL Restaurant | Menu + Delivery | Seamless",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 300,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 13.34,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Grilled Chicken.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_SIDE_001",
+        "food_name": "Fried Plantains",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Fried Plantains.jpg",
+        "source_url": "https://i.pinimg.com/736x/28/31/1b/28311b5fdd37a122dc69daa5df103cf5.jpg",
+        "source_page": "https://in.pinterest.com/pin/fried-plantain--1024568983957454150/",
+        "title": "Fried Plantain Recipe",
+        "validation": {
+            "is_valid": true,
+            "width": 375,
+            "height": 498,
+            "aspect_ratio": 0.753,
+            "format": "JPEG",
+            "size_kb": 39.69,
+            "reason": ""
+        },
+        "candidate_idx": 3,
+        "local_path": "data/final_images\\Fried Plantains.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_SIDE_002",
+        "food_name": "Gomen",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Gomen.jpg",
+        "source_url": "https://gradfood.com/wp-content/uploads/2020/02/Gomen-Ethiopian-Collard-Greens-300x300.jpg",
+        "source_page": "https://gradfood.com/yeabesha-gomen-ethiopian-collard-greens/",
+        "title": "Ye'abesha Gomen (Ethiopian Collard Greens) | GradFood",
+        "validation": {
+            "is_valid": true,
+            "width": 300,
+            "height": 300,
+            "aspect_ratio": 1.0,
+            "format": "JPEG",
+            "size_kb": 27.38,
+            "reason": ""
+        },
+        "candidate_idx": 0,
+        "local_path": "data/final_images\\Gomen.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_009",
+        "food_name": "Shiro Wat",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Shiro Wat.jpg",
+        "source_url": "https://holycowvegan.net/wp-content/uploads/2023/02/ethiopian-shiro-wot-3-360x407.jpg",
+        "source_page": "https://holycowvegan.net/ethiopian-shiro-wot-ground-chickpea-stew/",
+        "title": "Ethiopian Shiro Wot (Spicy Ground Chickpea Stew) - Holy Cow Vegan",
+        "validation": {
+            "is_valid": true,
+            "width": 360,
+            "height": 407,
+            "aspect_ratio": 0.885,
+            "format": "JPEG",
+            "size_kb": 26.44,
+            "reason": ""
+        },
+        "candidate_idx": 4,
+        "local_path": "data/final_images\\Shiro Wat.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_006",
+        "food_name": "Akara",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Akara.jpg",
+        "source_url": "https://i.pinimg.com/736x/49/4f/79/494f79f05336f708b958bb8e93e6ef38.jpg",
+        "source_page": "https://www.pinterest.com/pin/hot-akara-nigerian-bean-cakes-recipe--461619030565176894/",
+        "title": "HOT AKARA || NIGERIAN BEAN CAKES Recipe",
+        "validation": {
+            "is_valid": true,
+            "width": 480,
+            "height": 360,
+            "aspect_ratio": 1.333,
+            "format": "JPEG",
+            "size_kb": 29.41,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Akara.jpg"
+    },
+    {
+        "food_id": "FOOD_AF_007",
+        "food_name": "Pap",
+        "cuisine": "African",
+        "image_path": "african\\final_images\\Pap.jpg",
+        "source_url": "https://wfg22p.s3.amazonaws.com/media/dishes/sadza_4261-med.jpg",
+        "source_page": "https://worldfood.guide/dish/pap/",
+        "title": "Pap | South African",
+        "validation": {
+            "is_valid": true,
+            "width": 400,
+            "height": 300,
+            "aspect_ratio": 1.333,
+            "format": "JPEG",
+            "size_kb": 25.82,
+            "reason": ""
+        },
+        "candidate_idx": 1,
+        "local_path": "data/final_images\\Pap.jpg"
+    }
+]

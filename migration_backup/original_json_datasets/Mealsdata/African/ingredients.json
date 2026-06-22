@@ -1,0 +1,689 @@
+[
+  {
+    "ID": "ING-000007",
+    "Name": "Egg",
+    "Default_Unit": "g",
+    "main_name": "Egg",
+    "Category": "ingredient",
+    "food_type": "Non-Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 400,
+      "Protein_g": 20,
+      "Carbs_g": 50.0,
+      "Fat_g": 10,
+      "Fiber_g": 0
+    },
+    "Allergens": "Egg",
+    "Notes": "Rich in biotin, poached for grain bowls. | Versatile protein source",
+    "Aliases": [],
+    "group": "Egg and Egg Products"
+  },
+  {
+    "ID": "ING-000008",
+    "Name": "Onion",
+    "Default_Unit": "g",
+    "main_name": "Onion",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 40.39,
+      "Protein_g": 1.12,
+      "Carbs_g": 9.4,
+      "Fat_g": 0.1,
+      "Fiber_g": 1.65
+    },
+    "Allergens": "None",
+    "Notes": "Base for many Mediterranean dishes. | The most fundamental vegetable in Emirati cooking; base of almost every dish.",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-000017",
+    "Name": "Sugar",
+    "Default_Unit": "g",
+    "main_name": "Sugar",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 80.0,
+      "Protein_g": 0.0,
+      "Carbs_g": 20.0,
+      "Fat_g": 0.0,
+      "Fiber_g": 0.0
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Processed Foods"
+  },
+  {
+    "ID": "ING-000030",
+    "Name": "Garlic",
+    "Default_Unit": "g",
+    "main_name": "Garlic",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 146.84,
+      "Protein_g": 6.31,
+      "Carbs_g": 32.65,
+      "Fat_g": 0.5,
+      "Fiber_g": 2.18
+    },
+    "Allergens": "None",
+    "Notes": "Aromatic used universally. (Reference: Bayan et al., 2014). | Indispensable in Emirati cooking; used in every savory dish from Harees to Machboos.",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-000057",
+    "Name": "Vegetable Oil",
+    "Default_Unit": "g",
+    "main_name": "Vegetable Oil",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Liquid",
+    "Macros": {
+      "Calories_kcal": 900.0,
+      "Protein_g": 0.0,
+      "Carbs_g": 0.0,
+      "Fat_g": 100.0,
+      "Fiber_g": 0.0
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Edible Oils and Fats"
+  },
+  {
+    "ID": "ING-000064",
+    "Name": "Water",
+    "Default_Unit": "g",
+    "main_name": "Water",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Liquid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0.0,
+      "Carbs_g": 0.0,
+      "Fat_g": 0.0,
+      "Fiber_g": 0.0
+    },
+    "Allergens": "None",
+    "Notes": "Drinking water",
+    "Aliases": [],
+    "group": "Beverage"
+  },
+  {
+    "ID": "ING-000110",
+    "Name": "Butter",
+    "Default_Unit": "g",
+    "main_name": "Butter",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Semi-Solid",
+    "Macros": {
+      "Calories_kcal": 717,
+      "Protein_g": 0.9,
+      "Carbs_g": 0.1,
+      "Fat_g": 81.1,
+      "Fiber_g": 0.0
+    },
+    "Allergens": "Dairy",
+    "Notes": "Used sparingly for searing scallops.",
+    "Aliases": [],
+    "group": "Milk and Milk Products"
+  },
+  {
+    "ID": "ING-000132",
+    "Name": "Peanut Butter",
+    "Default_Unit": "g",
+    "main_name": "Peanut Butter",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Semi-Solid",
+    "Macros": {
+      "Calories_kcal": 664.0,
+      "Protein_g": 24.0,
+      "Carbs_g": 22.0,
+      "Fat_g": 53.33,
+      "Fiber_g": 8.67
+    },
+    "Allergens": "Dairy, Peanuts, Soy",
+    "Notes": "Smooth or crunchy peanut spread | High protein | Available in Lulu, Carrefour, Spinneys UAE",
+    "Aliases": [],
+    "group": "Milk and Milk Products"
+  },
+  {
+    "ID": "ING-000143",
+    "Name": "Red Onion",
+    "Default_Unit": "g",
+    "main_name": "Red Onion",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 39.26,
+      "Protein_g": 1.13,
+      "Carbs_g": 9.33,
+      "Fat_g": 0.1,
+      "Fiber_g": 1.75
+    },
+    "Allergens": "None",
+    "Notes": "Sliced | Often used raw in Greek salads or roasted. | Used raw in UAE salads (Salatat) and as a garnish; milder when marinated.",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-000187",
+    "Name": "Couscous",
+    "Default_Unit": "g",
+    "main_name": "Couscous",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 361.4,
+      "Protein_g": 12.0,
+      "Carbs_g": 77.0,
+      "Fat_g": 0.6,
+      "Fiber_g": 5.0
+    },
+    "Allergens": "Gluten",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Cereals and Millets"
+  },
+  {
+    "ID": "ING-000296",
+    "Name": "Red Bell Pepper",
+    "Default_Unit": "g",
+    "main_name": "Red Bell Pepper",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 30.0,
+      "Protein_g": 1.0,
+      "Carbs_g": 6.0,
+      "Fat_g": 0.2,
+      "Fiber_g": 2.0
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-000345",
+    "Name": "Kale",
+    "Default_Unit": "g",
+    "main_name": "Kale",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 66.25,
+      "Protein_g": 3.75,
+      "Carbs_g": 10.0,
+      "Fat_g": 1.25,
+      "Fiber_g": 3.75
+    },
+    "Allergens": "None",
+    "Notes": "Superfood for skin repair. | Available in UAE supermarkets; used in salads, smoothies, and stir-fries.",
+    "Aliases": [],
+    "group": "Green Leafy Vegetables"
+  },
+  {
+    "ID": "ING-000361",
+    "Name": "Ginger",
+    "Default_Unit": "g",
+    "main_name": "Ginger",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 80.0,
+      "Protein_g": 0.0,
+      "Carbs_g": 20.0,
+      "Fat_g": 0.0,
+      "Fiber_g": 0.0
+    },
+    "Allergens": "None",
+    "Notes": "fresh; Boosts blood flow to the skin.",
+    "Aliases": [],
+    "group": "Condiments and Spices"
+  },
+  {
+    "ID": "ING-000388",
+    "Name": "Tomatoes",
+    "Default_Unit": "g",
+    "main_name": "Tomatoes",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 23.0,
+      "Protein_g": 1.0,
+      "Carbs_g": 4.0,
+      "Fat_g": 0.33,
+      "Fiber_g": 1.33
+    },
+    "Allergens": "None",
+    "Notes": "blanched & pureed; Superb lycopene source. | Rich in lycopene and vitamin C. (Reference: Story et al., 2010). | The most widely used vegetable in UAE; base of most Emirati sauces and stews.",
+    "Aliases": [
+      "Roma Tomato",
+      "Tomato"
+    ],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-000974",
+    "Name": "Red Palm Oil",
+    "Default_Unit": "ml",
+    "main_name": "Zayt Al-Nakheel Al-Ahmar",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Liquid",
+    "Macros": {
+      "Calories_kcal": 884.0,
+      "Protein_g": 0.0,
+      "Carbs_g": 0.0,
+      "Fat_g": 100.0,
+      "Fiber_g": 0.0
+    },
+    "Allergens": "None",
+    "Notes": "Unrefined palm oil with striking orange-red colour; sold in UAE African grocery stores; used in West African cuisine popular in UAE's diverse community.",
+    "Aliases": [],
+    "group": "Oils and Fats"
+  },
+  {
+    "ID": "ING-001114",
+    "Name": "Okra",
+    "Default_Unit": "g",
+    "main_name": "Bamia",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 33.8,
+      "Protein_g": 1.92,
+      "Carbs_g": 7.33,
+      "Fat_g": 0.21,
+      "Fiber_g": 3.3
+    },
+    "Allergens": "None",
+    "Notes": "Essential in Emirati cooking; used in Bamia stew with lamb or chicken.",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-001162",
+    "Name": "Yam",
+    "Default_Unit": "g",
+    "main_name": "Yam",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 119.57,
+      "Protein_g": 1.51,
+      "Carbs_g": 28.01,
+      "Fat_g": 0.2,
+      "Fiber_g": 4.24
+    },
+    "Allergens": "None",
+    "Notes": "Available in UAE African and Asian markets; used in stews and as a potato substitute.",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-001164",
+    "Name": "Cassava",
+    "Default_Unit": "g",
+    "main_name": "Manioc",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 160.77,
+      "Protein_g": 1.37,
+      "Carbs_g": 38.1,
+      "Fat_g": 0.3,
+      "Fiber_g": 1.86
+    },
+    "Allergens": "None",
+    "Notes": "Widely available in UAE South Asian and African grocery stores.",
+    "Aliases": [],
+    "group": "Vegetables"
+  },
+  {
+    "ID": "ING-001202",
+    "Name": "Tilapia",
+    "Default_Unit": "g",
+    "main_name": "tilapia",
+    "Category": "ingredient",
+    "food_type": "Non-Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 96,
+      "Protein_g": 20.1,
+      "Carbs_g": 0,
+      "Fat_g": 1.7,
+      "Fiber_g": 0
+    },
+    "Allergens": "Fish",
+    "Notes": "Mild white fish, often crusted and baked.",
+    "Aliases": [],
+    "group": "Fresh Water Fish and Shellfish"
+  },
+  {
+    "ID": "ING-001279",
+    "Name": "Chili",
+    "Default_Unit": "g",
+    "main_name": "chili",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 40,
+      "Protein_g": 2,
+      "Carbs_g": 9,
+      "Fat_g": 0.4,
+      "Fiber_g": 1.5
+    },
+    "Allergens": "None",
+    "Notes": "Auto-added from recipes",
+    "Aliases": [],
+    "group": "Miscellaneous"
+  },
+  {
+    "ID": "AM_000009",
+    "Name": "Hibiscus Flowers",
+    "Default_Unit": "g",
+    "main_name": "Hibiscus Flowers",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {},
+    "Allergens": "None",
+    "Notes": "Auto-created in phase5c final resolution to preserve ontology",
+    "Aliases": [],
+    "group": "Beverages"
+  },
+  {
+    "ID": "AFR_ING_001",
+    "Name": "Teff Flour",
+    "Default_Unit": "g",
+    "main_name": "Teff Flour",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 367,
+      "Protein_g": 13.3,
+      "Carbs_g": 73.1,
+      "Fat_g": 2.4,
+      "Fiber_g": 8.0
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Cereals and Millets"
+  },
+  {
+    "ID": "AFR_ING_002",
+    "Name": "Maize Flour",
+    "Default_Unit": "g",
+    "main_name": "Maize Flour",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 361,
+      "Protein_g": 6.9,
+      "Carbs_g": 76.8,
+      "Fat_g": 3.9,
+      "Fiber_g": 7.3
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Cereals and Millets"
+  },
+  {
+    "ID": "AFR_ING_003",
+    "Name": "Egusi Seeds",
+    "Default_Unit": "g",
+    "main_name": "Egusi Seeds",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 575,
+      "Protein_g": 30.0,
+      "Carbs_g": 15.0,
+      "Fat_g": 45.0,
+      "Fiber_g": 3.0
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Nuts and Seeds"
+  },
+  {
+    "ID": "AFR_ING_007",
+    "Name": "Rice",
+    "Default_Unit": "g",
+    "main_name": "Rice",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 130,
+      "Protein_g": 2.7,
+      "Carbs_g": 28,
+      "Fat_g": 0.3,
+      "Fiber_g": 0.4
+    },
+    "Allergens": "None",
+    "Notes": "",
+    "Aliases": [],
+    "group": "Cereals and Millets"
+  },
+  {
+    "ID": "AFR_ING_000008",
+    "Name": "Rooibos Tea Leaves",
+    "Default_Unit": "g",
+    "main_name": "Rooibos Tea Leaves",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000009",
+    "Name": "Cassava Flour",
+    "Default_Unit": "g",
+    "main_name": "Cassava Flour",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000010",
+    "Name": "Spinach",
+    "Default_Unit": "g",
+    "main_name": "Spinach",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000011",
+    "Name": "Black Eyed Beans",
+    "Default_Unit": "g",
+    "main_name": "Black Eyed Beans",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000012",
+    "Name": "Beef",
+    "Default_Unit": "g",
+    "main_name": "Beef",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000013",
+    "Name": "Peanut Powder",
+    "Default_Unit": "g",
+    "main_name": "Peanut Powder",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000014",
+    "Name": "Chickpea Flour",
+    "Default_Unit": "g",
+    "main_name": "Chickpea Flour",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000015",
+    "Name": "Chicken",
+    "Default_Unit": "g",
+    "main_name": "Chicken",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000016",
+    "Name": "Carrot",
+    "Default_Unit": "g",
+    "main_name": "Carrot",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  },
+  {
+    "ID": "AFR_ING_000017",
+    "Name": "Plantain",
+    "Default_Unit": "g",
+    "main_name": "Plantain",
+    "Category": "ingredient",
+    "food_type": "Veg",
+    "food_state": "Solid",
+    "Macros": {
+      "Calories_kcal": 0,
+      "Protein_g": 0,
+      "Carbs_g": 0,
+      "Fat_g": 0
+    },
+    "Allergens": "None",
+    "Notes": "Auto-created during V3.1 African Mapping Phase",
+    "Aliases": [],
+    "group": "Unknown African Ingredient"
+  }
+]

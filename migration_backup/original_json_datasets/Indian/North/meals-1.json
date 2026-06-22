@@ -1,0 +1,3526 @@
+[
+  {
+    "ID": "MEAL_EM_NI_01",
+    "Name": "Ajwain Digestion",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Clear carom seed decoction targeting gut issues to promote a clean face.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_021",
+        "Quantity": 205,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_02",
+    "Name": "Kesar Glow Water",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Golden saffron water to diminish hyperpigmentation and reveal natural glow.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_022",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_03",
+    "Name": "Dhania Jeera Detox",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Coriander and cumin metabolic water acting as an internal blood purifier.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_023",
+        "Quantity": 210,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_04",
+    "Name": "Amla Gud Immunity",
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Vitamin C and iron shot locking extreme protection and collagen synthesis.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_024",
+        "Quantity": 85,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_05",
+    "Name": "Methi Ajwain Relief",
+    "Goal": [
+      "Hair Repair",
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Phytoestrogen powerhouse reducing hair shedding naturally.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_025",
+        "Quantity": 210,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_06",
+    "Name": "Kala Chana Strength Drink",
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Raw iron vitality from black chickpea soak for thickening hair shafts.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_026",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_07",
+    "Name": "Amla Aloe Vitality",
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Double-barreled antioxidant fusion reversing signs of cellular aging.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_027",
+        "Quantity": 60,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_08",
+    "Name": "Warm Tulsi Ginger Pops",
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Liver detoxifying ginger drops that keep the face free of morning puffiness.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_028",
+        "Quantity": 207,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_09",
+    "Name": "Haldi Jeera Healing",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Antibacterial morning defense to squash microscopic skin inflammations.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_029",
+        "Quantity": 207,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_EM_NI_10",
+    "Name": "Soaked Dhaniya Balancer",
+    "Goal": [
+      "Hair Repair",
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Early Morning"
+    ],
+    "Time": "06:30 AM",
+    "Description": "Thyroid balancing drink tackling hormonal acne at the source.",
+    "Foods": [
+      {
+        "ID": "FOOD_EM_030",
+        "Quantity": 210,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "Name": "Paneer Paratha & Curd",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_012",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_017",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_5B075DD4",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Aloo Paratha & Curd",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_041",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_017",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_8D7BA12F",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Paratha with Jeera Aloo & Curd",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_011",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_016",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_017",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_C213AF06",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Chole",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_042",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_893ACC56",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Dalia Upma & Sprouts Chaat",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_043",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_020",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_61939488",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Besan Chilla & Curd",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_013",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_017",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_4113D024",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Kanda Poha & Sprouts Chaat",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_019",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_020",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_DC6F27CB",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Paratha with Chole",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_011",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_042",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_DE83FC69",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Aloo Paratha & Suji Halwa",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_041",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_044",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_23D0190E",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Besan Chilla with Jeera Aloo",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_013",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_016",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_F12141AE",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Egg Paratha & Curd",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_017",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_B16CA356",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Plain Paratha with Egg Bhurji",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_011",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_014",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_C0E06EF4",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Phulka with Egg Curry",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_046",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_D61F240F",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Plain Paratha & Chicken Kheema Matar",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_011",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_015",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_B4519B32",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Keema Paratha & Curd",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_048",
+        "Quantity": 180,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_017",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_BB36297F",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Mutton Paya Soup & Phulka",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_049",
+        "Quantity": 250,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_A8642D12",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Omelette & Paratha",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_047",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_011",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_538961D0",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Egg Paratha & Egg Curry",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_046",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_3D3DD14B",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Kanda Poha & Boiled Egg",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_019",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_045",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_0FFA7273",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Dalia Upma amd Masala Omelette",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_BF_043",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_047",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_7A9F0F73",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Breakfast"
+    ],
+    "Time": "08:30 AM",
+    "Description": "A carefully crafted Breakfast meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Sattu Cooler & Roasted Chana",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_011",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_013",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_500ABE14",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Fruit Chaat & Masala Chaas",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_015",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_012",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_2D1D7E87",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Masala Corn & Lassi",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_014",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_016",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_71076722",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Moong Dal Namkeen & Shikanji",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_020",
+        "Quantity": 40,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_017",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_EFB48B05",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Hard Boiled Egg & Roasted Almonds",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_018",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_019",
+        "Quantity": 30,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_0763A10D",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Boiled Egg & Masala Chaas",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_045",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_012",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_B07EE30C",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Sattu Drink & Fruit Chaat",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_023",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_015",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_4FDC24FB",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Roasted Chana & Masala Chaas",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_013",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_012",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_39817A14",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Fruit Chaat & Roasted Almonds",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_015",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_019",
+        "Quantity": 30,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_AAC17373",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Corn & Shikanji",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_MM_014",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_MM_017",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_1C4AF469",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Mid-Morning"
+    ],
+    "Time": "11:00 AM",
+    "Description": "A carefully crafted Mid-Morning meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Jeera Rice with Rajma and Cucumber Raita",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_020",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_024",
+        "Quantity": 100,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_5A6B4197",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Palak Paneer and Kachumber Salad",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_021",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_025",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_7AE874D0",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Veg Pulao with Dal Makhani and Cucumber Raita",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_019",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_022",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_024",
+        "Quantity": 100,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_E470CCFC",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Bhindi abd Dal",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_023",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_022",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_9B3261E2",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Jeera Rice with Palak Paneer and Kachumber salad",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_021",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_025",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_1D003635",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Rajma Bowl",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_020",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_C347AEA5",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Veg Pulao with Rajma and Kachumber Salad",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_019",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_020",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_025",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_0AA5510D",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka & Makhani Raita",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_022",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_AB4713ED",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Jeera Rice with Dry Bhindi with Cucumber Raita",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_023",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_024",
+        "Quantity": 100,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_A599CD7D",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Veg Pulao with Palak Paneer and Kachumber Salad",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_019",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_021",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_025",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_5D0E1AE7",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Jeera Rice wtih Butter Chicken",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_027",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_3CDEE6A2w",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Jeera Rice wtih Butter Chicken and Kachumber Salad",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_027",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_025",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_3CDEE6A2",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Rogan Josh",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_028",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_41A25BD5",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Chicken Biryani with Butter Chicken",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_026",
+        "Quantity": 250,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_027",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_EE822AD6",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka & Fish Tikka",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_029",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_19EE4F56",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Jeera Rice with Tandoori Chicken",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_030",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_8DDF2B9F",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka & Tandoori Feast",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_027",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_030",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_1B530871",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Biryani with Rogan Josh and Cucumber Raita",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_026",
+        "Quantity": 250,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_028",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_024",
+        "Quantity": 100,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_A9D21720",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Jeera Rice & Fish Masala",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_018",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_029",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_15300EEE",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Egg Curry and Kachumber Salad",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_LU_050",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_BF_046",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_LU_025",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_E70D990B",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "01:30 PM",
+    "Description": "A carefully crafted Lunch meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Roasted Makhana",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_025",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_7D00A3D9",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Green Tea & Dry Bhel Puri",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_021",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_026",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_120ECF33",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Sattu Drink & Wheat Khakhra",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_023",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_027",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_57651C11",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Baked Veg Samosa",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_028",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_8B5E27F1",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Shikanji & Moong Dal Namkeen",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_022",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_029",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_FAAA9F42",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Khaman Dhokla",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_030",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_8B689650",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Green Tea & Khandvi",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_021",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_031",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_0E38F251",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Low Fat Lassi & Wheat Khakhra",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_024",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_027",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_6DE5AA67",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Baked Mathri",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_032",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_DAA18247",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Sattu Drink & Roasted Makhana",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_023",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_025",
+        "Quantity": 50,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_7A582B28",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Chicken Tikka Skewer",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_033",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_B4A08D5E",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Green Tea & Boiled Egg Chaat",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_021",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_034",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_199D8F35",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Mini Egg Kati Roll",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_036",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_E7114D35",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Sattu Drink & Chicken Shami Kebab",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_023",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_037",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_1F190960",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Shikanji & Tawa Chicken Sausage",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_022",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_038",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_4F65467C",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Masala Chai & Baked Egg Pakoda",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_039",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_992C361A",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Green Tea & Chicken Reshmi Kebab",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_021",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_040",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_D5494217",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Masala Chai & Baked Keema Samosa",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_002",
+        "Quantity": 150,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_035",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_C666EA98",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Low Fat Lassi & Boiled Egg Chaat",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_024",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_034",
+        "Quantity": 100,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_5D4455A8",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Sattu Drink & Chicken Tikka Skewer",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_EV_023",
+        "Quantity": 250,
+        "Unit": "ml",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_EV_033",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_CC5511F1",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Evening"
+    ],
+    "Time": "04:30 PM",
+    "Description": "A carefully crafted Evening meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Phulka with Paneer Tikka Masala",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_021",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_022",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_CC34D1BD",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Missi Roti with Gobi Mutter",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_024",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_023",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_FD18326A",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Baingan Bharta",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_021",
+        "Quantity": 60,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_025",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_BF92B51A",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Missi Roti with Dal Tadka",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_024",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_026",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_CB6499E8",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Garlic Naan with Methi Malai Mutter",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_027",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_028",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_15A27D74",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Tandoori Roti with Paneer Tikka Masala",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_037",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_022",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_6AFB8FAC",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Spinach Dal",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_021",
+        "Quantity": 60,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_030",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_EE5039B8",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Garlic Naan with Dal Tadka",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_027",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_026",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_A04CA368",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Missi Roti with Baingan Bharta",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_024",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_025",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_C97D752B",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Tandoori Roti with Gobi Mutter",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_037",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_023",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_913D6769",
+    "Diet Type": [
+      "Veg"
+    ],
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair."
+  },
+  {
+    "Name": "Phulka with Chicken Handi",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_021",
+        "Quantity": 60,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_031",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_C1EB8CC9",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Tandoori Roti with Home Style Mutton Curry",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_037",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_032",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_D436AF66",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Garlic Naan with Egg Bhurji",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_027",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_033",
+        "Quantity": 120,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_02350825",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Missi Roti with Chicken Saagwala",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_024",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_034",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_A0E39BD6",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Keema Mutter",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_021",
+        "Quantity": 60,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_035",
+        "Quantity": 180,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_5025538D",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Tandoori Roti with Punjabi Fish Curry",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_037",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_036",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_73B1E969",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Garlic Naan with Garlic Butter Chicken",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_027",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_038",
+        "Quantity": 180,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_0F2865BF",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Phulka with Egg Tikka Masala",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_021",
+        "Quantity": 60,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_039",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_3A361695",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Hair Repair."
+  },
+  {
+    "Name": "Missi Roti with Chicken Malai Boti",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_024",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_040",
+        "Quantity": 150,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_008E10E0",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "Name": "Tandoori Roti with Chicken Handi",
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Foods": [
+      {
+        "ID": "FOOD_DN_037",
+        "Quantity": 80,
+        "Unit": "g",
+        "Replaceable": false
+      },
+      {
+        "ID": "FOOD_DN_031",
+        "Quantity": 200,
+        "Unit": "g",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_016EFBB2",
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Session": [
+      "Dinner"
+    ],
+    "Time": "08:00 PM",
+    "Description": "A carefully crafted Dinner meal focusing on Skin Repair, Hair Repair."
+  },
+  {
+    "ID": "MEAL_BT_E59A3341",
+    "Name": "Classic Warm Milk Soother",
+    "Goal": [
+      "Skin Repair",
+      "Hair Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "10:30 PM",
+    "Description": "A carefully crafted Bedtime meal focusing on Skin Repair, Hair Repair for optimal rest.",
+    "Foods": [
+      {
+        "ID": "FOOD_BT_001",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_BT_9E5309C0",
+    "Name": "Golden Turmeric Healing Milk",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "10:30 PM",
+    "Description": "A carefully crafted Bedtime meal focusing on Skin Repair for optimal rest.",
+    "Foods": [
+      {
+        "ID": "FOOD_BT_002",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_BT_A75FCED8",
+    "Name": "Cinnamon Spiced Milk Potion",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "10:30 PM",
+    "Description": "A carefully crafted Bedtime meal focusing on Skin Repair for optimal rest.",
+    "Foods": [
+      {
+        "ID": "FOOD_BT_006",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_BT_66609A35",
+    "Name": "Saffron Infused Milk",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "10:30 PM",
+    "Description": "A carefully crafted Bedtime meal focusing on Skin Repair for optimal rest.",
+    "Foods": [
+      {
+        "ID": "FOOD_BT_009",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  },
+  {
+    "ID": "MEAL_BT_FDE1C7AE",
+    "Name": "Nutmeg Deep Sleep Potion",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Veg"
+    ],
+    "Cuisine": [
+      "North Indian"
+    ],
+    "Session": [
+      "Bedtime"
+    ],
+    "Time": "10:30 PM",
+    "Description": "A carefully crafted Bedtime meal focusing on Skin Repair for optimal rest.",
+    "Foods": [
+      {
+        "ID": "FOOD_BT_011",
+        "Quantity": 200,
+        "Unit": "ml",
+        "Replaceable": false
+      }
+    ],
+    "Allergens": "None"
+  }
+]

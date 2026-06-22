@@ -1,0 +1,2216 @@
+[
+  {
+    "ID": "FOOD_SEA_EM_001",
+    "Name": "Lemongrass Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_002",
+    "Name": "Ginger Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_003",
+    "Name": "Pandan Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_004",
+    "Name": "Warm Calamansi Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_005",
+    "Name": "Butterfly Pea Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_006",
+    "Name": "Turmeric Jamu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_007",
+    "Name": "Roselle Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_008",
+    "Name": "Coconut Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_009",
+    "Name": "Warm Soy Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_010",
+    "Name": "Chrysanthemum Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_011",
+    "Name": "Papaya",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_012",
+    "Name": "Dragon Fruit",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_013",
+    "Name": "Guava",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_014",
+    "Name": "Moringa Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_015",
+    "Name": "Tamarind Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_016",
+    "Name": "Watermelon Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_017",
+    "Name": "Aloe Vera Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_018",
+    "Name": "Starfruit",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_019",
+    "Name": "Rambutan",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_020",
+    "Name": "Mangosteen",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_021",
+    "Name": "Bael Fruit Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_022",
+    "Name": "Lotus Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_023",
+    "Name": "Soursop Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_024",
+    "Name": "Ginger Lemongrass Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_025",
+    "Name": "Salak",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_EM_026",
+    "Name": "Warm Lime Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_027",
+    "Name": "Coconut Milk Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_028",
+    "Name": "Longan Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_029",
+    "Name": "Pineapple Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_EM_030",
+    "Name": "Pomelo",
+    "Cuisine": "Southeast Asia",
+    "Type": "Fruit"
+  },
+  {
+    "ID": "FOOD_SEA_B_001",
+    "Name": "Coconut Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_002",
+    "Name": "Sambal",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_003",
+    "Name": "Peanuts and Cucumber",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_004",
+    "Name": "Kaya Toast",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_005",
+    "Name": "Coconut Jam",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_006",
+    "Name": "Lontong",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_007",
+    "Name": "Sayur Lodeh",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_008",
+    "Name": "Water Rice Cake",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_009",
+    "Name": "Preserved Radish Topping",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_010",
+    "Name": "Plain Congee",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_011",
+    "Name": "Braised Peanuts",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_012",
+    "Name": "Rice Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_013",
+    "Name": "Vegetable Pho Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_014",
+    "Name": "Tofu and Herbs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_015",
+    "Name": "Rice Noodle Roll",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_016",
+    "Name": "Soy Dipping Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_017",
+    "Name": "Fried Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_018",
+    "Name": "Roti Canai",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_019",
+    "Name": "Dal Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_020",
+    "Name": "Steamed Rice Cake",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_021",
+    "Name": "Grated Coconut",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_022",
+    "Name": "Rice Porridge",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_023",
+    "Name": "Savory Toppings",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_024",
+    "Name": "Blanched Vegetables",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_025",
+    "Name": "Peanut Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_026",
+    "Name": "Fried Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_027",
+    "Name": "Silken Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_028",
+    "Name": "Tapioca Pearls",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_029",
+    "Name": "Arnibal Syrup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_030",
+    "Name": "Fried Dough Sticks",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_031",
+    "Name": "Pan-fried Turnip Cake",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_032",
+    "Name": "Steamed Dumplings",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_033",
+    "Name": "Chili Soy Dip",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_034",
+    "Name": "Chocolate Rice Porridge",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_035",
+    "Name": "Coconut Milk Drizzle",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_036",
+    "Name": "Steamed Rice Cake (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_037",
+    "Name": "Fried Rice Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_038",
+    "Name": "Pad Thai Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_039",
+    "Name": "Rice Porridge (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_040",
+    "Name": "Shiitake Topping",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_041",
+    "Name": "Baguette",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_042",
+    "Name": "Lemongrass Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_043",
+    "Name": "Pickled Vegetables",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_044",
+    "Name": "Sticky Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_045",
+    "Name": "Banana Filling",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_046",
+    "Name": "Pancake",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_047",
+    "Name": "Sweet Filling",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_048",
+    "Name": "Coconut Rice (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_049",
+    "Name": "Fried Tempeh",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_050",
+    "Name": "Sambal and Cucumber",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_051",
+    "Name": "Steamed Rice Cake (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_052",
+    "Name": "Peanut Filling",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_053",
+    "Name": "Coconut Curry Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_054",
+    "Name": "Egg Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_055",
+    "Name": "Tofu and Pickles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_056",
+    "Name": "Pandesal",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_057",
+    "Name": "Cheese Slice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_058",
+    "Name": "Lemongrass Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_059",
+    "Name": "Rice Vermicelli",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_060",
+    "Name": "Green Curry Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_061",
+    "Name": "Fresh Herbs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_062",
+    "Name": "Fresh Spring Rolls",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_063",
+    "Name": "Peanut Dipping Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_064",
+    "Name": "Coconut Pancake",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_065",
+    "Name": "Sweet Sticky Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_066",
+    "Name": "Fresh Mango",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_067",
+    "Name": "Clear Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_068",
+    "Name": "Tofu and Bok Choy",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_069",
+    "Name": "Coconut Rice (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_070",
+    "Name": "Sambal and Anchovies",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_071",
+    "Name": "Hard Boiled Egg",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_072",
+    "Name": "Chicken Pho Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_073",
+    "Name": "Chicken and Herbs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_074",
+    "Name": "Pork Pate and Meat",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_075",
+    "Name": "Pickled Vegetables (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_076",
+    "Name": "Marinated Beef",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_077",
+    "Name": "Garlic Fried Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_078",
+    "Name": "Fried Egg",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_079",
+    "Name": "Sweet Pork",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_080",
+    "Name": "Pork Sausage",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_081",
+    "Name": "Rice Porridge (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_082",
+    "Name": "Shredded Chicken",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_083",
+    "Name": "Poached Chicken",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_084",
+    "Name": "Chicken Fat Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_085",
+    "Name": "Chili Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_086",
+    "Name": "Tamarind Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_087",
+    "Name": "Hard Boiled Egg and Shrimp",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_088",
+    "Name": "Pork Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_089",
+    "Name": "Minced Pork and Bean Sprouts",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_090",
+    "Name": "Fried Rice Noodles (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_091",
+    "Name": "Pad Thai Sauce (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_092",
+    "Name": "Fish Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_093",
+    "Name": "Rice Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_094",
+    "Name": "Minced Pork",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_095",
+    "Name": "Fried Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_096",
+    "Name": "Chicken Turmeric Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_097",
+    "Name": "Shredded Chicken (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_098",
+    "Name": "Egg Noodles (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_099",
+    "Name": "Minced Pork and Mushroom",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_100",
+    "Name": "Siew Mai",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_101",
+    "Name": "Rice Porridge (4)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_102",
+    "Name": "Pork and Century Egg",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_103",
+    "Name": "Lemongrass Beef Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_104",
+    "Name": "Beef and Pork",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_105",
+    "Name": "Fish Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_106",
+    "Name": "Yellow Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_107",
+    "Name": "Fish Balls and Lettuce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_108",
+    "Name": "Coconut Curry Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_109",
+    "Name": "Chicken Drumstick",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_110",
+    "Name": "Coconut Rice (4)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_111",
+    "Name": "Fish Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_112",
+    "Name": "Pickled Cucumber",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_113",
+    "Name": "Chicken Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_B_114",
+    "Name": "Grilled Saba",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_115",
+    "Name": "Steamed Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_116",
+    "Name": "Beef Rendang",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_117",
+    "Name": "Moo Ping",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_118",
+    "Name": "Sticky Rice (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_119",
+    "Name": "Steamed Bun",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_120",
+    "Name": "Chicken Filling",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_121",
+    "Name": "Har Gow",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_122",
+    "Name": "Macaroni Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_B_123",
+    "Name": "Shredded Chicken (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_124",
+    "Name": "Fried Fish",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_125",
+    "Name": "Sambal (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_126",
+    "Name": "Fresh Papaya",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_127",
+    "Name": "Pegaga Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_128",
+    "Name": "Moringa Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_129",
+    "Name": "Soy Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_130",
+    "Name": "Tremella Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_131",
+    "Name": "Turmeric Jamu (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_132",
+    "Name": "Jus Alpukat",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_133",
+    "Name": "Roselle Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_134",
+    "Name": "Bird Nest Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_135",
+    "Name": "Fresh Guava",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_136",
+    "Name": "Calamansi Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_137",
+    "Name": "Goji Berry Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_138",
+    "Name": "Pumpkin Seeds",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_139",
+    "Name": "Matcha Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_140",
+    "Name": "Sweet Potato Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_141",
+    "Name": "Lemongrass Tea (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_142",
+    "Name": "Chia Seed Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_143",
+    "Name": "Pomegranate Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_B_144",
+    "Name": "Black Sesame Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_001",
+    "Name": "Green Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_002",
+    "Name": "Basil Stir-fry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_003",
+    "Name": "Pad See Ew",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_004",
+    "Name": "Blanched Vegetables and Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_005",
+    "Name": "Sayur Lodeh (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_006",
+    "Name": "Tempeh Orek",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_007",
+    "Name": "Fried Tofu and Spinach",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_008",
+    "Name": "Papaya Salad",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_009",
+    "Name": "Mango Salad",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_011",
+    "Name": "Vegetable Pho Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_010",
+    "Name": "Grilled Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_012",
+    "Name": "Dipping Sauce and Herbs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_013",
+    "Name": "Stir-fried Morning Glory",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_014",
+    "Name": "Tom Yum Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_015",
+    "Name": "Pineapple Fried Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_016",
+    "Name": "Tofu Lok Lak",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_017",
+    "Name": "Fresh Lettuce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_018",
+    "Name": "Tofu Amok",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_019",
+    "Name": "Vegetable Curry (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_021",
+    "Name": "Coconut Curry Broth (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_020",
+    "Name": "Tofu Puffs and Bean Sprouts",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_022",
+    "Name": "Sweet Potato Gravy",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_MM_001",
+    "Name": "Tofu and Celery",
+    "Cuisine": "Southeast Asia",
+    "Type": ""
+  },
+  {
+    "ID": "FOOD_SEA_L_023",
+    "Name": "Murtabak",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_024",
+    "Name": "Curry Dipping Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_025",
+    "Name": "Vegetable Biryani",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_026",
+    "Name": "Dal Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_027",
+    "Name": "Char Kway Teow",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_028",
+    "Name": "Tofu Rendang",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_029",
+    "Name": "Jackfruit Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_030",
+    "Name": "Pansit Bihon",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_031",
+    "Name": "Pinakbet",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_032",
+    "Name": "Monggo Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_033",
+    "Name": "Laing",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_034",
+    "Name": "Adobo Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_035",
+    "Name": "Chicken Green Curry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_036",
+    "Name": "Pork Basil Stir-fry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_037",
+    "Name": "Chicken Pad See Ew",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_038",
+    "Name": "Beef Rendang (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_039",
+    "Name": "Ayam Goreng",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_040",
+    "Name": "Sambal (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_041",
+    "Name": "Chicken Curry and Beef Rendang",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_042",
+    "Name": "Grilled Pork",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_043",
+    "Name": "Beef Pho Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_044",
+    "Name": "Beef and Herbs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_045",
+    "Name": "Grilled Pork Patties",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_046",
+    "Name": "Dipping Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_047",
+    "Name": "Shrimp Tom Yum Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_048",
+    "Name": "Shrimp Pineapple Fried Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_049",
+    "Name": "Beef Lok Lak",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_050",
+    "Name": "Fish Amok",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_051",
+    "Name": "Chicken and Tofu Puffs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_052",
+    "Name": "Sweet Potato Gravy (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_053",
+    "Name": "Hard Boiled Egg and Beef",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_054",
+    "Name": "Murtabak (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_055",
+    "Name": "Chicken Biryani",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_056",
+    "Name": "Fish Curry (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_057",
+    "Name": "Char Kway Teow (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_058",
+    "Name": "Pork Adobo",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_059",
+    "Name": "Grilled Chicken",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_060",
+    "Name": "Beef Kare-Kare",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_061",
+    "Name": "Sinigang Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_L_062",
+    "Name": "Fried Pork Belly",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_063",
+    "Name": "Liver Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_064",
+    "Name": "Pansit Canton",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_065",
+    "Name": "Chicken Curry (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Curry"
+  },
+  {
+    "ID": "FOOD_SEA_L_066",
+    "Name": "Squid Adobo",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_067",
+    "Name": "Grilled Tilapia",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_068",
+    "Name": "Pork Sisig",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_069",
+    "Name": "Poached Chicken",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_070",
+    "Name": "Chicken Fat Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_L_071",
+    "Name": "Chili Sauce (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_072",
+    "Name": "Pickled Vegetables (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_073",
+    "Name": "Hard Boiled Egg",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_L_074",
+    "Name": "Curry Dipping Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_001",
+    "Name": "Black Sesame Sweet Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_002",
+    "Name": "Tremella Mushroom Dessert",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_003",
+    "Name": "Goji Berry and Red Date Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_004",
+    "Name": "Walnut Sweet Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_005",
+    "Name": "Green Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_006",
+    "Name": "Papaya Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_007",
+    "Name": "Aloe Vera Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_008",
+    "Name": "Chrysanthemum Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_009",
+    "Name": "Mung Bean Sweet Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_010",
+    "Name": "Red Bean Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_011",
+    "Name": "Coconut Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_012",
+    "Name": "Soy Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_013",
+    "Name": "Lotus Seed Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_014",
+    "Name": "Bird Nest Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_015",
+    "Name": "Almond Milk Dessert",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_016",
+    "Name": "Seaweed Salad",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_017",
+    "Name": "Grass Jelly",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_018",
+    "Name": "Ginkgo Nut Dessert",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_019",
+    "Name": "Sweet Potato Ginger Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_020",
+    "Name": "Pumpkin Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_021",
+    "Name": "Barley Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_022",
+    "Name": "Roselle Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_023",
+    "Name": "Butterfly Pea Lemonade",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_024",
+    "Name": "Pomegranate Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_025",
+    "Name": "Carrot Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_026",
+    "Name": "Tomato Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_027",
+    "Name": "Cucumber Juice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_028",
+    "Name": "Matcha Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_029",
+    "Name": "Chia Seed Drink",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_E_030",
+    "Name": "Tamarind Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_001",
+    "Name": "Clear Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_002",
+    "Name": "Stir-fried Bok Choy",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_003",
+    "Name": "Tom Kha Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_004",
+    "Name": "Tofu Satay",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_005",
+    "Name": "Peanut Sauce (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_006",
+    "Name": "Cucumber Slices",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_007",
+    "Name": "Spring Rolls",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_008",
+    "Name": "Dipping Sauce",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_009",
+    "Name": "Rice Porridge (5)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_010",
+    "Name": "Mushroom Topping",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_011",
+    "Name": "Stir-fried Eggplant",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_012",
+    "Name": "Vegetable Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_013",
+    "Name": "Tofu and Bean Sprouts",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_014",
+    "Name": "Vegetable Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_015",
+    "Name": "Hot Pot Vegetables",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_016",
+    "Name": "Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_017",
+    "Name": "Steamed Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_018",
+    "Name": "Water Spinach Stir-fry",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_019",
+    "Name": "Vegetable Dumplings",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_020",
+    "Name": "Vegetable Broth (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_021",
+    "Name": "Mushroom Claypot Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_022",
+    "Name": "Pansit Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_023",
+    "Name": "Fried Rice (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_024",
+    "Name": "Fried Noodles (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_025",
+    "Name": "Sambal (4)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_026",
+    "Name": "Rice Cakes",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_027",
+    "Name": "Sayur Lodeh (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_028",
+    "Name": "Vegetable Broth (4)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_029",
+    "Name": "Vegetarian Meatballs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_030",
+    "Name": "Vegetable Broth and Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_066",
+    "Name": "Rendang Tofu",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_067",
+    "Name": "Minced Tofu Satay",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_068",
+    "Name": "Cap Cay",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_031",
+    "Name": "Blanched Vegetables (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_032",
+    "Name": "Peanut Sauce (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_033",
+    "Name": "Steamed Fish",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_034",
+    "Name": "Tom Kha Gai Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_035",
+    "Name": "Chicken Satay",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_036",
+    "Name": "Spring Rolls (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_037",
+    "Name": "Dipping Sauce (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_038",
+    "Name": "Shredded Chicken (4)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_039",
+    "Name": "Beef Salad",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_040",
+    "Name": "Stir-fried Squid",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_041",
+    "Name": "Pork Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_042",
+    "Name": "Seafood Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_043",
+    "Name": "Seafood Assortment",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_044",
+    "Name": "Vegetables",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_045",
+    "Name": "Steamed Chicken",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_046",
+    "Name": "Stir-fried Clams",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_047",
+    "Name": "Chicken Dumplings",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_048",
+    "Name": "Chicken Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_049",
+    "Name": "Fish Curry (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_050",
+    "Name": "Pork Adobo (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_051",
+    "Name": "Chicken Pansit",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_052",
+    "Name": "Laing with Pork",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_053",
+    "Name": "Sinigang Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_054",
+    "Name": "Pinakbet (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_055",
+    "Name": "Chicken Fried Rice",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_056",
+    "Name": "Fried Noodles (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Base"
+  },
+  {
+    "ID": "FOOD_SEA_D_057",
+    "Name": "Fried Chicken",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_058",
+    "Name": "Chicken Curry (3)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_059",
+    "Name": "Chicken Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_060",
+    "Name": "Shredded Chicken (5)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_061",
+    "Name": "Beef Meatballs",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_062",
+    "Name": "Beef Broth and Noodles",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_D_063",
+    "Name": "Minced Chicken Satay",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_064",
+    "Name": "Cap Cay Seafood",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_D_065",
+    "Name": "Grilled Mackerel",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_BT_001",
+    "Name": "Chamomile Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_002",
+    "Name": "Warm Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_003",
+    "Name": "Ginger Tea (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_004",
+    "Name": "Warm Lemon Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_005",
+    "Name": "Sweet Potato Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_BT_006",
+    "Name": "Barley Water (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_007",
+    "Name": "Almond Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_008",
+    "Name": "Black Sesame Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_009",
+    "Name": "Longan Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_010",
+    "Name": "Pear Broth",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_011",
+    "Name": "Ginkgo Nut Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_012",
+    "Name": "Clear Broth (2)",
+    "Cuisine": "Southeast Asia",
+    "Type": "Soup"
+  },
+  {
+    "ID": "FOOD_SEA_BT_013",
+    "Name": "Taro Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_BT_014",
+    "Name": "Steamed Banana",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_BT_015",
+    "Name": "Corn Silk Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_016",
+    "Name": "Rice Water",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_017",
+    "Name": "Calamansi Tea",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_018",
+    "Name": "Warm Oat Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_019",
+    "Name": "Steamed Yam",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_BT_020",
+    "Name": "Mung Bean Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Side"
+  },
+  {
+    "ID": "FOOD_SEA_BT_021",
+    "Name": "Walnut Soup",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  },
+  {
+    "ID": "FOOD_SEA_BT_022",
+    "Name": "Warm Coconut Milk",
+    "Cuisine": "Southeast Asia",
+    "Type": "Drink"
+  }
+]

@@ -1,0 +1,6042 @@
+[
+    {
+        "ID": "2f703e1d-035c-4371-9de6-8437b1b8aa18",
+        "Name": "Semolina",
+        "Macros": {
+            "Calories_kcal": 333.65,
+            "Protein_g": 11.38,
+            "Carbs_g": 68.43,
+            "Fat_g": 0.74,
+            "Fiber_g": 3.9
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.6,
+            "Iron_mg": 1.1,
+            "Selenium_mcg": 33.6,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.05
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "ebd3713c-6915-4dae-96c5-c6384822a1af",
+        "Name": "Vegetables",
+        "Macros": {
+            "Calories_kcal": 35.0,
+            "Protein_g": 1.8,
+            "Carbs_g": 6.5,
+            "Fat_g": 0.3,
+            "Fiber_g": 2.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 50.0,
+            "Vitamin_C_mg": 10.0,
+            "Vitamin_E_mg": 0.3,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 0.8,
+            "Selenium_mcg": 1.5,
+            "Biotin_mcg": 0.5,
+            "Omega_3_g": 0.04
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "290062aa-9054-4554-8fcc-6669d5cfb31e",
+        "Name": "Oil",
+        "Macros": {
+            "Calories_kcal": 884.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 100.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 10.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.5
+        },
+        "Category": "Oil_Fat",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "ccf01e76-544d-42ed-b618-780f4385c258",
+        "Name": "Mustard",
+        "Macros": {
+            "Calories_kcal": 508.0,
+            "Protein_g": 26.1,
+            "Carbs_g": 28.1,
+            "Fat_g": 36.2,
+            "Fiber_g": 12.2
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 525.0,
+            "Vitamin_C_mg": 102.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.6,
+            "Iron_mg": 1.8,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "62d6ea25-1fee-4a56-943a-33aa1b5c0241",
+        "Name": "Curry Leaves",
+        "Macros": {
+            "Calories_kcal": 63.58,
+            "Protein_g": 7.41,
+            "Carbs_g": 4.51,
+            "Fat_g": 1.06,
+            "Fiber_g": 6.4
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 148.0,
+            "Vitamin_C_mg": 4.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.1,
+            "Iron_mg": 0.9,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7b82a6bf-136a-464a-8f32-9ad48b3b013d",
+        "Name": "Dosa Batter",
+        "Macros": {
+            "Calories_kcal": 120.0,
+            "Protein_g": 3.5,
+            "Carbs_g": 25.0,
+            "Fat_g": 0.5,
+            "Fiber_g": 1.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "996ec229-cd9a-4c16-8663-66e4bbe6bf3b",
+        "Name": "Potato",
+        "Macros": {
+            "Calories_kcal": 69.79,
+            "Protein_g": 1.54,
+            "Carbs_g": 14.89,
+            "Fat_g": 0.22,
+            "Fiber_g": 1.69
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 17.0,
+            "Vitamin_E_mg": 0.01,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.3,
+            "Iron_mg": 0.7,
+            "Selenium_mcg": 0.4,
+            "Biotin_mcg": 0.5,
+            "Omega_3_g": 0.017
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "12ddde5d-c18b-4a9a-8dd5-a76d0cf9ee91",
+        "Name": "Rice",
+        "Macros": {
+            "Calories_kcal": 130.0,
+            "Protein_g": 2.7,
+            "Carbs_g": 28.2,
+            "Fat_g": 0.3,
+            "Fiber_g": 0.4
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.05,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.97,
+            "Iron_mg": 0.8,
+            "Selenium_mcg": 15.1,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e8f1cedb-358b-4393-8afa-e35e2b1ca0cf",
+        "Name": "Curd",
+        "Macros": {
+            "Calories_kcal": 98.0,
+            "Protein_g": 11.0,
+            "Carbs_g": 3.4,
+            "Fat_g": 4.3,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 14.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.04,
+            "Vitamin_D_mcg": 0.1,
+            "Zinc_mg": 0.52,
+            "Iron_mg": 0.1,
+            "Selenium_mcg": 3.3,
+            "Biotin_mcg": 3.4,
+            "Omega_3_g": 0.02
+        },
+        "Category": "Dairy",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "48229f62-b4d2-448e-8fd3-be00adcfca21",
+        "Name": "Toor Dal",
+        "Macros": {
+            "Calories_kcal": 116.0,
+            "Protein_g": 9.0,
+            "Carbs_g": 20.1,
+            "Fat_g": 0.4,
+            "Fiber_g": 7.9
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 1.9,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.76,
+            "Iron_mg": 5.0,
+            "Selenium_mcg": 8.2,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.2
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "fcec6cc6-b704-42e0-a5cf-63d5292a300e",
+        "Name": "Tamarind leaves",
+        "Macros": {
+            "Calories_kcal": 71.46,
+            "Protein_g": 5.84,
+            "Carbs_g": 10.04,
+            "Fat_g": 0.49,
+            "Fiber_g": 10.7
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 267.0,
+            "Vitamin_C_mg": 75.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.5,
+            "Iron_mg": 3.4,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "afd01693-6d5c-4781-9c3d-6e45f70760a8",
+        "Name": "Asafoetida",
+        "Macros": {
+            "Calories_kcal": 331.5,
+            "Protein_g": 6.34,
+            "Carbs_g": 71.95,
+            "Fat_g": 1.26,
+            "Fiber_g": 5.13
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.09,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "5763f5f0-05d3-4e76-967b-9630641ba366",
+        "Name": "Red Chilli",
+        "Macros": {
+            "Calories_kcal": 236.62,
+            "Protein_g": 12.69,
+            "Carbs_g": 29.46,
+            "Fat_g": 6.4,
+            "Fiber_g": 31.15
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 157.0,
+            "Vitamin_C_mg": 76.4,
+            "Vitamin_E_mg": 29.8,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.25,
+            "Iron_mg": 7.8,
+            "Selenium_mcg": 2.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.072
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "5f2fc1b6-77da-4ba2-9c1d-813001b6a7bf",
+        "Name": "Onion",
+        "Macros": {
+            "Calories_kcal": 52.34,
+            "Protein_g": 1.66,
+            "Carbs_g": 10.57,
+            "Fat_g": 0.2,
+            "Fiber_g": 1.81
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 6.9,
+            "Vitamin_E_mg": 0.02,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.2,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 0.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.022
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9c431f60-9f88-4c8f-b2ce-b1618bdc1c61",
+        "Name": "Vermicelli",
+        "Macros": {
+            "Calories_kcal": 336.4,
+            "Protein_g": 10.04,
+            "Carbs_g": 70.91,
+            "Fat_g": 0.47,
+            "Fiber_g": 9.42
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.3,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.6,
+            "Iron_mg": 1.1,
+            "Selenium_mcg": 33.6,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.05
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "0bb93c93-7cd0-419f-ac4e-4272bbd4926a",
+        "Name": "Lemon Juice",
+        "Macros": {
+            "Calories_kcal": 36.57,
+            "Protein_g": 0.41,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.75,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 38.7,
+            "Vitamin_E_mg": 0.15,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.06,
+            "Iron_mg": 0.1,
+            "Selenium_mcg": 0.4,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e70f68ea-1816-4281-a06c-1c3b906a250e",
+        "Name": "Idli Batter",
+        "Macros": {
+            "Calories_kcal": 120.0,
+            "Protein_g": 3.5,
+            "Carbs_g": 25.0,
+            "Fat_g": 0.5,
+            "Fiber_g": 1.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "10cf60fc-7266-42e2-a53a-1388b42117be",
+        "Name": "Turmeric powder",
+        "Macros": {
+            "Calories_kcal": 280.59,
+            "Protein_g": 7.66,
+            "Carbs_g": 49.22,
+            "Fat_g": 5.03,
+            "Fiber_g": 21.38
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 25.9,
+            "Vitamin_E_mg": 3.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 4.35,
+            "Iron_mg": 55.0,
+            "Selenium_mcg": 4.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "8fc96b02-da54-4532-a8e0-c3a186724133",
+        "Name": "Dal",
+        "Macros": {
+            "Calories_kcal": 116.0,
+            "Protein_g": 9.0,
+            "Carbs_g": 20.1,
+            "Fat_g": 0.4,
+            "Fiber_g": 7.9
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 1.5,
+            "Vitamin_E_mg": 0.11,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.5,
+            "Iron_mg": 4.5,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.1
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e9466231-68fa-4976-bd3d-0c3cdd8dfbbe",
+        "Name": "Coconut dry",
+        "Macros": {
+            "Calories_kcal": 624.04,
+            "Protein_g": 7.27,
+            "Carbs_g": 8.01,
+            "Fat_g": 63.26,
+            "Fiber_g": 15.88
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 15.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.4
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "b0d1dc09-8e6c-4df0-8fa5-60808900db3d",
+        "Name": "Green Chili",
+        "Macros": {
+            "Calories_kcal": 33.33,
+            "Protein_g": 3.33,
+            "Carbs_g": 6.67,
+            "Fat_g": 0.0,
+            "Fiber_g": 3.33
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c8631680-2610-4eb5-9feb-7efadccd0fae",
+        "Name": "Chicken",
+        "Macros": {
+            "Calories_kcal": 180.57,
+            "Protein_g": 18.83,
+            "Carbs_g": 0.0,
+            "Fat_g": 10.82,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 44.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.27,
+            "Vitamin_D_mcg": 0.3,
+            "Zinc_mg": 1.58,
+            "Iron_mg": 1.3,
+            "Selenium_mcg": 27.6,
+            "Biotin_mcg": 4.6,
+            "Omega_3_g": 0.09
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "bfc18713-0b30-459f-b420-f8fffd9b11b8",
+        "Name": "Coconut Milk",
+        "Macros": {
+            "Calories_kcal": 197.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 2.8,
+            "Fat_g": 21.3,
+            "Fiber_g": 2.2
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 2.8,
+            "Vitamin_E_mg": 0.19,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.67,
+            "Iron_mg": 1.6,
+            "Selenium_mcg": 6.2,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.09
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "94c0099e-2b0f-4a2e-87b5-6f071fd73d7b",
+        "Name": "Appam",
+        "Macros": {
+            "Calories_kcal": 188.0,
+            "Protein_g": 4.5,
+            "Carbs_g": 36.5,
+            "Fat_g": 3.0,
+            "Fiber_g": 0.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.3,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "8c124fd5-ad83-4aae-b6cd-3bd002d826b1",
+        "Name": "Fish Fillet",
+        "Macros": {
+            "Calories_kcal": 90.0,
+            "Protein_g": 18.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 1.7,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 10.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.5,
+            "Vitamin_D_mcg": 5.0,
+            "Zinc_mg": 0.8,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 30.0,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.5
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2135bc79-db49-478c-a44c-2f4d489d4343",
+        "Name": "Chili Powder",
+        "Macros": {
+            "Calories_kcal": 282.0,
+            "Protein_g": 13.5,
+            "Carbs_g": 49.7,
+            "Fat_g": 14.3,
+            "Fiber_g": 34.8
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 157.0,
+            "Vitamin_C_mg": 76.4,
+            "Vitamin_E_mg": 29.8,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.25,
+            "Iron_mg": 7.8,
+            "Selenium_mcg": 2.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.072
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "de2d6b30-0461-4390-8132-f78382eecc15",
+        "Name": "Prawns",
+        "Macros": {
+            "Calories_kcal": 80.9,
+            "Protein_g": 16.16,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.65,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 1.32,
+            "Vitamin_D_mcg": 0.3,
+            "Zinc_mg": 1.34,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 39.6,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.54
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "f29a4446-d41b-493b-b878-5899ec44bd9c",
+        "Name": "Tomato",
+        "Macros": {
+            "Calories_kcal": 19.6,
+            "Protein_g": 0.9,
+            "Carbs_g": 3.18,
+            "Fat_g": 0.27,
+            "Fiber_g": 1.62
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 42.0,
+            "Vitamin_C_mg": 27.0,
+            "Vitamin_E_mg": 0.54,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.17,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 1.5,
+            "Omega_3_g": 0.036
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7a5ff681-aa00-4e13-8e98-515d6f6362d5",
+        "Name": "Moong Dal Batter",
+        "Macros": {
+            "Calories_kcal": 120.0,
+            "Protein_g": 3.5,
+            "Carbs_g": 25.0,
+            "Fat_g": 0.5,
+            "Fiber_g": 1.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 3.0,
+            "Vitamin_C_mg": 1.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.5,
+            "Iron_mg": 4.0,
+            "Selenium_mcg": 2.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.08
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "18318b84-b99a-4b6d-96e3-d7038de8748c",
+        "Name": "Ginger",
+        "Macros": {
+            "Calories_kcal": 54.97,
+            "Protein_g": 2.22,
+            "Carbs_g": 8.97,
+            "Fat_g": 0.85,
+            "Fiber_g": 5.36
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 5.0,
+            "Vitamin_E_mg": 0.26,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.34,
+            "Iron_mg": 0.6,
+            "Selenium_mcg": 0.7,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "becefa32-c309-4b76-a384-5f4164c327ce",
+        "Name": "Ghee",
+        "Macros": {
+            "Calories_kcal": 884.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 99.8,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 671.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 2.8,
+            "Vitamin_D_mcg": 1.0,
+            "Zinc_mg": 0.01,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.1,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 1.0
+        },
+        "Category": "Oil_Fat",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "52ee1958-c051-4d80-a38c-7e9e089db005",
+        "Name": "Egg",
+        "Macros": {
+            "Calories_kcal": 134.8,
+            "Protein_g": 13.28,
+            "Carbs_g": 0.0,
+            "Fat_g": 9.15,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 149.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 1.03,
+            "Vitamin_D_mcg": 2.0,
+            "Zinc_mg": 1.29,
+            "Iron_mg": 1.9,
+            "Selenium_mcg": 31.7,
+            "Biotin_mcg": 19.0,
+            "Omega_3_g": 0.037
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "f6b1c6fc-82c0-428e-bb61-79b4b53611b1",
+        "Name": "Black Pepper",
+        "Macros": {
+            "Calories_kcal": 217.5,
+            "Protein_g": 10.12,
+            "Carbs_g": 36.22,
+            "Fat_g": 2.74,
+            "Fiber_g": 33.16
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 39.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 1.04,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.42,
+            "Iron_mg": 10.0,
+            "Selenium_mcg": 4.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "b8269803-06a1-4fc4-aaec-f8acd5139727",
+        "Name": "Beetroot",
+        "Macros": {
+            "Calories_kcal": 35.61,
+            "Protein_g": 1.95,
+            "Carbs_g": 6.18,
+            "Fat_g": 0.14,
+            "Fiber_g": 3.31
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 2.0,
+            "Vitamin_C_mg": 4.9,
+            "Vitamin_E_mg": 0.04,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.35,
+            "Iron_mg": 0.8,
+            "Selenium_mcg": 0.7,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "aaffa82a-f6bd-48c0-a45a-0976b4772228",
+        "Name": "Roasted Peanuts",
+        "Macros": {
+            "Calories_kcal": 520.08,
+            "Protein_g": 23.65,
+            "Carbs_g": 17.27,
+            "Fat_g": 39.63,
+            "Fiber_g": 10.38
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 8.33,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 3.27,
+            "Iron_mg": 4.6,
+            "Selenium_mcg": 7.2,
+            "Biotin_mcg": 34.4,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "d40368d3-9a01-48df-ba6c-1918fec9603a",
+        "Name": "Basmati Rice",
+        "Macros": {
+            "Calories_kcal": 130.0,
+            "Protein_g": 2.7,
+            "Carbs_g": 28.2,
+            "Fat_g": 0.3,
+            "Fiber_g": 0.4
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.05,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.1,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 15.1,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "44a28a29-c4b1-48d0-9152-28b73f200dcc",
+        "Name": "Bisi Bele Bath Powder",
+        "Macros": {
+            "Calories_kcal": 300.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 10.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c03ae48a-f775-48a9-a829-7dd2251b4610",
+        "Name": "Cumin Seeds",
+        "Macros": {
+            "Calories_kcal": 304.49,
+            "Protein_g": 13.91,
+            "Carbs_g": 22.62,
+            "Fat_g": 16.64,
+            "Fiber_g": 30.35
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 64.0,
+            "Vitamin_C_mg": 7.7,
+            "Vitamin_E_mg": 3.33,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 4.8,
+            "Iron_mg": 66.4,
+            "Selenium_mcg": 5.2,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "25329e3f-44a5-4f28-adfd-ac00df52a4e4",
+        "Name": "Roasted Cashews",
+        "Macros": {
+            "Calories_kcal": 582.7,
+            "Protein_g": 18.78,
+            "Carbs_g": 25.46,
+            "Fat_g": 45.2,
+            "Fiber_g": 3.86
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.5,
+            "Vitamin_E_mg": 0.9,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 5.78,
+            "Iron_mg": 6.7,
+            "Selenium_mcg": 19.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.063
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c5799c15-a444-4c6b-b7e9-365dc0b7897c",
+        "Name": "Garlic",
+        "Macros": {
+            "Calories_kcal": 123.8,
+            "Protein_g": 6.75,
+            "Carbs_g": 21.93,
+            "Fat_g": 0.16,
+            "Fiber_g": 5.22
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 31.2,
+            "Vitamin_E_mg": 0.08,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.16,
+            "Iron_mg": 1.7,
+            "Selenium_mcg": 14.2,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "fd9b656c-1064-4053-aba4-7f66defc4da0",
+        "Name": "Coconut oil",
+        "Macros": {
+            "Calories_kcal": 884.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 100.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.09,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Oil_Fat",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "f21048a7-d691-4e68-8d0c-ea2c701307f3",
+        "Name": "Fish Mince",
+        "Macros": {
+            "Calories_kcal": 100.0,
+            "Protein_g": 18.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 3.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 10.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.5,
+            "Vitamin_D_mcg": 5.0,
+            "Zinc_mg": 0.8,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 30.0,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.5
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "91eccc57-696b-44ac-ac97-f149623581c7",
+        "Name": "Banana",
+        "Macros": {
+            "Calories_kcal": 108.51,
+            "Protein_g": 1.27,
+            "Carbs_g": 24.29,
+            "Fat_g": 0.33,
+            "Fiber_g": 2.1
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 3.0,
+            "Vitamin_C_mg": 8.7,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.15,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 1.0,
+            "Biotin_mcg": 2.6,
+            "Omega_3_g": 0.027
+        },
+        "Category": "Fruit",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "6fcc0819-a29c-4d3f-8c88-42cb732f5701",
+        "Name": "Bhindi Sabzi",
+        "Macros": {
+            "Calories_kcal": 33.0,
+            "Protein_g": 1.9,
+            "Carbs_g": 7.5,
+            "Fat_g": 0.2,
+            "Fiber_g": 3.2
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 6.0,
+            "Vitamin_C_mg": 20.0,
+            "Vitamin_E_mg": 0.3,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.5,
+            "Iron_mg": 0.4,
+            "Selenium_mcg": 0.7,
+            "Biotin_mcg": 0.8,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "6f847545-8fe3-4e66-90cb-bc0aa53c9a5a",
+        "Name": "Poppy Seeds",
+        "Macros": {
+            "Calories_kcal": 422.56,
+            "Protein_g": 20.31,
+            "Carbs_g": 12.37,
+            "Fat_g": 30.38,
+            "Fiber_g": 26.68
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 1.0,
+            "Vitamin_E_mg": 1.77,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.94,
+            "Iron_mg": 9.8,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "70dbebd5-fb2c-4220-9ddd-bd34f70a862e",
+        "Name": "Seeds",
+        "Macros": {
+            "Calories_kcal": 500.0,
+            "Protein_g": 15.0,
+            "Carbs_g": 20.0,
+            "Fat_g": 40.0,
+            "Fiber_g": 8.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 5.0,
+            "Vitamin_C_mg": 1.0,
+            "Vitamin_E_mg": 5.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 3.0,
+            "Iron_mg": 4.5,
+            "Selenium_mcg": 18.0,
+            "Biotin_mcg": 5.0,
+            "Omega_3_g": 1.5
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2ffde814-42be-4403-a42c-9cc846bd2498",
+        "Name": "Mutton",
+        "Macros": {
+            "Calories_kcal": 125.48,
+            "Protein_g": 16.86,
+            "Carbs_g": 0.0,
+            "Fat_g": 4.88,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.2,
+            "Vitamin_D_mcg": 0.5,
+            "Zinc_mg": 3.5,
+            "Iron_mg": 2.8,
+            "Selenium_mcg": 20.0,
+            "Biotin_mcg": 3.8,
+            "Omega_3_g": 0.17
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "90e8e967-8a19-4148-98b6-0382ef586905",
+        "Name": "Dried Red Chili",
+        "Macros": {
+            "Calories_kcal": 330.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 26.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e06fb6a9-6ee7-4e04-abd9-b2cf2adc1838",
+        "Name": "Beef",
+        "Macros": {
+            "Calories_kcal": 119.26,
+            "Protein_g": 17.42,
+            "Carbs_g": 0.0,
+            "Fat_g": 4.01,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.2,
+            "Vitamin_D_mcg": 0.5,
+            "Zinc_mg": 4.54,
+            "Iron_mg": 2.1,
+            "Selenium_mcg": 26.0,
+            "Biotin_mcg": 4.1,
+            "Omega_3_g": 0.18
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9125d1a4-96dc-441f-93ee-0defb93432dc",
+        "Name": "Cloves",
+        "Macros": {
+            "Calories_kcal": 186.66,
+            "Protein_g": 5.86,
+            "Carbs_g": 18.73,
+            "Fat_g": 8.41,
+            "Fiber_g": 34.52
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 11.7,
+            "Vitamin_E_mg": 8.82,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.73,
+            "Iron_mg": 11.8,
+            "Selenium_mcg": 5.7,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "1ded5141-f60a-43bf-ad70-ce1990a16c6b",
+        "Name": "Mint leaves",
+        "Macros": {
+            "Calories_kcal": 37.05,
+            "Protein_g": 4.66,
+            "Carbs_g": 2.39,
+            "Fat_g": 0.65,
+            "Fiber_g": 5.89
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 212.0,
+            "Vitamin_C_mg": 31.8,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.6,
+            "Iron_mg": 5.1,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "4a90c6be-0b49-4f78-90c6-8b77df331eb5",
+        "Name": "Fennel Seeds",
+        "Macros": {
+            "Calories_kcal": 345.0,
+            "Protein_g": 15.8,
+            "Carbs_g": 52.3,
+            "Fat_g": 14.9,
+            "Fiber_g": 39.8
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 7.0,
+            "Vitamin_C_mg": 12.0,
+            "Vitamin_E_mg": 6.05,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 3.7,
+            "Iron_mg": 6.3,
+            "Selenium_mcg": 5.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "28acc114-3daa-4fa4-8b41-1fb7a05c2891",
+        "Name": "Milk",
+        "Macros": {
+            "Calories_kcal": 72.9,
+            "Protein_g": 3.26,
+            "Carbs_g": 4.94,
+            "Fat_g": 4.48,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 46.0,
+            "Vitamin_C_mg": 1.0,
+            "Vitamin_E_mg": 0.07,
+            "Vitamin_D_mcg": 0.1,
+            "Zinc_mg": 0.38,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 3.7,
+            "Biotin_mcg": 3.0,
+            "Omega_3_g": 0.09
+        },
+        "Category": "Dairy",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "d4aeb50b-e438-4bd8-9b92-19f3b4cb7558",
+        "Name": "Mango",
+        "Macros": {
+            "Calories_kcal": 44.93,
+            "Protein_g": 0.54,
+            "Carbs_g": 9.03,
+            "Fat_g": 0.55,
+            "Fiber_g": 1.77
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 54.0,
+            "Vitamin_C_mg": 36.4,
+            "Vitamin_E_mg": 0.9,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.09,
+            "Iron_mg": 0.4,
+            "Selenium_mcg": 0.6,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.046
+        },
+        "Category": "Fruit",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c5ab4481-0dbf-42ff-89b4-c1d41dae1a47",
+        "Name": "Coriander Seeds",
+        "Macros": {
+            "Calories_kcal": 268.88,
+            "Protein_g": 10.66,
+            "Carbs_g": 12.98,
+            "Fat_g": 17.47,
+            "Fiber_g": 44.81
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 21.0,
+            "Vitamin_E_mg": 1.03,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 4.7,
+            "Iron_mg": 16.3,
+            "Selenium_mcg": 26.8,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "792aca31-1f5f-4a00-bf0f-114f0d8de4af",
+        "Name": "Cabbage",
+        "Macros": {
+            "Calories_kcal": 22.35,
+            "Protein_g": 1.49,
+            "Carbs_g": 3.02,
+            "Fat_g": 0.17,
+            "Fiber_g": 2.49
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 5.0,
+            "Vitamin_C_mg": 36.6,
+            "Vitamin_E_mg": 0.15,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.18,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 0.3,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.094
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "fd867d96-a158-43ff-9c6e-9f6a8e096700",
+        "Name": "Shallots",
+        "Macros": {
+            "Calories_kcal": 78.12,
+            "Protein_g": 2.5,
+            "Carbs_g": 16.75,
+            "Fat_g": 0.12,
+            "Fiber_g": 3.25
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7735a00f-c387-4461-8e14-57b8a1d6556b",
+        "Name": "Anchovies",
+        "Macros": {
+            "Calories_kcal": 125.33,
+            "Protein_g": 19.33,
+            "Carbs_g": 0.0,
+            "Fat_g": 5.33,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c438e78a-fccf-4612-b2e4-0865bb1ecf63",
+        "Name": "Rice Flour",
+        "Macros": {
+            "Calories_kcal": 365.0,
+            "Protein_g": 6.0,
+            "Carbs_g": 80.1,
+            "Fat_g": 0.6,
+            "Fiber_g": 2.4
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.5,
+            "Iron_mg": 0.4,
+            "Selenium_mcg": 15.1,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a1245606-c3f1-45c7-b124-8ac262405f9f",
+        "Name": "Gongura Leaves",
+        "Macros": {
+            "Calories_kcal": 47.2,
+            "Protein_g": 3.0,
+            "Carbs_g": 7.0,
+            "Fat_g": 0.8,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "335fd0b8-3386-4ed8-9543-a4732f1779b4",
+        "Name": "Corn Flour",
+        "Macros": {
+            "Calories_kcal": 360.0,
+            "Protein_g": 3.0,
+            "Carbs_g": 85.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 1.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "49e23936-c7c2-47c5-840c-9eb066f6dbd7",
+        "Name": "Vangi Bath Powder",
+        "Macros": {
+            "Calories_kcal": 290.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 10.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "75992392-d819-42e9-ba63-668a05ff4c13",
+        "Name": "Mushrooms",
+        "Macros": {
+            "Calories_kcal": 22.0,
+            "Protein_g": 3.1,
+            "Carbs_g": 3.3,
+            "Fat_g": 0.3,
+            "Fiber_g": 1.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 2.1,
+            "Vitamin_E_mg": 0.01,
+            "Vitamin_D_mcg": 0.2,
+            "Zinc_mg": 0.52,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 9.3,
+            "Biotin_mcg": 2.2,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a52d28c3-87b9-42e8-bd14-82520ff42e9a",
+        "Name": "Green Bell Pepper",
+        "Macros": {
+            "Calories_kcal": 23.12,
+            "Protein_g": 0.88,
+            "Carbs_g": 4.62,
+            "Fat_g": 0.12,
+            "Fiber_g": 1.75
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "35d0d67e-d6a6-4310-8ba2-3536f01a6adb",
+        "Name": "Gram Flour",
+        "Macros": {
+            "Calories_kcal": 366.0,
+            "Protein_g": 22.0,
+            "Carbs_g": 56.0,
+            "Fat_g": 6.0,
+            "Fiber_g": 10.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "53062dbd-384c-47b1-bbbf-2a5c48b705e9",
+        "Name": "Green Beans",
+        "Macros": {
+            "Calories_kcal": 31.0,
+            "Protein_g": 1.8,
+            "Carbs_g": 7.1,
+            "Fat_g": 0.2,
+            "Fiber_g": 3.4
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 22.0,
+            "Vitamin_C_mg": 16.3,
+            "Vitamin_E_mg": 0.41,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.24,
+            "Iron_mg": 1.1,
+            "Selenium_mcg": 0.6,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.06
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2f5e0647-5640-4fbf-a15d-88bf5f15c0d2",
+        "Name": "Carrot",
+        "Macros": {
+            "Calories_kcal": 35.73,
+            "Protein_g": 1.0,
+            "Carbs_g": 6.13,
+            "Fat_g": 0.47,
+            "Fiber_g": 4.34
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 835.0,
+            "Vitamin_C_mg": 5.9,
+            "Vitamin_E_mg": 0.66,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.24,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 0.1,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "aeadef14-f523-4670-9323-eeb02cab805b",
+        "Name": "Quinoa",
+        "Macros": {
+            "Calories_kcal": 120.0,
+            "Protein_g": 4.4,
+            "Carbs_g": 21.3,
+            "Fat_g": 1.9,
+            "Fiber_g": 2.8
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 2.44,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 3.1,
+            "Iron_mg": 4.6,
+            "Selenium_mcg": 8.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.36
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "80850317-48ca-4296-8c59-688194ec47de",
+        "Name": "Sambar Powder",
+        "Macros": {
+            "Calories_kcal": 250.0,
+            "Protein_g": 12.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 8.0,
+            "Fiber_g": 15.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 15.0,
+            "Vitamin_C_mg": 5.0,
+            "Vitamin_E_mg": 0.5,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.8,
+            "Iron_mg": 5.0,
+            "Selenium_mcg": 3.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "1b130456-6fa4-4172-91fa-363f2d6646a9",
+        "Name": "Fenugreek Seeds",
+        "Macros": {
+            "Calories_kcal": 234.94,
+            "Protein_g": 25.41,
+            "Carbs_g": 10.57,
+            "Fat_g": 5.72,
+            "Fiber_g": 47.55
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 60.0,
+            "Vitamin_C_mg": 3.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.5,
+            "Iron_mg": 33.5,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "ead5290a-8ad0-434d-8753-5d2e9443f537",
+        "Name": "Fish Steak",
+        "Macros": {
+            "Calories_kcal": 130.0,
+            "Protein_g": 26.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 2.8,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 10.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.5,
+            "Vitamin_D_mcg": 5.0,
+            "Zinc_mg": 0.8,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 30.0,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.5
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7533b9a3-3a6e-448d-96c6-5b7b57281072",
+        "Name": "Malabar Parotta",
+        "Macros": {
+            "Calories_kcal": 250.0,
+            "Protein_g": 5.0,
+            "Carbs_g": 35.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "90ea428d-6b30-412b-8d3b-0d1192f2a7f0",
+        "Name": "Peas",
+        "Macros": {
+            "Calories_kcal": 303.3,
+            "Protein_g": 20.43,
+            "Carbs_g": 48.93,
+            "Fat_g": 1.89,
+            "Fiber_g": 5.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 47.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 3.01,
+            "Iron_mg": 4.3,
+            "Selenium_mcg": 1.8,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.12
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "216b823c-5f72-4b2c-b408-0233a280590b",
+        "Name": "Fresh Coriander",
+        "Macros": {
+            "Calories_kcal": 28.6,
+            "Protein_g": 2.2,
+            "Carbs_g": 3.6,
+            "Fat_g": 0.6,
+            "Fiber_g": 2.8
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "29c9ee1d-47bc-4b1b-92cf-1d1efcf0a23b",
+        "Name": "Jaggery",
+        "Macros": {
+            "Calories_kcal": 353.73,
+            "Protein_g": 1.85,
+            "Carbs_g": 84.87,
+            "Fat_g": 0.16,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.29,
+            "Iron_mg": 2.7,
+            "Selenium_mcg": 1.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9391fefb-3287-4e5a-81fc-dfd4ad22b661",
+        "Name": "Cardamom Powder",
+        "Macros": {
+            "Calories_kcal": 262.79,
+            "Protein_g": 7.4,
+            "Carbs_g": 50.15,
+            "Fat_g": 2.7,
+            "Fiber_g": 23.28
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 21.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 7.47,
+            "Iron_mg": 13.9,
+            "Selenium_mcg": 0.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "14252689-8ac7-4fd5-afec-175c3e9d0b23",
+        "Name": "Coconut water",
+        "Macros": {
+            "Calories_kcal": 15.3,
+            "Protein_g": 0.26,
+            "Carbs_g": 3.16,
+            "Fat_g": 0.16,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 2.4,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.1,
+            "Iron_mg": 0.1,
+            "Selenium_mcg": 1.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "529835bf-ae44-4c14-bab0-404d5417554b",
+        "Name": "Yeast",
+        "Macros": {
+            "Calories_kcal": 410.0,
+            "Protein_g": 40.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 30.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c0a24144-c102-4889-9518-14f6069b0da3",
+        "Name": "Ragi Flour",
+        "Macros": {
+            "Calories_kcal": 336.0,
+            "Protein_g": 7.3,
+            "Carbs_g": 72.0,
+            "Fat_g": 1.3,
+            "Fiber_g": 3.6
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.5,
+            "Iron_mg": 3.9,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "8fa7ecad-53f8-4058-b243-85b0ec256c55",
+        "Name": "Mixed Greens",
+        "Macros": {
+            "Calories_kcal": 25.0,
+            "Protein_g": 2.5,
+            "Carbs_g": 3.5,
+            "Fat_g": 0.4,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 150.0,
+            "Vitamin_C_mg": 20.0,
+            "Vitamin_E_mg": 0.8,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 1.5,
+            "Selenium_mcg": 0.8,
+            "Biotin_mcg": 0.5,
+            "Omega_3_g": 0.08
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "acdbc136-e2a3-4824-a601-a45dc42bbcb6",
+        "Name": "Dosa",
+        "Macros": {
+            "Calories_kcal": 145.0,
+            "Protein_g": 5.0,
+            "Carbs_g": 24.5,
+            "Fat_g": 3.5,
+            "Fiber_g": 1.2
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "1cc94bb2-cd68-4731-a287-138c34690610",
+        "Name": "Spices",
+        "Macros": {
+            "Calories_kcal": 50.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 8.0,
+            "Fat_g": 1.0,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 50.0,
+            "Vitamin_C_mg": 10.0,
+            "Vitamin_E_mg": 1.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.0,
+            "Iron_mg": 5.0,
+            "Selenium_mcg": 3.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "fb865d60-a74e-4f3e-bd8f-3409381fb9a8",
+        "Name": "Mixed Tubers & Gourd",
+        "Macros": {
+            "Calories_kcal": 43.87,
+            "Protein_g": 1.33,
+            "Carbs_g": 9.33,
+            "Fat_g": 0.13,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "3dc95e10-3937-45a2-9780-44499ddd84a9",
+        "Name": "Vangi Bath Masala",
+        "Macros": {
+            "Calories_kcal": 290.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9602d7b7-bc79-40a2-ae30-3a6afc8f5c78",
+        "Name": "Green gram",
+        "Macros": {
+            "Calories_kcal": 309.75,
+            "Protein_g": 23.21,
+            "Carbs_g": 49.36,
+            "Fat_g": 1.25,
+            "Fiber_g": 13.21
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 44.0,
+            "Vitamin_C_mg": 1.0,
+            "Vitamin_E_mg": 0.15,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.68,
+            "Iron_mg": 6.7,
+            "Selenium_mcg": 2.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.15
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "0eec8b2e-efd3-44c0-bd5c-f61e7514e65a",
+        "Name": "Appalam",
+        "Macros": {
+            "Calories_kcal": 40.0,
+            "Protein_g": 1.5,
+            "Carbs_g": 5.0,
+            "Fat_g": 1.5,
+            "Fiber_g": 0.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "491da854-5d1b-4ae3-9cc0-29c0a16d4c4c",
+        "Name": "Neem Flowers",
+        "Macros": {
+            "Calories_kcal": 200.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 30.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 10.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "90d82ae7-8871-4731-948f-d225f6d29362",
+        "Name": "Pear",
+        "Macros": {
+            "Calories_kcal": 37.52,
+            "Protein_g": 0.36,
+            "Carbs_g": 8.09,
+            "Fat_g": 0.27,
+            "Fiber_g": 4.48
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 1.0,
+            "Vitamin_C_mg": 4.3,
+            "Vitamin_E_mg": 0.12,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.1,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 0.1,
+            "Biotin_mcg": 0.1,
+            "Omega_3_g": 0.018
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e2293524-04f4-4139-81d7-508036226cba",
+        "Name": "Malabar Tamarind",
+        "Macros": {
+            "Calories_kcal": 168.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 10.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "35814598-a544-4cbc-a36b-659b2c28dea1",
+        "Name": "Coconut Slices",
+        "Macros": {
+            "Calories_kcal": 382.0,
+            "Protein_g": 3.5,
+            "Carbs_g": 15.5,
+            "Fat_g": 34.0,
+            "Fiber_g": 9.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2e3281a6-7586-482f-bd5f-71f700c75b63",
+        "Name": "Garam Masala",
+        "Macros": {
+            "Calories_kcal": 300.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 26.67
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9f44d8e8-b1b6-4cfa-be54-70a32487e7cc",
+        "Name": "Byadagi Chilies",
+        "Macros": {
+            "Calories_kcal": 392.0,
+            "Protein_g": 12.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 16.0,
+            "Fiber_g": 26.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "419703e5-ad45-43d2-a55e-6585ca32f4e5",
+        "Name": "Tamarind Paste",
+        "Macros": {
+            "Calories_kcal": 290.0,
+            "Protein_g": 4.0,
+            "Carbs_g": 64.0,
+            "Fat_g": 2.0,
+            "Fiber_g": 6.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "0b703f5c-e5ec-410c-8d0f-a543435ff95c",
+        "Name": "Shark ",
+        "Macros": {
+            "Calories_kcal": 95.12,
+            "Protein_g": 21.6,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.8,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.51,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 35.4,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.09
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "d8c105da-8adc-40a7-9505-fdde2c071082",
+        "Name": "Malabar Dough",
+        "Macros": {
+            "Calories_kcal": 271.25,
+            "Protein_g": 8.75,
+            "Carbs_g": 56.25,
+            "Fat_g": 1.25,
+            "Fiber_g": 6.25
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "5cdade12-b684-486f-8db9-ba954a225879",
+        "Name": "Crab",
+        "Macros": {
+            "Calories_kcal": 67.64,
+            "Protein_g": 15.36,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.6,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 2.9,
+            "Vitamin_E_mg": 1.06,
+            "Vitamin_D_mcg": 0.4,
+            "Zinc_mg": 3.54,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 40.0,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.13
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "01dab819-418a-4bb2-a36d-d850c850bb44",
+        "Name": "Cinnamon Infused in Water",
+        "Macros": {
+            "Calories_kcal": 1.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.5,
+            "Fat_g": 0.0,
+            "Fiber_g": 0.1
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.1,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.1,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "1aae5d1f-884d-4531-915a-9612789af84c",
+        "Name": "Mixed Dal",
+        "Macros": {
+            "Calories_kcal": 116.0,
+            "Protein_g": 9.0,
+            "Carbs_g": 20.1,
+            "Fat_g": 0.4,
+            "Fiber_g": 7.9
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 2.0,
+            "Vitamin_C_mg": 1.0,
+            "Vitamin_E_mg": 0.2,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.0,
+            "Iron_mg": 4.0,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.12
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "cdd6d6cb-177b-41c0-8e5c-090c97dfe7ca",
+        "Name": "Dry Red Chili",
+        "Macros": {
+            "Calories_kcal": 300.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 25.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7e7c8805-de0f-40d7-8409-7a013904ce02",
+        "Name": "Ash gourd",
+        "Macros": {
+            "Calories_kcal": 17.45,
+            "Protein_g": 0.79,
+            "Carbs_g": 2.84,
+            "Fat_g": 0.14,
+            "Fiber_g": 3.37
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 3.1,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.5,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "6a61af77-85e9-4cd0-8844-671cd91e2e03",
+        "Name": "Rasam Base",
+        "Macros": {
+            "Calories_kcal": 15.0,
+            "Protein_g": 1.0,
+            "Carbs_g": 2.0,
+            "Fat_g": 0.33,
+            "Fiber_g": 0.67
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "5a4825d0-cc5c-473f-8fcc-8ef3c5ff036b",
+        "Name": "Pumpkin",
+        "Macros": {
+            "Calories_kcal": 23.9,
+            "Protein_g": 0.86,
+            "Carbs_g": 4.11,
+            "Fat_g": 0.17,
+            "Fiber_g": 2.55
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 426.0,
+            "Vitamin_C_mg": 9.0,
+            "Vitamin_E_mg": 1.06,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.32,
+            "Iron_mg": 0.8,
+            "Selenium_mcg": 0.3,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "b9588901-a95b-467c-8063-60a446722813",
+        "Name": "Roasted Gram",
+        "Macros": {
+            "Calories_kcal": 380.0,
+            "Protein_g": 22.0,
+            "Carbs_g": 60.0,
+            "Fat_g": 4.0,
+            "Fiber_g": 16.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "f7d10f9e-9881-40ae-b1f8-2843f0285730",
+        "Name": "Amaranth",
+        "Macros": {
+            "Calories_kcal": 30.59,
+            "Protein_g": 3.29,
+            "Carbs_g": 2.28,
+            "Fat_g": 0.53,
+            "Fiber_g": 4.91
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 30.0,
+            "Vitamin_C_mg": 10.0,
+            "Vitamin_E_mg": 0.2,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.3,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 0.5,
+            "Biotin_mcg": 0.3,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "80aab58d-b3d1-4f89-ad6d-c68e82ec9614",
+        "Name": "Soaked Cumin Seeds",
+        "Macros": {
+            "Calories_kcal": 186.0,
+            "Protein_g": 7.5,
+            "Carbs_g": 30.0,
+            "Fat_g": 9.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 6.0,
+            "Vitamin_C_mg": 2.0,
+            "Vitamin_E_mg": 1.2,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 2.5,
+            "Iron_mg": 12.0,
+            "Selenium_mcg": 15.0,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.15
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "079e52ab-17b2-4a17-95b5-29442f0b809e",
+        "Name": "Pomegranat ",
+        "Macros": {
+            "Calories_kcal": 54.73,
+            "Protein_g": 1.33,
+            "Carbs_g": 11.58,
+            "Fat_g": 0.15,
+            "Fiber_g": 2.83
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 10.2,
+            "Vitamin_E_mg": 0.6,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.35,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 0.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.075
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "74a9e4f0-726a-43e2-abfc-ebad5dad8812",
+        "Name": "Coconut Chutney",
+        "Macros": {
+            "Calories_kcal": 180.0,
+            "Protein_g": 2.5,
+            "Carbs_g": 10.0,
+            "Fat_g": 15.0,
+            "Fiber_g": 4.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 2.0,
+            "Vitamin_E_mg": 0.19,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.8,
+            "Iron_mg": 1.5,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.05
+        },
+        "Category": "Nut_Seed",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "500e2709-709b-4f3f-9b93-24c42d6f230c",
+        "Name": "Red Chili Paste",
+        "Macros": {
+            "Calories_kcal": 392.0,
+            "Protein_g": 12.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 16.0,
+            "Fiber_g": 26.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "3c42c417-9173-4de7-8345-b272f66baeec",
+        "Name": "Coriander Powder",
+        "Macros": {
+            "Calories_kcal": 416.0,
+            "Protein_g": 12.0,
+            "Carbs_g": 56.0,
+            "Fat_g": 16.0,
+            "Fiber_g": 40.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "458ba9de-b416-437d-b1fc-cc25734f02a8",
+        "Name": "Dry Fish",
+        "Macros": {
+            "Calories_kcal": 285.0,
+            "Protein_g": 60.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 5.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a3133c0c-c24e-4ed1-bec3-8ad2eb3fa0be",
+        "Name": "Stone Flower",
+        "Macros": {
+            "Calories_kcal": 200.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "3d0ce6b9-4bdf-494c-9538-4417b711a3c3",
+        "Name": "Star Anise",
+        "Macros": {
+            "Calories_kcal": 410.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 70.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9d764a9e-ab2a-42f2-9f32-342983f0139d",
+        "Name": "Coriander leaves",
+        "Macros": {
+            "Calories_kcal": 31.07,
+            "Protein_g": 3.52,
+            "Carbs_g": 1.93,
+            "Fat_g": 0.7,
+            "Fiber_g": 4.66
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 337.0,
+            "Vitamin_C_mg": 135.0,
+            "Vitamin_E_mg": 2.5,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.5,
+            "Iron_mg": 1.4,
+            "Selenium_mcg": 0.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2de3a894-0f8d-4d7c-8d69-250acc04b8a3",
+        "Name": "Raisins",
+        "Macros": {
+            "Calories_kcal": 301.15,
+            "Protein_g": 2.67,
+            "Carbs_g": 70.04,
+            "Fat_g": 0.35,
+            "Fiber_g": 4.24
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 2.3,
+            "Vitamin_E_mg": 0.12,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.22,
+            "Iron_mg": 1.9,
+            "Selenium_mcg": 0.6,
+            "Biotin_mcg": 2.0,
+            "Omega_3_g": 0.077
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "73ec003d-0211-49a6-bdfd-27efccf26383",
+        "Name": "Mint & Coriander",
+        "Macros": {
+            "Calories_kcal": 30.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 6.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 4.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "9f59a5a5-dde6-4219-b1e4-a726a83af742",
+        "Name": "Fennel Powder",
+        "Macros": {
+            "Calories_kcal": 373.33,
+            "Protein_g": 13.33,
+            "Carbs_g": 50.0,
+            "Fat_g": 13.33,
+            "Fiber_g": 40.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a00f4f59-8b9f-4cc2-a6f0-41ece06ccce7",
+        "Name": "Seer Fish",
+        "Macros": {
+            "Calories_kcal": 112.0,
+            "Protein_g": 23.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 2.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 5.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 4.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 0.4,
+            "Selenium_mcg": 30.0,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 1.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "43130793-2fdb-451c-9b1c-e0482f757c39",
+        "Name": "Podi",
+        "Macros": {
+            "Calories_kcal": 50.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 8.0,
+            "Fat_g": 1.0,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 20.0,
+            "Vitamin_C_mg": 10.0,
+            "Vitamin_E_mg": 1.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.5,
+            "Iron_mg": 4.0,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.03
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "16582f3d-da64-4160-a2b4-dbd0f5d2f458",
+        "Name": "Squid",
+        "Macros": {
+            "Calories_kcal": 79.35,
+            "Protein_g": 16.54,
+            "Carbs_g": 0.0,
+            "Fat_g": 1.11,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 10.0,
+            "Vitamin_C_mg": 4.7,
+            "Vitamin_E_mg": 1.2,
+            "Vitamin_D_mcg": 0.3,
+            "Zinc_mg": 1.53,
+            "Iron_mg": 0.7,
+            "Selenium_mcg": 44.8,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 0.496
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "4154c447-386d-42a2-8c52-0df3f07ce3ed",
+        "Name": "Kashmiri Chili",
+        "Macros": {
+            "Calories_kcal": 385.0,
+            "Protein_g": 12.5,
+            "Carbs_g": 50.0,
+            "Fat_g": 15.0,
+            "Fiber_g": 25.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e62f898f-85e5-49a9-8431-11352dfb5f09",
+        "Name": "Turmeric",
+        "Macros": {
+            "Calories_kcal": 354.0,
+            "Protein_g": 7.8,
+            "Carbs_g": 64.9,
+            "Fat_g": 9.9,
+            "Fiber_g": 21.1
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 25.9,
+            "Vitamin_E_mg": 3.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 4.35,
+            "Iron_mg": 55.0,
+            "Selenium_mcg": 4.5,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "aca9b3d0-c83f-470a-907c-11813ca71b46",
+        "Name": "Goat Trotters",
+        "Macros": {
+            "Calories_kcal": 127.5,
+            "Protein_g": 15.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 7.5,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2d6d063f-61d8-464e-bfe8-cfdb889af81b",
+        "Name": "Sundakkai Vathal",
+        "Macros": {
+            "Calories_kcal": 325.0,
+            "Protein_g": 20.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 5.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "0e236b70-9afc-4d64-bc1c-5a1ea46785c1",
+        "Name": "Cardamom",
+        "Macros": {
+            "Calories_kcal": 262.79,
+            "Protein_g": 7.4,
+            "Carbs_g": 50.15,
+            "Fat_g": 2.7,
+            "Fiber_g": 23.28
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 21.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 7.47,
+            "Iron_mg": 13.9,
+            "Selenium_mcg": 0.9,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "2575186e-dddb-4ff7-b5be-1cd53a65447b",
+        "Name": "Idli",
+        "Macros": {
+            "Calories_kcal": 100.0,
+            "Protein_g": 3.2,
+            "Carbs_g": 22.0,
+            "Fat_g": 0.3,
+            "Fiber_g": 1.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.4,
+            "Iron_mg": 0.3,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "78d36ba1-4ef3-4b21-a836-90871f64235f",
+        "Name": "Capsicum",
+        "Macros": {
+            "Calories_kcal": 18.64,
+            "Protein_g": 1.35,
+            "Carbs_g": 1.95,
+            "Fat_g": 0.41,
+            "Fiber_g": 2.19
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 157.0,
+            "Vitamin_C_mg": 127.7,
+            "Vitamin_E_mg": 1.58,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.25,
+            "Iron_mg": 0.4,
+            "Selenium_mcg": 0.3,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.11
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c02318aa-687f-40d1-b7df-f90f11466b6b",
+        "Name": "Spinach",
+        "Macros": {
+            "Calories_kcal": 24.38,
+            "Protein_g": 2.14,
+            "Carbs_g": 2.05,
+            "Fat_g": 0.64,
+            "Fiber_g": 2.38
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 469.0,
+            "Vitamin_C_mg": 28.1,
+            "Vitamin_E_mg": 2.03,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.53,
+            "Iron_mg": 2.7,
+            "Selenium_mcg": 1.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.138
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7a89e770-68b6-4ca7-b8c7-462a9bd40162",
+        "Name": "Adai Batter",
+        "Macros": {
+            "Calories_kcal": 120.0,
+            "Protein_g": 3.5,
+            "Carbs_g": 25.0,
+            "Fat_g": 0.5,
+            "Fiber_g": 1.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.2,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 1.0,
+            "Iron_mg": 1.5,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.04
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "768ee412-b477-4ebd-b320-0649b2c1f646",
+        "Name": "Manathakkali Vathal",
+        "Macros": {
+            "Calories_kcal": 325.0,
+            "Protein_g": 20.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 5.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c2dd9123-c685-4ba5-a8c1-ee5f574c7840",
+        "Name": "Pappadam",
+        "Macros": {
+            "Calories_kcal": 76.4,
+            "Protein_g": 4.4,
+            "Carbs_g": 12.0,
+            "Fat_g": 1.2,
+            "Fiber_g": 1.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "522e13ba-d14f-4cc6-ad49-8d6b1eec10d5",
+        "Name": "Raw Papaya",
+        "Macros": {
+            "Calories_kcal": 23.9,
+            "Protein_g": 0.5,
+            "Carbs_g": 4.4,
+            "Fat_g": 0.23,
+            "Fiber_g": 2.28
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 47.0,
+            "Vitamin_C_mg": 60.9,
+            "Vitamin_E_mg": 0.3,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.07,
+            "Iron_mg": 0.1,
+            "Selenium_mcg": 0.6,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.014
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "cf9f4bfe-1d88-4330-aa24-f24fc48e76c4",
+        "Name": "Kondattam Chilies",
+        "Macros": {
+            "Calories_kcal": 250.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 40.0,
+            "Fat_g": 5.0,
+            "Fiber_g": 15.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a927317a-6093-4cd5-905f-a30d52b04506",
+        "Name": "Soy Sauce",
+        "Macros": {
+            "Calories_kcal": 50.0,
+            "Protein_g": 8.0,
+            "Carbs_g": 5.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "7d82c8af-17a0-4254-b29b-e1ac580b4f33",
+        "Name": "Cornstarch",
+        "Macros": {
+            "Calories_kcal": 360.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 86.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e957e4fd-1783-46d5-b7ef-10f1d0a9c4a2",
+        "Name": "Small Fish",
+        "Macros": {
+            "Calories_kcal": 125.0,
+            "Protein_g": 20.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 5.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "8397fe1b-09af-49b1-a535-a4383be44997",
+        "Name": "Cinnamon & Clove",
+        "Macros": {
+            "Calories_kcal": 300.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 80.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 50.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "37909af9-2472-489c-b2f8-ed7137e332db",
+        "Name": "Butter",
+        "Macros": {
+            "Calories_kcal": 717.0,
+            "Protein_g": 0.9,
+            "Carbs_g": 0.1,
+            "Fat_g": 81.1,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 684.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 2.32,
+            "Vitamin_D_mcg": 1.5,
+            "Zinc_mg": 0.09,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 1.0,
+            "Biotin_mcg": 0.5,
+            "Omega_3_g": 1.2
+        },
+        "Category": "Oil_Fat",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "534ad299-d393-4a59-8efc-0547cd52c89e",
+        "Name": "Chutney",
+        "Macros": {
+            "Calories_kcal": 180.0,
+            "Protein_g": 2.5,
+            "Carbs_g": 10.0,
+            "Fat_g": 15.0,
+            "Fiber_g": 4.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 30.0,
+            "Vitamin_C_mg": 10.0,
+            "Vitamin_E_mg": 0.2,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.3,
+            "Iron_mg": 0.5,
+            "Selenium_mcg": 1.0,
+            "Biotin_mcg": 0.3,
+            "Omega_3_g": 0.02
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "d016026b-2378-438e-8681-aba1ac5b7dec",
+        "Name": "Salt",
+        "Macros": {
+            "Calories_kcal": 50.0,
+            "Protein_g": 2.0,
+            "Carbs_g": 8.0,
+            "Fat_g": 1.0,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "5564abc7-b6d9-4825-86d8-04da48ccabe9",
+        "Name": "Mixed Vegetable Curry",
+        "Macros": {
+            "Calories_kcal": 80.0,
+            "Protein_g": 3.0,
+            "Carbs_g": 10.0,
+            "Fat_g": 3.0,
+            "Fiber_g": 3.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 30.0,
+            "Vitamin_C_mg": 5.0,
+            "Vitamin_E_mg": 0.25,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.5,
+            "Iron_mg": 0.8,
+            "Selenium_mcg": 2.0,
+            "Biotin_mcg": 0.5,
+            "Omega_3_g": 0.04
+        },
+        "Category": "Vegetable",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "b876e30a-45f8-4ae5-b696-5c49a948d586",
+        "Name": "Bisibelebath Powder",
+        "Macros": {
+            "Calories_kcal": 330.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "e00f42be-ce18-4163-a72e-96a09aa59794",
+        "Name": "Appam Batter",
+        "Macros": {
+            "Calories_kcal": 120.0,
+            "Protein_g": 3.5,
+            "Carbs_g": 25.0,
+            "Fat_g": 0.5,
+            "Fiber_g": 1.5
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.3,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Grain",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a0e2db68-2a48-4d2b-af5c-093747e7e760",
+        "Name": "Idiyappam",
+        "Macros": {
+            "Calories_kcal": 182.0,
+            "Protein_g": 3.2,
+            "Carbs_g": 40.5,
+            "Fat_g": 0.4,
+            "Fiber_g": 1.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.1,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.3,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 5.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.01
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "d535cbfb-f775-45c9-8bc1-c4ddc98c2b1c",
+        "Name": "Kerala Porotta",
+        "Macros": {
+            "Calories_kcal": 230.0,
+            "Protein_g": 6.0,
+            "Carbs_g": 38.0,
+            "Fat_g": 6.0,
+            "Fiber_g": 2.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "caddc9ac-0ddd-4c2a-bcf6-b98f190a7e33",
+        "Name": "Mustard oil",
+        "Macros": {
+            "Calories_kcal": 884.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 100.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 5.4,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 9.137
+        },
+        "Category": "Oil_Fat",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "c078ba03-ea28-4892-8c63-313b98574fd6",
+        "Name": "Tapioca",
+        "Macros": {
+            "Calories_kcal": 79.83,
+            "Protein_g": 1.03,
+            "Carbs_g": 17.81,
+            "Fat_g": 0.2,
+            "Fiber_g": 4.61
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 1.0,
+            "Vitamin_C_mg": 19.0,
+            "Vitamin_E_mg": 0.19,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.12,
+            "Iron_mg": 0.2,
+            "Selenium_mcg": 0.7,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "48c5b076-8498-4d39-a045-0d5fed02bc95",
+        "Name": "Meat Masala",
+        "Macros": {
+            "Calories_kcal": 330.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 50.0,
+            "Fat_g": 10.0,
+            "Fiber_g": 20.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.0,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.0
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "6d6b2a52-3f1e-4b6b-8824-2a3620f6bc0a",
+        "Name": "Lentils",
+        "Macros": {
+            "Calories_kcal": 116.0,
+            "Protein_g": 9.0,
+            "Carbs_g": 20.1,
+            "Fat_g": 0.4,
+            "Fiber_g": 7.9
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 1.5,
+            "Vitamin_E_mg": 0.11,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 3.27,
+            "Iron_mg": 7.5,
+            "Selenium_mcg": 8.3,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.15
+        },
+        "Category": "Legume",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "aa174ab6-8cce-4f20-b76f-4aa9f97e77f9",
+        "Name": "Olive Oil",
+        "Macros": {
+            "Calories_kcal": 884.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 100.0,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 0.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 14.35,
+            "Vitamin_D_mcg": 0.0,
+            "Zinc_mg": 0.0,
+            "Iron_mg": 0.0,
+            "Selenium_mcg": 0.0,
+            "Biotin_mcg": 0.0,
+            "Omega_3_g": 0.761
+        },
+        "Category": "Oil_Fat",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "1bfdba8c-2846-4b58-b9ed-debfc22d6916",
+        "Name": "Mackerel",
+        "Macros": {
+            "Calories_kcal": 101.1,
+            "Protein_g": 21.51,
+            "Carbs_g": 0.0,
+            "Fat_g": 1.53,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 50.0,
+            "Vitamin_C_mg": 0.4,
+            "Vitamin_E_mg": 1.0,
+            "Vitamin_D_mcg": 5.0,
+            "Zinc_mg": 0.63,
+            "Iron_mg": 1.6,
+            "Selenium_mcg": 51.6,
+            "Biotin_mcg": 4.0,
+            "Omega_3_g": 3.014
+        },
+        "Category": "Spice_Herb",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    },
+    {
+        "ID": "a8fafc88-1ea9-4a5d-85ca-fa84157bf006",
+        "Name": "Yogurt",
+        "Macros": {
+            "Calories_kcal": 59.0,
+            "Protein_g": 10.0,
+            "Carbs_g": 3.6,
+            "Fat_g": 0.4,
+            "Fiber_g": 0.0
+        },
+        "Micronutrients": {
+            "Vitamin_A_mcg": 14.0,
+            "Vitamin_C_mg": 0.0,
+            "Vitamin_E_mg": 0.04,
+            "Vitamin_D_mcg": 0.1,
+            "Zinc_mg": 0.52,
+            "Iron_mg": 0.1,
+            "Selenium_mcg": 3.3,
+            "Biotin_mcg": 3.4,
+            "Omega_3_g": 0.02
+        },
+        "Category": "Dairy",
+        "Allergens": [],
+        "State": "Raw",
+        "Absorption": {
+            "Enhances": [],
+            "Inhibits": [],
+            "Requires": []
+        },
+        "Compatibility": {
+            "Avoid_With": [],
+            "Good_With": []
+        },
+        "Swap_Group": "",
+        "Safety": {
+            "Max_Per_Meal_g": 500.0,
+            "Max_Per_Day_g": 1000.0,
+            "Toxicity_Flag": false
+        }
+    }
+]

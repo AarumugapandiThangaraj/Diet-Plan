@@ -1,0 +1,35 @@
+[
+  {
+    "Name": "Borscht with Sour Cream",
+    "Goal": [
+      "Skin Repair"
+    ],
+    "Diet Type": [
+      "Non-Veg"
+    ],
+    "Cuisine": [
+      "Russian"
+    ],
+    "Session": [
+      "Lunch"
+    ],
+    "Time": "13:00",
+    "Description": "",
+    "Foods": [
+      {
+        "ID": "FOOD_RUS_0001",
+        "Quantity": 300.0,
+        "Unit": "g",
+        "Replaceable": true
+      },
+      {
+        "ID": "FOOD_RUS_0002",
+        "Quantity": 30.0,
+        "Unit": "g",
+        "Replaceable": true
+      }
+    ],
+    "Allergens": "None",
+    "ID": "MEAL_RUS_0001"
+  }
+]

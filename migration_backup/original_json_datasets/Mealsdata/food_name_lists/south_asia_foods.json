@@ -1,0 +1,1988 @@
+[
+  {
+    "ID": "FOOD_SA_UN_001",
+    "Name": "Warm Lemon Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_002",
+    "Name": "Tulsi Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_003",
+    "Name": "Ginger Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_004",
+    "Name": "Jeera Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_005",
+    "Name": "Ajwain Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_006",
+    "Name": "Coriander Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_007",
+    "Name": "Warm Honey Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_008",
+    "Name": "Methi Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_009",
+    "Name": "Fennel Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_010",
+    "Name": "Amla Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_011",
+    "Name": "Coconut Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_012",
+    "Name": "Fresh Papaya",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_013",
+    "Name": "Banana",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_014",
+    "Name": "Soaked Almonds",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_015",
+    "Name": "Soaked Walnuts",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_016",
+    "Name": "Raisin Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_017",
+    "Name": "Triphala Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_018",
+    "Name": "Ashwagandha Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_019",
+    "Name": "Mint Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_020",
+    "Name": "Lemon Ginger Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_021",
+    "Name": "Cardamom Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_022",
+    "Name": "Cinnamon Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_023",
+    "Name": "Neem Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_024",
+    "Name": "Hibiscus Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_025",
+    "Name": "Giloy Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_026",
+    "Name": "Wheatgrass Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_027",
+    "Name": "Black Raisins",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_028",
+    "Name": "Fresh Dates",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_029",
+    "Name": "Jaggery Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_030",
+    "Name": "Warm Ghee Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_031",
+    "Name": "Steamed Idli",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_032",
+    "Name": "Sambhar",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EM_033",
+    "Name": "Coconut Chutney",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_034",
+    "Name": "Dosa Crepe",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_035",
+    "Name": "Potato Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_037",
+    "Name": "Kanda Poha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_038",
+    "Name": "Lemon Wedge",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_039",
+    "Name": "Semolina Upma",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_041",
+    "Name": "Aloo Paratha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_042",
+    "Name": "Plain Yogurt",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_043",
+    "Name": "Mango Pickle",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_044",
+    "Name": "Puri",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_045",
+    "Name": "Potato Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_046",
+    "Name": "Pesarattu",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_047",
+    "Name": "Upma",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_048",
+    "Name": "Ginger Chutney",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_049",
+    "Name": "Besan Chilla",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_050",
+    "Name": "Green Chutney",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_051",
+    "Name": "Appam",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_052",
+    "Name": "Vegetable Stew",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_053",
+    "Name": "Puttu",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_054",
+    "Name": "Kadala Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_055",
+    "Name": "Ven Pongal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_058",
+    "Name": "Sabudana Khichdi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_060",
+    "Name": "Moong Dal Chilla",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_062",
+    "Name": "Rava Idli",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_064",
+    "Name": "Ladi Pav",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_065",
+    "Name": "Batata Vada",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_066",
+    "Name": "Dry Garlic Chutney",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_067",
+    "Name": "Misal Sprout Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_069",
+    "Name": "Farsan and Lemon",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_070",
+    "Name": "Khaman Dhokla",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_072",
+    "Name": "Fried Green Chili",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_073",
+    "Name": "Methi Thepla",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_075",
+    "Name": "Garlic Pickle",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_076",
+    "Name": "Gobi Paratha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_078",
+    "Name": "White Butter",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_079",
+    "Name": "Paneer Paratha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_080",
+    "Name": "Mint Chutney",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_082",
+    "Name": "Neer Dosa",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_084",
+    "Name": "Idiyappam",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_085",
+    "Name": "Sweet Coconut Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_086",
+    "Name": "Onion Tomato Uttapam",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_089",
+    "Name": "Akki Roti",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_091",
+    "Name": "Chana Dal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_092",
+    "Name": "Pakwan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_093",
+    "Name": "Tamarind and Green Chutney",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_094",
+    "Name": "Wheat Roti",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_095",
+    "Name": "Moong Dal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_096",
+    "Name": "Bhature",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_097",
+    "Name": "Chole Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_098",
+    "Name": "Raw Onion and Lemon",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_099",
+    "Name": "Ragi Mudde",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_100",
+    "Name": "Vegetable Sambar",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_101",
+    "Name": "Thalipeeth",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_104",
+    "Name": "Bread Pakora",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_106",
+    "Name": "Egg Bhurji",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_108",
+    "Name": "Masala Omelette",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_109",
+    "Name": "Buttered Toast",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_111",
+    "Name": "Chicken Stew",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_112",
+    "Name": "Mutton Keema",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_116",
+    "Name": "Kerala Egg Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_118",
+    "Name": "Kerala Beef Fry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_120",
+    "Name": "Mangalorean Chicken Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_121",
+    "Name": "Mutton Paya Soup",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_122",
+    "Name": "Naan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_123",
+    "Name": "Pan-fried Chicken Sausage",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_124",
+    "Name": "Fried Egg",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_126",
+    "Name": "Egg Paratha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_128",
+    "Name": "Mixed Pickle",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_129",
+    "Name": "Anda Ghotala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_131",
+    "Name": "Chicken Kheema Paratha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_134",
+    "Name": "Kerala Egg Roast",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_136",
+    "Name": "Pathiri",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_137",
+    "Name": "Malabar Chicken Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_138",
+    "Name": "Beef Nihari",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_139",
+    "Name": "Kulcha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_142",
+    "Name": "Suji Halwa",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_143",
+    "Name": "Egg Dosa",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_144",
+    "Name": "Chicken Salna",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_146",
+    "Name": "Mutton Liver Fry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_148",
+    "Name": "Chicken Cutlet",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_149",
+    "Name": "Bread Slices",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_150",
+    "Name": "Tomato Ketchup",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_151",
+    "Name": "Bread Omelette",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_155",
+    "Name": "Indian Style Shakshuka",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_157",
+    "Name": "Malabar Parotta",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_158",
+    "Name": "Beef Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_159",
+    "Name": "Mutton Keema Dosa",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_161",
+    "Name": "Chicken Tikka Sandwich",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_162",
+    "Name": "Mint Mayonnaise",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_163",
+    "Name": "Mutton Baida Roti",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_165",
+    "Name": "Fish Cutlet",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_168",
+    "Name": "Garlic Egg Drop Soup",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_170",
+    "Name": "Chicken Samosa",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_171",
+    "Name": "Masala Chai",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_172",
+    "Name": "Half Fry Egg",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_BR_173",
+    "Name": "Plain Paratha",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_175",
+    "Name": "Aloe Vera Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_176",
+    "Name": "Curry Leaf Drink",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_178",
+    "Name": "Kesar Doodh",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_179",
+    "Name": "ABC Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_180",
+    "Name": "Cucumber Mint Cooler",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_181",
+    "Name": "Anar Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_182",
+    "Name": "Rose Lassi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_183",
+    "Name": "Chaas",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_184",
+    "Name": "Badam Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_185",
+    "Name": "Sabja Seed Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_186",
+    "Name": "Bael Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_187",
+    "Name": "Sugarcane Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_188",
+    "Name": "Safed Petha Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_189",
+    "Name": "Mint Coriander Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_190",
+    "Name": "Chia Seed Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_192",
+    "Name": "Watermelon Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_193",
+    "Name": "Papaya",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_194",
+    "Name": "Sweet Lime Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_195",
+    "Name": "Moringa Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_196",
+    "Name": "Saunf Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_197",
+    "Name": "Haldi Doodh",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_198",
+    "Name": "Sesame Seed Drink",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_199",
+    "Name": "Vetiver Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_200",
+    "Name": "Aam Panna",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_201",
+    "Name": "Fig Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_203",
+    "Name": "Carrot Juice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_204",
+    "Name": "Rajma Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_205",
+    "Name": "Steamed Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_MM_206",
+    "Name": "Onion Salad",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_207",
+    "Name": "Chole Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_209",
+    "Name": "Palak Paneer",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_212",
+    "Name": "Dal Makhani",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_214",
+    "Name": "Bisi Bele Bath",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_215",
+    "Name": "Cucumber Raita",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_218",
+    "Name": "Cabbage Poriyal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_219",
+    "Name": "Curd Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_221",
+    "Name": "Pomegranate Seeds",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_222",
+    "Name": "Baingan Bharta",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_224",
+    "Name": "Mixed Vegetable Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_226",
+    "Name": "Aloo Gobi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_228",
+    "Name": "Cucumber Salad",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_229",
+    "Name": "Paneer Butter Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_230",
+    "Name": "Garlic Naan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_231",
+    "Name": "Vegetable Pulao",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_232",
+    "Name": "Onion Tomato Raita",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_233",
+    "Name": "Dal Tadka",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_234",
+    "Name": "Jeera Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_235",
+    "Name": "Bhindi Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_237",
+    "Name": "Kadhi Pakora",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_239",
+    "Name": "Vegetable Biryani",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_240",
+    "Name": "Mirchi Ka Salan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_241",
+    "Name": "Raita",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_242",
+    "Name": "Undhiyu",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_244",
+    "Name": "Vangi Bath",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_246",
+    "Name": "Lemon Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_247",
+    "Name": "Potato Roast",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_248",
+    "Name": "Malai Kofta",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_249",
+    "Name": "Butter Naan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_250",
+    "Name": "Panchmel Dal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_251",
+    "Name": "Baked Bati",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_252",
+    "Name": "Matar Paneer",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_254",
+    "Name": "Gatte Ki Sabzi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_256",
+    "Name": "Veg Makhanwala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_258",
+    "Name": "Mushroom Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_260",
+    "Name": "Soya Chaap Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_262",
+    "Name": "Avial",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_264",
+    "Name": "Tomato Rasam",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_265",
+    "Name": "Puliyogare",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_266",
+    "Name": "Appalam",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_267",
+    "Name": "Dal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_268",
+    "Name": "Cabbage Thoran",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_270",
+    "Name": "Bagara Baingan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_271",
+    "Name": "Biryani Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_272",
+    "Name": "Chicken Tikka Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_274",
+    "Name": "Butter Chicken",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_276",
+    "Name": "Mutton Rogan Josh",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_278",
+    "Name": "Chicken Biryani",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_280",
+    "Name": "Macher Jhol",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_282",
+    "Name": "Prawn Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_284",
+    "Name": "Mutton Biryani",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_286",
+    "Name": "Chicken Chettinad",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_288",
+    "Name": "Mutton Korma",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_290",
+    "Name": "Egg Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_292",
+    "Name": "Chicken Korma",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_294",
+    "Name": "Goan Fish Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_296",
+    "Name": "Mangalorean Chicken Ghee Roast",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_298",
+    "Name": "Mutton Keema Matar",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_300",
+    "Name": "Karahi Chicken",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_302",
+    "Name": "Kerala Fish Fry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_305",
+    "Name": "Andhra Chicken Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_307",
+    "Name": "Fish Tikka",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_310",
+    "Name": "Mutton Sukka",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_312",
+    "Name": "Chicken 65",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_313",
+    "Name": "Egg Fried Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_314",
+    "Name": "Egg Biryani",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_316",
+    "Name": "Chicken Do Pyaza",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_318",
+    "Name": "Malabar Fish Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_320",
+    "Name": "Tandoori Chicken",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_323",
+    "Name": "Home-style Mutton Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_327",
+    "Name": "Hakka Noodles",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_328",
+    "Name": "Chilli Chicken",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_329",
+    "Name": "Prawn Biryani",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_331",
+    "Name": "Chicken Rezala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_333",
+    "Name": "Fish Amritsari",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_LU_335",
+    "Name": "Roasted Makhana",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_336",
+    "Name": "Roasted Chana",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_337",
+    "Name": "Sprouted Moong Chaat",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_338",
+    "Name": "Green Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_339",
+    "Name": "Mixed Nuts",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_340",
+    "Name": "Amla Murabba",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_342",
+    "Name": "Boiled Peanuts",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_343",
+    "Name": "Ragi Cookies",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_345",
+    "Name": "Fresh Pomegranate",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_346",
+    "Name": "Carrot Sticks",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_347",
+    "Name": "Mint Yogurt Dip",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_348",
+    "Name": "Roasted Pumpkin Seeds",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_350",
+    "Name": "Jhal Muri",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_351",
+    "Name": "Alsi Pinni",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_352",
+    "Name": "Til Ladoo",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_353",
+    "Name": "Cucumber Sticks",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_354",
+    "Name": "Sweet Corn Chaat",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_355",
+    "Name": "Fruit Chaat",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_356",
+    "Name": "Buttermilk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_357",
+    "Name": "Steamed Edamame",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_358",
+    "Name": "Gulkand Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_359",
+    "Name": "Sweet Potato Chaat",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_360",
+    "Name": "Dates and Walnuts",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_361",
+    "Name": "Roasted Almonds",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_363",
+    "Name": "Kala Chana Chaat",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_364",
+    "Name": "Roasted Soya Beans",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_365",
+    "Name": "Peanut Chikki",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_366",
+    "Name": "Moong Dal Khichdi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_367",
+    "Name": "Gujarati Kadhi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_EV_368",
+    "Name": "Roasted Papad",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_369",
+    "Name": "Paneer Tikka Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_372",
+    "Name": "Chana Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_374",
+    "Name": "Cucumber Slices",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_375",
+    "Name": "Aloo Matar",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_378",
+    "Name": "Dal Fry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_379",
+    "Name": "Basmati Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_381",
+    "Name": "Baingan Ka Salan",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_383",
+    "Name": "Vegetable Korma",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_385",
+    "Name": "Navratan Korma",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_387",
+    "Name": "Lauki Kofta",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_389",
+    "Name": "Soya Chunks Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_392",
+    "Name": "Boondi Raita",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_393",
+    "Name": "Palak Dal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_395",
+    "Name": "Kashmiri Dum Aloo",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_397",
+    "Name": "Paneer Bhurji",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_399",
+    "Name": "Jackfruit Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_401",
+    "Name": "Sev Tomato Sabzi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_403",
+    "Name": "Methi Malai Matar",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_406",
+    "Name": "Eggplant Gotsu",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_407",
+    "Name": "Veg Fried Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_408",
+    "Name": "Gobi Manchurian",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_409",
+    "Name": "Dal Dhokli",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_410",
+    "Name": "Ghee Drizzle",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_411",
+    "Name": "Sindhi Kadhi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_413",
+    "Name": "Aloo Tuk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_414",
+    "Name": "Tindora Fry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_418",
+    "Name": "Peas Pulao",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_419",
+    "Name": "Veg Jalfrezi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_421",
+    "Name": "Mushroom Matar",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_423",
+    "Name": "Kadai Paneer",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_425",
+    "Name": "Mixed Dal",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_433",
+    "Name": "Steamed Brown Rice",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_436",
+    "Name": "Mutton Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_438",
+    "Name": "Fish Tikka Masala",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_443",
+    "Name": "Onion Raita",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_444",
+    "Name": "Prawn Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_452",
+    "Name": "Fish Moilee",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_456",
+    "Name": "Karahi Mutton",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_458",
+    "Name": "Chicken Tikka",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_463",
+    "Name": "Pomfret Fry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_464",
+    "Name": "Fish Curry Broth",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_470",
+    "Name": "Goan Prawn Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_476",
+    "Name": "Chicken Kolhapuri",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_478",
+    "Name": "Mutton Yakhni Pulao",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_480",
+    "Name": "Fish Kalia",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_482",
+    "Name": "Chicken Manchurian",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_486",
+    "Name": "Raw Onion",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_487",
+    "Name": "Mutton Seekh Kebab",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_492",
+    "Name": "Andhra Fish Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_494",
+    "Name": "Chicken Changezi",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_DI_496",
+    "Name": "Omelette Curry",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_500",
+    "Name": "Ashwagandha Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_501",
+    "Name": "Nutmeg Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_502",
+    "Name": "Chamomile Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_503",
+    "Name": "Tulsi Green Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_507",
+    "Name": "Peppermint Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_509",
+    "Name": "Badam Doodh",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_510",
+    "Name": "Elaichi Doodh",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_512",
+    "Name": "Brahmi Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_513",
+    "Name": "Soy Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_514",
+    "Name": "Triphala Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_516",
+    "Name": "Warm Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_520",
+    "Name": "Ghee Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_521",
+    "Name": "Rice Kanji",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_522",
+    "Name": "Licorice Tea",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_524",
+    "Name": "Dates Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_525",
+    "Name": "Rose Water",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_526",
+    "Name": "Warm Coconut Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_SA_UN_527",
+    "Name": "Makhana Milk",
+    "Cuisine": "South Asia",
+    "Type": "Food"
+  }
+]

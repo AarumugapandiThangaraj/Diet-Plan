@@ -1,0 +1,1652 @@
+[
+  {
+    "ID": "FOOD_EA_EM_001",
+    "Name": "Soy Milk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_002",
+    "Name": "Rice Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_003",
+    "Name": "Miso Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_004",
+    "Name": "Mantou",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_005",
+    "Name": "Sweet Potato Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_006",
+    "Name": "Green Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_007",
+    "Name": "Douhua",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_008",
+    "Name": "Black Sesame Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_009",
+    "Name": "Radish Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_010",
+    "Name": "Oolong Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_011",
+    "Name": "Boricha",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_012",
+    "Name": "Hobakjuk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_013",
+    "Name": "Roasted Sweet Potato",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_014",
+    "Name": "Jasmine Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_015",
+    "Name": "Silken Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_016",
+    "Name": "Senbei",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_017",
+    "Name": "Yuzu Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_018",
+    "Name": "Maesil-cha",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_019",
+    "Name": "Almond Milk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_020",
+    "Name": "Red Bean Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_021",
+    "Name": "Matcha",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_022",
+    "Name": "Chrysanthemum Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_023",
+    "Name": "Asian Pear",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_024",
+    "Name": "Danmuji",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_025",
+    "Name": "Miyeok-guk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_026",
+    "Name": "Edamame",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_027",
+    "Name": "Steamed Corn",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_028",
+    "Name": "Tomato Tofu Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_029",
+    "Name": "Genmaicha",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_030",
+    "Name": "Jujube Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_031",
+    "Name": "Persimmon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_032",
+    "Name": "Jatjuk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_033",
+    "Name": "Lotus Root Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_034",
+    "Name": "Apple",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_EM_035",
+    "Name": "Steamed Taro",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_036",
+    "Name": "Scallion Pancake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_037",
+    "Name": "Vegetable Baozi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_039",
+    "Name": "Youtiao",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_041",
+    "Name": "Roasted Peanuts",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_042",
+    "Name": "Pickled Radish",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_043",
+    "Name": "Sweet Potato Pancake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_044",
+    "Name": "Black Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_045",
+    "Name": "Jiaozi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_046",
+    "Name": "Black Vinegar Dip",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_047",
+    "Name": "Natto",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_048",
+    "Name": "Steamed Rice",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_049",
+    "Name": "Tomato Tofu Stir-fry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_050",
+    "Name": "Savory Douhua",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_051",
+    "Name": "Braised Lotus Root",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_052",
+    "Name": "Gimbap",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_053",
+    "Name": "Fermented Bean Curd",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_054",
+    "Name": "Shaobing",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_055",
+    "Name": "Braised Shiitake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_056",
+    "Name": "Roasted Seaweed",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_057",
+    "Name": "Kimchi Fried Rice",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_058",
+    "Name": "Pan-fried Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_059",
+    "Name": "Braised Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_060",
+    "Name": "Cucumber Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_061",
+    "Name": "Zaru Soba",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_062",
+    "Name": "Udon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_063",
+    "Name": "Peanut Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_064",
+    "Name": "Pickled Mustard Greens",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_065",
+    "Name": "Steamed Bok Choy",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_066",
+    "Name": "Red Bean Bun",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_067",
+    "Name": "Nasu Dengaku",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_068",
+    "Name": "Spring Rolls",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_069",
+    "Name": "Mapo Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_070",
+    "Name": "Taro Cake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_071",
+    "Name": "Braised Yuba",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_072",
+    "Name": "Radish Cake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_073",
+    "Name": "Cifantuan",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_074",
+    "Name": "Hotteok",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_075",
+    "Name": "Umeboshi Onigiri",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_076",
+    "Name": "Jiucai Hezi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_077",
+    "Name": "Cold Tofu Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_078",
+    "Name": "Steamed Cabbage",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_079",
+    "Name": "Barley Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_080",
+    "Name": "Pork Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_081",
+    "Name": "Dan Bing",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_082",
+    "Name": "Pork Baozi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_083",
+    "Name": "Dakjuk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_084",
+    "Name": "Fried Spam",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_085",
+    "Name": "Fried Egg",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_086",
+    "Name": "Wonton Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_087",
+    "Name": "Har Gow",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_088",
+    "Name": "Siu Mai",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_089",
+    "Name": "Grilled Salmon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_090",
+    "Name": "Tamagoyaki",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_091",
+    "Name": "Gyeran-bbang",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_092",
+    "Name": "Milk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_093",
+    "Name": "Beef Noodle Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_094",
+    "Name": "Tuna Gimbap",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_095",
+    "Name": "Pork Floss",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_096",
+    "Name": "Jianbing",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_097",
+    "Name": "Fish Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_098",
+    "Name": "Beef Sandwich",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_099",
+    "Name": "Beef Scallion Pancake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_100",
+    "Name": "Gua Bao",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_101",
+    "Name": "Shrimp Spring Rolls",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_102",
+    "Name": "Clam Miso Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_103",
+    "Name": "Chicken Jiaozi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_104",
+    "Name": "Chawanmushi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_105",
+    "Name": "Seolleongtang",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_106",
+    "Name": "Spicy Wontons",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_107",
+    "Name": "Spam Musubi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_108",
+    "Name": "Grilled Mackerel",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_109",
+    "Name": "Bulgogi Gimbap",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_110",
+    "Name": "Chicken Baozi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_111",
+    "Name": "Guotie",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_112",
+    "Name": "Haemul Pajeon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_113",
+    "Name": "Shrimp Cheung Fun",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_114",
+    "Name": "Char Siu Cheung Fun",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_115",
+    "Name": "Meatball Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_116",
+    "Name": "Chicken Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_B_117",
+    "Name": "Macaroni Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_118",
+    "Name": "Sesame Noodles",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_119",
+    "Name": "Vegetable Stir-fry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_120",
+    "Name": "Fried Rice",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_121",
+    "Name": "Yuxiang Eggplant",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_122",
+    "Name": "Bibimbap",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_123",
+    "Name": "Miso Ramen",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_124",
+    "Name": "Tempura",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_125",
+    "Name": "Tteokbokki",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_126",
+    "Name": "Japchae",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_127",
+    "Name": "Avocado Sushi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_128",
+    "Name": "Dry Pot Cauliflower",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_129",
+    "Name": "Luohan Zhai",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_130",
+    "Name": "Yakisoba",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_131",
+    "Name": "Curry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_132",
+    "Name": "Steamed Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_133",
+    "Name": "Dan Dan Noodles",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_134",
+    "Name": "Garlic Bok Choy",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_135",
+    "Name": "Chow Mein",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_136",
+    "Name": "Spinach Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_138",
+    "Name": "Sweet and Sour Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_139",
+    "Name": "Braised Daikon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_140",
+    "Name": "Gyoza",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_141",
+    "Name": "Seaweed Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_142",
+    "Name": "Hainanese Chicken",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_143",
+    "Name": "Chicken Fat Rice",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_144",
+    "Name": "Pork Katsu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_145",
+    "Name": "Japanese Curry Rice",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_146",
+    "Name": "Teriyaki Chicken",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_147",
+    "Name": "Tonkotsu Ramen",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_148",
+    "Name": "Bulgogi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_149",
+    "Name": "Tangsuyuk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_150",
+    "Name": "Kung Pao Chicken",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_151",
+    "Name": "Salmon Teriyaki",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_152",
+    "Name": "Oyakodon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_153",
+    "Name": "Gyudon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_154",
+    "Name": "Pork Jiaozi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_155",
+    "Name": "Karaage",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_156",
+    "Name": "Shrimp Fried Rice",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_157",
+    "Name": "Jeyuk Bokkeum",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_158",
+    "Name": "Kimchi Jjigae",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_159",
+    "Name": "Sushi Nigiri",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_160",
+    "Name": "General Tso Chicken",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_161",
+    "Name": "Char Siu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_162",
+    "Name": "Unadon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_163",
+    "Name": "Seafood Udon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_164",
+    "Name": "Beef and Broccoli",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_165",
+    "Name": "Braised Pork Belly",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_166",
+    "Name": "Shrimp Yakisoba",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_167",
+    "Name": "Chicken Chow Mein",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_168",
+    "Name": "Wonton Noodle Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_169",
+    "Name": "Shrimp Tempura",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_170",
+    "Name": "Udon Noodle Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_171",
+    "Name": "Roast Duck",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_172",
+    "Name": "Steamed Fish",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_173",
+    "Name": "Yangnyeom Chicken",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_174",
+    "Name": "Katsudon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_175",
+    "Name": "Black Pepper Beef",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_L_176",
+    "Name": "Samgyetang",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_177",
+    "Name": "Watermelon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_179",
+    "Name": "Mochi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_180",
+    "Name": "Rice Crackers",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_181",
+    "Name": "Dried Jujube",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_182",
+    "Name": "Pineapple",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_183",
+    "Name": "Steamed Sweet Potato",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_184",
+    "Name": "Plum Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_185",
+    "Name": "Sweet Douhua",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_186",
+    "Name": "Kombu Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_187",
+    "Name": "Yakult",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_188",
+    "Name": "Cantaloupe",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_189",
+    "Name": "Mung Bean Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_190",
+    "Name": "Roasted Chestnuts",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_191",
+    "Name": "Mango",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_192",
+    "Name": "Grapes",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_193",
+    "Name": "White Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_194",
+    "Name": "Lychee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_195",
+    "Name": "Longan",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_196",
+    "Name": "Ginger Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_197",
+    "Name": "Rice Cake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_198",
+    "Name": "Mandarin Oranges",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_199",
+    "Name": "Mitarashi Dango",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_200",
+    "Name": "Pomegranate",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_201",
+    "Name": "Strawberry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_MM_202",
+    "Name": "Honeydew Melon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_203",
+    "Name": "Tremella Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_204",
+    "Name": "Wakame Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_205",
+    "Name": "Walnut Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_207",
+    "Name": "Goji Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_208",
+    "Name": "Pine Nuts",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_209",
+    "Name": "Roasted Nori",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_210",
+    "Name": "Wood Ear Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_211",
+    "Name": "Sweet Potato Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_212",
+    "Name": "Almond Tofu",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_213",
+    "Name": "Pumpkin Seeds",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_214",
+    "Name": "Lotus Seed Bun",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_215",
+    "Name": "Walnuts",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_216",
+    "Name": "Goji Berries",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_217",
+    "Name": "Kelp Roll",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_218",
+    "Name": "Papaya Tremella Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_219",
+    "Name": "Black Bean Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_221",
+    "Name": "Sesame Brittle",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_222",
+    "Name": "Daifuku",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_223",
+    "Name": "Matcha Roll Cake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_224",
+    "Name": "Soybeans",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_225",
+    "Name": "Jujube Cake",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_226",
+    "Name": "Black Rice Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_227",
+    "Name": "Ginkgo Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_228",
+    "Name": "Kelp Salad",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_E_229",
+    "Name": "Tangyuan",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_230",
+    "Name": "Clear Tofu Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_231",
+    "Name": "Stir-fry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_232",
+    "Name": "Garlic Eggplant",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_233",
+    "Name": "Miso Udon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_234",
+    "Name": "Garlic Spinach",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_235",
+    "Name": "Hot Pot",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_236",
+    "Name": "Lotus Root",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_237",
+    "Name": "Water Spinach",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_238",
+    "Name": "Yuba Roll",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_239",
+    "Name": "Dumpling Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_240",
+    "Name": "Pumpkin Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_241",
+    "Name": "Soba Noodle Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_242",
+    "Name": "Zucchini Stir-fry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_243",
+    "Name": "Edamame Tofu Stir-fry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_244",
+    "Name": "Taro Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_245",
+    "Name": "Pho Ga",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_246",
+    "Name": "Mandu-guk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_247",
+    "Name": "Steamed Egg",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_248",
+    "Name": "Beef Enoki Roll",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_249",
+    "Name": "Steamed Chicken",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_250",
+    "Name": "Shrimp Stir-fry",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_251",
+    "Name": "Tomato Egg",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_252",
+    "Name": "Naengmyeon",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_253",
+    "Name": "Clam Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_254",
+    "Name": "Tsukune",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_255",
+    "Name": "Steamed Ribs",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_256",
+    "Name": "Shrimp Congee",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_257",
+    "Name": "Sukiyaki",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_258",
+    "Name": "Chicken Corn Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_259",
+    "Name": "Fish Ball Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_260",
+    "Name": "Xiaolongbao",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_D_261",
+    "Name": "Sakamushi",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_262",
+    "Name": "Lotus Seed Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_263",
+    "Name": "Lemon Ginger Water",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_264",
+    "Name": "Lily Bulb Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_265",
+    "Name": "Longan Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_266",
+    "Name": "Boiled Pear",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_267",
+    "Name": "Miso Broth",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_268",
+    "Name": "Buckwheat Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_269",
+    "Name": "Steamed Apple",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_270",
+    "Name": "Corn Silk Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_271",
+    "Name": "Sungnyung",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_272",
+    "Name": "Yuja Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_273",
+    "Name": "Oat Milk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_274",
+    "Name": "Steamed Yam",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_275",
+    "Name": "Osmanthus Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_276",
+    "Name": "Walnut Soup",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_277",
+    "Name": "Mulberry Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_278",
+    "Name": "Bamboo Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_279",
+    "Name": "Corn Tea",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_280",
+    "Name": "Oatmeal",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  },
+  {
+    "ID": "FOOD_EA_BT_281",
+    "Name": "Coconut Milk",
+    "Cuisine": "East Asia",
+    "Type": "Food"
+  }
+]

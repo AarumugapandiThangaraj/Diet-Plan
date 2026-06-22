@@ -1,0 +1,1656 @@
+[
+    {
+        "ID": "FOOD_AF_001",
+        "Name": "Rooibos Tea",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "drink",
+        "Preparation": [
+            "Boil water.",
+            "Add rooibos tea leaves.",
+            "Steep for 5â€“7 minutes.",
+            "Strain into serving cup.",
+            "Serve hot."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001718",
+                "Ingredient_Name": "Rooibos Tea Leaves",
+                "Quantity": 3.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 300.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 250,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 2,
+            "Protein_g": 0,
+            "Carbs_g": 0.5,
+            "Fat_g": 0,
+            "Fiber_g": 0
+        },
+        "Min_Quantity": 175,
+        "Max_Quantity": 325,
+        "image_path": "data/final_images\\Akara.jpg"
+    },
+    {
+        "ID": "FOOD_AF_002",
+        "Name": "Jollof Rice",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Blend tomatoes, peppers, and onions into a smooth base.",
+            "Heat oil and sautÃ© aromatics.",
+            "Cook tomato mixture until reduced.",
+            "Add rice and stock.",
+            "Simmer until rice is tender.",
+            "Allow rice to steam before serving."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001520",
+                "Ingredient_Name": "Rice",
+                "Quantity": 200.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000143",
+                "Ingredient_Name": "Red Onion",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000296",
+                "Ingredient_Name": "Red Bell Pepper",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 280,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 476.0,
+            "Protein_g": 6.04,
+            "Carbs_g": 65.56,
+            "Fat_g": 20.56,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 196,
+        "Max_Quantity": 364,
+        "image_path": "data/final_images\\Jollof Rice.jpg"
+    },
+    {
+        "ID": "FOOD_AF_003",
+        "Name": "Fufu",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Boil water.",
+            "Add flour/starch.",
+            "Stir continuously.",
+            "Form dough.",
+            "Serve."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001719",
+                "Ingredient_Name": "Cassava Flour",
+                "Quantity": 93.75,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 156.25,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 250,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 510.0,
+            "Protein_g": 2.25,
+            "Carbs_g": 120.0,
+            "Fat_g": 0.75,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 175,
+        "Max_Quantity": 325,
+        "image_path": "data/final_images\\Fufu.jpg"
+    },
+    {
+        "ID": "FOOD_AF_004",
+        "Name": "Egusi Soup",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Blend or grind egusi seeds.",
+            "Heat palm oil and sautÃ© aromatics.",
+            "Add egusi mixture and stock.",
+            "Simmer until thickened.",
+            "Add leafy greens near the end.",
+            "Serve hot."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001717",
+                "Ingredient_Name": "Egusi Seeds",
+                "Quantity": 100.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000974",
+                "Ingredient_Name": "Red Palm Oil",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-001560",
+                "Ingredient_Name": "Spinach",
+                "Quantity": 80.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 250.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 220,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 825.2,
+            "Protein_g": 28.0,
+            "Carbs_g": 10.0,
+            "Fat_g": 75.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 154,
+        "Max_Quantity": 286,
+        "image_path": "data/final_images\\Egusi Soup.png"
+    },
+    {
+        "ID": "FOOD_AF_005",
+        "Name": "Injera",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Ferment batter for 2-3 days.",
+            "Pour onto hot surface.",
+            "Steam under lid.",
+            "Cool and roll."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001715",
+                "Ingredient_Name": "Teff Flour",
+                "Quantity": 66.67,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 133.33,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 220,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 550.5,
+            "Protein_g": 19.95,
+            "Carbs_g": 109.5,
+            "Fat_g": 3.6,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 154,
+        "Max_Quantity": 286,
+        "image_path": "data/final_images\\Injera.jpg"
+    },
+    {
+        "ID": "FOOD_AF_006",
+        "Name": "Akara",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "snack",
+        "Preparation": [
+            "Soak and peel black-eyed beans.",
+            "Blend into smooth batter.",
+            "Mix with onions and seasoning.",
+            "Heat oil for deep frying.",
+            "Drop batter into oil and fry until golden brown."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001720",
+                "Ingredient_Name": "Black Eyed Beans",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000143",
+                "Ingredient_Name": "Red Onion",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 120,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 517.2,
+            "Protein_g": 17.62,
+            "Carbs_g": 45.0,
+            "Fat_g": 30.98,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 84,
+        "Max_Quantity": 156,
+        "image_path": "data/final_images\\Akara.jpg"
+    },
+    {
+        "ID": "FOOD_AF_007",
+        "Name": "Pap",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Mix maize flour with water into slurry.",
+            "Bring water to a boil.",
+            "Gradually stir in slurry.",
+            "Cook until thick and smooth.",
+            "Serve warm."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001716",
+                "Ingredient_Name": "Maize Flour",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 300.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 250,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 216.6,
+            "Protein_g": 4.14,
+            "Carbs_g": 46.2,
+            "Fat_g": 2.34,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 175,
+        "Max_Quantity": 325,
+        "image_path": "data/final_images\\Pap.jpg"
+    },
+    {
+        "ID": "FOOD_AF_008",
+        "Name": "Suya",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "snack",
+        "Preparation": [
+            "Slice beef into thin strips.",
+            "Coat with peanut spice mixture.",
+            "Skewer meat evenly.",
+            "Grill over open flame until cooked.",
+            "Serve hot."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001333",
+                "Ingredient_Name": "Beef",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-001490",
+                "Ingredient_Name": "Peanut Powder",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-001279",
+                "Ingredient_Name": "Chili",
+                "Quantity": 5.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 150,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 463.4,
+            "Protein_g": 39.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 32.5,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 105,
+        "Max_Quantity": 195,
+        "image_path": "data/final_images\\Suya.png"
+    },
+    {
+        "ID": "FOOD_AF_009",
+        "Name": "Shiro Wat",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "SautÃ© garlic.",
+            "Stir in flour and water.",
+            "Simmer until smooth and thick."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001367",
+                "Ingredient_Name": "Chickpea Flour",
+                "Quantity": 100.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000030",
+                "Ingredient_Name": "Garlic",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 250.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 176.8,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 20.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Shiro Wat.jpg"
+    },
+    {
+        "ID": "FOOD_AF_010",
+        "Name": "Doro Wat",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Slow cook onions until reduced.",
+            "Add chicken and spices.",
+            "Simmer until tender."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001364",
+                "Ingredient_Name": "Chicken",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000143",
+                "Ingredient_Name": "Red Onion",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 512.7,
+            "Protein_g": 46.5,
+            "Carbs_g": 0.0,
+            "Fat_g": 35.4,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Doro Wat.jpg"
+    },
+    {
+        "ID": "FOOD_AF_011",
+        "Name": "Couscous",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Pour boiling water over grains.",
+            "Cover and let sit for 5 mins.",
+            "Fluff with fork."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-000187",
+                "Ingredient_Name": "Couscous",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 250.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 220,
+        "Unit": "g",
+        "Allergens": "Gluten",
+        "Nutritional_Info": {
+            "Calories_kcal": 0.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 154,
+        "Max_Quantity": 286,
+        "image_path": "data/final_images\\Couscous.jpg"
+    },
+    {
+        "ID": "FOOD_AF_012",
+        "Name": "Fish Stew",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Fry fish lightly.",
+            "Cook tomato base.",
+            "Simmer fish in sauce."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001202",
+                "Ingredient_Name": "Tilapia",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "Fish",
+        "Nutritional_Info": {
+            "Calories_kcal": 184.0,
+            "Protein_g": 0.36,
+            "Carbs_g": 1.56,
+            "Fat_g": 20.08,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Fish Stew.jpg"
+    },
+    {
+        "ID": "FOOD_AF_013",
+        "Name": "Sadza",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Mix flour with cold water.",
+            "Add to boiling water.",
+            "Cook until very thick ball."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001716",
+                "Ingredient_Name": "Maize Flour",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 300.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 250,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 216.6,
+            "Protein_g": 4.14,
+            "Carbs_g": 46.2,
+            "Fat_g": 2.34,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 175,
+        "Max_Quantity": 325,
+        "image_path": "data/final_images\\Sadza.jpg"
+    },
+    {
+        "ID": "FOOD_AF_014",
+        "Name": "Chakalaka",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Grate carrots.",
+            "SautÃ© with onions and spices.",
+            "Add tomatoes and simmer."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001356",
+                "Ingredient_Name": "Carrot",
+                "Quantity": 50.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-001279",
+                "Ingredient_Name": "Chili",
+                "Quantity": 5.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 80,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 7.2,
+            "Protein_g": 0.36,
+            "Carbs_g": 1.56,
+            "Fat_g": 0.08,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 56,
+        "Max_Quantity": 104,
+        "image_path": "data/final_images\\Chakalaka.jpg"
+    },
+    {
+        "ID": "FOOD_AF_015",
+        "Name": "Groundnut Soup",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Dissolve peanut butter in water.",
+            "Add tomato base.",
+            "Simmer until oil rises."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-000132",
+                "Ingredient_Name": "Peanut Butter",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 250.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "Dairy, Peanuts, Soy",
+        "Nutritional_Info": {
+            "Calories_kcal": 7.2,
+            "Protein_g": 0.36,
+            "Carbs_g": 1.56,
+            "Fat_g": 0.08,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Groundnut Soup.jpg"
+    },
+    {
+        "ID": "FOOD_AF_016",
+        "Name": "Grilled Tilapia",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Season fish with ginger and garlic.",
+            "Grill over open flame."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001202",
+                "Ingredient_Name": "Tilapia",
+                "Quantity": 200.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000361",
+                "Ingredient_Name": "Ginger",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000030",
+                "Ingredient_Name": "Garlic",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "Fish",
+        "Nutritional_Info": {
+            "Calories_kcal": 0,
+            "Protein_g": 0,
+            "Carbs_g": 0,
+            "Fat_g": 0,
+            "Fiber_g": 0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Grilled Tilapia.jpg"
+    },
+    {
+        "ID": "FOOD_AF_017",
+        "Name": "Hibiscus Drink",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "drink",
+        "Preparation": [
+            "Boil flowers and ginger.",
+            "Strain and cool.",
+            "Serve chilled."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001440",
+                "Ingredient_Name": "Hibiscus Flowers",
+                "Quantity": 3.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 300.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000361",
+                "Ingredient_Name": "Ginger",
+                "Quantity": 15.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 250,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 2,
+            "Protein_g": 0,
+            "Carbs_g": 0.5,
+            "Fat_g": 0,
+            "Fiber_g": 0
+        },
+        "Min_Quantity": 175,
+        "Max_Quantity": 325,
+        "image_path": "data/final_images\\Hibiscus Drink.png"
+    },
+    {
+        "ID": "FOOD_AF_018",
+        "Name": "Ginger Tea",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "drink",
+        "Preparation": [
+            "Boil sliced ginger.",
+            "Steep for 10 mins.",
+            "Serve hot."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-000361",
+                "Ingredient_Name": "Ginger",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 300.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 250,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 2,
+            "Protein_g": 0,
+            "Carbs_g": 0.5,
+            "Fat_g": 0,
+            "Fiber_g": 0
+        },
+        "Min_Quantity": 175,
+        "Max_Quantity": 325,
+        "image_path": "data/final_images\\Ginger Tea.jpg"
+    },
+    {
+        "ID": "FOOD_AF_019",
+        "Name": "Bean Stew",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Boil beans until soft.",
+            "Cook tomato base.",
+            "Combine and simmer."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001720",
+                "Ingredient_Name": "Black Eyed Beans",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 120,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 436.0,
+            "Protein_g": 17.98,
+            "Carbs_g": 46.56,
+            "Fat_g": 21.05,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 84,
+        "Max_Quantity": 156,
+        "image_path": "data/final_images\\Bean Stew.png"
+    },
+    {
+        "ID": "FOOD_AF_020",
+        "Name": "Yam Fries",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Peel and slice yam.",
+            "Deep fry until golden."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001162",
+                "Ingredient_Name": "Yam",
+                "Quantity": 200.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 265.2,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 30.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Yam Fries.jpg"
+    },
+    {
+        "ID": "FOOD_AF_021",
+        "Name": "Okra Soup",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Chop okra finely.",
+            "Simmer in water until slimy.",
+            "Add oil and spices."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001114",
+                "Ingredient_Name": "Okra",
+                "Quantity": 100.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000974",
+                "Ingredient_Name": "Red Palm Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 250.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 176.8,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 20.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Okra Soup.jpg"
+    },
+    {
+        "ID": "FOOD_AF_022",
+        "Name": "Hard Boiled Eggs",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Place eggs in water.",
+            "Boil for 10 mins.",
+            "Cool and peel."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-000007",
+                "Ingredient_Name": "Egg",
+                "Quantity": 37.5,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 112.5,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 120,
+        "Unit": "g",
+        "Allergens": "Egg",
+        "Nutritional_Info": {
+            "Calories_kcal": 0.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 84,
+        "Max_Quantity": 156,
+        "image_path": "data/final_images\\Hard Boiled Eggs.jpg"
+    },
+    {
+        "ID": "FOOD_AF_023",
+        "Name": "Boiled Cassava",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Peel cassava.",
+            "Boil until soft."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001164",
+                "Ingredient_Name": "Cassava",
+                "Quantity": 90.91,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000064",
+                "Ingredient_Name": "Water",
+                "Quantity": 159.09,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 150,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 0.0,
+            "Protein_g": 0.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 0.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 105,
+        "Max_Quantity": 195,
+        "image_path": "data/final_images\\Boiled Cassava.png"
+    },
+    {
+        "ID": "FOOD_AF_024",
+        "Name": "Steamed Spinach",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Wash spinach.",
+            "Steam until wilted."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001560",
+                "Ingredient_Name": "Spinach",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 60,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 2,
+            "Protein_g": 0,
+            "Carbs_g": 0.5,
+            "Fat_g": 0,
+            "Fiber_g": 0
+        },
+        "Min_Quantity": 42,
+        "Max_Quantity": 78,
+        "image_path": "data/final_images\\Steamed Spinach.jpg"
+    },
+    {
+        "ID": "FOOD_AF_025",
+        "Name": "Beef Stew",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Slow cook beef with tomatoes.",
+            "Simmer until tender."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001333",
+                "Ingredient_Name": "Beef",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 559.0,
+            "Protein_g": 39.36,
+            "Carbs_g": 1.56,
+            "Fat_g": 42.58,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Beef Stew.png"
+    },
+    {
+        "ID": "FOOD_AF_026",
+        "Name": "Goat Stew",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "Simmer goat meat in spicy tomato base.",
+            "Cook until tender."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001333",
+                "Ingredient_Name": "Beef",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000388",
+                "Ingredient_Name": "Tomatoes",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000974",
+                "Ingredient_Name": "Red Palm Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 559.0,
+            "Protein_g": 39.36,
+            "Carbs_g": 1.56,
+            "Fat_g": 42.58,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Goat Stew.jpg"
+    },
+    {
+        "ID": "FOOD_AF_027",
+        "Name": "Grilled Pork",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Grill marinated pork over open flame."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001333",
+                "Ingredient_Name": "Beef",
+                "Quantity": 180.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 200,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 538.4,
+            "Protein_g": 46.8,
+            "Carbs_g": 0.0,
+            "Fat_g": 37.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 140,
+        "Max_Quantity": 260,
+        "image_path": "data/final_images\\Grilled Pork.jpg"
+    },
+    {
+        "ID": "FOOD_AF_028",
+        "Name": "Fried Chicken",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Season chicken.",
+            "Deep fry until crispy and cooked through."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001364",
+                "Ingredient_Name": "Chicken",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 180,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 512.7,
+            "Protein_g": 46.5,
+            "Carbs_g": 0.0,
+            "Fat_g": 35.4,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 126,
+        "Max_Quantity": 234,
+        "image_path": "data/final_images\\Fried Chicken.jpg"
+    },
+    {
+        "ID": "FOOD_AF_029",
+        "Name": "Liver Stew",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "soup",
+        "Preparation": [
+            "SautÃ© onions.",
+            "Add liver and simmer until tender."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001333",
+                "Ingredient_Name": "Beef",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000008",
+                "Ingredient_Name": "Onion",
+                "Quantity": 40.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 160,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 551.8,
+            "Protein_g": 39.0,
+            "Carbs_g": 0.0,
+            "Fat_g": 42.5,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 112,
+        "Max_Quantity": 208,
+        "image_path": "data/final_images\\Liver Stew.jpg"
+    },
+    {
+        "ID": "FOOD_AF_030",
+        "Name": "Meatballs",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Form beef into balls.",
+            "Grill or bake until browned."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001333",
+                "Ingredient_Name": "Beef",
+                "Quantity": 120.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000143",
+                "Ingredient_Name": "Red Onion",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 140,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 300.0,
+            "Protein_g": 31.2,
+            "Carbs_g": 0.0,
+            "Fat_g": 18.0,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 98,
+        "Max_Quantity": 182,
+        "image_path": "data/final_images\\Meatballs.png"
+    },
+    {
+        "ID": "FOOD_AF_SNACK_001",
+        "Name": "Rusks",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "snack",
+        "Preparation": [
+            "Bake until firm.",
+            "Cut into rectangular pieces.",
+            "Dry in low oven overnight."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001716",
+                "Ingredient_Name": "Maize Flour",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000017",
+                "Ingredient_Name": "Sugar",
+                "Quantity": 20.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000110",
+                "Ingredient_Name": "Butter",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 50,
+        "Unit": "g",
+        "Allergens": "Dairy",
+        "Nutritional_Info": {
+            "Calories_kcal": 509.1,
+            "Protein_g": 4.41,
+            "Carbs_g": 66.23,
+            "Fat_g": 26.64,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 35,
+        "Max_Quantity": 65,
+        "image_path": "data/final_images\\Rusks.png"
+    },
+    {
+        "ID": "FOOD_AF_PROT_001",
+        "Name": "Grilled Chicken",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Non-Veg"
+        ],
+        "Type": "main",
+        "Preparation": [
+            "Season chicken.",
+            "Grill over medium heat until juices run clear."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001364",
+                "Ingredient_Name": "Chicken",
+                "Quantity": 180.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 200,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 385.4,
+            "Protein_g": 55.8,
+            "Carbs_g": 0.0,
+            "Fat_g": 16.48,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 140,
+        "Max_Quantity": 260,
+        "image_path": "data/final_images\\Grilled Chicken.jpg"
+    },
+    {
+        "ID": "FOOD_AF_SIDE_001",
+        "Name": "Fried Plantains",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Peel and slice plantains.",
+            "Fry in hot oil until golden brown."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-001721",
+                "Ingredient_Name": "Plantain",
+                "Quantity": 150.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 30.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 150,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 448.2,
+            "Protein_g": 1.95,
+            "Carbs_g": 46.5,
+            "Fat_g": 30.6,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 105,
+        "Max_Quantity": 195,
+        "image_path": "data/final_images\\Fried Plantains.jpg"
+    },
+    {
+        "ID": "FOOD_AF_SIDE_002",
+        "Name": "Gomen",
+        "Cuisine": "African",
+        "Diet Type": [
+            "Veg"
+        ],
+        "Type": "side",
+        "Preparation": [
+            "Finely chop kale.",
+            "SautÃ© garlic in oil.",
+            "Add kale and cook until tender."
+        ],
+        "Warning": false,
+        "Ingredients": [
+            {
+                "Ingredient_ID": "ING-000345",
+                "Ingredient_Name": "Kale",
+                "Quantity": 100.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000057",
+                "Ingredient_Name": "Vegetable Oil",
+                "Quantity": 15.0,
+                "Unit": "g",
+                "Swapable": false
+            },
+            {
+                "Ingredient_ID": "ING-000030",
+                "Ingredient_Name": "Garlic",
+                "Quantity": 10.0,
+                "Unit": "g",
+                "Swapable": false
+            }
+        ],
+        "Quantity": 150,
+        "Unit": "g",
+        "Allergens": "None",
+        "Nutritional_Info": {
+            "Calories_kcal": 181.6,
+            "Protein_g": 4.3,
+            "Carbs_g": 8.8,
+            "Fat_g": 15.9,
+            "Fiber_g": 0.0
+        },
+        "Min_Quantity": 105,
+        "Max_Quantity": 195,
+        "image_path": "data/final_images\\Gomen.jpg"
+    }
+]
