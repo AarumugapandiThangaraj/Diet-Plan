@@ -126,9 +126,10 @@ def normalize_unit_name(unit: str) -> str:
     return u
 
 class ETLPipeline:
-    def __init__(self, data_root: Path, dry_run: bool = False, resolutions_file: Path = None):
+    def __init__(self, data_root: Path, dry_run: bool = False, resolutions_file: Path = None, test_schema: str = None):
         self.data_root = data_root
         self.dry_run = dry_run
+        self.test_schema = test_schema
         self.resolutions_file = resolutions_file
         self.resolutions = {}
         if resolutions_file and resolutions_file.exists():
@@ -219,11 +220,24 @@ class ETLPipeline:
                     item["_source_file"] = p.name
                     item["_cuisine"] = cuisine
 
-                    if f_id in self.foods_by_cuisine[cuisine]:
+                    original_f_id = f_id
+                    dupe_counter = 1
+                    is_exact_duplicate = False
+                    
+                    while f_id in self.foods_by_cuisine[cuisine]:
                         existing = self.foods_by_cuisine[cuisine][f_id]
-                        if existing.get("Name") != name:
-                            self.warnings.append(f"Duplicate ID Warning: Food ID '{f_id}' in cuisine {cuisine} defined multiple times with different names ('{existing.get('Name')}' vs '{name}') in {p.name}")
+                        if existing.get("Name") == name:
+                            # Exact same name, maybe same item loaded twice, just skip
+                            is_exact_duplicate = True
+                            break
+                        self.warnings.append(f"Auto-Resolving Duplicate ID: Food ID '{original_f_id}' in cuisine {cuisine} defined multiple times with different names ('{existing.get('Name')}' vs '{name}'). Appending suffix.")
+                        f_id = f"{original_f_id}_DUPE{dupe_counter}"
+                        item["ID"] = f_id
+                        dupe_counter += 1
+                        
+                    if is_exact_duplicate:
                         continue
+
                     self.foods_by_cuisine[cuisine][f_id] = item
 
             except Exception as e:
@@ -253,11 +267,34 @@ class ETLPipeline:
                     item["_source_file"] = p.name
                     item["_cuisine"] = cuisine
 
-                    if m_id in self.meals_by_cuisine[cuisine]:
+                    original_m_id = m_id
+                    dupe_counter = 1
+                    is_exact_duplicate = False
+                    
+                    while m_id in self.meals_by_cuisine[cuisine]:
                         existing = self.meals_by_cuisine[cuisine][m_id]
-                        if existing.get("Name") != name:
-                            self.warnings.append(f"Duplicate ID Warning: Meal ID '{m_id}' in cuisine {cuisine} defined multiple times with different names ('{existing.get('Name')}' vs '{name}') in {p.name}")
+                        if existing.get("Name") == name:
+                            is_exact_duplicate = True
+                            break
+                        
+                        # Try to resolve based on session to keep it meaningful
+                        sessions = item.get("Session") or item.get("sessions") or item.get("session") or []
+                        session_suffix = "DUPE"
+                        if sessions:
+                            s = sessions[0] if isinstance(sessions, list) else sessions
+                            if "bed" in str(s).lower():
+                                session_suffix = "BT"
+                            elif "mid" in str(s).lower():
+                                session_suffix = "MM"
+                        
+                        self.warnings.append(f"Auto-Resolving Duplicate ID: Meal ID '{original_m_id}' in cuisine {cuisine} defined multiple times with different names ('{existing.get('Name')}' vs '{name}'). Appending suffix.")
+                        m_id = f"{original_m_id}_{session_suffix}{dupe_counter}"
+                        item["ID"] = m_id
+                        dupe_counter += 1
+
+                    if is_exact_duplicate:
                         continue
+
                     self.meals_by_cuisine[cuisine][m_id] = item
 
             except Exception as e:
@@ -475,19 +512,34 @@ class ETLPipeline:
             return True
 
         # Database Insertion Phase
-        asyncio.run(self.write_to_db(image_mapping))
+        asyncio.run(self.write_to_db(image_mapping, self.test_schema))
         return True
 
-    async def write_to_db(self, image_mapping: Dict[str, str]):
+    async def write_to_db(self, image_mapping: Dict[str, str], test_schema: str = None):
         print("\nWriting verified datasets to database...")
+        target_schema = test_schema if test_schema else "Twellr_Nutri"
+        
+        # Schema translation mapping for SQLAlchemy models
+        translate_map = {"Twellr_Nutri": target_schema} if test_schema else None
+        
         # Create all tables cleanly by dropping the entire schema with CASCADE
-        async with engine.begin() as conn:
-            await conn.execute(text("DROP SCHEMA IF EXISTS \"Twellr_Nutri\" CASCADE"))
-            await conn.execute(text("CREATE SCHEMA \"Twellr_Nutri\""))
+        engine_options = engine
+        if translate_map:
+            engine_options = engine.execution_options(schema_translate_map=translate_map)
+            
+        async with engine_options.begin() as conn:
+            await conn.execute(text(f"DROP SCHEMA IF EXISTS \"{target_schema}\" CASCADE"))
+            await conn.execute(text(f"CREATE SCHEMA \"{target_schema}\""))
             await conn.run_sync(Base.metadata.create_all)
-        print("Database schemas created.")
+                
+        print(f"Database schemas created under {target_schema}.")
 
-        async with AsyncSessionLocal() as session:
+        # Setup session with schema translation
+        session_factory = AsyncSessionLocal
+        if translate_map:
+            session_factory = lambda: AsyncSessionLocal(bind=engine.execution_options(schema_translate_map=translate_map))
+
+        async with session_factory() as session:
             print("Seeding cuisines and meal sessions...")
             cuisine_db_map = {}
             for c_name in CUISINE_LIST:
@@ -748,6 +800,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="NutriLLM Ingestion & Migration CLI")
     parser.add_argument("--dry-run", action="store_true", help="Validate input datasets without altering DB")
     parser.add_argument("--resolve-conflicts", type=str, default=None, help="Path to JSON file containing conflict resolutions")
+    parser.add_argument("--test-schema", type=str, default=None, help="Schema name to use for testing instead of overriding Twellr_Nutri")
     args = parser.parse_args()
 
     data_root = Path(__file__).resolve().parents[2] / "migration_backup" / "original_json_datasets"
@@ -767,7 +820,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Warning: Failed to load image mapping: {e}")
 
-    pipeline = ETLPipeline(data_root, dry_run=args.dry_run, resolutions_file=resolutions_file)
+    pipeline = ETLPipeline(data_root, dry_run=args.dry_run, resolutions_file=resolutions_file, test_schema=args.test_schema)
     success = pipeline.run(image_mapping)
     if not success:
         sys.exit(1)
