@@ -56,6 +56,7 @@ class Food(Base, TimestampMixin):
         UniqueConstraint("cuisine_id", "client_food_id", name="uq_foods_cuisine_client"),
         CheckConstraint("min_quantity IS NULL OR max_quantity IS NULL OR min_quantity <= max_quantity", name="chk_foods_qty_bounds"),
         CheckConstraint("food_role IN ('base','side','snack','dessert','beverage','condiment','other')", name="chk_food_role"),
+        CheckConstraint("prep_time_minutes IS NULL OR prep_time_minutes >= 0", name="chk_prep_time"),
         {"schema": "Twellr_Nutri"}
     )
 
@@ -70,6 +71,7 @@ class Food(Base, TimestampMixin):
     preparation_ar: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     food_role: Mapped[Optional[str]] = mapped_column(String(30), nullable=True)
+    prep_time_minutes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     min_quantity: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
@@ -106,7 +108,6 @@ class Meal(Base, TimestampMixin):
     __tablename__ = "meals"
     __table_args__ = (
         UniqueConstraint("cuisine_id", "client_meal_id", name="uq_meals_cuisine_client"),
-        CheckConstraint("prep_time_minutes IS NULL OR prep_time_minutes >= 0", name="chk_prep_time"),
         {"schema": "Twellr_Nutri"}
     )
 
@@ -119,7 +120,6 @@ class Meal(Base, TimestampMixin):
     description_ar: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     
     meal_session_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meal_sessions.id", ondelete="RESTRICT"), nullable=False)
-    prep_time_minutes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     
     goal: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)
     goal_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")

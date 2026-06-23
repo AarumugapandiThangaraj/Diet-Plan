@@ -803,7 +803,7 @@ if __name__ == "__main__":
     parser.add_argument("--test-schema", type=str, default=None, help="Schema name to use for testing instead of overriding Twellr_Nutri")
     args = parser.parse_args()
 
-    data_root = Path(__file__).resolve().parents[2] / "migration_backup" / "original_json_datasets"
+    data_root = Path(__file__).resolve().parents[2] / "backup" / "original_json_datasets"
     resolutions_file = Path(args.resolve_conflicts) if args.resolve_conflicts else Path(__file__).resolve().parent / "conflict_resolutions.json"
 
     # Load image mapping
