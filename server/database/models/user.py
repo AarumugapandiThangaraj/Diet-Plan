@@ -95,18 +95,3 @@ class UserDailyIntake(Base, TimestampMixin):
     fat_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
     fiber_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
 
-class UserHydrationLog(Base):
-    __tablename__ = "user_hydration_log"
-    __table_args__ = (
-        CheckConstraint("glasses BETWEEN 1 AND 20", name="chk_glasses"),
-        CheckConstraint("volume_ml IS NULL OR volume_ml BETWEEN 1 AND 5000", name="chk_volume"),
-        CheckConstraint("source IN ('manual','imported','wearable')", name="chk_source"),
-        {"schema": "Twellr_Nutri"}
-    )
-
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    logged_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
-    glasses: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="1")
-    volume_ml: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
-    source: Mapped[str] = mapped_column(String(30), nullable=False, server_default="'manual'")

@@ -77,6 +77,7 @@ class DietPlanDay(Base, TimestampMixin):
     
     plan: Mapped["DietPlan"] = relationship("DietPlan", back_populates="days_rel")
     meals_rel: Mapped[list["DietPlanMeal"]] = relationship("DietPlanMeal", back_populates="day", cascade="all, delete-orphan")
+    hydration_logs_rel: Mapped[list["DietPlanDayHydrationLog"]] = relationship("DietPlanDayHydrationLog", back_populates="plan_day", cascade="all, delete-orphan")
 
 class DietPlanMeal(Base, TimestampMixin):
     __tablename__ = "diet_plan_meals"
@@ -178,3 +179,24 @@ class DietPlanMealConsumption(Base, TimestampMixin):
     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
     plan_meal: Mapped["DietPlanMeal"] = relationship("DietPlanMeal", back_populates="consumptions_rel")
+
+class DietPlanDayHydrationLog(Base):
+    __tablename__ = "diet_plan_day_hydration_log"
+    __table_args__ = (
+        CheckConstraint("glasses BETWEEN 1 AND 20", name="chk_glasses"),
+        CheckConstraint("volume_ml IS NULL OR volume_ml BETWEEN 1 AND 5000", name="chk_volume"),
+        CheckConstraint("source IN ('manual','imported','wearable')", name="chk_source"),
+        {"schema": "Twellr_Nutri"}
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+    plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plan_days.id", ondelete="CASCADE"), nullable=False)
+    
+    logged_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
+    glasses: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="1")
+    volume_ml: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    source: Mapped[str] = mapped_column(String(30), nullable=False, server_default="'manual'")
+
+    plan_day: Mapped["DietPlanDay"] = relationship("DietPlanDay", back_populates="hydration_logs_rel")
+
