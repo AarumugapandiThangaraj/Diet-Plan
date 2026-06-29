@@ -128,6 +128,14 @@ class Meal(Base, TimestampMixin):
     
     diet_types: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)
     diet_types_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")
+
+    # Persisted nutrition macros compiled during ETL/ingestion
+    calories_kcal: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    protein_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    carbs_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    fat_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    fiber_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    total_quantity: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
     
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
     deleted_at: Mapped[Optional[DateTime]] = mapped_column(DateTime(timezone=True), nullable=True)
