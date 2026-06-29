@@ -5,12 +5,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from studio.router import router as studio_router
 from studio.chat import router as chat_router
+from admin.router import router as admin_router
 
 from config.logging import setup_logging
 from config.settings import settings
 from exceptions.handlers import register_global_handlers, request_id_ctx_var
 from database.session import AsyncSessionLocal
-from database.models import Food, Cuisine, Meal
 from sqlalchemy import select
 
 import asyncio
@@ -163,6 +163,8 @@ async def get_food_image(food_id: str):
     Fetches the local image file path from the database metadata and streams it 
     to the client. Returns 404 if not found or if the file is missing on disk.
     """
+    from database.models import Food
+    
     image_url = None
     async with AsyncSessionLocal() as session:
         # Check if the food_id represents a direct filename with an image extension
@@ -204,4 +206,5 @@ async def get_food_image(food_id: str):
 
 app.include_router(studio_router)
 app.include_router(chat_router)
+app.include_router(admin_router)
 

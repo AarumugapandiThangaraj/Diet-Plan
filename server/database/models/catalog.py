@@ -1,4 +1,5 @@
 from typing import Optional, List
+from datetime import time
 from sqlalchemy import BigInteger, String, Boolean, DateTime, Float, Integer, JSON, ForeignKey, CheckConstraint, Time, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
@@ -23,7 +24,8 @@ class MealSession(Base, TimestampMixin):
     code: Mapped[str] = mapped_column(String(40), unique=True, nullable=False)
     name_en: Mapped[str] = mapped_column(String(60), nullable=False)
     name_ar: Mapped[Optional[str]] = mapped_column(String(60), nullable=True)
-    default_time: Mapped[Optional[str]] = mapped_column(Time, nullable=True)
+    start_time: Mapped[Optional[time]] = mapped_column(Time, nullable=True)
+    end_time: Mapped[Optional[time]] = mapped_column(Time, nullable=True)
     sort_order: Mapped[int] = mapped_column(Integer, nullable=False, server_default="0")
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
 

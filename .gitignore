@@ -84,3 +84,5 @@ Desktop.ini
 .DS_Store
 pyrefly.toml
 .diet-app
+client/package-lock.json
+

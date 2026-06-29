@@ -87,7 +87,8 @@ CREATE TABLE IF NOT EXISTS "Twellr_Nutri".meal_sessions (
     code          VARCHAR(40)   NOT NULL UNIQUE, -- doubt Purpose of the Code?
     name_en       VARCHAR(60)   NOT NULL,
     name_ar       VARCHAR(60)   NULL,
-    default_time  TIME          NULL,                       -- e.g. 08:30 for breakfast
+    start_time    TIME          NULL,
+    end_time      TIME          NULL,
     sort_order    SMALLINT      NOT NULL DEFAULT 0,         -- governs display order
     is_active     BOOL          NOT NULL DEFAULT TRUE,
     created_at    TIMESTAMPTZ   NOT NULL DEFAULT NOW(),
@@ -99,16 +100,16 @@ CREATE INDEX IF NOT EXISTS idx_msess_sort ON "Twellr_Nutri".meal_sessions (sort_
 -- meal_times list: ["early_morning", "breakfast", "mid_morning",
 -- "lunch", "evening", "dinner", "bedtime"] + "snack" used in the
 -- legacy meals dataset).
-INSERT INTO "Twellr_Nutri".meal_sessions (code, name_en, name_ar, default_time, sort_order) -- doubt Range of time in default time
+INSERT INTO "Twellr_Nutri".meal_sessions (code, name_en, name_ar, start_time, end_time, sort_order)
 VALUES
-    ('early_morning', 'Early Morning', 'الصباح الباكر', '06:30', 10),
-    ('breakfast',     'Breakfast',     'الإفطار',       '08:30', 20),
-    ('mid_morning',   'Mid Morning',   'منتصف الصباح',  '11:00', 30),
-    ('lunch',         'Lunch',         'الغداء',         '13:30', 40),
-    ('evening',       'Evening',       'المساء',         '17:00', 50),
-    ('snack',         'Snack',         'وجبة خفيفة',    '17:30', 55),
-    ('dinner',        'Dinner',        'العشاء',         '20:00', 60),
-    ('bedtime',       'Bedtime',       'وقت النوم',     '22:00', 70)
+    ('early_morning', 'Early Morning', 'الصباح الباكر', '05:00', '07:00', 10),
+    ('breakfast',     'Breakfast',     'الإفطار',       '07:30', '09:30', 20),
+    ('mid_morning',   'Mid Morning',   'منتصف الصباح',  '10:30', '11:30', 30),
+    ('lunch',         'Lunch',         'الغداء',         '12:30', '14:30', 40),
+    ('evening',       'Evening',       'المساء',         '16:00', '18:00', 50),
+    ('snack',         'Snack',         'وجبة خفيفة',    '17:00', '18:30', 55),
+    ('dinner',        'Dinner',        'العشاء',         '19:30', '21:30', 60),
+    ('bedtime',       'Bedtime',       'وقت النوم',     '21:30', '23:30', 70)
 ON CONFLICT (code) DO NOTHING;
 
 
