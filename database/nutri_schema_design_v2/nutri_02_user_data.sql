@@ -266,29 +266,6 @@ CREATE TABLE IF NOT EXISTS "Twellr_Nutri".user_daily_intake (
 CREATE INDEX IF NOT EXISTS idx_udi_user_date ON "Twellr_Nutri".user_daily_intake (user_id, intake_date DESC);
 
 
--- ────────────────────────────────────────────────────────────
--- 7. user_hydration_log   (NEW)
---    Each row = one tap on the hydration grid (Dashboard.png
---    "Hydration Status — 7-day grid"). Each tap logs one glass
---    (≈ 250 ml) at the current timestamp.
---
---    We store the timestamp (not just date) so the UI can:
---      • Render today's intake hour-by-hour.
---      • Backfill weekly totals (rendered as a 4×7 grid).
---      • Drive nudge notifications later.
--- ────────────────────────────────────────────────────────────
-CREATE TABLE IF NOT EXISTS "Twellr_Nutri".user_hydration_log (
-    id           BIGSERIAL     PRIMARY KEY,
-    user_id      UUID          NOT NULL
-        REFERENCES wellness_platform.users (id) ON DELETE CASCADE,
-    logged_at    TIMESTAMPTZ   NOT NULL DEFAULT NOW(),
-    glasses      SMALLINT      NOT NULL DEFAULT 1 CHECK (glasses BETWEEN 1 AND 20),
-    volume_ml    INT           NULL CHECK (volume_ml IS NULL OR volume_ml BETWEEN 1 AND 5000),
-    source       VARCHAR(30)   NOT NULL DEFAULT 'manual'
-        CHECK (source IN ('manual','imported','wearable'))
-);
-CREATE INDEX IF NOT EXISTS idx_uhl_user_at ON "Twellr_Nutri".user_hydration_log (user_id, logged_at DESC);
-CREATE INDEX IF NOT EXISTS idx_uhl_user_date ON "Twellr_Nutri".user_hydration_log (user_id, ((logged_at AT TIME ZONE 'UTC')::date) DESC);
 
 -- ============================================================
 -- End nutri_02_user_data.sql  (v2)

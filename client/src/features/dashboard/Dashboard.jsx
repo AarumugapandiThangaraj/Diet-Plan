@@ -15,12 +15,10 @@ export default function Dashboard({ onNavigateToStudio }) {
   const mealsScrollRef = React.useRef(null)
   const [scrollProgress, setScrollProgress] = useState(0)
 
-  const userIdentifier = profile.user_identifier || '00000000-0000-0000-0000-000000000000'
-
   const loadDashboardData = () => {
     setLoading(true)
     setError('')
-    fetchDashboardSummary(userIdentifier)
+    fetchDashboardSummary()
       .then((res) => {
         setData(res)
         // Convert milliliters to glasses for display (1 glass = 250 ml)
@@ -51,11 +49,15 @@ export default function Dashboard({ onNavigateToStudio }) {
     // 1. Optimistic Update
     setGlassesDrunk(glassesCount)
 
-    // Format today's date as YYYY-MM-DD local time
-    const todayStr = new Date().toLocaleDateString('en-CA')
+    const planDayId = data?.planDayId
+    if (!planDayId) {
+        console.error("No active plan day found to log hydration.")
+        setGlassesDrunk(prevGlasses)
+        return
+    }
 
     // 2. Call API to persist absolute value
-    logHydration(userIdentifier, todayStr, nextMl)
+    logHydration(planDayId, nextMl)
       .catch((err) => {
         console.error('Failed to log water consumption:', err)
         // Rollback optimistic state on error
@@ -66,7 +68,7 @@ export default function Dashboard({ onNavigateToStudio }) {
 
   useEffect(() => {
     loadDashboardData()
-  }, [userIdentifier])
+  }, [])
 
   const toggleMealConsumed = (mealId) => {
     const nextConsumed = !consumedMeals[mealId]
@@ -81,7 +83,7 @@ export default function Dashboard({ onNavigateToStudio }) {
     const todayStr = new Date().toLocaleDateString('en-CA') // outputs YYYY-MM-DD
 
     // 2. Call API to persist
-    logMealConsumption(userIdentifier, mealId, todayStr, nextConsumed)
+    logMealConsumption(mealId, todayStr, nextConsumed)
       .catch((err) => {
         console.error('Failed to log meal consumption:', err)
         // Rollback optimistic state on error

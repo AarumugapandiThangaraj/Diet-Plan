@@ -618,6 +618,13 @@ class ETLPipeline:
 
                 for f_id, item in c_foods.items():
                     resolved_img = image_mapping.get(f_id, "")
+                    
+                    raw_role = str(item.get("Type") or item.get("type") or "").strip().lower()
+                    if raw_role == "drink":
+                        raw_role = "beverage"
+                    if raw_role and raw_role not in ('base', 'side', 'snack', 'dessert', 'beverage', 'condiment', 'other'):
+                        raw_role = "other"
+                    
                     food_obj = Food(
                         cuisine_id=cuisine_obj.id,
                         client_food_id=f_id,
@@ -629,6 +636,7 @@ class ETLPipeline:
                         unit=str(item.get("Unit") or "g").strip(),
                         preparation_en="\n".join(item.get("Preparation")) if isinstance(item.get("Preparation"), list) else str(item.get("Preparation") or "").strip(),
                         notes=str(item.get("Notes") or "").strip(),
+                        food_role=raw_role or None,
                         image_url=resolved_img,
                         diet_types=item.get("Diet Type") or item.get("diet_type") or [],
                         supports=item.get("Supports") or []
@@ -730,7 +738,7 @@ class ETLPipeline:
 
                     # Add meal foods junctions
                     seen_foods = set()
-                    for food_ref in item.get("Foods") or food_ref.get("foods") or []:
+                    for food_ref in item.get("Foods") or item.get("foods") or []:
                         ref_id = str(food_ref.get("ID") or food_ref.get("id") or "").strip()
                         if not ref_id or ref_id in seen_foods:
                             continue

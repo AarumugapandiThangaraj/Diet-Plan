@@ -40,25 +40,33 @@ export function fetchSubstitutesForIngredients(ingredients, { signal } = {}) {
   })
 }
 
-export function fetchDashboardSummary(userId, { signal } = {}) {
-  return httpJson(`/api/studio/dashboard/${userId}`, {
+export function saveDietPlan(days, planData, profile, { signal } = {}) {
+  return httpJson('/api/studio/plan/save', {
+    method: 'POST',
+    body: { days, plan_data: planData, profile },
+    signal
+  })
+}
+
+export function fetchDashboardSummary({ signal } = {}) {
+  return httpJson(`/api/studio/dashboard`, {
     method: 'GET',
     signal
   })
 }
 
-export function logMealConsumption(userId, mealId, mealDate, consumed, { signal } = {}) {
+export function logMealConsumption(mealId, mealDate, consumed, { signal } = {}) {
   return httpJson('/api/studio/dashboard/meals/consume', {
     method: 'POST',
-    body: { userId, mealId, mealDate, consumed },
+    body: { mealId, mealDate, consumed },
     signal
   })
 }
 
-export function logHydration(userId, logDate, waterMl, { signal } = {}) {
+export function logHydration(planDayId, waterMl, { signal } = {}) {
   return httpJson('/api/studio/hydration', {
     method: 'POST',
-    body: { userId, logDate, waterMl },
+    body: { planDayId, waterMl },
     signal
   })
 }

@@ -85,4 +85,7 @@ Desktop.ini
 pyrefly.toml
 .diet-app
 client/package-lock.json
-
+*scratch_*.py
+*test_*.py
+*fix_*.py
+backend_summary.txt

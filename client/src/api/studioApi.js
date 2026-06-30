@@ -3,7 +3,8 @@ export {
   fetchStudioTargets,
   fetchRankedMeals,
   buildPlanFromSelection,
-  fetchSubstitutesForIngredients
+  fetchSubstitutesForIngredients,
+  saveDietPlan
 } from '../services/dietService.js'
 
 export {

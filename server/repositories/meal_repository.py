@@ -318,10 +318,6 @@ def _scale_food_instance(food_base: Dict[str, Any], *, quantity: float, unit: st
 
     min_qty = _to_number(food_base.get("min_quantity"), 0.0)
     max_qty = _to_number(food_base.get("max_quantity"), 0.0)
-    if base_qty > 0:
-        ratio = quantity / base_qty
-        min_qty = min_qty * ratio if min_qty > 0 else 0.0
-        max_qty = max_qty * ratio if max_qty > 0 else 0.0
 
     return {
         "id": food_base.get("id"),
@@ -472,6 +468,21 @@ def meal_index_by_id(cuisine: str) -> Dict[str, Dict[str, Any]]:
     """
     return {str(m["Meal_ID"]): m for m in load_master_meals(cuisine) if m.get("Meal_ID")}
 
+async def load_master_meals_async(cuisine: str) -> List[Dict[str, Any]]:
+    norm_cuisine = _normalize_cuisine(cuisine)
+    if norm_cuisine not in VALID_CUISINES:
+        raise ResourceNotFoundException(f"Cuisine '{cuisine}' is not supported.")
+        
+    if cuisine in _meals_cache:
+        return _meals_cache[cuisine]
+    data = await _load_meals_db(cuisine)
+    _meals_cache[cuisine] = data
+    return data
+
+async def get_meal_index_by_id_async(cuisine: str) -> Dict[str, Dict[str, Any]]:
+    meals = await load_master_meals_async(cuisine)
+    return {str(m["Meal_ID"]): m for m in meals if m.get("Meal_ID")}
+
 @lru_cache(maxsize=32)
 def ingredient_catalog_by_key(cuisine: str) -> Dict[str, Dict[str, Any]]:
     """
@@ -532,8 +543,8 @@ def food_catalog_by_key(cuisine: str) -> Dict[str, Dict[str, Any]]:
             per100g = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
             per_unit = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
         out[key] = {
-            "key": key,
             "id": entry.get("id"),
+            "key": key,
             "name": name,
             "count": 1,
             "unit_hint": unit,

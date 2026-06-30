@@ -2,7 +2,8 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import {
   fetchRankedMeals,
   buildPlanFromSelection,
-  fetchActivePlan
+  fetchActivePlan,
+  saveDietPlan
 } from '../services/dietService.js'
 import {
   fetchMealSwapOptions,
@@ -118,6 +119,14 @@ export function usePlanner(profile, targets, setTargets) {
     return out
   }, [selectedPoolsByTime])
 
+  const isSelectionComplete = useMemo(() => {
+    if (!selectedMealTimes.length) return false
+    return selectedMealTimes.every((mealTime) => {
+      const list = Array.isArray(selectedPoolsByTime?.[mealTime]) ? selectedPoolsByTime[mealTime] : []
+      return list.length >= 1
+    })
+  }, [selectedMealTimes, selectedPoolsByTime])
+
   useEffect(() => {
     if (view !== 'chooseMeals') return
     if (!selectedMealTimes.length) return
@@ -143,28 +152,35 @@ export function usePlanner(profile, targets, setTargets) {
     if (!result) return
     console.log('result', result)
   }, [result])
-  const updateResultMeal = (dayIndex, mealTime, patch) => {
-    setResult((prev) => {
-      if (!prev) return prev
-      const days = prev.days || 1
-      const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
+  const updateResultMeal = async (dayIndex, mealTime, patch) => {
+    if (!result) return
+    const days = result.days || 1
+    const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
+    let nextState;
 
-      if (days === 1) {
-        const plan = { ...(prev.plan || {}) }
-        const item = plan?.[mealTime]
-        if (!item) return prev
-        plan[mealTime] = { ...item, ...patch }
-        return withRecomputedTotals({ ...prev, plan })
-      }
-
-      const plans = Array.isArray(prev.plans) ? prev.plans.slice() : []
+    if (days === 1) {
+      const plan = { ...(result.plan || {}) }
+      const item = plan?.[mealTime]
+      if (!item) return
+      plan[mealTime] = { ...item, ...patch }
+      nextState = withRecomputedTotals({ ...result, plan })
+    } else {
+      const plans = Array.isArray(result.plans) ? result.plans.slice() : []
       const dayPlan = { ...(plans[safeDayIndex] || {}) }
       const item = dayPlan?.[mealTime]
-      if (!item) return prev
+      if (!item) return
       dayPlan[mealTime] = { ...item, ...patch }
       plans[safeDayIndex] = dayPlan
-      return withRecomputedTotals({ ...prev, plans })
-    })
+      nextState = withRecomputedTotals({ ...result, plans })
+    }
+
+    setResult(nextState)
+
+    try {
+      await saveDietPlan(nextState.days || 1, nextState, profile)
+    } catch (e) {
+      console.error("Failed to auto-save swapped plan:", e)
+    }
   }
 
   const getMealFromResult = (dayIndex, mealTime) => {
@@ -374,13 +390,13 @@ export function usePlanner(profile, targets, setTargets) {
     }
   }
 
-  const isSelectionComplete = useMemo(() => {
-    if (!selectedMealTimes.length) return false
-    return selectedMealTimes.every((mealTime) => {
-      const list = Array.isArray(selectedPoolsByTime?.[mealTime]) ? selectedPoolsByTime[mealTime] : []
-      return list.length >= 1
-    })
-  }, [selectedMealTimes, selectedPoolsByTime])
+  // const isSelectionComplete = useMemo(() => {
+  //   if (!selectedMealTimes.length) return false
+  //   return selectedMealTimes.every((mealTime) => {
+  //     const list = Array.isArray(selectedPoolsByTime?.[mealTime]) ? selectedPoolsByTime[mealTime] : []
+  //     return list.length >= 1
+  //   })
+  // }, [selectedMealTimes, selectedPoolsByTime])
 
   const goToMealChoices = (validationMsg) => {
     if (validationMsg) {
@@ -521,7 +537,7 @@ export function usePlanner(profile, targets, setTargets) {
     )
       .then((res) => {
         if (nonce !== generationNonceRef.current) return
-        
+
         // Fetch the active plan that was just saved by the backend
         return fetchActivePlan().then((activeData) => {
           if (nonce !== generationNonceRef.current) return

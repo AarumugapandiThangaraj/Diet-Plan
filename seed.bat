@@ -3,7 +3,7 @@ echo Starting Database Seeding Pipeline...
 
 cd server
 set PYTHONPATH=.
-python database\etl_import.py --test-schema Twellr_Nutri_V2
+python database\etl_import.py --test-schema Twellr_Nutri
 
 
 if %ERRORLEVEL% equ 0 (

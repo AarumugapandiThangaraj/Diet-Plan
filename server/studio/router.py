@@ -9,13 +9,14 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 
 from schemas import (
     StudioProfile,
     TargetsRequest,
     RankRequest,
     BuildPlanRequest,
+    SavePlanRequest,
     SubstitutesRequest,
     MealSwapOptionsRequest,
     MealSwapApplyRequest,
@@ -58,6 +59,7 @@ from services.ranking_service import session_target_macros
 from domain.scaling_formulas import ensure_macros, format_nutritive_values, scale_meal_to_targets
 from domain.substitutes import suggest_for_ingredients_text
 from domain.swap_engine import meal_for_plan_payload
+from utils.dependencies import get_current_user_id
 
 router = APIRouter(prefix="/api/studio")
 
@@ -280,7 +282,7 @@ def studio_rank(req: RankRequest):
         }
     }
 )
-async def studio_build_plan(req: BuildPlanRequest):
+async def studio_build_plan(req: BuildPlanRequest, user_id: str = Depends(get_current_user_id)):
     profile = _apply_cuisine(req.profile.model_dump())
     days = max(1, min(21, int(req.days)))
     targets = fetch_daily_targets_service(profile)
@@ -308,7 +310,8 @@ async def studio_build_plan(req: BuildPlanRequest):
             all_ids.add(mid)
 
     cuisine = profile.get("cuisineType") or "north_indian"
-    idx = meal_index_by_id(cuisine)
+    from repositories.meal_repository import get_meal_index_by_id_async
+    idx = await get_meal_index_by_id_async(cuisine)
 
     plans: List[Dict[str, Any]] = []
     totals_by_day: List[Dict[str, float]] = []
@@ -363,13 +366,38 @@ async def studio_build_plan(req: BuildPlanRequest):
     stripped_payload = strip_plan_payload(res_payload)
 
     try:
-        await save_user_plan_service("00000000-0000-0000-0000-000000000000", days, stripped_payload, profile)
+        await save_user_plan_service(user_id, days, stripped_payload, profile)
     except Exception as e:
         import logging, traceback
         logging.getLogger("app.studio").error(f"Failed to auto-persist generated plan: {e}\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail="Failed to save plan.")
 
     return {"success": True, "message": "Plan built successfully."}
+
+@router.post(
+    "/plan/save",
+    response_model=dict,
+    tags=["Planner"],
+    summary="Save User Diet Plan",
+    description="Manually persists the full diet plan state to the database, overwriting the currently active plan. Used to sync the database after swapping foods or meals.",
+    responses={
+        200: {
+            "description": "Plan saved successfully."
+        },
+        500: {
+            "description": "Failed to save plan.",
+            "model": ErrorResponse
+        }
+    }
+)
+async def studio_save_plan(req: SavePlanRequest, user_id: str = Depends(get_current_user_id)):
+    try:
+        await save_user_plan_service(user_id, req.days, req.plan_data, req.profile)
+    except Exception as e:
+        import logging, traceback
+        logging.getLogger("app.studio").error(f"Failed to persist plan on /plan/save: {e}\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail="Failed to save plan.")
+    return {"success": True, "message": "Plan saved successfully."}
 
 @router.get(
     "/plan/active",
@@ -387,8 +415,8 @@ async def studio_build_plan(req: BuildPlanRequest):
         }
     }
 )
-async def studio_get_active_plan():
-    plan = await get_active_user_plan_service("00000000-0000-0000-0000-000000000000")
+async def studio_get_active_plan(user_id: str = Depends(get_current_user_id)):
+    plan = await get_active_user_plan_service(user_id)
     if not plan:
         raise HTTPException(status_code=404, detail="No active plan found.")
     return plan["plan_payload"]
@@ -734,13 +762,13 @@ def studio_substitutes(req: SubstitutesRequest):
 
 
 @router.get(
-    "/dashboard/{user_id}",
+    "/dashboard",
     response_model=DashboardResponse,
     tags=["Planner"],
     summary="Get Phase 1 Dashboard Summary",
     description="Returns daily targets, health metrics, water goals, and today's scheduled meals with calories remaining.",
 )
-async def studio_dashboard(user_id: str):
+async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
     
     plan = await get_active_user_plan_service(user_id)
     
@@ -778,13 +806,45 @@ async def studio_dashboard(user_id: str):
         "weightDeltaKg": 0,
     }
     
-    # Fetch hydration consumption log
     from datetime import date
+    today_date = date.today()
+    
+    start_date = plan["start_date"]
+    if isinstance(start_date, str):
+        start_date = date.fromisoformat(start_date)
+        
+    day_index = (today_date - start_date).days
+    
+    today_meals_dict = {}
+    total_days = plan_payload.get("days") or 1
+    current_day = 1
+    plan_day_id = None
+    
+    if "plan" in plan_payload:
+        today_meals_dict = plan_payload["plan"]
+        current_day = 1
+        total_days = 1
+        if "dayIds" in plan_payload and plan_payload["dayIds"]:
+            plan_day_id = plan_payload["dayIds"][0]
+    elif "plans" in plan_payload and isinstance(plan_payload["plans"], list) and plan_payload["plans"]:
+        plans_list = plan_payload["plans"]
+        total_days = len(plans_list)
+        idx = max(0, min(total_days - 1, day_index))
+        if day_index >= total_days or day_index < 0:
+            idx = day_index % total_days
+        today_meals_dict = plans_list[idx]
+        current_day = idx + 1
+        if "dayIds" in plan_payload and idx < len(plan_payload["dayIds"]):
+            plan_day_id = plan_payload["dayIds"][idx]
+
+    # Fetch hydration consumption log
     from repositories.user_water_log_repository import get_water_consumption_log
     
-    today_date = date.today()
-    water_log = await get_water_consumption_log(user_id, today_date)
-    consumed_water_ml = water_log.water_ml if water_log else 0
+    consumed_water_ml = 0
+    if plan_day_id:
+        water_log = await get_water_consumption_log(user_id, plan_day_id)
+        consumed_water_ml = water_log.water_ml if water_log else 0
+        
     target_water_l = targets.get("waterL", 0)
     target_water_ml = target_water_l * 1000
     completion_percentage = int((consumed_water_ml / target_water_ml) * 100) if target_water_ml > 0 else 0
@@ -794,30 +854,6 @@ async def studio_dashboard(user_id: str):
         "consumedWaterMl": consumed_water_ml,
         "completionPercentage": completion_percentage
     }
-    
-    plan_payload = plan["plan_payload"]
-    start_date = plan["start_date"]
-    if isinstance(start_date, str):
-        start_date = date.fromisoformat(start_date)
-        
-    day_index = (date.today() - start_date).days
-    
-    today_meals_dict = {}
-    total_days = plan_payload.get("days") or 1
-    current_day = 1
-
-    if "plan" in plan_payload:
-        today_meals_dict = plan_payload["plan"]
-        current_day = 1
-        total_days = 1
-    elif "plans" in plan_payload and isinstance(plan_payload["plans"], list) and plan_payload["plans"]:
-        plans_list = plan_payload["plans"]
-        total_days = len(plans_list)
-        idx = max(0, min(total_days - 1, day_index))
-        if day_index >= total_days or day_index < 0:
-            idx = day_index % total_days
-        today_meals_dict = plans_list[idx]
-        current_day = idx + 1
 
     # Fetch meal consumption logs for the user on today's date
     from repositories.user_meal_log_repository import get_meal_consumption_logs
@@ -883,6 +919,7 @@ async def studio_dashboard(user_id: str):
         "cuisineType": "",
         "currentDay": current_day,
         "totalDays": total_days,
+        "planDayId": plan_day_id,
     }
 
 
@@ -893,7 +930,7 @@ async def studio_dashboard(user_id: str):
     summary="Toggle Meal Consumption Log",
     description="Records the consumed status of a meal in the database.",
 )
-async def studio_consume_meal(req: ConsumeMealRequest):
+async def studio_consume_meal(req: ConsumeMealRequest, user_id: str = Depends(get_current_user_id)):
     from datetime import date
     from repositories.user_meal_log_repository import save_meal_consumption_log
     
@@ -903,7 +940,7 @@ async def studio_consume_meal(req: ConsumeMealRequest):
         raise HTTPException(status_code=400, detail="Invalid date format. Expected YYYY-MM-DD.")
         
     log_obj = await save_meal_consumption_log(
-        user_identifier=req.userId,
+        user_identifier=user_id,
         meal_id=req.mealId,
         meal_date=meal_date_parsed,
         consumed=req.consumed
@@ -919,32 +956,26 @@ async def studio_consume_meal(req: ConsumeMealRequest):
     response_model=LogHydrationResponse,
     tags=["Planner"],
     summary="Log or Update Today's Water Consumption",
-    description="UPSERTs the water consumption log (in milliliters) for a user and date.",
+    description="UPSERTs the water consumption log (in milliliters) for a user and diet plan day.",
 )
-async def studio_log_hydration(req: LogHydrationRequest):
-    from datetime import date
+async def studio_log_hydration(req: LogHydrationRequest, user_id: str = Depends(get_current_user_id)):
     from repositories.user_water_log_repository import save_water_consumption_log
     
-    try:
-        log_date_parsed = date.fromisoformat(req.logDate)
-    except ValueError:
-        raise HTTPException(status_code=400, detail="Invalid date format. Expected YYYY-MM-DD.")
-        
     # Query active plan to fetch targets (waterL)
-    plan = await get_active_user_plan_service(req.userId)
+    plan = await get_active_user_plan_service(user_id)
     if plan and "plan_payload" in plan and "targets" in plan["plan_payload"]:
         target_water_l = plan["plan_payload"]["targets"].get("waterL", 2.0)
     else:
         # Fallback target calculation using minimal profile
-        profile_dict = {"user_identifier": req.userId}
+        profile_dict = {"user_identifier": user_id}
         targets = fetch_daily_targets_service(profile_dict)
         target_water_l = targets.get("waterL", 2.0)
         
     target_water_ml = target_water_l * 1000
     
     log_obj = await save_water_consumption_log(
-        user_identifier=req.userId,
-        log_date=log_date_parsed,
+        user_identifier=user_id,
+        plan_day_id=req.planDayId,
         water_ml=req.waterMl
     )
     
@@ -955,4 +986,3 @@ async def studio_log_hydration(req: LogHydrationRequest):
         "consumedWaterMl": log_obj.water_ml,
         "completionPercentage": completion_percentage
     }
-

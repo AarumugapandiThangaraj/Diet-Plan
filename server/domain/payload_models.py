@@ -19,12 +19,12 @@ class MacroStruct(BaseModel):
 
 class IngredientPayload(BaseModel):
     id: Optional[Any] = None
-    name: str = ""
+    name: Optional[str] = None
     quantity: float = 0.0
-    unit: str = "g"
+    unit: Optional[str] = None
     macros: MacroStruct = Field(default_factory=MacroStruct)
-    caution: str = ""
-    notes: str = ""
+    caution: Optional[str] = None
+    notes: Optional[str] = None
     swapable: bool = False
     
     # allow arbitrary extra fields like per100g or per_unit for legacy backward compatibility
@@ -32,18 +32,18 @@ class IngredientPayload(BaseModel):
 
 class FoodPayload(BaseModel):
     id: Optional[str] = None
-    name: str = ""
+    name: Optional[str] = None
     quantity: float = 0.0
-    unit: str = "g"
+    unit: Optional[str] = None
     min_quantity: float = 0.0
     max_quantity: float = 0.0
     ingredients_struct: List[IngredientPayload] = Field(default_factory=list)
     macros: MacroStruct = Field(default_factory=MacroStruct)
     supports: List[str] = Field(default_factory=list)
-    type: str = ""
-    preparation: str = ""
-    description: str = ""
-    image_url: str = ""
+    type: Optional[str] = None
+    preparation: Optional[str] = None
+    description: Optional[str] = None
+    image_url: Optional[str] = None
     
     model_config = ConfigDict(extra="allow")
     
@@ -61,10 +61,10 @@ class FoodPayload(BaseModel):
 
 class MealPayload(BaseModel):
     id: Optional[str] = Field(default=None, alias="Meal_ID")
-    meal_name: str = ""
-    meal_time: str = ""
-    cuisine_type: str = ""
-    image_ID: str = ""
+    meal_name: Optional[str] = None
+    meal_time: Optional[str] = None
+    cuisine_type: Optional[str] = None
+    image_ID: Optional[str] = None
     macros: MacroStruct = Field(default_factory=MacroStruct, alias="_macros")
     foods_struct: List[FoodPayload] = Field(default_factory=list)
     

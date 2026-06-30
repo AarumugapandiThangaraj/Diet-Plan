@@ -70,3 +70,11 @@ FAT_PERCENT_RANGE = {"min": 0.2, "max": 0.35}
 FIBER_G_PER_1000_KCAL = 14
 FIBER_MIN_G_PER_DAY = 25
 WATER_ML_PER_KG_RANGE = {"min": 30, "max": 35}
+
+MACRO_ERROR_WEIGHTS: Dict[str, float] = {
+    "caloriesKcal": 1.8,
+    "proteinG": 1.2,
+    "carbsG": 0.7,
+    "fatG": 0.8,
+    "fiberG": 0.4,
+}

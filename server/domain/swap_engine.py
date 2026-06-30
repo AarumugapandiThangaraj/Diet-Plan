@@ -9,6 +9,7 @@ from domain.scaling_formulas import (
     recompute_meal_from_ingredients,
 )
 from utils.normalizers import normalize_food_key, normalize_ingredient_key
+from config.constants import MACRO_ERROR_WEIGHTS
 
 def _ratio(a: str, b: str) -> float:
     return SequenceMatcher(None, str(a or "").lower(), str(b or "").lower()).ratio()
@@ -19,13 +20,7 @@ def _clamp(x: float, low: float, high: float) -> float:
 def _macro_error(actual: Dict[str, Any], target: Dict[str, Any]) -> float:
     a = ensure_macros(actual)
     t = ensure_macros(target)
-    weights = {
-        "caloriesKcal": 1.8,
-        "proteinG": 1.2,
-        "carbsG": 0.7,
-        "fatG": 0.8,
-        "fiberG": 0.4,
-    }
+    weights = MACRO_ERROR_WEIGHTS
 
     def rel_err(av: float, tv: float) -> float:
         if tv <= 0:

@@ -32,6 +32,7 @@ from config.constants import MEAL_TIME_ORDER
 from repositories.meal_repository import (
     meal_index_by_id,
     food_catalog_by_key,
+    food_index_by_id,
     ingredient_catalog_by_key,
     build_food_instance
 )
@@ -146,6 +147,7 @@ def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 
     source_name = str(source_food.get("name") or "")
 
     catalog = food_catalog_by_key(cuisine)
+    foods_by_id = food_index_by_id(cuisine)
     keys = _candidate_food_keys_for_source(source_name, cuisine=cuisine)
 
     options: List[Dict[str, Any]] = []
@@ -153,7 +155,13 @@ def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 
         entry = catalog.get(key)
         if not entry:
             continue
-        replacement = _replacement_food_from_catalog(entry, source_food)
+            
+        food_id = entry.get("id")
+        original_food_entry = foods_by_id.get(food_id) if food_id else None
+        if not original_food_entry:
+            continue
+            
+        replacement = _replacement_food_from_catalog(original_food_entry, source_food)
         if not replacement:
             continue
 

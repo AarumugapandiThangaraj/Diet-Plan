@@ -4,6 +4,7 @@ from sqlalchemy import select, update
 from sqlalchemy.orm import selectinload
 from database.session import AsyncSessionLocal
 from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, DietPlanMealFoodIngredient, MealSession, UserHealthProfile
+from utils.normalizers import _normalize_cuisine
 from sqlalchemy.exc import SQLAlchemyError
 from exceptions.repository import RepositoryException
 import uuid
@@ -76,7 +77,7 @@ async def load_user_plan(user_identifier: str) -> Optional[dict]:
                                     }
                                 })
                             foods_struct.append({
-                                "id": pmf.food_id,
+                                "id": pmf.food.client_food_id if pmf.food else pmf.food_id,
                                 "name": pmf.food.name_en if pmf.food else "",
                                 "preparation": pmf.food.preparation_en if pmf.food else "",
                                 "quantity": pmf.quantity,
@@ -110,6 +111,7 @@ async def load_user_plan(user_identifier: str) -> Optional[dict]:
                     
                 plan_payload = {
                     "days": plan_obj.days, # we named it days
+                    "dayIds": [str(d.id) for d in days_sorted],
                     "targets": {
                         "dailyCalories": float(plan_obj.target_calories_kcal or 0),
                         "proteinG": float(plan_obj.target_protein_g or 0),
@@ -158,15 +160,20 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
             sessions_res = await session.execute(sessions_stmt)
             sessions_map = {s.code: s.id for s in sessions_res.scalars().all()}
             
-            # fetch meals and foods to map client_ids to bigints
-            from database.models import Meal, Food
-            meal_stmt = select(Meal.client_meal_id, Meal.id)
+            # fetch cuisines
+            from database.models import Cuisine, Meal, Food
+            cuisine_stmt = select(Cuisine.code, Cuisine.id)
+            cuisine_res = await session.execute(cuisine_stmt)
+            cuisine_map = {code.lower(): pk_id for code, pk_id in cuisine_res.all()}
+
+            # fetch meals and foods to map (cuisine_id, client_ids) to bigints
+            meal_stmt = select(Meal.cuisine_id, Meal.client_meal_id, Meal.id)
             meal_res = await session.execute(meal_stmt)
-            meals_map = {client_id: pk_id for client_id, pk_id in meal_res.all()}
+            meals_map = {(c_id, client_id): pk_id for c_id, client_id, pk_id in meal_res.all()}
             
-            food_stmt = select(Food.client_food_id, Food.id)
+            food_stmt = select(Food.cuisine_id, Food.client_food_id, Food.id)
             food_res = await session.execute(food_stmt)
-            foods_map = {client_id: pk_id for client_id, pk_id in food_res.all()}
+            foods_map = {(c_id, client_id): pk_id for c_id, client_id, pk_id in food_res.all()}
 
             # archive old plans
             stmt = select(DietPlan).filter_by(user_id=uid, status='active')
@@ -179,6 +186,10 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
             totals = plan_payload.get("totalsAll") or plan_payload.get("totals", {})
             
             health_profile_id = None
+            
+            def _int(v): return int(float(v)) if v is not None and str(v).strip() else None
+            def _float(v): return float(v) if v is not None and str(v).strip() else None
+
             if profile_data:
                 await session.execute(
                     update(UserHealthProfile).where(UserHealthProfile.user_id == uid).values(is_latest=False)
@@ -194,16 +205,16 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
 
                 uhp = UserHealthProfile(
                     user_id=uid,
-                    age=profile_data.get("age"),
+                    age=_int(profile_data.get("age")),
                     gender=profile_data.get("gender"),
-                    height_cm=profile_data.get("heightCm"),
-                    weight_kg=profile_data.get("weightKg"),
-                    target_weight_kg=targets.get("targetWeightKg"),
-                    bmi=targets.get("bmi"),
+                    height_cm=_float(profile_data.get("heightCm")),
+                    weight_kg=_float(profile_data.get("weightKg")),
+                    target_weight_kg=_float(targets.get("targetWeightKg")),
+                    bmi=_float(targets.get("bmi")),
                     bmi_category=targets.get("bmiCategory"),
-                    bmr_kcal=targets.get("bmr"),
-                    tdee_kcal=targets.get("tdee"),
-                    target_water_l=targets.get("waterL"),
+                    bmr_kcal=_int(targets.get("bmr")),
+                    tdee_kcal=_int(targets.get("tdee")),
+                    target_water_l=_float(targets.get("waterL")),
                     activity_level=mapped_activity,
                     is_latest=True
                 )
@@ -214,32 +225,32 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
             plan_obj = DietPlan(
                 user_id=uid,
                 health_profile_id=health_profile_id,
-                days=int(plan_payload.get("days", 1)),
+                days=_int(plan_payload.get("days", 1)),
                 status='active',
-                target_calories_kcal=int(targets.get("dailyCalories", 0)),
-                target_protein_g=targets.get("proteinG"),
-                target_protein_g_min=targets.get("proteinGMin"),
-                target_protein_g_max=targets.get("proteinGMax"),
-                target_carbs_g=targets.get("carbsG"),
-                target_carbs_g_min=targets.get("carbsGMin"),
-                target_carbs_g_max=targets.get("carbsGMax"),
-                target_fat_g=targets.get("fatG"),
-                target_fat_g_min=targets.get("fatGMin"),
-                target_fat_g_max=targets.get("fatGMax"),
-                target_fiber_g=targets.get("fiberG"),
-                target_water_l=targets.get("waterL"),
-                target_water_l_min=targets.get("waterLMin"),
-                target_water_l_max=targets.get("waterLMax"),
-                bmi_snapshot=targets.get("bmi"),
+                target_calories_kcal=_int(targets.get("dailyCalories", 0)),
+                target_protein_g=_float(targets.get("proteinG")),
+                target_protein_g_min=_float(targets.get("proteinGMin")),
+                target_protein_g_max=_float(targets.get("proteinGMax")),
+                target_carbs_g=_float(targets.get("carbsG")),
+                target_carbs_g_min=_float(targets.get("carbsGMin")),
+                target_carbs_g_max=_float(targets.get("carbsGMax")),
+                target_fat_g=_float(targets.get("fatG")),
+                target_fat_g_min=_float(targets.get("fatGMin")),
+                target_fat_g_max=_float(targets.get("fatGMax")),
+                target_fiber_g=_float(targets.get("fiberG")),
+                target_water_l=_float(targets.get("waterL")),
+                target_water_l_min=_float(targets.get("waterLMin")),
+                target_water_l_max=_float(targets.get("waterLMax")),
+                bmi_snapshot=_float(targets.get("bmi")),
                 bmi_category_snapshot=targets.get("bmiCategory"),
-                bmr_kcal_snapshot=targets.get("bmr"),
-                tdee_kcal_snapshot=targets.get("tdee"),
+                bmr_kcal_snapshot=_int(targets.get("bmr")),
+                tdee_kcal_snapshot=_int(targets.get("tdee")),
                 activity_level_snapshot=profile_data.get("activityLevel") if profile_data else None,
-                totals_calories_kcal=totals.get("caloriesKcal"),
-                totals_protein_g=totals.get("proteinG"),
-                totals_carbs_g=totals.get("carbsG"),
-                totals_fat_g=totals.get("fatG"),
-                totals_fiber_g=totals.get("fiberG"),
+                totals_calories_kcal=_float(totals.get("caloriesKcal")),
+                totals_protein_g=_float(totals.get("proteinG")),
+                totals_carbs_g=_float(totals.get("carbsG")),
+                totals_fat_g=_float(totals.get("fatG")),
+                totals_fiber_g=_float(totals.get("fiberG")),
                 starts_on=start_date,
                 ends_on=end_date
             )
@@ -268,10 +279,13 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     
                     client_meal_id = meal_data.get("Meal_ID")
                     
+                    meal_cuisine_name = _normalize_cuisine(meal_data.get("cuisine_type") or profile_data.get("cuisineType") or "continental")
+                    c_id = cuisine_map.get(meal_cuisine_name)
+
                     meal_obj = DietPlanMeal(
                         plan_day_id=day_obj.id,
                         meal_session_id=sessions_map[session_code],
-                        meal_id=meals_map.get(client_meal_id) if client_meal_id else None,
+                        meal_id=meals_map.get((c_id, str(client_meal_id))) if c_id and client_meal_id else None,
                         calories_kcal=meal_macros.get("caloriesKcal"),
                         protein_g=meal_macros.get("proteinG"),
                         carbs_g=meal_macros.get("carbsG"),
@@ -283,11 +297,11 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     
                     for food_data in meal_data.get("foods_struct", []):
                         f_macros = food_data.get("macros", {})
-                        client_food_id = food_data.get("id")
+                        client_food_id = str(food_data.get("id")) if food_data.get("id") is not None else None
                         
                         food_obj = DietPlanMealFood(
                             plan_meal_id=meal_obj.id,
-                            food_id=foods_map.get(client_food_id) if client_food_id else None,
+                            food_id=foods_map.get((c_id, client_food_id)) if c_id and client_food_id else None,
                             quantity=food_data.get("quantity", 0),
                             unit=food_data.get("unit", "g"),
                             calories_kcal=f_macros.get("caloriesKcal"),

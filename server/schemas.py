@@ -223,6 +223,23 @@ class BuildPlanRequest(BaseModel):
     )
 
 
+class SavePlanRequest(BaseModel):
+    days: int = Field(
+        ...,
+        ge=1,
+        le=21,
+        description="Number of days in the diet plan."
+    )
+    plan_data: Dict[str, Any] = Field(
+        ...,
+        description="The full modified plan dictionary."
+    )
+    profile: Optional[Dict[str, Any]] = Field(
+        default=None,
+        description="Optional user profile data to attach."
+    )
+
+
 class SubstitutesRequest(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
@@ -980,10 +997,10 @@ class DashboardResponse(BaseModel):
     cuisineType: str
     currentDay: int
     totalDays: int
+    planDayId: Optional[str] = None
 
 
 class ConsumeMealRequest(BaseModel):
-    userId: str
     mealId: str
     mealDate: str  # YYYY-MM-DD format string
     consumed: bool
@@ -995,8 +1012,7 @@ class ConsumeMealResponse(BaseModel):
 
 
 class LogHydrationRequest(BaseModel):
-    userId: str
-    logDate: str  # YYYY-MM-DD format string
+    planDayId: str
     waterMl: int
 
 

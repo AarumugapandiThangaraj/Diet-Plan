@@ -20,6 +20,7 @@ from .plan import (
     DietPlanMealFood,
     DietPlanMealFoodIngredient,
     DietPlanMealConsumption,
+    DietPlanDayHydrationLog,
 )
 
 # User models (profiles, health data)
@@ -28,7 +29,6 @@ from .user import (
     UserGoal,
     UserWeightLog,
     UserDailyIntake,
-    UserHydrationLog,
 )
 
 # Preference models
@@ -62,7 +62,7 @@ __all__ = [
     'UserGoal',
     'UserWeightLog',
     'UserDailyIntake',
-    'UserHydrationLog',
+    'DietPlanDayHydrationLog',
     # Preferences
     'UserPreference',
     # Concerns

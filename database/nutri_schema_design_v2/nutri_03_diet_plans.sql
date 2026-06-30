@@ -321,6 +321,26 @@ CREATE TABLE IF NOT EXISTS "Twellr_Nutri".diet_plan_meal_consumption (
 CREATE INDEX IF NOT EXISTS idx_dpmc_user_date ON "Twellr_Nutri".diet_plan_meal_consumption (user_id, consumed_date DESC);
 CREATE INDEX IF NOT EXISTS idx_dpmc_state     ON "Twellr_Nutri".diet_plan_meal_consumption (state);
 
+-- ────────────────────────────────────────────────────────────
+-- 8. diet_plan_day_hydration_log   (NEW)
+--    Hydration logs tied to a specific day in the diet plan.
+--    Each row = one tap on the hydration grid (≈ 250 ml).
+-- ────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS "Twellr_Nutri".diet_plan_day_hydration_log (
+    id           UUID          PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id      UUID          NOT NULL
+        REFERENCES wellness_platform.users (id) ON DELETE CASCADE,
+    plan_day_id  UUID          NOT NULL
+        REFERENCES "Twellr_Nutri".diet_plan_days (id) ON DELETE CASCADE,
+    logged_at    TIMESTAMPTZ   NOT NULL DEFAULT NOW(),
+    glasses      SMALLINT      NOT NULL DEFAULT 1 CHECK (glasses BETWEEN 1 AND 20),
+    volume_ml    INT           NULL CHECK (volume_ml IS NULL OR volume_ml BETWEEN 1 AND 5000),
+    source       VARCHAR(30)   NOT NULL DEFAULT 'manual'
+        CHECK (source IN ('manual','imported','wearable'))
+);
+CREATE INDEX IF NOT EXISTS idx_dpdhl_plan_day ON "Twellr_Nutri".diet_plan_day_hydration_log (plan_day_id);
+CREATE INDEX IF NOT EXISTS idx_dpdhl_user_at ON "Twellr_Nutri".diet_plan_day_hydration_log (user_id, logged_at DESC);
+
 -- ============================================================
 -- End nutri_03_diet_plans.sql  (v2)
 -- ============================================================

@@ -35,11 +35,11 @@ export default function PlanStudio({ onNavigateToDashboard }) {
     selectedPoolsByTime,
     updateResultMeal,
     handleSwapWholeMeal,
-    handleSwapFood,
     handleSwapIngredient,
     closeSwapModal,
     justGenerated,
-    setJustGenerated
+    setJustGenerated,
+    isSelectionComplete
   } = usePlannerContext()
 
   // Scroll to top instantly when switching step views
@@ -271,8 +271,8 @@ export default function PlanStudio({ onNavigateToDashboard }) {
         <button
           type="button"
           className={`stepBtn ${view === 'selectedMeals' ? 'active' : ''}`}
-          onClick={() => view !== 'inputs' && setView('selectedMeals')}
-          disabled={view === 'inputs'}
+          onClick={() => view !== 'inputs' && isSelectionComplete && setView('selectedMeals')}
+          disabled={view === 'inputs' || !isSelectionComplete}
         >
           3. Arrange days 📅
         </button>
