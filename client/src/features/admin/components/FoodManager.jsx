@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Select from 'react-select';
 import { adminApi } from '../adminApi';
 
 export default function FoodManager() {
@@ -8,6 +9,7 @@ export default function FoodManager() {
   const [initialLoading, setInitialLoading] = useState(true);
   const [cuisines, setCuisines] = useState([]);
   const [ingredients, setIngredients] = useState([]);
+  const [foodRoles, setFoodRoles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -23,7 +25,7 @@ export default function FoodManager() {
     preparation_en: '',
     preparation_ar: '',
     notes: '',
-    food_role: 'base',
+    food_role_id: '',
     prep_time_minutes: null,
     quantity: 1,
     min_quantity: null,
@@ -77,12 +79,14 @@ export default function FoodManager() {
     setInitialLoading(true);
     setError('');
     try {
-      const [cuisinesData, ingredientsData] = await Promise.all([
+      const [cuisinesData, ingredientsData, foodRolesData] = await Promise.all([
         adminApi.cuisines.list(1000),
-        adminApi.ingredients.list(50000, 0, false)
+        adminApi.ingredients.list(50000, 0, false),
+        adminApi.foodRoles.list(1000)
       ]);
       setCuisines(cuisinesData.items);
       setIngredients(ingredientsData.items);
+      setFoodRoles(foodRolesData.items);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -158,7 +162,7 @@ export default function FoodManager() {
       preparation_en: '',
       preparation_ar: '',
       notes: '',
-      food_role: 'base',
+      food_role_id: '',
       prep_time_minutes: null,
       quantity: 1,
       min_quantity: null,
@@ -221,6 +225,7 @@ export default function FoodManager() {
     const submitData = {
       ...formData,
       cuisine_id: parseInt(formData.cuisine_id),
+      food_role_id: formData.food_role_id ? parseInt(formData.food_role_id) : null,
       food_ingredients: formData.food_ingredients.map((fi, idx) => ({
         ingredient_id: parseInt(fi.ingredient_id),
         quantity: parseFloat(fi.quantity),
@@ -309,6 +314,7 @@ export default function FoodManager() {
                   <th>Arabic Name</th>
                   <th>Role</th>
                   <th>Quantity</th>
+                  <th>Nutrition</th>
                   <th>Ingredients</th>
                   <th>Active</th>
                   <th>Actions</th>
@@ -323,8 +329,16 @@ export default function FoodManager() {
                     <td>{cuisines.find(c => c.id === food.cuisine_id)?.name_en || food.cuisine_id}</td>
                     <td>{food.name_en}</td>
                     <td>{food.name_ar || '-'}</td>
-                    <td><span className="food-role-badge">{food.food_role || '-'}</span></td>
+                    <td><span className="food-role-badge">{foodRoles.find(r => r.id === food.food_role_id)?.name_en || food.food_role_id || '-'}</span></td>
                     <td>{food.quantity} {food.unit}</td>
+                    <td>
+                      <div style={{ fontSize: '0.85rem' }}>
+                        <strong>{Math.round(food.calories_kcal || 0)} kcal</strong>
+                        <div style={{ color: '#7f8c8d', fontSize: '0.75rem' }}>
+                          P: {Math.round(food.protein_g || 0)}g | C: {Math.round(food.carbs_g || 0)}g | F: {Math.round(food.fat_g || 0)}g
+                        </div>
+                      </div>
+                    </td>
                     <td>{food.food_ingredients?.length || 0}</td>
                     <td>{food.is_active ? '✓' : '✗'}</td>
                     <td>
@@ -397,17 +411,14 @@ export default function FoodManager() {
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label>Cuisine *</label>
-                <select
-                  name="cuisine_id"
-                  value={formData.cuisine_id}
-                  onChange={handleInputChange}
+                <Select
+                  options={cuisines.map(c => ({ value: c.id, label: c.name_en }))}
+                  value={cuisines.filter(c => c.id === formData.cuisine_id).map(c => ({ value: c.id, label: c.name_en }))}
+                  onChange={(option) => handleInputChange({ target: { name: 'cuisine_id', value: option ? option.value : '' }})}
+                  isClearable
+                  placeholder="-- Select Cuisine --"
                   required
-                >
-                  <option value="">-- Select Cuisine --</option>
-                  {cuisines.map(c => (
-                    <option key={c.id} value={c.id}>{c.name_en}</option>
-                  ))}
-                </select>
+                />
               </div>
 
               <div className="form-row">
@@ -424,15 +435,13 @@ export default function FoodManager() {
                 </div>
                 <div className="form-group">
                   <label>Role</label>
-                  <select name="food_role" value={formData.food_role} onChange={handleInputChange}>
-                    <option value="base">Base</option>
-                    <option value="side">Side</option>
-                    <option value="snack">Snack</option>
-                    <option value="dessert">Dessert</option>
-                    <option value="beverage">Beverage</option>
-                    <option value="condiment">Condiment</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <Select
+                    options={foodRoles.map(r => ({ value: r.id, label: r.name_en }))}
+                    value={foodRoles.filter(r => r.id === formData.food_role_id).map(r => ({ value: r.id, label: r.name_en }))}
+                    onChange={(option) => handleInputChange({ target: { name: 'food_role_id', value: option ? option.value : '' }})}
+                    isClearable
+                    placeholder="-- Select Role --"
+                  />
                 </div>
               </div>
 
@@ -568,15 +577,21 @@ export default function FoodManager() {
                   const selectedIng = ingredients.find(ing => ing.id === parseInt(fi.ingredient_id));
                   return (
                     <div key={index} className="ingredient-item" style={{ display: 'grid', gridTemplateColumns: '1.5fr 100px 80px 40px', gap: '10px', alignItems: 'center' }}>
-                      <input
-                        type="text"
-                        list="all-ingredients-datalist"
-                        placeholder="Search or type ingredient..."
-                        value={rowInputValues[index] || ''}
-                        onChange={(e) => handleRowInputChange(index, e.target.value)}
-                        style={{ padding: '8px', fontSize: '0.85rem', width: '100%', boxSizing: 'border-box' }}
-                        required
-                      />
+                      <div style={{ width: '100%' }}>
+                        <Select
+                          options={ingredients.map(ing => ({ value: ing.id, label: ing.name_en }))}
+                          value={ingredients.filter(ing => ing.id === parseInt(fi.ingredient_id)).map(ing => ({ value: ing.id, label: ing.name_en }))}
+                          onChange={(option) => {
+                            handleIngredientChange(index, 'ingredient_id', option ? option.value.toString() : '');
+                            setRowInputValues(prev => ({ ...prev, [index]: option ? option.label : '' }));
+                          }}
+                          isClearable
+                          placeholder="Search Ingredient..."
+                          required
+                          styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                          menuPortalTarget={document.body}
+                        />
+                      </div>
                       <input
                         type="number"
                         value={fi.quantity}

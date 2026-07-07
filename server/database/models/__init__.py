@@ -10,6 +10,11 @@ from .catalog import (
     Meal,
     MealFood,
     Substitute,
+    FoodRole,
+    PrimaryGoal,
+    SecondaryGoal,
+    MealPrimaryGoal,
+    MealSecondaryGoal,
 )
 
 # Plan models (diet plans and tracking)
@@ -71,5 +76,10 @@ __all__ = [
     # Chat
     'ChatSession',
     'ChatMessage',
+    'FoodRole',
+    'PrimaryGoal',
+    'SecondaryGoal',
+    'MealPrimaryGoal',
+    'MealSecondaryGoal',
 ]
 

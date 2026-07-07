@@ -12,8 +12,8 @@ import concurrent.futures
 import math
 import os
 import re
-from copy import deepcopy
 from functools import lru_cache
+from utils.clone import fast_clone_ingredient
 import threading
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -30,7 +30,10 @@ from exceptions.repository import RepositoryException
 
 from config.constants import VALID_CUISINES, GRAM_UNITS
 from database.session import AsyncSessionLocal
-from database.models import Cuisine, MasterIngredient, Food, FoodIngredient, Meal, MealFood, MealSession
+from database.models import (
+    Cuisine, MasterIngredient, Food, FoodIngredient, Meal, MealFood, MealSession,
+    MealPrimaryGoal, MealSecondaryGoal
+)
 from domain.nutrition_compiler import calculate_ingredient_contribution
 from domain.meal_compiler import compile_meal_macros
 from utils.parsers import _to_number, split_keywords, parse_nutritive_values
@@ -240,7 +243,7 @@ async def _load_foods_db(cuisine_name: str) -> Dict[str, Dict[str, Any]]:
             stmt = (
                 select(Food)
                 .filter(Food.cuisine_id == cuisine.id, Food.is_active == True)
-                .options(selectinload(Food.food_ingredients))
+                .options(selectinload(Food.food_ingredients), selectinload(Food.role))
             )
             res = await session.execute(stmt)
             foods = res.scalars().all()
@@ -263,18 +266,20 @@ async def _load_foods_db(cuisine_name: str) -> Dict[str, Dict[str, Any]]:
                 
                 # Derive food macros from ingredients_struct
                 food_macros = _sum_macros(ingredients_struct)
+                
+                food_qty = sum(i["quantity"] for i in ingredients_struct) if ingredients_struct else 0.0
 
                 out[f.client_food_id] = {
                     "id": f.client_food_id,
                     "name": f.name_en, # V2 uses name_en
-                    "quantity": f.quantity,
+                    "quantity": food_qty,
                     "unit": f.unit,
                     "min_quantity": f.min_quantity or 0.0,
                     "max_quantity": f.max_quantity or 0.0,
                     "ingredients_struct": ingredients_struct,
                     "macros": food_macros, # V2 dynamically computes macros
                     "supports": f.supports or [],
-                    "type": f.food_role or "", # V2 replaced type with food_role
+                    "type": f.role.code if f.role else "", # V2 replaced type with food_role
                     "preparation": f.preparation_en or "", # V2 uses prep_en
                     "description": f.description_en or "", # V2 uses desc_en
                     "image_url": f.image_url or ""
@@ -309,7 +314,7 @@ def _scale_food_instance(food_base: Dict[str, Any], *, quantity: float, unit: st
         scaled_qty = ing_base_qty * scale
         macros = ing.get("macros") or {}
         scaled_macros = {k: _to_number(macros.get(k), 0.0) * scale for k in macros}
-        out = deepcopy(ing)
+        out = fast_clone_ingredient(ing)
         out["quantity"] = scaled_qty
         out["macros"] = scaled_macros
         scaled_ingredients.append(out)
@@ -376,7 +381,11 @@ async def _load_meals_db(cuisine_name: str) -> List[Dict[str, Any]]:
             stmt = (
                 select(Meal)
                 .filter(Meal.cuisine_id == cuisine.id, Meal.is_active == True)
-                .options(selectinload(Meal.meal_foods).selectinload(MealFood.food))
+                .options(
+                    selectinload(Meal.meal_foods).selectinload(MealFood.food),
+                    selectinload(Meal.primary_goals).selectinload(MealPrimaryGoal.primary_goal),
+                    selectinload(Meal.secondary_goals).selectinload(MealSecondaryGoal.secondary_goal)
+                )
             )
             res = await session.execute(stmt)
             meals = res.scalars().all()
@@ -392,8 +401,8 @@ async def _load_meals_db(cuisine_name: str) -> List[Dict[str, Any]]:
                             foods_struct.append(
                                 _scale_food_instance(
                                     f_base,
-                                    quantity=ass.food.quantity, # V2 moved portion to food from junction
-                                    unit=ass.food.unit,         # V2 moved portion to food from junction
+                                    quantity=ass.quantity, 
+                                    unit=f_base.get("unit", "g"),
                                     replaceable=ass.is_replaceable
                                 )
                             )
@@ -404,7 +413,7 @@ async def _load_meals_db(cuisine_name: str) -> List[Dict[str, Any]]:
                 ingredients_struct = []
                 for food_index, food in enumerate(foods_struct):
                     for ing_index, ing in enumerate(food.get("ingredients_struct") or []):
-                        flat = deepcopy(ing)
+                        flat = fast_clone_ingredient(ing)
                         flat["food_id"] = food.get("id")
                         flat["food_name"] = food.get("name")
                         flat["food_index"] = food_index
@@ -420,10 +429,18 @@ async def _load_meals_db(cuisine_name: str) -> List[Dict[str, Any]]:
                 # Reconstruct diet type list or string
                 diet_type = _normalize_diet_type(m.diet_types)
 
+                meal_goals = []
+                for pg in m.primary_goals:
+                    if pg.primary_goal:
+                        meal_goals.append(pg.primary_goal.name_en)
+                for sg in m.secondary_goals:
+                    if sg.secondary_goal:
+                        meal_goals.append(sg.secondary_goal.name_en)
+
                 out.append({
                     "Meal_ID": m.client_meal_id,
                     "meal_name": m.name_en, # V2 uses name_en
-                    "goal": normalize_goal_list(m.goal),
+                    "goal": normalize_goal_list(meal_goals),
                     "meal_time": meal_time,
                     "time": "", # V2 removed scheduled_time from meals, moved to meal_sessions
                     "ingredients": _ingredients_to_text(ingredients_struct),

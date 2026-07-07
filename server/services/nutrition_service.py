@@ -23,7 +23,8 @@ from config.constants import (
     BMI_GOAL,
     FIBER_G_PER_1000_KCAL,
     FIBER_MIN_G_PER_DAY,
-    WATER_ML_PER_KG_RANGE
+    WATER_ML_PER_KG_RANGE,
+    ACTIVITY_MULTIPLIERS
 )
 
 def calculate_daily_targets(profile: Dict[str, Any]) -> Dict[str, Any]:

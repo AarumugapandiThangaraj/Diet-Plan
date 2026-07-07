@@ -1,5 +1,5 @@
-from copy import deepcopy
 from typing import Any, Dict, Iterable, List
+from utils.clone import fast_clone_meal, fast_clone_food, fast_clone_ingredient
 from utils.parsers import _to_number
 from utils.formatters import _fmt_num, format_nutritive_values
 
@@ -76,7 +76,7 @@ def recompute_meal_from_ingredients(meal: Dict[str, Any]) -> Dict[str, Any]:
         out["ingredients"] = ingredients_to_text(out.get("ingredients_struct") or [])
         return out
     except Exception:
-        out = deepcopy(meal)
+        out = fast_clone_meal(meal)
         ingredients = list(out.get("ingredients_struct") or [])
         totals = sum_ingredient_macros(ingredients)
         out["_macros"] = totals
@@ -96,7 +96,7 @@ def recompute_meal_from_foods(meal: Dict[str, Any]) -> Dict[str, Any]:
         flat_ingredients = []
         for food in out.get("foods_struct") or []:
             for ing in food.get("ingredients_struct") or []:
-                flat_ing = deepcopy(ing)
+                flat_ing = fast_clone_ingredient(ing)
                 flat_ing["food_id"] = food.get("id")
                 flat_ing["food_name"] = food.get("name")
                 flat_ingredients.append(flat_ing)
@@ -104,12 +104,12 @@ def recompute_meal_from_foods(meal: Dict[str, Any]) -> Dict[str, Any]:
         out["ingredients"] = ingredients_to_text(flat_ingredients)
         return out
     except Exception:
-        out = deepcopy(meal)
+        out = fast_clone_meal(meal)
         foods = list(out.get("foods_struct") or [])
         ingredients: List[Dict[str, Any]] = []
         for food in foods:
             for ing in food.get("ingredients_struct") or []:
-                flat = deepcopy(ing)
+                flat = fast_clone_ingredient(ing)
                 if food.get("id"):
                     flat["food_id"] = food.get("id")
                 if food.get("name"):
@@ -131,7 +131,7 @@ def _scale_ingredient(
     ingredient_min_ratio: float,
     ingredient_max_ratio: float,
 ) -> Dict[str, Any]:
-    out = deepcopy(ing)
+    out = fast_clone_ingredient(ing)
     base_qty = _f(out.get("quantity", 0.0))
     if base_qty < 0:
         raise NutritionCalculationException("Negative ingredient quantity detected")
@@ -213,7 +213,7 @@ def scale_meal_to_targets(
         flat_ingredients = []
         for food in out.get("foods_struct") or []:
             for ing in food.get("ingredients_struct") or []:
-                flat_ing = deepcopy(ing)
+                flat_ing = fast_clone_ingredient(ing)
                 flat_ing["food_id"] = food.get("id")
                 flat_ing["food_name"] = food.get("name")
                 flat_ingredients.append(flat_ing)
@@ -228,7 +228,7 @@ def scale_meal_to_targets(
         }
     except Exception:
         # fallback to legacy dict loop if parsing fails
-        base = deepcopy(meal)
+        base = fast_clone_meal(meal)
         base_macros = ensure_macros(base.get("_macros") or base.get("macros") or {})
         if base_macros["caloriesKcal"] <= 0 and base.get("foods_struct"):
             base = recompute_meal_from_foods(base)
@@ -244,7 +244,7 @@ def scale_meal_to_targets(
         scale_factor_requested = target_kcal / base_kcal if base_kcal > 0 and target_kcal > 0 else 1.0
         scale_factor_applied = clamp(scale_factor_requested, min_scale, max_scale)
 
-        scaled = deepcopy(base)
+        scaled = fast_clone_meal(base)
         foods = list(scaled.get("foods_struct") or [])
         if foods:
             scaled_foods: List[Dict[str, Any]] = []
@@ -261,7 +261,7 @@ def scale_meal_to_targets(
                     next_qty = req
 
                 qty_factor = next_qty / base_qty if base_qty > 0 else scale_factor_applied
-                next_food = deepcopy(food)
+                next_food = fast_clone_food(food)
                 next_food["quantity"] = next_qty
 
                 scaled_ingredients = [

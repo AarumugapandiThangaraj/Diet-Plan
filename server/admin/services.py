@@ -2,13 +2,15 @@
 Admin CRUD service layer for database operations
 """
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, delete, desc
+from sqlalchemy import select, delete, desc, func
 from sqlalchemy.orm import selectinload
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 
+from domain.nutrition_compiler import calculate_nutrition_rollup, _unit_is_gram
 from database.models.catalog import (
-    Cuisine, MealSession, MasterIngredient, Food, FoodIngredient, Meal, MealFood
+    Cuisine, MealSession, MasterIngredient, Food, FoodIngredient, Meal, MealFood,
+    FoodRole, PrimaryGoal, SecondaryGoal, MealPrimaryGoal, MealSecondaryGoal
 )
 from admin.schemas import (
     CuisineCreate, CuisineUpdate, CuisineResponse,
@@ -16,8 +18,92 @@ from admin.schemas import (
     MasterIngredientCreate, MasterIngredientUpdate, MasterIngredientResponse,
     FoodCreate, FoodUpdate, FoodResponse,
     MealCreate, MealUpdate, MealResponse,
+    FoodRoleCreate, FoodRoleUpdate, PrimaryGoalCreate, PrimaryGoalUpdate, SecondaryGoalCreate, SecondaryGoalUpdate
 )
 from exceptions.base import AppException
+
+class GenericLookupService:
+    @staticmethod
+    async def list_items(session: AsyncSession, model_cls, limit: int = 100, offset: int = 0):
+        query = select(model_cls).order_by(model_cls.id)
+        result = await session.execute(query.limit(limit).offset(offset))
+        items = result.scalars().all()
+        count_result = await session.execute(select(model_cls))
+        total = len(count_result.scalars().all())
+        return {"total": total, "items": items}
+
+    @staticmethod
+    async def get_item(session: AsyncSession, model_cls, item_id: int):
+        result = await session.execute(select(model_cls).where(model_cls.id == item_id))
+        return result.scalar_one_or_none()
+
+    @staticmethod
+    async def create_item(session: AsyncSession, model_cls, data):
+        item = model_cls(**data.model_dump())
+        session.add(item)
+        await session.commit()
+        await session.refresh(item)
+        return item
+
+    @staticmethod
+    async def update_item(session: AsyncSession, model_cls, item_id: int, data):
+        item = await GenericLookupService.get_item(session, model_cls, item_id)
+        if not item:
+            raise AppException(f"Item {item_id} not found", status_code=404)
+        update_data = data.model_dump(exclude_unset=True)
+        for key, value in update_data.items():
+            setattr(item, key, value)
+        await session.commit()
+        await session.refresh(item)
+        return item
+
+    @staticmethod
+    async def delete_item(session: AsyncSession, model_cls, item_id: int, permanent: bool = False):
+        item = await GenericLookupService.get_item(session, model_cls, item_id)
+        if not item:
+            raise AppException(f"Item {item_id} not found", status_code=404)
+        if permanent:
+            await session.delete(item)
+        else:
+            item.is_active = False
+        await session.commit()
+        return {"message": "Item deleted successfully"}
+
+class FoodRoleService:
+    @staticmethod
+    async def list(session: AsyncSession, limit: int = 100, offset: int = 0): return await GenericLookupService.list_items(session, FoodRole, limit, offset)
+    @staticmethod
+    async def get(session: AsyncSession, item_id: int): return await GenericLookupService.get_item(session, FoodRole, item_id)
+    @staticmethod
+    async def create(session: AsyncSession, data: FoodRoleCreate): return await GenericLookupService.create_item(session, FoodRole, data)
+    @staticmethod
+    async def update(session: AsyncSession, item_id: int, data: FoodRoleUpdate): return await GenericLookupService.update_item(session, FoodRole, item_id, data)
+    @staticmethod
+    async def delete(session: AsyncSession, item_id: int, permanent: bool = False): return await GenericLookupService.delete_item(session, FoodRole, item_id, permanent)
+
+class PrimaryGoalService:
+    @staticmethod
+    async def list(session: AsyncSession, limit: int = 100, offset: int = 0): return await GenericLookupService.list_items(session, PrimaryGoal, limit, offset)
+    @staticmethod
+    async def get(session: AsyncSession, item_id: int): return await GenericLookupService.get_item(session, PrimaryGoal, item_id)
+    @staticmethod
+    async def create(session: AsyncSession, data: PrimaryGoalCreate): return await GenericLookupService.create_item(session, PrimaryGoal, data)
+    @staticmethod
+    async def update(session: AsyncSession, item_id: int, data: PrimaryGoalUpdate): return await GenericLookupService.update_item(session, PrimaryGoal, item_id, data)
+    @staticmethod
+    async def delete(session: AsyncSession, item_id: int, permanent: bool = False): return await GenericLookupService.delete_item(session, PrimaryGoal, item_id, permanent)
+
+class SecondaryGoalService:
+    @staticmethod
+    async def list(session: AsyncSession, limit: int = 100, offset: int = 0): return await GenericLookupService.list_items(session, SecondaryGoal, limit, offset)
+    @staticmethod
+    async def get(session: AsyncSession, item_id: int): return await GenericLookupService.get_item(session, SecondaryGoal, item_id)
+    @staticmethod
+    async def create(session: AsyncSession, data: SecondaryGoalCreate): return await GenericLookupService.create_item(session, SecondaryGoal, data)
+    @staticmethod
+    async def update(session: AsyncSession, item_id: int, data: SecondaryGoalUpdate): return await GenericLookupService.update_item(session, SecondaryGoal, item_id, data)
+    @staticmethod
+    async def delete(session: AsyncSession, item_id: int, permanent: bool = False): return await GenericLookupService.delete_item(session, SecondaryGoal, item_id, permanent)
 
 
 class CuisineService:
@@ -229,6 +315,8 @@ class FoodService:
             count_query = count_query.where(Food.cuisine_id == cuisine_id)
 
         if search:
+            query = query.outerjoin(Food.role)
+            count_query = count_query.outerjoin(Food.role)
             search_stripped = search.strip()
             id_filter = None
             if search_stripped.isdigit():
@@ -238,7 +326,7 @@ class FoodService:
                 Food.name_en.ilike(f"%{search_stripped}%") |
                 Food.name_ar.ilike(f"%{search_stripped}%") |
                 Food.client_food_id.ilike(f"%{search_stripped}%") |
-                Food.food_role.ilike(f"%{search_stripped}%")
+                FoodRole.name_en.ilike(f"%{search_stripped}%")
             )
             if id_filter is not None:
                 search_cond = id_filter | search_cond
@@ -261,6 +349,36 @@ class FoodService:
         return result.scalar_one_or_none()
 
     @staticmethod
+    async def _calculate_food_nutrition(session: AsyncSession, food: Food, food_ingredients: list):
+        rollup_items = []
+        for fi in food_ingredients:
+            ing = await session.get(MasterIngredient, fi.ingredient_id)
+            if ing:
+                rollup_items.append({
+                    "quantity": fi.quantity,
+                    "unit": ing.default_unit,
+                    "base_quantity": 100.0 if _unit_is_gram(ing.default_unit) else 1.0,
+                    "base_unit": ing.default_unit,
+                    "macros": {
+                        "calories_kcal": ing.calories_kcal,
+                        "protein_g": ing.protein_g,
+                        "carbs_g": ing.carbs_g,
+                        "fat_g": ing.fat_g,
+                        "fiber_g": ing.fiber_g
+                    },
+                    "micronutrients": ing.micronutrients,
+                    "conversions": None
+                })
+        
+        nutrition = calculate_nutrition_rollup(rollup_items)
+        food.calories_kcal = nutrition["macros"]["calories_kcal"]
+        food.protein_g = nutrition["macros"]["protein_g"]
+        food.carbs_g = nutrition["macros"]["carbs_g"]
+        food.fat_g = nutrition["macros"]["fat_g"]
+        food.fiber_g = nutrition["macros"]["fiber_g"]
+        food.micronutrients = nutrition["micronutrients"]
+
+    @staticmethod
     async def create_food(session: AsyncSession, data: FoodCreate) -> Food:
         food_dict = data.model_dump(exclude={"food_ingredients"})
         food = Food(**food_dict)
@@ -276,6 +394,8 @@ class FoodService:
                 sort_order=fi.sort_order
             )
             session.add(food_ingredient)
+        # Recalculate nutrition
+        await FoodService._calculate_food_nutrition(session, food, data.food_ingredients)
         
         await session.commit()
         return await FoodService.get_food(session, food.id)
@@ -303,6 +423,9 @@ class FoodService:
                     sort_order=fi.sort_order
                 )
                 session.add(food_ingredient)
+        # Recalculate nutrition if ingredients provided
+        if data.food_ingredients is not None:
+            await FoodService._calculate_food_nutrition(session, food, data.food_ingredients)
         
         await session.commit()
         return await FoodService.get_food(session, food.id)
@@ -329,7 +452,9 @@ class MealService:
         query = select(Meal).options(
             selectinload(Meal.meal_foods)
             .selectinload(MealFood.food)
-            .selectinload(Food.food_ingredients)
+            .selectinload(Food.food_ingredients),
+            selectinload(Meal.primary_goals),
+            selectinload(Meal.secondary_goals)
         ).order_by(Meal.id)
         
         if active_only:
@@ -373,14 +498,45 @@ class MealService:
             select(Meal).options(
                 selectinload(Meal.meal_foods)
                 .selectinload(MealFood.food)
-                .selectinload(Food.food_ingredients)
+                .selectinload(Food.food_ingredients),
+                selectinload(Meal.primary_goals),
+                selectinload(Meal.secondary_goals)
             ).where(Meal.id == meal_id)
         )
         return result.scalar_one_or_none()
 
     @staticmethod
+    async def _calculate_meal_nutrition(session: AsyncSession, meal: Meal, meal_foods: list):
+        rollup_items = []
+        for mf in meal_foods:
+            food = await session.get(Food, mf.food_id)
+            if food:
+                rollup_items.append({
+                    "quantity": mf.quantity,
+                    "unit": food.unit,
+                    "base_quantity": mf.quantity,
+                    "base_unit": food.unit,
+                    "macros": {
+                        "calories_kcal": food.calories_kcal,
+                        "protein_g": food.protein_g,
+                        "carbs_g": food.carbs_g,
+                        "fat_g": food.fat_g,
+                        "fiber_g": food.fiber_g
+                    },
+                    "micronutrients": food.micronutrients
+                })
+        
+        nutrition = calculate_nutrition_rollup(rollup_items)
+        meal.calories_kcal = nutrition["macros"]["calories_kcal"]
+        meal.protein_g = nutrition["macros"]["protein_g"]
+        meal.carbs_g = nutrition["macros"]["carbs_g"]
+        meal.fat_g = nutrition["macros"]["fat_g"]
+        meal.fiber_g = nutrition["macros"]["fiber_g"]
+        meal.micronutrients = nutrition["micronutrients"]
+
+    @staticmethod
     async def create_meal(session: AsyncSession, data: MealCreate) -> Meal:
-        meal_dict = data.model_dump(exclude={"meal_foods"})
+        meal_dict = data.model_dump(exclude={"meal_foods", "primary_goal_ids", "secondary_goal_ids"})
         meal = Meal(**meal_dict)
         session.add(meal)
         await session.flush()
@@ -390,10 +546,21 @@ class MealService:
             meal_food = MealFood(
                 meal_id=meal.id,
                 food_id=mf.food_id,
+                quantity=mf.quantity,
                 is_replaceable=mf.is_replaceable,
                 sort_order=mf.sort_order
             )
             session.add(meal_food)
+            
+        # Add primary goals
+        for pid in data.primary_goal_ids:
+            session.add(MealPrimaryGoal(meal_id=meal.id, primary_goal_id=pid))
+            
+        # Add secondary goals
+        for sid in data.secondary_goal_ids:
+            session.add(MealSecondaryGoal(meal_id=meal.id, secondary_goal_id=sid))
+        # Recalculate nutrition
+        await MealService._calculate_meal_nutrition(session, meal, data.meal_foods)
         
         await session.commit()
         return await MealService.get_meal(session, meal.id)
@@ -404,7 +571,7 @@ class MealService:
         if not meal:
             raise AppException(f"Meal {meal_id} not found", status_code=404)
         
-        update_data = data.model_dump(exclude_unset=True, exclude={"meal_foods"})
+        update_data = data.model_dump(exclude_unset=True, exclude={"meal_foods", "primary_goal_ids", "secondary_goal_ids"})
         for key, value in update_data.items():
             setattr(meal, key, value)
         
@@ -417,11 +584,31 @@ class MealService:
                 meal_food = MealFood(
                     meal_id=meal_id,
                     food_id=mf.food_id,
+                    quantity=mf.quantity,
                     is_replaceable=mf.is_replaceable,
                     sort_order=mf.sort_order
                 )
                 session.add(meal_food)
-        
+                
+        # Update primary goals if provided
+        if data.primary_goal_ids is not None:
+            await session.execute(
+                delete(MealPrimaryGoal).where(MealPrimaryGoal.meal_id == meal_id)
+            )
+            for pid in data.primary_goal_ids:
+                session.add(MealPrimaryGoal(meal_id=meal.id, primary_goal_id=pid))
+                
+        # Update secondary goals if provided
+        if data.secondary_goal_ids is not None:
+            await session.execute(
+                delete(MealSecondaryGoal).where(MealSecondaryGoal.meal_id == meal_id)
+            )
+            for sid in data.secondary_goal_ids:
+                session.add(MealSecondaryGoal(meal_id=meal.id, secondary_goal_id=sid))
+        # Recalculate nutrition if foods provided
+        if data.meal_foods is not None:
+            await MealService._calculate_meal_nutrition(session, meal, data.meal_foods)
+            
         await session.commit()
         return await MealService.get_meal(session, meal.id)
 

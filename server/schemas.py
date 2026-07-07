@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field, ConfigDict, field_validator
+from domain.payload_models import MealPayload
 
 
 class StudioProfile(BaseModel):
@@ -74,7 +75,7 @@ class StudioProfile(BaseModel):
         try:
             return int(float(str(v).strip()))
         except Exception:
-            return 30
+            raise ValueError(f"Invalid age provided: {v}")
 
     @field_validator("heightCm", mode="before")
     @classmethod
@@ -82,7 +83,7 @@ class StudioProfile(BaseModel):
         try:
             return float(str(v).strip())
         except Exception:
-            return 165.0
+            raise ValueError(f"Invalid height provided: {v}")
 
     @field_validator("weightKg", mode="before")
     @classmethod
@@ -90,7 +91,7 @@ class StudioProfile(BaseModel):
         try:
             return float(str(v).strip())
         except Exception:
-            return 60.0
+            raise ValueError(f"Invalid weight provided: {v}")
 
 
 class TargetsRequest(BaseModel):
@@ -349,7 +350,7 @@ class MealSwapApplyRequest(BaseModel):
             }
         }
     )
-    meal: Dict[str, Any] = Field(
+    meal: MealPayload = Field(
         ...,
         description="The selected meal payload dictionary to apply and standardise/scale.",
         json_schema_extra={
@@ -388,7 +389,7 @@ class FoodSwapOptionsRequest(BaseModel):
             }
         }
     )
-    meal: Dict[str, Any] = Field(
+    meal: MealPayload = Field(
         ...,
         description="Complete context of the current meal payload containing the food item to swap.",
         json_schema_extra={
@@ -443,7 +444,7 @@ class FoodSwapApplyRequest(BaseModel):
             }
         }
     )
-    meal: Dict[str, Any] = Field(
+    meal: MealPayload = Field(
         ...,
         description="The current meal payload containing the food item being replaced."
     )
@@ -467,7 +468,7 @@ class IngredientSwapOptionsRequest(BaseModel):
             }
         }
     )
-    meal: Dict[str, Any] = Field(
+    meal: MealPayload = Field(
         ...,
         description="The current meal payload containing the target ingredient."
     )
@@ -502,7 +503,7 @@ class IngredientSwapApplyRequest(BaseModel):
             }
         }
     )
-    meal: Dict[str, Any] = Field(
+    meal: MealPayload = Field(
         ...,
         description="The current meal payload to modify."
     )

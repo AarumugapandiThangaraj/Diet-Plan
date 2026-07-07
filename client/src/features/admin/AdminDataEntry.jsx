@@ -4,6 +4,7 @@ import MealSessionManager from './components/MealSessionManager';
 import IngredientManager from './components/IngredientManager';
 import FoodManager from './components/FoodManager';
 import MealManager from './components/MealManager';
+import GenericReferenceManager from './components/GenericReferenceManager';
 import './AdminDataEntry.css';
 
 export default function AdminDataEntry() {
@@ -33,6 +34,9 @@ export default function AdminDataEntry() {
   const tabs = [
     { id: 'cuisines', label: 'Cuisines', component: CuisineManager },
     { id: 'sessions', label: 'Meal Sessions', component: MealSessionManager },
+    { id: 'food-roles', label: 'Food Roles', component: () => <GenericReferenceManager title="Food Roles" apiName="foodRoles" /> },
+    { id: 'primary-goals', label: 'Primary Goals', component: () => <GenericReferenceManager title="Primary Goals" apiName="primaryGoals" /> },
+    { id: 'secondary-goals', label: 'Secondary Goals', component: () => <GenericReferenceManager title="Secondary Goals" apiName="secondaryGoals" /> },
     { id: 'ingredients', label: 'Ingredients', component: IngredientManager },
     { id: 'foods', label: 'Foods', component: FoodManager },
     { id: 'meals', label: 'Meals', component: MealManager }

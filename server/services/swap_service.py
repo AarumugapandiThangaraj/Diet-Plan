@@ -5,7 +5,7 @@ Provides logical operations for swapping/replacing items within a meal plan,
 supporting meal swaps, food item swaps, and ingredient replacements.
 """
 
-from copy import deepcopy
+from utils.clone import fast_clone_meal
 from typing import Any, Dict, List, Optional
 from domain.swap_engine import (
     _macro_error,
@@ -134,7 +134,7 @@ def get_meal_swap_options(
 from exceptions.domain import SwapEngineException
 
 def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 5, cuisine: str = "north_indian") -> Dict[str, Any]:
-    meal_base = deepcopy(meal)
+    meal_base = fast_clone_meal(meal)
     if not (meal_base.get("foods_struct") or []):
         raise SwapEngineException("This meal cannot be swapped at food level because no structured food data is available.")
 
@@ -148,7 +148,7 @@ def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 
 
     catalog = food_catalog_by_key(cuisine)
     foods_by_id = food_index_by_id(cuisine)
-    keys = _candidate_food_keys_for_source(source_name, cuisine=cuisine)
+    keys = _candidate_food_keys_for_source(source_food, cuisine=cuisine)
 
     options: List[Dict[str, Any]] = []
     for key in keys:
@@ -211,7 +211,7 @@ def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 
     }
 
 def get_ingredient_swap_options(*, meal: Dict[str, Any], ingredient_query: str, top_n: int = 5, cuisine: str = "north_indian") -> Dict[str, Any]:
-    meal_base = deepcopy(meal)
+    meal_base = fast_clone_meal(meal)
     if meal_base.get("foods_struct"):
         meal_base = recompute_meal_from_foods(meal_base)
     else:

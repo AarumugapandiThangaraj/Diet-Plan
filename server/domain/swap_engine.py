@@ -1,6 +1,5 @@
-from copy import deepcopy
-from difflib import SequenceMatcher
 from typing import Any, Dict, List, Optional, Tuple
+from utils.clone import fast_clone_meal, fast_clone_ingredient
 
 from domain.scaling_formulas import (
     ensure_macros,
@@ -12,7 +11,24 @@ from utils.normalizers import normalize_food_key, normalize_ingredient_key
 from config.constants import MACRO_ERROR_WEIGHTS
 
 def _ratio(a: str, b: str) -> float:
-    return SequenceMatcher(None, str(a or "").lower(), str(b or "").lower()).ratio()
+    a_str = str(a or "").lower().strip()
+    b_str = str(b or "").lower().strip()
+    if not a_str or not b_str:
+        return 0.0
+    if a_str == b_str:
+        return 1.0
+    
+    a_set = set(a_str.split())
+    b_set = set(b_str.split())
+    if not a_set or not b_set:
+        return 0.0
+        
+    intersect = a_set.intersection(b_set)
+    if not intersect:
+        if a_str in b_str or b_str in a_str:
+            return 0.5
+        return 0.0
+    return len(intersect) / len(a_set.union(b_set))
 
 def _clamp(x: float, low: float, high: float) -> float:
     return max(low, min(high, x))
@@ -294,21 +310,33 @@ def _candidate_keys_for_source(source_name: str, *, cap: int = 120, cuisine: str
 
     return out
 
-def _candidate_food_keys_for_source(source_name: str, *, cap: int = 120, cuisine: str = "north_indian") -> List[str]:
+def _candidate_food_keys_for_source(source_food: Dict[str, Any], *, cap: int = 120, cuisine: str = "north_indian") -> List[str]:
     from repositories.meal_repository import food_catalog_by_key
     catalog = food_catalog_by_key(cuisine)
     if not catalog:
         return []
 
+    source_name = str(source_food.get("name") or "")
+    source_type = str(source_food.get("type") or "").strip().lower()
     source_key = normalize_food_key(source_name)
+    
     scored = []
     for k, entry in catalog.items():
         if k == source_key:
             continue
+            
+        entry_type = str(entry.get("type") or "").strip().lower()
+        if source_type and entry_type and source_type != entry_type:
+            continue
+            
         name = entry.get("name") or k
         score = _ratio(source_name, name)
         if source_key and (source_key in k or k in source_key):
             score = max(score, 0.93)
+            
+        if source_type and entry_type and source_type == entry_type:
+            score = max(score, 0.5)
+            
         scored.append((score, k))
     scored.sort(reverse=True)
 
@@ -322,7 +350,7 @@ def _candidate_food_keys_for_source(source_name: str, *, cap: int = 120, cuisine
     return out
 
 def _apply_ingredient_replacement(meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "north_indian") -> Dict[str, Any]:
-    meal_copy = deepcopy(meal)
+    meal_copy = fast_clone_meal(meal)
     foods = list(meal_copy.get("foods_struct") or [])
 
     replacement = option.get("replacement") or {}
@@ -415,7 +443,7 @@ def _apply_food_replacement(meal: Dict[str, Any], option: Dict[str, Any], cuisin
         flat_ingredients = []
         for food in out.get("foods_struct") or []:
             for ing in food.get("ingredients_struct") or []:
-                flat_ing = deepcopy(ing)
+                flat_ing = fast_clone_ingredient(ing)
                 flat_ing["food_id"] = food.get("id")
                 flat_ing["food_name"] = food.get("name")
                 flat_ingredients.append(flat_ing)
@@ -427,7 +455,7 @@ def _apply_food_replacement(meal: Dict[str, Any], option: Dict[str, Any], cuisin
         
         return meal_for_plan_payload(out)
     except Exception:
-        meal_copy = deepcopy(meal)
+        meal_copy = fast_clone_meal(meal)
         foods = list(meal_copy.get("foods_struct") or [])
         if not foods:
             raise ValueError("Cannot apply replacement because meal has no structured foods.")
