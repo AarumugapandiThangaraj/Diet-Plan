@@ -42,14 +42,21 @@ class UserHealthProfile(Base, TimestampMixin):
 class UserGoal(Base, TimestampMixin):
     __tablename__ = "user_goals"
     __table_args__ = (
-        UniqueConstraint("user_id", "concern_id", name="uq_ug_user_concern"),
+        UniqueConstraint("user_id", "primary_goal_id", name="uq_ug_user_primary"),
+        UniqueConstraint("user_id", "secondary_goal_id", name="uq_ug_user_secondary"),
         CheckConstraint("goal_tier IN ('primary','secondary')", name="chk_goal_tier"),
+        CheckConstraint(
+            "(goal_tier = 'primary' AND primary_goal_id IS NOT NULL AND secondary_goal_id IS NULL) OR "
+            "(goal_tier = 'secondary' AND secondary_goal_id IS NOT NULL AND primary_goal_id IS NULL)", 
+            name="chk_goal_tier_fks"
+        ),
         {"schema": "Twellr_Nutri"}
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    concern_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    primary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.primary_goals.id", ondelete="RESTRICT"), nullable=True)
+    secondary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.secondary_goals.id", ondelete="RESTRICT"), nullable=True)
     goal_tier: Mapped[str] = mapped_column(String(20), nullable=False)
     sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")

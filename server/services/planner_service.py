@@ -8,7 +8,7 @@ target lookups for the Plan Studio.
 from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
-from copy import deepcopy
+
 
 from services.nutrition_service import calculate_daily_targets
 from services.ranking_service import rank_meals_for_meal_time

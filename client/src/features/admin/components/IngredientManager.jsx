@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CreatableSelect from 'react-select/creatable';
 import { adminApi } from '../adminApi';
 
 export default function IngredientManager() {
@@ -742,15 +743,18 @@ export default function IngredientManager() {
                   ) : (
                     micronutrientsList.map((item, index) => (
                       <div key={index} style={{ display: 'flex', gap: '10px', marginBottom: '10px', alignItems: 'center' }}>
-                        <input
-                          type="text"
-                          placeholder="Nutrient Name (e.g. Vitamin C)"
-                          value={item.name}
-                          onChange={(e) => handleMicroChange(index, 'name', e.target.value)}
-                          style={{ flex: 1 }}
-                          list="micro-suggestions"
-                          required
-                        />
+                        <div style={{ flex: 1, minWidth: '200px' }}>
+                          <CreatableSelect
+                            options={existingMicros.map(m => ({ value: m, label: m }))}
+                            value={item.name ? { value: item.name, label: item.name } : null}
+                            onChange={(option) => handleMicroChange(index, 'name', option ? option.value : '')}
+                            placeholder="Nutrient Name..."
+                            isClearable
+                            formatCreateLabel={(inputValue) => `Create new nutrient: "${inputValue}"`}
+                            styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                            menuPortalTarget={document.body}
+                          />
+                        </div>
                         <input
                           type="text"
                           placeholder="Amount & Unit (e.g. 90mg)"

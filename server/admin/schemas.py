@@ -18,6 +18,53 @@ class ORMBaseModel(BaseModel):
         return data
 
 
+# Reference Tables (Goals & Roles)
+class FoodRoleCreate(ORMBaseModel):
+    code: str = Field(..., description="Unique role code")
+    name_en: str = Field(..., description="English name")
+    is_active: bool = Field(default=True)
+
+class FoodRoleUpdate(ORMBaseModel):
+    code: Optional[str] = None
+    name_en: Optional[str] = None
+    is_active: Optional[bool] = None
+
+class FoodRoleResponse(FoodRoleCreate):
+    id: int
+    created_at: datetime
+    updated_at: datetime
+
+class PrimaryGoalCreate(ORMBaseModel):
+    code: str = Field(..., description="Unique goal code")
+    name_en: str = Field(..., description="English name")
+    is_active: bool = Field(default=True)
+
+class PrimaryGoalUpdate(ORMBaseModel):
+    code: Optional[str] = None
+    name_en: Optional[str] = None
+    is_active: Optional[bool] = None
+
+class PrimaryGoalResponse(PrimaryGoalCreate):
+    id: int
+    created_at: datetime
+    updated_at: datetime
+
+class SecondaryGoalCreate(ORMBaseModel):
+    code: str = Field(..., description="Unique goal code")
+    name_en: str = Field(..., description="English name")
+    is_active: bool = Field(default=True)
+
+class SecondaryGoalUpdate(ORMBaseModel):
+    code: Optional[str] = None
+    name_en: Optional[str] = None
+    is_active: Optional[bool] = None
+
+class SecondaryGoalResponse(SecondaryGoalCreate):
+    id: int
+    created_at: datetime
+    updated_at: datetime
+
+
 # Cuisine Schemas
 class CuisineCreate(ORMBaseModel):
     code: str = Field(..., description="Unique cuisine code (e.g., north_indian)")
@@ -138,10 +185,9 @@ class FoodCreate(ORMBaseModel):
     preparation_en: Optional[str] = None
     preparation_ar: Optional[str] = None
     notes: Optional[str] = None
-    food_role: Optional[str] = Field(None, description="Role: base, side, snack, dessert, beverage, condiment, other")
+    food_role_id: Optional[int] = Field(None, description="ID of the FoodRole")
     prep_time_minutes: Optional[int] = None
     
-    quantity: float = Field(..., description="Default quantity")
     min_quantity: Optional[float] = None
     max_quantity: Optional[float] = None
     unit: str = Field(..., description="Unit of measurement")
@@ -164,9 +210,8 @@ class FoodUpdate(ORMBaseModel):
     preparation_en: Optional[str] = None
     preparation_ar: Optional[str] = None
     notes: Optional[str] = None
-    food_role: Optional[str] = None
+    food_role_id: Optional[int] = None
     prep_time_minutes: Optional[int] = None
-    quantity: Optional[float] = None
     min_quantity: Optional[float] = None
     max_quantity: Optional[float] = None
     unit: Optional[str] = None
@@ -179,6 +224,12 @@ class FoodUpdate(ORMBaseModel):
 
 class FoodResponse(FoodCreate):
     id: int
+    calories_kcal: float
+    protein_g: float
+    carbs_g: float
+    fat_g: float
+    fiber_g: float
+    micronutrients: dict
     created_at: datetime
     updated_at: datetime
 
@@ -186,11 +237,13 @@ class FoodResponse(FoodCreate):
 # Meal Schemas
 class MealFoodCreate(ORMBaseModel):
     food_id: int
+    quantity: float = Field(..., description="Quantity of food in meal")
     is_replaceable: bool = Field(default=False)
     sort_order: int = Field(default=0)
 
 
 class MealFoodUpdate(ORMBaseModel):
+    quantity: Optional[float] = None
     is_replaceable: Optional[bool] = None
     sort_order: Optional[int] = None
 
@@ -203,6 +256,7 @@ class MealFoodResponse(MealFoodCreate):
 class MealFoodWithFoodResponse(ORMBaseModel):
     """Meal-Food relationship with full Food details"""
     food_id: int
+    quantity: float
     is_replaceable: bool
     sort_order: int
     food: Optional[FoodResponse] = None
@@ -220,8 +274,8 @@ class MealCreate(ORMBaseModel):
     
     meal_session_id: int
     
-    goal: Optional[Any] = None
-    secondary_goal: Optional[Any] = None
+    primary_goal_ids: List[int] = Field(default_factory=list, description="List of primary goal IDs")
+    secondary_goal_ids: List[int] = Field(default_factory=list, description="List of secondary goal IDs")
     diet_types: Optional[Any] = None
     
     is_active: bool = Field(default=True)
@@ -236,8 +290,8 @@ class MealUpdate(ORMBaseModel):
     description_en: Optional[str] = None
     description_ar: Optional[str] = None
     meal_session_id: Optional[int] = None
-    goal: Optional[Any] = None
-    secondary_goal: Optional[Any] = None
+    primary_goal_ids: Optional[List[int]] = None
+    secondary_goal_ids: Optional[List[int]] = None
     diet_types: Optional[Any] = None
     is_active: Optional[bool] = None
     meal_foods: Optional[List[MealFoodCreate]] = None
@@ -253,10 +307,16 @@ class MealResponse(ORMBaseModel):
     description_en: Optional[str]
     description_ar: Optional[str]
     meal_session_id: int
-    goal: Optional[Any] = None
-    secondary_goal: Optional[Any] = None
     diet_types: Optional[Any] = None
+    primary_goal_ids: List[int] = Field(default_factory=list)
+    secondary_goal_ids: List[int] = Field(default_factory=list)
     is_active: bool
+    calories_kcal: float
+    protein_g: float
+    carbs_g: float
+    fat_g: float
+    fiber_g: float
+    micronutrients: dict
     meal_foods: List[MealFoodWithFoodResponse] = Field(default_factory=list)
     created_at: datetime
     updated_at: datetime
@@ -282,6 +342,18 @@ class FoodListResponse(ORMBaseModel):
     total: int
     items: List[FoodResponse]
 
+
+class FoodRoleListResponse(ORMBaseModel):
+    total: int
+    items: List[FoodRoleResponse]
+
+class PrimaryGoalListResponse(ORMBaseModel):
+    total: int
+    items: List[PrimaryGoalResponse]
+
+class SecondaryGoalListResponse(ORMBaseModel):
+    total: int
+    items: List[SecondaryGoalResponse]
 
 class MealListResponse(ORMBaseModel):
     total: int

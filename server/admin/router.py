@@ -20,9 +20,13 @@ from admin.schemas import (
     MasterIngredientCreate, MasterIngredientUpdate, MasterIngredientResponse, MasterIngredientListResponse,
     FoodCreate, FoodUpdate, FoodResponse, FoodListResponse,
     MealCreate, MealUpdate, MealResponse, MealListResponse,
+    FoodRoleCreate, FoodRoleUpdate, FoodRoleResponse, FoodRoleListResponse,
+    PrimaryGoalCreate, PrimaryGoalUpdate, PrimaryGoalResponse, PrimaryGoalListResponse,
+    SecondaryGoalCreate, SecondaryGoalUpdate, SecondaryGoalResponse, SecondaryGoalListResponse,
 )
 from admin.services import (
-    CuisineService, MealSessionService, MasterIngredientService, FoodService, MealService
+    CuisineService, MealSessionService, MasterIngredientService, FoodService, MealService,
+    FoodRoleService, PrimaryGoalService, SecondaryGoalService
 )
 
 router = APIRouter(prefix="/api/admin", tags=["Admin Data Entry"])
@@ -96,6 +100,45 @@ async def delete_cuisine(cuisine_id: int, permanent: bool = Query(False)):
         except AppException as e:
             raise HTTPException(status_code=e.status_code, detail=e.detail)
 
+
+# ============================================================================
+# REFERENCE TABLES (FOOD ROLES & GOALS)
+# ============================================================================
+
+def create_generic_routes(router, prefix, tags, service_cls, create_schema, update_schema, response_schema, list_response_schema):
+    @router.get(f"/{prefix}", response_model=list_response_schema, tags=tags)
+    async def list_items(limit: int = Query(100, ge=1, le=1000), offset: int = Query(0, ge=0)):
+        async with AsyncSessionLocal() as session:
+            return await service_cls.list(session, limit, offset)
+
+    @router.get(f"/{prefix}/{{item_id}}", response_model=response_schema, tags=tags)
+    async def get_item(item_id: int):
+        async with AsyncSessionLocal() as session:
+            item = await service_cls.get(session, item_id)
+            if not item: raise HTTPException(status_code=404, detail="Item not found")
+            return item
+
+    @router.post(f"/{prefix}", response_model=response_schema, tags=tags)
+    async def create_item(data: create_schema):
+        async with AsyncSessionLocal() as session:
+            try: return await service_cls.create(session, data)
+            except Exception as e: raise HTTPException(status_code=400, detail=str(e))
+
+    @router.put(f"/{prefix}/{{item_id}}", response_model=response_schema, tags=tags)
+    async def update_item(item_id: int, data: update_schema):
+        async with AsyncSessionLocal() as session:
+            try: return await service_cls.update(session, item_id, data)
+            except AppException as e: raise HTTPException(status_code=e.status_code, detail=e.detail)
+
+    @router.delete(f"/{prefix}/{{item_id}}", tags=tags)
+    async def delete_item(item_id: int, permanent: bool = Query(False)):
+        async with AsyncSessionLocal() as session:
+            try: return await service_cls.delete(session, item_id, permanent)
+            except AppException as e: raise HTTPException(status_code=e.status_code, detail=e.detail)
+
+create_generic_routes(router, "food-roles", ["Admin Data Entry - Reference"], FoodRoleService, FoodRoleCreate, FoodRoleUpdate, FoodRoleResponse, FoodRoleListResponse)
+create_generic_routes(router, "primary-goals", ["Admin Data Entry - Reference"], PrimaryGoalService, PrimaryGoalCreate, PrimaryGoalUpdate, PrimaryGoalResponse, PrimaryGoalListResponse)
+create_generic_routes(router, "secondary-goals", ["Admin Data Entry - Reference"], SecondaryGoalService, SecondaryGoalCreate, SecondaryGoalUpdate, SecondaryGoalResponse, SecondaryGoalListResponse)
 
 # ============================================================================
 # MEAL SESSIONS

@@ -4,7 +4,7 @@ import json
 import re
 import traceback
 import logging
-from difflib import SequenceMatcher, get_close_matches
+from difflib import get_close_matches
 from typing import Any, Dict, List, Optional, Tuple
 
 logger = logging.getLogger("app.ai_agent")
@@ -75,12 +75,29 @@ def _search_meals(query: str, cuisine: str, top_k: int = 5) -> List[dict]:
     meals = load_master_meals(cuisine)
     if not meals:
         return []
-    q = query.lower()
+    q = query.lower().strip()
+    q_set = set(q.split())
     scored = []
     for meal in meals:
         name = str(meal.get("meal_name") or meal.get("Name") or "")
+        name_lower = name.lower()
         text = f"{name} {meal.get('description','')} {meal.get('ingredients','')} {meal.get('meal_time','')}".lower()
-        score = sum(1.0 for w in q.split() if w in text) + SequenceMatcher(None, q, name.lower()).ratio() * 2
+        
+        # Word overlap score
+        score = sum(1.0 for w in q_set if w in text)
+        
+        # Fast name similarity (Jaccard + Substring)
+        name_set = set(name_lower.split())
+        ratio = 0.0
+        if q_set and name_set:
+            intersect = q_set.intersection(name_set)
+            if intersect:
+                ratio = len(intersect) / len(q_set.union(name_set))
+            elif q in name_lower or name_lower in q:
+                ratio = 0.5
+        
+        score += ratio * 2
+        
         if score > 0.3:
             scored.append((score, meal))
     scored.sort(key=lambda x: x[0], reverse=True)

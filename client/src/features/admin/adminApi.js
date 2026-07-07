@@ -5,6 +5,44 @@
 
 const API_BASE = 'http://localhost:8000/api/admin';
 
+const createGenericApi = (endpoint) => ({
+  list: async (limit = 100, offset = 0) => {
+    const response = await fetch(`${API_BASE}/${endpoint}?limit=${limit}&offset=${offset}`);
+    if (!response.ok) throw new Error(`Failed to fetch ${endpoint}`);
+    return response.json();
+  },
+  get: async (id) => {
+    const response = await fetch(`${API_BASE}/${endpoint}/${id}`);
+    if (!response.ok) throw new Error(`${endpoint} not found`);
+    return response.json();
+  },
+  create: async (data) => {
+    const response = await fetch(`${API_BASE}/${endpoint}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (!response.ok) throw new Error(`Failed to create ${endpoint}`);
+    return response.json();
+  },
+  update: async (id, data) => {
+    const response = await fetch(`${API_BASE}/${endpoint}/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (!response.ok) throw new Error(`Failed to update ${endpoint}`);
+    return response.json();
+  },
+  delete: async (id, permanent = false) => {
+    const response = await fetch(`${API_BASE}/${endpoint}/${id}?permanent=${permanent}`, {
+      method: 'DELETE'
+    });
+    if (!response.ok) throw new Error(`Failed to delete ${endpoint}`);
+    return response.json();
+  }
+});
+
 export const adminApi = {
   // ================ CUISINES ================
   cuisines: {
@@ -219,5 +257,10 @@ export const adminApi = {
       if (!response.ok) throw new Error('Failed to delete meal');
       return response.json();
     }
-  }
+  },
+
+  // ================ REFERENCE TABLES ================
+  foodRoles: createGenericApi('food-roles'),
+  primaryGoals: createGenericApi('primary-goals'),
+  secondaryGoals: createGenericApi('secondary-goals')
 };

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Select from 'react-select';
 import { adminApi } from '../adminApi';
 
 export default function MealManager() {
@@ -9,6 +10,8 @@ export default function MealManager() {
   const [cuisines, setCuisines] = useState([]);
   const [foods, setFoods] = useState([]);
   const [sessions, setSessions] = useState([]);
+  const [primaryGoalsList, setPrimaryGoalsList] = useState([]);
+  const [secondaryGoalsList, setSecondaryGoalsList] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -36,8 +39,8 @@ export default function MealManager() {
     description_en: '',
     description_ar: '',
     meal_session_id: '',
-    goal: {},
-    secondary_goal: {},
+    primary_goal_ids: [],
+    secondary_goal_ids: [],
     diet_types: {},
     is_active: true,
     meal_foods: []
@@ -56,14 +59,18 @@ export default function MealManager() {
     setInitialLoading(true);
     setError('');
     try {
-      const [cuisinesData, foodsData, sessionsData] = await Promise.all([
+      const [cuisinesData, foodsData, sessionsData, primaryData, secondaryData] = await Promise.all([
         adminApi.cuisines.list(1000),
         adminApi.foods.list(null, 50000),
-        adminApi.mealSessions.list(1000)
+        adminApi.mealSessions.list(1000),
+        adminApi.primaryGoals.list(1000),
+        adminApi.secondaryGoals.list(1000)
       ]);
       setCuisines(cuisinesData.items);
       setFoods(foodsData.items);
       setSessions(sessionsData.items);
+      setPrimaryGoalsList(primaryData.items);
+      setSecondaryGoalsList(secondaryData.items);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -88,11 +95,18 @@ export default function MealManager() {
   };
 
   const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
+    const { name, value, type, checked, options } = e.target;
+    if (type === 'select-multiple') {
+      const selectedValues = Array.from(options)
+        .filter(option => option.selected)
+        .map(option => parseInt(option.value));
+      setFormData(prev => ({ ...prev, [name]: selectedValues }));
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [name]: type === 'checkbox' ? checked : value
+      }));
+    }
   };
 
   const handleAddFood = () => {
@@ -127,8 +141,8 @@ export default function MealManager() {
       description_en: '',
       description_ar: '',
       meal_session_id: '',
-      goal: {},
-      secondary_goal: {},
+      primary_goal_ids: [],
+      secondary_goal_ids: [],
       diet_types: {},
       is_active: true,
       meal_foods: []
@@ -257,6 +271,7 @@ export default function MealManager() {
                   <th>English Name</th>
                   <th>Arabic Name</th>
                   <th>Session</th>
+                  <th>Nutrition</th>
                   <th>Foods</th>
                   <th>Active</th>
                   <th>Actions</th>
@@ -272,6 +287,14 @@ export default function MealManager() {
                     <td>{meal.name_en}</td>
                     <td>{meal.name_ar || '-'}</td>
                     <td>{sessions.find(s => s.id === meal.meal_session_id)?.name_en || meal.meal_session_id}</td>
+                    <td>
+                      <div style={{ fontSize: '0.85rem' }}>
+                        <strong>{Math.round(meal.calories_kcal || 0)} kcal</strong>
+                        <div style={{ color: '#7f8c8d', fontSize: '0.75rem' }}>
+                          P: {Math.round(meal.protein_g || 0)}g | C: {Math.round(meal.carbs_g || 0)}g | F: {Math.round(meal.fat_g || 0)}g
+                        </div>
+                      </div>
+                    </td>
                     <td>{meal.meal_foods?.length || 0}</td>
                     <td>{meal.is_active ? '✓' : '✗'}</td>
                     <td>
@@ -345,31 +368,25 @@ export default function MealManager() {
               <div className="form-row">
                 <div className="form-group">
                   <label>Cuisine *</label>
-                  <select
-                    name="cuisine_id"
-                    value={formData.cuisine_id}
-                    onChange={handleInputChange}
+                  <Select
+                    options={cuisines.map(c => ({ value: c.id, label: c.name_en }))}
+                    value={cuisines.filter(c => c.id === formData.cuisine_id).map(c => ({ value: c.id, label: c.name_en }))}
+                    onChange={(option) => handleInputChange({ target: { name: 'cuisine_id', value: option ? option.value : '' }})}
+                    isClearable
+                    placeholder="-- Select Cuisine --"
                     required
-                  >
-                    <option value="">-- Select Cuisine --</option>
-                    {cuisines.map(c => (
-                      <option key={c.id} value={c.id}>{c.name_en}</option>
-                    ))}
-                  </select>
+                  />
                 </div>
                 <div className="form-group">
                   <label>Meal Session *</label>
-                  <select
-                    name="meal_session_id"
-                    value={formData.meal_session_id}
-                    onChange={handleInputChange}
+                  <Select
+                    options={sessions.map(s => ({ value: s.id, label: s.name_en }))}
+                    value={sessions.filter(s => s.id === formData.meal_session_id).map(s => ({ value: s.id, label: s.name_en }))}
+                    onChange={(option) => handleInputChange({ target: { name: 'meal_session_id', value: option ? option.value : '' }})}
+                    isClearable
+                    placeholder="-- Select Session --"
                     required
-                  >
-                    <option value="">-- Select Session --</option>
-                    {sessions.map(s => (
-                      <option key={s.id} value={s.id}>{s.name_en}</option>
-                    ))}
-                  </select>
+                  />
                 </div>
               </div>
 
@@ -427,6 +444,39 @@ export default function MealManager() {
                 />
               </div>
 
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Primary Goals</label>
+                  <Select
+                    isMulti
+                    options={primaryGoalsList.map(g => ({ value: g.id, label: g.name_en }))}
+                    value={(formData.primary_goal_ids || []).map(id => {
+                      const g = primaryGoalsList.find(x => x.id === id);
+                      return g ? { value: g.id, label: g.name_en } : { value: id, label: id };
+                    })}
+                    onChange={(selected) => handleInputChange({
+                      target: { name: 'primary_goal_ids', value: selected ? selected.map(s => s.value) : [] }
+                    })}
+                    placeholder="Select Primary Goals..."
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Secondary Goals</label>
+                  <Select
+                    isMulti
+                    options={secondaryGoalsList.map(g => ({ value: g.id, label: g.name_en }))}
+                    value={(formData.secondary_goal_ids || []).map(id => {
+                      const g = secondaryGoalsList.find(x => x.id === id);
+                      return g ? { value: g.id, label: g.name_en } : { value: id, label: id };
+                    })}
+                    onChange={(selected) => handleInputChange({
+                      target: { name: 'secondary_goal_ids', value: selected ? selected.map(s => s.value) : [] }
+                    })}
+                    placeholder="Select Secondary Goals..."
+                  />
+                </div>
+              </div>
+
               <h3 style={{ marginTop: '20px', marginBottom: '15px' }}>Foods *</h3>
               <div className="ingredient-list">
                 {formData.meal_foods.length > 0 && (
@@ -448,17 +498,18 @@ export default function MealManager() {
                 )}
                 {formData.meal_foods.map((mf, index) => (
                   <div key={index} className="ingredient-item" style={{ display: 'grid', gridTemplateColumns: '1fr 150px 40px', gap: '10px', alignItems: 'center' }}>
-                    <select
-                      value={mf.food_id}
-                      onChange={(e) => handleFoodChange(index, 'food_id', e.target.value)}
-                      required
-                      style={{ width: '100%', boxSizing: 'border-box' }}
-                    >
-                      <option value="">-- Select Food --</option>
-                      {foods.map(f => (
-                        <option key={f.id} value={f.id}>{f.name_en} ({f.quantity} {f.unit})</option>
-                      ))}
-                    </select>
+                    <div style={{ width: '100%' }}>
+                      <Select
+                        options={foods.map(f => ({ value: f.id, label: `${f.name_en} (${f.quantity} ${f.unit})` }))}
+                        value={foods.filter(f => f.id === parseInt(mf.food_id)).map(f => ({ value: f.id, label: `${f.name_en} (${f.quantity} ${f.unit})` }))}
+                        onChange={(option) => handleFoodChange(index, 'food_id', option ? option.value : '')}
+                        isClearable
+                        placeholder="Search Food..."
+                        required
+                        styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                        menuPortalTarget={document.body}
+                      />
+                    </div>
                     <select
                       value={mf.is_replaceable ? 'true' : 'false'}
                       onChange={(e) => handleFoodChange(index, 'is_replaceable', e.target.value)}

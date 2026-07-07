@@ -16,6 +16,33 @@ class Cuisine(Base, TimestampMixin):
     sort_order: Mapped[int] = mapped_column(Integer, nullable=False, server_default="0")
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
 
+class FoodRole(Base, TimestampMixin):
+    __tablename__ = "food_roles"
+    __table_args__ = {"schema": "Twellr_Nutri"}
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    code: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
+    name_en: Mapped[str] = mapped_column(String(100), nullable=False)
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
+
+class PrimaryGoal(Base, TimestampMixin):
+    __tablename__ = "primary_goals"
+    __table_args__ = {"schema": "Twellr_Nutri"}
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    code: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
+    name_en: Mapped[str] = mapped_column(String(100), nullable=False)
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
+
+class SecondaryGoal(Base, TimestampMixin):
+    __tablename__ = "secondary_goals"
+    __table_args__ = {"schema": "Twellr_Nutri"}
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    code: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
+    name_en: Mapped[str] = mapped_column(String(100), nullable=False)
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
+
 class MealSession(Base, TimestampMixin):
     __tablename__ = "meal_sessions"
     __table_args__ = {"schema": "Twellr_Nutri"}
@@ -57,7 +84,6 @@ class Food(Base, TimestampMixin):
     __table_args__ = (
         UniqueConstraint("cuisine_id", "client_food_id", name="uq_foods_cuisine_client"),
         CheckConstraint("min_quantity IS NULL OR max_quantity IS NULL OR min_quantity <= max_quantity", name="chk_foods_qty_bounds"),
-        CheckConstraint("food_role IN ('base','side','snack','dessert','beverage','condiment','other')", name="chk_food_role"),
         CheckConstraint("prep_time_minutes IS NULL OR prep_time_minutes >= 0", name="chk_prep_time"),
         {"schema": "Twellr_Nutri"}
     )
@@ -72,10 +98,9 @@ class Food(Base, TimestampMixin):
     preparation_en: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     preparation_ar: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
-    food_role: Mapped[Optional[str]] = mapped_column(String(30), nullable=True)
+    food_role_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.food_roles.id", ondelete="RESTRICT"), nullable=True)
     prep_time_minutes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     
-    quantity: Mapped[float] = mapped_column(Float, nullable=False)
     min_quantity: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     max_quantity: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     unit: Mapped[str] = mapped_column(String(50), nullable=False)
@@ -86,9 +111,18 @@ class Food(Base, TimestampMixin):
     supports_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")
     image_url: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True)
     
+    # Persisted nutrition macros rolled up from Master Ingredients
+    calories_kcal: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    protein_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    carbs_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    fat_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    fiber_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    micronutrients: Mapped[dict] = mapped_column(JSONB, nullable=False, server_default='{}')
+    
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
     deleted_at: Mapped[Optional[DateTime]] = mapped_column(DateTime(timezone=True), nullable=True)
 
+    role = relationship("FoodRole")
     food_ingredients = relationship("FoodIngredient", back_populates="food")
 
 class FoodIngredient(Base, TimestampMixin):
@@ -123,11 +157,6 @@ class Meal(Base, TimestampMixin):
     
     meal_session_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meal_sessions.id", ondelete="RESTRICT"), nullable=False)
     
-    goal: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)
-    goal_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")
-    secondary_goal: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)
-    secondary_goal_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")
-    
     diet_types: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)
     diet_types_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")
 
@@ -137,12 +166,23 @@ class Meal(Base, TimestampMixin):
     carbs_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
     fat_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
     fiber_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    micronutrients: Mapped[dict] = mapped_column(JSONB, nullable=False, server_default='{}')
     total_quantity: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
     
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
     deleted_at: Mapped[Optional[DateTime]] = mapped_column(DateTime(timezone=True), nullable=True)
 
     meal_foods = relationship("MealFood", back_populates="meal")
+    primary_goals = relationship("MealPrimaryGoal", back_populates="meal")
+    secondary_goals = relationship("MealSecondaryGoal", back_populates="meal")
+
+    @property
+    def primary_goal_ids(self):
+        return [g.primary_goal_id for g in self.primary_goals]
+
+    @property
+    def secondary_goal_ids(self):
+        return [g.secondary_goal_id for g in self.secondary_goals]
 
 class MealFood(Base, TimestampMixin):
     __tablename__ = "meal_foods"
@@ -150,11 +190,32 @@ class MealFood(Base, TimestampMixin):
 
     meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
     food_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.foods.id", ondelete="RESTRICT"), primary_key=True)
+    quantity: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
     is_replaceable: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="false")
     sort_order: Mapped[int] = mapped_column(Integer, nullable=False, server_default="0")
 
     meal = relationship("Meal", back_populates="meal_foods")
     food = relationship("Food")
+
+class MealPrimaryGoal(Base, TimestampMixin):
+    __tablename__ = "meal_primary_goals"
+    __table_args__ = {"schema": "Twellr_Nutri"}
+
+    meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    primary_goal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.primary_goals.id", ondelete="CASCADE"), primary_key=True)
+
+    meal = relationship("Meal", back_populates="primary_goals")
+    primary_goal = relationship("PrimaryGoal")
+
+class MealSecondaryGoal(Base, TimestampMixin):
+    __tablename__ = "meal_secondary_goals"
+    __table_args__ = {"schema": "Twellr_Nutri"}
+
+    meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    secondary_goal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.secondary_goals.id", ondelete="CASCADE"), primary_key=True)
+
+    meal = relationship("Meal", back_populates="secondary_goals")
+    secondary_goal = relationship("SecondaryGoal")
 
 class Substitute(Base, TimestampMixin):
     __tablename__ = "substitutes"

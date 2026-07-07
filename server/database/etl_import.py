@@ -25,8 +25,13 @@ from utils.normalizers import _normalize_meal_time
 from database.base import Base
 from database.session import engine, AsyncSessionLocal
 import database.models
-from database.models.catalog import Cuisine, MasterIngredient, Food, FoodIngredient, Meal, MealFood, Substitute, MealSession
+from database.models.catalog import (
+    Cuisine, MasterIngredient, Food, FoodIngredient, Meal, MealFood, 
+    Substitute, MealSession, FoodRole, PrimaryGoal, MealPrimaryGoal,
+    SecondaryGoal, MealSecondaryGoal
+)
 from database.models.preference import UserPreference
+from admin.services import FoodService, MealService
 
 # Cuisines list matching the original settings
 CUISINE_LIST = list(VALID_CUISINES.keys())
@@ -606,7 +611,37 @@ class ETLPipeline:
                     resolved_master_map[(cuisine, client_id)] = master_ing.id
 
             await session.commit()
+            await session.commit()
             print("Master ingredients seeded.")
+
+            # 2b. Seed Reference Tables (Roles and Goals)
+            print("Seeding reference tables...")
+            roles = ['base', 'side', 'snack', 'dessert', 'beverage', 'condiment', 'other']
+            role_db_map = {}
+            for r in roles:
+                role_obj = FoodRole(code=r, name_en=r.capitalize())
+                session.add(role_obj)
+                await session.flush()
+                role_db_map[r] = role_obj.id
+            primary_goals_list = ["Skin Repair", "Hair Care"]
+            goal_db_map = {}
+            for g in primary_goals_list:
+                code = g.lower().replace(" ", "_").replace("&", "and")
+                goal_obj = PrimaryGoal(code=code, name_en=g)
+                session.add(goal_obj)
+                await session.flush()
+                goal_db_map[g] = goal_obj.id
+
+            secondary_goals_list = ["Weight Loss", "Weight Gain", "Lifestyle Management", "Gut Health & Digestion", "Fitness & Muscle Support"]
+            sec_goal_db_map = {}
+            for g in secondary_goals_list:
+                code = g.lower().replace(" ", "_").replace("&", "and")
+                goal_obj = SecondaryGoal(code=code, name_en=g)
+                session.add(goal_obj)
+                await session.flush()
+                sec_goal_db_map[g] = goal_obj.id
+
+            await session.commit()
 
             # 3. Seed Foods and FoodIngredients
             print("Seeding foods...")
@@ -630,13 +665,12 @@ class ETLPipeline:
                         client_food_id=f_id,
                         name_en=str(item.get("Name") or item.get("name") or "").strip(),
                         description_en=str(item.get("Description") or "").strip(),
-                        quantity=float(item.get("Quantity") or 0.0),
                         min_quantity=float(item.get("Min_Quantity") or item.get("min_quantity") or 0.0) or None,
                         max_quantity=float(item.get("Max_Quantity") or item.get("max_quantity") or 0.0) or None,
                         unit=str(item.get("Unit") or "g").strip(),
                         preparation_en="\n".join(item.get("Preparation")) if isinstance(item.get("Preparation"), list) else str(item.get("Preparation") or "").strip(),
                         notes=str(item.get("Notes") or "").strip(),
-                        food_role=raw_role or None,
+                        food_role_id=role_db_map.get(raw_role),
                         image_url=resolved_img,
                         diet_types=item.get("Diet Type") or item.get("diet_type") or [],
                         supports=item.get("Supports") or []
@@ -647,6 +681,7 @@ class ETLPipeline:
 
                     # Add food ingredients junctions
                     seen_ingredients = set()
+                    fi_list = []
                     for ing_ref in item.get("Ingredients") or item.get("ingredients") or []:
                         ref_id = str(ing_ref.get("Ingredient_ID") or ing_ref.get("ingredient_id") or ing_ref.get("ID") or ing_ref.get("id") or "").strip()
                         if not ref_id or ref_id in seen_ingredients:
@@ -699,6 +734,9 @@ class ETLPipeline:
                             quantity=float(ing_ref.get("Quantity") or ing_ref.get("quantity") or 0.0)
                         )
                         session.add(fi)
+                        fi_list.append(fi)
+                    
+                    await FoodService._calculate_food_nutrition(session, food_obj, fi_list)
 
             await session.commit()
             print("Foods and food ingredient junctions seeded.")
@@ -730,14 +768,24 @@ class ETLPipeline:
                         name_en=str(item.get("Name") or item.get("name") or "").strip(),
                         description_en=str(item.get("Description") or "").strip(),
                         meal_session_id=session_db_map[norm_code],
-                        diet_types=item.get("Diet Type") or item.get("diet_types") or item.get("diet_type") or [],
-                        goal=item.get("Goal") or item.get("goal") or []
+                        diet_types=item.get("Diet Type") or item.get("diet_types") or item.get("diet_type") or []
                     )
                     session.add(meal_obj)
                     await session.flush()
 
+                    goals_raw = item.get("Goal") or item.get("goal") or []
+                    goals_list = [goals_raw] if isinstance(goals_raw, str) else goals_raw
+                    for g_raw in goals_list:
+                        g_str = str(g_raw).strip()
+                        if g_str in goal_db_map:
+                            session.add(MealPrimaryGoal(meal_id=meal_obj.id, primary_goal_id=goal_db_map[g_str]))
+                        elif g_str in sec_goal_db_map:
+                            session.add(MealSecondaryGoal(meal_id=meal_obj.id, secondary_goal_id=sec_goal_db_map[g_str]))
+
+
                     # Add meal foods junctions
                     seen_foods = set()
+                    mf_list = []
                     for food_ref in item.get("Foods") or item.get("foods") or []:
                         ref_id = str(food_ref.get("ID") or food_ref.get("id") or "").strip()
                         if not ref_id or ref_id in seen_foods:
@@ -748,12 +796,21 @@ class ETLPipeline:
                         if not food_db_id:
                             continue
 
+                        raw_qty = food_ref.get("Quantity") or food_ref.get("quantity")
+                        if raw_qty is None:
+                            c_foods_ref = self.foods_by_cuisine.get(cuisine, {})
+                            raw_qty = c_foods_ref.get(ref_id, {}).get("Quantity") or c_foods_ref.get(ref_id, {}).get("quantity") or 0.0
+
                         mf = MealFood(
                             meal_id=meal_obj.id,
                             food_id=food_db_id,
+                            quantity=float(raw_qty),
                             is_replaceable=bool(food_ref.get("Replaceable") or food_ref.get("replaceable") or False)
                         )
                         session.add(mf)
+                        mf_list.append(mf)
+                    
+                    await MealService._calculate_meal_nutrition(session, meal_obj, mf_list)
 
             await session.commit()
             print("Meals and meal food junctions seeded.")

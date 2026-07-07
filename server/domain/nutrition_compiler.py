@@ -72,3 +72,85 @@ def compile_food_macros(ingredients_list: List[Dict[str, Any]]) -> Dict[str, flo
         out["fiberG"] += contrib.get("fiberG", contrib.get("fiber", 0.0))
         
     return {k: round(v, 2) for k, v in out.items()}
+
+def calculate_nutrition_rollup(items: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Generic rollup compiler for both Foods and Meals.
+    Input items must contain:
+      - 'quantity': float (how much is being used)
+      - 'unit': str (unit of usage)
+      - 'base_quantity': float (what the base macros/micros are measured against, e.g. 100 for grams, or total food yield)
+      - 'base_unit': str (e.g. 'g')
+      - 'macros': Dict[str, float] (calories_kcal, protein_g, etc.)
+      - 'micronutrients': Dict[str, float]
+      - 'conversions': Optional[Dict]
+    """
+    total_macros = {
+        "calories_kcal": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "fiber_g": 0.0
+    }
+    total_micros = {}
+
+    for item in items:
+        qty = float(item.get("quantity") or 0.0)
+        unit = str(item.get("unit") or "g").strip().lower()
+        base_qty = float(item.get("base_quantity") or 100.0)
+        base_unit = str(item.get("base_unit") or "g").strip().lower()
+        conversions = item.get("conversions")
+        
+        macros = item.get("macros") or {}
+        micros = item.get("micronutrients") or {}
+        
+        if qty <= 0 or base_qty <= 0:
+            continue
+            
+        # Determine scale factor
+        if _unit_is_gram(base_unit):
+            grams = convert_to_grams(qty, unit, base_unit, conversions)
+            factor = grams / base_qty
+        else:
+            if _unit_is_gram(unit):
+                # Try to get default weight
+                default_weight = 100.0
+                if conversions and base_unit in conversions:
+                    default_weight = float(conversions[base_unit])
+                factor = qty / default_weight
+            else:
+                factor = qty / base_qty
+                
+        # Scale macros
+        for k, v in macros.items():
+            if k in total_macros:
+                total_macros[k] += float(v or 0.0) * factor
+                
+        # Scale micros
+        for k, v in micros.items():
+            try:
+                num_v = float(v or 0.0)
+                curr = total_micros.get(k, 0.0)
+                if not isinstance(curr, (int, float)):
+                    curr = 0.0
+                total_micros[k] = curr + (num_v * factor)
+            except (ValueError, TypeError):
+                # Qualitative value, store as string
+                if k not in total_micros:
+                    total_micros[k] = str(v)
+                elif isinstance(total_micros[k], str):
+                    if v and str(v) not in total_micros[k]:
+                        total_micros[k] = f"{total_micros[k]}, {v}"
+            
+    # Rounding
+    for k in total_macros:
+        if isinstance(total_macros[k], (int, float)):
+            total_macros[k] = round(total_macros[k], 2)
+    for k in total_micros:
+        if isinstance(total_micros[k], (int, float)):
+            total_micros[k] = round(total_micros[k], 2)
+        
+    return {
+        "macros": total_macros,
+        "micronutrients": total_micros
+    }

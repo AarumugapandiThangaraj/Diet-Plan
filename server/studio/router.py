@@ -742,7 +742,7 @@ def studio_swap_meal_options(req: MealSwapOptionsRequest):
     }
 )
 def studio_swap_meal_apply(req: MealSwapApplyRequest):
-    meal = dict(req.meal or {})
+    meal = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
     if not meal:
         raise HTTPException(status_code=400, detail="Meal payload is required.")
 
@@ -793,10 +793,11 @@ def studio_swap_meal_apply(req: MealSwapApplyRequest):
     }
 )
 def studio_swap_food_options(req: FoodSwapOptionsRequest):
-    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    meal = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
+    cuisine = meal.get("cuisine_type") or "north_indian"
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
-    return get_food_swap_options_service(meal=req.meal, food_name=req.foodName, top_n=req.topN, cuisine=str(cuisine))
+    return get_food_swap_options_service(meal=meal, food_name=req.foodName, top_n=req.topN, cuisine=str(cuisine))
 
 @router.post(
     "/swap/food/apply",
@@ -845,10 +846,11 @@ def studio_swap_food_options(req: FoodSwapOptionsRequest):
     }
 )
 def studio_swap_food_apply(req: FoodSwapApplyRequest):
-    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    meal_dict = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
+    cuisine = meal_dict.get("cuisine_type") or "north_indian"
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
-    meal = apply_food_swap_service(meal=req.meal, option=req.option, cuisine=str(cuisine))
+    meal = apply_food_swap_service(meal=meal_dict, option=req.option, cuisine=str(cuisine))
     return {"meal": meal}
 
 @router.post(
@@ -886,10 +888,11 @@ def studio_swap_food_apply(req: FoodSwapApplyRequest):
     }
 )
 def studio_swap_ingredient_options(req: IngredientSwapOptionsRequest):
-    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    meal = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
+    cuisine = meal.get("cuisine_type") or "north_indian"
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
-    return get_ingredient_swap_options_service(meal=req.meal, ingredient_query=req.ingredientQuery, top_n=req.topN, cuisine=str(cuisine))
+    return get_ingredient_swap_options_service(meal=meal, ingredient_query=req.ingredientQuery, top_n=req.topN, cuisine=str(cuisine))
 
 @router.post(
     "/swap/ingredient/apply",
@@ -928,11 +931,12 @@ def studio_swap_ingredient_options(req: IngredientSwapOptionsRequest):
     }
 )
 def studio_swap_ingredient_apply(req: IngredientSwapApplyRequest):
-    cuisine = req.meal.get("cuisine_type") or "north_indian"
+    meal = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
+    cuisine = meal.get("cuisine_type") or "north_indian"
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
-    meal = apply_ingredient_swap_service(meal=req.meal, option=req.option, cuisine=str(cuisine))
-    return {"meal": meal}
+    meal_out = apply_ingredient_swap_service(meal=meal, option=req.option, cuisine=str(cuisine))
+    return {"meal": meal_out}
 
 @router.post(
     "/substitutes/from-ingredients",
@@ -980,10 +984,30 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
     if not plan:
         return {
             "activePlan": False,
-            "dailyTargets": {},
-            "healthMetrics": {},
-            "hydration": {},
-            "energySummary": {},
+            "dailyTargets": {
+                "caloriesKcal": 0,
+                "proteinG": 0,
+                "carbsG": 0,
+                "fatG": 0,
+                "fiberG": 0,
+            },
+            "healthMetrics": {
+                "bmi": 0.0,
+                "bmiCategory": "",
+                "targetWeightKg": 0.0,
+                "weightKg": 0.0,
+                "weightDeltaKg": 0.0,
+            },
+            "hydration": {
+                "targetWaterL": 0.0,
+                "consumedWaterMl": 0,
+                "completionPercentage": 0,
+            },
+            "energySummary": {
+                "targetCalories": 0,
+                "consumedCalories": 0,
+                "remainingCalories": 0,
+            },
             "todayMeals": [],
             "goal": "",
             "activityLevel": "",
