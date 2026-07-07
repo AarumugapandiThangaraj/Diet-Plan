@@ -291,13 +291,10 @@ export default function PlanStudio({ onNavigateToDashboard }) {
           <ProfileForm />
           <MetricHub />
         </main>
-      ) : view === 'chooseMeals' ? (
-        <MealPoolSelector />
-      ) : view === 'selectedMeals' ? (
-        <DayArranger />
-      ) : (
-        <PlanViewer onNavigateToDashboard={onNavigateToDashboard} />
-      )}
+      ) : null}
+      {view === 'chooseMeals' ? <MealPoolSelector /> : null}
+      {view === 'selectedMeals' ? <DayArranger onNavigateToDashboard={onNavigateToDashboard} /> : null}
+      {view === 'plans' ? <PlanViewer onNavigateToDashboard={onNavigateToDashboard} /> : null}
 
       <SwapModal />
       <MealDetailsModal />

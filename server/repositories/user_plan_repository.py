@@ -9,14 +9,113 @@ from sqlalchemy.exc import SQLAlchemyError
 from exceptions.repository import RepositoryException
 import uuid
 
+async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
+    res = await session.execute(stmt)
+    plan_obj = res.scalar_one_or_none()
+    if plan_obj:
+        # Fetch sessions for session codes
+        sessions_stmt = select(MealSession)
+        sessions_res = await session.execute(sessions_stmt)
+        sessions_map = {s.id: s.code for s in sessions_res.scalars().all()}
+        
+        # Reconstruct legacy plan_payload
+        plans_arr = []
+        # sort days
+        days_sorted = sorted(plan_obj.days_rel, key=lambda d: d.day_number)
+        for day in days_sorted:
+            day_dict = {}
+            for pmeal in day.meals_rel:
+                session_code = sessions_map.get(pmeal.meal_session_id)
+                if not session_code: continue
+                
+                meal_dict = {
+                    "id": str(pmeal.id),
+                    "Meal_ID": pmeal.meal.client_meal_id if pmeal.meal else None,
+                    "name": pmeal.meal.name_en if pmeal.meal else None,
+                    "macros": {
+                        "caloriesKcal": float(pmeal.calories_kcal) if pmeal.calories_kcal else 0.0,
+                        "proteinG": float(pmeal.protein_g) if pmeal.protein_g else 0.0,
+                        "carbsG": float(pmeal.carbs_g) if pmeal.carbs_g else 0.0,
+                        "fatG": float(pmeal.fat_g) if pmeal.fat_g else 0.0,
+                        "fiberG": float(pmeal.fiber_g) if pmeal.fiber_g else 0.0
+                    },
+                    "foods_struct": []
+                }
+                
+                for pfood in pmeal.meal_foods_rel:
+                    food_dict = {
+                        "id": pfood.food.client_food_id if pfood.food else None,
+                        "name": pfood.food.name_en if pfood.food else None,
+                        "quantity": float(pfood.quantity),
+                        "unit": pfood.unit,
+                        "macros": {
+                            "caloriesKcal": float(pfood.calories_kcal) if pfood.calories_kcal else 0.0,
+                            "proteinG": float(pfood.protein_g) if pfood.protein_g else 0.0,
+                            "carbsG": float(pfood.carbs_g) if pfood.carbs_g else 0.0,
+                            "fatG": float(pfood.fat_g) if pfood.fat_g else 0.0,
+                            "fiberG": float(pfood.fiber_g) if pfood.fiber_g else 0.0
+                        },
+                        "ingredients_struct": []
+                    }
+                    
+                    for ping in pfood.ingredients_rel:
+                        ing_dict = {
+                            "id": ping.ingredient.id if ping.ingredient else None,
+                            "name": ping.ingredient.name_en if ping.ingredient else None,
+                            "quantity": float(ping.quantity),
+                            "unit": ping.unit,
+                            "macros": {
+                                "caloriesKcal": float(ping.calories_kcal) if ping.calories_kcal else 0.0,
+                                "proteinG": float(ping.protein_g) if ping.protein_g else 0.0,
+                                "carbsG": float(ping.carbs_g) if ping.carbs_g else 0.0,
+                                "fatG": float(ping.fat_g) if ping.fat_g else 0.0,
+                                "fiberG": float(ping.fiber_g) if ping.fiber_g else 0.0
+                            }
+                        }
+                        food_dict["ingredients_struct"].append(ing_dict)
+                        
+                    meal_dict["foods_struct"].append(food_dict)
+                    
+                day_dict[session_code] = meal_dict
+            plans_arr.append(day_dict)
+            
+        plan_payload = {
+            "days": plan_obj.days,
+            "targets": {
+                "dailyCalories": float(plan_obj.target_calories_kcal) if plan_obj.target_calories_kcal else 0.0,
+                "proteinG": float(plan_obj.target_protein_g) if plan_obj.target_protein_g else 0.0,
+                "carbsG": float(plan_obj.target_carbs_g) if plan_obj.target_carbs_g else 0.0,
+                "fatG": float(plan_obj.target_fat_g) if plan_obj.target_fat_g else 0.0,
+                "fiberG": float(plan_obj.target_fiber_g) if plan_obj.target_fiber_g else 0.0,
+                "waterL": float(plan_obj.target_water_l) if plan_obj.target_water_l else 0.0
+            },
+            "plans": plans_arr,
+            "totalsAll": {
+                "caloriesKcal": float(plan_obj.totals_calories_kcal) if plan_obj.totals_calories_kcal else 0.0,
+                "proteinG": float(plan_obj.totals_protein_g) if plan_obj.totals_protein_g else 0.0,
+                "carbsG": float(plan_obj.totals_carbs_g) if plan_obj.totals_carbs_g else 0.0,
+                "fatG": float(plan_obj.totals_fat_g) if plan_obj.totals_fat_g else 0.0,
+                "fiberG": float(plan_obj.totals_fiber_g) if plan_obj.totals_fiber_g else 0.0
+            }
+        }
+        
+        return {
+            "user_identifier": str(plan_obj.user_id),
+            "start_date": plan_obj.starts_on,
+            "end_date": plan_obj.ends_on,
+            "plan_payload": plan_payload,
+            "plan_id": str(plan_obj.id),
+            "version": plan_obj.version,
+            "status": plan_obj.status
+        }
+    return None
+
 async def load_user_plan(user_identifier: str) -> Optional[dict]:
     """
     Asynchronously retrieves user plan by building the legacy plan_payload dictionary from V2 tables.
     """
     try:
         async with AsyncSessionLocal() as session:
-            # We assume user_identifier can be matched to a DietPlan via the user_id (if valid UUID)
-            # or we need to lookup user_id. For now, assuming user_identifier is a stringified UUID.
             try:
                 uid = uuid.UUID(user_identifier)
             except ValueError:
@@ -40,110 +139,41 @@ async def load_user_plan(user_identifier: str) -> Optional[dict]:
                     .selectinload(DietPlanMeal.meal)
                 )
             )
-            res = await session.execute(stmt)
-            plan_obj = res.scalar_one_or_none()
-            if plan_obj:
-                # Fetch sessions for session codes
-                sessions_stmt = select(MealSession)
-                sessions_res = await session.execute(sessions_stmt)
-                sessions_map = {s.id: s.code for s in sessions_res.scalars().all()}
-                
-                # Reconstruct legacy plan_payload
-                plans_arr = []
-                # sort days
-                days_sorted = sorted(plan_obj.days_rel, key=lambda d: d.day_number)
-                for day in days_sorted:
-                    day_dict = {}
-                    for pmeal in day.meals_rel:
-                        session_code = sessions_map.get(pmeal.meal_session_id)
-                        if not session_code: continue
-                        
-                        # reconstruct meal dict
-                        foods_struct = []
-                        for pmf in pmeal.meal_foods_rel:
-                            ingredients_struct = []
-                            for pmfi in pmf.ingredients_rel:
-                                ingredients_struct.append({
-                                    "id": pmfi.ingredient_id,
-                                    "name": pmfi.ingredient.name_en if pmfi.ingredient else "",
-                                    "quantity": pmfi.quantity,
-                                    "unit": pmfi.unit,
-                                    "macros": {
-                                        "caloriesKcal": float(pmfi.calories_kcal or 0),
-                                        "proteinG": float(pmfi.protein_g or 0),
-                                        "carbsG": float(pmfi.carbs_g or 0),
-                                        "fatG": float(pmfi.fat_g or 0),
-                                        "fiberG": float(pmfi.fiber_g or 0)
-                                    }
-                                })
-                            foods_struct.append({
-                                "id": pmf.food.client_food_id if pmf.food else pmf.food_id,
-                                "name": pmf.food.name_en if pmf.food else "",
-                                "preparation": pmf.food.preparation_en if pmf.food else "",
-                                "quantity": pmf.quantity,
-                                "unit": pmf.unit,
-                                "ingredients_struct": ingredients_struct,
-                                "macros": {
-                                    "caloriesKcal": float(pmf.calories_kcal or 0),
-                                    "proteinG": float(pmf.protein_g or 0),
-                                    "carbsG": float(pmf.carbs_g or 0),
-                                    "fatG": float(pmf.fat_g or 0),
-                                    "fiberG": float(pmf.fiber_g or 0)
-                                }
-                            })
-                            
-                        macros_dict = {
-                            "caloriesKcal": float(pmeal.calories_kcal or 0),
-                            "proteinG": float(pmeal.protein_g or 0),
-                            "carbsG": float(pmeal.carbs_g or 0),
-                            "fatG": float(pmeal.fat_g or 0),
-                            "fiberG": float(pmeal.fiber_g or 0)
-                        }
-                        day_dict[session_code] = {
-                            "Meal_ID": pmeal.meal.client_meal_id if pmeal.meal else "",
-                            "meal_name": pmeal.meal.name_en if pmeal.meal else "",
-                            "image_ID": pmeal.meal.client_meal_id if pmeal.meal else "",
-                            "foods_struct": foods_struct,
-                            "macros": macros_dict,
-                            "_macros": macros_dict
-                        }
-                    plans_arr.append(day_dict)
-                    
-                plan_payload = {
-                    "days": plan_obj.days, # we named it days
-                    "dayIds": [str(d.id) for d in days_sorted],
-                    "targets": {
-                        "dailyCalories": float(plan_obj.target_calories_kcal or 0),
-                        "proteinG": float(plan_obj.target_protein_g or 0),
-                        "carbsG": float(plan_obj.target_carbs_g or 0),
-                        "fatG": float(plan_obj.target_fat_g or 0),
-                        "fiberG": float(plan_obj.target_fiber_g or 0),
-                        "bmi": float(plan_obj.bmi_snapshot or 0),
-                        "bmiCategory": plan_obj.bmi_category_snapshot or "",
-                        "waterL": float(plan_obj.target_water_l or 0)
-                    },
-                    "totalsAll": {
-                        "caloriesKcal": float(plan_obj.totals_calories_kcal or 0),
-                        "proteinG": float(plan_obj.totals_protein_g or 0),
-                        "carbsG": float(plan_obj.totals_carbs_g or 0),
-                        "fatG": float(plan_obj.totals_fat_g or 0),
-                        "fiberG": float(plan_obj.totals_fiber_g or 0)
-                    },
-                    "plans": plans_arr,
-                    "mealTimes": list(plans_arr[0].keys()) if plans_arr else []
-                }
-
-                return {
-                    "user_identifier": user_identifier,
-                    "start_date": plan_obj.starts_on,
-                    "end_date": plan_obj.ends_on,
-                    "plan_payload": plan_payload
-                }
-            return None
+            return await _load_plan_from_stmt(session, stmt)
     except SQLAlchemyError as ex:
         raise RepositoryException("Failed to load user plan from repository") from ex
 
-async def save_user_plan(user_identifier: str, start_date: date, end_date: date, plan_payload: dict, profile_data: dict = None) -> dict:
+async def load_user_plan_by_id(plan_id: str) -> Optional[dict]:
+    try:
+        async with AsyncSessionLocal() as session:
+            try:
+                pid = uuid.UUID(plan_id)
+            except ValueError:
+                return None
+
+            stmt = (
+                select(DietPlan)
+                .filter_by(id=pid)
+                .options(
+                    selectinload(DietPlan.days_rel)
+                    .selectinload(DietPlanDay.meals_rel)
+                    .selectinload(DietPlanMeal.meal_foods_rel)
+                    .selectinload(DietPlanMealFood.food),
+                    selectinload(DietPlan.days_rel)
+                    .selectinload(DietPlanDay.meals_rel)
+                    .selectinload(DietPlanMeal.meal_foods_rel)
+                    .selectinload(DietPlanMealFood.ingredients_rel)
+                    .selectinload(DietPlanMealFoodIngredient.ingredient),
+                    selectinload(DietPlan.days_rel)
+                    .selectinload(DietPlanDay.meals_rel)
+                    .selectinload(DietPlanMeal.meal)
+                )
+            )
+            return await _load_plan_from_stmt(session, stmt)
+    except SQLAlchemyError as ex:
+        raise RepositoryException("Failed to load user plan by ID from repository") from ex
+
+async def save_user_plan(user_identifier: str, start_date: date, end_date: date, plan_payload: dict, profile_data: dict = None, status: str = 'active') -> dict:
     """
     Asynchronously saves user plan by translating legacy plan_payload dict into V2 tables.
     Also creates UserHealthProfile if profile_data is provided.
@@ -175,13 +205,23 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
             food_res = await session.execute(food_stmt)
             foods_map = {(c_id, client_id): pk_id for c_id, client_id, pk_id in food_res.all()}
 
-            # archive old plans
-            stmt = select(DietPlan).filter_by(user_id=uid, status='active')
-            res = await session.execute(stmt)
-            old_plans = res.scalars().all()
-            for op in old_plans:
-                op.status = 'archived'
-            await session.flush()
+            # only archive old plans if activating
+            if status == 'active':
+                stmt = select(DietPlan).filter_by(user_id=uid, status='active')
+                res = await session.execute(stmt)
+                old_plans = res.scalars().all()
+                for op in old_plans:
+                    op.status = 'archived'
+                await session.flush()
+            elif status == 'draft':
+                # Archive or delete previous draft
+                stmt = select(DietPlan).filter_by(user_id=uid, status='draft')
+                res = await session.execute(stmt)
+                old_drafts = res.scalars().all()
+                for od in old_drafts:
+                    await session.delete(od)
+                await session.flush()
+                
             targets = plan_payload.get("targets", {})
             totals = plan_payload.get("totalsAll") or plan_payload.get("totals", {})
             
@@ -226,7 +266,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                 user_id=uid,
                 health_profile_id=health_profile_id,
                 days=_int(plan_payload.get("days", 1)),
-                status='active',
+                status=status,
                 target_calories_kcal=_int(targets.get("dailyCalories", 0)),
                 target_protein_g=_float(targets.get("proteinG")),
                 target_protein_g_min=_float(targets.get("proteinGMin")),
@@ -336,10 +376,46 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                 "user_identifier": user_identifier,
                 "start_date": start_date,
                 "end_date": end_date,
-                "plan_payload": plan_payload
+                "plan_payload": plan_payload,
+                "plan_id": str(plan_obj.id),
+                "version": plan_obj.version,
+                "status": plan_obj.status
             }
     except SQLAlchemyError as ex:
         import traceback
         import logging
         logging.getLogger("app.repo").error(f"SQLAlchemyError in save_user_plan:\n{traceback.format_exc()}")
         raise RepositoryException(f"Failed to save user plan: {str(ex)}") from ex
+
+async def load_latest_user_plan(user_identifier: str) -> Optional[dict]:
+    try:
+        async with AsyncSessionLocal() as session:
+            try:
+                uid = uuid.UUID(user_identifier)
+            except ValueError:
+                return None
+
+            stmt = (
+                select(DietPlan)
+                .filter_by(user_id=uid)
+                .filter(DietPlan.status.in_(['active', 'draft']))
+                .order_by(DietPlan.created_at.desc())
+                .limit(1)
+                .options(
+                    selectinload(DietPlan.days_rel)
+                    .selectinload(DietPlanDay.meals_rel)
+                    .selectinload(DietPlanMeal.meal_foods_rel)
+                    .selectinload(DietPlanMealFood.food),
+                    selectinload(DietPlan.days_rel)
+                    .selectinload(DietPlanDay.meals_rel)
+                    .selectinload(DietPlanMeal.meal_foods_rel)
+                    .selectinload(DietPlanMealFood.ingredients_rel)
+                    .selectinload(DietPlanMealFoodIngredient.ingredient),
+                    selectinload(DietPlan.days_rel)
+                    .selectinload(DietPlanDay.meals_rel)
+                    .selectinload(DietPlanMeal.meal)
+                )
+            )
+            return await _load_plan_from_stmt(session, stmt)
+    except SQLAlchemyError as ex:
+        raise RepositoryException("Failed to load latest user plan from repository") from ex

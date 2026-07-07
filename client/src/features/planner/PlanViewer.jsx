@@ -19,7 +19,8 @@ export default function PlanViewer({ onNavigateToDashboard }) {
     setSelectedMealDetails,
     handleSwapWholeMeal,
     handleSwapFood,
-    getDisplayMealName
+    getDisplayMealName,
+    activateAndProceed
   } = usePlannerContext()
 
   const { generatePDF } = usePDFGenerator()
@@ -149,9 +150,9 @@ export default function PlanViewer({ onNavigateToDashboard }) {
           type="button"
           className="secondaryBtn"
           style={{ padding: '16px 32px', fontSize: '1.1rem', minWidth: '240px' }}
-          onClick={onNavigateToDashboard}
+          onClick={() => activateAndProceed(onNavigateToDashboard)}
         >
-          Go to Dashboard 📊
+          Activate & Go to Dashboard 📊
         </button>
       </div>
     </main>

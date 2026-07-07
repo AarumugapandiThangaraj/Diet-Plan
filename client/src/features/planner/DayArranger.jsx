@@ -6,8 +6,8 @@ import {
   MEAL_TIME_EMOJI
 } from '../../config/constants.js'
 
-export default function DayArranger() {
-  const { setView } = useProfileContext()
+export default function DayArranger({ onNavigateToDashboard }) {
+  // const { setView } = useProfileContext()
   const {
     selectedMealTimes,
     selectedPoolsByTime,
@@ -17,9 +17,12 @@ export default function DayArranger() {
     handleDragOver,
     handleDragLeave,
     handleDropOnDay,
-    buildResultFromSelectedMeals,
+    updateDraftPlanArrangement,
+    activateAndProceed,
     generateLoading,
-    error
+    error,
+    successMsg,
+    setView
   } = usePlannerContext()
 
   return (
@@ -35,6 +38,7 @@ export default function DayArranger() {
           </button>
         </div>
         {error ? <div className="inlineError">{error}</div> : null}
+        {successMsg ? <div className="inlineSuccess" style={{ color: 'var(--success)', marginTop: '8px', padding: '8px', background: 'var(--success-bg, #e8f5e9)', borderRadius: '4px', textAlign: 'center' }}>{successMsg}</div> : null}
       </section>
 
       {selectedMealTimes.map((mealTime) => {
@@ -112,8 +116,19 @@ export default function DayArranger() {
 
       <section className="panel">
         <div className="actions" style={{ marginTop: 0 }}>
-          <button type="button" className="primaryBtn" onClick={buildResultFromSelectedMeals} disabled={generateLoading}>
-            {generateLoading ? 'Generating...' : 'Generate plan ✅'}
+          <button type="button" className="primaryBtn" onClick={updateDraftPlanArrangement} disabled={generateLoading}>
+            {generateLoading ? 'Updating...' : 'Update Plan 🔄'}
+          </button>
+          <button 
+            type="button" 
+            className="primaryBtn" 
+            onClick={async () => {
+              await updateDraftPlanArrangement();
+              activateAndProceed(onNavigateToDashboard);
+            }} 
+            disabled={generateLoading}
+          >
+            Activate & Go to Dashboard ✅
           </button>
           <button type="button" className="secondaryBtn" onClick={() => setView('chooseMeals')}>
             Back ⬅️

@@ -51,12 +51,11 @@ def _preview_scaled_macros(macros: Dict[str, float], expected: Dict[str, float])
         requested = target_kcal / kcal
         factor = max(0.6, min(2.5, requested))
 
-    scaled = {
-        "caloriesKcal": macros.get("caloriesKcal", 0.0) * factor,
-        "proteinG": macros.get("proteinG", 0.0) * factor,
-        "carbsG": macros.get("carbsG", 0.0) * factor,
-        "fatG": macros.get("fatG", 0.0) * factor,
-        "fiberG": macros.get("fiberG", 0.0) * factor,
+    scaled = {"caloriesKcal": round(macros.get("caloriesKcal", 0.0) * factor),
+                "proteinG": round(macros.get("proteinG", 0.0) * factor),
+                "carbsG": round(macros.get("carbsG", 0.0) * factor),
+                "fatG": round(macros.get("fatG", 0.0) * factor),
+                "fiberG": round(macros.get("fiberG", 0.0) * factor),
     }
     return factor, scaled
 
@@ -90,22 +89,22 @@ def _rank_view(meal: Dict[str, Any], score: float, scaled_macros: Dict[str, floa
     return {
         "Meal_ID": meal.get("Meal_ID"),
         "meal_name": meal.get("meal_name"),
-        "goal": meal.get("goal"),
-        "meal_time": meal.get("meal_time"),
-        "ingredients": meal.get("ingredients") or "",
-        "method": meal.get("method") or "",
-        "cuisine_type": meal.get("cuisine_type") or "",
-        "country": meal.get("country") or "",
+        # "goal": meal.get("goal"),
+        # "meal_time": meal.get("meal_time"),
+        # "ingredients": meal.get("ingredients") or "",
+        "Discription": meal.get("method") or "",
+        # "cuisine_type": meal.get("cuisine_type") or "",
+        # "country": meal.get("country") or "",
         "image_ID": meal.get("image_ID") or "",
-        "diet_type": meal.get("diet_type"),
-        "time": meal.get("time") or "",
-        "serving_size": meal.get("serving_size") or "",
-        "caution": meal.get("caution") or "",
-        "nutritive_values": format_nutritive_values(scaled_macros),
+        # "diet_type": meal.get("diet_type"),
+        # "time": meal.get("time") or "",
+        # "serving_size": meal.get("serving_size") or "",
+        # "caution": meal.get("caution") or "",
+        # "nutritive_values": format_nutritive_values(scaled_macros),
         "_macros": scaled_macros,
-        "_base_macros": meal.get("_macros") or {},
-        "_score": score,
-        "_scale_preview": scale_factor,
+        # "_base_macros": meal.get("_macros") or {},
+        # "_score": score,
+        # "_scale_preview": scale_factor,
     }
 
 def rank_meals_for_meal_time(

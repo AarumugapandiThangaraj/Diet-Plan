@@ -20,6 +20,10 @@ class DietPlan(Base, TimestampMixin):
     
     days: Mapped[int] = mapped_column(SmallInteger, nullable=False)
     status: Mapped[str] = mapped_column(String(30), nullable=False, server_default="'draft'")
+    version: Mapped[int] = mapped_column(Integer, nullable=False, server_default="1")
+    is_dirty: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
+    generated_by: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
+    last_modified_by: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     
     target_calories_kcal: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     target_protein_g: Mapped[Optional[float]] = mapped_column(Numeric(6, 2), nullable=True)
@@ -200,3 +204,15 @@ class DietPlanDayHydrationLog(Base):
 
     plan_day: Mapped["DietPlanDay"] = relationship("DietPlanDay", back_populates="hydration_logs_rel")
 
+
+class DietPlanEvent(Base, TimestampMixin):
+    __tablename__ = "diet_plan_events"
+    __table_args__ = (
+        {"schema": "Twellr_Nutri"}
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    plan_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plans.id", ondelete="CASCADE"), nullable=False)
+    event_type: Mapped[str] = mapped_column(String(50), nullable=False) # e.g. "MEAL_SWAPPED", "PLAN_GENERATED"
+    meal_instance_id: Mapped[Optional[uuid.UUID]] = mapped_column(UUID(as_uuid=True), nullable=True)
+    details: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)

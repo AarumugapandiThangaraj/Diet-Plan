@@ -8,6 +8,10 @@ export function fetchActivePlan({ signal } = {}) {
   return httpJson('/api/studio/plan/active', { signal })
 }
 
+export function fetchLatestPlan({ signal } = {}) {
+  return httpJson('/api/studio/plan/latest', { signal })
+}
+
 export function fetchStudioTargets(profile, { signal } = {}) {
   return httpJson('/api/studio/targets', {
     method: 'POST',
@@ -24,10 +28,33 @@ export function fetchRankedMeals(profile, mealTimes, { limit = 180, signal } = {
   })
 }
 
-export function buildPlanFromSelection(profile, { days, mealTimes, poolsByTime, assignmentByTime }, { signal } = {}) {
-  return httpJson('/api/studio/plan/build', {
+export function createDraftPlan(profile, { days, mealTimes, poolsByTime }, { signal } = {}) {
+  return httpJson('/api/studio/meal-plans', {
     method: 'POST',
-    body: { profile, days, mealTimes, poolsByTime, assignmentByTime },
+    body: { profile, days, mealTimes, poolsByTime },
+    signal
+  })
+}
+
+export function getDraftPlan(planId, { signal } = {}) {
+  return httpJson(`/api/studio/meal-plans/${planId}`, {
+    method: 'GET',
+    signal
+  })
+}
+
+export function patchDraftPlan(planId, version, operations, { signal } = {}) {
+  return httpJson(`/api/studio/meal-plans/${planId}`, {
+    method: 'PATCH',
+    body: { version, operations },
+    signal
+  })
+}
+
+export function activateDraftPlan(planId, version, { signal } = {}) {
+  return httpJson(`/api/studio/meal-plans/${planId}/activate`, {
+    method: 'POST',
+    body: { version },
     signal
   })
 }

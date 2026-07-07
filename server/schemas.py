@@ -15,6 +15,7 @@ class StudioProfile(BaseModel):
                 "weightKg": 75.0,
                 "activityLevel": "moderate",
                 "goal": "skin_repair",
+                "secondaryGoal": "",
                 "dietType": "non_veg",
                 "allergies": "peanut,gluten",
                 "cuisineType": "south_indian"
@@ -51,6 +52,11 @@ class StudioProfile(BaseModel):
         default="skin_repair",
         description="Target health/nutrition objective. Allowed values: 'skin_repair' (prioritizes micronutrients/collagen-boosting), 'hair_repair' (focuses on protein/micronutrients).",
         json_schema_extra={"example": "skin_repair"}
+    )
+    secondaryGoal: str = Field(
+        default="",
+        description="Secondary target health/nutrition objective.",
+        json_schema_extra={"example": "Weight Gain"}
     )
     dietType: str = Field(
         default="non_veg",
@@ -93,25 +99,32 @@ class StudioProfile(BaseModel):
             return 60.0
 
 
+class TargetsProfile(BaseModel):
+    activityLevel: str = Field(..., description="Daily physical activity level (e.g., 'moderate').")
+    age: int = Field(..., description="Age of the user in years (e.g. 28).")
+    gender: str = Field(..., description="Gender of the user (e.g., 'male').")
+    goal: str = Field(..., description="Primary health/nutrition objective.")
+    secondaryGoal: str = Field(default="", description="Secondary health/nutrition objective.")
+    heightCm: float = Field(..., description="Height of the user in centimeters (cm).")
+    weightKg: float = Field(..., description="Current body weight of the user in kilograms (kg).")
+
 class TargetsRequest(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
                 "profile": {
+                    "activityLevel": "moderate",
                     "age": 28,
                     "gender": "male",
-                    "heightCm": 175.0,
-                    "weightKg": 75.0,
-                    "activityLevel": "moderate",
                     "goal": "skin_repair",
-                    "dietType": "non_veg",
-                    "allergies": "",
-                    "cuisineType": "south_indian"
+                    "secondaryGoal": "Weight gain",
+                    "heightCm": 175.0,
+                    "weightKg": 75.0
                 }
             }
         }
     )
-    profile: StudioProfile = Field(
+    profile: TargetsProfile = Field(
         ...,
         description="User health, demographic, and dietary profile data used for calculation."
     )
@@ -128,6 +141,7 @@ class RankRequest(BaseModel):
                     "weightKg": 75.0,
                     "activityLevel": "moderate",
                     "goal": "skin_repair",
+                    "secondaryGoal": "Weight gain",
                     "dietType": "non_veg",
                     "allergies": "",
                     "cuisineType": "south_indian"
@@ -164,6 +178,7 @@ class BuildPlanRequest(BaseModel):
                     "weightKg": 75.0,
                     "activityLevel": "moderate",
                     "goal": "skin_repair",
+                    "secondaryGoal": "Weight gain",
                     "dietType": "non_veg",
                     "allergies": "",
                     "cuisineType": "south_indian"
@@ -266,6 +281,7 @@ class MealSwapOptionsRequest(BaseModel):
                     "weightKg": 75.0,
                     "activityLevel": "moderate",
                     "goal": "skin_repair",
+                    "secondaryGoal": "Weight gain",
                     "dietType": "non_veg",
                     "allergies": "",
                     "cuisineType": "south_indian"
@@ -771,7 +787,7 @@ class RankResponse(BaseModel):
             }
         }
     )
-    targets: DailyTargetsResponse = Field(..., description="Calculated daily nutritional targets based on profile parameters.")
+    # targets: DailyTargetsResponse = Field(..., description="Calculated daily nutritional targets based on profile parameters.")
     rankedByTime: Dict[str, List[Dict[str, Any]]] = Field(
         ...,
         description="Dictionary mapping each requested meal time to a sorted list of candidate meal objects with matching scores."
@@ -1022,4 +1038,247 @@ class LogHydrationResponse(BaseModel):
     completionPercentage: int
 
 
+class CuisineSchema(BaseModel):
+    id: str = Field(..., description="The unique code of the cuisine")
+    name: str = Field(..., description="The name of the cuisine in English")
 
+    model_config = ConfigDict(from_attributes=True)
+
+
+class CuisineListResponse(BaseModel):
+    targetMacros: Dict[str, float] = Field(..., description="Nutritional macro targets used as standard to filter alternative options.")
+    options: List[Dict[str, Any]] = Field(..., description="List of matching meal items available for swap.")
+
+
+class SwapMealApplyResponse(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "meal": {
+                    "id": "meal_777",
+                    "name": "Grilled Chicken Rice Bowl",
+                    "macros": {"caloriesKcal": 490.0, "proteinG": 32.0, "carbsG": 58.0, "fatG": 14.0, "fiberG": 6.0}
+                }
+            }
+        }
+    )
+    meal: Dict[str, Any] = Field(..., description="The newly updated meal payload with scaled/recalculated macros.")
+
+
+class SwapFoodOptionsResponse(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "matchedSource": {"name": "Almonds", "calories": 579, "protein": 21.2, "fat": 49.9, "carbs": 21.6, "fiber": 12.5},
+                "options": [
+                    {
+                        "target_food": "Walnuts",
+                        "ratio": 1.2,
+                        "target_macros": {"calories": 654, "protein": 15.2, "fat": 65.2, "carbs": 13.7, "fiber": 6.7}
+                    }
+                ]
+            }
+        }
+    )
+    matchedSource: Dict[str, Any] = Field(..., description="Nutritional properties of the original food item being swapped out.")
+    options: List[Dict[str, Any]] = Field(..., description="List of matching swap options indicating ratio and nutrient impact.")
+
+
+class SwapIngredientOptionsResponse(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "matchedSource": {"ingredient": "Mustard oil", "properties": {}},
+                "options": [
+                    {
+                        "target_ingredient": "Olive oil",
+                        "ratio": 1.0,
+                        "properties": {}
+                    }
+                ]
+            }
+        }
+    )
+    matchedSource: Dict[str, Any] = Field(..., description="Original ingredient metadata details.")
+    options: List[Dict[str, Any]] = Field(..., description="Suggested replacement options.")
+
+
+class SubstitutesResponse(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "choices": [{"name": "Milk", "substitutes": ["Almond milk", "Soy milk"]}],
+                "substitutesByKey": {"Milk": [{"name": "Almond milk", "ratio": 1.0}]}
+            }
+        }
+    )
+    choices: List[Dict[str, Any]] = Field(..., description="Recognized ingredients from query and their substitute summaries.")
+    substitutesByKey: Dict[str, List[Dict[str, Any]]] = Field(..., description="Detailed replacement ratio metrics indexed by ingredient name.")
+
+
+class HealthResponse(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "ok": True
+            }
+        }
+    )
+    ok: bool = Field(..., description="Liveness check indicator. Returns True if server is healthy.", json_schema_extra={"example": True})
+
+
+class ErrorDetail(BaseModel):
+    code: str = Field(..., description="Standardized error classification code.", json_schema_extra={"example": "VALIDATION_ERROR"})
+    message: str = Field(..., description="Readable error description text.", json_schema_extra={"example": "Invalid request parameters."})
+    details: Optional[Any] = Field(None, description="Context-specific details (like Pydantic validation failures).")
+
+
+class ErrorResponse(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "success": False,
+                "error": {
+                    "code": "VALIDATION_ERROR",
+                    "message": "Invalid request parameters.",
+                    "details": None
+                }
+            }
+        }
+    )
+    success: bool = Field(False, description="Always False to represent a failed request.", json_schema_extra={"example": False})
+    error: ErrorDetail = Field(..., description="Inner details of the error.")
+
+
+class DashboardRequest(BaseModel):
+    profile: StudioProfile
+
+
+class DashboardDailyTargets(BaseModel):
+    caloriesKcal: int
+    proteinG: int
+    carbsG: int
+    fatG: int
+    fiberG: int
+
+
+class DashboardHealthMetrics(BaseModel):
+    bmi: float
+    bmiCategory: str
+    targetWeightKg: float
+    weightKg: float
+    weightDeltaKg: float
+
+
+class DashboardHydration(BaseModel):
+    targetWaterL: float
+    consumedWaterMl: int
+    completionPercentage: int
+
+
+class DashboardEnergySummary(BaseModel):
+    targetCalories: int
+    consumedCalories: int
+    remainingCalories: int
+
+
+class DashboardMeal(BaseModel):
+    mealId: str
+    name: str
+    imageUrl: str
+    session: str
+    scheduledTime: str
+    macros: Dict[str, float]
+    consumed: bool = False
+
+
+class DashboardResponse(BaseModel):
+    activePlan: bool
+    dailyTargets: DashboardDailyTargets
+    healthMetrics: DashboardHealthMetrics
+    hydration: DashboardHydration
+    energySummary: Optional[DashboardEnergySummary] = None
+    todayMeals: List[DashboardMeal]
+    goal: str
+    activityLevel: str
+    cuisineType: str
+    currentDay: int
+    totalDays: int
+    planDayId: Optional[str] = None
+
+
+class ConsumeMealRequest(BaseModel):
+    mealId: str
+    mealDate: str  # YYYY-MM-DD format string
+    consumed: bool
+
+
+class ConsumeMealResponse(BaseModel):
+    success: bool
+    consumed: bool
+
+
+class LogHydrationRequest(BaseModel):
+    planDayId: str
+    waterMl: int
+
+
+class LogHydrationResponse(BaseModel):
+    success: bool
+    consumedWaterMl: int
+    completionPercentage: int
+
+
+class CuisineSchema(BaseModel):
+    id: str = Field(..., description="The unique code of the cuisine")
+    name: str = Field(..., description="The name of the cuisine in English")
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class CuisineListResponse(BaseModel):
+    success: bool
+    message: str
+    data: List[CuisineSchema]
+
+
+class CreateDraftRequest(BuildPlanRequest):
+    """
+    Inherits from BuildPlanRequest to reuse profile, days, mealTimes, poolsByTime.
+    It intentionally ignores assignmentByTime because the backend now owns the arrangement.
+    """
+    assignmentByTime: Optional[Dict[str, List[str]]] = Field(
+        default=None,
+        description="Ignored by the backend. Backend will arrange the meals."
+    )
+
+
+class PatchOperation(BaseModel):
+    type: str = Field(..., description="Type of operation: 'move' or 'swap'")
+    mealInstanceId: str = Field(..., description="UUID of the meal instance to modify")
+    targetDayNumber: Optional[int] = Field(None, description="Required for 'move' operation")
+    targetSession: Optional[str] = Field(None, description="Required for 'move' operation")
+    replacementMealId: Optional[str] = Field(None, description="Required for 'swap' operation")
+
+
+class PatchPlanRequest(BaseModel):
+    version: int = Field(..., description="Optimistic concurrency control version number")
+    operations: List[PatchOperation] = Field(..., description="List of mutation operations to apply atomically")
+
+
+class ActivatePlanRequest(BaseModel):
+    version: int = Field(..., description="Optimistic concurrency control version number")
+
+
+class ActivatePlanResponse(BaseModel):
+    success: bool
+    status: str
+
+
+class DraftPlanResponse(BuildPlanResponse):
+    targets: Dict[str, Any] = Field(..., description="The basic calculated daily target profile.")
+    mealTimes: Optional[List[str]] = Field(default=None, description="List of meal times included in the plan.")
+    rankedByTime: Optional[Dict[str, List[Dict[str, Any]]]] = Field(default=None, description="Not used for draft fetch.")
+    planId: str = Field(..., description="The unique ID of the draft plan")
+    version: int = Field(..., description="The version number of the draft plan")
+    status: str = Field(..., description="The status of the plan (should be 'draft')")

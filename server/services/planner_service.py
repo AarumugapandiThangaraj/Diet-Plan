@@ -41,7 +41,7 @@ def fetch_ranked_meals_service(profile: dict, meal_times: List[str], limit: int)
         )["ranked"]
         
     return {
-        "targets": targets,
+        # "targets": targets,
         "rankedByTime": ranked_by_time
     }
 
@@ -93,7 +93,7 @@ def apply_ingredient_swap_service(meal: dict, option: dict, cuisine: str) -> dic
     return apply_ingredient_swap_option(meal=meal, option=option, cuisine=cuisine)
 
 from datetime import date, datetime
-from repositories.user_plan_repository import load_user_plan, save_user_plan
+from repositories.user_plan_repository import save_user_plan, load_user_plan, load_user_plan_by_id
 
 def strip_meal_payload(meal: dict) -> dict:
     """
@@ -146,16 +146,16 @@ def strip_plan_payload(plan_data: dict) -> dict:
         
     return plan_copy
 
-async def save_user_plan_service(user_identifier: str, days: int, plan_data: dict, profile_data: dict = None) -> dict:
+async def save_user_plan_service(user_identifier: str, days: int, plan_data: dict, profile_data: dict = None, status: str = 'active') -> dict:
     """
-    Strips and saves the user's active diet plan payload asynchronously.
+    Strips and saves the user's diet plan payload asynchronously.
     """
     start_date = date.today()
     # end_date is start_date + days - 1
     from datetime import timedelta
     end_date = start_date + timedelta(days=max(1, days) - 1)
     stripped = strip_plan_payload(plan_data)
-    return await save_user_plan(user_identifier, start_date, end_date, stripped, profile_data)
+    return await save_user_plan(user_identifier, start_date, end_date, stripped, profile_data, status=status)
 
 async def get_active_user_plan_service(user_identifier: str) -> Optional[dict]:
     """
@@ -178,4 +178,28 @@ async def get_active_user_plan_service(user_identifier: str) -> Optional[dict]:
         return plan
     return None
 
+async def get_draft_user_plan_service(plan_id: str) -> Optional[dict]:
+    """
+    Loads a specific plan by ID asynchronously.
+    """
+    plan = await load_user_plan_by_id(plan_id)
+    if not plan:
+        return None
+    
+    if plan.get("status") != "draft":
+        return None
 
+    return plan
+
+from repositories.draft_plan_repository import update_draft_plan, activate_draft_plan
+
+async def update_draft_user_plan_service(plan_id: str, user_id: str, version: int, operations: list) -> dict:
+    return await update_draft_plan(plan_id, user_id, version, operations)
+
+async def activate_draft_user_plan_service(plan_id: str, user_id: str, version: int) -> bool:
+    return await activate_draft_plan(plan_id, user_id, version)
+
+async def get_latest_user_plan_service(user_identifier: str) -> Optional[dict]:
+    from repositories.user_plan_repository import load_latest_user_plan
+    plan = await load_latest_user_plan(user_identifier)
+    return plan

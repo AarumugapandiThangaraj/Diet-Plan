@@ -39,7 +39,13 @@ from schemas import (
     ConsumeMealRequest,
     ConsumeMealResponse,
     LogHydrationRequest,
-    LogHydrationResponse
+    LogHydrationResponse,
+    CuisineListResponse,
+    CreateDraftRequest,
+    DraftPlanResponse,
+    PatchPlanRequest,
+    ActivatePlanRequest,
+    ActivatePlanResponse
 )
 from services.planner_service import (
     fetch_daily_targets_service,
@@ -50,15 +56,20 @@ from services.planner_service import (
     apply_food_swap_service,
     apply_ingredient_swap_service,
     save_user_plan_service,
+    get_draft_user_plan_service,
+    update_draft_user_plan_service,
+    activate_draft_user_plan_service,
     get_active_user_plan_service,
     strip_plan_payload
 )
+from services.catalog_service import get_all_cuisines_service
 from config.constants import MEAL_TIME_ORDER, VALID_CUISINES
 from repositories.meal_repository import load_master_meals, meal_index_by_id
 from services.ranking_service import session_target_macros
 from domain.scaling_formulas import ensure_macros, format_nutritive_values, scale_meal_to_targets
 from domain.substitutes import suggest_for_ingredients_text
 from domain.swap_engine import meal_for_plan_payload
+from services.meal_arrangement_service import arrange_plan_sessions
 from utils.dependencies import get_current_user_id
 
 router = APIRouter(prefix="/api/studio")
@@ -104,6 +115,26 @@ def studio_meta(cuisine: str = "north_indian"):
         "activeCuisine": cuisine,
     }
 
+@router.get(
+    "/cuisines",
+    response_model=CuisineListResponse,
+    tags=["System"],
+    summary="Get All Cuisines",
+    description="Retrieves a list of all active cuisines available in the system.",
+    responses={
+        200: {
+            "description": "Cuisine list fetched successfully.",
+            "model": CuisineListResponse
+        },
+        500: {
+            "description": "Internal server or database error.",
+            "model": ErrorResponse
+        }
+    }
+)
+async def get_all_cuisines():
+    return await get_all_cuisines_service()
+
 @router.post(
     "/targets",
     response_model=DailyTargetsResponse,
@@ -127,15 +158,13 @@ def studio_meta(cuisine: str = "north_indian"):
         "  -H \"Content-Type: application/json\" \\\n"
         "  -d '{\n"
         "    \"profile\": {\n"
+        "      \"activityLevel\": \"moderate\",\n"
         "      \"age\": 28,\n"
         "      \"gender\": \"male\",\n"
-        "      \"heightCm\": 175.0,\n"
-        "      \"weightKg\": 75.0,\n"
-        "      \"activityLevel\": \"moderate\",\n"
         "      \"goal\": \"skin_repair\",\n"
-        "      \"dietType\": \"non_veg\",\n"
-        "      \"allergies\": \"peanut,gluten\",\n"
-        "      \"cuisineType\": \"south_indian\"\n"
+        "      \"secondaryGoal\": \"\",\n"
+        "      \"heightCm\": 175.0,\n"
+        "      \"weightKg\": 75.0\n"
         "    }\n"
         "  }'\n"
         "```"
@@ -183,6 +212,7 @@ def studio_targets(req: TargetsRequest):
         "      \"weightKg\": 75.0,\n"
         "      \"activityLevel\": \"moderate\",\n"
         "      \"goal\": \"skin_repair\",\n"
+        "      \"secondaryGoal\": \"Weight gain\",\n"
         "      \"dietType\": \"non_veg\",\n"
         "      \"allergies\": \"\",\n"
         "      \"cuisineType\": \"south_indian\"\n"
@@ -249,6 +279,7 @@ def studio_rank(req: RankRequest):
         "      \"weightKg\": 75.0,\n"
         "      \"activityLevel\": \"moderate\",\n"
         "      \"goal\": \"skin_repair\",\n"
+        "      \"secondaryGoal\": \"Weight gain\",\n"
         "      \"dietType\": \"non_veg\",\n"
         "      \"allergies\": \"\",\n"
         "      \"cuisineType\": \"south_indian\"\n"
@@ -374,6 +405,179 @@ async def studio_build_plan(req: BuildPlanRequest, user_id: str = Depends(get_cu
 
     return {"success": True, "message": "Plan built successfully."}
 
+
+@router.post(
+    "/meal-plans",
+    response_model=DraftPlanResponse,
+    status_code=201,
+    summary="Create Draft Meal Plan",
+    responses={
+        201: {"description": "Draft plan created successfully."}
+    }
+)
+async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_current_user_id)):
+    """
+    Backend arrangement logic for generating a draft meal plan.
+    It takes a pool of selected meal IDs for each meal time and distributes them across the requested days.
+    """
+    profile = _apply_cuisine(req.profile.model_dump())
+    days = max(1, min(21, int(req.days)))
+    targets = fetch_daily_targets_service(profile)
+
+    meal_times = [t for t in req.mealTimes if t in MEAL_TIME_ORDER]
+    if not meal_times:
+        raise HTTPException(status_code=400, detail="mealTimes must include at least one valid meal time")
+
+    pools_by_time = req.poolsByTime or {}
+
+    all_ids: set[str] = set()
+    for mt in meal_times:
+        ids = [str(x) for x in (pools_by_time.get(mt) or []) if str(x)]
+        if not ids:
+            raise HTTPException(status_code=400, detail=f"Please select at least 1 meal for {mt}.")
+        if len(ids) > 7:
+            raise HTTPException(status_code=400, detail=f"You can select up to 7 meals for {mt}.")
+        for mid in ids:
+            if mid in all_ids:
+                raise HTTPException(
+                    status_code=400,
+                    detail="A meal was selected in more than one meal time. Please ensure selections are unique.",
+                )
+            all_ids.add(mid)
+
+    # Use the Backend Meal Arrangement Engine to distribute meals
+    assignment_by_time = arrange_plan_sessions(pools_by_time, days, meal_times)
+
+    cuisine = profile.get("cuisineType") or "north_indian"
+    from repositories.meal_repository import get_meal_index_by_id_async
+    idx = await get_meal_index_by_id_async(cuisine)
+
+    plans: List[Dict[str, Any]] = []
+    totals_by_day: List[Dict[str, float]] = []
+    totals_all = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
+
+    for day_index in range(days):
+        plan: Dict[str, Any] = {}
+        totals = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
+
+        for mt in meal_times:
+            assigned = assignment_by_time.get(mt) or []
+            meal_id = str(assigned[day_index]) if day_index < len(assigned) else ""
+            if not meal_id:
+                continue
+
+            meal = idx.get(meal_id)
+            if not meal:
+                continue
+
+            target_macros = session_target_macros(targets, mt, meal_times)
+            scale_info = scale_meal_to_targets(meal, target_macros)
+            payload = meal_for_plan_payload(scale_info["scaledMeal"], scale_meta=scale_info)
+            plan[mt] = payload
+
+            macros = ensure_macros(payload.get("macros") or {})
+            totals["caloriesKcal"] += macros["caloriesKcal"]
+            totals["proteinG"] += macros["proteinG"]
+            totals["carbsG"] += macros["carbsG"]
+            totals["fatG"] += macros["fatG"]
+            totals["fiberG"] += macros["fiberG"]
+
+        plans.append(plan)
+        totals_by_day.append(totals)
+        for k in totals_all.keys():
+            totals_all[k] += totals[k]
+
+    res_payload = {
+        "days": days,
+        "targets": targets,
+        "plans": plans,
+        "totalsByDay": totals_by_day,
+        "totalsAll": totals_all,
+        "mealTimes": meal_times,
+    } if days > 1 else {
+        "days": 1,
+        "targets": targets,
+        "plan": plans[0] if plans else {},
+        "totals": totals_by_day[0] if totals_by_day else None,
+        "mealTimes": meal_times,
+    }
+
+    try:
+        # Save explicitly as 'draft'
+        saved_plan = await save_user_plan_service(user_id, days, res_payload, profile, status='draft')
+    except Exception as e:
+        import logging, traceback
+        logging.getLogger("app.studio").error(f"Failed to persist draft plan: {e}\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail="Failed to save draft plan.")
+
+    res_payload["planId"] = saved_plan["plan_id"]
+    res_payload["version"] = saved_plan["version"]
+    res_payload["status"] = saved_plan["status"]
+
+    return res_payload
+
+
+@router.get(
+    "/meal-plans/{plan_id}",
+    response_model=DraftPlanResponse,
+    status_code=200,
+    summary="Get Draft Meal Plan"
+)
+async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_id)):
+    plan_data = await get_draft_user_plan_service(plan_id)
+    if not plan_data:
+        raise HTTPException(status_code=404, detail="Draft plan not found.")
+
+    payload = plan_data.get("plan_payload", {})
+    payload["planId"] = plan_data.get("plan_id")
+    payload["version"] = plan_data.get("version")
+    payload["status"] = plan_data.get("status")
+
+    return payload
+
+
+@router.patch(
+    "/meal-plans/{plan_id}",
+    response_model=DraftPlanResponse,
+    status_code=200,
+    summary="Update Draft Meal Plan"
+)
+async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = Depends(get_current_user_id)):
+    from exceptions.repository import RepositoryException
+    try:
+        updated_plan = await update_draft_user_plan_service(plan_id, user_id, req.version, req.operations)
+        
+        payload = updated_plan.get("plan_payload", {})
+        payload["planId"] = updated_plan.get("plan_id")
+        payload["version"] = updated_plan.get("version")
+        payload["status"] = updated_plan.get("status")
+
+        return payload
+    except RepositoryException as e:
+        raise HTTPException(status_code=409, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Failed to update plan.")
+
+
+@router.post(
+    "/meal-plans/{plan_id}/activate",
+    response_model=ActivatePlanResponse,
+    status_code=200,
+    summary="Activate Draft Meal Plan"
+)
+async def activate_draft_plan(plan_id: str, req: ActivatePlanRequest, user_id: str = Depends(get_current_user_id)):
+    from exceptions.repository import RepositoryException
+    try:
+        success = await activate_draft_user_plan_service(plan_id, user_id, req.version)
+        if success:
+            return {"success": True, "status": "active"}
+        raise HTTPException(status_code=500, detail="Failed to activate plan.")
+    except RepositoryException as e:
+        raise HTTPException(status_code=409, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Failed to activate plan.")
+
+
 @router.post(
     "/plan/save",
     response_model=dict,
@@ -442,6 +646,7 @@ async def studio_get_active_plan(user_id: str = Depends(get_current_user_id)):
         "      \"weightKg\": 75.0,\n"
         "      \"activityLevel\": \"moderate\",\n"
         "      \"goal\": \"skin_repair\",\n"
+        "      \"secondaryGoal\": \"Weight gain\",\n"
         "      \"dietType\": \"non_veg\",\n"
         "      \"allergies\": \"\",\n"
         "      \"cuisineType\": \"south_indian\"\n"
@@ -986,3 +1191,20 @@ async def studio_log_hydration(req: LogHydrationRequest, user_id: str = Depends(
         "consumedWaterMl": log_obj.water_ml,
         "completionPercentage": completion_percentage
     }
+
+@router.get(
+    "/plan/latest",
+    tags=["Diet Plan - User"],
+    summary="Get Latest Diet Plan (Active or Draft)",
+    description="Retrieves the most recent plan for the current user, whether it is active or a draft."
+)
+async def studio_get_latest_plan(user_id: str = Depends(get_current_user_id)):
+    from services.planner_service import get_latest_user_plan_service
+    plan = await get_latest_user_plan_service(user_id)
+    if not plan:
+        raise HTTPException(status_code=404, detail="No plan found.")
+    payload = plan["plan_payload"]
+    payload["status"] = plan["status"]
+    payload["planId"] = plan["plan_id"]
+    payload["version"] = plan["version"]
+    return payload

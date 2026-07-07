@@ -18,7 +18,7 @@ export default function MealPoolSelector() {
     autoSelectTopMeals,
     refreshMealTimeOptions,
     toggleMealInPool,
-    goToSelectedMeals,
+    buildResultFromSelectedMeals,
     isSelectionComplete,
     error
   } = usePlannerContext()
@@ -155,8 +155,8 @@ export default function MealPoolSelector() {
 
       <section className="panel">
         <div className="actions" style={{ marginTop: 0 }}>
-          <button type="button" className="primaryBtn" onClick={goToSelectedMeals} disabled={!isSelectionComplete}>
-            Continue: Arrange days 📅
+          <button type="button" className="primaryBtn" onClick={buildResultFromSelectedMeals} disabled={!isSelectionComplete}>
+            Arrange days 📅
           </button>
           <button type="button" className="secondaryBtn" onClick={() => setView('inputs')}>
             Back ⬅️

@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import {
   fetchRankedMeals,
-  buildPlanFromSelection,
-  fetchActivePlan,
-  saveDietPlan
+  createDraftPlan,
+  getDraftPlan,
+  patchDraftPlan,
+  activateDraftPlan,
+  fetchLatestPlan
 } from '../services/dietService.js'
 import {
   fetchMealSwapOptions,
@@ -27,6 +29,7 @@ export function usePlanner(profile, targets, setTargets) {
   const [view, setView] = useState('inputs')
   const [result, setResult] = useState(null)
   const [error, setError] = useState('')
+  const [successMsg, setSuccessMsg] = useState('')
   const [planDays, setPlanDays] = useState(7)
   const [justGenerated, setJustGenerated] = useState(false)
 
@@ -46,18 +49,57 @@ export function usePlanner(profile, targets, setTargets) {
   const selectedPlan = result?.plan || {}
 
   useEffect(() => {
-    fetchActivePlan()
+    fetchLatestPlan()
       .then((data) => {
         if (data && Object.keys(data).length > 0) {
           setResult(data)
           if (data.targets && setTargets) {
             setTargets(data.targets)
           }
-          setView('plans')
+          if (data.status === 'active') {
+            setView('plans')
+          } else if (data.status === 'draft') {
+            const nextAssignment = {}
+            const nextPools = {}
+            const plansArray = Array.isArray(data.plans) ? data.plans : (data.plan ? [data.plan] : [])
+            
+            // Extract mealTimes from the first day plan keys (or fallback)
+            const extractedTimes = plansArray.length > 0 
+                ? Object.keys(plansArray[0]).filter(k => k !== 'day_number' && k !== '_totals')
+                : (data.mealTimes || [])
+            data.mealTimes = extractedTimes
+            
+            for (const mt of extractedTimes) {
+              const assignedIds = []
+              const uniqueMealsMap = new Map()
+
+              for (const dayPlan of plansArray) {
+                const meal = dayPlan[mt]
+                if (meal) {
+                   const mealIdStr = String(meal.Meal_ID || meal.id || '')
+                   assignedIds.push(mealIdStr)
+                   if (mealIdStr && !uniqueMealsMap.has(mealIdStr)) {
+                     uniqueMealsMap.set(mealIdStr, {
+                       Meal_ID: mealIdStr,
+                       meal_name: meal.name || meal.meal_name || ''
+                     })
+                   }
+                } else {
+                   assignedIds.push('')
+                }
+              }
+              nextAssignment[mt] = assignedIds
+              nextPools[mt] = Array.from(uniqueMealsMap.values())
+            }
+
+            setAssignmentByTime(nextAssignment)
+            setSelectedPoolsByTime(nextPools)
+            setView('selectedMeals')
+          }
         }
       })
       .catch((err) => {
-        console.log("No active plan or error:", err)
+        console.log("No plan found or error:", err)
       })
   }, [setTargets])
 
@@ -66,7 +108,12 @@ export function usePlanner(profile, targets, setTargets) {
     return [selectedPlan]
   }, [result, selectedPlan])
 
-  const selectedMealTimes = useMemo(() => sortMealTimes(profile.mealTimes), [profile.mealTimes])
+  const selectedMealTimes = useMemo(() => {
+    if (result?.mealTimes && Array.isArray(result.mealTimes) && result.mealTimes.length > 0) {
+      return result.mealTimes;
+    }
+    return sortMealTimes(profile.mealTimes);
+  }, [profile.mealTimes, result?.mealTimes])
 
   // Build plan summary for the agent (meal names for each day/mealtime)
   const planSummary = useMemo(() => {
@@ -492,26 +539,50 @@ export function usePlanner(profile, targets, setTargets) {
     })
   }
 
-  const goToSelectedMeals = () => {
-    setError('')
-    for (const mealTime of selectedMealTimes) {
-      const list = Array.isArray(selectedPoolsByTime?.[mealTime]) ? selectedPoolsByTime[mealTime] : []
-      if (list.length < 1) {
-        setError(`Please select at least 1 meal for ${MEAL_TIME_LABELS[mealTime] || mealTime}.`)
-        return
+  const updateDraftPlanArrangement = async () => {
+    if (!result?.planId || !assignmentByTime) return;
+    setGenerateLoading(true);
+    setError('');
+    setSuccessMsg('');
+
+    const patchOperations = [];
+    for (let dayIndex = 0; dayIndex < selectionDays; dayIndex++) {
+      for (const mealTime of selectedMealTimes) {
+        const newMealId = assignmentByTime[mealTime]?.[dayIndex];
+        const oldMeal = result.plans[dayIndex]?.[mealTime];
+        const oldMealId = String(oldMeal?.Meal_ID || '');
+        
+        if (newMealId && oldMealId && newMealId !== oldMealId) {
+          const mealInstanceId = String(oldMeal?.id || oldMeal?.Meal_ID || '');
+          if (mealInstanceId) {
+            patchOperations.push({
+              type: 'swap',
+              mealInstanceId: mealInstanceId,
+              replacementMealId: newMealId
+            });
+          }
+        }
       }
     }
 
-    const nextAssignment = {}
-    for (const mealTime of selectedMealTimes) {
-      const list = Array.isArray(selectedPoolsByTime?.[mealTime]) ? selectedPoolsByTime[mealTime] : []
-      nextAssignment[mealTime] = Array.from({ length: selectionDays }, (_, dayIndex) => {
-        const picked = list[dayIndex % list.length]
-        return String(picked?.Meal_ID || '')
-      })
+    if (patchOperations.length === 0) {
+      setGenerateLoading(false);
+      return;
     }
-    setAssignmentByTime(nextAssignment)
-    setView('selectedMeals')
+
+    try {
+      await patchDraftPlan(result.planId, result.version, patchOperations);
+      const updatedDraft = await getDraftPlan(result.planId);
+      setResult(updatedDraft);
+      setSuccessMsg('Plan updated successfully! 🎉');
+      
+      // Auto clear after 3 seconds
+      setTimeout(() => setSuccessMsg(''), 3000);
+      setGenerateLoading(false);
+    } catch (e) {
+      setGenerateLoading(false);
+      setError(String(e?.message || e || 'Failed to update plan arrangement.'));
+    }
   }
 
   const buildResultFromSelectedMeals = () => {
@@ -526,35 +597,61 @@ export function usePlanner(profile, targets, setTargets) {
       poolsByTime[mealTime] = list.map((m) => String(m?.Meal_ID || '')).filter(Boolean)
     }
 
-    buildPlanFromSelection(
+    createDraftPlan(
       profile,
       {
         days: selectionDays,
         mealTimes: selectedMealTimes,
-        poolsByTime,
-        assignmentByTime
+        poolsByTime
       }
     )
       .then((res) => {
         if (nonce !== generationNonceRef.current) return
 
-        // Fetch the active plan that was just saved by the backend
-        return fetchActivePlan().then((activeData) => {
-          if (nonce !== generationNonceRef.current) return
-          console.log('Active plan data retrieved:', activeData)
+        const planId = res?.planId
+        if (!planId) throw new Error("Failed to create draft plan: No planId returned")
 
-          setResult(activeData)
+        return getDraftPlan(planId).then((draftData) => {
+          if (nonce !== generationNonceRef.current) return
+          console.log('Draft plan data retrieved:', draftData)
+
+          setResult(draftData)
           setJustGenerated(true)
 
-          if (activeData?.targets && setTargets) setTargets(activeData.targets)
+          const nextAssignment = {}
+          for (const mt of selectedMealTimes) {
+            nextAssignment[mt] = draftData.plans.map(dayPlan => String(dayPlan?.[mt]?.Meal_ID || dayPlan?.[mt]?.id || ''))
+          }
+          setAssignmentByTime(nextAssignment)
+
+          if (draftData?.targets && setTargets) setTargets(draftData.targets)
           setGenerateLoading(false)
-          setView('plans')
+          setView('selectedMeals')
         })
       })
       .catch((e) => {
         if (nonce !== generationNonceRef.current) return
         setGenerateLoading(false)
-        setError(String(e?.message || e || 'Failed to build plan.'))
+        setError(String(e?.message || e || 'Failed to generate plan.'))
+      })
+  }
+
+  const activateAndProceed = (onNavigate) => {
+    if (!result?.planId) return
+    setGenerateLoading(true)
+    
+    activateDraftPlan(result.planId, result.version)
+      .then((res) => {
+        setGenerateLoading(false)
+        if (res.success) {
+           onNavigate()
+        } else {
+           setError("Failed to activate plan.")
+        }
+      })
+      .catch((e) => {
+        setGenerateLoading(false)
+        setError(String(e?.message || e || 'Failed to activate plan.'))
       })
   }
 
@@ -567,13 +664,24 @@ export function usePlanner(profile, targets, setTargets) {
   }
 
   const applyMealSwapSelection = async (option) => {
-    if (!swapState) return
+    if (!swapState || !result?.planId) return
     setSwapState((prev) => ({ ...prev, loading: true, error: '' }))
     try {
       const chosen = option?.meal || option
-      const applied = await applyMealSwap(chosen)
-      const nextMeal = applied?.meal || chosen
-      updateResultMeal(swapState.dayIndex, swapState.mealTime, nextMeal)
+      const replacementMealId = chosen?.id || chosen?.Meal_ID || chosen?.meal_id
+
+      const patchOperations = [
+        {
+          type: 'swap',
+          mealInstanceId: swapState.meal?.id || swapState.meal?.Meal_ID,
+          replacementMealId: replacementMealId
+        }
+      ]
+
+      await patchDraftPlan(result.planId, result.version, patchOperations)
+      const updatedDraft = await getDraftPlan(result.planId)
+      
+      setResult(updatedDraft)
       closeSwapModal()
     } catch (e) {
       setSwapState((prev) => ({ ...prev, loading: false, error: String(e?.message || e || 'Failed to swap meal.') }))
@@ -673,6 +781,8 @@ export function usePlanner(profile, targets, setTargets) {
     setResult,
     error,
     setError,
+    successMsg,
+    setSuccessMsg,
     generateLoading,
     planDays,
     setPlanDays,
@@ -709,8 +819,9 @@ export function usePlanner(profile, targets, setTargets) {
     refreshMealTimeOptions,
     toggleMealInPool,
     autoSelectTopMeals,
-    goToSelectedMeals,
     buildResultFromSelectedMeals,
+    updateDraftPlanArrangement,
+    activateAndProceed,
     getDisplayMealName,
     applyMealSwapSelection,
     loadFoodSwapOptions,

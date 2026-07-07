@@ -21,6 +21,7 @@ from .plan import (
     DietPlanMealFoodIngredient,
     DietPlanMealConsumption,
     DietPlanDayHydrationLog,
+    DietPlanEvent,
 )
 
 # User models (profiles, health data)
@@ -57,6 +58,7 @@ __all__ = [
     'DietPlanMealFood',
     'DietPlanMealFoodIngredient',
     'DietPlanMealConsumption',
+    'DietPlanEvent',
     # User
     'UserHealthProfile',
     'UserGoal',
