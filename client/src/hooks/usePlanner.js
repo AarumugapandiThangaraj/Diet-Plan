@@ -61,7 +61,7 @@ export function usePlanner(profile, targets, setTargets) {
           } else if (data.status === 'draft') {
             const nextAssignment = {}
             const nextPools = {}
-            const plansArray = Array.isArray(data.plans) ? data.plans : (data.plan ? [data.plan] : [])
+            const plansArray = Array.isArray(data.days) ? data.days : (data.plan ? [data.plan] : [])
             
             // Extract mealTimes from the first day plan keys (or fallback)
             const extractedTimes = plansArray.length > 0 
@@ -104,7 +104,7 @@ export function usePlanner(profile, targets, setTargets) {
   }, [setTargets])
 
   const dayPlans = useMemo(() => {
-    if (Array.isArray(result?.plans) && result.plans.length) return result.plans
+    if (Array.isArray(result?.days) && result.days.length) return result.days
     return [selectedPlan]
   }, [result, selectedPlan])
 
@@ -136,7 +136,7 @@ export function usePlanner(profile, targets, setTargets) {
       }
       return [{ day: 1, meals }]
     }
-    const plans = Array.isArray(result.plans) ? result.plans : []
+    const plans = Array.isArray(result.days) ? result.days : []
     return plans.map((plan, i) => {
       const meals = {}
       for (const mt of mealTimes) {
@@ -212,13 +212,13 @@ export function usePlanner(profile, targets, setTargets) {
       plan[mealTime] = { ...item, ...patch }
       nextState = withRecomputedTotals({ ...result, plan })
     } else {
-      const plans = Array.isArray(result.plans) ? result.plans.slice() : []
+      const plans = Array.isArray(result.days) ? result.days.slice() : []
       const dayPlan = { ...(plans[safeDayIndex] || {}) }
       const item = dayPlan?.[mealTime]
       if (!item) return
       dayPlan[mealTime] = { ...item, ...patch }
       plans[safeDayIndex] = dayPlan
-      nextState = withRecomputedTotals({ ...result, plans })
+      nextState = withRecomputedTotals({ ...result, days: plans })
     }
 
     setResult(nextState)
@@ -235,7 +235,7 @@ export function usePlanner(profile, targets, setTargets) {
     const days = result.days || 1
     const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
     if (days === 1) return result?.plan?.[mealTime] || null
-    return result?.plans?.[safeDayIndex]?.[mealTime] || null
+    return result?.days?.[safeDayIndex]?.[mealTime] || null
   }
 
   const closeSwapModal = () => {
@@ -549,7 +549,7 @@ export function usePlanner(profile, targets, setTargets) {
     for (let dayIndex = 0; dayIndex < selectionDays; dayIndex++) {
       for (const mealTime of selectedMealTimes) {
         const newMealId = assignmentByTime[mealTime]?.[dayIndex];
-        const oldMeal = result.plans[dayIndex]?.[mealTime];
+        const oldMeal = result.days[dayIndex]?.[mealTime];
         const oldMealId = String(oldMeal?.Meal_ID || '');
         
         if (newMealId && oldMealId && newMealId !== oldMealId) {
@@ -622,7 +622,7 @@ export function usePlanner(profile, targets, setTargets) {
 
           const nextAssignment = {}
           for (const mt of selectedMealTimes) {
-            nextAssignment[mt] = draftData.plans.map(dayPlan => String(dayPlan?.[mt]?.Meal_ID || dayPlan?.[mt]?.id || ''))
+            nextAssignment[mt] = draftData.days.map(dayPlan => String(dayPlan?.[mt]?.Meal_ID || dayPlan?.[mt]?.id || ''))
           }
           setAssignmentByTime(nextAssignment)
 

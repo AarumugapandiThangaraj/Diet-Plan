@@ -146,8 +146,8 @@ export default function PlanStudio({ onNavigateToDashboard }) {
               }
               return { ...prev, plan, totals }
             }
-            if (Array.isArray(prev.plans)) {
-              const plans = prev.plans.map(p => {
+            if (Array.isArray(prev.days)) {
+              const plans = prev.days.map(p => {
                 if (!p) return p
                 const plan = { ...p }
                 for (const mt of Object.keys(plan)) {
@@ -181,7 +181,7 @@ export default function PlanStudio({ onNavigateToDashboard }) {
                 }),
                 { caloriesKcal: 0, proteinG: 0, carbsG: 0, fatG: 0, fiberG: 0 }
               )
-              return { ...prev, plans, totalsByDay, totalsAll }
+              return { ...prev, days: plans, totalsByDay, totalsAll }
             }
             return prev
           })
@@ -196,7 +196,7 @@ export default function PlanStudio({ onNavigateToDashboard }) {
         }
         ; (async () => {
           try {
-            const currentMeal = result.days <= 1 ? result?.plan?.[mealTime] : result?.plans?.[dayIndex]?.[mealTime]
+            const currentMeal = result.days <= 1 ? result?.plan?.[mealTime] : result?.days?.[dayIndex]?.[mealTime]
             const currentId = currentMeal?.Meal_ID || ''
 
             const allowedMealIds = Array.isArray(selectedPoolsByTime?.[mealTime])

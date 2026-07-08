@@ -7,7 +7,7 @@ meal ranking, plan compilation, and swapping operations (meal/food/ingredient sw
 
 from __future__ import annotations
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 from fastapi import APIRouter, HTTPException, Depends
 
@@ -34,6 +34,8 @@ from schemas import (
     SwapIngredientOptionsResponse,
     SubstitutesResponse,
     ErrorResponse,
+    ActivePlanResponse,
+    DraftPlanResponse,
     DashboardRequest,
     DashboardResponse,
     ConsumeMealRequest,
@@ -539,7 +541,15 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
     if not plan_data:
         raise HTTPException(status_code=404, detail="Draft plan not found.")
 
-    payload = plan_data.get("plan_payload", {})
+    import sys, os
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from utils.plan_formatters import format_draft_plan
+    
+    raw_payload = plan_data.get("plan_payload", {})
+    payload = {"days": format_draft_plan(raw_payload)}
+    payload["targets"] = raw_payload.get("targets", {})
+    payload["totalsAll"] = raw_payload.get("totalsAll", {})
+    
     payload["planId"] = plan_data.get("plan_id")
     payload["version"] = plan_data.get("version")
     payload["status"] = plan_data.get("status")
@@ -558,7 +568,15 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
     try:
         updated_plan = await update_draft_user_plan_service(plan_id, user_id, req.version, req.operations)
         
-        payload = updated_plan.get("plan_payload", {})
+        import sys, os
+        sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+        from utils.plan_formatters import format_draft_plan
+        
+        raw_payload = updated_plan.get("plan_payload", {})
+        payload = {"days": format_draft_plan(raw_payload)}
+        payload["targets"] = raw_payload.get("targets", {})
+        payload["totalsAll"] = raw_payload.get("totalsAll", {})
+        
         payload["planId"] = updated_plan.get("plan_id")
         payload["version"] = updated_plan.get("version")
         payload["status"] = updated_plan.get("status")
@@ -1133,7 +1151,7 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
             
         today_meals.append({
             "mealId": meal_id,
-            "name": str(meal.get("meal_name") or ""),
+            "name": str(meal.get("name") or meal.get("meal_name") or ""),
             "imageUrl": str(meal.get("image_ID") or ""),
             "session": session,
             "scheduledTime": scheduled_time,
@@ -1150,78 +1168,12 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
         "remainingCalories": remaining_calories
     }
     
-    # Construct weeks array
-    plans_list = plan_payload.get("plans") if "plans" in plan_payload else [plan_payload.get("plan", {})]
-    day_ids = plan_payload.get("dayIds", [])
-    weeks_data = []
+    # Construct weeks array using the new formatter
+    import sys, os
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from utils.plan_formatters import format_active_plan
     
-    for i in range(0, len(plans_list), 7):
-        week_days = plans_list[i:i+7]
-        week_num = (i // 7) + 1
-        days_data = []
-        for j, day_plan in enumerate(week_days):
-            day_num = i + j + 1
-            p_day_id = day_ids[i+j] if i+j < len(day_ids) else None
-            day_meals = []
-            day_totals = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
-            
-            for session, meal in day_plan.items():
-                if not isinstance(meal, dict):
-                    continue
-                macros = meal.get("macros") or {}
-                for mk in day_totals.keys():
-                    day_totals[mk] += float(macros.get(mk) or 0.0)
-                    
-                meal_id = str(meal.get("Meal_ID") or "")
-                
-                foods = meal.get("foods_struct") or []
-                foods_list = []
-                for f in foods:
-                    foods_list.append({
-                        "id": str(f.get("id") or f.get("ID") or f.get("food_id") or ""),
-                        "name": str(f.get("name") or f.get("food_name") or ""),
-                        "servingSize": str(f.get("serving_size") or ""),
-                        "quantity": float(f.get("quantity") or 1.0),
-                        "unit": str(f.get("unit") or "serving")
-                    })
-                
-                # Fallback for time
-                scheduled_time = meal.get("scheduled_time") or meal.get("time") or ""
-                if not scheduled_time:
-                    time_map = {
-                        "early_morning": "06:00 AM",
-                        "breakfast": "08:30 AM",
-                        "mid_morning": "11:00 AM",
-                        "lunch": "01:00 PM",
-                        "evening": "04:30 PM",
-                        "dinner": "08:00 PM",
-                        "bedtime": "10:00 PM"
-                    }
-                    scheduled_time = time_map.get(session, "12:00 PM")
-                    
-                day_meals.append({
-                    "mealId": meal_id,
-                    "name": str(meal.get("meal_name") or ""),
-                    "imageUrl": str(meal.get("image_ID") or ""),
-                    "session": session,
-                    "scheduledTime": scheduled_time,
-                    "macros": {k: float(v) for k, v in macros.items()},
-                    "consumed": meal_id in consumed_meal_ids,
-                    "foods": foods_list,
-                    "ingredients": meal.get("ingredients")
-                })
-            
-            days_data.append({
-                "dayNumber": day_num,
-                "planDayId": p_day_id,
-                "totals": day_totals,
-                "meals": day_meals
-            })
-            
-        weeks_data.append({
-            "weekNumber": week_num,
-            "days": days_data
-        })
+    weeks_data = format_active_plan(plan_payload, consumed_meal_ids)
     
     return {
         "activePlan": True if plan_status == 'active' else False,
@@ -1309,6 +1261,7 @@ async def studio_log_hydration(req: LogHydrationRequest, user_id: str = Depends(
 
 @router.get(
     "/plan/latest",
+    response_model=Union[ActivePlanResponse, DraftPlanResponse, dict],
     tags=["Diet Plan - User"],
     summary="Get Latest Diet Plan (Active or Draft)",
     description="Retrieves the most recent plan for the current user, whether it is active or a draft."
@@ -1319,10 +1272,24 @@ async def studio_get_latest_plan(user_id: str = Depends(get_current_user_id)):
     if not plan:
         raise HTTPException(status_code=404, detail="No plan found.")
     payload = plan["plan_payload"]
-    payload["status"] = plan["status"]
-    payload["planId"] = plan["plan_id"]
-    payload["version"] = plan["version"]
-    return payload
+    import sys, os
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from utils.plan_formatters import format_active_plan, format_draft_plan
+    
+    if plan["status"] == "active":
+        formatted_data = {"weeks": format_active_plan(payload)}
+    else:
+        formatted_data = {"days": format_draft_plan(payload)}
+        
+    # Retain top-level targets and summary if needed
+    formatted_data["targets"] = payload.get("targets", {})
+    formatted_data["totalsAll"] = payload.get("totalsAll", {})
+    
+    formatted_data["status"] = plan["status"]
+    formatted_data["planId"] = plan["plan_id"]
+    formatted_data["version"] = plan["version"]
+    
+    return formatted_data
 
 @router.get(
     "/meal-plans/meals/{mealInstanceId}",
