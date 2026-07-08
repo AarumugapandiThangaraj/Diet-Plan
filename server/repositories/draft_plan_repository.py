@@ -3,7 +3,7 @@ from sqlalchemy import select, update
 from sqlalchemy.orm import selectinload
 import uuid
 from database.session import AsyncSessionLocal
-from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, DietPlanMealFoodIngredient, Meal, DietPlanEvent
+from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, Meal, DietPlanEvent
 from exceptions.repository import RepositoryException
 from schemas import PatchOperation
 
@@ -55,7 +55,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                         continue
                         
                     from database.models import Meal, Cuisine
-                    stmt = select(Meal, Cuisine).join(Cuisine, Meal.cuisine_id == Cuisine.id).filter(Meal.client_meal_id == new_meal_id)
+                    stmt = select(Meal, Cuisine).join(Cuisine, Meal.cuisine_id == Cuisine.id).filter(Meal.id == new_meal_id)
                     res = await session.execute(stmt)
                     row = res.first()
                     if not row:
@@ -70,7 +70,6 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     if not new_meal:
                         continue
                         
-                    from domain.scaling_formulas import scale_meal_to_targets
                     from services.ranking_service import session_target_macros
                     
                     targets = {
@@ -82,6 +81,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     }
                     sess_targets = session_target_macros(targets, m_session.code)
                     
+                    from domain.scaling_formulas import scale_meal_to_targets
                     scale_info = scale_meal_to_targets(new_meal, sess_targets)
                     scaled_meal = scale_info["scaledMeal"]
                     
@@ -92,7 +92,6 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                         await session.delete(f)
                         
                     dp_meal.meal_id = db_new_meal.id
-                    dp_meal.client_meal_id = new_meal["Meal_ID"]
                     meal_macros = scaled_meal.get("_macros") or scaled_meal.get("macros") or {}
                     dp_meal.calories_kcal = meal_macros.get("caloriesKcal", 0.0)
                     dp_meal.protein_g = meal_macros.get("proteinG", 0.0)
@@ -104,39 +103,22 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     for sf in scaled_meal.get("foods_struct", []):
                         client_food_id = str(sf.get("id")) if sf.get("id") is not None else None
                         
-                        stmt = select(Food.id).filter_by(client_food_id=client_food_id)
+                        stmt = select(Food.id).filter_by(id=client_food_id)
                         db_food_id = (await session.execute(stmt)).scalar()
                         
                         food_obj = DietPlanMealFood(
                             plan_meal_id=dp_meal.id,
                             food_id=db_food_id,
-                            quantity=sf["quantity"],
-                            unit=sf["unit"],
-                            calories_kcal=sf["macros"]["caloriesKcal"],
-                            protein_g=sf["macros"]["proteinG"],
-                            carbs_g=sf["macros"]["carbsG"],
-                            fat_g=sf["macros"]["fatG"],
-                            fiber_g=sf["macros"]["fiberG"]
+                            quantity=sf.get("quantity", 0),
+                            unit=sf.get("unit", "g"),
+                            calories_kcal=sf.get("macros", {}).get("caloriesKcal", 0.0),
+                            protein_g=sf.get("macros", {}).get("proteinG", 0.0),
+                            carbs_g=sf.get("macros", {}).get("carbsG", 0.0),
+                            fat_g=sf.get("macros", {}).get("fatG", 0.0),
+                            fiber_g=sf.get("macros", {}).get("fiberG", 0.0)
                         )
                         session.add(food_obj)
                         await session.flush()
-                        
-                        for si in sf.get("ingredients_struct", []):
-                            ing_id = si.get("id")
-                            ing_obj = DietPlanMealFoodIngredient(
-                                plan_meal_food_id=food_obj.id,
-                                ingredient_id=int(ing_id) if ing_id and str(ing_id).isdigit() else None,
-                                quantity=si["quantity"],
-                                unit=si["unit"],
-                                calories_kcal=si["macros"]["caloriesKcal"],
-                                protein_g=si["macros"]["proteinG"],
-                                carbs_g=si["macros"]["carbsG"],
-                                fat_g=si["macros"]["fatG"],
-                                fiber_g=si["macros"]["fiberG"]
-                            )
-                            session.add(ing_obj)
-                            
-                    # The payload will be reconstructed at the end via _load_plan_from_stmt
 
             # Update version
             plan.version += 1
@@ -163,11 +145,6 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     .selectinload(DietPlanDay.meals_rel)
                     .selectinload(DietPlanMeal.meal_foods_rel)
                     .selectinload(DietPlanMealFood.food),
-                    selectinload(DietPlan.days_rel)
-                    .selectinload(DietPlanDay.meals_rel)
-                    .selectinload(DietPlanMeal.meal_foods_rel)
-                    .selectinload(DietPlanMealFood.ingredients_rel)
-                    .selectinload(DietPlanMealFoodIngredient.ingredient),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
                     .selectinload(DietPlanMeal.meal)

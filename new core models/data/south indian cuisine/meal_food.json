@@ -1,0 +1,2887 @@
+[
+  {
+    "meal_id": "M001",
+    "food_id": "F001",
+    "serving_size": "100 mL"
+  },
+  {
+    "meal_id": "M002",
+    "food_id": "F002",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M003",
+    "food_id": "F003",
+    "serving_size": "90 mL"
+  },
+  {
+    "meal_id": "M004",
+    "food_id": "F004",
+    "serving_size": "100 mL"
+  },
+  {
+    "meal_id": "M005",
+    "food_id": "F005",
+    "serving_size": "125 mL"
+  },
+  {
+    "meal_id": "M006",
+    "food_id": "F006",
+    "serving_size": "95 mL"
+  },
+  {
+    "meal_id": "M007",
+    "food_id": "F007",
+    "serving_size": "135 mL"
+  },
+  {
+    "meal_id": "M008",
+    "food_id": "F008",
+    "serving_size": "75 mL"
+  },
+  {
+    "meal_id": "M009",
+    "food_id": "F009",
+    "serving_size": "80 mL"
+  },
+  {
+    "meal_id": "M010",
+    "food_id": "F010",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M011",
+    "food_id": "F011",
+    "serving_size": "245 mL"
+  },
+  {
+    "meal_id": "M012",
+    "food_id": "F012",
+    "serving_size": "248 mL"
+  },
+  {
+    "meal_id": "M013",
+    "food_id": "F013",
+    "serving_size": "245 mL"
+  },
+  {
+    "meal_id": "M014",
+    "food_id": "F014",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M015",
+    "food_id": "F015",
+    "serving_size": "245 mL"
+  },
+  {
+    "meal_id": "M016",
+    "food_id": "F016",
+    "serving_size": "244 mL"
+  },
+  {
+    "meal_id": "M017",
+    "food_id": "F017",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M018",
+    "food_id": "F018",
+    "serving_size": "245 mL"
+  },
+  {
+    "meal_id": "M019",
+    "food_id": "F019",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M020",
+    "food_id": "F020",
+    "serving_size": "220 mL"
+  },
+  {
+    "meal_id": "M021",
+    "food_id": "F021",
+    "serving_size": "220 mL"
+  },
+  {
+    "meal_id": "M022",
+    "food_id": "F022",
+    "serving_size": "280 mL"
+  },
+  {
+    "meal_id": "M023",
+    "food_id": "F023",
+    "serving_size": "350 mL"
+  },
+  {
+    "meal_id": "M024",
+    "food_id": "F024",
+    "serving_size": "244 mL"
+  },
+  {
+    "meal_id": "M025",
+    "food_id": "F025",
+    "serving_size": "105 mL"
+  },
+  {
+    "meal_id": "M026",
+    "food_id": "F026",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M027",
+    "food_id": "F027",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M028",
+    "food_id": "F028",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M029",
+    "food_id": "F029",
+    "serving_size": "245 mL"
+  },
+  {
+    "meal_id": "M030",
+    "food_id": "F030",
+    "serving_size": "425 mL"
+  },
+  {
+    "meal_id": "M031",
+    "food_id": "F031",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M032",
+    "food_id": "F032",
+    "serving_size": "100 mL"
+  },
+  {
+    "meal_id": "M033",
+    "food_id": "F033",
+    "serving_size": "300 mL"
+  },
+  {
+    "meal_id": "M034",
+    "food_id": "F034",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M035",
+    "food_id": "F035",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M036",
+    "food_id": "F036",
+    "serving_size": "3 pieces (150 g)"
+  },
+  {
+    "meal_id": "M036",
+    "food_id": "F037",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M036",
+    "food_id": "F038",
+    "serving_size": "90 mL"
+  },
+  {
+    "meal_id": "M036",
+    "food_id": "F039",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M037",
+    "food_id": "F036",
+    "serving_size": "3 pieces (150 g)"
+  },
+  {
+    "meal_id": "M037",
+    "food_id": "F040",
+    "serving_size": "40 g"
+  },
+  {
+    "meal_id": "M037",
+    "food_id": "F041",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M037",
+    "food_id": "F042",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M037",
+    "food_id": "F039",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M038",
+    "food_id": "F043",
+    "serving_size": "2 pieces (120 g)"
+  },
+  {
+    "meal_id": "M038",
+    "food_id": "F037",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M038",
+    "food_id": "F044",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M038",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M039",
+    "food_id": "F046",
+    "serving_size": "2 pieces (160 g)"
+  },
+  {
+    "meal_id": "M039",
+    "food_id": "F047",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M039",
+    "food_id": "F048",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M039",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M040",
+    "food_id": "F050",
+    "serving_size": "2 pieces (160 g)"
+  },
+  {
+    "meal_id": "M040",
+    "food_id": "F037",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M040",
+    "food_id": "F051",
+    "serving_size": "40 g"
+  },
+  {
+    "meal_id": "M040",
+    "food_id": "F052",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M040",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M041",
+    "food_id": "F054",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M041",
+    "food_id": "F055",
+    "serving_size": "75 g"
+  },
+  {
+    "meal_id": "M041",
+    "food_id": "F056",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M041",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M042",
+    "food_id": "F057",
+    "serving_size": "140 g"
+  },
+  {
+    "meal_id": "M042",
+    "food_id": "F047",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M042",
+    "food_id": "F058",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M042",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M043",
+    "food_id": "F060",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M043",
+    "food_id": "F061",
+    "serving_size": "40 g"
+  },
+  {
+    "meal_id": "M043",
+    "food_id": "F062",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M043",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M044",
+    "food_id": "F063",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M044",
+    "food_id": "F040",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M044",
+    "food_id": "F064",
+    "serving_size": "175 mL"
+  },
+  {
+    "meal_id": "M044",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M045",
+    "food_id": "F065",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M045",
+    "food_id": "F066",
+    "serving_size": "1 (50 g)"
+  },
+  {
+    "meal_id": "M045",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M046",
+    "food_id": "F067",
+    "serving_size": "220 g"
+  },
+  {
+    "meal_id": "M046",
+    "food_id": "F068",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M046",
+    "food_id": "F069",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M046",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M047",
+    "food_id": "F070",
+    "serving_size": "220 g"
+  },
+  {
+    "meal_id": "M047",
+    "food_id": "F071",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M047",
+    "food_id": "F072",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M048",
+    "food_id": "F073",
+    "serving_size": "285 g"
+  },
+  {
+    "meal_id": "M048",
+    "food_id": "F066",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M048",
+    "food_id": "F074",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M048",
+    "food_id": "F075",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M048",
+    "food_id": "F076",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M049",
+    "food_id": "F077",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M049",
+    "food_id": "F078",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M049",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M050",
+    "food_id": "F079",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M050",
+    "food_id": "F080",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M050",
+    "food_id": "F081",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M050",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M051",
+    "food_id": "F082",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M051",
+    "food_id": "F083",
+    "serving_size": "90 g"
+  },
+  {
+    "meal_id": "M051",
+    "food_id": "F048",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M051",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M052",
+    "food_id": "F084",
+    "serving_size": "90 g"
+  },
+  {
+    "meal_id": "M052",
+    "food_id": "F085",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M052",
+    "food_id": "F086",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M052",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M053",
+    "food_id": "F087",
+    "serving_size": "90 g"
+  },
+  {
+    "meal_id": "M053",
+    "food_id": "F066",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M053",
+    "food_id": "F088",
+    "serving_size": "130 mL"
+  },
+  {
+    "meal_id": "M053",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M054",
+    "food_id": "F089",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M054",
+    "food_id": "F090",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M054",
+    "food_id": "F091",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M054",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M055",
+    "food_id": "F092",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M055",
+    "food_id": "F093",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M055",
+    "food_id": "F094",
+    "serving_size": "195 mL"
+  },
+  {
+    "meal_id": "M055",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M056",
+    "food_id": "F095",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M056",
+    "food_id": "F096",
+    "serving_size": "195 g"
+  },
+  {
+    "meal_id": "M056",
+    "food_id": "F097",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M056",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M057",
+    "food_id": "F098",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M057",
+    "food_id": "F099",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M057",
+    "food_id": "F100",
+    "serving_size": "110 mL"
+  },
+  {
+    "meal_id": "M057",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M058",
+    "food_id": "F101",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M058",
+    "food_id": "F102",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M058",
+    "food_id": "F103",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M058",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M059",
+    "food_id": "F101",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M059",
+    "food_id": "F104",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M059",
+    "food_id": "F105",
+    "serving_size": "100 mL"
+  },
+  {
+    "meal_id": "M059",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M060",
+    "food_id": "F106",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M060",
+    "food_id": "F107",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M060",
+    "food_id": "F108",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M060",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M061",
+    "food_id": "F109",
+    "serving_size": "175 g"
+  },
+  {
+    "meal_id": "M061",
+    "food_id": "F040",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M061",
+    "food_id": "F110",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M061",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M062",
+    "food_id": "F111",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M062",
+    "food_id": "F104",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M062",
+    "food_id": "F112",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M062",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M063",
+    "food_id": "F113",
+    "serving_size": "75 g"
+  },
+  {
+    "meal_id": "M063",
+    "food_id": "F114",
+    "serving_size": "40 mL"
+  },
+  {
+    "meal_id": "M063",
+    "food_id": "F115",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M063",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M064",
+    "food_id": "F116",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M064",
+    "food_id": "F117",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M064",
+    "food_id": "F118",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M064",
+    "food_id": "F119",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M064",
+    "food_id": "F120",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M065",
+    "food_id": "F121",
+    "serving_size": "90 g"
+  },
+  {
+    "meal_id": "M065",
+    "food_id": "F066",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M065",
+    "food_id": "F122",
+    "serving_size": "130 mL"
+  },
+  {
+    "meal_id": "M065",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M066",
+    "food_id": "F123",
+    "serving_size": "95 g"
+  },
+  {
+    "meal_id": "M066",
+    "food_id": "F066",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M066",
+    "food_id": "F124",
+    "serving_size": "110 mL"
+  },
+  {
+    "meal_id": "M066",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M067",
+    "food_id": "F125",
+    "serving_size": "300 g"
+  },
+  {
+    "meal_id": "M067",
+    "food_id": "F126",
+    "serving_size": "130 mL"
+  },
+  {
+    "meal_id": "M067",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M068",
+    "food_id": "F127",
+    "serving_size": "166 g"
+  },
+  {
+    "meal_id": "M068",
+    "food_id": "F040",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M068",
+    "food_id": "F128",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M068",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M069",
+    "food_id": "F129",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M069",
+    "food_id": "F055",
+    "serving_size": "76 g"
+  },
+  {
+    "meal_id": "M069",
+    "food_id": "F130",
+    "serving_size": "100 mL"
+  },
+  {
+    "meal_id": "M069",
+    "food_id": "F131",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M069",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M070",
+    "food_id": "F092",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M070",
+    "food_id": "F132",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M070",
+    "food_id": "F133",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M070",
+    "food_id": "F134",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M070",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M071",
+    "food_id": "F135",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M071",
+    "food_id": "F136",
+    "serving_size": "2 (100 g)"
+  },
+  {
+    "meal_id": "M071",
+    "food_id": "F137",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M071",
+    "food_id": "F138",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M071",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M072",
+    "food_id": "F139",
+    "serving_size": "220 g"
+  },
+  {
+    "meal_id": "M072",
+    "food_id": "F055",
+    "serving_size": "75 g"
+  },
+  {
+    "meal_id": "M072",
+    "food_id": "F140",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M072",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M073",
+    "food_id": "F141",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M073",
+    "food_id": "F102",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M073",
+    "food_id": "F142",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M073",
+    "food_id": "F143",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M073",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M074",
+    "food_id": "F144",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M074",
+    "food_id": "F145",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M074",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M075",
+    "food_id": "F146",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M075",
+    "food_id": "F147",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M075",
+    "food_id": "F148",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M075",
+    "food_id": "F059",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M076",
+    "food_id": "F149",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M076",
+    "food_id": "F092",
+    "serving_size": "2 pieces (110 g)"
+  },
+  {
+    "meal_id": "M076",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M077",
+    "food_id": "F150",
+    "serving_size": "2 pieces (100 g)"
+  },
+  {
+    "meal_id": "M077",
+    "food_id": "F151",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M077",
+    "food_id": "F083",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M077",
+    "food_id": "F152",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M077",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M078",
+    "food_id": "F153",
+    "serving_size": "3 pieces (150 g)"
+  },
+  {
+    "meal_id": "M078",
+    "food_id": "F154",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M078",
+    "food_id": "F053",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M079",
+    "food_id": "F155",
+    "serving_size": "2 pieces (30 g)"
+  },
+  {
+    "meal_id": "M080",
+    "food_id": "F156",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M081",
+    "food_id": "F157",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M082",
+    "food_id": "F158",
+    "serving_size": "75 g"
+  },
+  {
+    "meal_id": "M083",
+    "food_id": "F159",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M084",
+    "food_id": "F160",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M085",
+    "food_id": "F161",
+    "serving_size": "25 g"
+  },
+  {
+    "meal_id": "M086",
+    "food_id": "F162",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M087",
+    "food_id": "F163",
+    "serving_size": "2 pieces (60 g)"
+  },
+  {
+    "meal_id": "M088",
+    "food_id": "F164",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M089",
+    "food_id": "F165",
+    "serving_size": "2 pieces (30 g)"
+  },
+  {
+    "meal_id": "M090",
+    "food_id": "F166",
+    "serving_size": "45 g"
+  },
+  {
+    "meal_id": "M091",
+    "food_id": "F167",
+    "serving_size": "140 g"
+  },
+  {
+    "meal_id": "M092",
+    "food_id": "F168",
+    "serving_size": "180 mL"
+  },
+  {
+    "meal_id": "M093",
+    "food_id": "F169",
+    "serving_size": "2 pieces (30 g)"
+  },
+  {
+    "meal_id": "M094",
+    "food_id": "F170",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M094",
+    "food_id": "F171",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M095",
+    "food_id": "F172",
+    "serving_size": "35 g"
+  },
+  {
+    "meal_id": "M096",
+    "food_id": "F173",
+    "serving_size": "140 g"
+  },
+  {
+    "meal_id": "M097",
+    "food_id": "F174",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M098",
+    "food_id": "F175",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M099",
+    "food_id": "F176",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M100",
+    "food_id": "F177",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M101",
+    "food_id": "F178",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M102",
+    "food_id": "F179",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M103",
+    "food_id": "F180",
+    "serving_size": "145 g"
+  },
+  {
+    "meal_id": "M104",
+    "food_id": "F181",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M105",
+    "food_id": "F182",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M106",
+    "food_id": "F183",
+    "serving_size": "165 g"
+  },
+  {
+    "meal_id": "M107",
+    "food_id": "F184",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M108",
+    "food_id": "F185",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M109",
+    "food_id": "F186",
+    "serving_size": "110 g"
+  },
+  {
+    "meal_id": "M110",
+    "food_id": "F187",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M111",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M111",
+    "food_id": "F189",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M111",
+    "food_id": "F190",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M111",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M112",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M112",
+    "food_id": "F192",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M112",
+    "food_id": "F193",
+    "serving_size": "40 g"
+  },
+  {
+    "meal_id": "M112",
+    "food_id": "F194",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M113",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M113",
+    "food_id": "F195",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M113",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M114",
+    "food_id": "F197",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M114",
+    "food_id": "F198",
+    "serving_size": "20 g"
+  },
+  {
+    "meal_id": "M114",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M115",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M115",
+    "food_id": "F199",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M115",
+    "food_id": "F200",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M116",
+    "food_id": "F106",
+    "serving_size": "2 pieces (160 g)"
+  },
+  {
+    "meal_id": "M116",
+    "food_id": "F201",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M117",
+    "food_id": "F202",
+    "serving_size": "250 g"
+  },
+  {
+    "meal_id": "M117",
+    "food_id": "F203",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M118",
+    "food_id": "F204",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M118",
+    "food_id": "F205",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M118",
+    "food_id": "F206",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M118",
+    "food_id": "F207",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M119",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M119",
+    "food_id": "F208",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M119",
+    "food_id": "F181",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M120",
+    "food_id": "F204",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M120",
+    "food_id": "F209",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M120",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M121",
+    "food_id": "F210",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M121",
+    "food_id": "F211",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M121",
+    "food_id": "F200",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M122",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M122",
+    "food_id": "F212",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M122",
+    "food_id": "F190",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M122",
+    "food_id": "F191",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M123",
+    "food_id": "F213",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M123",
+    "food_id": "F214",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M123",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M124",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M124",
+    "food_id": "F215",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M124",
+    "food_id": "F216",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M125",
+    "food_id": "F217",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M125",
+    "food_id": "F218",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M125",
+    "food_id": "F068",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M125",
+    "food_id": "F066",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M126",
+    "food_id": "F213",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M126",
+    "food_id": "F219",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M126",
+    "food_id": "F220",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M126",
+    "food_id": "F221",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M127",
+    "food_id": "F222",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M127",
+    "food_id": "F223",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M128",
+    "food_id": "F224",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M128",
+    "food_id": "F225",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M128",
+    "food_id": "F226",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M129",
+    "food_id": "F227",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M129",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M130",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M130",
+    "food_id": "F228",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M130",
+    "food_id": "F229",
+    "serving_size": "120 g"
+  },
+  {
+    "meal_id": "M130",
+    "food_id": "F206",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M131",
+    "food_id": "F230",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M131",
+    "food_id": "F181",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M131",
+    "food_id": "F231",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M131",
+    "food_id": "F232",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M132",
+    "food_id": "F217",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M132",
+    "food_id": "F233",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M132",
+    "food_id": "F234",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M132",
+    "food_id": "F235",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M132",
+    "food_id": "F236",
+    "serving_size": "20 g"
+  },
+  {
+    "meal_id": "M132",
+    "food_id": "F206",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M133",
+    "food_id": "F204",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M133",
+    "food_id": "F237",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M133",
+    "food_id": "F238",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M133",
+    "food_id": "F239",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M134",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M134",
+    "food_id": "F229",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M134",
+    "food_id": "F240",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M134",
+    "food_id": "F241",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M134",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M135",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M135",
+    "food_id": "F242",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M135",
+    "food_id": "F243",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M135",
+    "food_id": "F241",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M135",
+    "food_id": "F244",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M136",
+    "food_id": "F245",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M136",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M137",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M137",
+    "food_id": "F246",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M137",
+    "food_id": "F247",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M137",
+    "food_id": "F241",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M137",
+    "food_id": "F248",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M138",
+    "food_id": "F249",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M138",
+    "food_id": "F250",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M138",
+    "food_id": "F251",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M139",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M139",
+    "food_id": "F252",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M139",
+    "food_id": "F253",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M139",
+    "food_id": "F206",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M140",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M140",
+    "food_id": "F254",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M140",
+    "food_id": "F255",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M140",
+    "food_id": "F256",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M140",
+    "food_id": "F241",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M140",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M141",
+    "food_id": "F188",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M141",
+    "food_id": "F257",
+    "serving_size": "170 g"
+  },
+  {
+    "meal_id": "M141",
+    "food_id": "F243",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M141",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M142",
+    "food_id": "F213",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M142",
+    "food_id": "F258",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M142",
+    "food_id": "F259",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M143",
+    "food_id": "F217",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M143",
+    "food_id": "F229",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M143",
+    "food_id": "F260",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M143",
+    "food_id": "F232",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M144",
+    "food_id": "F261",
+    "serving_size": "90 g"
+  },
+  {
+    "meal_id": "M144",
+    "food_id": "F262",
+    "serving_size": "15 g"
+  },
+  {
+    "meal_id": "M144",
+    "food_id": "F263",
+    "serving_size": "½ medium (60 g)"
+  },
+  {
+    "meal_id": "M144",
+    "food_id": "F264",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M144",
+    "food_id": "F066",
+    "serving_size": "1 (50 g)"
+  },
+  {
+    "meal_id": "M145",
+    "food_id": "F204",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M145",
+    "food_id": "F265",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M145",
+    "food_id": "F251",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M145",
+    "food_id": "F194",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M146",
+    "food_id": "F213",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M146",
+    "food_id": "F266",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M146",
+    "food_id": "F267",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M146",
+    "food_id": "F241",
+    "serving_size": "120 mL"
+  },
+  {
+    "meal_id": "M147",
+    "food_id": "F268",
+    "serving_size": "1 medium (130 g)"
+  },
+  {
+    "meal_id": "M147",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M148",
+    "food_id": "F269",
+    "serving_size": "2 medium (60 g)"
+  },
+  {
+    "meal_id": "M148",
+    "food_id": "F270",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M149",
+    "food_id": "F271",
+    "serving_size": "6 pieces (12 g)"
+  },
+  {
+    "meal_id": "M150",
+    "food_id": "F272",
+    "serving_size": "4 halves (12 g)"
+  },
+  {
+    "meal_id": "M151",
+    "food_id": "F264",
+    "serving_size": "1 tbsp (12 g)"
+  },
+  {
+    "meal_id": "M152",
+    "food_id": "F273",
+    "serving_size": "1 tbsp (11 g)"
+  },
+  {
+    "meal_id": "M153",
+    "food_id": "F274",
+    "serving_size": "1 cup (130 g)"
+  },
+  {
+    "meal_id": "M153",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M154",
+    "food_id": "F275",
+    "serving_size": "½ cup (87 g)"
+  },
+  {
+    "meal_id": "M154",
+    "food_id": "F049",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M155",
+    "food_id": "F276",
+    "serving_size": "1 medium (130 g)"
+  },
+  {
+    "meal_id": "M155",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M156",
+    "food_id": "F277",
+    "serving_size": "1 tbsp (9 g)"
+  },
+  {
+    "meal_id": "M157",
+    "food_id": "F049",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M158",
+    "food_id": "F278",
+    "serving_size": "2–3 pieces (40 g)"
+  },
+  {
+    "meal_id": "M158",
+    "food_id": "F053",
+    "serving_size": "1 tsp (4 g)"
+  },
+  {
+    "meal_id": "M159",
+    "food_id": "F279",
+    "serving_size": "30 g"
+  },
+  {
+    "meal_id": "M159",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M160",
+    "food_id": "F159",
+    "serving_size": "¼ cup (30 g)"
+  },
+  {
+    "meal_id": "M160",
+    "food_id": "F270",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M161",
+    "food_id": "F280",
+    "serving_size": "1 medium (150 g)"
+  },
+  {
+    "meal_id": "M161",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M162",
+    "food_id": "F281",
+    "serving_size": "2 pieces (40 g)"
+  },
+  {
+    "meal_id": "M162",
+    "food_id": "F049",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M163",
+    "food_id": "F282",
+    "serving_size": "½ medium (80 g)"
+  },
+  {
+    "meal_id": "M163",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M164",
+    "food_id": "F283",
+    "serving_size": "2 tbsp (20 g)"
+  },
+  {
+    "meal_id": "M164",
+    "food_id": "F053",
+    "serving_size": "1 tsp (4 g)"
+  },
+  {
+    "meal_id": "M165",
+    "food_id": "F284",
+    "serving_size": "1 medium (80 g)"
+  },
+  {
+    "meal_id": "M165",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M166",
+    "food_id": "F285",
+    "serving_size": "6 pieces (12 g)"
+  },
+  {
+    "meal_id": "M167",
+    "food_id": "F286",
+    "serving_size": "10 pieces (12 g)"
+  },
+  {
+    "meal_id": "M168",
+    "food_id": "F287",
+    "serving_size": "2 pieces (8 g)"
+  },
+  {
+    "meal_id": "M169",
+    "food_id": "F288",
+    "serving_size": "1 medium (76 g)"
+  },
+  {
+    "meal_id": "M169",
+    "food_id": "F049",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M170",
+    "food_id": "F289",
+    "serving_size": "1 cup (152 g)"
+  },
+  {
+    "meal_id": "M170",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M171",
+    "food_id": "F272",
+    "serving_size": "2 halves (6 g)"
+  },
+  {
+    "meal_id": "M171",
+    "food_id": "F290",
+    "serving_size": "1 piece (20 g)"
+  },
+  {
+    "meal_id": "M172",
+    "food_id": "F291",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M173",
+    "food_id": "F292",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M173",
+    "food_id": "F293",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M173",
+    "food_id": "F294",
+    "serving_size": "1 (50 g)"
+  },
+  {
+    "meal_id": "M173",
+    "food_id": "F295",
+    "serving_size": "20 g"
+  },
+  {
+    "meal_id": "M173",
+    "food_id": "F296",
+    "serving_size": "20 g"
+  },
+  {
+    "meal_id": "M173",
+    "food_id": "F297",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M174",
+    "food_id": "F298",
+    "serving_size": "2 pieces (120 g)"
+  },
+  {
+    "meal_id": "M174",
+    "food_id": "F299",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M174",
+    "food_id": "F300",
+    "serving_size": "90 g"
+  },
+  {
+    "meal_id": "M175",
+    "food_id": "F301",
+    "serving_size": "2 pieces (40 g)"
+  },
+  {
+    "meal_id": "M176",
+    "food_id": "F302",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M176",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M177",
+    "food_id": "F303",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M178",
+    "food_id": "F304",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M178",
+    "food_id": "F072",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M179",
+    "food_id": "F305",
+    "serving_size": "300 mL"
+  },
+  {
+    "meal_id": "M180",
+    "food_id": "F306",
+    "serving_size": "1 bowl (180 g)"
+  },
+  {
+    "meal_id": "M180",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M181",
+    "food_id": "F307",
+    "serving_size": "1 plate"
+  },
+  {
+    "meal_id": "M182",
+    "food_id": "F308",
+    "serving_size": "1 bowl (200 g)"
+  },
+  {
+    "meal_id": "M182",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M183",
+    "food_id": "F182",
+    "serving_size": "1 bowl (200 g)"
+  },
+  {
+    "meal_id": "M183",
+    "food_id": "F270",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M184",
+    "food_id": "F309",
+    "serving_size": "1 serving (100 g paneer)"
+  },
+  {
+    "meal_id": "M185",
+    "food_id": "F310",
+    "serving_size": "1 plate (200 g)"
+  },
+  {
+    "meal_id": "M185",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M186",
+    "food_id": "F311",
+    "serving_size": "1 bowl (200 g)"
+  },
+  {
+    "meal_id": "M187",
+    "food_id": "F312",
+    "serving_size": "2 tikkis (approx. 120 g)"
+  },
+  {
+    "meal_id": "M188",
+    "food_id": "F313",
+    "serving_size": "200 g"
+  },
+  {
+    "meal_id": "M188",
+    "food_id": "F251",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M189",
+    "food_id": "F065",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M189",
+    "food_id": "F066",
+    "serving_size": "1 (50 g)"
+  },
+  {
+    "meal_id": "M189",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M190",
+    "food_id": "F314",
+    "serving_size": "250 g"
+  },
+  {
+    "meal_id": "M191",
+    "food_id": "F315",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M191",
+    "food_id": "F316",
+    "serving_size": "1 (30 g)"
+  },
+  {
+    "meal_id": "M192",
+    "food_id": "F036",
+    "serving_size": "3 pieces (150 g)"
+  },
+  {
+    "meal_id": "M192",
+    "food_id": "F040",
+    "serving_size": "40 g"
+  },
+  {
+    "meal_id": "M192",
+    "food_id": "F041",
+    "serving_size": "150 mL"
+  },
+  {
+    "meal_id": "M192",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M192",
+    "food_id": "F272",
+    "serving_size": "4 halves (12 g)"
+  },
+  {
+    "meal_id": "M193",
+    "food_id": "F070",
+    "serving_size": "220 g"
+  },
+  {
+    "meal_id": "M193",
+    "food_id": "F317",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M193",
+    "food_id": "F271",
+    "serving_size": "6 pieces (12 g)"
+  },
+  {
+    "meal_id": "M194",
+    "food_id": "F318",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M194",
+    "food_id": "F217",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M194",
+    "food_id": "F319",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M195",
+    "food_id": "F320",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M195",
+    "food_id": "F316",
+    "serving_size": "1 (30 g)"
+  },
+  {
+    "meal_id": "M195",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M196",
+    "food_id": "F067",
+    "serving_size": "220 g"
+  },
+  {
+    "meal_id": "M196",
+    "food_id": "F068",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M196",
+    "food_id": "F244",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M196",
+    "food_id": "F321",
+    "serving_size": "¼ cup (40 g)"
+  },
+  {
+    "meal_id": "M197",
+    "food_id": "F322",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M197",
+    "food_id": "F217",
+    "serving_size": "100 g"
+  },
+  {
+    "meal_id": "M197",
+    "food_id": "F323",
+    "serving_size": "130 g"
+  },
+  {
+    "meal_id": "M198",
+    "food_id": "F324",
+    "serving_size": "300 mL"
+  },
+  {
+    "meal_id": "M198",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M198",
+    "food_id": "F271",
+    "serving_size": "4 pieces (8 g)"
+  },
+  {
+    "meal_id": "M198",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M199",
+    "food_id": "F325",
+    "serving_size": "250 g"
+  },
+  {
+    "meal_id": "M199",
+    "food_id": "F251",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M200",
+    "food_id": "F326",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M200",
+    "food_id": "F327",
+    "serving_size": "1 (30 g)"
+  },
+  {
+    "meal_id": "M200",
+    "food_id": "F328",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M201",
+    "food_id": "F329",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M201",
+    "food_id": "F206",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M202",
+    "food_id": "F330",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M202",
+    "food_id": "F316",
+    "serving_size": "1 (30 g)"
+  },
+  {
+    "meal_id": "M202",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M203",
+    "food_id": "F331",
+    "serving_size": "300 mL"
+  },
+  {
+    "meal_id": "M203",
+    "food_id": "F317",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M203",
+    "food_id": "F272",
+    "serving_size": "2 halves (6 g)"
+  },
+  {
+    "meal_id": "M203",
+    "food_id": "F290",
+    "serving_size": "1 piece (20 g)"
+  },
+  {
+    "meal_id": "M204",
+    "food_id": "F332",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M204",
+    "food_id": "F275",
+    "serving_size": "40 g"
+  },
+  {
+    "meal_id": "M204",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M205",
+    "food_id": "F333",
+    "serving_size": "300 mL"
+  },
+  {
+    "meal_id": "M205",
+    "food_id": "F216",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M205",
+    "food_id": "F159",
+    "serving_size": "2 tbsp (20 g)"
+  },
+  {
+    "meal_id": "M205",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M206",
+    "food_id": "F334",
+    "serving_size": "220 g"
+  },
+  {
+    "meal_id": "M206",
+    "food_id": "F335",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M206",
+    "food_id": "F278",
+    "serving_size": "2 pieces (32 g)"
+  },
+  {
+    "meal_id": "M207",
+    "food_id": "F229",
+    "serving_size": "150 g"
+  },
+  {
+    "meal_id": "M207",
+    "food_id": "F217",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M208",
+    "food_id": "F336",
+    "serving_size": "300 mL"
+  },
+  {
+    "meal_id": "M208",
+    "food_id": "F319",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M208",
+    "food_id": "F271",
+    "serving_size": "4 pieces (8 g)"
+  },
+  {
+    "meal_id": "M208",
+    "food_id": "F272",
+    "serving_size": "2 halves (6 g)"
+  },
+  {
+    "meal_id": "M209",
+    "food_id": "F337",
+    "serving_size": "250 g"
+  },
+  {
+    "meal_id": "M209",
+    "food_id": "F338",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M210",
+    "food_id": "F339",
+    "serving_size": "250 mL"
+  },
+  {
+    "meal_id": "M210",
+    "food_id": "F327",
+    "serving_size": "1 (30 g)"
+  },
+  {
+    "meal_id": "M210",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M211",
+    "food_id": "F340",
+    "serving_size": "260 g"
+  },
+  {
+    "meal_id": "M211",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M212",
+    "food_id": "F341",
+    "serving_size": "2 pieces (80 g)"
+  },
+  {
+    "meal_id": "M212",
+    "food_id": "F206",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M212",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M212",
+    "food_id": "F269",
+    "serving_size": "1 medium (30 g)"
+  },
+  {
+    "meal_id": "M213",
+    "food_id": "F342",
+    "serving_size": "250 g"
+  },
+  {
+    "meal_id": "M213",
+    "food_id": "F216",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M214",
+    "food_id": "F343",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M214",
+    "food_id": "F217",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M214",
+    "food_id": "F328",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M214",
+    "food_id": "F045",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M215",
+    "food_id": "F149",
+    "serving_size": "180 g"
+  },
+  {
+    "meal_id": "M215",
+    "food_id": "F092",
+    "serving_size": "2 pieces (110 g)"
+  },
+  {
+    "meal_id": "M216",
+    "food_id": "F344",
+    "serving_size": "200 mL"
+  },
+  {
+    "meal_id": "M216",
+    "food_id": "F217",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M216",
+    "food_id": "F345",
+    "serving_size": "1 (10 g)"
+  },
+  {
+    "meal_id": "M216",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M216",
+    "food_id": "F346",
+    "serving_size": "1 serving (18 g)"
+  },
+  {
+    "meal_id": "M217",
+    "food_id": "F347",
+    "serving_size": "1 bowl (400 mL)"
+  },
+  {
+    "meal_id": "M217",
+    "food_id": "F191",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M218",
+    "food_id": "F348",
+    "serving_size": "1 bowl (400 mL)"
+  },
+  {
+    "meal_id": "M218",
+    "food_id": "F196",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M218",
+    "food_id": "F271",
+    "serving_size": "4 pieces (8 g)"
+  },
+  {
+    "meal_id": "M218",
+    "food_id": "F120",
+    "serving_size": "1 tsp (4 g)"
+  },
+  {
+    "meal_id": "M219",
+    "food_id": "F046",
+    "serving_size": "2 dosas with chutney"
+  },
+  {
+    "meal_id": "M219",
+    "food_id": "F349",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M220",
+    "food_id": "F350",
+    "serving_size": "1 serving"
+  },
+  {
+    "meal_id": "M220",
+    "food_id": "F351",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M221",
+    "food_id": "F352",
+    "serving_size": "1 plate"
+  },
+  {
+    "meal_id": "M221",
+    "food_id": "F328",
+    "serving_size": "50 g"
+  },
+  {
+    "meal_id": "M222",
+    "food_id": "F353",
+    "serving_size": "1 plate + 1 bowl"
+  },
+  {
+    "meal_id": "M223",
+    "food_id": "F354",
+    "serving_size": "1 bowl + 1 serving"
+  },
+  {
+    "meal_id": "M224",
+    "food_id": "F355",
+    "serving_size": "1 plate"
+  },
+  {
+    "meal_id": "M224",
+    "food_id": "F319",
+    "serving_size": "60 g"
+  },
+  {
+    "meal_id": "M224",
+    "food_id": "F272",
+    "serving_size": "2 halves (6 g)"
+  },
+  {
+    "meal_id": "M224",
+    "food_id": "F290",
+    "serving_size": "1 piece (20 g)"
+  },
+  {
+    "meal_id": "M225",
+    "food_id": "F356",
+    "serving_size": "1 plate"
+  },
+  {
+    "meal_id": "M225",
+    "food_id": "F241",
+    "serving_size": "200ml"
+  },
+  {
+    "meal_id": "M226",
+    "food_id": "F357",
+    "serving_size": "1 full plate"
+  },
+  {
+    "meal_id": "M227",
+    "food_id": "F358",
+    "serving_size": "1 serving (150 g chicken)"
+  },
+  {
+    "meal_id": "M227",
+    "food_id": "F359",
+    "serving_size": "80 g"
+  },
+  {
+    "meal_id": "M227",
+    "food_id": "F321",
+    "serving_size": "¼ cup (40 g)"
+  },
+  {
+    "meal_id": "M228",
+    "food_id": "F360",
+    "serving_size": "1 bowl (300 g)"
+  },
+  {
+    "meal_id": "M229",
+    "food_id": "F361",
+    "serving_size": "1 bowl (250 mL)"
+  },
+  {
+    "meal_id": "M229",
+    "food_id": "F362",
+    "serving_size": "70 g"
+  },
+  {
+    "meal_id": "M229",
+    "food_id": "F159",
+    "serving_size": "2 tbsp (20 g)"
+  },
+  {
+    "meal_id": "M229",
+    "food_id": "F271",
+    "serving_size": "4 pieces (8 g)"
+  },
+  {
+    "meal_id": "M229",
+    "food_id": "F045",
+    "serving_size": "1 tsp (5 g)"
+  },
+  {
+    "meal_id": "M230",
+    "food_id": "F363",
+    "serving_size": "1 bowl (350 g)"
+  },
+  {
+    "meal_id": "M231",
+    "food_id": "F364",
+    "serving_size": "2 dosas + accompaniments"
+  },
+  {
+    "meal_id": "M232",
+    "food_id": "F365",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M233",
+    "food_id": "F366",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M234",
+    "food_id": "F367",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M235",
+    "food_id": "F368",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M236",
+    "food_id": "F369",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M237",
+    "food_id": "F370",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M238",
+    "food_id": "F371",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M239",
+    "food_id": "F372",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M240",
+    "food_id": "F373",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M241",
+    "food_id": "F374",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M242",
+    "food_id": "F375",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M243",
+    "food_id": "F376",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M244",
+    "food_id": "F377",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M245",
+    "food_id": "F378",
+    "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M246",
+    "food_id": "F379",
+    "serving_size": "240 mL"
+  }
+]

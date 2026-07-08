@@ -93,7 +93,7 @@ class DietPlanMeal(Base, TimestampMixin):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plan_days.id", ondelete="CASCADE"), nullable=False)
     meal_session_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meal_sessions.id", ondelete="RESTRICT"), nullable=False)
-    meal_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="SET NULL"), nullable=True)
+    meal_id: Mapped[Optional[str]] = mapped_column(String(50), ForeignKey("Twellr_Nutri.meals.id", ondelete="SET NULL"), nullable=True)
     
     calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
     protein_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
@@ -118,7 +118,7 @@ class DietPlanMealFood(Base, TimestampMixin):
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     plan_meal_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plan_meals.id", ondelete="CASCADE"), nullable=False)
-    food_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.foods.id", ondelete="SET NULL"), nullable=True)
+    food_id: Mapped[Optional[str]] = mapped_column(String(50), ForeignKey("Twellr_Nutri.foods.id", ondelete="SET NULL"), nullable=True)
     
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     unit: Mapped[str] = mapped_column(String(50), nullable=False)
@@ -134,34 +134,9 @@ class DietPlanMealFood(Base, TimestampMixin):
     sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
     
     meal: Mapped["DietPlanMeal"] = relationship("DietPlanMeal", back_populates="meal_foods_rel")
-    ingredients_rel: Mapped[list["DietPlanMealFoodIngredient"]] = relationship("DietPlanMealFoodIngredient", back_populates="meal_food", cascade="all, delete-orphan")
     food: Mapped["Food"] = relationship("Food")
 
-class DietPlanMealFoodIngredient(Base):
-    __tablename__ = "diet_plan_meal_food_ingredients"
-    __table_args__ = (
-        CheckConstraint("quantity >= 0", name="chk_quantity"),
-        {"schema": "Twellr_Nutri"}
-    )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    plan_meal_food_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plan_meal_foods.id", ondelete="CASCADE"), nullable=False)
-    ingredient_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.ingredients_master.id", ondelete="SET NULL"), nullable=True)
-    
-    quantity: Mapped[float] = mapped_column(Float, nullable=False)
-    unit: Mapped[str] = mapped_column(String(50), nullable=False)
-    
-    calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 4), nullable=True)
-    protein_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 4), nullable=True)
-    carbs_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 4), nullable=True)
-    fat_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 4), nullable=True)
-    fiber_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 4), nullable=True)
-    
-    sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
-    created_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
-    
-    meal_food: Mapped["DietPlanMealFood"] = relationship("DietPlanMealFood", back_populates="ingredients_rel")
-    ingredient: Mapped["MasterIngredient"] = relationship("MasterIngredient")
 
 class DietPlanMealConsumption(Base, TimestampMixin):
     __tablename__ = "diet_plan_meal_consumption"

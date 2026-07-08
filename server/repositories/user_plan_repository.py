@@ -3,7 +3,7 @@ from typing import Optional
 from sqlalchemy import select, update
 from sqlalchemy.orm import selectinload
 from database.session import AsyncSessionLocal
-from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, DietPlanMealFoodIngredient, MealSession, UserHealthProfile
+from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, MealSession, UserHealthProfile
 from utils.normalizers import _normalize_cuisine
 from sqlalchemy.exc import SQLAlchemyError
 from exceptions.repository import RepositoryException
@@ -30,8 +30,8 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 
                 meal_dict = {
                     "id": str(pmeal.id),
-                    "Meal_ID": pmeal.meal.client_meal_id if pmeal.meal else None,
-                    "name": pmeal.meal.name_en if pmeal.meal else None,
+                    "Meal_ID": pmeal.meal.id if pmeal.meal else None,
+                    "name": pmeal.meal.recipe_name if pmeal.meal else None,
                     "macros": {
                         "caloriesKcal": float(pmeal.calories_kcal) if pmeal.calories_kcal else 0.0,
                         "proteinG": float(pmeal.protein_g) if pmeal.protein_g else 0.0,
@@ -44,8 +44,8 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 
                 for pfood in pmeal.meal_foods_rel:
                     food_dict = {
-                        "id": pfood.food.client_food_id if pfood.food else None,
-                        "name": pfood.food.name_en if pfood.food else None,
+                        "id": pfood.food.id if pfood.food else None,
+                        "name": pfood.food.food_name if pfood.food else None,
                         "quantity": float(pfood.quantity),
                         "unit": pfood.unit,
                         "macros": {
@@ -58,22 +58,6 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                         "ingredients_struct": []
                     }
                     
-                    for ping in pfood.ingredients_rel:
-                        ing_dict = {
-                            "id": ping.ingredient.id if ping.ingredient else None,
-                            "name": ping.ingredient.name_en if ping.ingredient else None,
-                            "quantity": float(ping.quantity),
-                            "unit": ping.unit,
-                            "macros": {
-                                "caloriesKcal": float(ping.calories_kcal) if ping.calories_kcal else 0.0,
-                                "proteinG": float(ping.protein_g) if ping.protein_g else 0.0,
-                                "carbsG": float(ping.carbs_g) if ping.carbs_g else 0.0,
-                                "fatG": float(ping.fat_g) if ping.fat_g else 0.0,
-                                "fiberG": float(ping.fiber_g) if ping.fiber_g else 0.0
-                            }
-                        }
-                        food_dict["ingredients_struct"].append(ing_dict)
-                        
                     meal_dict["foods_struct"].append(food_dict)
                     
                 day_dict[session_code] = meal_dict
@@ -131,9 +115,7 @@ async def load_user_plan(user_identifier: str) -> Optional[dict]:
                     .selectinload(DietPlanMealFood.food),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
-                    .selectinload(DietPlanMeal.meal_foods_rel)
-                    .selectinload(DietPlanMealFood.ingredients_rel)
-                    .selectinload(DietPlanMealFoodIngredient.ingredient),
+                    .selectinload(DietPlanMeal.meal_foods_rel),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
                     .selectinload(DietPlanMeal.meal)
@@ -161,9 +143,7 @@ async def load_user_plan_by_id(plan_id: str) -> Optional[dict]:
                     .selectinload(DietPlanMealFood.food),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
-                    .selectinload(DietPlanMeal.meal_foods_rel)
-                    .selectinload(DietPlanMealFood.ingredients_rel)
-                    .selectinload(DietPlanMealFoodIngredient.ingredient),
+                    .selectinload(DietPlanMeal.meal_foods_rel),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
                     .selectinload(DietPlanMeal.meal)
@@ -197,13 +177,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
             cuisine_map = {code.lower(): pk_id for code, pk_id in cuisine_res.all()}
 
             # fetch meals and foods to map (cuisine_id, client_ids) to bigints
-            meal_stmt = select(Meal.cuisine_id, Meal.client_meal_id, Meal.id)
-            meal_res = await session.execute(meal_stmt)
-            meals_map = {(c_id, client_id): pk_id for c_id, client_id, pk_id in meal_res.all()}
-            
-            food_stmt = select(Food.cuisine_id, Food.client_food_id, Food.id)
-            food_res = await session.execute(food_stmt)
-            foods_map = {(c_id, client_id): pk_id for c_id, client_id, pk_id in food_res.all()}
+            # Removed mapping logic as meal_id and food_id are now String(50)
 
             # only archive old plans if activating
             if status == 'active':
@@ -325,7 +299,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     meal_obj = DietPlanMeal(
                         plan_day_id=day_obj.id,
                         meal_session_id=sessions_map[session_code],
-                        meal_id=meals_map.get((c_id, str(client_meal_id))) if c_id and client_meal_id else None,
+                        meal_id=str(client_meal_id) if client_meal_id else None,
                         calories_kcal=meal_macros.get("caloriesKcal"),
                         protein_g=meal_macros.get("proteinG"),
                         carbs_g=meal_macros.get("carbsG"),
@@ -341,7 +315,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                         
                         food_obj = DietPlanMealFood(
                             plan_meal_id=meal_obj.id,
-                            food_id=foods_map.get((c_id, client_food_id)) if c_id and client_food_id else None,
+                            food_id=str(client_food_id) if client_food_id else None,
                             quantity=food_data.get("quantity", 0),
                             unit=food_data.get("unit", "g"),
                             calories_kcal=f_macros.get("caloriesKcal"),
@@ -352,23 +326,6 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                         )
                         session.add(food_obj)
                         await session.flush()
-                        
-                        for ing_data in food_data.get("ingredients_struct", []):
-                            i_macros = ing_data.get("macros", {})
-                            ing_id = ing_data.get("id")
-                            
-                            ing_obj = DietPlanMealFoodIngredient(
-                                plan_meal_food_id=food_obj.id,
-                                ingredient_id=int(ing_id) if str(ing_id).isdigit() else None, # ingredient IDs are already ints!
-                                quantity=ing_data.get("quantity", 0),
-                                unit=ing_data.get("unit", "g"),
-                                calories_kcal=i_macros.get("caloriesKcal"),
-                                protein_g=i_macros.get("proteinG"),
-                                carbs_g=i_macros.get("carbsG"),
-                                fat_g=i_macros.get("fatG"),
-                                fiber_g=i_macros.get("fiberG")
-                            )
-                            session.add(ing_obj)
             
             await session.commit()
             
@@ -408,9 +365,7 @@ async def load_latest_user_plan(user_identifier: str) -> Optional[dict]:
                     .selectinload(DietPlanMealFood.food),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
-                    .selectinload(DietPlanMeal.meal_foods_rel)
-                    .selectinload(DietPlanMealFood.ingredients_rel)
-                    .selectinload(DietPlanMealFoodIngredient.ingredient),
+                    .selectinload(DietPlanMeal.meal_foods_rel),
                     selectinload(DietPlan.days_rel)
                     .selectinload(DietPlanDay.meals_rel)
                     .selectinload(DietPlanMeal.meal)

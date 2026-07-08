@@ -6,6 +6,7 @@ export default function MealManager() {
   const [meals, setMeals] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchInput, setSearchInput] = useState('');
+  const [cuisineFilter, setCuisineFilter] = useState('');
   const [initialLoading, setInitialLoading] = useState(true);
   const [cuisines, setCuisines] = useState([]);
   const [foods, setFoods] = useState([]);
@@ -52,7 +53,7 @@ export default function MealManager() {
 
   useEffect(() => {
     fetchMeals();
-  }, [currentPage, searchQuery]);
+  }, [currentPage, searchQuery, cuisineFilter]);
 
   const loadReferenceData = async () => {
     setLoading(true);
@@ -84,7 +85,7 @@ export default function MealManager() {
     setError('');
     try {
       const offset = (currentPage - 1) * itemsPerPage;
-      const response = await adminApi.meals.list(null, itemsPerPage, offset, false, searchQuery);
+      const response = await adminApi.meals.list(cuisineFilter || null, itemsPerPage, offset, false, searchQuery);
       setMeals(response.items);
       setTotalMeals(response.total);
     } catch (err) {
@@ -237,7 +238,7 @@ export default function MealManager() {
       {error && <div className="alert alert-error">{error}</div>}
       {success && <div className="alert alert-success">{success}</div>}
 
-      <div style={{ marginBottom: '20px', maxWidth: '400px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <div style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
         <input
           type="text"
           placeholder="🔍 Search meal by ID, code, name, cuisine, or session..."
@@ -248,10 +249,27 @@ export default function MealManager() {
             border: '2px solid #ecf0f1',
             borderRadius: '6px',
             width: '100%',
-            fontSize: '0.95rem'
+            maxWidth: '400px',
+            fontSize: '1rem'
           }}
         />
-        {loading && <span style={{ fontSize: '0.85rem', color: '#7f8c8d' }}>Loading...</span>}
+        <select
+          value={cuisineFilter}
+          onChange={(e) => setCuisineFilter(e.target.value)}
+          style={{
+            padding: '10px 15px',
+            border: '2px solid #ecf0f1',
+            borderRadius: '6px',
+            minWidth: '200px',
+            fontSize: '1rem'
+          }}
+        >
+          <option value="">All Cuisines</option>
+          {cuisines.map(c => (
+            <option key={c.id} value={c.id}>{c.name_en}</option>
+          ))}
+        </select>
+        {loading && <span className="loading-spinner" style={{ width: '20px', height: '20px', marginLeft: '10px' }}></span>}
       </div>
 
       <div className="list-container">

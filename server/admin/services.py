@@ -7,15 +7,14 @@ from sqlalchemy.orm import selectinload
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 
-from domain.nutrition_compiler import calculate_nutrition_rollup, _unit_is_gram
+
 from database.models.catalog import (
-    Cuisine, MealSession, MasterIngredient, Food, FoodIngredient, Meal, MealFood,
+    Cuisine, MealSession, Food, Meal, MealFood,
     FoodRole, PrimaryGoal, SecondaryGoal, MealPrimaryGoal, MealSecondaryGoal
 )
 from admin.schemas import (
     CuisineCreate, CuisineUpdate, CuisineResponse,
     MealSessionCreate, MealSessionUpdate, MealSessionResponse,
-    MasterIngredientCreate, MasterIngredientUpdate, MasterIngredientResponse,
     FoodCreate, FoodUpdate, FoodResponse,
     MealCreate, MealUpdate, MealResponse,
     FoodRoleCreate, FoodRoleUpdate, PrimaryGoalCreate, PrimaryGoalUpdate, SecondaryGoalCreate, SecondaryGoalUpdate
@@ -217,86 +216,7 @@ class MealSessionService:
 
 
 class MasterIngredientService:
-    @staticmethod
-    async def list_ingredients(session: AsyncSession, limit: int = 100, offset: int = 0, active_only: bool = True):
-        query = select(MasterIngredient).order_by(desc(MasterIngredient.id))
-        if active_only:
-            query = query.where(MasterIngredient.is_active == True)
-        
-        result = await session.execute(query.limit(limit).offset(offset))
-        ingredients = result.scalars().all()
-        
-        count_query = select(MasterIngredient)
-        if active_only:
-            count_query = count_query.where(MasterIngredient.is_active == True)
-        count_result = await session.execute(count_query)
-        total = len(count_result.scalars().all())
-        
-        return {"total": total, "items": ingredients}
-
-    @staticmethod
-    async def get_ingredient(session: AsyncSession, ingredient_id: int) -> Optional[MasterIngredient]:
-        result = await session.execute(
-            select(MasterIngredient).where(MasterIngredient.id == ingredient_id)
-        )
-        return result.scalar_one_or_none()
-
-    @staticmethod
-    async def create_ingredient(session: AsyncSession, data: MasterIngredientCreate) -> MasterIngredient:
-        # Check duplicate name_en case-insensitively
-        name_stripped = data.name_en.strip()
-        query = select(MasterIngredient).where(
-            MasterIngredient.name_en.ilike(name_stripped)
-        )
-        existing = await session.execute(query)
-        if existing.scalar_one_or_none():
-            raise AppException(f"An ingredient named '{data.name_en}' already exists.", status_code=400)
-
-        ingredient = MasterIngredient(**data.model_dump())
-        session.add(ingredient)
-        await session.commit()
-        await session.refresh(ingredient)
-        return ingredient
-
-    @staticmethod
-    async def update_ingredient(session: AsyncSession, ingredient_id: int, data: MasterIngredientUpdate) -> MasterIngredient:
-        ingredient = await MasterIngredientService.get_ingredient(session, ingredient_id)
-        if not ingredient:
-            raise AppException(f"Ingredient {ingredient_id} not found", status_code=404)
-        
-        if data.name_en is not None:
-            name_stripped = data.name_en.strip()
-            query = select(MasterIngredient).where(
-                MasterIngredient.name_en.ilike(name_stripped),
-                MasterIngredient.id != ingredient_id
-            )
-            existing = await session.execute(query)
-            if existing.scalar_one_or_none():
-                raise AppException(f"An ingredient named '{data.name_en}' already exists.", status_code=400)
-
-        update_data = data.model_dump(exclude_unset=True)
-        for key, value in update_data.items():
-            setattr(ingredient, key, value)
-        
-        await session.commit()
-        await session.refresh(ingredient)
-        return ingredient
-
-    @staticmethod
-    async def delete_ingredient(session: AsyncSession, ingredient_id: int, permanent: bool = False):
-        ingredient = await MasterIngredientService.get_ingredient(session, ingredient_id)
-        if not ingredient:
-            raise AppException(f"Ingredient {ingredient_id} not found", status_code=404)
-        
-        if permanent:
-            await session.delete(ingredient)
-        else:
-            # Soft delete
-            ingredient.is_active = False
-            ingredient.deleted_at = datetime.utcnow()
-        await session.commit()
-        return {"message": "Ingredient deleted successfully" if not permanent else "Ingredient permanently deleted successfully"}
-
+    pass
 
 class FoodService:
     @staticmethod
@@ -350,33 +270,7 @@ class FoodService:
 
     @staticmethod
     async def _calculate_food_nutrition(session: AsyncSession, food: Food, food_ingredients: list):
-        rollup_items = []
-        for fi in food_ingredients:
-            ing = await session.get(MasterIngredient, fi.ingredient_id)
-            if ing:
-                rollup_items.append({
-                    "quantity": fi.quantity,
-                    "unit": ing.default_unit,
-                    "base_quantity": 100.0 if _unit_is_gram(ing.default_unit) else 1.0,
-                    "base_unit": ing.default_unit,
-                    "macros": {
-                        "calories_kcal": ing.calories_kcal,
-                        "protein_g": ing.protein_g,
-                        "carbs_g": ing.carbs_g,
-                        "fat_g": ing.fat_g,
-                        "fiber_g": ing.fiber_g
-                    },
-                    "micronutrients": ing.micronutrients,
-                    "conversions": None
-                })
-        
-        nutrition = calculate_nutrition_rollup(rollup_items)
-        food.calories_kcal = nutrition["macros"]["calories_kcal"]
-        food.protein_g = nutrition["macros"]["protein_g"]
-        food.carbs_g = nutrition["macros"]["carbs_g"]
-        food.fat_g = nutrition["macros"]["fat_g"]
-        food.fiber_g = nutrition["macros"]["fiber_g"]
-        food.micronutrients = nutrition["micronutrients"]
+        pass
 
     @staticmethod
     async def create_food(session: AsyncSession, data: FoodCreate) -> Food:
@@ -507,32 +401,7 @@ class MealService:
 
     @staticmethod
     async def _calculate_meal_nutrition(session: AsyncSession, meal: Meal, meal_foods: list):
-        rollup_items = []
-        for mf in meal_foods:
-            food = await session.get(Food, mf.food_id)
-            if food:
-                rollup_items.append({
-                    "quantity": mf.quantity,
-                    "unit": food.unit,
-                    "base_quantity": mf.quantity,
-                    "base_unit": food.unit,
-                    "macros": {
-                        "calories_kcal": food.calories_kcal,
-                        "protein_g": food.protein_g,
-                        "carbs_g": food.carbs_g,
-                        "fat_g": food.fat_g,
-                        "fiber_g": food.fiber_g
-                    },
-                    "micronutrients": food.micronutrients
-                })
-        
-        nutrition = calculate_nutrition_rollup(rollup_items)
-        meal.calories_kcal = nutrition["macros"]["calories_kcal"]
-        meal.protein_g = nutrition["macros"]["protein_g"]
-        meal.carbs_g = nutrition["macros"]["carbs_g"]
-        meal.fat_g = nutrition["macros"]["fat_g"]
-        meal.fiber_g = nutrition["macros"]["fiber_g"]
-        meal.micronutrients = nutrition["micronutrients"]
+        pass
 
     @staticmethod
     async def create_meal(session: AsyncSession, data: MealCreate) -> Meal:

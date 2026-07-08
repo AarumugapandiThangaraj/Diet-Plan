@@ -1,0 +1,1518 @@
+[
+  {
+    "food_id": "F001",
+    "food_name": "Liver Cleansing Shot"
+  },
+  {
+    "food_id": "F002",
+    "food_name": "Sugar-Free Apple Sharbat"
+  },
+  {
+    "food_id": "F003",
+    "food_name": "Amla-Ginger Shot"
+  },
+  {
+    "food_id": "F004",
+    "food_name": "Beetroot-Pomegranate Glow Shot"
+  },
+  {
+    "food_id": "F005",
+    "food_name": "Carrot-Orange Vitamin Shot"
+  },
+  {
+    "food_id": "F006",
+    "food_name": "Guava-Mint Vitamin Shot"
+  },
+  {
+    "food_id": "F007",
+    "food_name": "Pineapple-Mint Hydration Shot"
+  },
+  {
+    "food_id": "F008",
+    "food_name": "Cucumber-Mint Cooling Shot"
+  },
+  {
+    "food_id": "F009",
+    "food_name": "Green Apple-Ginger Shot"
+  },
+  {
+    "food_id": "F010",
+    "food_name": "Warm Water with Ghee and Soaked Methi"
+  },
+  {
+    "food_id": "F011",
+    "food_name": "Soaked Black Sesame and Curry Leaf Water"
+  },
+  {
+    "food_id": "F012",
+    "food_name": "Soaked Fenugreek and Coriander Seed Water"
+  },
+  {
+    "food_id": "F013",
+    "food_name": "Soaked Chia and Tulsi Water"
+  },
+  {
+    "food_id": "F014",
+    "food_name": "Soaked Raisins and Cumin Water"
+  },
+  {
+    "food_id": "F015",
+    "food_name": "Soaked Flaxseed and Ajwain Water"
+  },
+  {
+    "food_id": "F016",
+    "food_name": "Soaked Fenugreek and Coconut Water"
+  },
+  {
+    "food_id": "F017",
+    "food_name": "Soaked Dates and Cinnamon Water"
+  },
+  {
+    "food_id": "F018",
+    "food_name": "Curry Leaf and Lemon Detox Water"
+  },
+  {
+    "food_id": "F019",
+    "food_name": "Soaked Raisin-Fig Iron Tonic"
+  },
+  {
+    "food_id": "F020",
+    "food_name": "Skin Glow Smoothie"
+  },
+  {
+    "food_id": "F021",
+    "food_name": "Retinol Glow Juice"
+  },
+  {
+    "food_id": "F022",
+    "food_name": "Nature's Glow Glass Skin Juice"
+  },
+  {
+    "food_id": "F023",
+    "food_name": "Green Glow Detox Smoothie"
+  },
+  {
+    "food_id": "F024",
+    "food_name": "Tender Coconut and Basil Seed Drink"
+  },
+  {
+    "food_id": "F025",
+    "food_name": "Pomegranate-Beet Pumpkin Seed Shot"
+  },
+  {
+    "food_id": "F026",
+    "food_name": "Biotin Boost Drink"
+  },
+  {
+    "food_id": "F027",
+    "food_name": "Hair Root Activation Drink"
+  },
+  {
+    "food_id": "F028",
+    "food_name": "Hair Pigmentation Support Drink"
+  },
+  {
+    "food_id": "F029",
+    "food_name": "Turmeric-Coconut Water Tonic"
+  },
+  {
+    "food_id": "F030",
+    "food_name": "Turmeric-Cinnamon Detox Water"
+  },
+  {
+    "food_id": "F031",
+    "food_name": "Soaked Vetiver Water"
+  },
+  {
+    "food_id": "F032",
+    "food_name": "Banana Stem Juice Shot"
+  },
+  {
+    "food_id": "F033",
+    "food_name": "Depuffing Juice"
+  },
+  {
+    "food_id": "F034",
+    "food_name": "Neem & Tulsi Hair Purifying Toni"
+  },
+  {
+    "food_id": "F035",
+    "food_name": "Triphala Detox Water"
+  },
+  {
+    "food_id": "F036",
+    "food_name": "Idli"
+  },
+  {
+    "food_id": "F037",
+    "food_name": "Sambar"
+  },
+  {
+    "food_id": "F038",
+    "food_name": "Drumstick Leaf Green Shot"
+  },
+  {
+    "food_id": "F039",
+    "food_name": "Slivered Almonds"
+  },
+  {
+    "food_id": "F040",
+    "food_name": "Coconut Chutney"
+  },
+  {
+    "food_id": "F041",
+    "food_name": "Tomato Rasam"
+  },
+  {
+    "food_id": "F042",
+    "food_name": "Fresh Orange Juice"
+  },
+  {
+    "food_id": "F043",
+    "food_name": "Dosa"
+  },
+  {
+    "food_id": "F044",
+    "food_name": "Amla Juice"
+  },
+  {
+    "food_id": "F045",
+    "food_name": "Roasted Pumpkin Seeds"
+  },
+  {
+    "food_id": "F046",
+    "food_name": "Tomato Set Dosa"
+  },
+  {
+    "food_id": "F047",
+    "food_name": "Mint Chutney"
+  },
+  {
+    "food_id": "F048",
+    "food_name": "Pomegranate Juice"
+  },
+  {
+    "food_id": "F049",
+    "food_name": "Ground Flaxseeds"
+  },
+  {
+    "food_id": "F050",
+    "food_name": "Palak Dosa"
+  },
+  {
+    "food_id": "F051",
+    "food_name": "Chutney"
+  },
+  {
+    "food_id": "F052",
+    "food_name": "Carrot-Ginger Juice"
+  },
+  {
+    "food_id": "F053",
+    "food_name": "Toasted Sesame Seeds"
+  },
+  {
+    "food_id": "F054",
+    "food_name": "Ragi Dosa"
+  },
+  {
+    "food_id": "F055",
+    "food_name": "Tomato Chutney"
+  },
+  {
+    "food_id": "F056",
+    "food_name": "Beetroot-Apple Iron Smoothie"
+  },
+  {
+    "food_id": "F057",
+    "food_name": "Flaxseed Dosa"
+  },
+  {
+    "food_id": "F058",
+    "food_name": "Guava Juice"
+  },
+  {
+    "food_id": "F059",
+    "food_name": "Crushed Walnuts"
+  },
+  {
+    "food_id": "F060",
+    "food_name": "Moringa Egg Dosa"
+  },
+  {
+    "food_id": "F061",
+    "food_name": "Ginger Chutney"
+  },
+  {
+    "food_id": "F062",
+    "food_name": "Apple"
+  },
+  {
+    "food_id": "F063",
+    "food_name": "Wheat Dosa"
+  },
+  {
+    "food_id": "F064",
+    "food_name": "Apple-Beet Glow Smoothie"
+  },
+  {
+    "food_id": "F065",
+    "food_name": "Ragi Porridge"
+  },
+  {
+    "food_id": "F066",
+    "food_name": "Boiled Egg"
+  },
+  {
+    "food_id": "F067",
+    "food_name": "Millet Porridge"
+  },
+  {
+    "food_id": "F068",
+    "food_name": "Sautéed Spinach"
+  },
+  {
+    "food_id": "F069",
+    "food_name": "Beetroot-Lemon Juice"
+  },
+  {
+    "food_id": "F070",
+    "food_name": "Oats and Vegetable Khichdi"
+  },
+  {
+    "food_id": "F071",
+    "food_name": "Papaya Juice"
+  },
+  {
+    "food_id": "F072",
+    "food_name": "Soaked Chia Seeds"
+  },
+  {
+    "food_id": "F073",
+    "food_name": "Oats Kanji"
+  },
+  {
+    "food_id": "F074",
+    "food_name": "Cucumber-Coriander Detox Water"
+  },
+  {
+    "food_id": "F075",
+    "food_name": "Kiwi-Lemon Juice"
+  },
+  {
+    "food_id": "F076",
+    "food_name": "Roasted Sunflower Seeds"
+  },
+  {
+    "food_id": "F077",
+    "food_name": "Oats Vegetable Upma"
+  },
+  {
+    "food_id": "F078",
+    "food_name": "Guava"
+  },
+  {
+    "food_id": "F079",
+    "food_name": "Multi Grain Java"
+  },
+  {
+    "food_id": "F080",
+    "food_name": "Flaxseed Vegetable Salad"
+  },
+  {
+    "food_id": "F081",
+    "food_name": "Watermelon Juice"
+  },
+  {
+    "food_id": "F082",
+    "food_name": "Ragi Java"
+  },
+  {
+    "food_id": "F083",
+    "food_name": "Sprouts Salad"
+  },
+  {
+    "food_id": "F084",
+    "food_name": "Red Rice Puttu"
+  },
+  {
+    "food_id": "F085",
+    "food_name": "Steamed Chickpeas Curry"
+  },
+  {
+    "food_id": "F086",
+    "food_name": "Kiwi-Spinach Vitality Smoothie"
+  },
+  {
+    "food_id": "F087",
+    "food_name": "Banana-Oats Puttu Bowl"
+  },
+  {
+    "food_id": "F088",
+    "food_name": "Strawberry-Mint Antioxidant Shot"
+  },
+  {
+    "food_id": "F089",
+    "food_name": "Tapioca (Kappa) Mash"
+  },
+  {
+    "food_id": "F090",
+    "food_name": "Steamed Fish Curry"
+  },
+  {
+    "food_id": "F091",
+    "food_name": "Curry Leaf-Coconut Hair Water"
+  },
+  {
+    "food_id": "F092",
+    "food_name": "Appam"
+  },
+  {
+    "food_id": "F093",
+    "food_name": "Egg Curry"
+  },
+  {
+    "food_id": "F094",
+    "food_name": "Papaya-Turmeric Smoothie"
+  },
+  {
+    "food_id": "F095",
+    "food_name": "Idiyappam"
+  },
+  {
+    "food_id": "F096",
+    "food_name": "Egg Roast"
+  },
+  {
+    "food_id": "F097",
+    "food_name": "Hibiscus-Rose Cooling Water"
+  },
+  {
+    "food_id": "F098",
+    "food_name": "Red Rice Idiyappam"
+  },
+  {
+    "food_id": "F099",
+    "food_name": "Soya Chunk Curry"
+  },
+  {
+    "food_id": "F100",
+    "food_name": "Bottle Gourd-Mint Detox Shot"
+  },
+  {
+    "food_id": "F101",
+    "food_name": "Pesarattu"
+  },
+  {
+    "food_id": "F102",
+    "food_name": "Mint-Coconut Chutney"
+  },
+  {
+    "food_id": "F103",
+    "food_name": "Cucumber-Aloe Vera Cooler"
+  },
+  {
+    "food_id": "F104",
+    "food_name": "Peanut Chutney"
+  },
+  {
+    "food_id": "F105",
+    "food_name": "Carrot-Beet-Ginger Power Shot"
+  },
+  {
+    "food_id": "F106",
+    "food_name": "Adai"
+  },
+  {
+    "food_id": "F107",
+    "food_name": "Avial-Style Mixed Vegetables"
+  },
+  {
+    "food_id": "F108",
+    "food_name": "Bottle Gourd-Mint Cooler"
+  },
+  {
+    "food_id": "F109",
+    "food_name": "Vegetable Uthappam"
+  },
+  {
+    "food_id": "F110",
+    "food_name": "Orange-Carrot-Ginger Smoothie"
+  },
+  {
+    "food_id": "F111",
+    "food_name": "Paneer Vegetable Uttapam"
+  },
+  {
+    "food_id": "F112",
+    "food_name": "Kiwi"
+  },
+  {
+    "food_id": "F113",
+    "food_name": "Millet Pongal"
+  },
+  {
+    "food_id": "F114",
+    "food_name": "Pepper Rasam Shot"
+  },
+  {
+    "food_id": "F115",
+    "food_name": "Pomegranate-Mint Cooler"
+  },
+  {
+    "food_id": "F116",
+    "food_name": "Jonna (Sorghum) Roti"
+  },
+  {
+    "food_id": "F117",
+    "food_name": "Vankaya (Brinjal) Curry"
+  },
+  {
+    "food_id": "F118",
+    "food_name": "Mint-Lemongrass Cooling Water"
+  },
+  {
+    "food_id": "F119",
+    "food_name": "Orange-Carrot Juice"
+  },
+  {
+    "food_id": "F120",
+    "food_name": "Toasted Black Sesame Seeds"
+  },
+  {
+    "food_id": "F121",
+    "food_name": "Pearl Millet Upma"
+  },
+  {
+    "food_id": "F122",
+    "food_name": "Spinach-Orange Vitality Shot"
+  },
+  {
+    "food_id": "F123",
+    "food_name": "Cracked Sorghum Upma"
+  },
+  {
+    "food_id": "F124",
+    "food_name": "Bottle Gourd-Coriander Shot"
+  },
+  {
+    "food_id": "F125",
+    "food_name": "Pearl Millet Koozh with Buttermilk"
+  },
+  {
+    "food_id": "F126",
+    "food_name": "Cucumber-Lemongrass Cooling Shot"
+  },
+  {
+    "food_id": "F127",
+    "food_name": "Egg White & Moong Dal Chilla"
+  },
+  {
+    "food_id": "F128",
+    "food_name": "Spinach-Apple Iron Smoothie"
+  },
+  {
+    "food_id": "F129",
+    "food_name": "Rava Idli"
+  },
+  {
+    "food_id": "F130",
+    "food_name": "Tomato-Carrot Lycopene Shot"
+  },
+  {
+    "food_id": "F131",
+    "food_name": "Orange"
+  },
+  {
+    "food_id": "F132",
+    "food_name": "Chicken Stew"
+  },
+  {
+    "food_id": "F133",
+    "food_name": "Hibiscus Hair Tonic Water"
+  },
+  {
+    "food_id": "F134",
+    "food_name": "Berries"
+  },
+  {
+    "food_id": "F135",
+    "food_name": "Boiled Chickpeas"
+  },
+  {
+    "food_id": "F136",
+    "food_name": "Boiled Eggs"
+  },
+  {
+    "food_id": "F137",
+    "food_name": "Roasted Tofu"
+  },
+  {
+    "food_id": "F138",
+    "food_name": "Carrot-Beans-Cucumber Tossed Salad"
+  },
+  {
+    "food_id": "F139",
+    "food_name": "Chicken Keema Dosa"
+  },
+  {
+    "food_id": "F140",
+    "food_name": "Coconut-Pineapple Anti-Inflammatory Cooler"
+  },
+  {
+    "food_id": "F141",
+    "food_name": "Wholewheat Stuffed Roti"
+  },
+  {
+    "food_id": "F142",
+    "food_name": "Beetroot-Carrot Skin Tonic"
+  },
+  {
+    "food_id": "F143",
+    "food_name": "Grapes"
+  },
+  {
+    "food_id": "F144",
+    "food_name": "Poha"
+  },
+  {
+    "food_id": "F145",
+    "food_name": "Amla-Orange Juice"
+  },
+  {
+    "food_id": "F146",
+    "food_name": "Quinoa Pongal"
+  },
+  {
+    "food_id": "F147",
+    "food_name": "Pumpkin Soup"
+  },
+  {
+    "food_id": "F148",
+    "food_name": "Papaya-Turmeric Juice"
+  },
+  {
+    "food_id": "F149",
+    "food_name": "Coconut Milk Vegetable Stew"
+  },
+  {
+    "food_id": "F150",
+    "food_name": "Beetroot Chapathi"
+  },
+  {
+    "food_id": "F151",
+    "food_name": "Chole Curry"
+  },
+  {
+    "food_id": "F152",
+    "food_name": "Beetroot-Apple Juice"
+  },
+  {
+    "food_id": "F153",
+    "food_name": "Toor Dal Dumplings"
+  },
+  {
+    "food_id": "F154",
+    "food_name": "Guava-Ginger Juice"
+  },
+  {
+    "food_id": "F155",
+    "food_name": "Ragi Almond Ladoo"
+  },
+  {
+    "food_id": "F156",
+    "food_name": "Makhana Crunch Mix"
+  },
+  {
+    "food_id": "F157",
+    "food_name": "Fruit and Nut Bowl"
+  },
+  {
+    "food_id": "F158",
+    "food_name": "Paneer Tikka Cubes with Turmeric"
+  },
+  {
+    "food_id": "F159",
+    "food_name": "Roasted Chana"
+  },
+  {
+    "food_id": "F160",
+    "food_name": "Apple Peanut Chat"
+  },
+  {
+    "food_id": "F161",
+    "food_name": "Dryfruit and Seed Bowl"
+  },
+  {
+    "food_id": "F162",
+    "food_name": "South Indian Sundal"
+  },
+  {
+    "food_id": "F163",
+    "food_name": "Ragi Banana Mini Muffins"
+  },
+  {
+    "food_id": "F164",
+    "food_name": "Masala Chana Bowl"
+  },
+  {
+    "food_id": "F165",
+    "food_name": "Coconut Date Ladoo"
+  },
+  {
+    "food_id": "F166",
+    "food_name": "Amla, Almond and Pumpkin Seeds"
+  },
+  {
+    "food_id": "F167",
+    "food_name": "Sprouted Moong Chat"
+  },
+  {
+    "food_id": "F168",
+    "food_name": "Saffron Almond Milk"
+  },
+  {
+    "food_id": "F169",
+    "food_name": "Dryfruit Chikki"
+  },
+  {
+    "food_id": "F170",
+    "food_name": "Carrot-Cucumber Sticks"
+  },
+  {
+    "food_id": "F171",
+    "food_name": "Hung Curd Dip"
+  },
+  {
+    "food_id": "F172",
+    "food_name": "Black Sesame and Dates Bowl"
+  },
+  {
+    "food_id": "F173",
+    "food_name": "Sweet Corn Chat"
+  },
+  {
+    "food_id": "F174",
+    "food_name": "Guava Chat"
+  },
+  {
+    "food_id": "F175",
+    "food_name": "Beetroot Peanut Chat"
+  },
+  {
+    "food_id": "F176",
+    "food_name": "Apple Cinnamon Almond Box"
+  },
+  {
+    "food_id": "F177",
+    "food_name": "Paneer Pomegranate Cup"
+  },
+  {
+    "food_id": "F178",
+    "food_name": "Walnut Date Roll"
+  },
+  {
+    "food_id": "F179",
+    "food_name": "Greek Yogurt Fruit Jar with Pomegranate"
+  },
+  {
+    "food_id": "F180",
+    "food_name": "Glow Skin Snack Box"
+  },
+  {
+    "food_id": "F181",
+    "food_name": "Kosambari"
+  },
+  {
+    "food_id": "F182",
+    "food_name": "Cucumber Peanut Salad"
+  },
+  {
+    "food_id": "F183",
+    "food_name": "South Indian Beauty Bowl"
+  },
+  {
+    "food_id": "F184",
+    "food_name": "Papaya Lime Cup"
+  },
+  {
+    "food_id": "F185",
+    "food_name": "Chicken Cucumber Roll"
+  },
+  {
+    "food_id": "F186",
+    "food_name": "Boiled Eggs with Pumpkin Seeds"
+  },
+  {
+    "food_id": "F187",
+    "food_name": "Watermelon Mint Hydration Bowl"
+  },
+  {
+    "food_id": "F188",
+    "food_name": "Steamed Rice"
+  },
+  {
+    "food_id": "F189",
+    "food_name": "Horse Gram Curry"
+  },
+  {
+    "food_id": "F190",
+    "food_name": "Vegetable Stir-Fry"
+  },
+  {
+    "food_id": "F191",
+    "food_name": "Cucumber Salad"
+  },
+  {
+    "food_id": "F192",
+    "food_name": "Pesarapappu (Moong Dal Curry)"
+  },
+  {
+    "food_id": "F193",
+    "food_name": "Gongura Chutney"
+  },
+  {
+    "food_id": "F194",
+    "food_name": "Onion Salad"
+  },
+  {
+    "food_id": "F195",
+    "food_name": "Egg and Drumstick Sambar"
+  },
+  {
+    "food_id": "F196",
+    "food_name": "Cucumber-Tomato Salad"
+  },
+  {
+    "food_id": "F197",
+    "food_name": "Millet Lemon Rice"
+  },
+  {
+    "food_id": "F198",
+    "food_name": "Peanut-Curry Leaf Powder"
+  },
+  {
+    "food_id": "F199",
+    "food_name": "Egg Gassi"
+  },
+  {
+    "food_id": "F200",
+    "food_name": "Onion-Tomato Salad"
+  },
+  {
+    "food_id": "F201",
+    "food_name": "Avial"
+  },
+  {
+    "food_id": "F202",
+    "food_name": "Curry Leaf Egg Rice Bowl"
+  },
+  {
+    "food_id": "F203",
+    "food_name": "Broccoli Soup"
+  },
+  {
+    "food_id": "F204",
+    "food_name": "Red Rice"
+  },
+  {
+    "food_id": "F205",
+    "food_name": "Carrot-Spinach Dal"
+  },
+  {
+    "food_id": "F206",
+    "food_name": "Curd"
+  },
+  {
+    "food_id": "F207",
+    "food_name": "Tomato-Pomegranate Salad"
+  },
+  {
+    "food_id": "F208",
+    "food_name": "Paneer Stir-Fry"
+  },
+  {
+    "food_id": "F209",
+    "food_name": "Methi Egg Kuzhambu"
+  },
+  {
+    "food_id": "F210",
+    "food_name": "Ragi Sangati"
+  },
+  {
+    "food_id": "F211",
+    "food_name": "Chicken Pulusu"
+  },
+  {
+    "food_id": "F212",
+    "food_name": "Ulava Charu (Horse Gram Rasam)"
+  },
+  {
+    "food_id": "F213",
+    "food_name": "Foxtail Millet"
+  },
+  {
+    "food_id": "F214",
+    "food_name": "Pepper Chicken Curry"
+  },
+  {
+    "food_id": "F215",
+    "food_name": "Murungai Keerai Kootu"
+  },
+  {
+    "food_id": "F216",
+    "food_name": "Tomato Salad"
+  },
+  {
+    "food_id": "F217",
+    "food_name": "Brown Rice"
+  },
+  {
+    "food_id": "F218",
+    "food_name": "Methi Dal"
+  },
+  {
+    "food_id": "F219",
+    "food_name": "Paneer Tikka"
+  },
+  {
+    "food_id": "F220",
+    "food_name": "Sprouted Moong"
+  },
+  {
+    "food_id": "F221",
+    "food_name": "Coconut-Cucumber Raita"
+  },
+  {
+    "food_id": "F222",
+    "food_name": "Methi Tomato Pulao"
+  },
+  {
+    "food_id": "F223",
+    "food_name": "Carrot-Cucumber Raita"
+  },
+  {
+    "food_id": "F224",
+    "food_name": "Tomato Bath"
+  },
+  {
+    "food_id": "F225",
+    "food_name": "Curd Raita"
+  },
+  {
+    "food_id": "F226",
+    "food_name": "Broccoli Curry"
+  },
+  {
+    "food_id": "F227",
+    "food_name": "Huli Avalakki"
+  },
+  {
+    "food_id": "F228",
+    "food_name": "Mushroom Coconut Curry"
+  },
+  {
+    "food_id": "F229",
+    "food_name": "Fish Curry"
+  },
+  {
+    "food_id": "F230",
+    "food_name": "Bisibele Bath"
+  },
+  {
+    "food_id": "F231",
+    "food_name": "Amla-Coriander Chutney"
+  },
+  {
+    "food_id": "F232",
+    "food_name": "Spiced Buttermilk"
+  },
+  {
+    "food_id": "F233",
+    "food_name": "Drumstick Sambar"
+  },
+  {
+    "food_id": "F234",
+    "food_name": "Beans Poriyal"
+  },
+  {
+    "food_id": "F235",
+    "food_name": "Carrot Kosambari"
+  },
+  {
+    "food_id": "F236",
+    "food_name": "Amla Chutney"
+  },
+  {
+    "food_id": "F237",
+    "food_name": "Cow Pea Curry"
+  },
+  {
+    "food_id": "F238",
+    "food_name": "Pumpkin Stir-Fry"
+  },
+  {
+    "food_id": "F239",
+    "food_name": "Tomato-Onion-Lemon Salad"
+  },
+  {
+    "food_id": "F240",
+    "food_name": "Okra Poriyal"
+  },
+  {
+    "food_id": "F241",
+    "food_name": "Buttermilk"
+  },
+  {
+    "food_id": "F242",
+    "food_name": "Pumpkin Coconut Curry"
+  },
+  {
+    "food_id": "F243",
+    "food_name": "Rasam"
+  },
+  {
+    "food_id": "F244",
+    "food_name": "Carrot Salad"
+  },
+  {
+    "food_id": "F245",
+    "food_name": "Pothichoru (Banana Leaf Rice)"
+  },
+  {
+    "food_id": "F246",
+    "food_name": "Prawn Tomato Curry"
+  },
+  {
+    "food_id": "F247",
+    "food_name": "Ginger Rasam"
+  },
+  {
+    "food_id": "F248",
+    "food_name": "Cucumber"
+  },
+  {
+    "food_id": "F249",
+    "food_name": "Vegetable Soup"
+  },
+  {
+    "food_id": "F250",
+    "food_name": "Curry Leaf Green Rice"
+  },
+  {
+    "food_id": "F251",
+    "food_name": "Cucumber Raita"
+  },
+  {
+    "food_id": "F252",
+    "food_name": "Green Leafy Vegetable Fry"
+  },
+  {
+    "food_id": "F253",
+    "food_name": "Guava or Amla"
+  },
+  {
+    "food_id": "F254",
+    "food_name": "Ridge Gourd Curry"
+  },
+  {
+    "food_id": "F255",
+    "food_name": "Green Peas Masala"
+  },
+  {
+    "food_id": "F256",
+    "food_name": "Fish Fry"
+  },
+  {
+    "food_id": "F257",
+    "food_name": "Ginger Pepper Chicken"
+  },
+  {
+    "food_id": "F258",
+    "food_name": "Mushroom Green Pea Curry"
+  },
+  {
+    "food_id": "F259",
+    "food_name": "Spinach Soup"
+  },
+  {
+    "food_id": "F260",
+    "food_name": "Beetroot Poriyal"
+  },
+  {
+    "food_id": "F261",
+    "food_name": "Ragi Puttu"
+  },
+  {
+    "food_id": "F262",
+    "food_name": "Shredded Coconut"
+  },
+  {
+    "food_id": "F263",
+    "food_name": "Ripe Plantain"
+  },
+  {
+    "food_id": "F264",
+    "food_name": "Pumpkin Seeds"
+  },
+  {
+    "food_id": "F265",
+    "food_name": "Kerala Fish Curry"
+  },
+  {
+    "food_id": "F266",
+    "food_name": "Andhra Fish Pulusu"
+  },
+  {
+    "food_id": "F267",
+    "food_name": "Spinach-Onion Salad"
+  },
+  {
+    "food_id": "F268",
+    "food_name": "Fresh Guava"
+  },
+  {
+    "food_id": "F269",
+    "food_name": "Fresh Amla"
+  },
+  {
+    "food_id": "F270",
+    "food_name": "Mixed Seeds"
+  },
+  {
+    "food_id": "F271",
+    "food_name": "Soaked Almonds"
+  },
+  {
+    "food_id": "F272",
+    "food_name": "Soaked Walnuts"
+  },
+  {
+    "food_id": "F273",
+    "food_name": "Sunflower Seeds"
+  },
+  {
+    "food_id": "F274",
+    "food_name": "Fresh Papaya Slices"
+  },
+  {
+    "food_id": "F275",
+    "food_name": "Pomegranate Arils"
+  },
+  {
+    "food_id": "F276",
+    "food_name": "Fresh Orange"
+  },
+  {
+    "food_id": "F277",
+    "food_name": "Black Sesame Seeds"
+  },
+  {
+    "food_id": "F278",
+    "food_name": "Soaked Dates"
+  },
+  {
+    "food_id": "F279",
+    "food_name": "Fresh Coconut Pieces"
+  },
+  {
+    "food_id": "F280",
+    "food_name": "Fresh Cucumber Sticks"
+  },
+  {
+    "food_id": "F281",
+    "food_name": "Soaked Dried Figs"
+  },
+  {
+    "food_id": "F282",
+    "food_name": "Fresh Beetroot Sticks"
+  },
+  {
+    "food_id": "F283",
+    "food_name": "Soaked Raisins"
+  },
+  {
+    "food_id": "F284",
+    "food_name": "Fresh Carrot Sticks"
+  },
+  {
+    "food_id": "F285",
+    "food_name": "Soaked Cashews"
+  },
+  {
+    "food_id": "F286",
+    "food_name": "Pistachios"
+  },
+  {
+    "food_id": "F287",
+    "food_name": "Brazil Nuts"
+  },
+  {
+    "food_id": "F288",
+    "food_name": "Fresh Kiwi"
+  },
+  {
+    "food_id": "F289",
+    "food_name": "Watermelon Slices"
+  },
+  {
+    "food_id": "F290",
+    "food_name": "Soaked Figs"
+  },
+  {
+    "food_id": "F291",
+    "food_name": "Mixed Seeds Blend"
+  },
+  {
+    "food_id": "F292",
+    "food_name": "Roasted Sweet Potato"
+  },
+  {
+    "food_id": "F293",
+    "food_name": "Boiled Sprouted Moong Dal"
+  },
+  {
+    "food_id": "F294",
+    "food_name": "Beaten Egg"
+  },
+  {
+    "food_id": "F295",
+    "food_name": "Tamarind-Date Chutney"
+  },
+  {
+    "food_id": "F296",
+    "food_name": "Coriander Chutney"
+  },
+  {
+    "food_id": "F297",
+    "food_name": "Roasted Peanuts"
+  },
+  {
+    "food_id": "F298",
+    "food_name": "Lauki Paneer Cutlets"
+  },
+  {
+    "food_id": "F299",
+    "food_name": "Chia Raita"
+  },
+  {
+    "food_id": "F300",
+    "food_name": "Pomegranate-Onion-Cucumber Salad"
+  },
+  {
+    "food_id": "F301",
+    "food_name": "Iron Boost Ladoo"
+  },
+  {
+    "food_id": "F302",
+    "food_name": "Blueberry Antioxidant Smoothie"
+  },
+  {
+    "food_id": "F303",
+    "food_name": "Warm Spiced Milk"
+  },
+  {
+    "food_id": "F304",
+    "food_name": "Kiwi Lemonade"
+  },
+  {
+    "food_id": "F305",
+    "food_name": "Cortisol-Reducing Drink"
+  },
+  {
+    "food_id": "F306",
+    "food_name": "Beetroot Chaat"
+  },
+  {
+    "food_id": "F307",
+    "food_name": "Sliced Apple with Nut Butter"
+  },
+  {
+    "food_id": "F308",
+    "food_name": "Sweet Corn Chaat"
+  },
+  {
+    "food_id": "F309",
+    "food_name": "Grilled Paneer"
+  },
+  {
+    "food_id": "F310",
+    "food_name": "Roasted Sweet Potato with Hung Curd"
+  },
+  {
+    "food_id": "F311",
+    "food_name": "Moong Sprouts Bowl"
+  },
+  {
+    "food_id": "F312",
+    "food_name": "Oats Chana Tikki"
+  },
+  {
+    "food_id": "F313",
+    "food_name": "Moong Dal Khichdi"
+  },
+  {
+    "food_id": "F314",
+    "food_name": "Vegetable Sambar Rice"
+  },
+  {
+    "food_id": "F315",
+    "food_name": "Spinach Moong Dal Soup"
+  },
+  {
+    "food_id": "F316",
+    "food_name": "Whole Wheat Roti"
+  },
+  {
+    "food_id": "F317",
+    "food_name": "Carrot-Cucumber Salad"
+  },
+  {
+    "food_id": "F318",
+    "food_name": "Egg Drop Rasam Soup"
+  },
+  {
+    "food_id": "F319",
+    "food_name": "Tomato-Onion Salad"
+  },
+  {
+    "food_id": "F320",
+    "food_name": "Paneer and Vegetable Soup"
+  },
+  {
+    "food_id": "F321",
+    "food_name": "Fresh Pomegranate Arils"
+  },
+  {
+    "food_id": "F322",
+    "food_name": "Masoor Dal Soup"
+  },
+  {
+    "food_id": "F323",
+    "food_name": "Paneer Curry"
+  },
+  {
+    "food_id": "F324",
+    "food_name": "Broccoli and Moong Dal Soup"
+  },
+  {
+    "food_id": "F325",
+    "food_name": "Tomato Egg Rice"
+  },
+  {
+    "food_id": "F326",
+    "food_name": "Carrot and Coconut Milk Soup"
+  },
+  {
+    "food_id": "F327",
+    "food_name": "Roti"
+  },
+  {
+    "food_id": "F328",
+    "food_name": "Spinach Salad"
+  },
+  {
+    "food_id": "F329",
+    "food_name": "Lemon Rice"
+  },
+  {
+    "food_id": "F330",
+    "food_name": "Chicken Clear Soup"
+  },
+  {
+    "food_id": "F331",
+    "food_name": "Pumpkin and Toor Dal Soup"
+  },
+  {
+    "food_id": "F332",
+    "food_name": "Curd Rice"
+  },
+  {
+    "food_id": "F333",
+    "food_name": "Spinach and Paneer Clear Soup"
+  },
+  {
+    "food_id": "F334",
+    "food_name": "Savory Vegetable Oats Porridge"
+  },
+  {
+    "food_id": "F335",
+    "food_name": "Cucumber-Carrot Salad"
+  },
+  {
+    "food_id": "F336",
+    "food_name": "Drumstick Leaf Dal Soup"
+  },
+  {
+    "food_id": "F337",
+    "food_name": "Egg and Vegetable Fried Rice"
+  },
+  {
+    "food_id": "F338",
+    "food_name": "sweet corn salad"
+  },
+  {
+    "food_id": "F339",
+    "food_name": "Tomato and Lentil Soup"
+  },
+  {
+    "food_id": "F340",
+    "food_name": "Soya Chunk and Vegetable Khichdi"
+  },
+  {
+    "food_id": "F341",
+    "food_name": "Methi Roti"
+  },
+  {
+    "food_id": "F342",
+    "food_name": "Mushroom and Spinach Brown Rice"
+  },
+  {
+    "food_id": "F343",
+    "food_name": "Beetroot Rasam"
+  },
+  {
+    "food_id": "F344",
+    "food_name": "Ginger Pepper Rasam"
+  },
+  {
+    "food_id": "F345",
+    "food_name": "Baked Papad"
+  },
+  {
+    "food_id": "F346",
+    "food_name": "Almond-Pumpkin Seed Mix"
+  },
+  {
+    "food_id": "F347",
+    "food_name": "Garlic Chicken Veggie Soup"
+  },
+  {
+    "food_id": "F348",
+    "food_name": "Collagen-Stimulating Soup"
+  },
+  {
+    "food_id": "F349",
+    "food_name": "Tomato-Cucumber Salad"
+  },
+  {
+    "food_id": "F350",
+    "food_name": "Coconut Stew + Appam"
+  },
+  {
+    "food_id": "F351",
+    "food_name": "Spinach-Carrot Salad"
+  },
+  {
+    "food_id": "F352",
+    "food_name": "Beetroot Raita + 2 Chapathi"
+  },
+  {
+    "food_id": "F353",
+    "food_name": "Quinoa Pongal + Pumpkin Soup"
+  },
+  {
+    "food_id": "F354",
+    "food_name": "Anti-Inflammatory Soup + Paneer"
+  },
+  {
+    "food_id": "F355",
+    "food_name": "Steamed Veggies + Egg"
+  },
+  {
+    "food_id": "F356",
+    "food_name": "Mint Rice + Grilled Chicken"
+  },
+  {
+    "food_id": "F357",
+    "food_name": "Beetroot Chapathi + Chole + Sprouts"
+  },
+  {
+    "food_id": "F358",
+    "food_name": "Hot Honey Cajun Chicken"
+  },
+  {
+    "food_id": "F359",
+    "food_name": "Spinach-Cucumber Salad"
+  },
+  {
+    "food_id": "F360",
+    "food_name": "Spinach Mushroom Quinoa Skillet"
+  },
+  {
+    "food_id": "F361",
+    "food_name": "Cucumber Tambuli"
+  },
+  {
+    "food_id": "F362",
+    "food_name": "Carrot-Beetroot Salad"
+  },
+  {
+    "food_id": "F363",
+    "food_name": "Vegetable Daliya Moong Dal Khichdi"
+  },
+  {
+    "food_id": "F364",
+    "food_name": "Palak Dosa + Sambar + Chutney"
+  },
+  {
+    "food_id": "F365",
+    "food_name": "Lemon Water"
+  },
+  {
+    "food_id": "F366",
+    "food_name": "Clove Water"
+  },
+  {
+    "food_id": "F367",
+    "food_name": "Cinnamon Water"
+  },
+  {
+    "food_id": "F368",
+    "food_name": "Kalonji Water"
+  },
+  {
+    "food_id": "F369",
+    "food_name": "Ajwain Ginger Water"
+  },
+  {
+    "food_id": "F370",
+    "food_name": "Coriander Leaves Water"
+  },
+  {
+    "food_id": "F371",
+    "food_name": "Fennel Seed Water"
+  },
+  {
+    "food_id": "F372",
+    "food_name": "Mint Cooling Water"
+  },
+  {
+    "food_id": "F373",
+    "food_name": "Multi-Spice Water"
+  },
+  {
+    "food_id": "F374",
+    "food_name": "Pineapple Mint Water"
+  },
+  {
+    "food_id": "F375",
+    "food_name": "Lemon Chia Seeds Water"
+  },
+  {
+    "food_id": "F376",
+    "food_name": "Peppermint Gut Calm Tea"
+  },
+  {
+    "food_id": "F377",
+    "food_name": "Lemon Mint Tea"
+  },
+  {
+    "food_id": "F378",
+    "food_name": "Ginger Tea"
+  },
+  {
+    "food_id": "F379",
+    "food_name": "Blueberry Yogurt Smoothie"
+  }
+]

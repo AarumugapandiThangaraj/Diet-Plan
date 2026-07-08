@@ -9,7 +9,7 @@ import os
 import json
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 from config.constants import MEAL_DISTRIBUTION
-from utils.normalizers import normalize_goal, normalize_goal_list, _normalize_diet_type
+from utils.normalizers import normalize_goal, normalize_goal_list, _normalize_diet_type, _normalize_meal_time
 from utils.parsers import split_keywords
 from utils.formatters import format_nutritive_values
 from domain.filters import _is_meal_allowed
@@ -132,23 +132,14 @@ def rank_meals_for_meal_time(
     # Check if this cuisine has any image mappings at all. If not, bypass the filter.
     has_any_mapping = False
     for m in all_meals:
-        for food in (m.get("foods_struct") or []):
-            if str(food.get("image_url") or "").strip():
-                has_any_mapping = True
-                break
-        if has_any_mapping:
+        if str(m.get("image_ID") or "").strip():
+            has_any_mapping = True
             break
 
     def is_fully_imaged(meal: Dict[str, Any]) -> bool:
         if not has_any_mapping:
             return True
-        foods = meal.get("foods_struct") or []
-        if not foods:
-            return False
-        for food in foods:
-            if not str(food.get("image_url") or "").strip():
-                return False
-        return True
+        return bool(str(meal.get("image_ID") or "").strip())
 
     def score(meals: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         out = []
@@ -169,7 +160,7 @@ def rank_meals_for_meal_time(
     strict = [
         m
         for m in all_meals
-        if str(m.get("meal_time")) == str(meal_time)
+        if _normalize_meal_time(m.get("session")) == _normalize_meal_time(meal_time)
         and goal_matches(m)
         and _is_meal_allowed(m, diet_type=diet_type, allergy_keywords=allergy_keywords)
         and is_fully_imaged(m)
@@ -194,7 +185,7 @@ def rank_meals_for_meal_time(
         relaxed_goal = [
             m
             for m in all_meals
-            if str(m.get("meal_time")) == str(meal_time)
+            if _normalize_meal_time(m.get("session")) == _normalize_meal_time(meal_time)
             and _is_meal_allowed(m, diet_type=diet_type, allergy_keywords=allergy_keywords)
             and is_fully_imaged(m)
         ]
@@ -204,7 +195,7 @@ def rank_meals_for_meal_time(
         relaxed_diet = [
             m
             for m in all_meals
-            if str(m.get("meal_time")) == str(meal_time)
+            if _normalize_meal_time(m.get("session")) == _normalize_meal_time(meal_time)
             and _is_meal_allowed(m, diet_type="any", allergy_keywords=allergy_keywords)
             and is_fully_imaged(m)
         ]

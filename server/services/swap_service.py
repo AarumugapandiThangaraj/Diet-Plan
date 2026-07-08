@@ -1,45 +1,32 @@
-"""
-Swap Service
-
-Provides logical operations for swapping/replacing items within a meal plan, 
-supporting meal swaps, food item swaps, and ingredient replacements.
-"""
-
-from utils.clone import fast_clone_meal
 from typing import Any, Dict, List, Optional
-from domain.swap_engine import (
-    _macro_error,
-    _meal_macros,
-    meal_for_plan_payload,
-    _resolve_source_food,
-    _candidate_food_keys_for_source,
-    _replacement_food_from_catalog,
-    _ratio,
-    _resolve_source_ingredient,
-    _candidate_keys_for_source,
-    _replacement_from_catalog,
-    _apply_food_replacement,
-    _apply_ingredient_replacement
-)
-from domain.scaling_formulas import (
-    ensure_macros,
-    format_nutritive_values,
-    scale_meal_to_targets,
-    recompute_meal_from_foods,
-    recompute_meal_from_ingredients
-)
-from config.constants import MEAL_TIME_ORDER
+from database.session import AsyncSessionLocal
+from domain.swap_engine import _ratio, _macro_error
 from repositories.meal_repository import (
-    meal_index_by_id,
-    food_catalog_by_key,
-    food_index_by_id,
-    ingredient_catalog_by_key,
-    build_food_instance
+    get_meal_index_by_id_async,
+    find_complementary_meals,
+    load_master_meals,
+    meal_index_by_id
 )
-from services.nutrition_service import calculate_daily_targets
-from services.ranking_service import session_target_macros, rank_meals_for_meal_time
 
-def get_meal_swap_options(
+def format_nutritive_values(macros: Dict[str, float]) -> str:
+    cal = macros.get('caloriesKcal', 0)
+    pro = macros.get('proteinG', 0)
+    car = macros.get('carbsG', 0)
+    fat = macros.get('fatG', 0)
+    fib = macros.get('fiberG', 0)
+    return f"{cal:.0f} kcal (P: {pro:.1f}g, C: {car:.1f}g, F: {fat:.1f}g, Fib: {fib:.1f}g)"
+
+def meal_for_plan_payload(meal: Dict[str, Any], *, scale_meta: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    payload = dict(meal)
+    payload["nutritive_values"] = format_nutritive_values(meal.get("macros", {}))
+    if scale_meta:
+        payload["scale"] = {
+            "requested": float(scale_meta.get("scaleFactorRequested", 1.0) or 1.0),
+            "applied": float(scale_meta.get("scaleFactorApplied", 1.0) or 1.0),
+        }
+    return payload
+
+async def get_meal_swap_options_async(
     *,
     profile: Dict[str, Any],
     meal_time: str,
@@ -49,232 +36,161 @@ def get_meal_swap_options(
     allowed_meal_ids: Optional[List[str]] = None,
     top_n: int = 5,
 ) -> Dict[str, Any]:
-    targets = calculate_daily_targets(profile)
-    target = ensure_macros(target_macros or session_target_macros(targets, meal_time))
-
+    cuisine = profile.get("cuisineType") or "north_indian"
+    idx = await get_meal_index_by_id_async(cuisine)
+    base_meal = idx.get(str(current_meal_id))
+    from utils.normalizers import _normalize_meal_time
+    session_name = _normalize_meal_time(base_meal.get("session") if base_meal else meal_time)
+    
     excluded = {str(current_meal_id or "").strip()}
     for x in exclude_meal_ids or []:
         if str(x or "").strip():
             excluded.add(str(x).strip())
-
-    cuisine = profile.get("cuisineType") or "north_indian"
-    idx = meal_index_by_id(cuisine)
-    if allowed_meal_ids:
-        allowed = [str(x or "").strip() for x in allowed_meal_ids if str(x or "").strip()]
-        options: List[Dict[str, Any]] = []
-        for mid in allowed:
-            if mid in excluded:
-                continue
-
-            base = idx.get(mid)
-            if not base:
-                continue
-            if str(base.get("meal_time")) != str(meal_time):
-                continue
-
-            scale_info = scale_meal_to_targets(base, target)
-            scaled = scale_info["scaledMeal"]
-            score = _macro_error(_meal_macros(scaled), target)
-
-            options.append(
-                {
-                    "mealId": mid,
-                    "score": float(score),
-                    "scaleFactorRequested": float(scale_info["scaleFactorRequested"]),
-                    "scaleFactorApplied": float(scale_info["scaleFactorApplied"]),
-                    "meal": meal_for_plan_payload(scaled, scale_meta=scale_info),
-                }
-            )
-
-        options.sort(key=lambda x: x["score"])
-        return {
-            "targetMacros": target,
-            "options": options[: max(1, int(top_n))],
-        }
-
-    ranked_meta = rank_meals_for_meal_time(
-        profile=profile,
-        meal_time=meal_time,
-        targets=targets,
-        limit=max(80, int(top_n) * 20),
-        min_options=max(7, int(top_n)),
-    )
-    ranked = ranked_meta.get("ranked") or []
-
-    options: List[Dict[str, Any]] = []
-    for item in ranked:
-        mid = str(item.get("Meal_ID") or "")
-        if not mid or mid in excluded:
+            
+    all_meals = await get_meal_index_by_id_async(cuisine)
+    
+    options = []
+    target = target_macros or {}
+    
+    for mid, m in all_meals.items():
+        if mid in excluded:
             continue
-
-        base = idx.get(mid)
-        if not base:
+        if _normalize_meal_time(m.get("session")) != session_name:
             continue
-
-        scale_info = scale_meal_to_targets(base, target)
-        scaled = scale_info["scaledMeal"]
-        score = _macro_error(_meal_macros(scaled), target)
-
-        options.append(
-            {
-                "mealId": mid,
-                "score": float(score),
-                "scaleFactorRequested": float(scale_info["scaleFactorRequested"]),
-                "scaleFactorApplied": float(scale_info["scaleFactorApplied"]),
-                "meal": meal_for_plan_payload(scaled, scale_meta=scale_info),
-            }
-        )
-
+            
+        score = _macro_error(m.get("macros", {}), target)
+        options.append({
+            "mealId": mid,
+            "score": score,
+            "scaleFactorRequested": 1.0,
+            "scaleFactorApplied": 1.0,
+            "meal": meal_for_plan_payload(m)
+        })
+        
     options.sort(key=lambda x: x["score"])
     return {
         "targetMacros": target,
-        "options": options[: max(1, int(top_n))],
+        "options": options[:max(1, int(top_n))]
     }
 
-from exceptions.domain import SwapEngineException
+def get_meal_swap_options(*args, **kwargs) -> Dict[str, Any]:
+    import asyncio
+    return asyncio.run(get_meal_swap_options_async(*args, **kwargs))
 
-def get_food_swap_options(*, meal: Dict[str, Any], food_name: str, top_n: int = 5, cuisine: str = "north_indian") -> Dict[str, Any]:
-    meal_base = fast_clone_meal(meal)
-    if not (meal_base.get("foods_struct") or []):
-        raise SwapEngineException("This meal cannot be swapped at food level because no structured food data is available.")
-
-    meal_base = recompute_meal_from_foods(meal_base)
-    meal_target_macros = _meal_macros(meal_base)
-
-    source_idx, source_food, source_match = _resolve_source_food(meal_base, food_name)
-
-    source_macros = ensure_macros((source_food or {}).get("macros") or {})
-    source_name = str(source_food.get("name") or "")
-
-    catalog = food_catalog_by_key(cuisine)
-    foods_by_id = food_index_by_id(cuisine)
-    keys = _candidate_food_keys_for_source(source_food, cuisine=cuisine)
-
-    options: List[Dict[str, Any]] = []
-    for key in keys:
-        entry = catalog.get(key)
-        if not entry:
-            continue
+async def get_food_swap_options_async(*, meal: Dict[str, Any], food_name: str, top_n: int = 5, cuisine: str = "") -> Dict[str, Any]:
+    # 1. Identify the food to swap out
+    foods = meal.get("foods_struct") or []
+    source_idx = -1
+    source_food = None
+    best_score = -1.0
+    
+    for i, f in enumerate(foods):
+        fname = f.get("name", "")
+        score = _ratio(fname, food_name)
+        if food_name.lower() in fname.lower() or fname.lower() in food_name.lower():
+            score = max(score, 0.92)
+        if score > best_score:
+            best_score = score
+            source_idx = i
+            source_food = f
             
-        food_id = entry.get("id")
-        original_food_entry = foods_by_id.get(food_id) if food_id else None
-        if not original_food_entry:
-            continue
-            
-        replacement = _replacement_food_from_catalog(original_food_entry, source_food)
-        if not replacement:
-            continue
-
-        replacement_food = build_food_instance(
-            cuisine,
-            str(replacement.get("foodId") or ""),
-            quantity=float(replacement.get("quantity") or 0.0),
-            unit=str(replacement.get("unit") or "g"),
-            replaceable=True,
+    if not source_food or best_score < 0.35:
+        raise ValueError(f"Could not find food '{food_name}' in this meal.")
+        
+    source_food_id = str(source_food.get("id", ""))
+    
+    # 2. Identify the foods we want to KEEP
+    keep_food_ids = {str(f.get("id", "")) for i, f in enumerate(foods) if i != source_idx and f.get("id")}
+    avoid_food_ids = {source_food_id} if source_food_id else set()
+    
+    session_name = meal.get("session", "")
+    
+    options = []
+    async with AsyncSessionLocal() as db_session:
+        # Find complementary meals
+        cand_meals = await find_complementary_meals(
+            session_db=db_session,
+            session_name=session_name,
+            keep_food_ids=keep_food_ids,
+            avoid_food_ids=avoid_food_ids,
+            cuisine=cuisine,
+            limit=50
         )
-        repl_macros = ensure_macros((replacement_food or {}).get("macros") or replacement.get("macros") or {})
-
-        projected = {
-            "caloriesKcal": meal_target_macros["caloriesKcal"] - source_macros["caloriesKcal"] + repl_macros["caloriesKcal"],
-            "proteinG": meal_target_macros["proteinG"] - source_macros["proteinG"] + repl_macros["proteinG"],
-            "carbsG": meal_target_macros["carbsG"] - source_macros["carbsG"] + repl_macros["carbsG"],
-            "fatG": meal_target_macros["fatG"] - source_macros["fatG"] + repl_macros["fatG"],
-            "fiberG": meal_target_macros["fiberG"] - source_macros["fiberG"] + repl_macros["fiberG"],
-        }
-
-        nutrition_error = _macro_error(projected, meal_target_macros)
-        lexical = _ratio(source_name, replacement["name"])
-        score = nutrition_error + (1.0 - lexical) * 0.15
-
-        options.append(
-            {
+        
+        for cand in cand_meals:
+            # We want candidate meal to have exactly 1 extra food that replaces our source_food
+            cand_food_ids = {str(mf.food.id) for mf in cand.meal_foods if mf.food}
+            diff = cand_food_ids - keep_food_ids
+            
+            if len(diff) != 1:
+                continue
+                
+            new_food_id = diff.pop()
+            
+            # Find the actual food dictionary in cand
+            new_food_obj = next((mf.food for mf in cand.meal_foods if mf.food and str(mf.food.id) == new_food_id), None)
+            if not new_food_obj:
+                continue
+                
+            replacement = {
+                "foodId": new_food_id,
+                "name": new_food_obj.food_name,
+                "quantity": 1,
+                "unit": "serving",
+                "macros": {}
+            }
+            
+            cand_macros = {
+                "caloriesKcal": cand.calories_kcal,
+                "proteinG": cand.protein_g,
+                "carbsG": cand.carbohydrates_g,
+                "fatG": cand.fat_g,
+                "fiberG": cand.dietary_fiber_g
+            }
+            
+            options.append({
                 "sourceFoodIndex": source_idx,
-                "sourceFoodName": source_name,
-                "score": float(score),
-                "nutritionError": float(nutrition_error),
-                "fuzzySimilarity": float(lexical),
+                "sourceFoodName": source_food.get("name", ""),
+                "score": 0.1, # All complementary matches are equally good conceptually
+                "nutritionError": 0.0,
+                "fuzzySimilarity": 1.0,
                 "replacement": replacement,
-                "projectedMealMacros": projected,
-                "projectedNutritiveValues": format_nutritive_values(projected),
-            }
-        )
-
-    options.sort(key=lambda x: x["score"])
+                "replacementMealId": str(cand.id),
+                "projectedMealMacros": cand_macros,
+                "projectedNutritiveValues": format_nutritive_values(cand_macros)
+            })
+            
     return {
         "matchedSource": {
-            "name": source_name,
+            "name": source_food.get("name", ""),
             "index": source_idx,
-            "matchScore": float(source_match),
-            "macros": source_macros,
+            "matchScore": best_score,
+            "macros": {}
         },
-        "options": options[: max(1, int(top_n))],
+        "options": options[:max(1, int(top_n))]
     }
 
-def get_ingredient_swap_options(*, meal: Dict[str, Any], ingredient_query: str, top_n: int = 5, cuisine: str = "north_indian") -> Dict[str, Any]:
-    meal_base = fast_clone_meal(meal)
-    if meal_base.get("foods_struct"):
-        meal_base = recompute_meal_from_foods(meal_base)
-    else:
-        meal_base = recompute_meal_from_ingredients(meal_base)
-    meal_target_macros = _meal_macros(meal_base)
+def get_food_swap_options(*args, **kwargs) -> Dict[str, Any]:
+    import asyncio
+    return asyncio.run(get_food_swap_options_async(*args, **kwargs))
 
-    source_entry, source_match = _resolve_source_ingredient(meal_base, ingredient_query)
-    source_ing = source_entry.get("ingredient") or {}
-    source_macros = ensure_macros((source_ing or {}).get("macros") or {})
-    source_name = str(source_ing.get("name") or "")
+def get_ingredient_swap_options(*args, **kwargs) -> Dict[str, Any]:
+    # Unsupported in V2
+    return {"options": []}
 
-    catalog = ingredient_catalog_by_key(cuisine)
-    keys = _candidate_keys_for_source(source_name, cuisine=cuisine)
+def apply_food_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "") -> Dict[str, Any]:
+    # For V2, applying a food swap simply means replacing the whole meal with the candidate meal
+    # The frontend usually expects the new meal structure
+    cand_id = option.get("replacementMealId")
+    if not cand_id:
+        return dict(meal)
+        
+    idx = meal_index_by_id()
+    new_meal = idx.get(cand_id)
+    if not new_meal:
+        return dict(meal)
+        
+    return meal_for_plan_payload(new_meal)
 
-    options: List[Dict[str, Any]] = []
-    for key in keys:
-        entry = catalog.get(key)
-        if not entry:
-            continue
-        replacement = _replacement_from_catalog(entry, source_ing)
-        if not replacement:
-            continue
-
-        projected = {
-            "caloriesKcal": meal_target_macros["caloriesKcal"] - source_macros["caloriesKcal"] + replacement["macros"]["caloriesKcal"],
-            "proteinG": meal_target_macros["proteinG"] - source_macros["proteinG"] + replacement["macros"]["proteinG"],
-            "carbsG": meal_target_macros["carbsG"] - source_macros["carbsG"] + replacement["macros"]["carbsG"],
-            "fatG": meal_target_macros["fatG"] - source_macros["fatG"] + replacement["macros"]["fatG"],
-            "fiberG": meal_target_macros["fiberG"] - source_macros["fiberG"] + replacement["macros"]["fiberG"],
-        }
-
-        nutrition_error = _macro_error(projected, meal_target_macros)
-        lexical = _ratio(source_name, replacement["name"])
-        score = nutrition_error + (1.0 - lexical) * 0.15
-
-        options.append(
-            {
-                "sourceFoodIndex": source_entry.get("food_index"),
-                "sourceIngredientIndex": source_entry.get("ingredient_index"),
-                "sourceIndex": source_entry.get("ingredient_index"),
-                "sourceName": source_name,
-                "score": float(score),
-                "nutritionError": float(nutrition_error),
-                "fuzzySimilarity": float(lexical),
-                "replacement": replacement,
-                "projectedMealMacros": projected,
-                "projectedNutritiveValues": format_nutritive_values(projected),
-            }
-        )
-
-    options.sort(key=lambda x: x["score"])
-    return {
-        "matchedSource": {
-            "name": source_name,
-            "index": source_entry.get("ingredient_index"),
-            "matchScore": float(source_match),
-            "macros": source_macros,
-        },
-        "options": options[: max(1, int(top_n))],
-    }
-
-def apply_food_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "north_indian") -> Dict[str, Any]:
-    return _apply_food_replacement(meal, option, cuisine=cuisine)
-
-def apply_ingredient_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "north_indian") -> Dict[str, Any]:
-    return _apply_ingredient_replacement(meal, option, cuisine=cuisine)
+def apply_ingredient_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "") -> Dict[str, Any]:
+    return dict(meal)

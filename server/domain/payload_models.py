@@ -43,7 +43,6 @@ class FoodPayload(BaseModel):
     type: Optional[str] = None
     preparation: Optional[str] = None
     description: Optional[str] = None
-    image_url: Optional[str] = None
     
     model_config = ConfigDict(extra="allow")
     

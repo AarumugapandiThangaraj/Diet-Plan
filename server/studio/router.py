@@ -66,11 +66,10 @@ from services.catalog_service import get_all_cuisines_service
 from config.constants import MEAL_TIME_ORDER, VALID_CUISINES
 from repositories.meal_repository import load_master_meals, meal_index_by_id
 from services.ranking_service import session_target_macros
-from domain.scaling_formulas import ensure_macros, format_nutritive_values, scale_meal_to_targets
-from domain.substitutes import suggest_for_ingredients_text
-from domain.swap_engine import meal_for_plan_payload
+from services.swap_service import format_nutritive_values, meal_for_plan_payload
 from services.meal_arrangement_service import arrange_plan_sessions
 from utils.dependencies import get_current_user_id
+from domain.scaling_formulas import scale_meal_to_targets, ensure_macros
 
 router = APIRouter(prefix="/api/studio")
 

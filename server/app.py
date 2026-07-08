@@ -163,34 +163,23 @@ async def get_food_image(food_id: str):
     Fetches the local image file path from the database metadata and streams it 
     to the client. Returns 404 if not found or if the file is missing on disk.
     """
-    from database.models import Food
+    from database.models import Meal
     
     image_url = None
     async with AsyncSessionLocal() as session:
         # Check if the food_id represents a direct filename with an image extension
         if any(food_id.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".webp"]):
-            # Query Food table for a path ending in this filename
-            stmt = select(Food.image_url).filter(Food.image_url.like(f"%{food_id}"))
+            stmt = select(Meal.image).filter(Meal.image.like(f"%{food_id}"))
             res = await session.execute(stmt)
             image_url = res.scalar()
 
             # Fallback to the raw food_id if still not found in database
             if not image_url:
                 image_url = food_id
-        elif food_id.startswith("MEAL_"):
-            # Meals do not have images in the V2 schema
-            image_url = None
         else:
-            # Try client_food_id first
-            stmt = select(Food.image_url).filter(Food.client_food_id == food_id)
+            stmt = select(Meal.image).filter(Meal.id == food_id)
             res = await session.execute(stmt)
             image_url = res.scalar()
-
-            # If not found, try integer ID if numeric
-            if not image_url and food_id.isdigit():
-                stmt = select(Food.image_url).filter(Food.id == int(food_id))
-                res = await session.execute(stmt)
-                image_url = res.scalar()
 
         if not image_url:
             return JSONResponse(status_code=404, content={"detail": "Image not found for food_id"})

@@ -47,7 +47,7 @@ async def get_meal_consumption_logs(user_identifier: str, meal_date: date) -> Li
                 # Get the string client_meal_id
                 client_meal_id = "UNKNOWN"
                 if c.plan_meal and c.plan_meal.meal:
-                    client_meal_id = c.plan_meal.meal.client_meal_id
+                    client_meal_id = c.plan_meal.meal.id
                 
                 out.append(MockUserMealLog(
                     user_identifier=user_identifier,
@@ -86,7 +86,7 @@ async def save_meal_consumption_log(
                 .filter(
                     DietPlan.user_id == uid,
                     DietPlan.status == 'active',
-                    Meal.client_meal_id == meal_id
+                    Meal.id == meal_id
                     # Ideally filter by date too, but V1 just passed meal_id. We take the first match.
                 )
             )
