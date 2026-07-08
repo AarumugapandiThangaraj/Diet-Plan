@@ -500,7 +500,7 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
 
     res_payload = {
         "days": days,
-      # "targets": targets,
+        "targets": targets,
         "plans": plans,
         "totalsByDay": totals_by_day,
         "totalsAll": totals_all,
