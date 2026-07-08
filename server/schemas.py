@@ -271,57 +271,34 @@ class MealSwapOptionsRequest(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
-                "profile": {
-                    "age": 28,
-                    "gender": "male",
-                    "heightCm": 175.0,
-                    "weightKg": 75.0,
-                    "activityLevel": "moderate",
-                    "goal": "skin_repair",
-                    "secondaryGoal": "Weight gain",
-                    "dietType": "non_veg",
-                    "allergies": "",
-                    "cuisineType": "south_indian"
-                },
-                "mealTime": "lunch",
-                "currentMealId": "meal_123",
-                "targetMacros": {
-                    "caloriesKcal": 500.0,
-                    "proteinG": 30.0,
-                    "carbsG": 60.0,
-                    "fatG": 15.0
-                },
-                "excludeMealIds": ["meal_123"],
-                "allowedMealIds": [],
-                "topN": 5
+                "planMealId": "02627b12-8428-4b13-9be2-4811d4c95f81",
+                "cuisineType": "south_indian"
             }
         }
     )
-    profile: StudioProfile = Field(
-        ...,
-        description="User profile parameters used for filtering alternative meals by dietary constraint."
+    planMealId: Optional[str] = Field(
+        default=None,
+        description="Optional DietPlanMeal UUID. If provided, the backend will automatically look up the mealTime, currentMealId, targetMacros, and profile from the database."
     )
-    mealTime: str = Field(
-        ...,
-        description="Specific meal time session context. E.g. 'breakfast', 'lunch', 'dinner'.",
-        json_schema_extra={"example": "lunch"}
+    profile: Optional[StudioProfile] = Field(
+        default=None,
+        description="User profile parameters used for filtering alternative meals by dietary constraint. Required if planMealId is not provided."
     )
-    currentMealId: str = Field(
-        ...,
-        description="The ID of the meal being replaced.",
-        json_schema_extra={"example": "meal_123"}
+    cuisineType: Optional[str] = Field(
+        default=None,
+        description="Optional cuisine filter (e.g. 'south_indian'). Takes precedence over profile."
+    )
+    mealTime: Optional[str] = Field(
+        default=None,
+        description="Specific meal time session context. E.g. 'breakfast', 'lunch', 'dinner'. Required if planMealId is not provided."
+    )
+    currentMealId: Optional[str] = Field(
+        default=None,
+        description="The ID of the meal being replaced. Required if planMealId is not provided."
     )
     targetMacros: Optional[Dict[str, Any]] = Field(
         default=None,
-        description="Specific target nutritional values (calories, protein, carbs, fat) to match. If omitted, uses default targets calculated for this meal session.",
-        json_schema_extra={
-            "example": {
-                "caloriesKcal": 500.0,
-                "proteinG": 30.0,
-                "carbsG": 60.0,
-                "fatG": 15.0
-            }
-        }
+        description="Specific target nutritional values (calories, protein, carbs, fat) to match. If omitted, uses default targets calculated for this meal session."
     )
     excludeMealIds: List[str] = Field(
         default_factory=list,
@@ -346,40 +323,39 @@ class MealSwapApplyRequest(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
-                "meal": {
-                    "id": "meal_456",
-                    "name": "Paneer Tikka Salad",
-                    "cuisine_type": "north_indian",
-                    "meal_time": "lunch",
-                    "macros": {
-                        "caloriesKcal": 420.0,
-                        "proteinG": 22.0,
-                        "carbsG": 15.0,
-                        "fatG": 30.0,
-                        "fiberG": 6.0
-                    }
-                }
+                "planMealId": "02627b12-8428-4b13-9be2-4811d4c95f81",
+                "newMealId": "201",
+                "cuisineType": "south_indian",
+                "macros": {
+                    "caloriesKcal": 320.0,
+                    "proteinG": 7.5,
+                    "carbsG": 53.5,
+                    "fatG": 8.7,
+                    "fiberG": 3.6
+                },
+                "scaleFactorApplied": 1.0
             }
         }
     )
-    meal: MealPayload = Field(
+    planMealId: str = Field(
         ...,
-        description="The selected meal payload dictionary to apply and standardise/scale.",
-        json_schema_extra={
-            "example": {
-                "id": "meal_456",
-                "name": "Paneer Tikka Salad",
-                "cuisine_type": "north_indian",
-                "meal_time": "lunch",
-                "macros": {
-                    "caloriesKcal": 420.0,
-                    "proteinG": 22.0,
-                    "carbsG": 15.0,
-                    "fatG": 30.0,
-                    "fiberG": 6.0
-                }
-            }
-        }
+        description="The ID of the meal instance in the database to be updated."
+    )
+    newMealId: str = Field(
+        ...,
+        description="The ID of the new meal chosen from the catalog."
+    )
+    cuisineType: str = Field(
+        ...,
+        description="The cuisine type of the new meal, used to locate it in the catalog."
+    )
+    macros: Dict[str, float] = Field(
+        ...,
+        description="The exact final macros to apply to the database row (allows frontend to apply portion scaling)."
+    )
+    scaleFactorApplied: Optional[float] = Field(
+        default=1.0,
+        description="The scale factor applied to the base recipe."
     )
 
 
@@ -886,17 +862,26 @@ class MealSwapOptionsResponse(BaseModel):
                     "fatG": 15.0,
                     "fiberG": 8.0
                 },
+                "currentMeal": {
+                    "mealInstanceId": "02627b12-8428-4b13-9be2-4811d4c95f81",
+                    "mealId": "meal_123",
+                    "mealTime": "lunch"
+                },
                 "options": [
                     {
-                        "id": "meal_777",
+                        "mealId": "meal_777",
                         "name": "Grilled Chicken Rice Bowl",
-                        "macros": {"caloriesKcal": 490.0, "proteinG": 32.0, "carbsG": 58.0, "fatG": 14.0, "fiberG": 6.0}
+                        "macros": {"caloriesKcal": 490.0, "proteinG": 32.0, "carbsG": 58.0, "fatG": 14.0, "fiberG": 6.0},
+                        "score": 0.0,
+                        "scaleFactorRequested": 1.0,
+                        "scaleFactorApplied": 1.0
                     }
                 ]
             }
         }
     )
     targetMacros: Dict[str, float] = Field(..., description="Nutritional macro targets used as standard to filter alternative options.")
+    currentMeal: Optional[Dict[str, Any]] = Field(default=None, description="Details of the current meal being swapped.")
     options: List[Dict[str, Any]] = Field(..., description="List of matching meal items available for swap.")
 
 

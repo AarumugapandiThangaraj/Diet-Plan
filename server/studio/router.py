@@ -5,11 +5,17 @@ Exposes REST API endpoints for the Plan Studio UI, covering daily target calcula
 meal ranking, plan compilation, and swapping operations (meal/food/ingredient swaps).
 """
 
+from schemas import CreateDraftResponse
 from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Union
 
 from fastapi import APIRouter, HTTPException, Depends
+import uuid
+from sqlalchemy.future import select
+from database.session import AsyncSessionLocal
+from database.models.plan import DietPlanMeal
+from database.models.catalog import MealSession
 
 from schemas import (
     StudioProfile,
@@ -53,7 +59,6 @@ from schemas import (
 from services.planner_service import (
     fetch_daily_targets_service,
     fetch_ranked_meals_service,
-    get_meal_swap_options_service,
     get_food_swap_options_service,
     get_ingredient_swap_options_service,
     apply_food_swap_service,
@@ -69,7 +74,7 @@ from services.catalog_service import get_all_cuisines_service
 from config.constants import MEAL_TIME_ORDER, VALID_CUISINES
 from repositories.meal_repository import load_master_meals, meal_index_by_id
 from services.ranking_service import session_target_macros
-from services.swap_service import format_nutritive_values, meal_for_plan_payload
+from services.swap_service import format_nutritive_values, meal_for_plan_payload, get_meal_swap_options_async
 from services.meal_arrangement_service import arrange_plan_sessions
 from utils.dependencies import get_current_user_id
 from domain.scaling_formulas import scale_meal_to_targets, ensure_macros
@@ -421,7 +426,8 @@ async def studio_build_plan(req: BuildPlanRequest, user_id: str = Depends(get_cu
 
 @router.post(
     "/meal-plans",
-    response_model=DraftPlanResponse,
+    tags=["dev"],
+    response_model=CreateDraftResponse,
     status_code=201,
     summary="Create Draft Meal Plan",
     responses={
@@ -522,22 +528,19 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
         import logging, traceback
         logging.getLogger("app.studio").error(f"Failed to persist draft plan: {e}\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail="Failed to save draft plan.")
-
-    from utils.plan_formatters import format_draft_plan
     
-    formatted_data = {"days": format_draft_plan(res_payload)}
-    formatted_data["targets"] = res_payload.get("targets", {})
-    formatted_data["totalsAll"] = res_payload.get("totalsAll", {})
-    
-    formatted_data["planId"] = saved_plan["plan_id"]
-    formatted_data["version"] = saved_plan["version"]
-    formatted_data["status"] = saved_plan["status"]
+    return {
+        "planId": saved_plan["plan_id"],
+        "version": saved_plan["version"],
+        "status": saved_plan["status"]
+    }
 
     return formatted_data
 
 @router.get(
     "/meal-plans/{plan_id}",
-    response_model=DraftPlanResponse,
+    tags=["dev"],
+    response_model=dict,
     status_code=200,
     summary="Get Draft Meal Plan"
 )
@@ -564,7 +567,8 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
 
 @router.patch(
     "/meal-plans/{plan_id}",
-    response_model=DraftPlanResponse,
+    tags=["dev"],
+    response_model=dict,
     status_code=200,
     summary="Update Draft Meal Plan"
 )
@@ -662,7 +666,7 @@ async def studio_get_active_plan(user_id: str = Depends(get_current_user_id)):
 @router.post(
     "/swap/meal/options",
     response_model=MealSwapOptionsResponse,
-    tags=["Swaps"],
+    tags=["Swaps","dev"],
     summary="Get Alternative Meal Swap Options",
     description=(
         "Retrieves a list of candidate meals from the database that can replace the current meal "
@@ -673,31 +677,10 @@ async def studio_get_active_plan(user_id: str = Depends(get_current_user_id)):
         "curl -X POST http://localhost:8000/api/studio/swap/meal/options \\\n"
         "  -H \"Content-Type: application/json\" \\\n"
         "  -d '{\n"
-        "    \"profile\": {\n"
-        "      \"age\": 28,\n"
-        "      \"gender\": \"male\",\n"
-        "      \"heightCm\": 175.0,\n"
-        "      \"weightKg\": 75.0,\n"
-        "      \"activityLevel\": \"moderate\",\n"
-        "      \"goal\": \"skin_repair\",\n"
-        "      \"secondaryGoal\": \"Weight gain\",\n"
-        "      \"dietType\": \"non_veg\",\n"
-        "      \"allergies\": \"\",\n"
-        "      \"cuisineType\": \"south_indian\"\n"
-        "    },\n"
-        "    \"mealTime\": \"lunch\",\n"
-        "    \"currentMealId\": \"meal_123\",\n"
-        "    \"targetMacros\": {\n"
-        "      \"caloriesKcal\": 500.0,\n"
-        "      \"proteinG\": 30.0,\n"
-        "      \"carbsG\": 60.0,\n"
-        "      \"fatG\": 15.0\n"
-        "    },\n"
-        "    \"excludeMealIds\": [\"meal_123\"],\n"
-        "    \"allowedMealIds\": [],\n"
-        "    \"topN\": 5\n"
+        "    \"planMealId\": \"02627b12-8428-4b13-9be2-4811d4c95f81\"\n"
         "  }'\n"
-        "```"
+        "```\n"
+        "Alternatively, if not using a database plan, you can manually pass `profile`, `mealTime`, `currentMealId`, and `targetMacros`."
     ),
     responses={
         200: {
@@ -714,81 +697,137 @@ async def studio_get_active_plan(user_id: str = Depends(get_current_user_id)):
         }
     }
 )
-def studio_swap_meal_options(req: MealSwapOptionsRequest):
-    profile = _apply_cuisine(req.profile.model_dump())
-    mt = str(req.mealTime or "")
+async def studio_swap_meal_options(req: MealSwapOptionsRequest):
+    mt = req.mealTime
+    current_meal_id = req.currentMealId
+    target_macros = req.targetMacros
+
+    if req.planMealId:
+        try:
+            meal_uuid = uuid.UUID(req.planMealId)
+            async with AsyncSessionLocal() as session:
+                stmt = select(DietPlanMeal).where(DietPlanMeal.id == meal_uuid)
+                meal_obj = (await session.execute(stmt)).scalar_one_or_none()
+                if not meal_obj:
+                    raise HTTPException(status_code=404, detail=f"Plan meal {req.planMealId} not found")
+                
+                stmt_sess = select(MealSession).where(MealSession.id == meal_obj.meal_session_id)
+                sess_obj = (await session.execute(stmt_sess)).scalar_one_or_none()
+                
+                current_meal_id = str(meal_obj.meal_id)
+                mt = sess_obj.code if sess_obj else req.mealTime
+                target_macros = {
+                    "caloriesKcal": float(meal_obj.calories_kcal or 0.0),
+                    "proteinG": float(meal_obj.protein_g or 0.0),
+                    "carbsG": float(meal_obj.carbs_g or 0.0),
+                    "fatG": float(meal_obj.fat_g or 0.0),
+                    "fiberG": float(meal_obj.fiber_g or 0.0)
+                }
+        except ValueError:
+            raise HTTPException(status_code=400, detail="Invalid planMealId format")
+
+    if not mt or not current_meal_id:
+        raise HTTPException(status_code=400, detail="mealTime and currentMealId are required if planMealId is not provided")
+
+    mt = str(mt)
     if mt not in MEAL_TIME_ORDER:
         raise HTTPException(status_code=400, detail="mealTime is invalid.")
 
-    return get_meal_swap_options_service(
+    profile = _apply_cuisine(req.profile.model_dump()) if req.profile else {}
+    if req.cuisineType:
+        profile["cuisineType"] = req.cuisineType
+
+    raw_response = await get_meal_swap_options_async(
         profile=profile,
         meal_time=mt,
-        current_meal_id=req.currentMealId,
-        target_macros=req.targetMacros,
+        current_meal_id=current_meal_id,
+        target_macros=target_macros,
         exclude_meal_ids=req.excludeMealIds,
         allowed_meal_ids=req.allowedMealIds,
-        top_n=req.topN,
-        cuisine=profile.get("cuisineType") or "north_indian"
+        top_n=req.topN
     )
 
-@router.post(
+    simplified_options = []
+    for opt in raw_response.get("options", []):
+        m = opt.get("meal", {})
+        simplified_options.append({
+            "mealId": opt.get("mealId"),
+            "name": m.get("meal_name", ""),
+            "macros": m.get("macros", {}),
+            "score": opt.get("score", 0.0),
+            "scaleFactorRequested": opt.get("scaleFactorRequested", 1.0),
+            "scaleFactorApplied": opt.get("scaleFactorApplied", 1.0)
+        })
+
+    return {
+        "targetMacros": raw_response.get("targetMacros", {}),
+        "currentMeal": {
+            "mealInstanceId": req.planMealId,
+            "mealId": current_meal_id,
+            "mealTime": mt
+        },
+        "options": simplified_options
+    }
+
+@router.patch(
     "/swap/meal/apply",
-    response_model=SwapMealApplyResponse,
-    tags=["Swaps"],
+    response_model=dict,
+    tags=["Swaps","dev"],
     summary="Apply Meal Swap and Normalize Macros",
     description=(
-        "Standardizes the selected replacement meal payload, ensuring macros are aligned, "
-        "calculating formatting strings for display, and applying display scaling attributes.\n\n"
+        "Applies the selected meal swap to the database, overwriting the old meal instance's macros and foods with the newly selected option.\n\n"
         "### Example cURL Command:\n"
         "```bash\n"
-        "curl -X POST http://localhost:8000/api/studio/swap/meal/apply \\\n"
+        "curl -X PATCH http://localhost:8000/api/studio/swap/meal/apply \\\n"
         "  -H \"Content-Type: application/json\" \\\n"
         "  -d '{\n"
-        "    \"meal\": {\n"
-        "      \"id\": \"meal_456\",\n"
-        "      \"name\": \"Paneer Tikka Salad\",\n"
-        "      \"cuisine_type\": \"north_indian\",\n"
-        "      \"meal_time\": \"lunch\",\n"
-        "      \"macros\": {\n"
-        "        \"caloriesKcal\": 420.0,\n"
-        "        \"proteinG\": 22.0,\n"
-        "        \"carbsG\": 15.0,\n"
-        "        \"fatG\": 30.0,\n"
-        "        \"fiberG\": 6.0\n"
-        "      }\n"
-        "    }\n"
+        "    \"planMealId\": \"02627b12-8428-4b13-9be2-4811d4c95f81\",\n"
+        "    \"newMealId\": \"201\",\n"
+        "    \"cuisineType\": \"south_indian\",\n"
+        "    \"macros\": {\n"
+        "      \"caloriesKcal\": 320.0,\n"
+        "      \"proteinG\": 7.5,\n"
+        "      \"carbsG\": 53.5,\n"
+        "      \"fatG\": 8.7,\n"
+        "      \"fiberG\": 3.6\n"
+        "    },\n"
+        "    \"scaleFactorApplied\": 1.0\n"
         "  }'\n"
         "```"
     ),
     responses={
         200: {
-            "description": "Meal swap applied and standardized successfully.",
-            "model": SwapMealApplyResponse
+            "description": "Meal swap applied to database successfully."
         },
         400: {
-            "description": "Empty meal data or validation failure.",
+            "description": "Validation failure.",
             "model": ErrorResponse
         },
         500: {
-            "description": "Internal parsing error.",
+            "description": "Database or parsing error.",
             "model": ErrorResponse
         }
     }
 )
-def studio_swap_meal_apply(req: MealSwapApplyRequest):
-    meal = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
-    if not meal:
-        raise HTTPException(status_code=400, detail="Meal payload is required.")
-
-    macros = ensure_macros(meal.get("macros") or meal.get("_macros") or {})
-    meal["macros"] = macros
-    meal["_macros"] = macros
-    if not str(meal.get("nutritive_values") or "").strip():
-        meal["nutritive_values"] = format_nutritive_values(macros)
-
-    return {"meal": meal_for_plan_payload(meal)}
-
-@router.post(
+async def studio_swap_meal_apply(req: MealSwapApplyRequest):
+    from repositories.draft_plan_repository import apply_meal_swap_to_db
+    from exceptions.repository import RepositoryException
+    
+    try:
+        success = await apply_meal_swap_to_db(
+            plan_meal_id=req.planMealId,
+            new_meal_id=req.newMealId,
+            cuisine_type=req.cuisineType,
+            macros=req.macros,
+            scale_factor=req.scaleFactorApplied
+        )
+        return {"success": success}
+    except RepositoryException as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        import logging
+        logging.error(f"Error applying meal swap: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error applying swap.")@router.post(
     "/swap/food/options",
     response_model=SwapFoodOptionsResponse,
     tags=["Swaps"],

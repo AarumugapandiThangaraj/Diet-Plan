@@ -128,8 +128,8 @@ def health():
     return {"ok": True}
 
 @app.get(
-    "/api/food-image/{food_id}",
-    tags=["Images"],
+    "/api/meal-image/{meal_id}",
+    tags=["Images","dev"],
     summary="Get Food Image File",
     description=(
         "Retrieves the local image file associated with a food/recipe ID. "
@@ -148,7 +148,7 @@ def health():
             "description": "Image database entry not found or physical file missing on disk.",
             "content": {
                 "application/json": {
-                    "example": {"detail": "Image not found for food_id"}
+                    "example": {"detail": "Image not found for meal_id"}
                 }
             }
         },
@@ -158,27 +158,43 @@ def health():
         }
     }
 )
-async def get_food_image(food_id: str):
+async def get_food_image(meal_id: str):
     """
     Fetches the local image file path from the database metadata and streams it 
     to the client. Returns 404 if not found or if the file is missing on disk.
     """
-    image_url = None
+    # from database.models import Meal
     
-    # If the food_id represents a direct filename with an image extension, try to serve it
-    if any(food_id.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".webp"]):
-        image_url = food_id
+    # image_url = None
+    # async with AsyncSessionLocal() as session:
+    #     # Check if the meal_id represents a direct filename with an image extension
+    #     if any(meal_id.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".webp"]):
+    #         stmt = select(Meal.image).filter(Meal.image.like(f"%{meal_id}"))
+    #         res = await session.execute(stmt)
+    #         image_url = res.scalar()
+
+    #         # Fallback to the raw meal_id if still not found in database
+    #         if not image_url:
+    #             image_url = meal_id
+    #     else:
+    #         stmt = select(Meal.image).filter(Meal.id == meal_id)
+    #         res = await session.execute(stmt)
+    #         image_url = res.scalar()
+
+    #     if not image_url:
+    #         return JSONResponse(status_code=404, content={"detail": "Image not found for meal_id"})
         
-    if not image_url:
-            return JSONResponse(status_code=404, content={"detail": "Image not found for food_id"})
-        
-    images_root = settings.image_root
-    file_path = os.path.join(images_root, image_url)
+    # images_root = settings.image_root
+    # file_path = os.path.join(images_root, image_url)
+    import os
+    # Create an absolute path relative to the location of app.py
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    temp_file_path = os.path.join(base_dir, "assets", "images", "continental", "tuscan_grilled_chicken_2.webp")
     
-    if not os.path.exists(file_path):
-        return JSONResponse(status_code=404, content={"detail": "Image file missing"})
+    if not os.path.exists(temp_file_path):
+        return JSONResponse(status_code=404, content={"detail": "Hardcoded test image file missing"})
         
-    return FileResponse(file_path)
+    return FileResponse(temp_file_path, media_type="image/webp")
 
 
 app.include_router(studio_router)

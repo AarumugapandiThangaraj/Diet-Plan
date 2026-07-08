@@ -234,3 +234,54 @@ async def activate_draft_plan(plan_id: str, user_id: str, version: int) -> bool:
         import traceback, logging
         logging.getLogger("app.repo").error(f"Failed to activate draft plan:\n{traceback.format_exc()}")
         raise RepositoryException(f"Failed to activate draft plan: {str(e)}")
+
+async def apply_meal_swap_to_db(plan_meal_id: str, new_meal_id: str, cuisine_type: str, macros: dict, scale_factor: float) -> bool:
+    from database.session import AsyncSessionLocal
+    from database.models import DietPlanMeal, DietPlanMealFood
+    from sqlalchemy import select, delete
+    import uuid
+    from repositories.meal_repository import get_meal_index_by_id_async
+    from exceptions.repository import RepositoryException
+    
+    try:
+        pid = uuid.UUID(plan_meal_id)
+    except ValueError:
+        raise RepositoryException("Invalid planMealId format")
+        
+    idx = await get_meal_index_by_id_async(cuisine_type)
+    new_meal = idx.get(str(new_meal_id))
+    if not new_meal:
+        raise RepositoryException(f"Meal {new_meal_id} not found in {cuisine_type} catalog")
+        
+    async with AsyncSessionLocal() as session:
+        stmt = select(DietPlanMeal).filter_by(id=pid).with_for_update()
+        res = await session.execute(stmt)
+        dp_meal = res.scalar_one_or_none()
+        if not dp_meal:
+            raise RepositoryException("Meal instance not found in database")
+            
+        try:
+            dp_meal.meal_id = int(new_meal_id)
+        except ValueError:
+            dp_meal.meal_id = None
+        dp_meal.calories_kcal = macros.get("caloriesKcal", 0.0)
+        dp_meal.protein_g = macros.get("proteinG", 0.0)
+        dp_meal.carbs_g = macros.get("carbsG", 0.0)
+        dp_meal.fat_g = macros.get("fatG", 0.0)
+        dp_meal.fiber_g = macros.get("fiberG", 0.0)
+        dp_meal.scale_applied = scale_factor
+        
+        stmt_del = delete(DietPlanMealFood).where(DietPlanMealFood.plan_meal_id == pid)
+        await session.execute(stmt_del)
+        
+        foods = new_meal.get("foods_struct", [])
+        for food in foods:
+            food_obj = DietPlanMealFood(
+                plan_meal_id=pid,
+                unit=food.get("unit", "serving"),
+                quantity=float(food.get("quantity", 1.0)) * scale_factor,
+            )
+            session.add(food_obj)
+            
+        await session.commit()
+        return True
