@@ -1339,7 +1339,61 @@ class StoredPlanTargets(BaseModel):
     waterL: float = Field(0.0, description="Target water intake in liters.")
 
 
+class ActiveMealItem(BaseModel):
+    mealId: str
+    name: str
+    imageUrl: str = ""
+    session: str
+    scheduledTime: str
+    macros: MacroTotals
+    foods: List[Dict[str, Any]]
+    completed: bool = False
+    
+class ActiveDayPlan(BaseModel):
+    dayNumber: int
+    planDayId: Optional[str] = None
+    totals: MacroTotals
+    meals: List[ActiveMealItem]
 
+class ActiveWeek(BaseModel):
+    weekNumber: int
+    days: List[ActiveDayPlan]
+
+class ActivePlanResponse(BaseModel):
+    planId: str
+    version: int
+    status: str
+    targets: Dict[str, Any]
+    totalsAll: MacroTotals
+    weeks: List[ActiveWeek]
+
+class DraftMealItem(BaseModel):
+    id: str = Field(alias="Meal_ID")
+    name: str = ""
+    imageUrl: str = ""
+    macros: MacroTotals
+    model_config = ConfigDict(extra='allow', populate_by_name=True)
+
+class DraftDayPlan(BaseModel):
+    dayNumber: int
+    planDayId: Optional[str] = None
+    totals: MacroTotals
+    early_morning: Optional[DraftMealItem] = None
+    breakfast: Optional[DraftMealItem] = None
+    mid_morning: Optional[DraftMealItem] = None
+    lunch: Optional[DraftMealItem] = None
+    evening: Optional[DraftMealItem] = None
+    dinner: Optional[DraftMealItem] = None
+    bedtime: Optional[DraftMealItem] = None
+    model_config = ConfigDict(extra='allow')
+
+class DraftPlanResponse(BaseModel):
+    planId: str
+    version: int
+    status: str
+    targets: Dict[str, Any]
+    totalsAll: MacroTotals
+    days: List[DraftDayPlan]
 
 class RecipeNutritionResponse(BaseModel):
     calories: int
@@ -1385,44 +1439,3 @@ class RecipeDetailResponse(BaseModel):
     preparation: RecipePreparationResponse
     personalization: RecipePersonalizationResponse
     permissions: RecipePermissionsResponse
-class ActiveMealItem(BaseModel):
-    mealId: str
-    name: str
-    imageUrl: str = ""
-    session: str
-    scheduledTime: str
-    macros: MacroTotals
-    foods: List[Dict[str, Any]]
-    completed: bool = False
-    
-class ActiveDayPlan(BaseModel):
-    dayNumber: int
-    planDayId: Optional[str] = None
-    totals: MacroTotals
-    meals: List[ActiveMealItem]
-
-class ActiveWeek(BaseModel):
-    weekNumber: int
-    days: List[ActiveDayPlan]
-
-class ActivePlanResponse(BaseModel):
-    planId: str
-    version: int
-    status: str
-    targets: Dict[str, Any]
-    totalsAll: MacroTotals
-    weeks: List[ActiveWeek]
-
-class DraftDayPlan(BaseModel):
-    dayNumber: int
-    planDayId: Optional[str] = None
-    totals: MacroTotals
-    model_config = ConfigDict(extra='allow')
-
-class DraftPlanResponse(BaseModel):
-    planId: str
-    version: int
-    status: str
-    targets: Dict[str, Any]
-    totalsAll: MacroTotals
-    days: List[DraftDayPlan]

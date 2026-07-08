@@ -65,7 +65,7 @@ export function usePlanner(profile, targets, setTargets) {
             
             // Extract mealTimes from the first day plan keys (or fallback)
             const extractedTimes = plansArray.length > 0 
-                ? Object.keys(plansArray[0]).filter(k => k !== 'day_number' && k !== '_totals')
+                ? Object.keys(plansArray[0]).filter(k => !['day_number', '_totals', 'dayNumber', 'planDayId', 'totals'].includes(k))
                 : (data.mealTimes || [])
             data.mealTimes = extractedTimes
             

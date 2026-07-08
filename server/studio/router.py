@@ -523,12 +523,17 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
         logging.getLogger("app.studio").error(f"Failed to persist draft plan: {e}\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail="Failed to save draft plan.")
 
-    res_payload["planId"] = saved_plan["plan_id"]
-    res_payload["version"] = saved_plan["version"]
-    res_payload["status"] = saved_plan["status"]
+    from utils.plan_formatters import format_draft_plan
+    
+    formatted_data = {"days": format_draft_plan(res_payload)}
+    formatted_data["targets"] = res_payload.get("targets", {})
+    formatted_data["totalsAll"] = res_payload.get("totalsAll", {})
+    
+    formatted_data["planId"] = saved_plan["plan_id"]
+    formatted_data["version"] = saved_plan["version"]
+    formatted_data["status"] = saved_plan["status"]
 
-    return res_payload
-
+    return formatted_data
 
 @router.get(
     "/meal-plans/{plan_id}",
