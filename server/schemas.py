@@ -1380,6 +1380,12 @@ class DraftPlanResponse(BaseModel):
     totalsAll: MacroTotals
     days: List[DraftDayPlan]
 
+class CreateDraftResponse(BaseModel):
+    planId: str = Field(..., description="The unique ID of the draft plan")
+    version: int = Field(..., description="The version number of the draft plan")
+    status: str = Field(..., description="The status of the plan (should be 'draft')")
+
+    
 class RecipeNutritionResponse(BaseModel):
     calories: int
     protein: float

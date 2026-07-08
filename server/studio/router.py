@@ -6,7 +6,6 @@ meal ranking, plan compilation, and swapping operations (meal/food/ingredient sw
 """
 
 from schemas import CreateDraftResponse
-from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Union
 
