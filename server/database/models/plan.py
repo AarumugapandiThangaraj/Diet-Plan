@@ -71,7 +71,6 @@ class DietPlanDay(Base, TimestampMixin):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     plan_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plans.id", ondelete="CASCADE"), nullable=False)
     day_number: Mapped[int] = mapped_column(SmallInteger, nullable=False)
-    plan_date: Mapped[Optional[Date]] = mapped_column(Date, nullable=True)
     
     calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
     protein_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
@@ -102,7 +101,6 @@ class DietPlanMeal(Base, TimestampMixin):
     fiber_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
     
     scale_applied: Mapped[Optional[float]] = mapped_column(Numeric(6, 4), nullable=True)
-    sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
     
     day: Mapped["DietPlanDay"] = relationship("DietPlanDay", back_populates="meals_rel")
     meal_foods_rel: Mapped[list["DietPlanMealFood"]] = relationship("DietPlanMealFood", back_populates="meal", cascade="all, delete-orphan")
@@ -122,16 +120,6 @@ class DietPlanMealFood(Base, TimestampMixin):
     
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     unit: Mapped[str] = mapped_column(String(50), nullable=False)
-    
-    calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
-    protein_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
-    carbs_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
-    fat_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
-    fiber_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
-    
-    supports: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)
-    supports_normalized: Mapped[list] = mapped_column(ARRAY(String), nullable=False, server_default="{}")
-    sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
     
     meal: Mapped["DietPlanMeal"] = relationship("DietPlanMeal", back_populates="meal_foods_rel")
     food: Mapped["Food"] = relationship("Food")

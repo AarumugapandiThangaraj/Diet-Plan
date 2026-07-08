@@ -67,7 +67,9 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
                     foods_struct.append({
                         "id": mf.food.id,
                         "name": mf.food.food_name,
-                        "serving_size": mf.serving_size
+                        "serving_size": mf.serving_size,
+                        "quantity": 1.0,
+                        "unit": "serving"
                     })
 
             ingredients_struct = []

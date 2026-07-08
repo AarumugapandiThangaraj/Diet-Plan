@@ -20,9 +20,17 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
         
         # Reconstruct legacy plan_payload
         plans_arr = []
+        totals_by_day_arr = []
         # sort days
         days_sorted = sorted(plan_obj.days_rel, key=lambda d: d.day_number)
         for day in days_sorted:
+            totals_by_day_arr.append({
+                "caloriesKcal": float(day.calories_kcal) if day.calories_kcal else 0.0,
+                "proteinG": float(day.protein_g) if day.protein_g else 0.0,
+                "carbsG": float(day.carbs_g) if day.carbs_g else 0.0,
+                "fatG": float(day.fat_g) if day.fat_g else 0.0,
+                "fiberG": float(day.fiber_g) if day.fiber_g else 0.0
+            })
             day_dict = {}
             for pmeal in day.meals_rel:
                 session_code = sessions_map.get(pmeal.meal_session_id)
@@ -47,15 +55,7 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                         "id": pfood.food.id if pfood.food else None,
                         "name": pfood.food.food_name if pfood.food else None,
                         "quantity": float(pfood.quantity),
-                        "unit": pfood.unit,
-                        "macros": {
-                            "caloriesKcal": float(pfood.calories_kcal) if pfood.calories_kcal else 0.0,
-                            "proteinG": float(pfood.protein_g) if pfood.protein_g else 0.0,
-                            "carbsG": float(pfood.carbs_g) if pfood.carbs_g else 0.0,
-                            "fatG": float(pfood.fat_g) if pfood.fat_g else 0.0,
-                            "fiberG": float(pfood.fiber_g) if pfood.fiber_g else 0.0
-                        },
-                        "ingredients_struct": []
+                        "unit": pfood.unit
                     }
                     
                     meal_dict["foods_struct"].append(food_dict)
@@ -74,6 +74,7 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 "waterL": float(plan_obj.target_water_l) if plan_obj.target_water_l else 0.0
             },
             "plans": plans_arr,
+            "totalsByDay": totals_by_day_arr,
             "totalsAll": {
                 "caloriesKcal": float(plan_obj.totals_calories_kcal) if plan_obj.totals_calories_kcal else 0.0,
                 "proteinG": float(plan_obj.totals_protein_g) if plan_obj.totals_protein_g else 0.0,
@@ -82,6 +83,11 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 "fiberG": float(plan_obj.totals_fiber_g) if plan_obj.totals_fiber_g else 0.0
             }
         }
+        
+        # If it's a single day plan, surface the top-level keys expected
+        if plan_obj.days == 1:
+            plan_payload["plan"] = plans_arr[0] if plans_arr else {}
+            plan_payload["totals"] = totals_by_day_arr[0] if totals_by_day_arr else {}
         
         return {
             "user_identifier": str(plan_obj.user_id),
@@ -282,7 +288,12 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
             for day_idx, day_data in enumerate(plans_arr):
                 day_obj = DietPlanDay(
                     plan_id=plan_obj.id,
-                    day_number=day_idx + 1
+                    day_number=day_idx + 1,
+                    calories_kcal=0.0,
+                    protein_g=0.0,
+                    carbs_g=0.0,
+                    fat_g=0.0,
+                    fiber_g=0.0
                 )
                 session.add(day_obj)
                 await session.flush()
@@ -290,6 +301,12 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                 for session_code, meal_data in day_data.items():
                     if session_code not in sessions_map: continue
                     meal_macros = meal_data.get("macros") or meal_data.get("_macros") or {}
+                    
+                    day_obj.calories_kcal += meal_macros.get("caloriesKcal", 0.0)
+                    day_obj.protein_g += meal_macros.get("proteinG", 0.0)
+                    day_obj.carbs_g += meal_macros.get("carbsG", 0.0)
+                    day_obj.fat_g += meal_macros.get("fatG", 0.0)
+                    day_obj.fiber_g += meal_macros.get("fiberG", 0.0)
                     
                     client_meal_id = meal_data.get("Meal_ID")
                     
@@ -310,19 +327,13 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     await session.flush()
                     
                     for food_data in meal_data.get("foods_struct", []):
-                        f_macros = food_data.get("macros", {})
                         client_food_id = str(food_data.get("id")) if food_data.get("id") is not None else None
                         
                         food_obj = DietPlanMealFood(
                             plan_meal_id=meal_obj.id,
                             food_id=str(client_food_id) if client_food_id else None,
                             quantity=food_data.get("quantity", 0),
-                            unit=food_data.get("unit", "g"),
-                            calories_kcal=f_macros.get("caloriesKcal"),
-                            protein_g=f_macros.get("proteinG"),
-                            carbs_g=f_macros.get("carbsG"),
-                            fat_g=f_macros.get("fatG"),
-                            fiber_g=f_macros.get("fiberG")
+                            unit=food_data.get("unit", "g")
                         )
                         session.add(food_obj)
                         await session.flush()
@@ -356,7 +367,7 @@ async def load_latest_user_plan(user_identifier: str) -> Optional[dict]:
                 select(DietPlan)
                 .filter_by(user_id=uid)
                 .filter(DietPlan.status.in_(['active', 'draft']))
-                .order_by(DietPlan.created_at.desc())
+                .order_by(DietPlan.status.asc(), DietPlan.created_at.desc())
                 .limit(1)
                 .options(
                     selectinload(DietPlan.days_rel)

@@ -977,8 +977,8 @@ def studio_substitutes(req: SubstitutesRequest):
     description="Returns daily targets, health metrics, water goals, and today's scheduled meals with calories remaining.",
 )
 async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
-    
-    plan = await get_active_user_plan_service(user_id)
+    from services.planner_service import get_latest_user_plan_service
+    plan = await get_latest_user_plan_service(user_id)
     
     if not plan:
         return {
@@ -1008,6 +1008,7 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
                 "remainingCalories": 0,
             },
             "todayMeals": [],
+            "weeks": [],
             "goal": "",
             "activityLevel": "",
             "cuisineType": "",
@@ -1015,6 +1016,8 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
             "totalDays": 0,
         }
     
+    plan_status = plan.get("status", "active")
+    plan_id = plan.get("plan_id")
     plan_payload = plan["plan_payload"]
     targets = plan_payload.get("targets", {})
     
@@ -1135,13 +1138,90 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
         "remainingCalories": remaining_calories
     }
     
+    # Construct weeks array
+    plans_list = plan_payload.get("plans") if "plans" in plan_payload else [plan_payload.get("plan", {})]
+    day_ids = plan_payload.get("dayIds", [])
+    weeks_data = []
+    
+    for i in range(0, len(plans_list), 7):
+        week_days = plans_list[i:i+7]
+        week_num = (i // 7) + 1
+        days_data = []
+        for j, day_plan in enumerate(week_days):
+            day_num = i + j + 1
+            p_day_id = day_ids[i+j] if i+j < len(day_ids) else None
+            day_meals = []
+            day_totals = {"caloriesKcal": 0.0, "proteinG": 0.0, "carbsG": 0.0, "fatG": 0.0, "fiberG": 0.0}
+            
+            for session, meal in day_plan.items():
+                if not isinstance(meal, dict):
+                    continue
+                macros = meal.get("macros") or {}
+                for mk in day_totals.keys():
+                    day_totals[mk] += float(macros.get(mk) or 0.0)
+                    
+                meal_id = str(meal.get("Meal_ID") or "")
+                
+                foods = meal.get("foods_struct") or []
+                foods_list = []
+                for f in foods:
+                    foods_list.append({
+                        "id": str(f.get("id") or f.get("ID") or f.get("food_id") or ""),
+                        "name": str(f.get("name") or f.get("food_name") or ""),
+                        "servingSize": str(f.get("serving_size") or ""),
+                        "quantity": float(f.get("quantity") or 1.0),
+                        "unit": str(f.get("unit") or "serving")
+                    })
+                
+                # Fallback for time
+                scheduled_time = meal.get("scheduled_time") or meal.get("time") or ""
+                if not scheduled_time:
+                    time_map = {
+                        "early_morning": "06:00 AM",
+                        "breakfast": "08:30 AM",
+                        "mid_morning": "11:00 AM",
+                        "lunch": "01:00 PM",
+                        "evening": "04:30 PM",
+                        "dinner": "08:00 PM",
+                        "bedtime": "10:00 PM"
+                    }
+                    scheduled_time = time_map.get(session, "12:00 PM")
+                    
+                day_meals.append({
+                    "mealId": meal_id,
+                    "name": str(meal.get("meal_name") or ""),
+                    "imageUrl": str(meal.get("image_ID") or ""),
+                    "session": session,
+                    "scheduledTime": scheduled_time,
+                    "macros": {k: float(v) for k, v in macros.items()},
+                    "consumed": meal_id in consumed_meal_ids,
+                    "foods": foods_list,
+                    "ingredients": meal.get("ingredients")
+                })
+            
+            days_data.append({
+                "dayNumber": day_num,
+                "planDayId": p_day_id,
+                "totals": day_totals,
+                "meals": day_meals
+            })
+            
+        weeks_data.append({
+            "weekNumber": week_num,
+            "days": days_data
+        })
+    
     return {
-        "activePlan": True,
+        "activePlan": True if plan_status == 'active' else False,
+        "status": plan_status,
+        "planId": plan_id,
+        "version": plan.get("version", 1),
         "dailyTargets": daily_targets_data,
         "healthMetrics": health_metrics_data,
         "hydration": hydration_data,
         "energySummary": energy_summary,
         "todayMeals": today_meals,
+        "weeks": weeks_data,
         "goal": "",
         "activityLevel": "",
         "cuisineType": "",

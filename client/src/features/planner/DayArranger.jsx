@@ -123,8 +123,9 @@ export default function DayArranger({ onNavigateToDashboard }) {
             type="button" 
             className="primaryBtn" 
             onClick={async () => {
-              await updateDraftPlanArrangement();
-              activateAndProceed(onNavigateToDashboard);
+              const freshResult = await updateDraftPlanArrangement();
+              if (!freshResult) return;
+              activateAndProceed(onNavigateToDashboard, freshResult.planId, freshResult.version);
             }} 
             disabled={generateLoading}
           >

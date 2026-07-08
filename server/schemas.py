@@ -754,8 +754,6 @@ class DailyTargetsResponse(BaseModel):
     fiberG: int = Field(..., description="Target daily dietary fiber intake in grams.", json_schema_extra={"example": 29})
     fiberGMin: int = Field(default=25, description="Minimum dietary fiber intake in grams.", json_schema_extra={"example": 25})
     fiberGMax: int = Field(default=35, description="Maximum dietary fiber intake in grams.", json_schema_extra={"example": 35})
-    fiberGRaw: int = Field(default=0, description="Raw calculated fiber target.", json_schema_extra={"example": 29})
-    fiberGMinimum: int = Field(default=25, description="Minimum recommended fiber intake (default 25g).", json_schema_extra={"example": 25})
     waterL: float = Field(..., description="Target daily water intake in liters.", json_schema_extra={"example": 2.4})
     waterLMin: float = Field(..., description="Minimum recommended water intake in liters.", json_schema_extra={"example": 2.25})
     waterLMax: float = Field(..., description="Maximum recommended water intake in liters.", json_schema_extra={"example": 2.62})
@@ -795,6 +793,54 @@ class RankResponse(BaseModel):
     )
 
 
+class MacroNutrients(BaseModel):
+    """Nutritional macro breakdown for a meal or food item."""
+    caloriesKcal: float = Field(0.0, description="Energy in kilocalories.")
+    proteinG: float = Field(0.0, description="Protein in grams.")
+    carbsG: float = Field(0.0, description="Carbohydrates in grams.")
+    fatG: float = Field(0.0, description="Fat in grams.")
+    fiberG: float = Field(0.0, description="Dietary fiber in grams.")
+
+
+class ScaleInfo(BaseModel):
+    """Scaling metadata applied to a meal to match session-level macro targets."""
+    requested: float = Field(1.0, description="Scale factor requested by the algorithm.")
+    applied: float = Field(1.0, description="Scale factor actually applied after clamping.")
+
+
+class PlanFoodItem(BaseModel):
+    """A single food item within a meal, with its scaled quantity and macros."""
+    model_config = ConfigDict(extra='allow')
+
+    id: Optional[str] = Field(None, description="Unique food identifier from the catalog.")
+    name: Optional[str] = Field(None, description="Display name of the food item.")
+    quantity: float = Field(0.0, description="Scaled serving quantity.")
+    unit: str = Field("g", description="Unit of measurement (g, ml, piece, etc.).")
+
+
+class PlanMealItem(BaseModel):
+    """A single meal assigned to a meal session within a day plan."""
+    model_config = ConfigDict(extra='allow')
+
+    id: Optional[str] = Field(None, description="Meal instance UUID (set after DB persistence).")
+    Meal_ID: Optional[str] = Field(None, description="Catalog meal identifier from the cuisine index.")
+    name: Optional[str] = Field(None, description="Recipe display name.")
+    session: Optional[str] = Field(None, description="Meal session code (e.g. breakfast, lunch).")
+    cuisine_type: Optional[str] = Field(None, description="Cuisine catalog the meal belongs to.")
+    macros: MacroNutrients = Field(default_factory=MacroNutrients, description="Aggregate nutritional breakdown for the entire meal.")
+    foods_struct: List[PlanFoodItem] = Field(default_factory=list, description="List of individual food items composing this meal.")
+    scale: Optional[ScaleInfo] = Field(None, description="Scaling metadata applied to this meal.")
+
+
+class MacroTotals(BaseModel):
+    """Aggregate macro nutrient totals (per-day or across all days)."""
+    caloriesKcal: float = Field(0.0, description="Total energy in kilocalories.")
+    proteinG: float = Field(0.0, description="Total protein in grams.")
+    carbsG: float = Field(0.0, description="Total carbohydrates in grams.")
+    fatG: float = Field(0.0, description="Total fat in grams.")
+    fiberG: float = Field(0.0, description="Total dietary fiber in grams.")
+
+
 class BuildPlanResponse(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
@@ -810,9 +856,10 @@ class BuildPlanResponse(BaseModel):
                 "mealTimes": ["breakfast", "lunch", "dinner"],
                 "plan": {
                     "breakfast": {
-                        "id": "meal_101",
+                        "Meal_ID": "meal_101",
                         "name": "Scaled Oatmeal",
-                        "macros": {"caloriesKcal": 350.0, "proteinG": 12.0, "carbsG": 60.0, "fatG": 5.0, "fiberG": 8.0}
+                        "macros": {"caloriesKcal": 350.0, "proteinG": 12.0, "carbsG": 60.0, "fatG": 5.0, "fiberG": 8.0},
+                        "foods_struct": []
                     }
                 },
                 "totals": {
@@ -828,11 +875,11 @@ class BuildPlanResponse(BaseModel):
     days: int = Field(..., description="Number of days in the generated plan.", json_schema_extra={"example": 1})
     targets: DailyTargetsResponse = Field(..., description="The calculated daily target profile.")
     mealTimes: List[str] = Field(..., description="List of meal times included in the plan.", json_schema_extra={"example": ["breakfast", "lunch", "dinner"]})
-    plan: Optional[Dict[str, Any]] = Field(default=None, description="The compiled plan payload for a single day plan.")
-    totals: Optional[Dict[str, float]] = Field(default=None, description="Total nutrients for a single day plan.")
-    plans: Optional[List[Dict[str, Any]]] = Field(default=None, description="List of plan objects for each day in a multi-day plan.")
-    totalsByDay: Optional[List[Dict[str, float]]] = Field(default=None, description="Total nutrients consumed for each day in a multi-day plan.")
-    totalsAll: Optional[Dict[str, float]] = Field(default=None, description="Aggregate nutrient totals across all days in a multi-day plan.")
+    plan: Optional[Dict[str, PlanMealItem]] = Field(default=None, description="The compiled plan payload for a single day plan. Keys are meal session codes.")
+    totals: Optional[MacroTotals] = Field(default=None, description="Total nutrients for a single day plan.")
+    plans: Optional[List[Dict[str, PlanMealItem]]] = Field(default=None, description="List of day plan objects for a multi-day plan. Each item is keyed by meal session code.")
+    totalsByDay: Optional[List[MacroTotals]] = Field(default=None, description="Nutrient totals for each day in a multi-day plan.")
+    totalsAll: Optional[MacroTotals] = Field(default=None, description="Aggregate nutrient totals across all days in a multi-day plan.")
 
 
 class MealSwapOptionsResponse(BaseModel):
@@ -1001,14 +1048,46 @@ class DashboardMeal(BaseModel):
     macros: Dict[str, float]
     consumed: bool = False
 
+class DashboardFood(BaseModel):
+    id: str
+    name: str
+    servingSize: Optional[str] = None
+    quantity: Optional[float] = None
+    unit: Optional[str] = None
+
+class DashboardMealDetailed(BaseModel):
+    mealId: str
+    name: str
+    imageUrl: str
+    session: str
+    scheduledTime: str
+    macros: Dict[str, float]
+    consumed: bool = False
+    foods: List[DashboardFood] = []
+    ingredients: Optional[str] = None
+
+class DashboardDay(BaseModel):
+    dayNumber: int
+    planDayId: Optional[str] = None
+    totals: Dict[str, float]
+    meals: List[DashboardMealDetailed]
+
+class DashboardWeek(BaseModel):
+    weekNumber: int
+    days: List[DashboardDay]
+
 
 class DashboardResponse(BaseModel):
     activePlan: bool
+    status: str = "active"
+    planId: Optional[str] = None
+    version: int = 1
     dailyTargets: DashboardDailyTargets
     healthMetrics: DashboardHealthMetrics
     hydration: DashboardHydration
     energySummary: Optional[DashboardEnergySummary] = None
     todayMeals: List[DashboardMeal]
+    weeks: List[DashboardWeek] = []
     goal: str
     activityLevel: str
     cuisineType: str
@@ -1246,12 +1325,8 @@ class CuisineListResponse(BaseModel):
 class CreateDraftRequest(BuildPlanRequest):
     """
     Inherits from BuildPlanRequest to reuse profile, days, mealTimes, poolsByTime.
-    It intentionally ignores assignmentByTime because the backend now owns the arrangement.
     """
-    assignmentByTime: Optional[Dict[str, List[str]]] = Field(
-        default=None,
-        description="Ignored by the backend. Backend will arrange the meals."
-    )
+    pass
 
 
 class PatchOperation(BaseModel):
@@ -1276,10 +1351,20 @@ class ActivatePlanResponse(BaseModel):
     status: str
 
 
+class StoredPlanTargets(BaseModel):
+    """Simplified daily targets stored in the database (subset of DailyTargetsResponse)."""
+    dailyCalories: float = Field(0.0, description="Target daily calorie intake in kcal.")
+    proteinG: float = Field(0.0, description="Target protein in grams.")
+    carbsG: float = Field(0.0, description="Target carbohydrates in grams.")
+    fatG: float = Field(0.0, description="Target fat in grams.")
+    fiberG: float = Field(0.0, description="Target fiber in grams.")
+    waterL: float = Field(0.0, description="Target water intake in liters.")
+
+
 class DraftPlanResponse(BuildPlanResponse):
-    targets: Dict[str, Any] = Field(..., description="The basic calculated daily target profile.")
+    targets: Dict[str, Any] = Field(..., description="The calculated daily target profile (full DailyTargetsResponse on creation, StoredPlanTargets on re-fetch).")
     mealTimes: Optional[List[str]] = Field(default=None, description="List of meal times included in the plan.")
     rankedByTime: Optional[Dict[str, List[Dict[str, Any]]]] = Field(default=None, description="Not used for draft fetch.")
-    planId: str = Field(..., description="The unique ID of the draft plan")
-    version: int = Field(..., description="The version number of the draft plan")
-    status: str = Field(..., description="The status of the plan (should be 'draft')")
+    planId: str = Field(..., description="The unique ID of the draft plan.")
+    version: int = Field(..., description="The version number of the draft plan.")
+    status: str = Field(..., description="The status of the plan (draft, active, archived).")

@@ -1,0 +1,98 @@
+.planTabsLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.weekTabs {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.weekTab {
+  background: transparent;
+  color: #777777;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.weekTab:hover {
+  color: #000000;
+}
+
+.weekTab.active {
+  color: #000000;
+}
+
+.weekTab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.dayTabs {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.dayTabs::-webkit-scrollbar {
+  height: 4px;
+}
+.dayTabs::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.dayTab {
+  background: rgba(0, 0, 0, 0.05);
+  color: #777777;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.dayTab:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+.dayTab.active {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  border-color: #000000;
+}
+
+.dayContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tabsLayoutEmpty {
+  padding: 3rem;
+  text-align: center;
+  color: #777777;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}

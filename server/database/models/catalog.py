@@ -75,8 +75,6 @@ class Meal(Base, TimestampMixin):
     session: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     recipe_name: Mapped[str] = mapped_column(String(255), nullable=False)
     time: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
-    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
-    
     allergens: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True)
     preparation_steps: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True)
     image: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True)

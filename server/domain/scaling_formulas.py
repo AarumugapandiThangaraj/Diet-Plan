@@ -118,9 +118,15 @@ def recompute_meal_from_foods(meal: Dict[str, Any]) -> Dict[str, Any]:
 
         totals = sum_food_macros(foods)
         out["ingredients_struct"] = ingredients
-        out["_macros"] = totals
-        out["macros"] = totals
-        out["nutritive_values"] = format_nutritive_values(totals)
+        
+        base_macros = out.get("_macros") or out.get("macros") or {}
+        if totals.get("caloriesKcal", 0) <= 0 and base_macros.get("caloriesKcal", 0) > 0:
+            pass # preserve existing macros
+        else:
+            out["_macros"] = totals
+            out["macros"] = totals
+            
+        out["nutritive_values"] = format_nutritive_values(out.get("macros", {}))
         out["ingredients"] = ingredients_to_text(ingredients)
         return out
 
@@ -191,6 +197,8 @@ def scale_meal_payload_to_targets(
                 ing.macros = ing.macros.scale(qty_factor)
                 
         scaled.recalculate_macros()
+        if scaled.macros.caloriesKcal <= 0 and base.macros.caloriesKcal > 0:
+            scaled.macros = base.macros.scale(scale_factor_applied)
     else:
         scaled.macros = scaled.macros.scale(scale_factor_applied)
 

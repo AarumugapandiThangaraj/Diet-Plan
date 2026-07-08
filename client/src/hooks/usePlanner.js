@@ -540,7 +540,7 @@ export function usePlanner(profile, targets, setTargets) {
   }
 
   const updateDraftPlanArrangement = async () => {
-    if (!result?.planId || !assignmentByTime) return;
+    if (!result?.planId || !assignmentByTime) return result;
     setGenerateLoading(true);
     setError('');
     setSuccessMsg('');
@@ -567,7 +567,7 @@ export function usePlanner(profile, targets, setTargets) {
 
     if (patchOperations.length === 0) {
       setGenerateLoading(false);
-      return;
+      return result;
     }
 
     try {
@@ -579,9 +579,11 @@ export function usePlanner(profile, targets, setTargets) {
       // Auto clear after 3 seconds
       setTimeout(() => setSuccessMsg(''), 3000);
       setGenerateLoading(false);
+      return updatedDraft;
     } catch (e) {
       setGenerateLoading(false);
       setError(String(e?.message || e || 'Failed to update plan arrangement.'));
+      return null;
     }
   }
 
@@ -636,11 +638,13 @@ export function usePlanner(profile, targets, setTargets) {
       })
   }
 
-  const activateAndProceed = (onNavigate) => {
-    if (!result?.planId) return
-    setGenerateLoading(true)
+  const activateAndProceed = (onNavigate, explicitPlanId = null, explicitVersion = null) => {
+    const pid = explicitPlanId || result?.planId;
+    const v = explicitVersion ?? result?.version;
+    if (!pid) return;
+    setGenerateLoading(true);
     
-    activateDraftPlan(result.planId, result.version)
+    activateDraftPlan(pid, v)
       .then((res) => {
         setGenerateLoading(false)
         if (res.success) {

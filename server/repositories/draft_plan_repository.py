@@ -29,6 +29,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                 raise RepositoryException("Version mismatch. Plan was modified by another request.")
             
             # Apply operations
+            affected_day_ids = set()
             for op in operations:
                 if op.type == 'move':
                     pass
@@ -119,6 +120,8 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                         )
                         session.add(food_obj)
                         await session.flush()
+                        
+                    affected_day_ids.add(dp_day.id)
 
             # Update version
             plan.version += 1
@@ -132,6 +135,28 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     details=op.model_dump()
                 )
                 session.add(event)
+                
+            await session.flush()
+            from sqlalchemy.sql import func
+            for d_id in affected_day_ids:
+                stmt_agg = select(
+                    func.sum(DietPlanMeal.calories_kcal).label('cals'),
+                    func.sum(DietPlanMeal.protein_g).label('pro'),
+                    func.sum(DietPlanMeal.carbs_g).label('carbs'),
+                    func.sum(DietPlanMeal.fat_g).label('fat'),
+                    func.sum(DietPlanMeal.fiber_g).label('fib')
+                ).where(DietPlanMeal.plan_day_id == d_id)
+                res_agg = await session.execute(stmt_agg)
+                agg = res_agg.fetchone()
+                
+                upd_stmt = update(DietPlanDay).where(DietPlanDay.id == d_id).values(
+                    calories_kcal=agg.cals or 0.0,
+                    protein_g=agg.pro or 0.0,
+                    carbs_g=agg.carbs or 0.0,
+                    fat_g=agg.fat or 0.0,
+                    fiber_g=agg.fib or 0.0
+                )
+                await session.execute(upd_stmt)
 
             await session.commit()
             
@@ -168,13 +193,20 @@ async def activate_draft_plan(plan_id: str, user_id: str, version: int) -> bool:
             except ValueError:
                 raise RepositoryException("Invalid ID format")
 
-            # Fetch draft plan
-            stmt = select(DietPlan).filter_by(id=pid, user_id=uid, status='draft').with_for_update()
+            # Fetch plan by id and user (without status filter for resilience)
+            stmt = select(DietPlan).filter_by(id=pid, user_id=uid).with_for_update()
             res = await session.execute(stmt)
             plan = res.scalar_one_or_none()
-
+            
             if not plan:
                 raise RepositoryException("Draft plan not found")
+            
+            # If already active, treat as idempotent success
+            if plan.status == 'active':
+                return True
+            
+            if plan.status != 'draft':
+                raise RepositoryException(f"Plan cannot be activated from status '{plan.status}'")
 
             if plan.version != version:
                 raise RepositoryException("Version mismatch. Plan was modified by another request.")
@@ -184,6 +216,8 @@ async def activate_draft_plan(plan_id: str, user_id: str, version: int) -> bool:
             res_active = await session.execute(stmt_active)
             for active_plan in res_active.scalars().all():
                 active_plan.status = 'archived'
+            
+            await session.flush()
 
             # Set new plan to active
             plan.status = 'active'
