@@ -38,6 +38,7 @@ router = APIRouter(prefix="/api/admin", tags=["Admin Data Entry"])
 
 @router.get(
     "/cuisines",
+    tags=[""]
     response_model=CuisineListResponse,
     summary="List All Cuisines",
     description="Retrieve all cuisines with optional pagination."

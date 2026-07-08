@@ -111,12 +111,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                             plan_meal_id=dp_meal.id,
                             food_id=db_food_id,
                             quantity=sf.get("quantity", 0),
-                            unit=sf.get("unit", "g"),
-                            calories_kcal=sf.get("macros", {}).get("caloriesKcal", 0.0),
-                            protein_g=sf.get("macros", {}).get("proteinG", 0.0),
-                            carbs_g=sf.get("macros", {}).get("carbsG", 0.0),
-                            fat_g=sf.get("macros", {}).get("fatG", 0.0),
-                            fiber_g=sf.get("macros", {}).get("fiberG", 0.0)
+                            unit=sf.get("unit", "g")
                         )
                         session.add(food_obj)
                         await session.flush()

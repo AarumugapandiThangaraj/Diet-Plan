@@ -38,7 +38,7 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 
                 meal_dict = {
                     "id": str(pmeal.id),
-                    "Meal_ID": pmeal.meal.id if pmeal.meal else None,
+                    "Meal_ID": str(pmeal.meal.id) if pmeal.meal else None,
                     "name": pmeal.meal.recipe_name if pmeal.meal else None,
                     "macros": {
                         "caloriesKcal": float(pmeal.calories_kcal) if pmeal.calories_kcal else 0.0,
@@ -52,7 +52,7 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 
                 for pfood in pmeal.meal_foods_rel:
                     food_dict = {
-                        "id": pfood.food.id if pfood.food else None,
+                        "id": str(pfood.food.id) if pfood.food else None,
                         "name": pfood.food.food_name if pfood.food else None,
                         "quantity": float(pfood.quantity),
                         "unit": pfood.unit

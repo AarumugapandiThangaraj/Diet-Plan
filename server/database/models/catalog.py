@@ -80,7 +80,7 @@ class Meal(Base, TimestampMixin):
     
     allergens: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True, deferred=True)
     preparation_steps: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True, deferred=True)
-    # image: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True, deferred=True)
+    image: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True, deferred=True)
 
     # Persisted nutrition macros
     calories_kcal: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
