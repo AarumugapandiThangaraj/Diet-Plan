@@ -31,7 +31,7 @@ class IngredientPayload(BaseModel):
     model_config = ConfigDict(extra="allow")
 
 class FoodPayload(BaseModel):
-    id: Optional[str] = None
+    id: Optional[Any] = None
     name: Optional[str] = None
     quantity: float = 0.0
     unit: Optional[str] = None
@@ -59,7 +59,7 @@ class FoodPayload(BaseModel):
         )
 
 class MealPayload(BaseModel):
-    id: Optional[str] = Field(default=None, alias="Meal_ID")
+    id: Optional[Any] = Field(default=None, alias="Meal_ID")
     meal_name: Optional[str] = None
     meal_time: Optional[str] = None
     cuisine_type: Optional[str] = None

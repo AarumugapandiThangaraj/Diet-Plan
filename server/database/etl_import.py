@@ -317,12 +317,18 @@ class ETLPipeline:
             secondary_goal_map = {}
             
             print("Seeding Foods...")
+            food_map = {}
+            food_counter = 1
+            
             for f in self.foods_list:
                 c_code = f.get("_cuisine", "north_indian")
                 c_id = cuisine_db_map[c_code].id
                 real_f_id = f"{c_code}-{f.get('food_id')}"
+                if real_f_id not in food_map:
+                    food_map[real_f_id] = food_counter
+                    food_counter += 1
                 food_obj = Food(
-                    id=real_f_id,
+                    id=food_map[real_f_id],
                     cuisine_id=c_id,
                     food_name=f.get("food_name", "")
                 )
@@ -331,11 +337,16 @@ class ETLPipeline:
             await session.flush()
 
             print("Seeding Meals...")
+            meal_map = {}
+            meal_counter = 1
+            
             for m in self.meals_list:
                 m_id = m.get("meal_id")
                 c_code = m.get("_cuisine", "north_indian")
                 real_m_id = f"{c_code}-{m_id}"
                 m_session = str(m.get("session") or "Unknown").strip()
+                normalized_session = _normalize_meal_time(m_session)
+                session_id = session_db_map.get(normalized_session)
                 
                 nut = m.get("nutrition", {})
                 
@@ -343,16 +354,20 @@ class ETLPipeline:
                 c_id = cuisine_db_map[c_code].id
                 real_m_id = f"{c_code}-{m_id}"
                 
+                if real_m_id not in meal_map:
+                    meal_map[real_m_id] = meal_counter
+                    meal_counter += 1
+                
                 meal_obj = Meal(
-                    id=real_m_id,
+                    id=meal_map[real_m_id],
                     cuisine_id=c_id,
+                    meal_session_id=session_id,
                     session=m_session,
                     recipe_name=m.get("recipe_name", ""),
                     time=m.get("time"),
                     description=m.get("description"),
                     allergens=m.get("allergens") or [],
                     preparation_steps=m.get("preparation_steps") or [],
-                    image=m.get("image"),
                     calories_kcal=float(nut.get("calories_kcal", 0.0)),
                     carbohydrates_g=float(nut.get("carbohydrates_g", 0.0)),
                     protein_g=float(nut.get("protein_g", 0.0)),
@@ -370,7 +385,7 @@ class ETLPipeline:
                         await session.flush()
                         primary_goal_map[code] = pg_obj.id
                     
-                    session.add(MealPrimaryGoal(meal_id=real_m_id, primary_goal_id=primary_goal_map[code]))
+                    session.add(MealPrimaryGoal(meal_id=meal_map[real_m_id], primary_goal_id=primary_goal_map[code]))
                     
                 for s_goal in m.get("secondary_goal") or []:
                     s_goal_str = str(s_goal).strip()
@@ -381,17 +396,27 @@ class ETLPipeline:
                         await session.flush()
                         secondary_goal_map[code] = sg_obj.id
                     
-                    session.add(MealSecondaryGoal(meal_id=real_m_id, secondary_goal_id=secondary_goal_map[code]))
+                    session.add(MealSecondaryGoal(meal_id=meal_map[real_m_id], secondary_goal_id=secondary_goal_map[code]))
             
             await session.flush()
 
             print("Seeding MealFoods...")
             for mf in self.meal_foods_list:
                 c_code = mf.get("_cuisine", "north_indian")
+                real_m_id = f"{c_code}-{mf.get('meal_id')}"
+                real_f_id = f"{c_code}-{mf.get('food_id')}"
+                
+                if real_m_id not in meal_map or real_f_id not in food_map:
+                    continue
+                    
+                val = str(mf.get("serving_size", ""))
+                match = re.search(r"([\d\.]+)", val)
+                parsed_size = float(match.group(1)) if match else 0.0
+                
                 mf_obj = MealFood(
-                    meal_id=f"{c_code}-{mf.get('meal_id')}",
-                    food_id=f"{c_code}-{mf.get('food_id')}",
-                    serving_size=str(mf.get("serving_size", ""))
+                    meal_id=meal_map[real_m_id],
+                    food_id=food_map[real_f_id],
+                    serving_size=parsed_size
                 )
                 session.add(mf_obj)
                 
@@ -404,8 +429,11 @@ class ETLPipeline:
                 if key in seen_mi:
                     continue
                 seen_mi.add(key)
+                if real_m_id not in meal_map:
+                    continue
+                    
                 mi_obj = MealIngredient(
-                    meal_id=real_m_id,
+                    meal_id=meal_map[real_m_id],
                     ingredient_name=mi.get("ingredient_name", ""),
                     quantity=float(mi.get("quantity", 0.0)),
                     unit=mi.get("unit")

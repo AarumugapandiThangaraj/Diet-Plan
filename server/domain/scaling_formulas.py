@@ -250,6 +250,8 @@ def scale_meal_to_targets(
         target_kcal = target["caloriesKcal"]
 
         scale_factor_requested = target_kcal / base_kcal if base_kcal > 0 and target_kcal > 0 else 1.0
+        min_scale = 0.6
+        max_scale = 2.5
         scale_factor_applied = clamp(scale_factor_requested, min_scale, max_scale)
 
         scaled = fast_clone_meal(base)

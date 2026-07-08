@@ -7,7 +7,7 @@ from sqlalchemy.orm import selectinload
 
 from database.session import AsyncSessionLocal
 from database.models.catalog import (
-    Meal, MealFood, Food, MealIngredient, PrimaryGoal, SecondaryGoal,
+    Meal, MealFood, Food, PrimaryGoal, SecondaryGoal,
     MealPrimaryGoal, MealSecondaryGoal, Cuisine
 )
 
@@ -47,7 +47,7 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
             select(Meal)
             .options(
                 selectinload(Meal.meal_foods).selectinload(MealFood.food),
-                selectinload(Meal.meal_ingredients),
+                selectinload(Meal.meal_session),
                 selectinload(Meal.primary_goals).selectinload(MealPrimaryGoal.primary_goal),
                 selectinload(Meal.secondary_goals).selectinload(MealSecondaryGoal.secondary_goal),
                 selectinload(Meal.cuisine)
@@ -73,12 +73,6 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
                     })
 
             ingredients_struct = []
-            for mi in m.meal_ingredients:
-                ingredients_struct.append({
-                    "name": mi.ingredient_name,
-                    "quantity": mi.quantity,
-                    "unit": mi.unit
-                })
 
             meal_goals = []
             for pg in m.primary_goals:
@@ -97,15 +91,15 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
             }
 
             out.append({
-                "Meal_ID": m.id,
+                "Meal_ID": str(m.id),
                 "meal_name": m.recipe_name,
-                "session": m.session,
+                "session": m.meal_session.name_en if m.meal_session else "",
                 "goal": meal_goals,
-                "time": m.time or "",
+                "time": "",
                 "description": m.description or "",
-                "allergens": m.allergens or [],
-                "preparation_steps": m.preparation_steps or [],
-                "image_ID": m.image or "",
+                "allergens": [],
+                "preparation_steps": [],
+                "image_ID": "",
                 "foods_struct": foods_struct,
                 "ingredients_struct": ingredients_struct,
                 "macros": totals,
@@ -148,17 +142,17 @@ async def find_complementary_meals(
     cuisine: str = None,
     limit: int = 10
 ) -> List[Meal]:
-    from database.models.catalog import Cuisine
+    from database.models.catalog import Cuisine, MealSession
     stmt = (
         select(Meal)
-        .where(Meal.session == session_name)
+        .join(MealSession, Meal.meal_session_id == MealSession.id)
+        .where(MealSession.name_en == session_name)
     )
     if cuisine:
         stmt = stmt.join(Cuisine, Meal.cuisine_id == Cuisine.id).where(Cuisine.code == cuisine)
     
     stmt = stmt.options(
-        selectinload(Meal.meal_foods).selectinload(MealFood.food),
-        selectinload(Meal.meal_ingredients)
+        selectinload(Meal.meal_foods).selectinload(MealFood.food)
     )
     res = await session_db.execute(stmt)
     all_session_meals = res.scalars().all()

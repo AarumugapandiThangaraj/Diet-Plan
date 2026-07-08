@@ -1,5 +1,5 @@
 from typing import Optional
-from sqlalchemy import String, Boolean, DateTime, Float, Integer, ForeignKey, CheckConstraint, Date, Numeric, SmallInteger, UniqueConstraint, Text, text, Index
+from sqlalchemy import String, Boolean, DateTime, Float, Integer, BigInteger, ForeignKey, CheckConstraint, Date, Numeric, SmallInteger, UniqueConstraint, Text, text, Index
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY, UUID
 import uuid
@@ -92,7 +92,7 @@ class DietPlanMeal(Base, TimestampMixin):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plan_days.id", ondelete="CASCADE"), nullable=False)
     meal_session_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meal_sessions.id", ondelete="RESTRICT"), nullable=False)
-    meal_id: Mapped[Optional[str]] = mapped_column(String(50), ForeignKey("Twellr_Nutri.meals.id", ondelete="SET NULL"), nullable=True)
+    meal_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meals.id", ondelete="SET NULL"), nullable=True)
     
     calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
     protein_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
@@ -116,7 +116,7 @@ class DietPlanMealFood(Base, TimestampMixin):
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     plan_meal_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("Twellr_Nutri.diet_plan_meals.id", ondelete="CASCADE"), nullable=False)
-    food_id: Mapped[Optional[str]] = mapped_column(String(50), ForeignKey("Twellr_Nutri.foods.id", ondelete="SET NULL"), nullable=True)
+    food_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.foods.id", ondelete="SET NULL"), nullable=True)
     
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     unit: Mapped[str] = mapped_column(String(50), nullable=False)

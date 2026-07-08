@@ -60,9 +60,9 @@ class Food(Base, TimestampMixin):
     __tablename__ = "foods"
     __table_args__ = {"schema": "Twellr_Nutri"}
 
-    id: Mapped[str] = mapped_column(String(50), primary_key=True)
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.cuisines.id"), nullable=True)
-    food_name: Mapped[str] = mapped_column(String(255), nullable=False)
+    food_name: Mapped[str] = mapped_column("name_en", String(255), nullable=False)
 
     meal_foods = relationship("MealFood", back_populates="food")
 
@@ -70,27 +70,31 @@ class Meal(Base, TimestampMixin):
     __tablename__ = "meals"
     __table_args__ = {"schema": "Twellr_Nutri"}
 
-    id: Mapped[str] = mapped_column(String(50), primary_key=True)
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.cuisines.id"), nullable=True)
-    session: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
-    recipe_name: Mapped[str] = mapped_column(String(255), nullable=False)
-    time: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
-    allergens: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True)
-    preparation_steps: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True)
-    image: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True)
+    meal_session_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meal_sessions.id"), nullable=True)
+    session: Mapped[Optional[str]] = mapped_column(String(100), nullable=True, deferred=True)
+    recipe_name: Mapped[str] = mapped_column("name_en", String(255), nullable=False)
+    time: Mapped[Optional[str]] = mapped_column(String(100), nullable=True, deferred=True)
+    description: Mapped[Optional[str]] = mapped_column("description_en", Text, nullable=True)
+    
+    allergens: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True, deferred=True)
+    preparation_steps: Mapped[Optional[list]] = mapped_column(JSONB, nullable=True, deferred=True)
+    # image: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True, deferred=True)
 
     # Persisted nutrition macros
     calories_kcal: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
-    carbohydrates_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    carbohydrates_g: Mapped[float] = mapped_column("carbs_g", Float, nullable=False, server_default="0.0")
     protein_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
     fat_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
-    dietary_fiber_g: Mapped[float] = mapped_column(Float, nullable=False, server_default="0.0")
+    dietary_fiber_g: Mapped[float] = mapped_column("fiber_g", Float, nullable=False, server_default="0.0")
 
     cuisine = relationship("Cuisine")
+    meal_session = relationship("MealSession")
     meal_foods = relationship("MealFood", back_populates="meal")
-    meal_ingredients = relationship("MealIngredient", back_populates="meal")
     primary_goals = relationship("MealPrimaryGoal", back_populates="meal")
     secondary_goals = relationship("MealSecondaryGoal", back_populates="meal")
+    meal_ingredients = relationship("MealIngredient", back_populates="meal")
 
     @property
     def primary_goal_ids(self):
@@ -104,9 +108,9 @@ class MealFood(Base, TimestampMixin):
     __tablename__ = "meal_foods"
     __table_args__ = {"schema": "Twellr_Nutri"}
 
-    meal_id: Mapped[str] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
-    food_id: Mapped[str] = mapped_column(ForeignKey("Twellr_Nutri.foods.id", ondelete="RESTRICT"), primary_key=True)
-    serving_size: Mapped[str] = mapped_column(String(100), nullable=False)
+    meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    food_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.foods.id", ondelete="RESTRICT"), primary_key=True)
+    serving_size: Mapped[float] = mapped_column("quantity", Float, nullable=False)
 
     meal = relationship("Meal", back_populates="meal_foods")
     food = relationship("Food", back_populates="meal_foods")
@@ -118,7 +122,7 @@ class MealIngredient(Base, TimestampMixin):
         {"schema": "Twellr_Nutri"}
     )
 
-    meal_id: Mapped[str] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
     ingredient_name: Mapped[str] = mapped_column(String(255), primary_key=True)
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     unit: Mapped[str] = mapped_column(String(50), nullable=True)
@@ -129,7 +133,7 @@ class MealPrimaryGoal(Base, TimestampMixin):
     __tablename__ = "meal_primary_goals"
     __table_args__ = {"schema": "Twellr_Nutri"}
 
-    meal_id: Mapped[str] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
     primary_goal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.primary_goals.id", ondelete="CASCADE"), primary_key=True)
 
     meal = relationship("Meal", back_populates="primary_goals")
@@ -139,7 +143,7 @@ class MealSecondaryGoal(Base, TimestampMixin):
     __tablename__ = "meal_secondary_goals"
     __table_args__ = {"schema": "Twellr_Nutri"}
 
-    meal_id: Mapped[str] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
     secondary_goal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.secondary_goals.id", ondelete="CASCADE"), primary_key=True)
 
     meal = relationship("Meal", back_populates="secondary_goals")

@@ -162,7 +162,7 @@ class RankRequest(BaseModel):
         json_schema_extra={"example": ["breakfast", "lunch", "dinner"]}
     )
     limit: int = Field(
-        default=180,
+        default=10,
         description="Maximum number of candidate meals to return per meal session/time after scoring.",
         json_schema_extra={"example": 10}
     )
@@ -191,11 +191,7 @@ class BuildPlanRequest(BaseModel):
                     "lunch": ["meal_3", "meal_4"],
                     "dinner": ["meal_5", "meal_6"]
                 },
-                "assignmentByTime": {
-                    "breakfast": ["meal_1", "meal_2", "meal_1"],
-                    "lunch": ["meal_3", "meal_4", "meal_3"],
-                    "dinner": ["meal_5", "meal_6", "meal_5"]
-                }
+                
             }
         }
     )
@@ -582,7 +578,7 @@ class ChatRequest(BaseModel):
             ]
         }
     )
-    agentName: str = Field(
+    agentName: str = Field( 
         default="NutriBot",
         description="The AI agent personality variant to address. Defaults to 'NutriBot'.",
         json_schema_extra={"example": "NutriBot"}
@@ -701,84 +697,81 @@ class DailyTargetsResponse(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
-                "age": 28,
-                "heightCm": 175.0,
-                "weightKg": 75.0,
-                "targetBmi": 22,
                 "targetWeightKg": 67.3,
                 "weightDeltaKg": -7.7,
                 "bmi": 24.5,
                 "bmiCategory": "Overweight",
                 "bmr": 1680,
                 "tdee": 2604,
-                "maintenanceCalories": 2604,
-                "dailyCalories": 2104,
-                "proteinG": 131,
-                "carbsG": 236,
-                "fatG": 70,
-                "fatGMin": 46,
-                "fatGMax": 81,
-                "carbsGMin": 210,
-                "carbsGMax": 263,
-                "fiberG": 29,
-                "fiberGRaw": 29,
-                "fiberGMinimum": 25,
                 "waterL": 2.4,
-                "waterLMin": 2.25,
-                "waterLMax": 2.62,
-                "activityLevelNormalized": "moderate"
+               "activityLevel": "moderate"
             }
         }
     )
-    age: int = Field(..., description="Age in years.", json_schema_extra={"example": 28})
-    heightCm: float = Field(..., description="Height in centimeters.", json_schema_extra={"example": 175.0})
-    weightKg: float = Field(..., description="Weight in kilograms.", json_schema_extra={"example": 75.0})
-    targetBmi: int = Field(..., description="Target body mass index used to determine target weight (default 22).", json_schema_extra={"example": 22})
-    targetWeightKg: float = Field(..., description="Calculated healthy target body weight in kilograms.", json_schema_extra={"example": 67.3})
+    # age: int = Field(..., description="Age in years.", json_schema_extra={"example": 28})
+    # heightCm: float = Field(..., description="Height in centimeters.", json_schema_extra={"example": 175.0})
+    # weightKg: float = Field(..., description="Weight in kilograms.", json_schema_extra={"example": 75.0})
+    # targetBmi: int = Field(..., description="Target body mass index used to determine target weight (default 22).", json_schema_extra={"example": 22})
+    idealWeight: float = Field(..., description="Calculated healthy target body weight in kilograms.", json_schema_extra={"example": 67.3})
     weightDeltaKg: float = Field(..., description="Difference between target weight and current weight in kilograms.", json_schema_extra={"example": -7.7})
     bmi: float = Field(..., description="Calculated current body mass index (BMI).", json_schema_extra={"example": 24.5})
     bmiCategory: str = Field(..., description="Current BMI health classification (e.g. Underweight, Normal, Overweight).", json_schema_extra={"example": "Overweight"})
     bmr: int = Field(..., description="Basal Metabolic Rate in kcal, calculated using Mifflin-St Jeor equation.", json_schema_extra={"example": 1680})
     tdee: int = Field(..., description="Total Daily Energy Expenditure in kcal (BMR multiplied by activity level factor).", json_schema_extra={"example": 2604})
-    maintenanceCalories: int = Field(..., description="Maintenance calorie needs in kcal.", json_schema_extra={"example": 2604})
-    dailyCalories: int = Field(..., description="Recommended daily calorie target in kcal for the selected goal.", json_schema_extra={"example": 2104})
-    proteinG: int = Field(..., description="Target protein intake in grams.", json_schema_extra={"example": 131})
-    proteinGMin: int = Field(default=0, description="Minimum healthy protein threshold in grams.", json_schema_extra={"example": 110})
-    proteinGMax: int = Field(default=0, description="Maximum healthy protein threshold in grams.", json_schema_extra={"example": 150})
-    carbsG: int = Field(..., description="Target carbohydrates intake in grams.", json_schema_extra={"example": 236})
-    fatG: int = Field(..., description="Target fat intake in grams.", json_schema_extra={"example": 70})
-    fatGMin: int = Field(..., description="Minimum healthy fat threshold in grams.", json_schema_extra={"example": 46})
-    fatGMax: int = Field(..., description="Maximum healthy fat threshold in grams.", json_schema_extra={"example": 81})
-    carbsGMin: int = Field(..., description="Minimum carbohydrates range threshold in grams.", json_schema_extra={"example": 210})
-    carbsGMax: int = Field(..., description="Maximum carbohydrates range threshold in grams.", json_schema_extra={"example": 263})
-    fiberG: int = Field(..., description="Target daily dietary fiber intake in grams.", json_schema_extra={"example": 29})
-    fiberGMin: int = Field(default=25, description="Minimum dietary fiber intake in grams.", json_schema_extra={"example": 25})
-    fiberGMax: int = Field(default=35, description="Maximum dietary fiber intake in grams.", json_schema_extra={"example": 35})
+    # maintenanceCalories: int = Field(..., description="Maintenance calorie needs in kcal.", json_schema_extra={"example": 2604})
+    # dailyCalories: int = Field(..., description="Recommended daily calorie target in kcal for the selected goal.", json_schema_extra={"example": 2104})
+    # proteinG: int = Field(..., description="Target protein intake in grams.", json_schema_extra={"example": 131})
+    # proteinGMin: int = Field(default=0, description="Minimum healthy protein threshold in grams.", json_schema_extra={"example": 110})
+    # proteinGMax: int = Field(default=0, description="Maximum healthy protein threshold in grams.", json_schema_extra={"example": 150})
+    # carbsG: int = Field(..., description="Target carbohydrates intake in grams.", json_schema_extra={"example": 236})
+    # fatG: int = Field(..., description="Target fat intake in grams.", json_schema_extra={"example": 70})
+    # fatGMin: int = Field(..., description="Minimum healthy fat threshold in grams.", json_schema_extra={"example": 46})
+    # fatGMax: int = Field(..., description="Maximum healthy fat threshold in grams.", json_schema_extra={"example": 81})
+    # carbsGMin: int = Field(..., description="Minimum carbohydrates range threshold in grams.", json_schema_extra={"example": 210})
+    # carbsGMax: int = Field(..., description="Maximum carbohydrates range threshold in grams.", json_schema_extra={"example": 263})
+    # fiberG: int = Field(..., description="Target daily dietary fiber intake in grams.", json_schema_extra={"example": 29})
+    # fiberGMin: int = Field(default=25, description="Minimum dietary fiber intake in grams.", json_schema_extra={"example": 25})
+    # fiberGMax: int = Field(default=35, description="Maximum dietary fiber intake in grams.", json_schema_extra={"example": 35})
+    # fiberGRaw: int = Field(default=0, description="Raw calculated fiber target.", json_schema_extra={"example": 29})
+    # fiberGMinimum: int = Field(default=25, description="Minimum recommended fiber intake (default 25g).", json_schema_extra={"example": 25})
+    waterL: float = Field(..., description="Target daily water intake in liters.", json_schema_extra={"example": 2.4})
+    # waterLMin: float = Field(..., description="Minimum recommended water intake in liters.", json_schema_extra={"example": 2.25})
+    # waterLMax: float = Field(..., description="Maximum recommended water intake in liters.", json_schema_extra={"example": 2.62})
+    activityLevelNormalized: str = Field(..., description="Normalized activity level label matching constants.", json_schema_extra={"example": "moderate"})
+   
+    idealWeight: float = Field(..., description="Calculated healthy target body weight in kilograms.", json_schema_extra={"example": 67.3})
+    weightDeltaKg: float = Field(..., description="Difference between target weight and current weight in kilograms.", json_schema_extra={"example": -7.7})
+    bmi: float = Field(..., description="Calculated current body mass index (BMI).", json_schema_extra={"example": 24.5})
+    bmiCategory: str = Field(..., description="Current BMI health classification (e.g. Underweight, Normal, Overweight).", json_schema_extra={"example": "Overweight"})
+    bmr: int = Field(..., description="Basal Metabolic Rate in kcal, calculated using Mifflin-St Jeor equation.", json_schema_extra={"example": 1680})
+    tdee: int = Field(..., description="Total Daily Energy Expenditure in kcal (BMR multiplied by activity level factor).", json_schema_extra={"example": 2604})
     waterL: float = Field(..., description="Target daily water intake in liters.", json_schema_extra={"example": 2.4})
     waterLMin: float = Field(..., description="Minimum recommended water intake in liters.", json_schema_extra={"example": 2.25})
     waterLMax: float = Field(..., description="Maximum recommended water intake in liters.", json_schema_extra={"example": 2.62})
     activityLevelNormalized: str = Field(..., description="Normalized activity level label matching constants.", json_schema_extra={"example": "moderate"})
 
 
+
 class RankResponse(BaseModel):
     model_config = ConfigDict(
         json_schema_extra={
             "example": {
-                "targets": {
-                    "age": 28, "heightCm": 175.0, "weightKg": 75.0, "targetBmi": 22, "targetWeightKg": 67.3,
-                    "weightDeltaKg": -7.7, "bmi": 24.5, "bmiCategory": "Overweight", "bmr": 1680, "tdee": 2604,
-                    "maintenanceCalories": 2604, "dailyCalories": 2104, "proteinG": 131, "carbsG": 236, "fatG": 70,
-                    "fatGMin": 46, "fatGMax": 81, "carbsGMin": 210, "carbsGMax": 263, "fiberG": 29, "fiberGRaw": 29,
-                    "fiberGMinimum": 25, "waterL": 2.4, "waterLMin": 2.25, "waterLMax": 2.62, "activityLevelNormalized": "moderate"
-                },
+                
                 "rankedByTime": {
                     "breakfast": [
                         {
-                            "id": "meal_101",
-                            "name": "Oatmeal with Fruits",
-                            "score": 0.95,
-                            "macros": {"caloriesKcal": 350, "proteinG": 12, "carbsG": 60, "fatG": 5, "fiberG": 8}
-                        }
+                "Meal_ID": "4533",
+                "meal_name": "Appam and Stew",
+                "Discription": "",
+                "image_ID": "",
+                "_macros": {
+                    "caloriesKcal": 554,
+                    "proteinG": 12,
+                    "carbsG": 85,
+                    "fatG": 20,
+                    "fiberG": 10
+                }
+            },
                     ],
                     "lunch": [],
                     "dinner": []
@@ -1365,6 +1358,51 @@ class DraftPlanResponse(BuildPlanResponse):
     targets: Dict[str, Any] = Field(..., description="The calculated daily target profile (full DailyTargetsResponse on creation, StoredPlanTargets on re-fetch).")
     mealTimes: Optional[List[str]] = Field(default=None, description="List of meal times included in the plan.")
     rankedByTime: Optional[Dict[str, List[Dict[str, Any]]]] = Field(default=None, description="Not used for draft fetch.")
-    planId: str = Field(..., description="The unique ID of the draft plan.")
-    version: int = Field(..., description="The version number of the draft plan.")
-    status: str = Field(..., description="The status of the plan (draft, active, archived).")
+    planId: str = Field(..., description="The unique ID of the draft plan")
+    version: int = Field(..., description="The version number of the draft plan")
+    status: str = Field(..., description="The status of the plan (should be 'draft')")
+
+class RecipeNutritionResponse(BaseModel):
+    calories: int
+    protein: float
+    carbs: float
+    fat: float
+    fiber: float
+
+class RecipeIngredientResponse(BaseModel):
+    ingredientId: str
+    ingredientName: str
+    quantity: float
+    unit: str
+
+class RecipePreparationResponse(BaseModel):
+    prepTime: int = 0
+    cookTime: int = 0
+    totalTime: int = 0
+    instructions: List[str] = []
+
+class RecipePersonalizationResponse(BaseModel):
+    whyThisMeal: str = ""
+    nutritionNotes: str = ""
+    recommendationReason: str = ""
+
+class RecipePermissionsResponse(BaseModel):
+    canSwap: bool
+    canRearrange: bool
+    canCustomize: bool
+
+class RecipeDetailResponse(BaseModel):
+    mealInstanceId: str
+    mealId: str
+    mealName: str
+    image: Optional[str] = None
+    mealTime: str
+    dayNumber: int
+    servingSize: str = "1 serving"
+    scaleFactor: float = 1.0
+
+    nutrition: RecipeNutritionResponse
+    ingredients: List[RecipeIngredientResponse]
+    preparation: RecipePreparationResponse
+    personalization: RecipePersonalizationResponse
+    permissions: RecipePermissionsResponse

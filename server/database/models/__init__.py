@@ -7,7 +7,6 @@ from .catalog import (
     Food,
     Meal,
     MealFood,
-    MealIngredient,
     Substitute,
     FoodRole,
     PrimaryGoal,

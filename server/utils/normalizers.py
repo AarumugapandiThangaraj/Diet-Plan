@@ -59,8 +59,16 @@ def normalize_goal(goal: Any) -> str:
     Normalizes a health or wellness goal string.
     """
     g = normalize_tag(goal)
-    if g in {"skin_repair", "hair_repair"}:
-        return g
+    if "skin_repair" in g:
+        return "skin_repair"
+    if "hair_repair" in g:
+        return "hair_repair"
+    if "weight_loss" in g:
+        return "weight_loss"
+    if "weight_gain" in g:
+        return "weight_gain"
+    if "gut_health" in g:
+        return "gut_health"
     return g
 
 def normalize_goal_list(value: Any) -> List[str]:
@@ -93,7 +101,9 @@ def _normalize_meal_time(value: Any) -> str:
         "lunch": "lunch",
         "evening": "evening",
         "evening snack": "evening",
+        "evening snacks": "evening",
         "snack": "evening",
+        "snacks": "evening",
         "dinner": "dinner",
         "bedtime": "bedtime",
         "bed time": "bedtime",

@@ -56,7 +56,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                         continue
                         
                     from database.models import Meal, Cuisine
-                    stmt = select(Meal, Cuisine).join(Cuisine, Meal.cuisine_id == Cuisine.id).filter(Meal.id == new_meal_id)
+                    stmt = select(Meal, Cuisine).join(Cuisine, Meal.cuisine_id == Cuisine.id).filter(Meal.id == int(new_meal_id))
                     res = await session.execute(stmt)
                     row = res.first()
                     if not row:
@@ -102,7 +102,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     
                     from database.models import Food
                     for sf in scaled_meal.get("foods_struct", []):
-                        client_food_id = str(sf.get("id")) if sf.get("id") is not None else None
+                        client_food_id = int(sf.get("id")) if sf.get("id") is not None else None
                         
                         stmt = select(Food.id).filter_by(id=client_food_id)
                         db_food_id = (await session.execute(stmt)).scalar()

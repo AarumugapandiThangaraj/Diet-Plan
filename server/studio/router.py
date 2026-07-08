@@ -45,7 +45,8 @@ from schemas import (
     DraftPlanResponse,
     PatchPlanRequest,
     ActivatePlanRequest,
-    ActivatePlanResponse
+    ActivatePlanResponse,
+    RecipeDetailResponse
 )
 from services.planner_service import (
     fetch_daily_targets_service,
@@ -117,7 +118,7 @@ def studio_meta(cuisine: str = "north_indian"):
 @router.get(
     "/cuisines",
     response_model=CuisineListResponse,
-    tags=["System"],
+    tags=["System", "dev"],
     summary="Get All Cuisines",
     description="Retrieves a list of all active cuisines available in the system.",
     responses={
@@ -137,7 +138,7 @@ async def get_all_cuisines():
 @router.post(
     "/targets",
     response_model=DailyTargetsResponse,
-    tags=["Planner"],
+    tags=["Planner","dev"],
     summary="Calculate Daily Calorie & Macro Targets",
     description=(
         "Calculates customized daily energy (calories) and macronutrient (protein, carbs, fat, fiber) targets "
@@ -185,12 +186,27 @@ async def get_all_cuisines():
 )
 def studio_targets(req: TargetsRequest):
     profile_dict = _apply_cuisine(req.profile.model_dump())
-    return fetch_daily_targets_service(profile_dict)
+    result = fetch_daily_targets_service(profile_dict)
     
+    # fill the following data from the result dict
+    responses = {
+        "idealWeight": result.get("targetWeightKg"),            
+        "weightDeltaKg": result.get("weightDeltaKg"),
+        "bmi": result.get("bmi"),
+        "bmiCategory": result.get("bmiCategory"), 
+        "bmr": result.get("bmr"), 
+        "tdee": result.get("tdee"), 
+        "waterL": result.get("waterL"),
+        "waterLMin": result.get("waterLMin"),
+        "waterLMax": result.get("waterLMax"),
+        "activityLevelNormalized": result.get("activityLevelNormalized"),
+        "activityLevel": result.get("activityLevelNormalized") # keeping for backwards compatibility if needed
+    }
+    return responses
 @router.post(
     "/rank",
     response_model=RankResponse,
-    tags=["Nutrition"],
+    tags=["Nutrition","dev"],
     summary="Score and Rank Meals for Requested Sessions",
     description=(
         "Scores and ranks available meal candidates from the database for each requested meal session, "
@@ -290,11 +306,7 @@ def studio_rank(req: RankRequest):
         "      \"lunch\": [\"meal_3\", \"meal_4\"],\n"
         "      \"dinner\": [\"meal_5\", \"meal_6\"]\n"
         "    },\n"
-        "    \"assignmentByTime\": {\n"
-        "      \"breakfast\": [\"meal_1\"],\n"
-        "      \"lunch\": [\"meal_3\"],\n"
-        "      \"dinner\": [\"meal_5\"]\n"
-        "    }\n"
+        
         "  }'\n"
         "```"
     ),
@@ -488,7 +500,7 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
 
     res_payload = {
         "days": days,
-        "targets": targets,
+      # "targets": targets,
         "plans": plans,
         "totalsByDay": totals_by_day,
         "totalsAll": totals_all,
@@ -1311,3 +1323,22 @@ async def studio_get_latest_plan(user_id: str = Depends(get_current_user_id)):
     payload["planId"] = plan["plan_id"]
     payload["version"] = plan["version"]
     return payload
+
+@router.get(
+    "/meal-plans/meals/{mealInstanceId}",
+    response_model=RecipeDetailResponse,
+    tags=["Diet Plan - User"],
+    summary="Get Meal Details for Recipe View",
+    description="Retrieves all information required for the Recipe Detail screen for a specific meal instance."
+)
+async def studio_get_meal_details(mealInstanceId: str, user_id: str = Depends(get_current_user_id)):
+    from repositories.user_plan_repository import get_meal_instance_details
+    meal_details = await get_meal_instance_details(mealInstanceId, user_id)
+    
+    if not meal_details:
+        raise HTTPException(status_code=404, detail="Meal instance not found")
+        
+    if "error" in meal_details and meal_details["error"] == "forbidden":
+        raise HTTPException(status_code=403, detail="Forbidden")
+        
+    return meal_details

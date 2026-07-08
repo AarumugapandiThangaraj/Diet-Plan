@@ -1,9 +1,9 @@
 from datetime import date
 from typing import Optional
-from sqlalchemy import select, update
+from sqlalchemy import select, update, and_, func, String, cast, desc, text
 from sqlalchemy.orm import selectinload
 from database.session import AsyncSessionLocal
-from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, MealSession, UserHealthProfile
+from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, MealSession, UserHealthProfile, Meal
 from utils.normalizers import _normalize_cuisine
 from sqlalchemy.exc import SQLAlchemyError
 from exceptions.repository import RepositoryException
@@ -316,7 +316,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     meal_obj = DietPlanMeal(
                         plan_day_id=day_obj.id,
                         meal_session_id=sessions_map[session_code],
-                        meal_id=str(client_meal_id) if client_meal_id else None,
+                        meal_id=int(client_meal_id) if client_meal_id else None,
                         calories_kcal=meal_macros.get("caloriesKcal"),
                         protein_g=meal_macros.get("proteinG"),
                         carbs_g=meal_macros.get("carbsG"),
@@ -331,7 +331,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                         
                         food_obj = DietPlanMealFood(
                             plan_meal_id=meal_obj.id,
-                            food_id=str(client_food_id) if client_food_id else None,
+                            food_id=int(client_food_id) if client_food_id is not None else None,
                             quantity=food_data.get("quantity", 0),
                             unit=food_data.get("unit", "g")
                         )
@@ -385,3 +385,139 @@ async def load_latest_user_plan(user_identifier: str) -> Optional[dict]:
             return await _load_plan_from_stmt(session, stmt)
     except SQLAlchemyError as ex:
         raise RepositoryException("Failed to load latest user plan from repository") from ex
+
+async def get_meal_instance_details(meal_instance_id: str, user_id: str) -> Optional[dict]:
+    try:
+        async with AsyncSessionLocal() as session:
+            try:
+                m_id = uuid.UUID(meal_instance_id)
+                u_id = uuid.UUID(user_id)
+            except ValueError:
+                return None
+
+            # Load the DietPlanMeal and its related plan and foods. We DO NOT selectinload(meal) 
+            # because the Meal model schema is currently broken/out of sync with the database.
+            stmt = (
+                select(DietPlanMeal)
+                .filter(DietPlanMeal.id == m_id)
+                .options(
+                    selectinload(DietPlanMeal.day).selectinload(DietPlanDay.plan),
+                    selectinload(DietPlanMeal.meal_foods_rel)
+                )
+            )
+            res = await session.execute(stmt)
+            pmeal = res.scalar_one_or_none()
+            
+            if not pmeal:
+                return None
+                
+            # Validate user
+            if pmeal.day.plan.user_id != u_id:
+                return {"error": "forbidden"}
+                
+            # Get meal session name
+            session_stmt = select(MealSession).filter(MealSession.id == pmeal.meal_session_id)
+            session_res = await session.execute(session_stmt)
+            meal_session = session_res.scalar_one_or_none()
+            meal_time = meal_session.name_en if meal_session else "Unknown"
+
+            scale_factor = float(pmeal.scale_applied) if pmeal.scale_applied is not None else 1.0
+            
+            plan_status = pmeal.day.plan.status
+            can_modify = plan_status in ['draft', 'active']
+
+            # Safely query the broken meals table using raw SQL
+            meal_name = "Custom Meal"
+            image = None
+            prep_instructions = []
+            meal_id_str = pmeal.meal_id if pmeal.meal_id else ""
+            
+            if pmeal.meal_id:
+                try:
+                    # The DB has meals.id (bigint) and meals.client_meal_id (varchar)
+                    # We check both to be safe
+                    raw_meal_stmt = text(
+                        'SELECT name_en, description_en FROM "Twellr_Nutri".meals '
+                        'WHERE client_meal_id = :mid OR id::text = :mid LIMIT 1'
+                    )
+                    raw_res = await session.execute(raw_meal_stmt, {"mid": str(pmeal.meal_id)})
+                    raw_meal = raw_res.fetchone()
+                    if raw_meal:
+                        if raw_meal[0]: meal_name = raw_meal[0]
+                        if raw_meal[1]: prep_instructions = [raw_meal[1]] # Store description as an instruction
+                except Exception as e:
+                    import logging
+                    logging.getLogger("app.repo").warning(f"Could not load raw meal data: {e}")
+
+            # Ingredients mapping (using DietPlanMealFood since meal_ingredients table doesn't exist)
+            ingredients = []
+            
+            # Fetch food names manually to bypass broken Food model
+            food_ids = [mf.food_id for mf in pmeal.meal_foods_rel if mf.food_id]
+            food_name_map = {}
+            if food_ids:
+                try:
+                    # 'foods' table uses name_en instead of food_name
+                    food_stmt = text('SELECT id, name_en FROM "Twellr_Nutri".foods WHERE id::bigint = ANY(:fids)')
+                    fids_int = []
+                    for fid in food_ids:
+                        if isinstance(fid, int) or (isinstance(fid, str) and fid.isdigit()):
+                            fids_int.append(int(fid))
+                    # Fallback if the IDs are strings or bigints
+                    food_res = await session.execute(food_stmt, {"fids": fids_int if fids_int else [-1]})
+                    for row in food_res:
+                        food_name_map[str(row[0])] = row[1]
+                except Exception as e:
+                    import logging
+                    logging.getLogger("app.repo").warning(f"Could not load raw food data: {e}")
+
+            for mf in pmeal.meal_foods_rel:
+                food_id_str = str(mf.food_id) if mf.food_id else ""
+                food_name = food_name_map.get(food_id_str, "Unknown Food")
+                ingredients.append({
+                    "ingredientId": food_id_str if food_id_str else str(mf.id),
+                    "ingredientName": food_name,
+                    "quantity": float(mf.quantity) * scale_factor,
+                    "unit": mf.unit or "g"
+                })
+
+            return {
+                "mealInstanceId": str(pmeal.id),
+                "mealId": str(meal_id_str),
+                "mealName": meal_name,
+                "image": image,
+                "mealTime": meal_time,
+                "dayNumber": pmeal.day.day_number if pmeal.day else 1,
+                "servingSize": "1 serving",
+                "scaleFactor": scale_factor,
+                "nutrition": {
+                    "calories": int(pmeal.calories_kcal) if pmeal.calories_kcal else 0,
+                    "protein": float(pmeal.protein_g) if pmeal.protein_g else 0.0,
+                    "carbs": float(pmeal.carbs_g) if pmeal.carbs_g else 0.0,
+                    "fat": float(pmeal.fat_g) if pmeal.fat_g else 0.0,
+                    "fiber": float(pmeal.fiber_g) if pmeal.fiber_g else 0.0
+                },
+                "ingredients": ingredients,
+                "preparation": {
+                    "prepTime": 0,
+                    "cookTime": 0,
+                    "totalTime": 0,
+                    "instructions": prep_instructions
+                },
+                "personalization": {
+                    "whyThisMeal": "",
+                    "nutritionNotes": "",
+                    "recommendationReason": ""
+                },
+                "permissions": {
+                    "canSwap": can_modify,
+                    "canRearrange": can_modify,
+                    "canCustomize": can_modify
+                }
+            }
+    except SQLAlchemyError as ex:
+        import traceback
+        import logging
+        logging.getLogger("app.repo").error(f"SQLAlchemyError in get_meal_instance_details:\n{traceback.format_exc()}")
+        raise RepositoryException(f"Failed to load meal instance: {str(ex)}") from ex
+
