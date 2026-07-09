@@ -922,6 +922,8 @@ class SwapMealApplyResponse(BaseModel):
         }
     )
     meal: Dict[str, Any] = Field(..., description="The newly updated meal payload with scaled/recalculated macros.")
+    version: Optional[int] = Field(None, description="The new plan version after this swap was applied. Use this for the next swap call.")
+
 
 
 class FoodSwapOption(BaseModel):
@@ -1494,6 +1496,7 @@ class RecipeDetailsResponse(BaseModel):
     recipe_name: str = Field(..., description="The recipe/meal name")
     description: Optional[str] = Field(None, description="Detailed explanation ('Why this for you')")
     imageUrl: Optional[str] = Field(None, description="Image URL of the recipe/meal")
+    preparation_time : Optional[str] = Field(None, description="Preparation of the recipe/meal")
     macros: Dict[str, float] = Field(..., description="Scaled total macros for the planned meal")
     preparation: Optional[str] = Field(None, description="Preparation steps for the entire recipe")
     ingredients: List[RecipeIngredient] = Field(default_factory=list, description="List of all ingredients for the entire meal")

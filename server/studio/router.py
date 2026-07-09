@@ -972,8 +972,9 @@ async def studio_swap_food_apply(req: FoodSwapApplyRequest, user_id: str = Depen
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
         
-    meal = apply_food_swap_service(meal=meal_dict, option=req.option, cuisine=str(cuisine))
+    meal = await apply_food_swap_service(meal=meal_dict, option=req.option, cuisine=str(cuisine))
     
+    updated_version = req.version
     if req.planId and req.version is not None:
         from schemas import PatchOperation
         from services.planner_service import update_draft_user_plan_service
@@ -981,29 +982,32 @@ async def studio_swap_food_apply(req: FoodSwapApplyRequest, user_id: str = Depen
         foods = meal_dict.get("foods_struct") or meal_dict.get("foods") or []
         food_instance_ids = [str(f.get("food_instance_id")) for f in foods if f.get("food_instance_id")]
         
+        # model_dump(by_alias=True) stores the meal id under 'Meal_ID' alias, not 'id'
+        meal_instance_id = (
+            meal_dict.get("Meal_ID") or
+            meal_dict.get("id") or
+            meal_dict.get("meal_id") or
+            ""
+        )
         op = PatchOperation(
             type="food_swap",
-            mealInstanceId=str(meal_dict.get("id")),
+            mealInstanceId=str(meal_instance_id) if meal_instance_id else None,
+            replacementMealId=str(req.option.get("replacementMealId", "")) if isinstance(req.option, dict) else str(getattr(req.option, "replacementMealId", "") or ""),
             customMealPayload=meal,
             foodInstanceIds=food_instance_ids
         )
         
         try:
-            await update_draft_user_plan_service(req.planId, user_id, req.version, [op])
+            updated_plan = await update_draft_user_plan_service(req.planId, user_id, req.version, [op])
+            if updated_plan and isinstance(updated_plan, dict):
+                updated_version = updated_plan.get("version", req.version)
         except Exception as e:
             import logging
             logging.getLogger("app.studio").error(f"Failed to persist food swap to DB: {e}")
             raise HTTPException(status_code=500, detail=f"Failed to persist food swap to DB: {str(e)}")
             
-    return {
-        "success": True,
-        "data": {
-            "code": "UPDATED",
-            "success": True,
-            "status": 200,
-            "message": "The meal swap has been applied successfully."
-        }
-    }
+    return {"meal": meal, "version": updated_version}
+
 
 @router.post(
     "/swap/ingredient/options",
@@ -1563,6 +1567,7 @@ async def studio_get_recipe_details(mealInstanceId: str):
         "description": recipe["description"],
         "imageUrl": recipe["imageUrl"],
         "macros": recipe["macros"],
+        "preparation_time": "30 mins prep",
         "preparation": recipe["preparation"],
         "ingredients": recipe["ingredients"],
         "foods_struct": recipe["foods_struct"]

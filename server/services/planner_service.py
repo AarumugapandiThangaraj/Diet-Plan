@@ -80,11 +80,11 @@ def get_ingredient_swap_options_service(meal: dict, ingredient_query: str, top_n
     """
     return get_ingredient_swap_options(meal=meal, ingredient_query=ingredient_query, top_n=top_n, cuisine=cuisine)
 
-def apply_food_swap_service(meal: dict, option: dict, cuisine: str) -> dict:
+async def apply_food_swap_service(meal: dict, option: dict, cuisine: str) -> dict:
     """
     Applies a selected food swap option to the meal dictionary and recalculates macro details.
     """
-    return apply_food_swap_option(meal=meal, option=option, cuisine=cuisine)
+    return await apply_food_swap_option(meal=meal, option=option, cuisine=cuisine)
 
 def apply_ingredient_swap_service(meal: dict, option: dict, cuisine: str) -> dict:
     """
@@ -186,8 +186,8 @@ async def get_draft_user_plan_service(plan_id: str) -> Optional[dict]:
     if not plan:
         return None
     
-    if plan.get("status") != "draft":
-        return None
+    # if plan.get("status") != "draft":
+    #     return None
 
     return plan
 

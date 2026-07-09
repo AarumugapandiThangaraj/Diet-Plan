@@ -2883,5 +2883,45 @@
     "meal_id": "M246",
     "food_id": "F379",
     "serving_size": "240 mL"
+  },
+  {
+    "meal_id": "M300",
+    "food_id": "F054",
+    "serving_size": "2 pieces (120 g)"
+  },
+  {
+    "meal_id": "M300",
+    "food_id": "F037",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M300",
+    "food_id": "F038",
+    "serving_size": "90 mL"
+  },
+  {
+    "meal_id": "M300",
+    "food_id": "F039",
+    "serving_size": "1 tbsp (10 g)"
+  },
+  {
+    "meal_id": "M301",
+    "food_id": "F050",
+    "serving_size": "2 pieces (160 g)"
+  },
+  {
+    "meal_id": "M301",
+    "food_id": "F037",
+    "serving_size": "160 g"
+  },
+  {
+    "meal_id": "M301",
+    "food_id": "F038",
+    "serving_size": "90 mL"
+  },
+  {
+    "meal_id": "M301",
+    "food_id": "F039",
+    "serving_size": "1 tbsp (10 g)"
   }
 ]

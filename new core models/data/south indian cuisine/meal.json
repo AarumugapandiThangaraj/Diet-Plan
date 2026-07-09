@@ -8126,5 +8126,71 @@
       "Drink immediately on an empty stomach."
     ],
     "image": "Picture"
+  },
+  {
+    "meal_id": "M300",
+    "session": "Breakfast",
+    "recipe_name": "Ragi Dosa with Sambar, Drumstick Leaf Powder Green Shot and Slivered Almonds",
+    "time": "08:00–08:30",
+    "description": "Ragi Dosa (finger millet crepe) with protein-packed toor dal sambar and a moringa green shot. Ragi is highly nutritious, rich in calcium, iron, and fiber. Moringa green shot is rich in iron and Vitamin C. Slivered almonds add biotin and Vitamin E.",
+    "primary_goal": [
+      "Skin repair (Pigmentation, Aging skin)",
+      "Hair repair (Hair fall, Scalp health)"
+    ],
+    "secondary_goal": [
+      "Gut health & digestion",
+      "Weight loss"
+    ],
+    "allergens": [
+      "Tree Nuts"
+    ],
+    "nutrition": {
+      "calories_kcal": 350,
+      "carbohydrates_g": 62.0,
+      "protein_g": 14.0,
+      "fat_g": 6.0,
+      "dietary_fiber_g": 10.0
+    },
+    "preparation_steps": [
+      "Prepare ragi dosa batter and cook thin crepes on a hot griddle.",
+      "Pressure cook toor dal with turmeric until soft; mash lightly.",
+      "Cook drumstick and carrot with tamarind pulp and sambar powder until tender; add dal and simmer 5 min.",
+      "Blend drumstick leaves with water until smooth; strain; stir in lemon juice and honey.",
+      "Serve hot ragi dosa with sambar, drumstick leaf green shot, and slivered almonds."
+    ],
+    "image": "Picture"
+  },
+  {
+    "meal_id": "M301",
+    "session": "Breakfast",
+    "recipe_name": "Palak Dosa with Sambar, Drumstick Leaf Powder Green Shot and Slivered Almonds",
+    "time": "08:00–08:30",
+    "description": "Palak Dosa (spinach crepe) with protein-packed toor dal sambar and a moringa green shot. Spinach adds folate, iron, and skin-loving vitamins. Moringa green shot is rich in iron and Vitamin C. Slivered almonds add biotin and Vitamin E.",
+    "primary_goal": [
+      "Skin repair (Pigmentation, Aging skin)",
+      "Hair repair (Hair fall, Scalp health)"
+    ],
+    "secondary_goal": [
+      "Gut health & digestion",
+      "Weight loss"
+    ],
+    "allergens": [
+      "Tree Nuts"
+    ],
+    "nutrition": {
+      "calories_kcal": 340,
+      "carbohydrates_g": 59.0,
+      "protein_g": 13.0,
+      "fat_g": 5.5,
+      "dietary_fiber_g": 9.5
+    },
+    "preparation_steps": [
+      "Prepare spinach dosa batter and cook thin crepes on a hot griddle.",
+      "Pressure cook toor dal with turmeric until soft; mash lightly.",
+      "Cook drumstick and carrot with tamarind pulp and sambar powder until tender; add dal and simmer 5 min.",
+      "Blend drumstick leaves with water until smooth; strain; stir in lemon juice and honey.",
+      "Serve hot palak dosa with sambar, drumstick leaf green shot, and slivered almonds."
+    ],
+    "image": "Picture"
   }
 ]

@@ -10765,7 +10765,7 @@
   },
   {
     "meal_id": "M219",
-    "ingredient_name": "Mint chutney: fresh mint 1 cup, coriander ½ cup, green chilli 1, ginger ½ inch, lemon juice 1 tsp, salt,   For tomato",
+    "ingredient_name": "Mint chutney: fresh mint 1 cup, coriander \u00c2\u00bd cup, green chilli 1, ginger \u00c2\u00bd inch, lemon juice 1 tsp, salt,   For tomato",
     "quantity": 240,
     "unit": "g"
   },
@@ -11691,6 +11691,150 @@
     "meal_id": "M246",
     "ingredient_name": "Amla powder",
     "quantity": 2.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Fermented ragi dosa batter",
+    "quantity": 120,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Olive oil",
+    "quantity": 5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Toor dal",
+    "quantity": 50,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Mixed vegetables for sambar (drumstick, carrot)",
+    "quantity": 60,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Tamarind",
+    "quantity": 5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Sambar powder",
+    "quantity": 5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Mustard seeds, curry leaves",
+    "quantity": 2,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "For shot: Fresh drumstick (moringa) leaves",
+    "quantity": 10,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Water",
+    "quantity": 80,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Lemon juice",
+    "quantity": 2.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "Honey",
+    "quantity": 2.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M300",
+    "ingredient_name": "For nuts/seeds: Almonds, slivered",
+    "quantity": 10,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Palak dosa batter",
+    "quantity": 120,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Olive oil",
+    "quantity": 5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Toor dal",
+    "quantity": 50,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Mixed vegetables for sambar (drumstick, carrot)",
+    "quantity": 60,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Tamarind",
+    "quantity": 5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Sambar powder",
+    "quantity": 5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Mustard seeds, curry leaves",
+    "quantity": 2,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "For shot: Fresh drumstick (moringa) leaves",
+    "quantity": 10,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Water",
+    "quantity": 80,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Lemon juice",
+    "quantity": 2.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "Honey",
+    "quantity": 2.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "M301",
+    "ingredient_name": "For nuts/seeds: Almonds, slivered",
+    "quantity": 10,
     "unit": "g"
   }
 ]
