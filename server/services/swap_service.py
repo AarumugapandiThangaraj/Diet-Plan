@@ -132,20 +132,39 @@ async def get_food_swap_options_async(*, meal: Dict[str, Any], food_name: str, t
             if not new_food_obj:
                 continue
                 
+            from domain.scaling_formulas import scale_meal_to_targets
+            original_macros = meal.get("macros", {})
+            cand_meal_dict = {
+                "macros": {
+                    "caloriesKcal": cand.calories_kcal,
+                    "proteinG": cand.protein_g,
+                    "carbsG": cand.carbohydrates_g,
+                    "fatG": cand.fat_g,
+                    "fiberG": cand.dietary_fiber_g
+                }
+            }
+            
+            if original_macros and original_macros.get("caloriesKcal"):
+                target_macros = {"caloriesKcal": original_macros.get("caloriesKcal", 0.0)}
+                scale_info = scale_meal_to_targets(cand_meal_dict, target_macros)
+                scale_factor = scale_info.get("scaleFactorApplied", 1.0)
+            else:
+                scale_factor = 1.0
+                
             replacement = {
                 "foodId": new_food_id,
                 "name": new_food_obj.food_name,
-                "quantity": 1,
+                "quantity": 1.0 * scale_factor,
                 "unit": "serving",
                 "macros": {}
             }
             
             cand_macros = {
-                "caloriesKcal": cand.calories_kcal,
-                "proteinG": cand.protein_g,
-                "carbsG": cand.carbohydrates_g,
-                "fatG": cand.fat_g,
-                "fiberG": cand.dietary_fiber_g
+                "caloriesKcal": float(cand.calories_kcal or 0.0) * scale_factor,
+                "proteinG": float(cand.protein_g or 0.0) * scale_factor,
+                "carbsG": float(cand.carbohydrates_g or 0.0) * scale_factor,
+                "fatG": float(cand.fat_g or 0.0) * scale_factor,
+                "fiberG": float(cand.dietary_fiber_g or 0.0) * scale_factor
             }
             
             options.append({
@@ -156,6 +175,7 @@ async def get_food_swap_options_async(*, meal: Dict[str, Any], food_name: str, t
                 "fuzzySimilarity": 1.0,
                 "replacement": replacement,
                 "replacementMealId": str(cand.id),
+                "scaleFactorApplied": scale_factor,
                 "projectedMealMacros": cand_macros,
                 "projectedNutritiveValues": format_nutritive_values(cand_macros)
             })
@@ -179,8 +199,6 @@ def get_ingredient_swap_options(*args, **kwargs) -> Dict[str, Any]:
     return {"options": []}
 
 def apply_food_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "") -> Dict[str, Any]:
-    # For V2, applying a food swap simply means replacing the whole meal with the candidate meal
-    # The frontend usually expects the new meal structure
     cand_id = option.get("replacementMealId")
     if not cand_id:
         return dict(meal)
@@ -190,7 +208,16 @@ def apply_food_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuis
     if not new_meal:
         return dict(meal)
         
-    return meal_for_plan_payload(new_meal)
+    original_macros = meal.get("macros", {})
+    payload = meal_for_plan_payload(new_meal)
+    
+    if original_macros and original_macros.get("caloriesKcal"):
+        from domain.scaling_formulas import scale_meal_to_targets
+        target_macros = {"caloriesKcal": original_macros.get("caloriesKcal", 0.0)}
+        scale_info = scale_meal_to_targets(payload, target_macros)
+        return scale_info.get("scaledMeal", payload)
+        
+    return payload
 
 def apply_ingredient_swap_option(*, meal: Dict[str, Any], option: Dict[str, Any], cuisine: str = "") -> Dict[str, Any]:
     return dict(meal)

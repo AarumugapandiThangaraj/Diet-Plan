@@ -21,9 +21,11 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
         # Reconstruct legacy plan_payload
         plans_arr = []
         totals_by_day_arr = []
+        day_ids_arr = []
         # sort days
         days_sorted = sorted(plan_obj.days_rel, key=lambda d: d.day_number)
         for day in days_sorted:
+            day_ids_arr.append(str(day.id))
             totals_by_day_arr.append({
                 "caloriesKcal": float(day.calories_kcal) if day.calories_kcal else 0.0,
                 "proteinG": float(day.protein_g) if day.protein_g else 0.0,
@@ -65,6 +67,7 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
             
         plan_payload = {
             "days": plan_obj.days,
+            "dayIds": day_ids_arr,
             "targets": {
                 "dailyCalories": float(plan_obj.target_calories_kcal) if plan_obj.target_calories_kcal else 0.0,
                 "proteinG": float(plan_obj.target_protein_g) if plan_obj.target_protein_g else 0.0,

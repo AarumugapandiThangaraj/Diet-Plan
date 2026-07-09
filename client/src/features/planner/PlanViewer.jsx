@@ -56,9 +56,11 @@ export default function PlanViewer({ onNavigateToDashboard }) {
               <button className="btnSmall" onClick={() => handleSwapWholeMeal(day.dayNumber - 1, meal.session)}>
                 Swap meal
               </button>
-              <button className="btnSmall" onClick={() => handleSwapFood(day.dayNumber - 1, meal.session)}>
-                Swap food
-              </button>
+              {meal.is_food_swappable !== false && (
+                <button className="btnSmall" onClick={() => handleSwapFood(day.dayNumber - 1, meal.session)}>
+                  Swap food
+                </button>
+              )}
             </div>
           </div>
         ))}

@@ -55,6 +55,21 @@ export function normalizeMacros(macros) {
 
 export function sumMacrosFromPlan(plan, mealTimes) {
   const totals = { caloriesKcal: 0, proteinG: 0, carbsG: 0, fatG: 0, fiberG: 0 }
+  
+  // If plan has a meals array (Draft format)
+  if (plan?.meals && Array.isArray(plan.meals)) {
+    for (const meal of plan.meals) {
+        const m = normalizeMacros(meal?.macros)
+        totals.caloriesKcal += m.caloriesKcal
+        totals.proteinG += m.proteinG
+        totals.carbsG += m.carbsG
+        totals.fatG += m.fatG
+        totals.fiberG += m.fiberG
+    }
+    return totals
+  }
+
+  // Fallback for old dictionary format
   for (const mt of Array.isArray(mealTimes) ? mealTimes : []) {
     const item = plan?.[mt]
     if (!item) continue
@@ -71,6 +86,24 @@ export function sumMacrosFromPlan(plan, mealTimes) {
 export function withRecomputedTotals(resultLike) {
   if (!resultLike) return resultLike
   const mealTimes = Array.isArray(resultLike.mealTimes) ? resultLike.mealTimes : []
+
+  if (resultLike.weeks) {
+    let totalsAll = { caloriesKcal: 0, proteinG: 0, carbsG: 0, fatG: 0, fiberG: 0 }
+    // We update the totals directly on each day object inside weeks
+    for (const week of resultLike.weeks) {
+        for (const day of week.days || []) {
+            const t = sumMacrosFromPlan(day, mealTimes)
+            day.totals = t // ensure day totals are stored
+            totalsAll.caloriesKcal += t.caloriesKcal
+            totalsAll.proteinG += t.proteinG
+            totalsAll.carbsG += t.carbsG
+            totalsAll.fatG += t.fatG
+            totalsAll.fiberG += t.fiberG
+        }
+    }
+    return { ...resultLike, totalsAll }
+  }
+
   const days = Number(resultLike.days || 1)
 
   if (days <= 1) {
@@ -78,7 +111,7 @@ export function withRecomputedTotals(resultLike) {
     return { ...resultLike, totals }
   }
 
-  const plans = Array.isArray(resultLike.plans) ? resultLike.plans : []
+  const plans = Array.isArray(resultLike.days) ? resultLike.days : (Array.isArray(resultLike.plans) ? resultLike.plans : [])
   const totalsByDay = plans.map((p) => sumMacrosFromPlan(p || {}, mealTimes))
   const totalsAll = totalsByDay.reduce(
     (acc, t) => ({

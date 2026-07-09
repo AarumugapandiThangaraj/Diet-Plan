@@ -900,23 +900,22 @@ class SwapMealApplyResponse(BaseModel):
     meal: Dict[str, Any] = Field(..., description="The newly updated meal payload with scaled/recalculated macros.")
 
 
+class FoodSwapOption(BaseModel):
+    sourceFoodIndex: int
+    sourceFoodName: str
+    score: float
+    nutritionError: float
+    fuzzySimilarity: float
+    replacement: Dict[str, Any]
+    replacementMealId: str
+    projectedMealMacros: MacroTotals
+    projectedNutritiveValues: str
+    model_config = ConfigDict(extra='allow')
+
 class SwapFoodOptionsResponse(BaseModel):
-    model_config = ConfigDict(
-        json_schema_extra={
-            "example": {
-                "matchedSource": {"name": "Almonds", "calories": 579, "protein": 21.2, "fat": 49.9, "carbs": 21.6, "fiber": 12.5},
-                "options": [
-                    {
-                        "target_food": "Walnuts",
-                        "ratio": 1.2,
-                        "target_macros": {"calories": 654, "protein": 15.2, "fat": 65.2, "carbs": 13.7, "fiber": 6.7}
-                    }
-                ]
-            }
-        }
-    )
+    model_config = ConfigDict(extra='allow')
     matchedSource: Dict[str, Any] = Field(..., description="Nutritional properties of the original food item being swapped out.")
-    options: List[Dict[str, Any]] = Field(..., description="List of matching swap options indicating ratio and nutrient impact.")
+    options: List[FoodSwapOption] = Field(..., description="List of matching swap options indicating ratio and nutrient impact.")
 
 
 class SwapIngredientOptionsResponse(BaseModel):
@@ -1123,24 +1122,6 @@ class SwapMealApplyResponse(BaseModel):
     meal: Dict[str, Any] = Field(..., description="The newly updated meal payload with scaled/recalculated macros.")
 
 
-class SwapFoodOptionsResponse(BaseModel):
-    model_config = ConfigDict(
-        json_schema_extra={
-            "example": {
-                "matchedSource": {"name": "Almonds", "calories": 579, "protein": 21.2, "fat": 49.9, "carbs": 21.6, "fiber": 12.5},
-                "options": [
-                    {
-                        "target_food": "Walnuts",
-                        "ratio": 1.2,
-                        "target_macros": {"calories": 654, "protein": 15.2, "fat": 65.2, "carbs": 13.7, "fiber": 6.7}
-                    }
-                ]
-            }
-        }
-    )
-    matchedSource: Dict[str, Any] = Field(..., description="Nutritional properties of the original food item being swapped out.")
-    options: List[Dict[str, Any]] = Field(..., description="List of matching swap options indicating ratio and nutrient impact.")
-
 
 class SwapIngredientOptionsResponse(BaseModel):
     model_config = ConfigDict(
@@ -1333,6 +1314,7 @@ class ActiveMealItem(BaseModel):
     macros: MacroTotals
     foods: List[Dict[str, Any]]
     completed: bool = False
+    is_food_swappable: bool = True
     
 class ActiveDayPlan(BaseModel):
     dayNumber: int
@@ -1356,6 +1338,9 @@ class DraftMealItem(BaseModel):
     id: str = Field(alias="Meal_ID")
     name: str = ""
     imageUrl: str = ""
+    session: str = ""
+    scheduledTime: str = ""
+    is_food_swappable: bool = True
     macros: MacroTotals
     model_config = ConfigDict(extra='allow', populate_by_name=True)
 
@@ -1363,14 +1348,12 @@ class DraftDayPlan(BaseModel):
     dayNumber: int
     planDayId: Optional[str] = None
     totals: MacroTotals
-    early_morning: Optional[DraftMealItem] = None
-    breakfast: Optional[DraftMealItem] = None
-    mid_morning: Optional[DraftMealItem] = None
-    lunch: Optional[DraftMealItem] = None
-    evening: Optional[DraftMealItem] = None
-    dinner: Optional[DraftMealItem] = None
-    bedtime: Optional[DraftMealItem] = None
+    meals: List[DraftMealItem] = []
     model_config = ConfigDict(extra='allow')
+
+class DraftWeek(BaseModel):
+    weekNumber: int
+    days: List[DraftDayPlan]
 
 class DraftPlanResponse(BaseModel):
     planId: str
@@ -1378,7 +1361,7 @@ class DraftPlanResponse(BaseModel):
     status: str
     targets: Dict[str, Any]
     totalsAll: MacroTotals
-    days: List[DraftDayPlan]
+    weeks: List[DraftWeek]
 
 class CreateDraftResponse(BaseModel):
     planId: str = Field(..., description="The unique ID of the draft plan")

@@ -553,7 +553,7 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
     from utils.plan_formatters import format_draft_plan
     
     raw_payload = plan_data.get("plan_payload", {})
-    payload = {"days": format_draft_plan(raw_payload)}
+    payload = {"weeks": format_draft_plan(raw_payload)}
     payload["targets"] = raw_payload.get("targets", {})
     payload["totalsAll"] = raw_payload.get("totalsAll", {})
     
@@ -581,7 +581,7 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
         from utils.plan_formatters import format_draft_plan
         
         raw_payload = updated_plan.get("plan_payload", {})
-        payload = {"days": format_draft_plan(raw_payload)}
+        payload = {"weeks": format_draft_plan(raw_payload)}
         payload["targets"] = raw_payload.get("targets", {})
         payload["totalsAll"] = raw_payload.get("totalsAll", {})
         
@@ -1322,7 +1322,7 @@ async def studio_get_latest_plan(user_id: str = Depends(get_current_user_id)):
     if plan["status"] == "active":
         formatted_data = {"weeks": format_active_plan(payload)}
     else:
-        formatted_data = {"days": format_draft_plan(payload)}
+        formatted_data = {"weeks": format_draft_plan(payload)}
         
     # Retain top-level targets and summary if needed
     formatted_data["targets"] = payload.get("targets", {})

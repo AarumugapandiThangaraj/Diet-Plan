@@ -61,7 +61,8 @@ def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = No
                     "macros": {k: float(v) for k, v in macros.items()},
                     "consumed": meal_id in consumed_meal_ids,
                     "foods": foods_list,
-                    "ingredients": meal.get("ingredients")
+                    "ingredients": meal.get("ingredients"),
+                    "is_food_swappable": len(foods_list) > 1 if foods_list else (len(meal.get("ingredients", [])) > 1 if isinstance(meal.get("ingredients"), list) else False)
                 })
             
             days_data.append({
@@ -105,13 +106,65 @@ def format_draft_plan(plan_payload: Dict[str, Any]) -> List[Dict[str, Any]]:
                         day_totals[mk] += float(macros.get(mk) or 0.0)
             formatted_day["totals"] = day_totals
             
-        # Map sessions explicitly 
-        for session, meal in day_plan.items():
-            if isinstance(meal, dict):
+        # Map sessions explicitly in order
+        session_order = ["early_morning", "breakfast", "mid_morning", "lunch", "evening", "dinner", "bedtime"]
+        day_meals = []
+        for session in session_order:
+            meal = day_plan.get(session)
+            if meal and isinstance(meal, dict):
                 # Ensure the meal object has standard UI fields mapped correctly if needed
                 meal["name"] = str(meal.get("name") or meal.get("meal_name") or "")
-                formatted_day[session] = meal
+                meal["imageUrl"] = str(meal.get("imageUrl") or meal.get("image_ID") or "")
+                meal["session"] = session
                 
+                # Determine scheduled time
+                scheduled_time = meal.get("scheduled_time") or meal.get("time") or ""
+                if not scheduled_time:
+                    time_map = {
+                        "early_morning": "06:00 AM",
+                        "breakfast": "08:30 AM",
+                        "mid_morning": "11:00 AM",
+                        "lunch": "01:00 PM",
+                        "evening": "04:30 PM",
+                        "dinner": "08:00 PM",
+                        "bedtime": "10:00 PM"
+                    }
+                    scheduled_time = time_map.get(session, "12:00 PM")
+                meal["scheduledTime"] = scheduled_time
+                
+                # Determine if food swappable
+                meal_foods = meal.get("foods") or meal.get("ingredients") or []
+                if isinstance(meal_foods, str):
+                    try:
+                        import json
+                        meal_foods = json.loads(meal_foods)
+                    except:
+                        meal_foods = meal_foods.split(',')
+                meal["is_food_swappable"] = len(meal_foods) > 1 if isinstance(meal_foods, list) else False
+                
+                day_meals.append(meal)
+                
+        formatted_day["meals"] = day_meals
         formatted_days.append(formatted_day)
         
-    return formatted_days
+    weeks_data = []
+    current_week = []
+    week_num = 1
+    
+    for day in formatted_days:
+        current_week.append(day)
+        if len(current_week) == 7:
+            weeks_data.append({
+                "weekNumber": week_num,
+                "days": current_week
+            })
+            week_num += 1
+            current_week = []
+            
+    if current_week:
+        weeks_data.append({
+            "weekNumber": week_num,
+            "days": current_week
+        })
+        
+    return weeks_data

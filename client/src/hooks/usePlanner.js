@@ -61,20 +61,35 @@ export function usePlanner(profile, targets, setTargets) {
           } else if (data.status === 'draft') {
             const nextAssignment = {}
             const nextPools = {}
-            const plansArray = Array.isArray(data.days) ? data.days : (data.plan ? [data.plan] : [])
+            const plansArray = data.weeks ? data.weeks.flatMap(w => w.days || []) : (Array.isArray(data.days) ? data.days : (data.plan ? [data.plan] : []))
             
-            // Extract mealTimes from the first day plan keys (or fallback)
-            const extractedTimes = plansArray.length > 0 
-                ? Object.keys(plansArray[0]).filter(k => !['day_number', '_totals', 'dayNumber', 'planDayId', 'totals'].includes(k))
-                : (data.mealTimes || [])
-            data.mealTimes = extractedTimes
+            // Extract mealTimes
+            const extractedTimes = new Set()
+            for (const dayPlan of plansArray) {
+                if (dayPlan.meals && Array.isArray(dayPlan.meals)) {
+                    for (const meal of dayPlan.meals) {
+                        extractedTimes.add(meal.session)
+                    }
+                } else {
+                   // Fallback for flat object keys
+                   Object.keys(dayPlan).filter(k => !['day_number', '_totals', 'dayNumber', 'planDayId', 'totals'].includes(k)).forEach(t => extractedTimes.add(t))
+                }
+            }
+            const mealTimes = Array.from(extractedTimes)
+            data.mealTimes = mealTimes
             
-            for (const mt of extractedTimes) {
+            for (const mt of mealTimes) {
               const assignedIds = []
               const uniqueMealsMap = new Map()
 
               for (const dayPlan of plansArray) {
-                const meal = dayPlan[mt]
+                let meal = null;
+                if (dayPlan.meals && Array.isArray(dayPlan.meals)) {
+                    meal = dayPlan.meals.find(m => m.session === mt)
+                } else {
+                    meal = dayPlan[mt]
+                }
+                
                 if (meal) {
                    const mealIdStr = String(meal.Meal_ID || meal.id || '')
                    assignedIds.push(mealIdStr)
@@ -201,24 +216,44 @@ export function usePlanner(profile, targets, setTargets) {
   }, [result])
   const updateResultMeal = async (dayIndex, mealTime, patch) => {
     if (!result) return
-    const days = result.days || 1
-    const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
     let nextState;
 
-    if (days === 1) {
-      const plan = { ...(result.plan || {}) }
-      const item = plan?.[mealTime]
-      if (!item) return
-      plan[mealTime] = { ...item, ...patch }
-      nextState = withRecomputedTotals({ ...result, plan })
+    if (result.weeks) {
+        const nextWeeks = JSON.parse(JSON.stringify(result.weeks))
+        const flatDays = nextWeeks.flatMap(w => w.days || [])
+        const safeDayIndex = Math.max(0, Math.min(flatDays.length - 1, dayIndex || 0))
+        const targetDay = flatDays[safeDayIndex]
+        
+        if (targetDay) {
+            if (targetDay.meals && Array.isArray(targetDay.meals)) {
+                const mIdx = targetDay.meals.findIndex(m => m.session === mealTime)
+                if (mIdx !== -1) {
+                    targetDay.meals[mIdx] = { ...targetDay.meals[mIdx], ...patch }
+                }
+            } else {
+                if (targetDay[mealTime]) targetDay[mealTime] = { ...targetDay[mealTime], ...patch }
+            }
+        }
+        nextState = withRecomputedTotals({ ...result, weeks: nextWeeks })
     } else {
-      const plans = Array.isArray(result.days) ? result.days.slice() : []
-      const dayPlan = { ...(plans[safeDayIndex] || {}) }
-      const item = dayPlan?.[mealTime]
-      if (!item) return
-      dayPlan[mealTime] = { ...item, ...patch }
-      plans[safeDayIndex] = dayPlan
-      nextState = withRecomputedTotals({ ...result, days: plans })
+        const days = result.days || 1
+        const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
+
+        if (days === 1) {
+          const plan = { ...(result.plan || {}) }
+          const item = plan?.[mealTime]
+          if (!item) return
+          plan[mealTime] = { ...item, ...patch }
+          nextState = withRecomputedTotals({ ...result, plan })
+        } else {
+          const plans = Array.isArray(result.days) ? result.days.slice() : []
+          const dayPlan = { ...(plans[safeDayIndex] || {}) }
+          const item = dayPlan?.[mealTime]
+          if (!item) return
+          dayPlan[mealTime] = { ...item, ...patch }
+          plans[safeDayIndex] = dayPlan
+          nextState = withRecomputedTotals({ ...result, days: plans })
+        }
     }
 
     setResult(nextState)
@@ -232,10 +267,23 @@ export function usePlanner(profile, targets, setTargets) {
 
   const getMealFromResult = (dayIndex, mealTime) => {
     if (!result) return null
-    const days = result.days || 1
-    const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
-    if (days === 1) return result?.plan?.[mealTime] || null
-    return result?.days?.[safeDayIndex]?.[mealTime] || null
+    if (result.weeks) {
+        // Find the day by index across weeks
+        const flatDays = result.weeks.flatMap(w => w.days || [])
+        const safeDayIndex = Math.max(0, Math.min(flatDays.length - 1, dayIndex || 0))
+        const targetDay = flatDays[safeDayIndex]
+        if (!targetDay) return null
+        if (targetDay.meals && Array.isArray(targetDay.meals)) {
+            return targetDay.meals.find(m => m.session === mealTime) || null
+        }
+        return targetDay[mealTime] || null
+    } else {
+        // Fallback for older flat plan payloads during testing
+        const days = result.days || 1
+        const safeDayIndex = Math.max(0, Math.min(days - 1, dayIndex || 0))
+        if (days === 1) return result?.plan?.[mealTime] || null
+        return result?.days?.[safeDayIndex]?.[mealTime] || null
+    }
   }
 
   const closeSwapModal = () => {
@@ -549,8 +597,8 @@ export function usePlanner(profile, targets, setTargets) {
     for (let dayIndex = 0; dayIndex < selectionDays; dayIndex++) {
       for (const mealTime of selectedMealTimes) {
         const newMealId = assignmentByTime[mealTime]?.[dayIndex];
-        const oldMeal = result.days[dayIndex]?.[mealTime];
-        const oldMealId = String(oldMeal?.Meal_ID || '');
+        const oldMeal = getMealFromResult(dayIndex, mealTime);
+        const oldMealId = String(oldMeal?.Meal_ID || oldMeal?.id || '');
         
         if (newMealId && oldMealId && newMealId !== oldMealId) {
           const mealInstanceId = String(oldMeal?.id || oldMeal?.Meal_ID || '');
@@ -672,13 +720,13 @@ export function usePlanner(profile, targets, setTargets) {
     setSwapState((prev) => ({ ...prev, loading: true, error: '' }))
     try {
       const chosen = option?.meal || option
-      const replacementMealId = chosen?.id || chosen?.Meal_ID || chosen?.meal_id
+      const replacementMealId = chosen?.mealId || chosen?.id || chosen?.Meal_ID || chosen?.meal_id
 
       const patchOperations = [
         {
           type: 'swap',
           mealInstanceId: swapState.meal?.id || swapState.meal?.Meal_ID,
-          replacementMealId: replacementMealId
+          replacementMealId: String(replacementMealId)
         }
       ]
 
