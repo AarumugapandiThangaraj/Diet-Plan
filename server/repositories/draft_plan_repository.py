@@ -17,13 +17,13 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                 raise RepositoryException("Invalid ID format")
 
             # Start transaction explicitly if not already started
-            # Fetch the draft plan
-            stmt = select(DietPlan).filter_by(id=pid, user_id=uid, status='draft').with_for_update()
+            # Fetch the plan
+            stmt = select(DietPlan).filter_by(id=pid, user_id=uid).with_for_update()
             res = await session.execute(stmt)
             plan = res.scalar_one_or_none()
 
             if not plan:
-                raise RepositoryException("Draft plan not found")
+                raise RepositoryException("Plan not found")
             
             if plan.version != version:
                 raise RepositoryException("Version mismatch. Plan was modified by another request.")
@@ -55,68 +55,107 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     if not dp_day or not m_session:
                         continue
                         
-                    from database.models import Meal, Cuisine
-                    stmt = select(Meal, Cuisine).join(Cuisine, Meal.cuisine_id == Cuisine.id).filter(Meal.id == int(new_meal_id))
-                    res = await session.execute(stmt)
-                    row = res.first()
-                    if not row:
-                        continue
+                    if op.type == "food_swap":
+                        scaled_meal = op.customMealPayload or {}
+                        # For food swaps, the underlying catalog meal ID stays the same as before
+                        db_new_meal_id = dp_meal.meal_id
+                    else:
+                        from database.models import Meal, Cuisine
+                        stmt = select(Meal, Cuisine).join(Cuisine, Meal.cuisine_id == Cuisine.id).filter(Meal.id == int(new_meal_id))
+                        res = await session.execute(stmt)
+                        row = res.first()
+                        if not row:
+                            continue
                         
-                    db_new_meal, db_cuisine = row
-                    cuisine_code = db_cuisine.code
-                    
-                    from repositories.meal_repository import get_meal_index_by_id_async
-                    idx = await get_meal_index_by_id_async(cuisine_code)
-                    new_meal = idx.get(new_meal_id)
-                    if not new_meal:
-                        continue
+                        db_new_meal, db_cuisine = row
+                        cuisine_code = db_cuisine.code
                         
-                    from services.ranking_service import session_target_macros
-                    
-                    targets = {
-                        "caloriesKcal": float(plan.target_calories_kcal or 2000),
-                        "proteinG": float(plan.target_protein_g or 100),
-                        "carbsG": float(plan.target_carbs_g or 250),
-                        "fatG": float(plan.target_fat_g or 60),
-                        "fiberG": float(plan.target_fiber_g or 30)
-                    }
-                    sess_targets = session_target_macros(targets, m_session.code)
-                    
-                    from domain.scaling_formulas import scale_meal_to_targets
-                    scale_info = scale_meal_to_targets(new_meal, sess_targets)
-                    scaled_meal = scale_info["scaledMeal"]
-                    
-                    stmt = select(DietPlanMealFood).filter_by(plan_meal_id=instance_id)
-                    res = await session.execute(stmt)
-                    old_foods = res.scalars().all()
-                    for f in old_foods:
-                        await session.delete(f)
+                        from repositories.meal_repository import get_meal_index_by_id_async
+                        idx = await get_meal_index_by_id_async(cuisine_code)
+                        new_meal = idx.get(new_meal_id)
+                        if not new_meal:
+                            continue
+                            
+                        from services.ranking_service import session_target_macros
                         
-                    dp_meal.meal_id = db_new_meal.id
-                    meal_macros = scaled_meal.get("_macros") or scaled_meal.get("macros") or {}
-                    dp_meal.calories_kcal = meal_macros.get("caloriesKcal", 0.0)
-                    dp_meal.protein_g = meal_macros.get("proteinG", 0.0)
-                    dp_meal.carbs_g = meal_macros.get("carbsG", 0.0)
-                    dp_meal.fat_g = meal_macros.get("fatG", 0.0)
-                    dp_meal.fiber_g = meal_macros.get("fiberG", 0.0)
-                    
-                    from database.models import Food
-                    for sf in scaled_meal.get("foods_struct", []):
-                        client_food_id = int(sf.get("id")) if sf.get("id") is not None else None
+                        targets = {
+                            "caloriesKcal": float(plan.target_calories_kcal or 2000),
+                            "proteinG": float(plan.target_protein_g or 100),
+                            "carbsG": float(plan.target_carbs_g or 250),
+                            "fatG": float(plan.target_fat_g or 60),
+                            "fiberG": float(plan.target_fiber_g or 30)
+                        }
+                        sess_targets = session_target_macros(targets, m_session.code)
                         
-                        stmt = select(Food.id).filter_by(id=client_food_id)
-                        db_food_id = (await session.execute(stmt)).scalar()
+                        from domain.scaling_formulas import scale_meal_to_targets
+                        scale_info = scale_meal_to_targets(new_meal, sess_targets)
+                        scaled_meal = scale_info["scaledMeal"]
+                        db_new_meal_id = db_new_meal.id
                         
-                        food_obj = DietPlanMealFood(
-                            plan_meal_id=dp_meal.id,
-                            food_id=db_food_id,
-                            quantity=sf.get("quantity", 0),
-                            unit=sf.get("unit", "g")
+                    if op.type == "food_swap":
+                        scaled_meal = op.customMealPayload or {}
+                        
+                        db_new_meal_id = int(scaled_meal.get("Meal_ID") or scaled_meal.get("id") or scaled_meal.get("mealId") or dp_meal.meal_id)
+                        
+                        # Update DietPlanMeal via SQLAlchemy UPDATE
+                        upd_stmt = update(DietPlanMeal).where(DietPlanMeal.id == instance_id).values(
+                            meal_id=db_new_meal_id,
+                            calories_kcal=scaled_meal.get("macros", {}).get("caloriesKcal", 0.0),
+                            protein_g=scaled_meal.get("macros", {}).get("proteinG", 0.0),
+                            carbs_g=scaled_meal.get("macros", {}).get("carbsG", 0.0),
+                            fat_g=scaled_meal.get("macros", {}).get("fatG", 0.0),
+                            fiber_g=scaled_meal.get("macros", {}).get("fiberG", 0.0)
                         )
-                        session.add(food_obj)
-                        await session.flush()
+                        await session.execute(upd_stmt)
                         
-                    affected_day_ids.add(dp_day.id)
+                        stmt = select(DietPlanMealFood).filter_by(plan_meal_id=instance_id)
+                        res = await session.execute(stmt)
+                        old_foods = res.scalars().all()
+                        
+                        new_foods = scaled_meal.get("foods_struct") or scaled_meal.get("foods") or []
+                        
+                        from database.models import Food
+                        
+                        min_len = min(len(old_foods), len(new_foods))
+                        
+                        food_instance_ids = op.foodInstanceIds or []
+                        
+                        # UPDATE existing foods
+                        for i in range(min_len):
+                            sf = new_foods[i]
+                            client_food_id = int(sf.get("id")) if sf.get("id") is not None else None
+                            db_food_id = (await session.execute(select(Food.id).filter_by(id=client_food_id))).scalar()
+                            
+                            # if we have matching food instance IDs from payload, we could match them, but sequential update is fine
+                                
+                            old_foods[i].food_id = db_food_id
+                            old_foods[i].quantity = sf.get("quantity", 0)
+                            old_foods[i].unit = sf.get("unit", "g")
+                            
+                        # INSERT extra foods
+                        if len(new_foods) > len(old_foods):
+                            for i in range(len(old_foods), len(new_foods)):
+                                sf = new_foods[i]
+                                client_food_id = int(sf.get("id")) if sf.get("id") is not None else None
+                                db_food_id = (await session.execute(select(Food.id).filter_by(id=client_food_id))).scalar()
+                                
+                                food_obj = DietPlanMealFood(
+                                    plan_meal_id=dp_meal.id,
+                                    food_id=db_food_id,
+                                    quantity=sf.get("quantity", 0),
+                                    unit=sf.get("unit", "g")
+                                )
+                                session.add(food_obj)
+                                
+                        # DELETE excess foods
+                        if len(old_foods) > len(new_foods):
+                            for i in range(len(new_foods), len(old_foods)):
+                                await session.delete(old_foods[i])
+                                
+                        await session.flush()
+                        affected_day_ids.add(dp_day.id)
+                        
+                        continue
 
             # Update version
             plan.version += 1

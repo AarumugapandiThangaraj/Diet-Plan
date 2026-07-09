@@ -146,7 +146,7 @@ async def find_complementary_meals(
     stmt = (
         select(Meal)
         .join(MealSession, Meal.meal_session_id == MealSession.id)
-        .where(MealSession.name_en == session_name)
+        .where(MealSession.code == session_name.lower())
     )
     if cuisine:
         stmt = stmt.join(Cuisine, Meal.cuisine_id == Cuisine.id).where(Cuisine.code == cuisine)
@@ -159,7 +159,7 @@ async def find_complementary_meals(
     
     valid_meals = []
     for m in all_session_meals:
-        meal_food_ids = {mf.food.id for mf in m.meal_foods if mf.food}
+        meal_food_ids = {str(mf.food.id) for mf in m.meal_foods if mf.food}
         if keep_food_ids and not keep_food_ids.issubset(meal_food_ids):
             continue
         if avoid_food_ids and not avoid_food_ids.isdisjoint(meal_food_ids):

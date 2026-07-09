@@ -29,10 +29,10 @@ export function fetchFoodSwapOptions(meal, foodName, { topN = 5, signal } = {}) 
   })
 }
 
-export function applyFoodSwap(meal, option, { signal } = {}) {
+export function applyFoodSwap(meal, option, planId, version, { signal } = {}) {
   return httpJson('/api/studio/swap/food/apply', {
     method: 'POST',
-    body: { meal, option },
+    body: { meal, option, planId, version },
     signal
   })
 }

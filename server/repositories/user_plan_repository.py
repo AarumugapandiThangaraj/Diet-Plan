@@ -55,6 +55,7 @@ async def _load_plan_from_stmt(session, stmt) -> Optional[dict]:
                 for pfood in pmeal.meal_foods_rel:
                     food_dict = {
                         "id": str(pfood.food.id) if pfood.food else None,
+                        "food_instance_id": str(pfood.id),
                         "name": pfood.food.food_name if pfood.food else None,
                         "quantity": float(pfood.quantity),
                         "unit": pfood.unit

@@ -551,7 +551,8 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
 
     import sys, os
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-    from utils.plan_formatters import format_draft_plan
+    from utils.plan_formatters import format_draft_plan, format_active_plan
+    from services.planner_service import get_active_user_plan_service
     
     raw_payload = plan_data.get("plan_payload", {})
     payload = {"weeks": format_draft_plan(raw_payload)}
@@ -561,6 +562,20 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
     payload["planId"] = plan_data.get("plan_id")
     payload["version"] = plan_data.get("version")
     payload["status"] = plan_data.get("status")
+    
+    active_plan = await get_active_user_plan_service(user_id)
+    if active_plan:
+        active_payload = active_plan.get("plan_payload", {})
+        payload["activePlan"] = {
+            "weeks": format_active_plan(active_payload),
+            "targets": active_payload.get("targets", {}),
+            "totalsAll": active_payload.get("totalsAll", {}),
+            "planId": active_plan.get("plan_id"),
+            "version": active_plan.get("version"),
+            "status": active_plan.get("status")
+        }
+    else:
+        payload["activePlan"] = None
 
     return payload
 
@@ -579,16 +594,22 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
         
         import sys, os
         sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-        from utils.plan_formatters import format_draft_plan
+        from utils.plan_formatters import format_draft_plan, format_active_plan
         
         raw_payload = updated_plan.get("plan_payload", {})
-        payload = {"weeks": format_draft_plan(raw_payload)}
+        status = updated_plan.get("status")
+        
+        if status == "active":
+            payload = {"weeks": format_active_plan(raw_payload)}
+        else:
+            payload = {"weeks": format_draft_plan(raw_payload)}
+            
         payload["targets"] = raw_payload.get("targets", {})
         payload["totalsAll"] = raw_payload.get("totalsAll", {})
         
         payload["planId"] = updated_plan.get("plan_id")
         payload["version"] = updated_plan.get("version")
-        payload["status"] = updated_plan.get("status")
+        payload["status"] = status
 
         return payload
     except RepositoryException as e:
@@ -848,7 +869,9 @@ async def studio_swap_meal_apply(req: MealSwapApplyRequest):
     except Exception as e:
         import logging
         logging.error(f"Error applying meal swap: {str(e)}")
-        raise HTTPException(status_code=500, detail="Internal server error applying swap.")@router.post(
+        raise HTTPException(status_code=500, detail="Internal server error applying swap.")
+
+@router.post(
     "/swap/food/options",
     response_model=SwapFoodOptionsResponse,
     tags=["Swaps"],
@@ -886,12 +909,14 @@ async def studio_swap_meal_apply(req: MealSwapApplyRequest):
         }
     }
 )
-def studio_swap_food_options(req: FoodSwapOptionsRequest):
+async def studio_swap_food_options(req: FoodSwapOptionsRequest):
     meal = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
     cuisine = meal.get("cuisine_type") or "north_indian"
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
-    return get_food_swap_options_service(meal=meal, food_name=req.foodName, top_n=req.topN, cuisine=str(cuisine))
+        
+    from services.swap_service import get_food_swap_options_async
+    return await get_food_swap_options_async(meal=meal, food_name=req.foodName, top_n=req.topN, cuisine=str(cuisine))
 
 @router.post(
     "/swap/food/apply",
@@ -907,13 +932,15 @@ def studio_swap_food_options(req: FoodSwapOptionsRequest):
         "  -H \"Content-Type: application/json\" \\\n"
         "  -d '{\n"
         "    \"meal\": {\n"
-        "      \"id\": \"meal_123\",\n"
+        "      \"id\": \"e2343b67-a021-4f11-92b1-5e8f8103c819\",\n"
         "      \"name\": \"Oatmeal with Almonds\",\n"
-        "      \"foods\": [\n"
-        "        {\"name\": \"Oats\", \"quantity\": 50, \"unit\": \"g\"},\n"
-        "        {\"name\": \"Almonds\", \"quantity\": 10, \"unit\": \"g\"}\n"
+        "      \"foods_struct\": [\n"
+        "        {\"name\": \"Oats\", \"quantity\": 50, \"unit\": \"g\", \"food_instance_id\": \"a9043b67-a021-4f11-92b1-5e8f8103c822\"},\n"
+        "        {\"name\": \"Almonds\", \"quantity\": 10, \"unit\": \"g\", \"food_instance_id\": \"b7043b67-c011-4f21-93a1-2e8f8103d111\"}\n"
         "      ]\n"
         "    },\n"
+        "    \"planId\": \"3b351669-8451-490a-9e98-583d40cba2ed\",\n"
+        "    \"version\": 1,\n"
         "    \"option\": {\n"
         "      \"source_food\": \"Almonds\",\n"
         "      \"target_food\": \"Walnuts\",\n"
@@ -939,12 +966,34 @@ def studio_swap_food_options(req: FoodSwapOptionsRequest):
         }
     }
 )
-def studio_swap_food_apply(req: FoodSwapApplyRequest):
+async def studio_swap_food_apply(req: FoodSwapApplyRequest, user_id: str = Depends(get_current_user_id)):
     meal_dict = req.meal.model_dump(by_alias=True) if hasattr(req.meal, "model_dump") else dict(req.meal or {})
     cuisine = meal_dict.get("cuisine_type") or "north_indian"
     if isinstance(cuisine, list) and len(cuisine) > 0:
         cuisine = cuisine[0]
+        
     meal = apply_food_swap_service(meal=meal_dict, option=req.option, cuisine=str(cuisine))
+    
+    if req.planId and req.version is not None:
+        from schemas import PatchOperation
+        from services.planner_service import update_draft_user_plan_service
+        
+        foods = meal_dict.get("foods_struct") or meal_dict.get("foods") or []
+        food_instance_ids = [str(f.get("food_instance_id")) for f in foods if f.get("food_instance_id")]
+        
+        op = PatchOperation(
+            type="food_swap",
+            mealInstanceId=str(meal_dict.get("id")),
+            customMealPayload=meal,
+            foodInstanceIds=food_instance_ids
+        )
+        
+        try:
+            await update_draft_user_plan_service(req.planId, user_id, req.version, [op])
+        except Exception as e:
+            import logging
+            logging.getLogger("app.studio").error(f"Failed to persist food swap to DB: {e}")
+            
     return {"meal": meal}
 
 @router.post(

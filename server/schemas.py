@@ -411,13 +411,15 @@ class FoodSwapApplyRequest(BaseModel):
         json_schema_extra={
             "example": {
                 "meal": {
-                    "id": "meal_123",
+                    "id": "e2343b67-a021-4f11-92b1-5e8f8103c819",
                     "name": "Oatmeal with Almonds",
-                    "foods": [
-                        {"name": "Oats", "quantity": 50, "unit": "g"},
-                        {"name": "Almonds", "quantity": 10, "unit": "g"}
+                    "foods_struct": [
+                        {"name": "Oats", "quantity": 50, "unit": "g", "food_instance_id": "a9043b67-a021-4f11-92b1-5e8f8103c822"},
+                        {"name": "Almonds", "quantity": 10, "unit": "g", "food_instance_id": "b7043b67-c011-4f21-93a1-2e8f8103d111"}
                     ]
                 },
+                "planId": "3b351669-8451-490a-9e98-583d40cba2ed",
+                "version": 1,
                 "option": {
                     "source_food": "Almonds",
                     "target_food": "Walnuts",
@@ -431,6 +433,14 @@ class FoodSwapApplyRequest(BaseModel):
                 }
             }
         }
+    )
+    planId: Optional[str] = Field(
+        None,
+        description="The ID of the plan being edited, if applicable."
+    )
+    version: Optional[int] = Field(
+        None,
+        description="The current version of the plan, for optimistic concurrency."
     )
     meal: MealPayload = Field(
         ...,
@@ -782,6 +792,7 @@ class PlanFoodItem(BaseModel):
     model_config = ConfigDict(extra='allow')
 
     id: Optional[str] = Field(None, description="Unique food identifier from the catalog.")
+    food_instance_id: Optional[str] = Field(None, description="Database row ID of this food in DietPlanMealFood table.")
     name: Optional[str] = Field(None, description="Display name of the food item.")
     quantity: float = Field(0.0, description="Scaled serving quantity.")
     unit: str = Field("g", description="Unit of measurement (g, ml, piece, etc.).")
@@ -1283,11 +1294,13 @@ class CreateDraftRequest(BuildPlanRequest):
 
 
 class PatchOperation(BaseModel):
-    type: str = Field(..., description="Type of operation: 'move' or 'swap'")
+    type: str = Field(..., description="Type of operation: 'move', 'swap', or 'food_swap'")
     mealInstanceId: str = Field(..., description="UUID of the meal instance to modify")
     targetDayNumber: Optional[int] = Field(None, description="Required for 'move' operation")
     targetSession: Optional[str] = Field(None, description="Required for 'move' operation")
     replacementMealId: Optional[str] = Field(None, description="Required for 'swap' operation")
+    customMealPayload: Optional[Dict[str, Any]] = Field(None, description="Required for 'food_swap' operation")
+    foodInstanceIds: Optional[List[str]] = Field(None, description="Required for 'food_swap' operation to track existing DietPlanMealFood IDs")
 
 
 class PatchPlanRequest(BaseModel):

@@ -215,6 +215,32 @@ body {
 .swapOptionCard span { font-size: 12px; color: var(--mutedLight); }
 .swapCta { font-size: 12px; font-weight: 700; color: var(--secondary); }
 
+/* ===== Dark Swap Modal (Food Swap) ===== */
+.swapModalSplit { display: flex; height: 500px; max-height: 80vh; margin: -20px; border-radius: inherit; overflow: hidden; background: #0B1319; color: #E0E6ED; }
+.swapModalLeftPane { width: 40%; background: linear-gradient(180deg, #101B24 0%, #0B1319 100%); border-right: 1px solid rgba(255, 255, 255, 0.08); padding: 24px; display: flex; flex-direction: column; overflow-y: auto; }
+.swapModalLeftPane h3 { margin: 0 0 4px; font-size: 20px; color: #fff; }
+.swapModalLeftPane .mealImg { width: 100%; height: 140px; border-radius: 12px; object-fit: cover; margin-bottom: 16px; background: rgba(255, 255, 255, 0.05); }
+.swapModalRightPane { width: 60%; padding: 24px; display: flex; flex-direction: column; background: #070B0F; overflow-y: auto; position: relative; }
+.swapModalRightPane h4 { margin: 0 0 16px; font-size: 18px; color: #fff; display: flex; align-items: center; gap: 8px; }
+.swapFoodItem { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s ease; display: flex; justify-content: space-between; align-items: center; }
+.swapFoodItem:hover { background: rgba(255, 255, 255, 0.06); }
+.swapFoodItem.active { border-color: #00E5FF; background: rgba(0, 229, 255, 0.05); box-shadow: 0 0 12px rgba(0, 229, 255, 0.15); }
+.swapFoodItem strong { display: block; font-size: 15px; color: #fff; }
+.swapFoodItem span { font-size: 13px; color: rgba(255, 255, 255, 0.5); }
+.swapReplacementCard { background: #14222B; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 16px; margin-bottom: 12px; display: flex; flex-direction: column; gap: 12px; transition: all 0.2s ease; }
+.swapReplacementCard:hover { border-color: rgba(255, 255, 255, 0.15); transform: translateY(-1px); }
+.swapReplacementHeader { display: flex; justify-content: space-between; align-items: flex-start; }
+.swapReplacementHeader strong { font-size: 16px; color: #fff; }
+.swapReplacementHeader span { font-size: 13px; color: rgba(255, 255, 255, 0.5); display: block; margin-top: 2px; }
+.swapTags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.swapTag { background: rgba(255, 255, 255, 0.05); padding: 2px 8px; border-radius: 4px; font-size: 11px; color: rgba(255, 255, 255, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); }
+.swapMacros { display: flex; gap: 12px; font-size: 12px; color: rgba(255, 255, 255, 0.6); background: rgba(0, 0, 0, 0.2); padding: 8px 12px; border-radius: 8px; align-items: center; }
+.swapMacros span { display: flex; align-items: center; gap: 4px; }
+.btnReplace { background: #00E5FF; color: #000; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 13px; cursor: pointer; transition: all 0.2s ease; }
+.btnReplace:hover { background: #33EEFF; box-shadow: 0 0 10px rgba(0, 229, 255, 0.3); }
+.swapCloseBtn { position: absolute; top: 20px; right: 20px; background: rgba(255, 255, 255, 0.1); border: none; width: 32px; height: 32px; border-radius: 50%; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: all 0.2s ease; }
+.swapCloseBtn:hover { background: rgba(255, 255, 255, 0.2); }
+
 /* ===== Animations ===== */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(12px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }

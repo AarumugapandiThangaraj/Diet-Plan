@@ -760,12 +760,32 @@ export function usePlanner(profile, targets, setTargets) {
   }
 
   const applyFoodSwapSelection = async (option) => {
-    if (!swapState?.meal) return
+    if (!swapState?.meal || !result?.planId) return
     setSwapState((prev) => ({ ...prev, loading: true, error: '' }))
     try {
-      const applied = await applyFoodSwap(swapState.meal, option)
+      const applied = await applyFoodSwap(swapState.meal, option, result.planId, result.version)
       const nextMeal = applied?.meal
-      if (nextMeal) updateResultMeal(swapState.dayIndex, swapState.mealTime, nextMeal)
+      
+      // We don't just update the result meal locally anymore because the backend mutated the plan.
+      // We should fetch the latest draft plan to ensure we have the recalculated totals.
+      const updatedDraft = await getDraftPlan(result.planId)
+      
+      const nextState = { ...result }
+      nextState.version = updatedDraft.version
+      if (updatedDraft.status) {
+         nextState.status = updatedDraft.status
+      }
+      if (updatedDraft.activePlan) {
+         nextState.activePlan = updatedDraft.activePlan
+      }
+      
+      const formattedDraft = withRecomputedTotals(updatedDraft)
+      
+      nextState.weeks = formattedDraft.weeks
+      nextState.targets = formattedDraft.targets || nextState.targets
+      nextState.totalsAll = formattedDraft.totalsAll || nextState.totalsAll
+      
+      setResult(nextState)
       closeSwapModal()
     } catch (e) {
       setSwapState((prev) => ({ ...prev, loading: false, error: String(e?.message || e || 'Failed to swap food.') }))
