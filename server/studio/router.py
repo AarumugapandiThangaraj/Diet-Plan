@@ -53,7 +53,8 @@ from schemas import (
     PatchPlanRequest,
     ActivatePlanRequest,
     ActivatePlanResponse,
-    RecipeDetailResponse
+    RecipeDetailResponse,
+    RecipeDetailsResponse
 )
 from services.planner_service import (
     fetch_daily_targets_service,
@@ -1480,3 +1481,31 @@ async def create_new_health_profile(profile: CreateHealthProfileRequest, user_id
             "is_latest": uhp.is_latest
         }
         return profile_res
+
+
+@router.get(
+    "/meal-plans/meal/{mealInstanceId}",
+    response_model=RecipeDetailsResponse,
+    tags=["Recipes"],
+    summary="Get Recipe Details for Recipe View UI",
+    description="Retrieves the recipe details, including recipe_name, description, macros, and component foods structured with specific ingredients and preparation instructions."
+)
+async def studio_get_recipe_details(mealInstanceId: str):
+    from schemas import RecipeDetailsResponse
+    from services.planner_service import get_recipe_details_service
+    recipe = await get_recipe_details_service(mealInstanceId)
+    if not recipe:
+        raise HTTPException(status_code=404, detail="Planned meal or recipe not found.")
+    is_food_swappable = len(recipe["foods_struct"]) > 1
+    return {
+        "mealInstanceId": recipe["mealInstanceId"],
+        "meal_id": recipe["meal_id"],
+        "is_food_swappable": is_food_swappable,
+        "recipe_name": recipe["recipe_name"],
+        "description": recipe["description"],
+        "imageUrl": recipe["imageUrl"],
+        "macros": recipe["macros"],
+        "preparation": recipe["preparation"],
+        "ingredients": recipe["ingredients"],
+        "foods_struct": recipe["foods_struct"]
+    }

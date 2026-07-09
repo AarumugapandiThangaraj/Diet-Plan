@@ -1,7 +1,7 @@
 from datetime import date
 from typing import Optional
 from sqlalchemy import select, update, and_, func, String, cast, desc, text
-from sqlalchemy.orm import selectinload
+from sqlalchemy.orm import selectinload, undefer
 from database.session import AsyncSessionLocal
 from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, MealSession, UserHealthProfile, Meal
 from utils.normalizers import _normalize_cuisine
@@ -523,4 +523,170 @@ async def get_meal_instance_details(meal_instance_id: str, user_id: str) -> Opti
         import logging
         logging.getLogger("app.repo").error(f"SQLAlchemyError in get_meal_instance_details:\n{traceback.format_exc()}")
         raise RepositoryException(f"Failed to load meal instance: {str(ex)}") from ex
+
+
+async def load_plan_meal_recipe(plan_meal_id: uuid.UUID) -> Optional[dict]:
+    try:
+        async with AsyncSessionLocal() as session:
+            from database.models import DietPlanMeal, DietPlanMealFood, Meal, MealIngredient, MealFood
+            stmt = (
+                select(DietPlanMeal)
+                .filter(DietPlanMeal.id == plan_meal_id)
+                .options(
+                    selectinload(DietPlanMeal.meal).options(
+                        selectinload(Meal.meal_ingredients),
+                        selectinload(Meal.meal_foods).selectinload(MealFood.food),
+                        undefer(Meal.preparation_steps),
+                        undefer(Meal.time),
+                        undefer(Meal.image)
+                    ),
+                    selectinload(DietPlanMeal.meal_foods_rel).selectinload(DietPlanMealFood.food)
+                )
+            )
+            res = await session.execute(stmt)
+            plan_meal = res.scalars().first()
+            if not plan_meal or not plan_meal.meal:
+                return None
+
+            meal = plan_meal.meal
+
+            # Calculate scaling factor
+            meal_calories = float(meal.calories_kcal) if meal.calories_kcal else 0.0
+            planned_calories = float(plan_meal.calories_kcal) if plan_meal.calories_kcal else 0.0
+            
+            scale_factor = 1.0
+            if plan_meal.scale_applied is not None and float(plan_meal.scale_applied) > 0:
+                scale_factor = float(plan_meal.scale_applied)
+            elif meal_calories > 0 and planned_calories > 0:
+                scale_factor = planned_calories / meal_calories
+
+            # Parse serving sizes helper
+            import re
+            def parse_serving_size(serving_str: str):
+                if not serving_str:
+                    return 1.0, "serving"
+                num_match = re.search(r"[\d\.]+", serving_str)
+                unit_match = re.search(r"[a-zA-Z]+", serving_str)
+                base_qty = float(num_match.group(0)) if num_match else 1.0
+                unit = unit_match.group(0) if unit_match else "serving"
+                return base_qty, unit
+
+            # Helper to get prep time string
+            def get_prep_time(time_str: str) -> str:
+                if not time_str:
+                    return "30 mins prep"
+                match = re.findall(r"(\d{2}):(\d{2})", time_str)
+                if len(match) == 2:
+                    h1, m1 = map(int, match[0])
+                    h2, m2 = map(int, match[1])
+                    diff = (h2 * 60 + m2) - (h1 * 60 + m1)
+                    if diff > 0:
+                        return f"{diff} mins prep"
+                if "min" in time_str.lower():
+                    return time_str
+                return "30 mins prep"
+
+            # Parse foods
+            foods = []
+            for pfood in plan_meal.meal_foods_rel:
+                food_id = pfood.food_id
+                food_name = pfood.food.food_name if pfood.food else "Unknown"
+                
+                base_qty = 1.0
+                unit = pfood.unit or "g"
+                for mf in meal.meal_foods:
+                    if mf.food_id == food_id:
+                        base_qty = float(mf.serving_size) if mf.serving_size is not None else 1.0
+                        break
+                
+                scaled_qty = base_qty * scale_factor
+                foods.append({
+                    "food_instance_id": str(pfood.id),
+                    "food_id": food_id,
+                    "food_name": food_name,
+                    "quantity": scaled_qty,
+                    "unit": unit,
+                    "ingredients": [],
+                    "prep_steps": []
+                })
+
+            if not foods:
+                return None
+
+            # Calculate proportional calories
+            total_calories = float(plan_meal.calories_kcal) if plan_meal.calories_kcal else 0.0
+            food_calories = int(round(total_calories / len(foods)))
+
+            # Match scoring function
+            def compute_match_score(text: str, food_name_str: str) -> float:
+                text_lower = text.lower()
+                food_lower = food_name_str.lower()
+                if food_lower in text_lower or text_lower in food_lower:
+                    return 10.0 + len(food_lower)
+                words_text = set(re.findall(r"\b\w{3,}\b", text_lower))
+                words_food = set(re.findall(r"\b\w{3,}\b", food_lower))
+                overlap = words_text.intersection(words_food)
+                if overlap:
+                    return float(len(overlap))
+                return 0.0
+
+            # Partition preparation steps
+            prep_steps = meal.preparation_steps or []
+            if len(foods) == 1:
+                foods[0]["prep_steps"] = list(prep_steps)
+            elif len(foods) > 1:
+                for step in prep_steps:
+                    best_score = -1.0
+                    best_food = None
+                    for f in foods:
+                        score = compute_match_score(step, f["food_name"])
+                        if score > best_score:
+                            best_score = score
+                            best_food = f
+                    if best_score <= 0 or best_food is None:
+                        best_food = foods[0]
+                    best_food["prep_steps"].append(step)
+
+            # Scaled flat list of ingredients for the entire meal
+            ingredients = [
+                {
+                    "name": mi.ingredient_name,
+                    "quantity": float(mi.quantity) * scale_factor,
+                    "unit": mi.unit or "g"
+                }
+                for mi in meal.meal_ingredients
+            ]
+
+            # Format food list
+            foods_struct = []
+            for f in foods:
+                foods_struct.append({
+                    "food_instance_id": f["food_instance_id"],
+                    "food_id": f["food_id"],
+                    "food_name": f["food_name"],
+                    "quantity": f["quantity"],
+                    "unit": f["unit"]
+                })
+
+            recipe_details = {
+                "mealInstanceId": str(plan_meal.id),
+                "meal_id": plan_meal.meal_id,
+                "recipe_name": meal.recipe_name,
+                "description": meal.description,
+                "imageUrl": meal.image,
+                "macros": {
+                    "caloriesKcal": float(plan_meal.calories_kcal) if plan_meal.calories_kcal else 0.0,
+                    "proteinG": float(plan_meal.protein_g) if plan_meal.protein_g else 0.0,
+                    "carbsG": float(plan_meal.carbs_g) if plan_meal.carbs_g else 0.0,
+                    "fatG": float(plan_meal.fat_g) if plan_meal.fat_g else 0.0,
+                    "fiberG": float(plan_meal.fiber_g) if plan_meal.fiber_g else 0.0
+                },
+                "preparation": "\n".join(prep_steps) if prep_steps else "",
+                "ingredients": ingredients,
+                "foods_struct": foods_struct
+            }
+            return recipe_details
+
+    except SQLAlchemyError as ex:
+        raise RepositoryException("Failed to load planned meal recipe details") from ex
 

@@ -203,3 +203,13 @@ async def get_latest_user_plan_service(user_identifier: str) -> Optional[dict]:
     from repositories.user_plan_repository import load_latest_user_plan
     plan = await load_latest_user_plan(user_identifier)
     return plan
+
+
+async def get_recipe_details_service(plan_meal_id: str) -> Optional[dict]:
+    import uuid
+    from repositories.user_plan_repository import load_plan_meal_recipe
+    try:
+        meal_uuid = uuid.UUID(plan_meal_id)
+    except ValueError:
+        return None
+    return await load_plan_meal_recipe(meal_uuid)

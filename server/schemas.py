@@ -1454,3 +1454,30 @@ class UserHealthProfileResponse(BaseModel):
     
     model_config = ConfigDict(from_attributes=True)
 
+
+
+class RecipeIngredient(BaseModel):
+    name: str = Field(..., description="Name of the ingredient")
+    quantity: float = Field(..., description="Scaled quantity of the ingredient")
+    unit: str = Field(..., description="Measurement unit of the ingredient")
+
+
+class FoodRecipeInfo(BaseModel):
+    food_instance_id: str = Field(..., description="The planned meal food instance ID (UUID)")
+    food_id: int = Field(..., description="The ID of the catalog food item")
+    food_name: str = Field(..., description="Name of the component food")
+    quantity: float = Field(..., description="Scaled quantity of the component food")
+    unit: str = Field(..., description="Measurement unit of the food item")
+
+
+class RecipeDetailsResponse(BaseModel):
+    mealInstanceId: str = Field(..., description="The planned meal instance ID (UUID)")
+    meal_id: int = Field(..., description="The ID of the catalog meal item")
+    is_food_swappable : bool = Field(..., description="Whether the food in the meal can be swapped")
+    recipe_name: str = Field(..., description="The recipe/meal name")
+    description: Optional[str] = Field(None, description="Detailed explanation ('Why this for you')")
+    imageUrl: Optional[str] = Field(None, description="Image URL of the recipe/meal")
+    macros: Dict[str, float] = Field(..., description="Scaled total macros for the planned meal")
+    preparation: Optional[str] = Field(None, description="Preparation steps for the entire recipe")
+    ingredients: List[RecipeIngredient] = Field(default_factory=list, description="List of all ingredients for the entire meal")
+    foods_struct: List[FoodRecipeInfo] = Field(default_factory=list, description="Component foods list")
