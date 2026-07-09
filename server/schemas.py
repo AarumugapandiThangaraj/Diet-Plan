@@ -382,13 +382,17 @@ class FoodSwapOptionsRequest(BaseModel):
         description="Complete context of the current meal payload containing the food item to swap.",
         json_schema_extra={
             "example": {
-                "id": "meal_123",
-                "name": "Oatmeal with Almonds",
-                "cuisine_type": "continental",
-                "foods": [
-                    {"name": "Oats", "quantity": 50, "unit": "g"},
-                    {"name": "Almonds", "quantity": 10, "unit": "g"}
-                ]
+                "meal": {
+                    "id": "meal_123",
+                    "name": "Oatmeal with Almonds",
+                    "cuisine_type": "continental",
+                    "foods": [
+                        {"name": "Oats", "quantity": 50, "unit": "g"},
+                        {"name": "Almonds", "quantity": 10, "unit": "g"}
+                    ]
+                },
+                "foodName": "Almonds",
+                "topN": 5
             }
         }
     )

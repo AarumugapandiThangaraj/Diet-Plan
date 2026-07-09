@@ -874,7 +874,7 @@ async def studio_swap_meal_apply(req: MealSwapApplyRequest):
 @router.post(
     "/swap/food/options",
     response_model=SwapFoodOptionsResponse,
-    tags=["Swaps"],
+    tags=["Swaps",'dev'],
     summary="Get Food Item Swap Options",
     description=(
         "Fetches alternative, single-food substitutes within a meal. E.g. replacing 'Almonds' with 'Walnuts' "
@@ -921,7 +921,7 @@ async def studio_swap_food_options(req: FoodSwapOptionsRequest):
 @router.post(
     "/swap/food/apply",
     response_model=SwapMealApplyResponse,
-    tags=["Swaps"],
+    tags=["Swaps","dev"],
     summary="Apply Food Item Swap to Meal",
     description=(
         "Modifies the meal payload by replacing the selected food item with its swap option, "
@@ -993,8 +993,17 @@ async def studio_swap_food_apply(req: FoodSwapApplyRequest, user_id: str = Depen
         except Exception as e:
             import logging
             logging.getLogger("app.studio").error(f"Failed to persist food swap to DB: {e}")
+            raise HTTPException(status_code=500, detail=f"Failed to persist food swap to DB: {str(e)}")
             
-    return {"meal": meal}
+    return {
+        "success": True,
+        "data": {
+            "code": "UPDATED",
+            "success": True,
+            "status": 200,
+            "message": "The meal swap has been applied successfully."
+        }
+    }
 
 @router.post(
     "/swap/ingredient/options",
@@ -1405,24 +1414,24 @@ async def studio_get_latest_plan(user_id: str = Depends(get_current_user_id)):
     
     return formatted_data
 
-@router.get(
-    "/meal-plans/meals/{mealInstanceId}",
-    response_model=RecipeDetailResponse,
-    tags=["Diet Plan - User"],
-    summary="Get Meal Details for Recipe View",
-    description="Retrieves all information required for the Recipe Detail screen for a specific meal instance."
-)
-async def studio_get_meal_details(mealInstanceId: str, user_id: str = Depends(get_current_user_id)):
-    from repositories.user_plan_repository import get_meal_instance_details
-    meal_details = await get_meal_instance_details(mealInstanceId, user_id)
+# @router.get(
+#     "/meal-plans/meals/{mealInstanceId}",
+#     response_model=RecipeDetailResponse,
+#     tags=["Diet Plan - User"],
+#     summary="Get Meal Details for Recipe View",
+#     description="Retrieves all information required for the Recipe Detail screen for a specific meal instance."
+# )
+# async def studio_get_meal_details(mealInstanceId: str, user_id: str = Depends(get_current_user_id)):
+#     from repositories.user_plan_repository import get_meal_instance_details
+#     meal_details = await get_meal_instance_details(mealInstanceId, user_id)
     
-    if not meal_details:
-        raise HTTPException(status_code=404, detail="Meal instance not found")
+#     if not meal_details:
+#         raise HTTPException(status_code=404, detail="Meal instance not found")
         
-    if "error" in meal_details and meal_details["error"] == "forbidden":
-        raise HTTPException(status_code=403, detail="Forbidden")
+#     if "error" in meal_details and meal_details["error"] == "forbidden":
+#         raise HTTPException(status_code=403, detail="Forbidden")
         
-    return meal_details
+#     return meal_details
 
 from schemas import UserHealthProfileResponse, CreateHealthProfileRequest
 
@@ -1535,7 +1544,7 @@ async def create_new_health_profile(profile: CreateHealthProfileRequest, user_id
 @router.get(
     "/meal-plans/meal/{mealInstanceId}",
     response_model=RecipeDetailsResponse,
-    tags=["Recipes"],
+    tags=["Recipes","dev"],
     summary="Get Recipe Details for Recipe View UI",
     description="Retrieves the recipe details, including recipe_name, description, macros, and component foods structured with specific ingredients and preparation instructions."
 )
