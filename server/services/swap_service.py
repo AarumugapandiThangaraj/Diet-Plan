@@ -79,7 +79,7 @@ def get_meal_swap_options(*args, **kwargs) -> Dict[str, Any]:
 
 async def get_food_swap_options_async(*, meal: Dict[str, Any], food_name: str, top_n: int = 5, cuisine: str = "") -> Dict[str, Any]:
     # 1. Identify the food to swap out
-    foods = meal.get("foods_struct") or []
+    foods = meal.get("foods_struct") or meal.get("foods") or []
     source_idx = -1
     source_food = None
     best_score = -1.0

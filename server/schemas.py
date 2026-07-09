@@ -421,14 +421,17 @@ class FoodSwapApplyRequest(BaseModel):
                 "planId": "3b351669-8451-490a-9e98-583d40cba2ed",
                 "version": 1,
                 "option": {
-                    "source_food": "Almonds",
-                    "target_food": "Walnuts",
-                    "ratio": 1.2,
-                    "target_macros": {
-                        "calories": 654,
-                        "protein": 15.2,
-                        "carbs": 13.7,
-                        "fat": 65.2
+                    "replacementMealId": "meal_20002",
+                    "replacement": {
+                        "name": "Walnuts",
+                        "quantity": 12,
+                        "unit": "g"
+                    },
+                    "projectedMealMacros": {
+                        "caloriesKcal": 654,
+                        "proteinG": 15.2,
+                        "carbsG": 13.7,
+                        "fatG": 65.2
                     }
                 }
             }
@@ -1126,20 +1129,6 @@ class CuisineListResponse(BaseModel):
     targetMacros: Dict[str, float] = Field(..., description="Nutritional macro targets used as standard to filter alternative options.")
     options: List[Dict[str, Any]] = Field(..., description="List of matching meal items available for swap.")
 
-
-class SwapMealApplyResponse(BaseModel):
-    model_config = ConfigDict(
-        json_schema_extra={
-            "example": {
-                "meal": {
-                    "id": "meal_777",
-                    "name": "Grilled Chicken Rice Bowl",
-                    "macros": {"caloriesKcal": 490.0, "proteinG": 32.0, "carbsG": 58.0, "fatG": 14.0, "fiberG": 6.0}
-                }
-            }
-        }
-    )
-    meal: Dict[str, Any] = Field(..., description="The newly updated meal payload with scaled/recalculated macros.")
 
 
 
