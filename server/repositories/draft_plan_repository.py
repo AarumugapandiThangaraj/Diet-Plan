@@ -179,7 +179,7 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
         logging.getLogger("app.repo").error(f"Failed to update draft plan:\n{traceback.format_exc()}")
         raise RepositoryException(f"Failed to update draft plan: {str(e)}")
 
-async def activate_draft_plan(plan_id: str, user_id: str, version: int) -> bool:
+async def activate_draft_plan(plan_id: str, user_id: str) -> bool:
     try:
         async with AsyncSessionLocal() as session:
             try:
@@ -203,9 +203,6 @@ async def activate_draft_plan(plan_id: str, user_id: str, version: int) -> bool:
             if plan.status != 'draft':
                 raise RepositoryException(f"Plan cannot be activated from status '{plan.status}'")
 
-            if plan.version != version:
-                raise RepositoryException("Version mismatch. Plan was modified by another request.")
-            
             # Archive existing active plans
             stmt_active = select(DietPlan).filter_by(user_id=uid, status='active')
             res_active = await session.execute(stmt_active)
@@ -221,7 +218,7 @@ async def activate_draft_plan(plan_id: str, user_id: str, version: int) -> bool:
             event = DietPlanEvent(
                 plan_id=plan.id,
                 event_type="PLAN_ACTIVATED",
-                details={"version": version}
+                # details={"version": version}
             )
             session.add(event)
 

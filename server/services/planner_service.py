@@ -196,8 +196,8 @@ from repositories.draft_plan_repository import update_draft_plan, activate_draft
 async def update_draft_user_plan_service(plan_id: str, user_id: str, version: int, operations: list) -> dict:
     return await update_draft_plan(plan_id, user_id, version, operations)
 
-async def activate_draft_user_plan_service(plan_id: str, user_id: str, version: int) -> bool:
-    return await activate_draft_plan(plan_id, user_id, version)
+async def activate_draft_user_plan_service(plan_id: str, user_id: str) -> bool:
+    return await activate_draft_plan(plan_id, user_id)
 
 async def get_latest_user_plan_service(user_identifier: str) -> Optional[dict]:
     from repositories.user_plan_repository import load_latest_user_plan

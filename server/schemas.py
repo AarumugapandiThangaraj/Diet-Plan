@@ -865,7 +865,16 @@ class MealSwapOptionsResponse(BaseModel):
                 "currentMeal": {
                     "mealInstanceId": "02627b12-8428-4b13-9be2-4811d4c95f81",
                     "mealId": "meal_123",
-                    "mealTime": "lunch"
+                    "name":"Biriyani",
+                    "mealTime": "lunch",
+                    "macros": {
+                    "caloriesKcal": 500.0,
+                    "proteinG": 30.0,
+                    "carbsG": 60.0,
+                    "fatG": 15.0,
+                    "fiberG": 8.0
+                },
+
                 },
                 "options": [
                     {
@@ -1413,3 +1422,35 @@ class RecipeDetailResponse(BaseModel):
     preparation: RecipePreparationResponse
     personalization: RecipePersonalizationResponse
     permissions: RecipePermissionsResponse
+
+class CreateHealthProfileRequest(BaseModel):
+    activityLevel: str = Field(..., description="Daily physical activity level (e.g., 'moderate').")
+    age: int = Field(..., description="Age in years.")
+    gender: str = Field(..., description="Gender (male, female).")
+    heightCm: float = Field(..., description="Height in centimeters.")
+    weightKg: float = Field(..., description="Weight in kilograms.")
+    
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "activityLevel": "moderate",
+                "age": 28,
+                "gender": "male",
+                "heightCm": 175.0,
+                "weightKg": 75.0
+            }
+        }
+    )
+
+class UserHealthProfileResponse(BaseModel):
+    
+    target_weight_kg: Optional[float] = None
+    bmi: Optional[float] = None
+    bmi_category: Optional[str] = None
+    bmr_kcal: Optional[int] = None
+    tdee_kcal: Optional[int] = None
+    target_water_l: Optional[float] = None
+    is_latest: bool
+    
+    model_config = ConfigDict(from_attributes=True)
+

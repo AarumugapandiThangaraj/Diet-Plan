@@ -599,13 +599,14 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
 @router.post(
     "/meal-plans/{plan_id}/activate",
     response_model=ActivatePlanResponse,
+    tags=["dev"],
     status_code=200,
     summary="Activate Draft Meal Plan"
 )
-async def activate_draft_plan(plan_id: str, req: ActivatePlanRequest, user_id: str = Depends(get_current_user_id)):
+async def activate_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_id)):
     from exceptions.repository import RepositoryException
     try:
-        success = await activate_draft_user_plan_service(plan_id, user_id, req.version)
+        success = await activate_draft_user_plan_service(plan_id, user_id)
         if success:
             return {"success": True, "status": "active"}
         raise HTTPException(status_code=500, detail="Failed to activate plan.")
@@ -700,6 +701,7 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
     mt = req.mealTime
     current_meal_id = req.currentMealId
     target_macros = req.targetMacros
+    current_meal_name = ""
 
     if req.planMealId:
         try:
@@ -722,8 +724,25 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
                     "fatG": float(meal_obj.fat_g or 0.0),
                     "fiberG": float(meal_obj.fiber_g or 0.0)
                 }
+                if meal_obj.meal_id:
+                    from database.models import Meal
+                    meal_name_stmt = select(Meal.recipe_name).where(Meal.id == meal_obj.meal_id)
+                    meal_name_res = (await session.execute(meal_name_stmt)).scalar_one_or_none()
+                    if meal_name_res:
+                        current_meal_name = meal_name_res
         except ValueError:
             raise HTTPException(status_code=400, detail="Invalid planMealId format")
+    else:
+        if current_meal_id:
+            try:
+                async with AsyncSessionLocal() as session:
+                    from database.models import Meal
+                    meal_name_stmt = select(Meal.recipe_name).where(Meal.id == int(current_meal_id))
+                    meal_name_res = (await session.execute(meal_name_stmt)).scalar_one_or_none()
+                    if meal_name_res:
+                        current_meal_name = meal_name_res
+            except Exception:
+                pass
 
     if not mt or not current_meal_id:
         raise HTTPException(status_code=400, detail="mealTime and currentMealId are required if planMealId is not provided")
@@ -763,7 +782,9 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
         "currentMeal": {
             "mealInstanceId": req.planMealId,
             "mealId": current_meal_id,
-            "mealTime": mt
+            "name": current_meal_name,
+            "mealTime": mt,
+            "macros": target_macros if target_macros else {}
         },
         "options": simplified_options
     }
@@ -1352,3 +1373,110 @@ async def studio_get_meal_details(mealInstanceId: str, user_id: str = Depends(ge
         raise HTTPException(status_code=403, detail="Forbidden")
         
     return meal_details
+
+from schemas import UserHealthProfileResponse, CreateHealthProfileRequest
+
+@router.get(
+    "/health-profile/latest",
+
+    response_model=UserHealthProfileResponse,
+    tags=["User","dev"],
+    summary="Get Latest Health Profile",
+    description="Retrieves the most recent health profile for the current user."
+)
+async def get_latest_health_profile(user_id: str = Depends(get_current_user_id)):
+    from database.models.user import UserHealthProfile
+    async with AsyncSessionLocal() as session:
+        stmt = select(UserHealthProfile).where(
+            UserHealthProfile.user_id == uuid.UUID(user_id),
+            UserHealthProfile.is_latest == True
+        )
+        result = await session.execute(stmt)
+        profile = result.scalar_one_or_none()
+        
+        if not profile:
+            stmt_fallback = select(UserHealthProfile).where(
+                UserHealthProfile.user_id == uuid.UUID(user_id)
+            ).order_by(UserHealthProfile.created_at.desc()).limit(1)
+            result_fallback = await session.execute(stmt_fallback)
+            profile = result_fallback.scalar_one_or_none()
+            
+        if not profile:
+            raise HTTPException(status_code=404, detail="Health profile not found.")
+            
+        profile_dict = {
+            "target_weight_kg": float(profile.target_weight_kg) if profile.target_weight_kg else None,
+            "bmi": float(profile.bmi) if profile.bmi else None,
+            "bmi_category": profile.bmi_category,
+            "bmr_kcal": profile.bmr_kcal,
+            "tdee_kcal": profile.tdee_kcal,
+            "target_water_l": float(profile.target_water_l) if profile.target_water_l else None,
+            "is_latest": profile.is_latest
+        }
+        return profile_dict
+
+@router.post(
+    "/health-profile",
+    response_model=UserHealthProfileResponse,
+    tags=["User", "dev"],
+    summary="Create New Health Profile",
+    description="Creates a new health profile for the user based on raw demographic data. Calculates BMR, TDEE, and targets, then saves it as the latest profile."
+)
+async def create_new_health_profile(profile: CreateHealthProfileRequest, user_id: str = Depends(get_current_user_id)):
+    from database.models.user import UserHealthProfile
+    from sqlalchemy import update
+    
+    profile_dict = profile.model_dump()
+    # Add defaults required by the planner formulas
+    profile_dict["goal"] = "skin_repair" 
+    
+    targets = fetch_daily_targets_service(profile_dict)
+    
+    def _int(v): return int(float(v)) if v is not None and str(v).strip() else None
+    def _float(v): return float(v) if v is not None and str(v).strip() else None
+    
+    uid = uuid.UUID(user_id)
+    
+    activity_mapping = {
+        "sedentary": "sedentary",
+        "light": "lightly_active",
+        "moderate": "moderately_active",
+        "heavy": "very_active"
+    }
+    act_level = profile_dict.get("activityLevel")
+    mapped_activity = activity_mapping.get(act_level, act_level)
+    
+    async with AsyncSessionLocal() as session:
+        await session.execute(
+            update(UserHealthProfile).where(UserHealthProfile.user_id == uid).values(is_latest=False)
+        )
+        
+        uhp = UserHealthProfile(
+            user_id=uid,
+            age=_int(profile_dict.get("age")),
+            gender=profile_dict.get("gender"),
+            height_cm=_float(profile_dict.get("heightCm")),
+            weight_kg=_float(profile_dict.get("weightKg")),
+            target_weight_kg=_float(targets.get("targetWeightKg")),
+            bmi=_float(targets.get("bmi")),
+            bmi_category=targets.get("bmiCategory"),
+            bmr_kcal=_int(targets.get("bmr")),
+            tdee_kcal=_int(targets.get("tdee")),
+            target_water_l=_float(targets.get("waterL")),
+            activity_level=mapped_activity,
+            is_latest=True
+        )
+        session.add(uhp)
+        await session.commit()
+        await session.refresh(uhp)
+        
+        profile_res = {
+            "target_weight_kg": float(uhp.target_weight_kg) if uhp.target_weight_kg else None,
+            "bmi": float(uhp.bmi) if uhp.bmi else None,
+            "bmi_category": uhp.bmi_category,
+            "bmr_kcal": uhp.bmr_kcal,
+            "tdee_kcal": uhp.tdee_kcal,
+            "target_water_l": float(uhp.target_water_l) if uhp.target_water_l else None,
+            "is_latest": uhp.is_latest
+        }
+        return profile_res
