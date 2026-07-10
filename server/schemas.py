@@ -1485,6 +1485,7 @@ class RecipeDetailsResponse(BaseModel):
     recipe_name: str = Field(..., description="The recipe/meal name")
     description: Optional[str] = Field(None, description="Detailed explanation ('Why this for you')")
     imageUrl: Optional[str] = Field(None, description="Image URL of the recipe/meal")
+    image_ID: Optional[str] = Field(None, description="Image ID / URL of the recipe/meal")
     preparation_time : Optional[str] = Field(None, description="Preparation of the recipe/meal")
     macros: Dict[str, float] = Field(..., description="Scaled total macros for the planned meal")
     preparation: Optional[str] = Field(None, description="Preparation steps for the entire recipe")

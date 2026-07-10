@@ -1,6 +1,6 @@
 from typing import Dict, Any, List
 
-def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = None) -> List[Dict[str, Any]]:
+def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = None, meal_lookup: Dict[str, Any] = None) -> List[Dict[str, Any]]:
     if consumed_meal_ids is None:
         consumed_meal_ids = set()
         
@@ -69,7 +69,7 @@ def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = No
                 day_meals.append({
                     "mealId": meal_id,
                     "name": str(meal.get("name") or meal.get("meal_name") or ""),
-                    "imageUrl": str(meal.get("image_ID") or ""),
+                    "image_ID": meal_lookup.get(str(meal.get("Meal_ID") or meal.get("meal_id") or meal_id), {}).get("image_ID", "") or str(meal.get("image_ID") or "") if meal_lookup else str(meal.get("image_ID") or ""),
                     "session": display_session,
                     "scheduledTime": scheduled_time,
                     "macros": {k: float(v) for k, v in macros.items()},
@@ -93,7 +93,7 @@ def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = No
         
     return weeks_data
 
-def format_draft_plan(plan_payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+def format_draft_plan(plan_payload: Dict[str, Any], meal_lookup: Dict[str, Any] = None) -> List[Dict[str, Any]]:
     plans_list = plan_payload.get("plans") if "plans" in plan_payload else [plan_payload.get("plan", {})]
     totals_by_day = plan_payload.get("totalsByDay", [])
     day_ids = plan_payload.get("dayIds", [])
@@ -128,7 +128,13 @@ def format_draft_plan(plan_payload: Dict[str, Any]) -> List[Dict[str, Any]]:
             if meal and isinstance(meal, dict):
                 # Ensure the meal object has standard UI fields mapped correctly if needed
                 meal["name"] = str(meal.get("name") or meal.get("meal_name") or "")
-                meal["imageUrl"] = str(meal.get("imageUrl") or meal.get("image_ID") or "")
+                
+                meal_db_id = str(meal.get("Meal_ID") or meal.get("meal_id") or "")
+                img_val = meal_lookup.get(meal_db_id, {}).get("image_ID", "") if meal_lookup and meal_db_id else ""
+                if not img_val:
+                    img_val = str(meal.get("image_ID") or meal.get("imageUrl") or "")
+                meal["image_ID"] = img_val
+                meal.pop("imageUrl", None)
                 
                 # Map session names for display
                 session_name_map = {

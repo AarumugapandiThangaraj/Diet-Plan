@@ -95,7 +95,7 @@ def _rank_view(meal: Dict[str, Any], score: float, scaled_macros: Dict[str, floa
         "Discription": meal.get("method") or "",
         # "cuisine_type": meal.get("cuisine_type") or "",
         # "country": meal.get("country") or "",
-        "image_ID": meal.get("image_ID") or "",
+        "imageUrl": meal.get("image_ID") or "",
         # "diet_type": meal.get("diet_type"),
         # "time": meal.get("time") or "",
         # "serving_size": meal.get("serving_size") or "",

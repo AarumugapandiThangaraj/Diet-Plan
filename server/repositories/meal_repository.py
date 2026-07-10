@@ -3,7 +3,7 @@ import threading
 from typing import Any, Dict, List, Set, Optional
 
 from sqlalchemy import select
-from sqlalchemy.orm import selectinload
+from sqlalchemy.orm import selectinload, undefer
 
 from database.session import AsyncSessionLocal
 from database.models.catalog import (
@@ -50,7 +50,8 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
                 selectinload(Meal.meal_session),
                 selectinload(Meal.primary_goals).selectinload(MealPrimaryGoal.primary_goal),
                 selectinload(Meal.secondary_goals).selectinload(MealSecondaryGoal.secondary_goal),
-                selectinload(Meal.cuisine)
+                selectinload(Meal.cuisine),
+                undefer(Meal.image)
             )
         )
         if cuisine_code:
@@ -99,7 +100,7 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
                 "description": m.description or "",
                 "allergens": [],
                 "preparation_steps": [],
-                "image_ID": "",
+                "image_ID": m.image or "",
                 "foods_struct": foods_struct,
                 "ingredients_struct": ingredients_struct,
                 "macros": totals,

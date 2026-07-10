@@ -554,8 +554,12 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
     from utils.plan_formatters import format_draft_plan, format_active_plan
     from services.planner_service import get_active_user_plan_service
     
+    from repositories.meal_repository import load_master_meals_async
+    all_meals = (await load_master_meals_async("south_indian")) + (await load_master_meals_async("north_indian"))
+    meal_lookup = {str(m["Meal_ID"]): m for m in all_meals if m.get("Meal_ID")}
+
     raw_payload = plan_data.get("plan_payload", {})
-    payload = {"weeks": format_draft_plan(raw_payload)}
+    payload = {"weeks": format_draft_plan(raw_payload, meal_lookup=meal_lookup)}
     payload["targets"] = raw_payload.get("targets", {})
     payload["totalsAll"] = raw_payload.get("totalsAll", {})
     
@@ -567,7 +571,7 @@ async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_i
     if active_plan:
         active_payload = active_plan.get("plan_payload", {})
         payload["activePlan"] = {
-            "weeks": format_active_plan(active_payload),
+            "weeks": format_active_plan(active_payload, meal_lookup=meal_lookup),
             "targets": active_payload.get("targets", {}),
             "totalsAll": active_payload.get("totalsAll", {}),
             "planId": active_plan.get("plan_id"),
@@ -596,13 +600,17 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
         sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
         from utils.plan_formatters import format_draft_plan, format_active_plan
         
+        from repositories.meal_repository import load_master_meals_async
+        all_meals = (await load_master_meals_async("south_indian")) + (await load_master_meals_async("north_indian"))
+        meal_lookup = {str(m["Meal_ID"]): m for m in all_meals if m.get("Meal_ID")}
+
         raw_payload = updated_plan.get("plan_payload", {})
         status = updated_plan.get("status")
         
         if status == "active":
-            payload = {"weeks": format_active_plan(raw_payload)}
+            payload = {"weeks": format_active_plan(raw_payload, meal_lookup=meal_lookup)}
         else:
-            payload = {"weeks": format_draft_plan(raw_payload)}
+            payload = {"weeks": format_draft_plan(raw_payload, meal_lookup=meal_lookup)}
             
         payload["targets"] = raw_payload.get("targets", {})
         payload["totalsAll"] = raw_payload.get("totalsAll", {})
@@ -724,6 +732,7 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
     current_meal_id = req.currentMealId
     target_macros = req.targetMacros
     current_meal_name = ""
+    current_meal_image_id = ""
 
     if req.planMealId:
         try:
@@ -748,10 +757,12 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
                 }
                 if meal_obj.meal_id:
                     from database.models import Meal
-                    meal_name_stmt = select(Meal.recipe_name).where(Meal.id == meal_obj.meal_id)
-                    meal_name_res = (await session.execute(meal_name_stmt)).scalar_one_or_none()
-                    if meal_name_res:
-                        current_meal_name = meal_name_res
+                    from sqlalchemy.orm import undefer
+                    meal_stmt = select(Meal.recipe_name, Meal.image).where(Meal.id == meal_obj.meal_id)
+                    meal_res = (await session.execute(meal_stmt)).first()
+                    if meal_res:
+                        current_meal_name = meal_res[0]
+                        current_meal_image_id = meal_res[1] or ""
         except ValueError:
             raise HTTPException(status_code=400, detail="Invalid planMealId format")
     else:
@@ -759,10 +770,12 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
             try:
                 async with AsyncSessionLocal() as session:
                     from database.models import Meal
-                    meal_name_stmt = select(Meal.recipe_name).where(Meal.id == int(current_meal_id))
-                    meal_name_res = (await session.execute(meal_name_stmt)).scalar_one_or_none()
-                    if meal_name_res:
-                        current_meal_name = meal_name_res
+                    from sqlalchemy.orm import undefer
+                    meal_stmt = select(Meal.recipe_name, Meal.image).where(Meal.id == int(current_meal_id))
+                    meal_res = (await session.execute(meal_stmt)).first()
+                    if meal_res:
+                        current_meal_name = meal_res[0]
+                        current_meal_image_id = meal_res[1] or ""
             except Exception:
                 pass
 
@@ -796,7 +809,8 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
             "macros": m.get("macros", {}),
             "score": opt.get("score", 0.0),
             "scaleFactorRequested": opt.get("scaleFactorRequested", 1.0),
-            "scaleFactorApplied": opt.get("scaleFactorApplied", 1.0)
+            "scaleFactorApplied": opt.get("scaleFactorApplied", 1.0),
+            "image_ID": m.get("image_ID") or ""
         })
 
     return {
@@ -806,7 +820,8 @@ async def studio_swap_meal_options(req: MealSwapOptionsRequest):
             "mealId": current_meal_id,
             "name": current_meal_name,
             "mealTime": mt,
-            "macros": target_macros if target_macros else {}
+            "macros": target_macros if target_macros else {},
+            "image_ID": current_meal_image_id
         },
         "options": simplified_options
     }
@@ -1295,12 +1310,11 @@ async def studio_dashboard(user_id: str = Depends(get_current_user_id)):
         "remainingCalories": remaining_calories
     }
     
-    # Construct weeks array using the new formatter
-    import sys, os
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-    from utils.plan_formatters import format_active_plan
-    
-    weeks_data = format_active_plan(plan_payload, consumed_meal_ids)
+    from repositories.meal_repository import load_master_meals_async
+    all_meals = (await load_master_meals_async("south_indian")) + (await load_master_meals_async("north_indian"))
+    meal_lookup = {str(m["Meal_ID"]): m for m in all_meals if m.get("Meal_ID")}
+
+    weeks_data = format_active_plan(plan_payload, consumed_meal_ids, meal_lookup=meal_lookup)
     
     return {
         "activePlan": True if plan_status == 'active' else False,
@@ -1403,10 +1417,14 @@ async def studio_get_latest_plan(user_id: str = Depends(get_current_user_id)):
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
     from utils.plan_formatters import format_active_plan, format_draft_plan
     
+    from repositories.meal_repository import load_master_meals_async
+    all_meals = (await load_master_meals_async("south_indian")) + (await load_master_meals_async("north_indian"))
+    meal_lookup = {str(m["Meal_ID"]): m for m in all_meals if m.get("Meal_ID")}
+
     if plan["status"] == "active":
-        formatted_data = {"weeks": format_active_plan(payload)}
+        formatted_data = {"weeks": format_active_plan(payload, meal_lookup=meal_lookup)}
     else:
-        formatted_data = {"weeks": format_draft_plan(payload)}
+        formatted_data = {"weeks": format_draft_plan(payload, meal_lookup=meal_lookup)}
         
     # Retain top-level targets and summary if needed
     formatted_data["targets"] = payload.get("targets", {})
@@ -1566,6 +1584,7 @@ async def studio_get_recipe_details(mealInstanceId: str):
         "recipe_name": recipe["recipe_name"],
         "description": recipe["description"],
         "imageUrl": recipe["imageUrl"],
+        "image_ID": recipe.get("imageUrl") or "",
         "macros": recipe["macros"],
         "preparation_time": "30 mins prep",
         "preparation": recipe["preparation"],
