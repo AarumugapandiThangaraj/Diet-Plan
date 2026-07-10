@@ -52,11 +52,25 @@ def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = No
                     }
                     scheduled_time = time_map.get(session, "12:00 PM")
                     
+                # Map session names for display
+                session_name_map = {
+                    "early_morning": "Early Morning",
+                    "breakfast": "Breakfast",
+                    "mid_morning": "Mid Morning Snack",
+                    "lunch": "Lunch",
+                    "evening": "Evening Snack",
+                    "dinner": "Dinner",
+                    "bedtime": "Bedtime"
+                }
+                display_session = str(meal.get("session") or session)
+                if display_session in session_name_map:
+                    display_session = session_name_map[display_session]
+                    
                 day_meals.append({
                     "mealId": meal_id,
                     "name": str(meal.get("name") or meal.get("meal_name") or ""),
                     "imageUrl": str(meal.get("image_ID") or ""),
-                    "session": session,
+                    "session": display_session,
                     "scheduledTime": scheduled_time,
                     "macros": {k: float(v) for k, v in macros.items()},
                     "consumed": meal_id in consumed_meal_ids,
@@ -115,7 +129,21 @@ def format_draft_plan(plan_payload: Dict[str, Any]) -> List[Dict[str, Any]]:
                 # Ensure the meal object has standard UI fields mapped correctly if needed
                 meal["name"] = str(meal.get("name") or meal.get("meal_name") or "")
                 meal["imageUrl"] = str(meal.get("imageUrl") or meal.get("image_ID") or "")
-                meal["session"] = session
+                
+                # Map session names for display
+                session_name_map = {
+                    "early_morning": "Early Morning",
+                    "breakfast": "Breakfast",
+                    "mid_morning": "Mid Morning Snack",
+                    "lunch": "Lunch",
+                    "evening": "Evening Snack",
+                    "dinner": "Dinner",
+                    "bedtime": "Bedtime"
+                }
+                display_session = str(meal.get("session") or session)
+                if display_session in session_name_map:
+                    display_session = session_name_map[display_session]
+                meal["session"] = display_session
                 
                 # Determine scheduled time
                 scheduled_time = meal.get("scheduled_time") or meal.get("time") or ""

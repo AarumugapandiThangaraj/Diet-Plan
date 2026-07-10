@@ -1,0 +1,986 @@
+[
+  {
+    "meal_id": "M001",
+    "name": "Liver Cleansing Drink | Fresh ginger, Turmeric, Black pepper, Lemon juice, Warm water, Honey"
+  },
+  {
+    "meal_id": "M002",
+    "name": "Healthy Sugar-Free Apple Sharbat | Apple, Water, Lemon juice, Pinch of cinnamon, Few basil seeds (sabja)"
+  },
+  {
+    "meal_id": "M003",
+    "name": "Amla-Ginger Shot | Fresh amla, Ginger, Honey, Water"
+  },
+  {
+    "meal_id": "M004",
+    "name": "Beetroot-Pomegranate Glow Shot | Beetroot, Pomegranate arils, Ginger, Lemon juice, Water"
+  },
+  {
+    "meal_id": "M005",
+    "name": "Carrot-Orange Vitamin Shot | Carrot, Orange, Water"
+  },
+  {
+    "meal_id": "M006",
+    "name": "Guava-Mint Vitamin Shot | Guava, Fresh mint leaves, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M007",
+    "name": "Pineapple-Mint Hydration Shot | Pineapple, Fresh mint leaves, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M008",
+    "name": "Cucumber-Mint Cooling Shot | Cucumber, Fresh mint leaves, Lemon juice"
+  },
+  {
+    "meal_id": "M009",
+    "name": "Green Apple-Ginger Shot | Green apple, Ginger, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M010",
+    "name": "Warm Water with Ghee and Soaked Methi | Warm water, Pure cow ghee, Fenugreek seeds"
+  },
+  {
+    "meal_id": "M011",
+    "name": "Soaked Black Sesame and Curry Leaf Water | Black sesame seeds, Fresh curry leaves, Warm water, Lemon juice"
+  },
+  {
+    "meal_id": "M012",
+    "name": "Soaked Fenugreek and Coriander Seed Water | Fenugreek seeds, Coriander seeds, Warm water"
+  },
+  {
+    "meal_id": "M013",
+    "name": "Soaked Chia and Tulsi Water | Chia seeds, Fresh tulsi (holy basil) leaves, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M014",
+    "name": "Soaked Raisins and Cumin Water | Raisins, Cumin seeds, Water"
+  },
+  {
+    "meal_id": "M015",
+    "name": "Soaked Flaxseed and Ajwain Water | Flaxseeds, Ajwain (carom seeds), Warm water"
+  },
+  {
+    "meal_id": "M016",
+    "name": "Soaked Fenugreek and Coconut Water | Fenugreek seeds, Tender coconut water"
+  },
+  {
+    "meal_id": "M017",
+    "name": "Soaked Dates and Cinnamon Water | Dates, Cinnamon stick, Water"
+  },
+  {
+    "meal_id": "M018",
+    "name": "Curry Leaf and Lemon Detox Water | Fresh curry leaves, Warm water, Lemon juice"
+  },
+  {
+    "meal_id": "M019",
+    "name": "Soaked Raisin-Fig Iron Tonic | Raisins, Dried fig, Water"
+  },
+  {
+    "meal_id": "M020",
+    "name": "Skin Glow drink | Beetroot, Carrot, Orange, Ground flaxseeds, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M021",
+    "name": "Retinol Glow Juice | Carrot, Papaya, Orange, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M022",
+    "name": "Nature's Glow Glass Skin Juice | Carrot, Beetroot, Apple, Cucumber, Lemon, Water"
+  },
+  {
+    "meal_id": "M023",
+    "name": "Green Glow Detox drink | Green apple, Celery, Spinach, Cucumber, Lemon, Ginger, Water"
+  },
+  {
+    "meal_id": "M024",
+    "name": "Tender Coconut and Basil Seed Drink | Tender coconut water, Basil (sabja) seeds"
+  },
+  {
+    "meal_id": "M025",
+    "name": "Pomegranate-Beet Pumpkin Seed Shot | Pomegranate arils, Beetroot, Pumpkin seeds, Water"
+  },
+  {
+    "meal_id": "M026",
+    "name": "Biotin Boost Drink | Low fat milk, Almonds, Sesame seeds, Honey"
+  },
+  {
+    "meal_id": "M027",
+    "name": "Hair Root Activation Drink | Warm water, Onion juice, Curry leaves, Fenugreek seeds, Lemon juice"
+  },
+  {
+    "meal_id": "M028",
+    "name": "Hair Pigmentation Support Drink | Fresh amla, Curry leaves, Warm water, Honey"
+  },
+  {
+    "meal_id": "M029",
+    "name": "Turmeric-Coconut Water Tonic | Tender coconut water, Fresh turmeric, Black pepper, Lemon juice"
+  },
+  {
+    "meal_id": "M030",
+    "name": "Turmeric-Cinnamon Detox Water | Water, Ground turmeric, Ground cinnamon, Black pepper, Lemon juice, Raw honey"
+  },
+  {
+    "meal_id": "M031",
+    "name": "Soaked Vetiver (Vettiver) Water | Vetiver (vettiver) root, Water"
+  },
+  {
+    "meal_id": "M032",
+    "name": "Banana Stem Juice Shot | Banana stem, Water, Lemon juice, Salt"
+  },
+  {
+    "meal_id": "M033",
+    "name": "Wake-Up Wellness Juice | Strawberries, Celery, Watermelon, Ginger, Lime juice, Water"
+  },
+  {
+    "meal_id": "M034",
+    "name": "Neem & Tulsi Hair Purifying Tonic | Fenugreek seeds, Cumin seeds, Fennel seeds, Fresh neem leaves, Fresh ginger, Turmeric, Fresh tulsi leaves, Black pepper, Warm water, Lemon juice"
+  },
+  {
+    "meal_id": "M035",
+    "name": "Triphala Golden Gut Cleanse | Triphala powder, Turmeric, Black pepper, Warm water, Honey"
+  },
+  {
+    "meal_id": "M036",
+    "name": "Idli with Sambar, Drumstick Leaf Powder Green Shot and Slivered Almonds | Idli, Toor dal, Mixed vegetables for sambar (drumstick, carrot), Tamarind, Sambar powder, Mustard seeds, curry leaves, For shot: Fresh drumstick (moringa) leaves, Water, Lemon juice, Honey, For nuts/seeds: Almonds, slivered"
+  },
+  {
+    "meal_id": "M037",
+    "name": "Idli with Coconut Chutney, Tomato Rasam, Fresh Orange Juice and Slivered Almonds | Idli, Grated coconut, Green chili, Ginger, Mustard seeds, curry leaves, Tomato, Tamarind pulp, Black pepper, cumin, Water, For juice: Fresh oranges, For nuts: Almonds, slivered"
+  },
+  {
+    "meal_id": "M038",
+    "name": "Dosa with Sambar, Fresh Amla Juice and Pumpkin Seeds | Ready fermented dosa batter, Olive oil, Toor dal, Tomato, Sambar powder, Tamarind pulp, Mustard seeds, curry leaves, Water, For juice: Fresh amla, For nuts: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M039",
+    "name": "Tomato Set Dosa with Mint Chutney, Pomegranate Juice and Ground Flaxseeds | Fermented dosa batter, Tomato, Olive oil, Mint leaves, Grated coconut, Green chili, Lemon juice, Mustard seeds, curry leaves, For juice: Fresh pomegranate, For nuts: Flaxseeds"
+  },
+  {
+    "meal_id": "M040",
+    "name": "Palak Dosa with Sambar, Chutney, Carrot-Ginger Juice and Toasted Sesame Seeds | Fermented dosa batter, Spinach puree, Olive oil, Toor dal, Drumstick pieces, Sambar powder, Tamarind, Grated coconut, Green chili, Mustard seeds, curry leaves, For juice: Carrot, For nuts: Sesame seeds"
+  },
+  {
+    "meal_id": "M041",
+    "name": "Ragi Dosa with Tomato Chutney, Beetroot-Apple Iron Smoothie and Pumpkin Seeds | Fermented ragi dosa batter, Olive oil, Tomato, Dry red chili, Garlic, Mustard seeds, curry leaves, Beetroot, Apple, Water, Lemon juice, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M042",
+    "name": "Flaxseed Dosa with Mint Chutney, Guava Juice and Crushed Walnuts | Fermented dosa batter, Flaxseeds, ground, Olive oil, Mint leaves, Grated coconut, Green chili, Lemon juice, Mustard seeds, curry leaves, For juice: Guava, For nuts: Walnuts"
+  },
+  {
+    "meal_id": "M043",
+    "name": "Moringa Egg Dosa with Ginger Chutney, Apple and Walnuts | Fermented dosa batter, Moringa (drumstick leaf) powder, Egg, Olive oil, Fresh ginger, Tamarind pulp, Dry red chili, Jaggery, Mustard seeds, curry leaves, Apple, For nuts/seeds: Walnuts"
+  },
+  {
+    "meal_id": "M044",
+    "name": "Wheat Dosa with Coconut Chutney, Apple-Beet Glow Smoothie and Ground Flaxseeds | Whole wheat dosa batter (fermented), Olive oil, Grated coconut, Green chili, Ginger, Mustard seeds, curry leaves, Apple, Beetroot, Water, Lemon juice, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M045",
+    "name": "Ragi Porridge with Boiled Egg, Orange and Pumpkin Seeds | Ragi flour, Water, Cumin seeds, Ginger, Salt, Egg, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M046",
+    "name": "Millet Porridge with Saut\u00e9ed Spinach, Beetroot-Lemon Juice and Pumpkin Seeds | Foxtail millet, Water, Cumin seeds, Ginger, Turmeric, Olive oil, Spinach, Garlic, For juice: Beetroot, For nuts: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M047",
+    "name": "Oats and Vegetable Khichdi with Papaya Juice and Chia Seeds | Rolled oats, Carrot, Green peas, Mustard seeds, curry leaves, Turmeric, Ginger, Olive oil, Water, For juice: Papaya, For nuts: Chia seeds"
+  },
+  {
+    "meal_id": "M048",
+    "name": "Oats Porridge with Boiled Egg, Cucumber-Coriander Detox Water, Kiwi-Lemon Juice and Sunflower Seeds | Rolled oats, Low, Water, Mustard seeds, curry leaves, Green chili, Ginger, Coconut oil, Egg, Cucumber, Fresh coriander leaves, Water, For juice: Kiwi, For nuts: Sunflower seeds"
+  },
+  {
+    "meal_id": "M049",
+    "name": "Oats Vegetable Upma with Guava Bites and Toasted Sesame Seeds | Rolled oats, Carrot, Beans, Green peas, Onion, Mustard seeds, curry leaves, Green chili, Olive oil, Water, Guava, For nuts/seeds: Sesame seeds"
+  },
+  {
+    "meal_id": "M050",
+    "name": "Multi Grain Java with Flaxseed Vegetable Salad, Watermelon Juice and Ground Flaxseeds | Multi, Water, Cumin seeds, Salt, Cucumber, Carrot, Tomato, Ground flaxseeds, Lemon juice, For juice: Watermelon, For nuts: Flaxseeds"
+  },
+  {
+    "meal_id": "M051",
+    "name": "Ragi Java with Sprouts Salad, Pomegranate Juice and Pumpkin Seeds | Ragi flour, Water, Buttermilk, Cumin seeds, Salt, Sprouted moong, Onion, Tomato, Lemon juice, Coriander leaves, For juice: Fresh pomegranate, For nuts: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M052",
+    "name": "Red Rice Puttu with Steamed Chickpeas, Kiwi-Spinach Vitality Smoothie and Ground Flaxseeds | Red rice puttu flour, Grated coconut, Water, Boiled black chickpeas, Onion, Tomato, Ginger, Coconut oil, South Indian curry powder, Kiwi, Spinach, Water, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M053",
+    "name": "Banana-Oats Puttu Bowl with Boiled Egg, Strawberry-Mint Antioxidant Shot and Pumpkin Seeds | Rolled oats, coarsely ground, Raw banana, grated, Grated coconut, Salt, Egg, Strawberries, Mint leaves, Water, Lemon juice, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M054",
+    "name": "Kappa Mash with Steamed Fish Curry, Curry Leaf-Coconut Water and Walnuts | Tapioca (kappa), Green chili, Garlic, Turmeric, Fish fillet, Light coconut milk, South Indian fish curry powder, Tamarind, Curry leaves, Coconut oil, Tender coconut water, Curry leaves, For nuts/seeds: Walnuts"
+  },
+  {
+    "meal_id": "M055",
+    "name": "Appam with Egg Curry, Papaya-Turmeric Smoothie and Ground Flaxseeds | Appam, Egg, Light coconut milk, Onion, Tomato, Ginger, South Indian curry powder, Curry leaves, Coconut oil, Papaya, Fresh turmeric, Water, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M056",
+    "name": "Idiyappam with Egg Roast, Hibiscus-Rose Cooling Water and Pumpkin Seeds | Idiyappam, Eggs, Onion, Tomato, Ginger, Kashmiri chili powder, Garam masala, Coconut oil, Curry leaves, Dried hibiscus flowers, Dried rose petals, Warm water, Honey, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M057",
+    "name": "Red Rice Idiyappam with Soya Chunk Curry, Bottle Gourd-Mint Detox Shot and Toasted Sesame Seeds | Red rice idiyappam, Soya chunks, Onion, Tomato, Ginger, Sambar/curry powder, Light coconut milk, Coconut oil, Bottle gourd, Mint leaves, Water, Lemon juice, For nuts/seeds: Sesame seeds"
+  },
+  {
+    "meal_id": "M058",
+    "name": "Pesarattu with Mint-Coconut Chutney, Cucumber-Aloe Vera Cooler and Walnuts | Whole green moong dal, Raw rice, Ginger, Green chili, Cumin seeds, Olive oil, Mint leaves, Grated coconut, Lemon juice, Cucumber, Fresh aloe vera gel, Water, For nuts/seeds: Walnuts"
+  },
+  {
+    "meal_id": "M059",
+    "name": "Pesarattu with Peanut Chutney, Carrot-Beet-Ginger Power Shot and Ground Flaxseeds | Moong dal, Rice, Green chili, Ginger, Olive oil, Roasted peanuts, Tamarind, Dry red chili, Mustard seeds, curry leaves, Carrot, Beetroot, Ginger, Water, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M060",
+    "name": "Adai with Avial-Style Mixed Vegetables, Bottle Gourd-Mint Cooler and Pumpkin Seeds | Adai batter (mixed dal + rice, fermented), Mixed vegetables (drumstick, carrot, beans), Low, Grated coconut, Cumin seeds, Turmeric, Coconut oil, Bottle gourd, Mint leaves, Water, Lemon juice, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M061",
+    "name": "Vegetable Uthappam with Coconut Chutney, Orange-Carrot-Ginger Smoothie and Toasted Sesame Seeds | Fermented dosa/uthappam batter, Onion, Tomato, Coriander leaves, Olive oil, Grated coconut, Green chili, Ginger, Mustard seeds, curry leaves, Orange, Carrot, Ginger, Water, For nuts/seeds: Sesame seeds"
+  },
+  {
+    "meal_id": "M062",
+    "name": "Paneer Vegetable Uttapam with Peanut Chutney, Kiwi and Ground Flaxseeds | Fermented dosa/uttapam batter, Low, Onion, Tomato, Capsicum, Coriander leaves, Olive oil, Roasted peanuts, Tamarind, Dry red chili, Mustard seeds, curry leaves, Kiwi, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M063",
+    "name": "Millet Pongal with Pepper Rasam Shot, Pomegranate-Mint Cooler and Walnuts | Foxtail millet, Moong dal, Black pepper, crushed, Cumin seeds, Ginger, Cow ghee, Curry leaves, Tomato, Tamarind pulp, Rasam powder, Pomegranate arils, Mint leaves, Water, Lemon juice, For nuts/seeds: Walnuts"
+  },
+  {
+    "meal_id": "M064",
+    "name": "Jonna Roti with Vankaya Curry, Mint-Lemongrass Cooling Water, Orange-Carrot Juice and Black Sesame Seeds | Jowar (sorghum) flour, Warm water, Brinjal, Onion, Tomato, Ginger, Turmeric, red chili powder, Olive oil, Fresh lemongrass, Mint leaves, Warm water, For juice: Orange, For nuts: Black sesame seeds"
+  },
+  {
+    "meal_id": "M065",
+    "name": "Pearl Millet Upma with Boiled Egg, Spinach-Orange Vitality Shot and Pumpkin Seeds | Pearl millet (bajra) rava, Onion, Mustard seeds, Urad dal, Curry leaves, Green chili, Water, Olive oil, Egg, Spinach, Orange, Water, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M066",
+    "name": "Cracked Sorghum Upma with Boiled Egg, Bottle Gourd-Coriander Shot and Toasted Sesame Seeds | Cracked sorghum (jowar) rava, Carrot, Green peas, Mustard seeds, Curry leaves, Green chili, Water, Olive oil, Egg, Bottle gourd, Fresh coriander leaves, Water, Lemon juice, For nuts/seeds: Sesame seeds"
+  },
+  {
+    "meal_id": "M067",
+    "name": "Pearl Millet Koozh with Buttermilk, Cucumber-Lemongrass Cooling Shot and Ground Flaxseeds | Pearl millet (kambu) flour, Water, Low, Ginger, Green chili, Curry leaves, Salt, Cucumber, Fresh lemongrass, Water, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M068",
+    "name": "Egg White & Moong Dal Chilla with Coconut Chutney, Spinach-Apple Iron Smoothie and Walnuts | Moong dal, Egg whites, Onion, Green chili, Curry leaves, Coriander leaves, Cumin seeds, Salt, Olive oil, Grated coconut, Green chili, Ginger, Mustard seeds, curry leaves, Spinach, Apple, Water, Lemon juice, For nuts/seeds: Walnuts"
+  },
+  {
+    "meal_id": "M069",
+    "name": "Rava Idli with Tomato Chutney, Tomato-Carrot Lycopene Shot, Orange and Pumpkin Seeds | Semolina (rava), Low, Carrot, Cashews, Eno fruit salt/baking soda, Mustard seeds, curry leaves, Tomato, Dry red chili, Garlic, Olive oil, Tomato, Carrot, Water, Orange, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M070",
+    "name": "Lean Chicken Stew with Appam, Hibiscus Hair Tonic Water, Berries and Ground Flaxseeds | Appam, Chicken breast, Potato, Carrot, Onion, Light coconut milk, Whole spices (clove, cinnamon, cardamom), Coconut oil, Curry leaves, Dried hibiscus flowers, Warm water, Lemon juice, Mixed berries, For nuts/seeds: Flaxseeds"
+  },
+  {
+    "meal_id": "M071",
+    "name": "Protein Power Breakfast Bowl with Pumpkin Seeds | Boiled chickpeas, Eggs, Firm tofu, Olive oil, Chaat masala or black pepper, Carrot, Beans, Cucumber, Lemon juice, Olive oil, Coriander leaves, Salt, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M072",
+    "name": "Chicken Keema Dosa with Tomato Chutney, Coconut-Pineapple Anti-Inflammatory Cooler and Toasted Sesame Seeds | Fermented dosa batter, Lean minced chicken breast, Onion, Tomato, Ginger, Chettinad spice mix (fennel, pepper, coriander), Olive oil, Tomato, Dry red chili, Garlic, Tender coconut water, Pineapple, Mint leaves, For nuts/seeds: Sesame seeds"
+  },
+  {
+    "meal_id": "M073",
+    "name": "Wholewheat Stuffed Roti with Mint-Coconut Chutney, Beetroot-Carrot Skin Tonic, Grapes and Walnuts | Whole wheat flour, Warm water, Chana dal, Cumin powder, red chili powder, Coriander leaves, Olive oil, Mint leaves, Grated coconut, Green chili, Lemon juice, Beetroot, Carrot, Water, Grapes, For nuts/seeds: Walnuts"
+  },
+  {
+    "meal_id": "M074",
+    "name": "Poha with Amla-Orange Juice and Pumpkin Seeds | Flattened rice (poha), Onion, Green peas, Mustard seeds, Curry leaves, Green chili, Turmeric, Olive oil, Lemon juice, Coriander leaves, Roasted pumpkin seeds, Amla powder, For juice: Amla, For nuts: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M075",
+    "name": "Quinoa Pongal with Pumpkin Soup, Papaya-Turmeric Juice and Walnuts | Quinoa, Moong dal, Black pepper, crushed, Cumin seeds, Ginger, Ghee, Curry leaves, Pumpkin, Onion, Garlic, Black pepper, Water or stock, For juice: Papaya, For nuts: Walnuts"
+  },
+  {
+    "meal_id": "M076",
+    "name": "Coconut Stew with Appam, Orange and Pumpkin Seeds | Light coconut milk, Carrot, Beans, Onion, Green chili, Ginger, Curry leaves, Coconut oil, Water, Moringa/drumstick leaves, Ready appam batter, For nuts/seeds: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M077",
+    "name": "Beetroot Chapathi with Chole Curry, Sprouts Salad, Beetroot-Apple Juice and Flaxseeds | Whole wheat flour, Beetroot puree, Olive oil, Boiled chickpeas (chole), Onion, Tomato, Ginger, Chole masala, Olive oil, Mixed sprouts, Lemon juice, Coriander leaves, For juice: Beetroot, For nuts: Flaxseeds"
+  },
+  {
+    "meal_id": "M078",
+    "name": "Toor Dal Dumpling (Paruppu Urundai) with Guava-Ginger Juice and Sesame Seeds | Toor dal, Green chili, Ginger, Cumin seeds, Curry leaves, Coriander leaves, Sesame seeds, Moringa powder, Turmeric, Salt, For juice: Guava, For nuts: Sesame seeds"
+  },
+  {
+    "meal_id": "M079",
+    "name": "Ragi Almond Ladoo | Ragi flour, roasted, Almonds, ground, Jaggery, grated, Ghee"
+  },
+  {
+    "meal_id": "M080",
+    "name": "Makhana Crunch Mix | Makhana (fox nuts), Ghee or olive oil, Turmeric, Black pepper, Salt"
+  },
+  {
+    "meal_id": "M081",
+    "name": "Fruit and Nut Bowl | Seasonal fruit (apple, papaya or orange), Almonds, Walnuts"
+  },
+  {
+    "meal_id": "M082",
+    "name": "Paneer Tikka Cubes with Turmeric | Low, Turmeric, Red chili powder, Ginger, Low, Olive oil"
+  },
+  {
+    "meal_id": "M083",
+    "name": "Roasted Chana | Roasted chana (dry, Black pepper, chaat masala"
+  },
+  {
+    "meal_id": "M084",
+    "name": "Apple Peanut Chat | Apple, Roasted peanuts, Chaat masala, Lemon juice"
+  },
+  {
+    "meal_id": "M085",
+    "name": "Dryfruit and Seed Bowl | Walnuts, Almonds, Pumpkin seeds, Flaxseeds, Raisins"
+  },
+  {
+    "meal_id": "M086",
+    "name": "South Indian Sundal | Boiled chickpeas, Mustard seeds, Curry leaves, Dry red chili, Grated coconut, Coconut oil"
+  },
+  {
+    "meal_id": "M087",
+    "name": "Ragi Banana Mini Muffins | Ragi flour, Ripe banana, Egg, Baking powder, Cinnamon, Olive oil"
+  },
+  {
+    "meal_id": "M088",
+    "name": "Masala Chana Bowl | Boiled chickpeas, Onion, Tomato, Chaat masala, Lemon juice, Coriander leaves"
+  },
+  {
+    "meal_id": "M089",
+    "name": "Coconut Date Ladoo | Dates, Desiccated coconut, Cardamom powder"
+  },
+  {
+    "meal_id": "M090",
+    "name": "Amla, Almond and Pumpkin Seeds | Fresh amla, Almonds, Pumpkin seeds"
+  },
+  {
+    "meal_id": "M091",
+    "name": "Sprouted Moong Chat | Sprouted moong, Onion, Tomato, Lemon juice, Chaat masala, Coriander leaves"
+  },
+  {
+    "meal_id": "M092",
+    "name": "Saffron Almond Milk | Almonds, Low, Saffron"
+  },
+  {
+    "meal_id": "M093",
+    "name": "Dryfruit Chikki | Almonds"
+  },
+  {
+    "meal_id": "M094",
+    "name": "Carrot-Cucumber Sticks with Hung Curd | Carrot, Cucumber, Hung curd (strained low), Black pepper, roasted cumin powder"
+  },
+  {
+    "meal_id": "M095",
+    "name": "Black Sesame and Dates Bowl | Black sesame seeds, toasted, Dates"
+  },
+  {
+    "meal_id": "M096",
+    "name": "Sweet Corn Chat | Boiled sweet corn kernels, Onion, Tomato, Lemon juice, Chaat masala, Coriander leaves"
+  },
+  {
+    "meal_id": "M097",
+    "name": "Guava Chat | Guava, Chaat masala, Lemon juice, Black salt"
+  },
+  {
+    "meal_id": "M098",
+    "name": "Beetroot Peanut Chat | Beetroot, Roasted peanuts, Lemon juice, Chaat masala, Coriander leaves"
+  },
+  {
+    "meal_id": "M099",
+    "name": "Apple Cinnamon Almond Box | Apple, Cinnamon powder, Almonds"
+  },
+  {
+    "meal_id": "M100",
+    "name": "Paneer Pomegranate Cup | Low, Pomegranate arils, Black pepper, Mint leaves"
+  },
+  {
+    "meal_id": "M101",
+    "name": "Walnut Date Roll | Walnuts, Dates, Cardamom powder"
+  },
+  {
+    "meal_id": "M102",
+    "name": "Greek Yogurt Fruit Jar with Pomegranate | Low, Pomegranate arils, Honey"
+  },
+  {
+    "meal_id": "M103",
+    "name": "Glow Skin Snack Box | Cucumber, Carrot, Roasted chana, Walnuts"
+  },
+  {
+    "meal_id": "M104",
+    "name": "Kosambari | Moong dal, soaked, Cucumber, Carrot, Grated coconut, Mustard seeds, curry leaves, Lemon juice"
+  },
+  {
+    "meal_id": "M105",
+    "name": "Cucumber Peanut Salad | Cucumber, Roasted peanuts, Lemon juice, Black salt"
+  },
+  {
+    "meal_id": "M106",
+    "name": "South Indian Beauty Bowl | Sprouted moong, Carrot, Cucumber, Pomegranate arils, Lemon juice"
+  },
+  {
+    "meal_id": "M107",
+    "name": "Papaya Lime Cup | Papaya, Lime juice, Mint leaves"
+  },
+  {
+    "meal_id": "M108",
+    "name": "Chicken Cucumber Roll | Cucumber, Cooked chicken breast, Lemon juice, black pepper, Mint leaves"
+  },
+  {
+    "meal_id": "M109",
+    "name": "Boiled Eggs with Pumpkin Seeds | Eggs, Pumpkin seeds, Black pepper, Salt"
+  },
+  {
+    "meal_id": "M110",
+    "name": "Watermelon Mint Hydration Bowl | Watermelon, Mint leaves, Lime juice"
+  },
+  {
+    "meal_id": "M111",
+    "name": "Horse Gram Lunch Bowl (Huruli Oota) with Cucumber Salad | Steamed rice, Horse gram (huruli), Onion, Tomato, Ginger, Turmeric, red chili powder, coriander powder, Mustard seeds, curry leaves, Olive oil, For vegetable stir, Grated coconut, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M112",
+    "name": "Pesarapappu and Gongura Meal with Onion Salad | Steamed rice, Moong dal, Turmeric, Mustard seeds, curry leaves, Olive oil, For gongura chutney: Gongura (sorrel) leaves, Dry red chili, Garlic, Mustard seeds, For salad: Onion, Lemon juice, Green chili"
+  },
+  {
+    "meal_id": "M113",
+    "name": "Egg and Drumstick Sambar Lunch with Cucumber-Tomato Salad | Steamed rice, Egg, Toor dal, Drumstick, Tamarind pulp, Sambar powder, Turmeric, Mustard seeds, curry leaves, Olive oil, For salad: Cucumber, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M114",
+    "name": "Millet Lemon Rice with Peanut-Curry Leaf Powder and Cucumber Salad | Foxtail millet, Lemon juice, Turmeric, Mustard seeds, curry leaves, Olive oil, For powder: Roasted peanuts, Fresh curry leaves, Roasted chana dal, Red chili, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M115",
+    "name": "Egg Gassi Lunch with Onion-Tomato Salad | Steamed rice, Eggs, Grated coconut, Coriander seeds, Kashmiri red chili, Onion, Tomato, Ginger, Tamarind pulp, Coconut oil, For salad: Onion, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M116",
+    "name": "Avial and Adai Protein Lunch | Adai batter (toor dal, chana dal, urad dal, rice), Olive oil, Mixed vegetables (carrot, beans, raw banana, drumstick), Turmeric, Grated coconut, Cumin seeds, Green chili, Low, Curry leaves, Coconut oil"
+  },
+  {
+    "meal_id": "M117",
+    "name": "Curry Leaf Egg Rice Bowl with Broccoli Soup | Brown rice, Egg, Curry leaves, Mustard seeds, Turmeric, Olive oil, For broccoli soup: Broccoli, Onion, Garlic, Black pepper, Water or low-sodium stock"
+  },
+  {
+    "meal_id": "M118",
+    "name": "Skin Glow South Indian Lunch with Tomato-Pomegranate Salad | Red rice, Toor dal, Spinach, Carrot, Turmeric, cumin, Olive oil, Low, For salad: Tomato, Pomegranate arils, Mint leaves, Lemon juice"
+  },
+  {
+    "meal_id": "M119",
+    "name": "Kosambari Protein Plate | Steamed rice, Low, Turmeric, red chili powder, Olive oil, For kosambari: Moong dal, Cucumber, Carrot, Grated coconut, Mustard seeds, curry leaves, Lemon juice"
+  },
+  {
+    "meal_id": "M120",
+    "name": "Methi Egg Kuzhambu with Red Rice and Cucumber Salad | Red rice, Eggs, Fresh fenugreek (methi) leaves, Tamarind pulp, Kuzhambu powder, Onion, Mustard seeds, fenugreek seeds, curry leaves, Olive oil, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M121",
+    "name": "Ragi Sangati with Chicken Pulusu and Onion-Tomato Salad | Ragi flour, Water, Chicken breast, Onion, Tomato, Ginger, Tamarind pulp, Turmeric, red chili powder, Curry leaves, Olive oil, For salad: Onion, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M122",
+    "name": "Ulava Charu Meal with Cucumber Salad | Steamed rice, Horse gram, Tamarind pulp, Cumin, black pepper, Garlic, Mustard seeds, curry leaves, Olive oil, For stir, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M123",
+    "name": "Pepper Chicken Millet Plate with Cucumber-Tomato Salad | Foxtail millet, Chicken breast, Onion, Tomato, Ginger, Black pepper, crushed, Fennel seeds, Coriander powder, Curry leaves, Olive oil, For salad: Cucumber, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M124",
+    "name": "Murungai Keerai Kootu Lunch with Tomato Salad | Steamed rice, Drumstick (moringa) leaves, Toor dal, Grated coconut, Cumin seeds, Green chili, Mustard seeds, urad dal, curry leaves, Coconut oil, For salad: Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M125",
+    "name": "Hair Vitality Lunch Plate | Brown rice, Toor dal, Fresh fenugreek (methi) leaves, Turmeric, Mustard seeds, curry leaves, Olive oil, Spinach, Garlic, Egg"
+  },
+  {
+    "meal_id": "M126",
+    "name": "High-Protein South Indian Beauty Bowl | Foxtail millet, Low, Olive oil, Sprouted moong, Lemon juice, For raita: Low, Cucumber, Grated coconut, Roasted cumin powder"
+  },
+  {
+    "meal_id": "M127",
+    "name": "Methi Tomato Pulao with Carrot-Cucumber Raita | Brown rice, Fresh fenugreek (methi) leaves, Tomato, Onion, Ginger, Whole spices (clove, cardamom, cinnamon), Olive oil, For raita: Low, Carrot, Cucumber, Roasted cumin powder"
+  },
+  {
+    "meal_id": "M128",
+    "name": "Tomato Bath with Raita and Broccoli Curry | Brown rice, Tomato, Onion, Ginger, Mustard seeds, curry leaves, Olive oil, For raita: Low, Mint leaves, For broccoli curry: Broccoli, Onion, Turmeric, cumin"
+  },
+  {
+    "meal_id": "M129",
+    "name": "Huli Avalakki Lunch Bowl with Cucumber-Tomato Salad | Flattened rice (poha), Tamarind pulp, Jaggery, Peanuts, roasted, Mustard seeds, curry leaves, Turmeric, red chili powder, Olive oil, For salad: Cucumber, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M130",
+    "name": "Rice with Mushroom Coconut Curry, Fish Curry and Curd | Steamed rice, Mushrooms, Light coconut milk, Onion, Ginger, Coconut oil, For fish curry: White fish fillet, Onion, Tomato, Ginger, Turmeric, Red chili powder, Curry leaves, Olive oil, Water, Low"
+  },
+  {
+    "meal_id": "M131",
+    "name": "Bisibele Bath with Kosambari, Amla-Coriander Chutney and Spiced Buttermilk | Rice, Toor dal, Mixed vegetables (carrot, beans, peas), Bisibele bath powder, Tamarind pulp, Ghee, For kosambari: Moong dal, Carrot, Cucumber, Grated coconut, Lemon juice, For chutney: Fresh amla, Coriander leaves, Green chili, For buttermilk: Low, Cumin powder, ginger"
+  },
+  {
+    "meal_id": "M132",
+    "name": "Brown Rice with Drumstick Sambar, Beans Poriyal, Carrot Kosambari, Amla Chutney and Curd | Brown rice, Toor dal, Drumstick, Tamarind, Sambar powder, Mustard seeds, curry leaves, Olive oil, For poriyal: Beans, Grated coconut, For kosambari: Carrot, Moong dal, Lemon juice, For chutney: Fresh amla, Green chili, Curd"
+  },
+  {
+    "meal_id": "M133",
+    "name": "Red Rice with Cow Pea Curry, Pumpkin Stir-Fry and Tomato-Onion-Lemon Salad | Red rice, Cow peas (karamani), Onion, Tomato, Ginger, Turmeric, red chili powder, Olive oil, For stir, Mustard seeds, curry leaves, For salad: Tomato, Onion, Lemon juice"
+  },
+  {
+    "meal_id": "M134",
+    "name": "Steamed Rice with Fish Curry, Okra Poriyal, Buttermilk and Cucumber Salad | Steamed rice, For fish curry: White fish fillet, Onion, Tomato, Ginger, Turmeric, red chili powder, Curry leaves, Tamarind pulp, Olive oil, Water, For poriyal: Okra, Onion, For buttermilk: Low, Cumin powder, ginger, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M135",
+    "name": "Steamed Rice with Pumpkin Coconut Curry, Rasam, Buttermilk and Carrot Salad | Steamed rice, Pumpkin, Light coconut milk, Mustard seeds, curry leaves, Coconut oil, For rasam: Tomato, Tamarind, Black pepper, cumin, For buttermilk: Low, Ginger, For salad: Carrot, Lemon juice"
+  },
+  {
+    "meal_id": "M136",
+    "name": "Pothichoru with Cucumber-Tomato Salad | Steamed rice, Toor dal curry, Mixed vegetable stir, Low, Pickle, Banana leaf, For salad: Cucumber, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M137",
+    "name": "Steamed Rice with Prawn Tomato Curry, Ginger Rasam, Buttermilk and Cucumber | Steamed rice, Prawns, deveined, Tomato, Onion, Ginger, Turmeric, red chili powder, Olive oil, For ginger rasam: Ginger, Tomato, Black pepper, cumin, For buttermilk: Low, For cucumber: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M138",
+    "name": "Vegetable Soup with Curry Leaf Green Rice and Cucumber Raita | For soup: Mixed vegetables (carrot, beans, tomato, peas), Garlic, Black pepper, Water, For green rice: Brown rice, Curry leaves, Mustard seeds, Olive oil, For raita: Low, Cucumber, Roasted cumin powder"
+  },
+  {
+    "meal_id": "M139",
+    "name": "Steamed Rice with Green Leafy Vegetable Fry, Vitamin C Source and Curd | Steamed rice, Green leafy vegetable (spinach or methi or moringa), Garlic, Mustard seeds, dry red chili, Olive oil, Fresh guava or amla, Low"
+  },
+  {
+    "meal_id": "M140",
+    "name": "Rice with Ridge Gourd Curry, Green Peas Masala, Fish Fry, Buttermilk and Cucumber Salad | Steamed rice, Ridge gourd, Toor dal, Field beans (avarekalu), Green peas, Onion, Tomato, Spice powders (turmeric, chili, coriander), Olive oil, Low, Cucumber, Lemon juice, For fish fry: White fish fillet, Turmeric, Red chili powder, Lemon juice, Olive oil"
+  },
+  {
+    "meal_id": "M141",
+    "name": "Ginger Pepper Chicken Lunch with Cucumber-Tomato Salad | Steamed rice, Chicken breast, Fresh ginger, Black pepper, crushed, Onion, Garlic, Curry leaves, Turmeric, Olive oil, For rasam: Tomato, Tamarind, Black pepper, cumin, For salad: Cucumber, Tomato, Lemon juice"
+  },
+  {
+    "meal_id": "M142",
+    "name": "Millet with Mushroom Green Pea Curry and Spinach Soup | Foxtail millet, Mushrooms, Green peas, Onion, Tomato, Ginger, Turmeric, cumin powder, Olive oil, For spinach soup: Spinach, Garlic, Black pepper, Water"
+  },
+  {
+    "meal_id": "M143",
+    "name": "Brown Rice with Fish Curry, Beetroot Poriyal and Spiced Buttermilk | Brown rice, For fish curry: White fish fillet, Onion, Tomato, Ginger, Turmeric, red chili powder, coriander powder, Curry leaves, Olive oil, Water, For poriyal: Beetroot, Mustard seeds, curry leaves, Grated coconut, For buttermilk: Low, Cumin powder, ginger, curry leaves"
+  },
+  {
+    "meal_id": "M144",
+    "name": "Ragi Puttu with Ripe Plantain, Pumpkin Seeds and Boiled Egg | Ragi flour, Water, Salt, Shredded fresh coconut, Ripe plantain, Pumpkin seeds, Egg"
+  },
+  {
+    "meal_id": "M145",
+    "name": "Kerala Fish Curry with Red Rice, Cucumber Raita and Onion Salad | Red rice, White fish fillet (pomfret, surmai or any white fish), Light coconut milk, Tamarind pulp, Onion, Tomato, Ginger, Kerala fish curry powder, Turmeric, Curry leaves, Coconut oil, For raita: Low, Cucumber, Roasted cumin powder, For salad: Onion, Lemon juice, Green chili"
+  },
+  {
+    "meal_id": "M146",
+    "name": "Andhra Fish Pulusu with Foxtail Millet, Spinach-Onion Salad and Buttermilk | Foxtail millet, White fish fillet, Onion, Tomato, Tamarind pulp, Ginger, Turmeric, Red chili powder, Coriander powder, Mustard seeds, fenugreek seeds, curry leaves, Olive oil, For salad: Baby spinach, Onion, Lemon juice, For buttermilk: Low, Ginger"
+  },
+  {
+    "meal_id": "M147",
+    "name": "Fresh Guava with Pumpkin Seed Sprinkle | Fresh guava, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M148",
+    "name": "Fresh Amla with Mixed Seed Sprinkle | Fresh amla (Indian gooseberry), For seed sprinkle: Mixed seeds (pumpkin + flaxseed, ground)"
+  },
+  {
+    "meal_id": "M149",
+    "name": "Soaked Almonds | Almonds"
+  },
+  {
+    "meal_id": "M150",
+    "name": "Soaked Walnuts | Walnuts"
+  },
+  {
+    "meal_id": "M151",
+    "name": "Pumpkin Seeds | Pumpkin seeds"
+  },
+  {
+    "meal_id": "M152",
+    "name": "Sunflower Seeds | Sunflower seeds"
+  },
+  {
+    "meal_id": "M153",
+    "name": "Fresh Papaya Slices with Pumpkin Seed Sprinkle | Ripe papaya, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M154",
+    "name": "Pomegranate Arils with Flaxseed Sprinkle | Fresh pomegranate, For seed sprinkle: Flaxseeds"
+  },
+  {
+    "meal_id": "M155",
+    "name": "Fresh Orange with Pumpkin Seed Sprinkle | Fresh orange, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M156",
+    "name": "Black Sesame Seeds | Black sesame seeds"
+  },
+  {
+    "meal_id": "M157",
+    "name": "Flaxseeds | Flaxseeds, Warm water"
+  },
+  {
+    "meal_id": "M158",
+    "name": "Soaked Dates with Sesame Seed Sprinkle | Dates, For seed sprinkle: Sesame seeds"
+  },
+  {
+    "meal_id": "M159",
+    "name": "Fresh Coconut Pieces with Pumpkin Seed Sprinkle | Fresh tender coconut meat, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M160",
+    "name": "Roasted Chana with Mixed Seed Sprinkle | Roasted chana (dry, Black pepper or chaat masala, For seed sprinkle: Mixed seeds (pumpkin + sunflower)"
+  },
+  {
+    "meal_id": "M161",
+    "name": "Fresh Cucumber Sticks with Pumpkin Seed Sprinkle | Cucumber, Lemon juice, Black salt, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M162",
+    "name": "Soaked Figs with Flaxseed Sprinkle | Dried figs, For seed sprinkle: Flaxseeds"
+  },
+  {
+    "meal_id": "M163",
+    "name": "Fresh Beetroot Sticks with Pumpkin Seed Sprinkle | Beetroot, Lemon juice, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M164",
+    "name": "Soaked Raisins with Sesame Seed Sprinkle | Raisins, For seed sprinkle: Sesame seeds"
+  },
+  {
+    "meal_id": "M165",
+    "name": "Fresh Carrot Sticks with Pumpkin Seed Sprinkle | Carrot, Lemon juice, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M166",
+    "name": "Soaked Cashews | Cashews"
+  },
+  {
+    "meal_id": "M167",
+    "name": "Pistachios | Pistachios, unsalted"
+  },
+  {
+    "meal_id": "M168",
+    "name": "Brazil Nuts | Brazil nuts"
+  },
+  {
+    "meal_id": "M169",
+    "name": "Fresh Kiwi Fruit with Flaxseed Sprinkle | Fresh kiwi, For seed sprinkle: Flaxseeds"
+  },
+  {
+    "meal_id": "M170",
+    "name": "Watermelon Slices with Pumpkin Seed Sprinkle | Fresh watermelon, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M171",
+    "name": "Soaked Walnuts and Figs Combo | Walnuts, Dried figs"
+  },
+  {
+    "meal_id": "M172",
+    "name": "Mixed Seeds Blend | Pumpkin seeds, Sunflower seeds, Flaxseeds, ground"
+  },
+  {
+    "meal_id": "M173",
+    "name": "Sweet Potato Collagen Chaat Bowl | Sweet potato, Sprouted moong dal, Egg, Roasted peanuts, Chaat masala, Lemon juice, Olive oil, For tamarind, Dates, Cumin powder, Water, For coriander chutney: Fresh coriander leaves, Green chili, Lemon juice, Ginger, Water"
+  },
+  {
+    "meal_id": "M174",
+    "name": "Crunchy Lauki Paneer Cutlets with Chia Raita and Pomegranate Salad | Bottle gourd (lauki), Low, Onion, Green chili, Coriander leaves, Cumin powder, Turmeric, Ragi flour or whole wheat flour, Salt, Olive oil, Low-fat paneer, Chia seeds, Roasted cumin powder, Pomegranate arils, Onion, Cucumber, Black pepper, Lemon juice, Coriander leaves"
+  },
+  {
+    "meal_id": "M175",
+    "name": "Iron Boost Laddo | Cashews, Black sesame seeds, Pumpkin seeds, Soft dates, Raisins, Amla powder, Cardamom powder"
+  },
+  {
+    "meal_id": "M176",
+    "name": "Blueberry Antioxidant Smoothie with Pumpkin Seed Sprinkle | Blueberries, Low-fat-yogurt, Honey, Water, Amla powder, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M177",
+    "name": "Warm Milk with Honey, Cloves & Cinnamon | Full-fat or low-fat milk, Honey, Cloves, Cinnamon"
+  },
+  {
+    "meal_id": "M178",
+    "name": "Kiwi Lemonade with Chia Seed Sprinkle | Kiwi, Lemon juice, Water, Honey, Mint leaves, For seed sprinkle: Chia seeds"
+  },
+  {
+    "meal_id": "M179",
+    "name": "Cortisol-Reducing Drink | Hibiscus tea bag, Dried hibiscus flowers, Honey, Tender coconut water, Pinch of pink salt"
+  },
+  {
+    "meal_id": "M180",
+    "name": "Beetroot Chaat with Pumpkin Seed Sprinkle | Beetroot, Lemon juice, Chaat masala, Roasted cumin powder, Fresh coriander, Pomegranate arils, Pinch of black salt, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M181",
+    "name": "Sliced Apple with Nut Butter | Apple, Almond butter (or peanut butter), Pinch of cinnamon, Pinch of chia seeds"
+  },
+  {
+    "meal_id": "M182",
+    "name": "Sweet Corn Chaat with Pumpkin Seed Sprinkle | Sweet corn kernels, Onion, Tomato, Green capsicum, Fresh coriander, Lemon juice, Chaat masala, Black salt, Green chilli, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M183",
+    "name": "Cucumber Peanut Salad with Mixed Seed Sprinkle | Cucumber, Roasted peanuts, Fresh coriander, Lemon juice, Green chilli, Roasted cumin powder, Salt and black pepper, For seed sprinkle: Mixed seeds (pumpkin + sunflower)"
+  },
+  {
+    "meal_id": "M184",
+    "name": "Grilled Paneer with Mint Chutney | Paneer, Yogurt marinade, Turmeric, Red chilli powder, Garam masala, Lemon juice, Salt, Olive oil / ghee"
+  },
+  {
+    "meal_id": "M185",
+    "name": "Roasted Sweet Potato with Hung Curd and Pumpkin Seed Sprinkle | Sweet potato, Hung curd, Olive oil, Cumin powder, Paprika or red chilli, Fresh coriander, Lemon juice, Salt, For seed sprinkle: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M186",
+    "name": "Moong dal sprouts | Moong sprouts, Onion, Tomato, Cucumber, Green capsicum, Fresh coriander, Lemon juice, Chaat masala, Black salt"
+  },
+  {
+    "meal_id": "M187",
+    "name": "High-Protein Oats Chana Tikki | Boiled chickpeas (chana), Rolled oats, Onion, Green chilli, Ginger, Coriander leaves, Cumin powder, Garam masala, Lemon juice, Salt, Olive oil"
+  },
+  {
+    "meal_id": "M188",
+    "name": "Moong Dal Khichdi with Cucumber Raita | Rice, Moong dal, Turmeric, Cumin seeds, Ginger, Ghee, Salt, Water, For raita: Low, Cucumber, Roasted cumin powder"
+  },
+  {
+    "meal_id": "M189",
+    "name": "Ragi Porridge with Boiled Egg and Cucumber Salad | Ragi flour, Water, Cumin seeds, Ginger, Salt, Egg, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M190",
+    "name": "Vegetable Sambar Rice (One Pot) | Rice, Toor dal, Mixed vegetables (carrot, beans, tomato), Sambar powder, Tamarind pulp, Turmeric, Mustard seeds, curry leaves, Olive oil, Water"
+  },
+  {
+    "meal_id": "M191",
+    "name": "Spinach Moong Dal Soup with Whole Wheat Roti | Moong dal, Spinach, Garlic, Cumin seeds, Turmeric, Olive oil, Water, Whole wheat flour, Warm water"
+  },
+  {
+    "meal_id": "M192",
+    "name": "Idli with Coconut Chutney, Tomato Rasam and Cucumber Salad and Soaked Walnuts | Idli, For coconut chutney: Grated coconut, Green chili, Ginger, Mustard seeds, curry leaves, For rasam: Tomato, Tamarind pulp, Black pepper, cumin, Water, For salad: Cucumber, Lemon juice, For light snack: Walnuts"
+  },
+  {
+    "meal_id": "M193",
+    "name": "Oats and Vegetable Khichdi with Carrot-Cucumber Salad and Soaked Almonds | Rolled oats, Carrot, Green peas, Mustard seeds, curry leaves, Turmeric, Ginger, Olive oil, Water, For salad: Carrot, Cucumber, Lemon juice, For light snack: Almonds"
+  },
+  {
+    "meal_id": "M194",
+    "name": "Egg Drop Rasam Soup with Brown Rice and Tomato-Onion Salad | Brown rice, Tomato, Tamarind pulp, Black pepper, cumin, Garlic, Mustard seeds, curry leaves, Olive oil, Water, Egg, For salad: Tomato, Onion, Lemon juice, Coriander leaves"
+  },
+  {
+    "meal_id": "M195",
+    "name": "Paneer and Vegetable Soup with Roti and Cucumber Salad | Low, Carrot, Beans, Onion, Garlic, Cumin seeds, Black pepper, Olive oil, Water, Whole wheat flour, For salad: Cucumber, Lemon juice, Black salt"
+  },
+  {
+    "meal_id": "M196",
+    "name": "Millet Porridge with Saut\u00e9ed Spinach and Carrot Salad and Fresh Pomegranate Arils | Foxtail millet, Water, Cumin seeds, Ginger, Turmeric, Olive oil, Spinach, Garlic, For salad: Carrot, Lemon juice, For light snack: Fresh pomegranate"
+  },
+  {
+    "meal_id": "M197",
+    "name": "Masoor Dal Soup with Brown Rice  and paneer curry | Masoor dal (red lentils), Onion, Tomato, Garlic, Cumin seeds, Turmeric, Olive oil, Water, Brown rice"
+  },
+  {
+    "meal_id": "M198",
+    "name": "Broccoli and Moong Dal Soup with Cucumber-Tomato Salad and Soaked Almonds and Pumpkin Seeds | Broccoli, Moong dal, Onion, Garlic, Black pepper, Olive oil, Water, For salad: Cucumber, Tomato, Lemon juice, For light snack: Almonds, Pumpkin seeds"
+  },
+  {
+    "meal_id": "M199",
+    "name": "Tomato Egg Rice with raita | For tomato egg rice:, Brown rice, Eggs, Tomato, Onion, Garlic, Ginger, Mustard seeds, Curry leaves, Turmeric, Red chili powder, Olive oil, Salt, Fresh coriander leaves, For raita:, Low, Cucumber, Roasted cumin powder, Salt"
+  },
+  {
+    "meal_id": "M200",
+    "name": "Carrot and Coconut Milk Soup with Roti and Spinach Salad | Carrot, Light coconut milk, Ginger, Garlic, Black pepper, Olive oil, Water, Whole wheat flour, For salad: Baby spinach, Lemon juice, Black pepper"
+  },
+  {
+    "meal_id": "M201",
+    "name": "Lemon Rice with Roasted Peanuts and Curd | Brown rice, Lemon juice, Roasted peanuts, Mustard seeds, curry leaves, Turmeric, Olive oil, Low"
+  },
+  {
+    "meal_id": "M202",
+    "name": "Chicken Clear Soup with Whole Wheat Roti and Cucumber Salad | Chicken breast, Ginger, Garlic, Black pepper, Curry leaves, Onion, Olive oil, Water, Whole wheat flour, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M203",
+    "name": "Pumpkin and Toor Dal Soup with Carrot-Cucumber Salad and Soaked Walnuts and Soaked Figs | Pumpkin, Toor dal, Onion, Cumin seeds, Turmeric, Ginger, Olive oil, Water, For salad: Carrot, Cucumber, Lemon juice, For light snack: Walnuts, Dried figs"
+  },
+  {
+    "meal_id": "M204",
+    "name": "Curd Rice with Pomegranate and Cucumber Salad | Brown rice, Low, Mustard seeds, Curry leaves, Green chili, Coconut oil, Pomegranate arils, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M205",
+    "name": "Spinach and Paneer Clear Soup with Tomato Salad and Roasted Chana and Pumpkin Seeds | Low, Spinach, Ginger, Garlic, Black pepper, Olive oil, Water, For salad: Tomato, Lemon juice, Coriander leaves, For light snack: Roasted chana, Pumpkin seeds"
+  },
+  {
+    "meal_id": "M206",
+    "name": "Vegetable Oats Porridge (Savory) with Cucumber-Carrot Salad and Soaked Dates | Rolled oats, Carrot, Tomato, Onion, Mustard seeds, curry leaves, Turmeric, Green chili, Olive oil, Water, For salad: Cucumber, Carrot, Lemon juice, For light snack: Dates"
+  },
+  {
+    "meal_id": "M207",
+    "name": "Fish Curry with Brown Rice  with obion salad | White fish fillet, Tomato, Onion, Ginger, Turmeric, red chili powder, Curry leaves, Olive oil, Water, Brown rice"
+  },
+  {
+    "meal_id": "M208",
+    "name": "Drumstick Leaf Dal Soup with Egg and Tomato-Onion Salad and Soaked Almonds and Soaked Walnuts | Fresh drumstick (moringa) leaves, Moong dal, Garlic, Cumin seeds, Turmeric, Olive oil, Water, For salad: Tomato, Onion, Lemon juice, For light snack: Almonds, Walnuts"
+  },
+  {
+    "meal_id": "M209",
+    "name": "Egg and Vegetable Fried Rice (Light) with sweet corn salad | Brown rice, Egg, Carrot, Green peas, Curry leaves, Black pepper, Olive oil"
+  },
+  {
+    "meal_id": "M210",
+    "name": "Tomato and Lentil Soup with Roti and Cucumber Salad | Masoor dal, Tomato, Garlic, Cumin seeds, Turmeric, Olive oil, Water, Whole wheat flour, For salad: Cucumber, Lemon juice, Black salt"
+  },
+  {
+    "meal_id": "M211",
+    "name": "Soya Chunk and Vegetable Khichdi With Cucumber-Tomato Salad: | For the Khichdi:, Rice, Moong dal, Soya chunks, Carrot, Turmeric, Cumin seeds, Ginger, Olive oil, Water, Salt, For the Cucumber, Cucumber, Tomato, Lemon juice, Coriander leaves, Black salt"
+  },
+  {
+    "meal_id": "M212",
+    "name": "Methi Roti with Curd and Cucumber-Tomato Salad and Fresh Amla | Whole wheat flour, Fresh fenugreek (methi) leaves, Turmeric, Ajwain (carom seeds), Olive oil, Warm water, Low, For salad: Cucumber, Tomato, Lemon juice, For light snack: Fresh amla (Indian gooseberry)"
+  },
+  {
+    "meal_id": "M213",
+    "name": "Mushroom and Spinach Brown Rice with Tomato Salad | Brown rice, Mushrooms, Spinach, Garlic, Black pepper, Olive oil, For salad: Tomato, Lemon juice, Coriander leaves"
+  },
+  {
+    "meal_id": "M214",
+    "name": "Beetroot Rasam with Brown Rice and Spinach Salad and Roasted Pumpkin Seeds | Beetroot, Tamarind pulp, Black pepper, cumin, Garlic, Mustard seeds, curry leaves, Olive oil, Water, Brown rice, For salad: Baby spinach, Lemon juice, Black pepper, For light snack: Pumpkin seeds"
+  },
+  {
+    "meal_id": "M215",
+    "name": "Coconut Milk Vegetable Stew with Appam | Light coconut milk, Carrot, Beans, Onion, Green chili, Ginger, Curry leaves, Coconut oil, Water, Ready appam batter"
+  },
+  {
+    "meal_id": "M216",
+    "name": "Ginger Pepper Rasam with Rice, Papad, Cucumber-Tomato Salad and Almond-Pumpkin Seed Mix | Tomato, Fresh ginger, Black pepper, crushed, Cumin seeds, Garlic, Tamarind pulp, Mustard seeds, curry leaves, Olive oil, Water, Brown rice, Papad, For salad: Cucumber, Tomato, Lemon juice, Coriander leaves, For light snack: Soaked almonds, Pumpkin seeds, Black salt"
+  },
+  {
+    "meal_id": "M217",
+    "name": "Slow-Cooked Garlic Chicken and Veggie Soup with Cucumber Salad | Chicken (bone, Garlic, Onion, Carrot, Celery, Beans, Tomato, Bay leaves, Black pepper, Salt, Water or low-sodium broth, Fresh parsley/coriander, For salad: Cucumber, Lemon juice"
+  },
+  {
+    "meal_id": "M218",
+    "name": "Collagen-Stimulating Soup with Cucumber-Tomato Salad and Soaked Almonds and Black Sesame Seeds | Chicken bone broth (homemade or low-sodium), Tomato, Spinach, Carrot, Garlic, Ginger, Turmeric, Black pepper, Lemon juice, Salt, Fresh coriander, For salad: Cucumber, Tomato, Lemon juice, For light snack: Almonds, Black sesame seeds"
+  },
+  {
+    "meal_id": "M219",
+    "name": "Tomato Set Dosa with Mint Chutney with tomato cucumber salad | Dosa batter (fermented rice, Tomato, Onion, Green chilli, Mustard seeds, Curry leaves, Oil, Salt, Mint chutney: fresh mint 1 cup, coriander \u00bd cup, green chilli 1, ginger \u00bd inch, lemon juice 1 tsp, salt,   For tomato, Tomato, Cucumber, Lemon juice, Fresh coriander, Black salt"
+  },
+  {
+    "meal_id": "M220",
+    "name": "Coconut Stew with Appam with  Spinach-Carrot Salad | Stew: Coconut milk (thin), Appam batter: 2 appams (store, Baby spinach, Carrot, Lemon juice, Olive oil, Black pepper, Salt"
+  },
+  {
+    "meal_id": "M221",
+    "name": "Beetroot Curd Raita with Chapathi and Spinach Salad | Raita: Beetroot, Chapathi: Whole wheat flour, For salad: Baby spinach, Lemon juice, Black pepper"
+  },
+  {
+    "meal_id": "M222",
+    "name": "Quinoa Pongal with Pumpkin Soup | Pongal: Quinoa, Pumpkin Soup: Pumpkin"
+  },
+  {
+    "meal_id": "M223",
+    "name": "Anti-Inflammatory Veggie Soup with Turmeric and Saut\u00e9ed Paneer | Soup: Mixed vegetables (carrot, beans, peas, spinach), Paneer: Paneer"
+  },
+  {
+    "meal_id": "M224",
+    "name": "Steamed Vegetables with Egg and Tomato-Onion Salad and Soaked Walnuts and Soaked Figs | Eggs, Broccoli, Carrot, Beans, Corn, Baby spinach, Lemon juice, Olive oil, Salt and black pepper, Red chilli flakes, For salad: Tomato, Onion, Lemon juice, Coriander leaves, For light snack: Walnuts, Dried figs"
+  },
+  {
+    "meal_id": "M225",
+    "name": "Mint Rice with Grilled Chicken and butter milk | Rice: Cooked rice (brown or white), Chicken: Chicken breast"
+  },
+  {
+    "meal_id": "M226",
+    "name": "Beetroot Chapathi with Chole Curry and Sprouts Salad | Chapathi dough: Whole wheat flour, Chole: Boiled chickpeas, Sprouts Salad: Mixed sprouts"
+  },
+  {
+    "meal_id": "M227",
+    "name": "Hot Honey Cajun Chicken with Spinach-Cucumber Salad and Pomegranate Arils | Chicken breast or thigh (boneless), Hot honey glaze: Raw honey, Cajun dry rub: Smoked paprika, Olive oil, For salad: Baby spinach, Cucumber, Lemon juice, Olive oil, Black pepper, For light snack: Fresh pomegranate"
+  },
+  {
+    "meal_id": "M228",
+    "name": "Spinach Mushroom Quinoa Skillet | Quinoa, Button/cremini mushrooms, Fresh spinach, Garlic, Onion, Olive oil, Vegetable broth, Dried thyme, Lemon juice, Salt and black pepper, Parmesan or nutritional yeast"
+  },
+  {
+    "meal_id": "M229",
+    "name": "Cucumber Tambuli with Carrot-Beetroot Salad and Roasted Chana, Almonds and Pumpkin Seeds | Cucumber, Fresh curd (thick), Fresh coconut, Cumin, Green chilli, Ginger, Fresh coriander, For tempering: Oil, For salad: Carrot, Beetroot, Lemon juice, For light snack: Roasted chana, Almonds, Pumpkin seeds"
+  },
+  {
+    "meal_id": "M230",
+    "name": "Vegetable Daliya Moong Dal Khichdi | Broken wheat (daliya), Yellow moong dal (split), Mixed vegetables (carrot, peas, beans), Onion, Tomato, Garlic, Ghee, Cumin, Turmeric, Ginger, Salt, Lemon juice, Fresh coriander"
+  },
+  {
+    "meal_id": "M231",
+    "name": "Palak Dosa with Sambar and Chutney | Palak dosa batter: Dosa batter (fermented rice, Sambar: Toor dal, Coconut chutney: Fresh coconut"
+  },
+  {
+    "meal_id": "M232",
+    "name": "Lemon Water | Warm water, Lemon juice"
+  },
+  {
+    "meal_id": "M233",
+    "name": "Clove Water | Cloves, Warm water"
+  },
+  {
+    "meal_id": "M234",
+    "name": "Cinnamon Water | Cinnamon stick, Warm water, Lemon juice"
+  },
+  {
+    "meal_id": "M235",
+    "name": "Kalonji Water | Kalonji (nigella) seeds, Warm water, Honey, Lemon juice"
+  },
+  {
+    "meal_id": "M236",
+    "name": "Ajwain Ginger Water | Ajwain (carom seeds), Fresh ginger, Warm water, Honey, Lemon juice"
+  },
+  {
+    "meal_id": "M237",
+    "name": "Daniya (Coriander) Leaves Water | Fresh coriander (dhania) leaves, Warm water, Lemon juice, Pinch of black salt"
+  },
+  {
+    "meal_id": "M238",
+    "name": "Fennel Seed Water | Fennel seeds, Warm water, Honey"
+  },
+  {
+    "meal_id": "M239",
+    "name": "Mint Cooling Water | Fresh mint leaves, Cucumber, Warm/room, Lemon juice, Pinch of black salt"
+  },
+  {
+    "meal_id": "M240",
+    "name": "Carom, Cinnamon, Fennel, Black Pepper Water | Ajwain (carom seeds), Cinnamon stick, Fennel seeds, Black pepper, Warm water, Honey, Lemon juice"
+  },
+  {
+    "meal_id": "M241",
+    "name": "Pineapple Mint Water | Pineapple, Fresh mint leaves, Water, Lemon juice"
+  },
+  {
+    "meal_id": "M242",
+    "name": "Lemon Chia Seeds Water | Chia seeds, Warm water, Lemon juice, Pinch of black salt"
+  },
+  {
+    "meal_id": "M243",
+    "name": "Peppermint Gut Calm Tea | Dried peppermint leaves / peppermint tea bag, Hot water, Honey"
+  },
+  {
+    "meal_id": "M244",
+    "name": "Lemon Mint Tea | Fresh mint leaves, Green tea bag, Hot water, Lemon juice, Honey"
+  },
+  {
+    "meal_id": "M245",
+    "name": "Ginger Tea | Fresh ginger, Water, Honey, Lemon juice"
+  },
+  {
+    "meal_id": "M246",
+    "name": "Blueberry Yogurt Smoothie | Blueberries, Low-fat Yogurt, Honey, Flaxseed powder, Amla powder"
+  }
+]

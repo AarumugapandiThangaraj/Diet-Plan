@@ -29,7 +29,9 @@
       "Stir in lemon juice and honey.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M002",
@@ -58,7 +60,9 @@
       "Add lemon juice, cinnamon and basil seeds.",
       "Stir well and drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M003",
@@ -88,7 +92,9 @@
       "Cool slightly, then stir in honey.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M004",
@@ -119,7 +125,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M005",
@@ -149,7 +157,9 @@
       "Strain for a smoother shot.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M006",
@@ -180,7 +190,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M007",
@@ -210,7 +222,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M008",
@@ -240,7 +254,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M009",
@@ -271,7 +287,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M010",
@@ -304,7 +322,9 @@
       "Add soaked fenugreek seeds.",
       "Drink slowly on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M011",
@@ -335,7 +355,9 @@
       "Strain, add soaked sesame seeds and lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M012",
@@ -365,7 +387,9 @@
       "Seeds can be chewed after or discarded.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M013",
@@ -397,7 +421,9 @@
       "Add lemon juice and stir well.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M014",
@@ -427,7 +453,9 @@
       "Eat the soaked raisins separately.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M015",
@@ -459,7 +487,9 @@
       "Stir in ground flaxseed.",
       "Drink warm on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M016",
@@ -489,7 +519,9 @@
       "Add soaked seeds to fresh coconut water.",
       "Stir and drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M017",
@@ -519,7 +551,9 @@
       "Softened dates can be eaten separately.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M018",
@@ -549,7 +583,9 @@
       "Strain and add lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M019",
@@ -578,7 +614,9 @@
       "In the morning, eat the softened fruits.",
       "Drink the iron-rich infused water on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M020",
@@ -609,7 +647,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M021",
@@ -640,7 +680,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M022",
@@ -672,7 +714,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M023",
@@ -703,7 +747,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M024",
@@ -731,7 +777,9 @@
       "Stir soaked seeds into coconut water.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M025",
@@ -763,7 +811,9 @@
       "Top with pumpkin seeds.",
       "Drink on an empty stomach, chewing the seeds."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M026",
@@ -798,7 +848,9 @@
       "Cool slightly, stir in honey.",
       "Drink warm on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M027",
@@ -830,7 +882,9 @@
       "Add lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M028",
@@ -861,7 +915,9 @@
       "Cool slightly, stir in honey.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M029",
@@ -892,7 +948,9 @@
       "Add lemon juice.",
       "Drink fresh on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M030",
@@ -923,7 +981,9 @@
       "Stir in lemon juice and honey.",
       "Sip slowly on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M031",
@@ -952,7 +1012,9 @@
       "Strain the lightly fragrant, coloured water in the morning.",
       "Drink at room temperature on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M032",
@@ -982,7 +1044,9 @@
       "Add lemon juice and salt.",
       "Drink fresh immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M033",
@@ -1014,7 +1078,9 @@
       "Stir in lime juice.",
       "Drink immediately on an empty stomach. Best served chilled."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M034",
@@ -1046,7 +1112,9 @@
       "Add soaked fenugreek seeds and lemon juice.",
       "Drink on an empty stomach. ⚠️ Use 2–3 times per week only   neem is potent."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M035",
@@ -1077,7 +1145,9 @@
       "Cool slightly; stir in honey if using.",
       "Drink on an empty stomach. ⚠️ Take 4–5 days per week. Avoid on days you have dosa/idli fermented breakfast."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M036",
@@ -1111,7 +1181,9 @@
       "Serve idlis with hot sambar and the drumstick leaf green shot.",
       "For nuts/seeds: Serve slivered almonds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M037",
@@ -1145,7 +1217,9 @@
       "For juice: Squeeze 2 fresh oranges into a glass; serve chilled alongside.",
       "For nuts/seeds: Serve slivered almonds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M038",
@@ -1177,7 +1251,9 @@
       "For juice: Juice fresh amla; strain; add honey if desired. Serve immediately.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M039",
@@ -1209,7 +1285,9 @@
       "For juice: Extract pomegranate arils, blend and strain into a glass; serve fresh.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M040",
@@ -1245,7 +1323,9 @@
       "For juice: Juice carrots and ginger together; strain and serve fresh.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M041",
@@ -1276,7 +1356,9 @@
       "Serve ragi dosa with tomato chutney and beetroot-apple smoothie.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M042",
@@ -1311,7 +1393,9 @@
       "For juice: Blend guava with a little water; strain into a glass; stir in lemon juice.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M043",
@@ -1347,7 +1431,9 @@
       "Serve moringa egg dosa hot with ginger chutney and sliced fresh apple.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M044",
@@ -1381,7 +1467,9 @@
       "Serve dosa with coconut chutney and apple-beet glow smoothie.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M045",
@@ -1416,7 +1504,9 @@
       "Serve warm ragi porridge with boiled egg.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M046",
@@ -1448,7 +1538,9 @@
       "For juice: Juice beetroot; strain; stir in lemon juice; serve fresh.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M047",
@@ -1481,7 +1573,9 @@
       "For juice: Blend papaya with a little water; strain; add lime juice; serve fresh.",
       "For nuts/seeds: Serve soaked chia seeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M048",
@@ -1518,7 +1612,9 @@
       "For juice: Blend peeled kiwi with a little water; strain; add lemon juice; serve fresh.",
       "For nuts/seeds: Serve roasted sunflower seeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M049",
@@ -1553,7 +1649,9 @@
       "Serve hot with fresh guava slices on the side.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M050",
@@ -1586,7 +1684,9 @@
       "For juice: Blend watermelon; strain into a glass; garnish with mint; serve chilled.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M051",
@@ -1619,7 +1719,9 @@
       "For juice: Extract pomegranate arils, blend and strain into a glass; serve fresh.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M052",
@@ -1653,7 +1755,9 @@
       "Unmould the puttu and serve with chickpea curry and kiwi-spinach smoothie.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M053",
@@ -1688,7 +1792,9 @@
       "Unmould puttu; serve with boiled egg and strawberry-mint antioxidant shot.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M054",
@@ -1723,7 +1829,9 @@
       "Serve mashed tapioca with fish curry and curry leaf-coconut hair water.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M055",
@@ -1758,7 +1866,9 @@
       "Serve appams hot with egg curry and papaya-turmeric smoothie.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M056",
@@ -1793,7 +1903,9 @@
       "Serve idiyappam with egg roast and hibiscus-rose cooling water.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M057",
@@ -1829,7 +1941,9 @@
       "Serve idiyappam with soya chunk curry and bottle gourd-mint detox shot.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M058",
@@ -1863,7 +1977,9 @@
       "Serve pesarattu with mint-coconut chutney and cucumber-aloe vera cooler.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M059",
@@ -1897,7 +2013,9 @@
       "Serve pesarattu with peanut chutney and carrot-beet-ginger power shot.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M060",
@@ -1932,7 +2050,9 @@
       "Serve hot adai with avial-style vegetables and bottle gourd-mint cooler.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M061",
@@ -1966,7 +2086,9 @@
       "Serve uthappam with coconut chutney and orange-carrot-ginger smoothie.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M062",
@@ -2001,7 +2123,9 @@
       "Serve uttapam hot with peanut chutney and sliced fresh kiwi.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M063",
@@ -2035,7 +2159,9 @@
       "Serve pongal hot with the rasam shot and pomegranate-mint cooler.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M064",
@@ -2070,7 +2196,9 @@
       "For juice: Juice orange and carrot together; strain; serve fresh.",
       "For nuts/seeds: Serve toasted black sesame seeds – 1 tbsp (9 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M065",
@@ -2105,7 +2233,9 @@
       "Serve upma hot with boiled egg and spinach-orange vitality shot.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M066",
@@ -2141,7 +2271,9 @@
       "Serve upma with boiled egg and bottle gourd-coriander shot.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M067",
@@ -2176,7 +2308,9 @@
       "Serve koozh with spiced buttermilk and cucumber-lemongrass cooling shot.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M068",
@@ -2212,7 +2346,9 @@
       "Serve chilla hot with coconut chutney and spinach-apple smoothie.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M069",
@@ -2248,7 +2384,9 @@
       "Serve rava idli with tomato chutney, tomato-carrot lycopene shot and fresh orange.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M070",
@@ -2283,7 +2421,9 @@
       "Serve appam with chicken stew, hibiscus tonic water and mixed berries.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M071",
@@ -2321,7 +2461,9 @@
       "Serve fresh.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M072",
@@ -2357,7 +2499,9 @@
       "Serve hot with tomato chutney and coconut-pineapple anti-inflammatory cooler.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M073",
@@ -2393,7 +2537,9 @@
       "Serve stuffed roti hot with mint-coconut chutney, beetroot-carrot skin tonic and fresh grapes.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M074",
@@ -2428,7 +2574,9 @@
       "For juice: Juice amla and orange together; strain; add honey if desired; serve fresh.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M075",
@@ -2462,7 +2610,9 @@
       "For juice: Blend papaya with a little water; strain; stir in turmeric and lemon juice; serve fresh.",
       "For nuts/seeds: Serve crushed walnuts – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M076",
@@ -2497,7 +2647,9 @@
       "Serve appams with the vegetable stew.",
       "For nuts/seeds: Serve roasted pumpkin seeds – 1 tbsp (10 g) on the side or sprinkle on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M077",
@@ -2532,7 +2684,9 @@
       "For juice: Juice beetroot and apple together; strain; add lemon juice; serve fresh.",
       "For nuts/seeds: Serve ground flaxseeds – 1 tbsp (10 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M078",
@@ -2567,7 +2721,9 @@
       "For juice: Blend guava and ginger with a little water; strain; add lemon juice; serve fresh.",
       "For nuts/seeds: Serve toasted sesame seeds – 1 tbsp (9 g) on the side or sprinkle on the dish."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M079",
@@ -2600,7 +2756,9 @@
       "Shape into 2 small ladoos while the mixture is warm.",
       "Let cool and set before serving."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M080",
@@ -2630,7 +2788,9 @@
       "Sprinkle turmeric, black pepper and salt; toss well.",
       "Cool slightly before serving for maximum crunch."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M081",
@@ -2662,7 +2822,9 @@
       "Combine fruit and nuts in a bowl.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M082",
@@ -2694,7 +2856,9 @@
       "Heat ½ tsp oil in a non-stick pan and pan-grill the paneer cubes for 4–5 minutes, turning until lightly golden on all sides.",
       "Serve warm with a wedge of lemon."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M083",
@@ -2724,7 +2888,9 @@
       "Sprinkle with a pinch of black pepper or chaat masala if desired.",
       "Serve as is."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M084",
@@ -2755,7 +2921,9 @@
       "Toss with roasted peanuts, chaat masala and lemon juice.",
       "Serve immediately to prevent browning."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M085",
@@ -2788,7 +2956,9 @@
       "Mix well in a bowl.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M086",
@@ -2820,7 +2990,9 @@
       "Stir in grated coconut and season with salt.",
       "Serve warm or at room temperature."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M087",
@@ -2854,7 +3026,9 @@
       "Bake for 15–18 minutes until a toothpick comes out clean.",
       "Cool slightly before serving."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M088",
@@ -2884,7 +3058,9 @@
       "Toss well and garnish with coriander leaves.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M089",
@@ -2917,7 +3093,9 @@
       "Roll in extra desiccated coconut.",
       "Serve fresh or refrigerate for later."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M090",
@@ -2950,7 +3128,9 @@
       "Combine amla, almonds and pumpkin seeds in a small bowl.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M091",
@@ -2980,7 +3160,9 @@
       "Add lemon juice and chaat masala; toss well.",
       "Garnish with coriander leaves and serve."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M092",
@@ -3014,7 +3196,9 @@
       "Let it steep for 2–3 minutes.",
       "Drink warm."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M093",
@@ -3051,7 +3235,9 @@
       "Let it cool completely and set before breaking along the scored lines.",
       "Store in an airtight container; serve 2 pieces per portion."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M094",
@@ -3083,7 +3269,9 @@
       "Arrange the vegetable sticks with the curd dip.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M095",
@@ -3115,7 +3303,9 @@
       "Combine sesame seeds and chopped dates in a bowl.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M096",
@@ -3145,7 +3335,9 @@
       "Garnish with coriander leaves.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M097",
@@ -3174,7 +3366,9 @@
       "Sprinkle with chaat masala, lemon juice and black salt.",
       "Toss gently and serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M098",
@@ -3206,7 +3400,9 @@
       "Garnish with coriander leaves.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M099",
@@ -3238,7 +3434,9 @@
       "Combine apple and almonds in a small box or bowl.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M100",
@@ -3270,7 +3468,9 @@
       "Sprinkle with black pepper and chopped mint.",
       "Serve fresh, chilled if preferred."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M101",
@@ -3302,7 +3502,9 @@
       "Shape into a small roll or log.",
       "Slice into bite-sized pieces and serve."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M102",
@@ -3334,7 +3536,9 @@
       "Drizzle with honey if using.",
       "Serve immediately."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M103",
@@ -3366,7 +3570,9 @@
       "Arrange all components in a snack box.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M104",
@@ -3397,7 +3603,9 @@
       "Stir in grated coconut and lemon juice.",
       "Serve fresh and chilled."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M105",
@@ -3428,7 +3636,9 @@
       "Toss with roasted peanuts, lemon juice and black salt.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M106",
@@ -3457,7 +3667,9 @@
       "Squeeze fresh lemon juice over the top.",
       "Toss gently and serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M107",
@@ -3487,7 +3699,9 @@
       "Garnish with chopped mint.",
       "Serve fresh and chilled."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M108",
@@ -3517,7 +3731,9 @@
       "Place a small portion of chicken on each cucumber strip and roll up.",
       "Secure with a toothpick if needed and serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M109",
@@ -3549,7 +3765,9 @@
       "Sprinkle with roasted pumpkin seeds, black pepper and salt.",
       "Serve fresh."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M110",
@@ -3578,7 +3796,9 @@
       "Toss with chopped mint leaves and lime juice.",
       "Serve fresh and chilled."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M111",
@@ -3610,7 +3830,9 @@
       "Toss cucumber with lemon juice for the salad.",
       "Serve rice with horse gram curry, vegetable stir-fry and cucumber salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M112",
@@ -3641,7 +3863,9 @@
       "Toss onion with lemon juice and green chili for the salad.",
       "Serve rice with pesarapappu, gongura chutney and onion salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M113",
@@ -3675,7 +3899,9 @@
       "Toss cucumber and tomato with lemon juice for the salad.",
       "Serve rice with egg and drumstick sambar and the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M114",
@@ -3709,7 +3935,9 @@
       "Toss cucumber with lemon juice for the salad.",
       "Serve millet lemon rice with peanut-curry leaf powder and cucumber salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M115",
@@ -3744,7 +3972,9 @@
       "Toss onion and tomato with lemon juice for the salad.",
       "Serve rice with egg gassi and the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M116",
@@ -3778,7 +4008,9 @@
       "Heat a tawa, pour a ladle of adai batter and spread into a slightly thick crepe; drizzle oil and cook both sides until golden and crisp.",
       "Serve adai with avial."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M117",
@@ -3811,7 +4043,9 @@
       "Blend until smooth, stir in black pepper and season with salt.",
       "Serve the curry leaf egg rice bowl with a cup of broccoli soup."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M118",
@@ -3844,7 +4078,9 @@
       "Toss tomato, pomegranate and mint with lemon juice for the salad.",
       "Serve red rice with carrot-spinach dal, curd and the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M119",
@@ -3878,7 +4114,9 @@
       "Stir in grated coconut and lemon juice; season with salt.",
       "Serve rice with paneer stir-fry and kosambari."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M120",
@@ -3912,7 +4150,9 @@
       "Toss cucumber with lemon juice for the salad.",
       "Serve red rice with methi egg kuzhambu and the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M121",
@@ -3943,7 +4183,9 @@
       "Toss onion and tomato with lemon juice for the salad.",
       "Serve ragi sangati with chicken pulusu and the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M122",
@@ -3975,7 +4217,9 @@
       "Toss cucumber with lemon juice for the salad.",
       "Serve rice with ulava charu, vegetable stir-fry and salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M123",
@@ -4006,7 +4250,9 @@
       "Toss cucumber and tomato with lemon juice for the salad.",
       "Serve foxtail millet with pepper chicken and the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M124",
@@ -4041,7 +4287,9 @@
       "Toss tomato with lemon juice for the salad.",
       "Serve rice with murungai keerai kootu and tomato salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M125",
@@ -4075,7 +4323,9 @@
       "Boil and peel the egg.",
       "Serve brown rice with methi dal, sautéed spinach and the boiled egg."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M126",
@@ -4108,7 +4358,9 @@
       "Mix curd, grated cucumber, coconut and roasted cumin for the raita.",
       "Serve millet topped with paneer tikka and sprouted moong, with coconut-cucumber raita on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M127",
@@ -4141,7 +4393,9 @@
       "Mix curd, grated carrot, cucumber and cumin powder for the raita.",
       "Serve methi tomato pulao with carrot-cucumber raita."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M128",
@@ -4174,7 +4428,9 @@
       "Sauté onion for the broccoli curry, add broccoli florets with turmeric and cumin, cover and cook 6–8 minutes until tender.",
       "Serve tomato bath with curd raita and broccoli curry."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M129",
@@ -4208,7 +4464,9 @@
       "Toss cucumber and tomato with lemon juice for the salad.",
       "Serve huli avalakki with the salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M130",
@@ -4244,7 +4502,9 @@
       "Add coconut milk and simmer gently for 4–5 minutes; season with salt.",
       "Serve steamed rice with mushroom coconut curry, fish curry and curd."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M131",
@@ -4279,7 +4539,9 @@
       "Whisk buttermilk with cumin and ginger.",
       "Serve bisibele bath with kosambari, amla-coriander chutney and spiced buttermilk."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M132",
@@ -4314,7 +4576,9 @@
       "Whisk curd until smooth.",
       "Serve brown rice with all the accompaniments."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M133",
@@ -4345,7 +4609,9 @@
       "Toss tomato, onion and lemon juice for the salad.",
       "Serve red rice with cow pea curry, pumpkin stir-fry and salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M134",
@@ -4380,7 +4646,9 @@
       "Toss cucumber with lemon juice for the salad.",
       "Serve rice with fish curry, okra poriyal, buttermilk and cucumber salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M135",
@@ -4414,7 +4682,9 @@
       "Toss grated carrot with lemon juice for the salad.",
       "Serve rice with pumpkin coconut curry, rasam, buttermilk and carrot salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M136",
@@ -4447,7 +4717,9 @@
       "Toss cucumber and tomato with lemon juice for the salad.",
       "Serve the pothichoru on the banana leaf with the salad on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M137",
@@ -4481,7 +4753,9 @@
       "Whisk buttermilk and slice cucumber with lemon juice.",
       "Serve rice with prawn tomato curry, ginger rasam, buttermilk and cucumber."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M138",
@@ -4513,7 +4787,9 @@
       "Mix curd, grated cucumber and cumin for the raita.",
       "Serve the vegetable soup with curry leaf green rice and cucumber raita."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M139",
@@ -4546,7 +4822,9 @@
       "Slice guava or halve amla.",
       "Serve steamed rice with green leafy vegetable fry, fresh vitamin C fruit and curd."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M140",
@@ -4584,7 +4862,9 @@
       "Pan-fry in ½ tsp olive oil for 3–4 minutes per side until golden and cooked through.",
       "Serve alongside all curries, buttermilk and cucumber salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M141",
@@ -4616,7 +4896,9 @@
       "Toss cucumber and tomato with lemon juice for the salad.",
       "Serve rice with ginger pepper chicken, rasam and salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M142",
@@ -4646,7 +4928,9 @@
       "Sauté garlic in ½ tsp oil, add spinach and wilt; add water and simmer 8 minutes; blend smooth and stir in pepper.",
       "Serve foxtail millet with mushroom-green pea curry and spinach soup."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M143",
@@ -4680,7 +4964,9 @@
       "Whisk buttermilk with cumin, ginger and curry leaves.",
       "Serve brown rice with fish curry, beetroot poriyal and spiced buttermilk."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M144",
@@ -4717,7 +5003,9 @@
       "Unmould the puttu onto a plate.",
       "Serve the ragi puttu alongside the ripe plantain slices, pumpkin seeds and the boiled egg."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M145",
@@ -4755,7 +5043,9 @@
       "Toss sliced onion with lemon juice and green chili for the salad.",
       "Serve hot red rice with Kerala fish curry, cucumber raita and onion salad."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M146",
@@ -4793,7 +5083,9 @@
       "Whisk buttermilk with a pinch of grated ginger.",
       "Serve foxtail millet with Andhra fish pulusu, spinach-onion salad and buttermilk."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M147",
@@ -4825,7 +5117,9 @@
       "Eat on an empty stomach or as a mid-evening snack.",
       "For seed sprinkle: Sprinkle roasted pumpkin seeds over the sliced guava before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M148",
@@ -4857,7 +5151,9 @@
       "Can be dipped in a pinch of rock salt if preferred.",
       "For seed sprinkle: Grind seeds lightly; sprinkle over halved amla before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M149",
@@ -4888,7 +5184,9 @@
       "In the evening, drain and peel the skins if preferred.",
       "Eat slowly as a snack."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M150",
@@ -4918,7 +5216,9 @@
       "Soak walnuts in water for 2 hours to reduce bitterness and improve digestibility.",
       "Drain and eat slowly as a snack."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M151",
@@ -4949,7 +5249,9 @@
       "Cool and eat as a snack.",
       "Can be eaten raw if preferred."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M152",
@@ -4979,7 +5281,9 @@
       "Dry roast sunflower seeds on low heat for 2–3 minutes until lightly golden.",
       "Cool and eat as a snack."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M153",
@@ -5011,7 +5315,9 @@
       "Eat fresh as a snack.",
       "For seed sprinkle: Slice papaya into a bowl; sprinkle roasted pumpkin seeds over the top before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M154",
@@ -5042,7 +5348,9 @@
       "Eat fresh as a snack.",
       "For seed sprinkle: Grind flaxseeds fresh; sprinkle over pomegranate arils before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M155",
@@ -5073,7 +5381,9 @@
       "Eat fresh as a snack.",
       "For seed sprinkle: Peel and segment the orange; sprinkle roasted pumpkin seeds alongside before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M156",
@@ -5104,7 +5414,9 @@
       "Cool and eat as a snack.",
       "Can be mixed with a pinch of jaggery powder if preferred."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M157",
@@ -5135,7 +5447,9 @@
       "Stir into half a cup of warm water.",
       "Drink or eat immediately (ground flaxseeds oxidise quickly, so consume fresh)."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M158",
@@ -5166,7 +5480,9 @@
       "Deseed and eat slowly as a snack.",
       "For seed sprinkle: Toast sesame seeds lightly; sprinkle over soaked dates before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M159",
@@ -5199,7 +5515,9 @@
       "Eat fresh as a snack.",
       "For seed sprinkle: Sprinkle pumpkin seeds over fresh coconut pieces before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M160",
@@ -5231,7 +5549,9 @@
       "Eat as a crunchy snack.",
       "For seed sprinkle: Mix roasted seeds into the chana before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M161",
@@ -5264,7 +5584,9 @@
       "Eat fresh as a snack.",
       "For seed sprinkle: Arrange cucumber sticks on a plate; sprinkle pumpkin seeds alongside with lemon and black salt."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M162",
@@ -5296,7 +5618,9 @@
       "The soaking water can also be consumed for added benefit.",
       "For seed sprinkle: Grind flaxseeds fresh; sprinkle over soaked figs before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M163",
@@ -5328,7 +5652,9 @@
       "Eat fresh as a crunchy snack.",
       "For seed sprinkle: Arrange beetroot sticks on a plate; sprinkle pumpkin seeds over the top with lemon juice."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M164",
@@ -5360,7 +5686,9 @@
       "The soaking water can also be consumed.",
       "For seed sprinkle: Toast sesame seeds lightly; mix with soaked raisins before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M165",
@@ -5392,7 +5720,9 @@
       "Eat fresh as a crunchy snack.",
       "For seed sprinkle: Arrange carrot sticks; sprinkle pumpkin seeds alongside with lemon juice."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M166",
@@ -5422,7 +5752,9 @@
       "Soak cashews in water for 2 hours to improve digestibility.",
       "Drain and eat slowly as a snack."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M167",
@@ -5453,7 +5785,9 @@
       "Eat slowly as a snack.",
       "Choose unsalted pistachios for best results."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M168",
@@ -5483,7 +5817,9 @@
       "Eat 1–2 Brazil nuts as a snack.",
       "Do not exceed 2 per day due to high selenium content."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M169",
@@ -5514,7 +5850,9 @@
       "Eat fresh as a snack.",
       "For seed sprinkle: Halve the kiwi; scoop flesh into a bowl; sprinkle ground flaxseeds over the top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M170",
@@ -5545,7 +5883,9 @@
       "Eat fresh and chilled as a snack.",
       "For seed sprinkle: Arrange watermelon slices; sprinkle roasted pumpkin seeds over the top before eating."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M171",
@@ -5575,7 +5915,9 @@
       "Soak walnuts in water for 2 hours; soak figs overnight.",
       "Drain both and eat together as a snack."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M172",
@@ -5607,7 +5949,9 @@
       "Combine all three in a small bowl.",
       "Eat as a snack."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M173",
@@ -5646,7 +5990,9 @@
       "Sprinkle with chaat masala and lemon juice.",
       "Serve immediately."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M174",
@@ -5683,7 +6029,9 @@
       "Plate the cutlets alongside the chia raita and pomegranate salad.",
       "Serve immediately while the cutlets are still warm and crisp."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M175",
@@ -5722,7 +6070,9 @@
       "Store in an airtight container in the refrigerator for up to 5 days.",
       "Serve 2 ladoos per portion at room temperature."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M176",
@@ -5756,7 +6106,9 @@
       "Drink immediately.",
       "For seed sprinkle: Pour smoothie into a glass; sprinkle pumpkin seeds on top before drinking."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M177",
@@ -5789,7 +6141,9 @@
       "Stir in honey once slightly cooled.",
       "Sip slowly."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M178",
@@ -5822,7 +6176,9 @@
       "Drink immediately on an empty stomach.",
       "For seed sprinkle: Soak chia seeds for 15 minutes; stir into the kiwi lemonade before drinking."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M179",
@@ -5853,7 +6209,9 @@
       "Add a pinch of pink salt and stir.",
       "Drink at room temperature or chilled."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M180",
@@ -5887,7 +6245,9 @@
       "Serve immediately at room temperature.",
       "For seed sprinkle: Prepare beetroot chaat as usual; sprinkle roasted pumpkin seeds on top before serving."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M181",
@@ -5920,7 +6280,9 @@
       "Dust with cinnamon and chia seeds if using.",
       "Eat immediately to prevent browning."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M182",
@@ -5954,7 +6316,9 @@
       "Garnish with fresh coriander and serve immediately.",
       "For seed sprinkle: Prepare sweet corn chaat as usual; sprinkle pumpkin seeds on top before serving."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M183",
@@ -5989,7 +6353,9 @@
       "Toss well and serve immediately   do not let sit, cucumber releases water.",
       "For seed sprinkle: Prepare cucumber peanut salad as usual; sprinkle mixed seeds on top before serving."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M184",
@@ -6022,7 +6388,9 @@
       "Grill paneer 2–3 minutes per side until golden with char marks.",
       "Serve immediately with fresh mint chutney."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M185",
@@ -6058,7 +6426,9 @@
       "Garnish with fresh coriander and serve warm.",
       "For seed sprinkle: Prepare roasted sweet potato with hung curd as usual; sprinkle pumpkin seeds on top before serving."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M186",
@@ -6088,7 +6458,9 @@
       "Toss well to coat all ingredients.",
       "Garnish with fresh coriander; serve immediately."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M187",
@@ -6120,7 +6492,9 @@
       "Cook tikkis 3–4 minutes per side until golden and crisp.",
       "Serve hot with mint chutney or hung curd dip."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M188",
@@ -6154,7 +6528,9 @@
       "Mix curd, grated cucumber and cumin powder for the raita.",
       "Serve khichdi hot with cucumber raita."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M189",
@@ -6189,7 +6565,9 @@
       "Serve the warm ragi porridge with the boiled egg.",
       "Toss cucumber with lemon juice; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M190",
@@ -6221,7 +6599,9 @@
       "Bring to a boil, cover and cook on low heat for 18–20 minutes.",
       "Serve hot."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M191",
@@ -6255,7 +6635,9 @@
       "Knead wheat flour with warm water into a soft dough; roll into a thin roti and cook on a dry tawa for 2 minutes per side.",
       "Serve the soup with the roti."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M192",
@@ -6289,7 +6671,9 @@
       "Toss cucumber with lemon juice; serve alongside idli.",
       "Serve soaked walnuts as a light side snack   rich in omega-3 fatty acids that reduce skin inflammation and nourish hair follicles."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M193",
@@ -6324,7 +6708,9 @@
       "Mix grated carrot and cucumber with lemon juice; serve alongside.",
       "Serve soaked almonds as a light side snack   biotin and Vitamin E from almonds strengthen hair strands and protect the skin barrier."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M194",
@@ -6357,7 +6743,9 @@
       "Serve over a small portion of cooked brown rice.",
       "Toss tomato and onion with lemon juice and coriander; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M195",
@@ -6393,7 +6781,9 @@
       "Serve the soup with the roti.",
       "Toss cucumber with lemon juice and black salt; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M196",
@@ -6425,7 +6815,9 @@
       "Toss grated carrot with lemon juice; serve alongside.",
       "Serve pomegranate arils as a light side snack   polyphenols and ellagic acid protect skin collagen and fight free radical skin damage."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M197",
@@ -6479,7 +6871,9 @@
       "Water – ¼ cup (60 mL)",
       "Fresh coriander leaves – 1 tbsp, chopped"
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M198",
@@ -6515,7 +6909,9 @@
       "Toss cucumber and tomato with lemon juice; serve alongside.",
       "Serve soaked almonds and roasted pumpkin seeds as a light snack alongside   biotin from almonds and zinc from pumpkin seeds are essential for hair keratin and skin repair."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M199",
@@ -6551,7 +6947,9 @@
       "Mix grated cucumber into curd with cumin powder and a pinch of salt for the raita.",
       "Serve tomato egg rice hot with cucumber raita on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M200",
@@ -6586,7 +6984,9 @@
       "Serve the soup with the roti.",
       "Toss spinach with lemon juice and pepper; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M201",
@@ -6619,7 +7019,9 @@
       "Toss well and season with salt.",
       "Serve with curd on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M202",
@@ -6654,7 +7056,9 @@
       "Serve the clear soup with the roti.",
       "Toss cucumber with lemon juice; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M203",
@@ -6689,7 +7093,9 @@
       "Mix grated carrot and diced cucumber with lemon juice; serve alongside.",
       "Serve soaked walnuts and fig as a light snack alongside   omega-3 from walnuts reduces skin inflammation and iron from figs supports scalp circulation."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M204",
@@ -6722,7 +7128,9 @@
       "Serve at room temperature or chilled.",
       "Toss cucumber with lemon juice; serve alongside curd rice."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M205",
@@ -6758,7 +7166,9 @@
       "Slice tomato; toss with lemon juice and coriander; serve alongside.",
       "Serve roasted chana and pumpkin seeds as a light crunchy snack   plant protein and biotin from chana plus zinc from pumpkin seeds support hair keratin and skin collagen."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M206",
@@ -6791,7 +7201,9 @@
       "Mix cucumber and grated carrot with lemon juice; serve alongside.",
       "Serve soaked dates as a light snack   natural iron from dates supports scalp circulation and reduces hair fall."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M207",
@@ -6824,7 +7236,9 @@
       "Season with salt.",
       "Serve with brown rice."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M208",
@@ -6858,7 +7272,9 @@
       "Toss tomato and onion with lemon juice; serve alongside.",
       "Serve soaked almonds and walnuts as a light snack alongside   biotin from almonds and omega-3 from walnuts directly support hair strength and skin repair."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M209",
@@ -6890,7 +7306,9 @@
       "Add cooked rice and black pepper; toss everything together for 2–3 minutes.",
       "Season with salt and serve hot.                                              5. Bring the water to a boil in a large pot.                                         6. remove corns from sweet corn kernels."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M210",
@@ -6924,7 +7342,9 @@
       "Serve the soup with the roti.",
       "Toss cucumber with lemon juice and black salt; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M211",
@@ -6961,7 +7381,9 @@
       "Toss with lemon juice, coriander leaves and black salt.",
       "Serve fresh alongside the hot khichdi."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M212",
@@ -6996,7 +7418,9 @@
       "Toss cucumber and tomato with lemon juice; serve alongside.",
       "Serve fresh amla as a light snack alongside   Vitamin C from amla maximises iron absorption from the methi roti and supports collagen synthesis."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M213",
@@ -7028,7 +7452,9 @@
       "Season with salt and serve hot.",
       "Slice tomato; toss with lemon juice and coriander; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M214",
@@ -7063,7 +7489,9 @@
       "Toss spinach with lemon juice and pepper; serve alongside.",
       "Serve roasted pumpkin seeds as a light snack   zinc from pumpkin seeds supports keratin production and complements beetroot's iron for complete hair repair nutrition."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M215",
@@ -7096,7 +7524,9 @@
       "Cook appams on an appachatti until lacy-edged.",
       "Serve appams with the vegetable stew."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M216",
@@ -7130,7 +7560,9 @@
       "Serve alongside rasam, brown rice, papad and cucumber-tomato salad.",
       "Serve almond-pumpkin seed mix on the side as a light snack with the dinner   almonds provide biotin for hair strength and pumpkin seeds supply zinc for keratin production."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M217",
@@ -7164,7 +7596,9 @@
       "Adjust salt; garnish with fresh parsley and serve hot.",
       "Toss cucumber with lemon juice; serve alongside the soup."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M218",
@@ -7202,7 +7636,9 @@
       "Toss cucumber and tomato with lemon juice; serve alongside the soup.",
       "Serve soaked almonds and toasted sesame seeds as a light snack alongside   biotin from almonds and copper from sesame seeds directly enhance the collagen-stimulating effect of the soup."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M219",
@@ -7236,7 +7672,9 @@
       "Blend all chutney ingredients with 2 tbsp water until smooth; serve alongside.  8. Combine diced tomato and cucumber; toss with lemon juice, coriander and black salt.",
       "Serve set dosas hot with mint chutney and tomato-cucumber salad on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M220",
@@ -7273,7 +7711,9 @@
       "For appam: heat an appam chatty (or small non-stick pan); pour one ladle batter; swirl to spread edges thin; cover and cook 2–3 minutes. Serve stew in a bowl alongside warm appam.,    8. Combine baby spinach and grated carrot; dress with lemon juice, olive oil, black pepper and salt; toss gently.",
       "Serve appams hot with coconut stew and spinach-carrot salad on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M221",
@@ -7310,7 +7750,9 @@
       "Serve warm chapathi with chilled beetroot raita.",
       "Toss spinach with lemon juice and pepper; serve alongside."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M222",
@@ -7345,7 +7787,9 @@
       "Blend smooth with a hand blender; stir in coconut milk; season.",
       "Serve quinoa pongal with roasted cashews on top alongside a bowl of pumpkin soup."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M223",
@@ -7380,7 +7824,9 @@
       "Toss paneer cubes in turmeric and red chilli; sauté in a hot pan with ½ tsp oil, 2 minutes per side until golden.",
       "Serve soup hot with golden paneer pieces on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M224",
@@ -7418,7 +7864,9 @@
       "Toss tomato and onion with lemon juice and coriander; serve alongside.",
       "Serve soaked walnuts and fig as a light snack alongside   omega-3 from walnuts reduces skin inflammation and iron from fig supports scalp circulation, completing the nutritional profile."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M225",
@@ -7451,7 +7899,9 @@
       "Rest chicken 3 minutes; slice.",
       "Serve mint rice with sliced grilled chicken on the side. ,mix butter milk ."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M226",
@@ -7486,7 +7936,9 @@
       "Toss sprouts with cucumber, lemon juice and chaat masala.",
       "Serve beetroot chapathis with chole curry and sprouts salad on the side."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M227",
@@ -7522,7 +7974,9 @@
       "Serve sliced chicken with the spinach-cucumber salad on the side.",
       "Serve fresh pomegranate arils on the side   their polyphenols fight post-meal oxidative stress and support collagen preservation for skin and hair."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Non Veg"
   },
   {
     "meal_id": "M228",
@@ -7556,7 +8010,9 @@
       "Stir in cooked quinoa; season with lemon juice, salt and pepper.",
       "Serve immediately with optional parmesan or nutritional yeast on top."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M229",
@@ -7596,7 +8052,9 @@
       "Mix grated carrot and beetroot with lemon juice; serve alongside tambuli.",
       "Serve roasted chana, soaked almonds and pumpkin seeds as a substantial light snack alongside   plant protein from chana, biotin from almonds and zinc from pumpkin seeds together boost this very light dinner."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M230",
@@ -7630,7 +8088,9 @@
       "Combine cooked daliya-dal with vegetables; add salt and water if needed for consistency.",
       "Simmer 5 minutes; finish with lemon juice and fresh coriander."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M231",
@@ -7666,7 +8126,9 @@
       "Drizzle ¼ tsp oil on edges; cook until crisp and edges lift (2–3 minutes).",
       "Serve 2 palak dosas with sambar and coconut chutney."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M232",
@@ -7695,7 +8157,9 @@
       "Squeeze fresh lemon juice in.",
       "Stir and sip slowly on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M233",
@@ -7725,7 +8189,9 @@
       "Warm slightly if desired.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M234",
@@ -7755,7 +8221,9 @@
       "Stir in lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M235",
@@ -7787,7 +8255,9 @@
       "Stir in honey and lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M236",
@@ -7818,7 +8288,9 @@
       "Stir in honey and lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M237",
@@ -7849,7 +8321,9 @@
       "Add lemon juice and black salt.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M238",
@@ -7879,7 +8353,9 @@
       "Stir in honey.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M239",
@@ -7910,7 +8386,9 @@
       "Add lemon juice and black salt.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M240",
@@ -7941,7 +8419,9 @@
       "Stir in honey and lemon.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M241",
@@ -7971,7 +8451,9 @@
       "Stir in lemon juice.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M242",
@@ -8003,7 +8485,9 @@
       "Add lemon juice and black salt.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M243",
@@ -8033,7 +8517,9 @@
       "Stir in honey.",
       "Sip slowly on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M244",
@@ -8063,7 +8549,9 @@
       "Stir in lemon juice and honey.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M245",
@@ -8094,7 +8582,9 @@
       "Stir in honey and lemon juice.",
       "Drink on an empty stomach."
     ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   },
   {
     "meal_id": "M246",
@@ -8125,72 +8615,8 @@
       "Stir in flaxseed powder and amla powder.",
       "Drink immediately on an empty stomach."
     ],
-    "image": "Picture"
-  },
-  {
-    "meal_id": "M300",
-    "session": "Breakfast",
-    "recipe_name": "Ragi Dosa with Sambar, Drumstick Leaf Powder Green Shot and Slivered Almonds",
-    "time": "08:00–08:30",
-    "description": "Ragi Dosa (finger millet crepe) with protein-packed toor dal sambar and a moringa green shot. Ragi is highly nutritious, rich in calcium, iron, and fiber. Moringa green shot is rich in iron and Vitamin C. Slivered almonds add biotin and Vitamin E.",
-    "primary_goal": [
-      "Skin repair (Pigmentation, Aging skin)",
-      "Hair repair (Hair fall, Scalp health)"
-    ],
-    "secondary_goal": [
-      "Gut health & digestion",
-      "Weight loss"
-    ],
-    "allergens": [
-      "Tree Nuts"
-    ],
-    "nutrition": {
-      "calories_kcal": 350,
-      "carbohydrates_g": 62.0,
-      "protein_g": 14.0,
-      "fat_g": 6.0,
-      "dietary_fiber_g": 10.0
-    },
-    "preparation_steps": [
-      "Prepare ragi dosa batter and cook thin crepes on a hot griddle.",
-      "Pressure cook toor dal with turmeric until soft; mash lightly.",
-      "Cook drumstick and carrot with tamarind pulp and sambar powder until tender; add dal and simmer 5 min.",
-      "Blend drumstick leaves with water until smooth; strain; stir in lemon juice and honey.",
-      "Serve hot ragi dosa with sambar, drumstick leaf green shot, and slivered almonds."
-    ],
-    "image": "Picture"
-  },
-  {
-    "meal_id": "M301",
-    "session": "Breakfast",
-    "recipe_name": "Palak Dosa with Sambar, Drumstick Leaf Powder Green Shot and Slivered Almonds",
-    "time": "08:00–08:30",
-    "description": "Palak Dosa (spinach crepe) with protein-packed toor dal sambar and a moringa green shot. Spinach adds folate, iron, and skin-loving vitamins. Moringa green shot is rich in iron and Vitamin C. Slivered almonds add biotin and Vitamin E.",
-    "primary_goal": [
-      "Skin repair (Pigmentation, Aging skin)",
-      "Hair repair (Hair fall, Scalp health)"
-    ],
-    "secondary_goal": [
-      "Gut health & digestion",
-      "Weight loss"
-    ],
-    "allergens": [
-      "Tree Nuts"
-    ],
-    "nutrition": {
-      "calories_kcal": 340,
-      "carbohydrates_g": 59.0,
-      "protein_g": 13.0,
-      "fat_g": 5.5,
-      "dietary_fiber_g": 9.5
-    },
-    "preparation_steps": [
-      "Prepare spinach dosa batter and cook thin crepes on a hot griddle.",
-      "Pressure cook toor dal with turmeric until soft; mash lightly.",
-      "Cook drumstick and carrot with tamarind pulp and sambar powder until tender; add dal and simmer 5 min.",
-      "Blend drumstick leaves with water until smooth; strain; stir in lemon juice and honey.",
-      "Serve hot palak dosa with sambar, drumstick leaf green shot, and slivered almonds."
-    ],
-    "image": "Picture"
+    "image": "",
+    "cuisine": "South Indian",
+    "diet_type": "Veg"
   }
 ]
