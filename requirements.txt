@@ -8,9 +8,9 @@ asyncpg>=0.29.0
 ollama>=0.4
 
 # AWS
-jwt
+PyJWT==2.8.0
+jwcrypto
 cryptography
-django
 botocore
 boto3
 

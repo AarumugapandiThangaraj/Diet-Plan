@@ -25,6 +25,7 @@ async def get_meal_consumption_logs(user_identifier: str, meal_date: date) -> Li
     try:
         async with AsyncSessionLocal() as session:
             try:
+                print("user_identifier val", user_identifier)
                 uid = uuid.UUID(user_identifier)
             except ValueError:
                 return []
