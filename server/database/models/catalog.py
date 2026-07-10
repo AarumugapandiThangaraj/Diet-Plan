@@ -1,3 +1,4 @@
+from config.config import DATABASE_SCHEMA
 from typing import Optional, List
 from datetime import time
 from sqlalchemy import BigInteger, String, Boolean, DateTime, Float, Integer, JSON, ForeignKey, CheckConstraint, Time, Text, UniqueConstraint
@@ -7,7 +8,7 @@ from database.base import Base, TimestampMixin
 
 class Cuisine(Base, TimestampMixin):
     __tablename__ = "cuisines"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     code: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
@@ -18,7 +19,7 @@ class Cuisine(Base, TimestampMixin):
 
 class FoodRole(Base, TimestampMixin):
     __tablename__ = "food_roles"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     code: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
@@ -27,7 +28,7 @@ class FoodRole(Base, TimestampMixin):
 
 class PrimaryGoal(Base, TimestampMixin):
     __tablename__ = "primary_goals"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     code: Mapped[str] = mapped_column(String(150), unique=True, nullable=False)
@@ -36,7 +37,7 @@ class PrimaryGoal(Base, TimestampMixin):
 
 class SecondaryGoal(Base, TimestampMixin):
     __tablename__ = "secondary_goals"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     code: Mapped[str] = mapped_column(String(150), unique=True, nullable=False)
@@ -45,7 +46,7 @@ class SecondaryGoal(Base, TimestampMixin):
 
 class MealSession(Base, TimestampMixin):
     __tablename__ = "meal_sessions"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     code: Mapped[str] = mapped_column(String(40), unique=True, nullable=False)
@@ -58,21 +59,21 @@ class MealSession(Base, TimestampMixin):
 
 class Food(Base, TimestampMixin):
     __tablename__ = "foods"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
-    cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.cuisines.id"), nullable=True)
+    cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.cuisines.id"), nullable=True)
     food_name: Mapped[str] = mapped_column("name_en", String(255), nullable=False)
 
     meal_foods = relationship("MealFood", back_populates="food")
 
 class Meal(Base, TimestampMixin):
     __tablename__ = "meals"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
-    cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.cuisines.id"), nullable=True)
-    meal_session_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meal_sessions.id"), nullable=True)
+    cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.cuisines.id"), nullable=True)
+    meal_session_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.meal_sessions.id"), nullable=True)
     session: Mapped[Optional[str]] = mapped_column(String(100), nullable=True, deferred=True)
     recipe_name: Mapped[str] = mapped_column("name_en", String(255), nullable=False)
     time: Mapped[Optional[str]] = mapped_column(String(100), nullable=True, deferred=True)
@@ -106,10 +107,10 @@ class Meal(Base, TimestampMixin):
 
 class MealFood(Base, TimestampMixin):
     __tablename__ = "meal_foods"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
-    meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
-    food_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.foods.id", ondelete="RESTRICT"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.meals.id", ondelete="CASCADE"), primary_key=True)
+    food_id: Mapped[int] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.foods.id", ondelete="RESTRICT"), primary_key=True)
     serving_size: Mapped[float] = mapped_column("quantity", Float, nullable=False)
 
     meal = relationship("Meal", back_populates="meal_foods")
@@ -119,10 +120,10 @@ class MealIngredient(Base, TimestampMixin):
     __tablename__ = "meal_ingredients"
     __table_args__ = (
         CheckConstraint("quantity >= 0", name="chk_meal_ingredient_quantity"),
-        {"schema": "Twellr_Nutri"}
+        {"schema": DATABASE_SCHEMA}
     )
 
-    meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.meals.id", ondelete="CASCADE"), primary_key=True)
     ingredient_name: Mapped[str] = mapped_column(String(255), primary_key=True)
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     unit: Mapped[str] = mapped_column(String(50), nullable=True)
@@ -131,27 +132,27 @@ class MealIngredient(Base, TimestampMixin):
 
 class MealPrimaryGoal(Base, TimestampMixin):
     __tablename__ = "meal_primary_goals"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
-    meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
-    primary_goal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.primary_goals.id", ondelete="CASCADE"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.meals.id", ondelete="CASCADE"), primary_key=True)
+    primary_goal_id: Mapped[int] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.primary_goals.id", ondelete="CASCADE"), primary_key=True)
 
     meal = relationship("Meal", back_populates="primary_goals")
     primary_goal = relationship("PrimaryGoal")
 
 class MealSecondaryGoal(Base, TimestampMixin):
     __tablename__ = "meal_secondary_goals"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
-    meal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.meals.id", ondelete="CASCADE"), primary_key=True)
-    secondary_goal_id: Mapped[int] = mapped_column(ForeignKey("Twellr_Nutri.secondary_goals.id", ondelete="CASCADE"), primary_key=True)
+    meal_id: Mapped[int] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.meals.id", ondelete="CASCADE"), primary_key=True)
+    secondary_goal_id: Mapped[int] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.secondary_goals.id", ondelete="CASCADE"), primary_key=True)
 
     meal = relationship("Meal", back_populates="secondary_goals")
     secondary_goal = relationship("SecondaryGoal")
 
 class Substitute(Base, TimestampMixin):
     __tablename__ = "substitutes"
-    __table_args__ = {"schema": "Twellr_Nutri"}
+    __table_args__ = {"schema": DATABASE_SCHEMA}
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True)
     allergen_category: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)

@@ -1,11 +1,10 @@
+from config.config import DATABASE_URL
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from config.settings import settings
 
-DATABASE_URL = settings.database_url
+# Ensure the asyncpg driver is used for SQLAlchemy async engine
 if DATABASE_URL.startswith("postgresql://"):
     DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
-
-
 
 engine = create_async_engine(
     DATABASE_URL,

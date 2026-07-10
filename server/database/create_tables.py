@@ -9,8 +9,12 @@ from database.session import engine
 from database.base import Base
 import database.models  # Ensure models are imported
 
+from sqlalchemy import text
+
 async def create_tables():
     async with engine.begin() as conn:
+        from config.config import DATABASE_SCHEMA
+        await conn.execute(text(f'CREATE SCHEMA IF NOT EXISTS "{DATABASE_SCHEMA}"'))
         await conn.run_sync(Base.metadata.create_all)
     print("Tables initialized successfully.")
 

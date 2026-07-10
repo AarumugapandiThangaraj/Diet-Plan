@@ -1,3 +1,4 @@
+from urllib.parse import quote_plus
 import ast
 from botocore.exceptions import ClientError
 import boto3
@@ -52,3 +53,15 @@ GATEWAY_JWT_AUDIENCE = "fastapi" # get_parameter(f'{ssm_path}/GATEWAY_JWT_AUD_AN
 GATEWAY_JWT_ALGORITHM = get_parameter(f'{ssm_path}/GATEWAY_JWT_ALG')
 GATEWAY_JWT_SECRET_NAME = get_parameter(f'{ssm_path}/GATEWAY_JWT_SECRET_NAME')
 GATEWAY_JWT_PUBLIC_KEY = get_parameter(f'{ssm_path}/PRIVATE_KEY')
+
+
+def build_database_url():
+    user = str(get_parameter(f"{ssm_path}/DATABASE_USER")).strip()
+    password = quote_plus(str(get_parameter(f"{ssm_path}/DATABASE_PASSWORD")).strip())
+    host = str(get_parameter(f"{ssm_path}/DATABASE_HOST")).strip()
+    port = str(get_parameter(f"{ssm_path}/DATABASE_PORT")).strip()
+    name = str(get_parameter(f"{ssm_path}/DATABASE_NAME")).strip()
+    return f"postgresql://{user}:{password}@{host}:{port}/{name}"
+
+
+DATABASE_URL = build_database_url()

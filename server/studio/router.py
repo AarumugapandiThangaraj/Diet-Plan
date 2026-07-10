@@ -1498,7 +1498,7 @@ async def create_new_health_profile(profile: CreateHealthProfileRequest, user_id
     def _int(v): return int(float(v)) if v is not None and str(v).strip() else None
     def _float(v): return float(v) if v is not None and str(v).strip() else None
     
-    uid = uuid.UUID(user_id)
+    uid = user_id
     
     activity_mapping = {
         "sedentary": "sedentary",

@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from dotenv import load_dotenv
+from .config import DATABASE_URL
 
 load_dotenv()
 
@@ -13,10 +14,11 @@ class Settings(BaseSettings):
     image_root: str = str(Path(__file__).resolve().parents[1] / "assets" / "images")
     mapping_root: str = str(Path(__file__).resolve().parents[1] / "assets" / "mappings")
     cache_size: int = 32
-    database_url: str = os.getenv(
-        "DATABASE_URL", 
-        "postgresql+asyncpg://postgres:postgres@localhost:5432/nutri"
-    )
+    database_url: str = DATABASE_URL
+    # database_url: str = os.getenv(
+    #     "DATABASE_URL", 
+    #     "postgresql+asyncpg://postgres:postgres@localhost:5432/nutri"
+    # )
 
 settings = Settings()
 

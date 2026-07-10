@@ -1,3 +1,4 @@
+from config.config import DATABASE_SCHEMA
 from typing import Optional
 from sqlalchemy import String, Boolean, DateTime, Float, Integer, JSON, ForeignKey, CheckConstraint, Text, UniqueConstraint, Date, Numeric, SmallInteger, Index, text
 from sqlalchemy.orm import Mapped, mapped_column
@@ -14,7 +15,7 @@ class UserHealthProfile(Base, TimestampMixin):
         CheckConstraint("height_cm IS NULL OR height_cm BETWEEN 50 AND 260", name="chk_height"),
         CheckConstraint("weight_kg IS NULL OR weight_kg BETWEEN 10 AND 400", name="chk_weight"),
         CheckConstraint("activity_level IS NULL OR activity_level IN ('sedentary','lightly_active','moderately_active','very_active','extra_active')", name="chk_activity"),
-        {"schema": "Twellr_Nutri"}
+        {"schema": DATABASE_SCHEMA}
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
@@ -50,13 +51,13 @@ class UserGoal(Base, TimestampMixin):
             "(goal_tier = 'secondary' AND secondary_goal_id IS NOT NULL AND primary_goal_id IS NULL)", 
             name="chk_goal_tier_fks"
         ),
-        {"schema": "Twellr_Nutri"}
+        {"schema": DATABASE_SCHEMA}
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    primary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.primary_goals.id", ondelete="RESTRICT"), nullable=True)
-    secondary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey("Twellr_Nutri.secondary_goals.id", ondelete="RESTRICT"), nullable=True)
+    primary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.primary_goals.id", ondelete="RESTRICT"), nullable=True)
+    secondary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.secondary_goals.id", ondelete="RESTRICT"), nullable=True)
     goal_tier: Mapped[str] = mapped_column(String(20), nullable=False)
     sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
@@ -65,7 +66,7 @@ class UserWeightLog(Base, TimestampMixin):
     __tablename__ = "user_weight_logs"
     __table_args__ = (
         CheckConstraint("weight_kg BETWEEN 10 AND 400", name="chk_weight_log"),
-        {"schema": "Twellr_Nutri"}
+        {"schema": DATABASE_SCHEMA}
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
@@ -83,7 +84,7 @@ class UserDailyIntake(Base, TimestampMixin):
     __tablename__ = "user_daily_intake"
     __table_args__ = (
         UniqueConstraint("user_id", "intake_date", name="uq_udi_user_date"),
-        {"schema": "Twellr_Nutri"}
+        {"schema": DATABASE_SCHEMA}
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
