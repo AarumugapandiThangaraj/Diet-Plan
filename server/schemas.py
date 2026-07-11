@@ -744,6 +744,39 @@ class DailyTargetsResponse(BaseModel):
     activityLevelNormalized: str = Field(..., description="Normalized activity level label matching constants.", json_schema_extra={"example": "moderate"})
 
 
+class MacroNutrients(BaseModel):
+    """Nutritional macro breakdown for a meal or food item."""
+    caloriesKcal: float = Field(0.0, description="Energy in kilocalories.")
+    proteinG: float = Field(0.0, description="Protein in grams.")
+    carbsG: float = Field(0.0, description="Carbohydrates in grams.")
+    fatG: float = Field(0.0, description="Fat in grams.")
+    fiberG: float = Field(0.0, description="Dietary fiber in grams.")
+
+
+class PlanFoodItem(BaseModel):
+    """A single food item within a meal, with its scaled quantity and macros."""
+    model_config = ConfigDict(extra='allow')
+
+    id: Optional[str] = Field(None, description="Unique food identifier from the catalog.")
+    # food_instance_id: Optional[str] = Field(None, description="Database row ID of this food in DietPlanMealFood table.")
+    name: Optional[str] = Field(None, description="Display name of the food item.")
+    quantity: float = Field(0.0, description="Scaled serving quantity.")
+    unit: str = Field("g", description="Unit of measurement (g, ml, piece, etc.).")
+
+
+class RankedMeal(BaseModel):
+    model_config = ConfigDict(populate_by_name=True, extra='allow')
+
+    Meal_ID: Optional[str] = Field(None, description="Catalog meal identifier.")
+    meal_name: Optional[str] = Field(None, description="Recipe display name.")
+    Discription: Optional[str] = Field(None, description="Recipe preparation instructions.")
+    imageUrl: Optional[str] = Field(None, description="Image URL or ID.")
+    serving_size: Optional[str] = Field(None, description="Scaled human-readable serving description.")
+    total_quantity: Optional[float] = Field(None, description="Sum of all scaled food quantities.")
+    total_quantity_unit: Optional[str] = Field("g", description="Unit for the total quantity.")
+    foods_struct: List[PlanFoodItem] = Field(default_factory=list, description="Scaled food items list.")
+    macros: Optional[MacroNutrients] = Field(None, alias="_macros", description="Scaled macros for this ranked candidate.")
+
 
 class RankResponse(BaseModel):
     model_config = ConfigDict(
@@ -773,36 +806,16 @@ class RankResponse(BaseModel):
         }
     )
     # targets: DailyTargetsResponse = Field(..., description="Calculated daily nutritional targets based on profile parameters.")
-    rankedByTime: Dict[str, List[Dict[str, Any]]] = Field(
+    rankedByTime: Dict[str, List[RankedMeal]] = Field(
         ...,
         description="Dictionary mapping each requested meal time to a sorted list of candidate meal objects with matching scores."
     )
-
-
-class MacroNutrients(BaseModel):
-    """Nutritional macro breakdown for a meal or food item."""
-    caloriesKcal: float = Field(0.0, description="Energy in kilocalories.")
-    proteinG: float = Field(0.0, description="Protein in grams.")
-    carbsG: float = Field(0.0, description="Carbohydrates in grams.")
-    fatG: float = Field(0.0, description="Fat in grams.")
-    fiberG: float = Field(0.0, description="Dietary fiber in grams.")
 
 
 class ScaleInfo(BaseModel):
     """Scaling metadata applied to a meal to match session-level macro targets."""
     requested: float = Field(1.0, description="Scale factor requested by the algorithm.")
     applied: float = Field(1.0, description="Scale factor actually applied after clamping.")
-
-
-class PlanFoodItem(BaseModel):
-    """A single food item within a meal, with its scaled quantity and macros."""
-    model_config = ConfigDict(extra='allow')
-
-    id: Optional[str] = Field(None, description="Unique food identifier from the catalog.")
-    food_instance_id: Optional[str] = Field(None, description="Database row ID of this food in DietPlanMealFood table.")
-    name: Optional[str] = Field(None, description="Display name of the food item.")
-    quantity: float = Field(0.0, description="Scaled serving quantity.")
-    unit: str = Field("g", description="Unit of measurement (g, ml, piece, etc.).")
 
 
 class PlanMealItem(BaseModel):

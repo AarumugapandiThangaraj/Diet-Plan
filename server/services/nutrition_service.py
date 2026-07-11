@@ -32,6 +32,7 @@ def calculate_daily_targets(profile: Dict[str, Any]) -> Dict[str, Any]:
     Computes all target nutrition goals (calories, protein, carbs, fat, fiber, water)
     based on the user's age, gender, height, weight, activity level, and targets.
     """
+    print("calc daily")
     age = _clamp(get_age_midpoint(profile.get("age_group") or profile.get("age")), 1, 120)
     height_cm = _clamp(_to_safe_number(profile.get("heightCm"), 165), 100, 250)
     weight_kg = _clamp(_to_safe_number(profile.get("weightKg"), 60), 20, 300)
@@ -76,7 +77,7 @@ def calculate_daily_targets(profile: Dict[str, Any]) -> Dict[str, Any]:
     water_l_min = water_target["min"]
     water_l_max = water_target["max"]
     water_l = water_target["default"]
-
+    print("Calc end")
     return {
         "age": int(round(age)),
         "heightCm": float(round(height_cm, 1)),

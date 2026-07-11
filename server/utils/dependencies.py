@@ -15,7 +15,6 @@ async def get_current_user_id(request: Request) -> str:
         gateway_user_id = get_gateway_user_id(request, required=False)
 
 
-
         print("gateway_user_id", gateway_user_id)
         if gateway_user_id:
             print("Going to get user _id")
@@ -25,3 +24,10 @@ async def get_current_user_id(request: Request) -> str:
                 return user_id
     except Exception as e:
         print("Exception in get_current_user_id", e)  
+
+    # Fallback to x-user-id header
+    # user_id = request.headers.get("x-user-id")
+    # if user_id:
+    #     return user_id
+
+    # raise HTTPException(status_code=401, detail="User identification missing")

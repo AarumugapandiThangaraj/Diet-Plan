@@ -3,7 +3,9 @@ import ast
 from botocore.exceptions import ClientError
 import boto3
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 env = os.getenv("ENV", "dev")
 

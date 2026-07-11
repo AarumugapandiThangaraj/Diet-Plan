@@ -439,6 +439,8 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
     Backend arrangement logic for generating a draft meal plan.
     It takes a pool of selected meal IDs for each meal time and distributes them across the requested days.
     """
+    print("Starting")
+
     profile = _apply_cuisine(req.profile.model_dump())
     days = max(1, min(21, int(req.days)))
     targets = fetch_daily_targets_service(profile)
@@ -465,7 +467,9 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
             all_ids.add(mid)
 
     # Use the Backend Meal Arrangement Engine to distribute meals
+    print("Arrange start")
     assignment_by_time = arrange_plan_sessions(pools_by_time, days, meal_times)
+    print("Arrange end")
 
     cuisine = profile.get("cuisineType") or "north_indian"
     from repositories.meal_repository import get_meal_index_by_id_async
@@ -523,19 +527,23 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
 
     try:
         # Save explicitly as 'draft'
+        print("Save user start")
+
         saved_plan = await save_user_plan_service(user_id, days, res_payload, profile, status='draft')
+        print("Save user edn")
     except Exception as e:
         import logging, traceback
         logging.getLogger("app.studio").error(f"Failed to persist draft plan: {e}\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail="Failed to save draft plan.")
     
+    print("Returning")
     return {
         "planId": saved_plan["plan_id"],
         "version": saved_plan["version"],
         "status": saved_plan["status"]
     }
 
-    return formatted_data
+    
 
 @router.get(
     "/meal-plans/{plan_id}",
@@ -547,7 +555,7 @@ async def create_draft_plan(req: CreateDraftRequest, user_id: str = Depends(get_
 async def get_draft_plan(plan_id: str, user_id: str = Depends(get_current_user_id)):
     plan_data = await get_draft_user_plan_service(plan_id)
     if not plan_data:
-        raise HTTPException(status_code=404, detail="Draft plan not found.")
+        raise HTTPException(status_code=404, detail="Plan not found.")
 
     import sys, os
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -606,6 +614,7 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
 
         raw_payload = updated_plan.get("plan_payload", {})
         status = updated_plan.get("status")
+        print("About status")
         
         if status == "active":
             payload = {"weeks": format_active_plan(raw_payload, meal_lookup=meal_lookup)}
@@ -617,6 +626,7 @@ async def update_draft_plan(plan_id: str, req: PatchPlanRequest, user_id: str = 
         
         payload["planId"] = updated_plan.get("plan_id")
         payload["version"] = updated_plan.get("version")
+        
         payload["status"] = status
 
         return payload
@@ -1521,11 +1531,16 @@ async def create_new_health_profile(profile: CreateHealthProfileRequest, user_id
     activity_mapping = {
         "sedentary": "sedentary",
         "light": "lightly_active",
+        "lightly_active": "lightly_active",
         "moderate": "moderately_active",
-        "heavy": "very_active"
+        "moderately_active": "moderately_active",
+        "heavy": "very_active",
+        "very_active": "very_active",
+        "active": "very_active",
+        "extra_active": "extra_active"
     }
     act_level = profile_dict.get("activityLevel")
-    mapped_activity = activity_mapping.get(act_level, act_level)
+    mapped_activity = activity_mapping.get(act_level, "very_active")
     
     async with AsyncSessionLocal() as session:
         await session.execute(

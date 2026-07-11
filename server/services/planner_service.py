@@ -24,6 +24,8 @@ def fetch_daily_targets_service(profile: dict) -> dict:
     """
     Retrieves the target nutrient breakdown based on physical metrics inside the user profile.
     """
+    print("Starting 27")
+
     return calculate_daily_targets(profile)
 
 def fetch_ranked_meals_service(profile: dict, meal_times: List[str], limit: int) -> dict:
@@ -194,6 +196,8 @@ async def get_draft_user_plan_service(plan_id: str) -> Optional[dict]:
 from repositories.draft_plan_repository import update_draft_plan, activate_draft_plan
 
 async def update_draft_user_plan_service(plan_id: str, user_id: str, version: int, operations: list) -> dict:
+    print("Method stating - Update draft user plan")
+
     return await update_draft_plan(plan_id, user_id, version, operations)
 
 async def activate_draft_user_plan_service(plan_id: str, user_id: str) -> bool:

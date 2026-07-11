@@ -20,6 +20,8 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
     import logging
     _log = logging.getLogger("app.repo")
     try:
+        print("Method stating - Update draft plan")
+
         async with AsyncSessionLocal() as session:
             # plan_id must always be a UUID
             try:

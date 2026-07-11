@@ -112,6 +112,7 @@ class MealFood(Base, TimestampMixin):
     meal_id: Mapped[int] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.meals.id", ondelete="CASCADE"), primary_key=True)
     food_id: Mapped[int] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.foods.id", ondelete="RESTRICT"), primary_key=True)
     serving_size: Mapped[float] = mapped_column("quantity", Float, nullable=False)
+    unit: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
 
     meal = relationship("Meal", back_populates="meal_foods")
     food = relationship("Food", back_populates="meal_foods")

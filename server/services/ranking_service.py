@@ -86,6 +86,26 @@ def session_target_macros(
     }
 
 def _rank_view(meal: Dict[str, Any], score: float, scaled_macros: Dict[str, float], scale_factor: float) -> Dict[str, Any]:
+    foods = meal.get("foods_struct") or []
+    serving_parts = []
+    scaled_foods = []
+    for f in foods:
+        base_size = float(f.get("serving_size") or 1.0)
+        scaled_qty = round(base_size * scale_factor, 1)
+        if scaled_qty.is_integer():
+            scaled_qty = int(scaled_qty)
+        unit = f.get("unit") or "serving"
+        name = f.get("name") or "food"
+        serving_parts.append(f"{scaled_qty} {unit} of {name}")
+        
+        scaled_f = f.copy()
+        scaled_f["quantity"] = scaled_qty
+        scaled_f.pop("serving_size", None)
+        scaled_foods.append(scaled_f)
+    
+    serving_size_str = ", ".join(serving_parts) if serving_parts else "1 serving"
+    total_quantity = sum(float(f["quantity"]) for f in scaled_foods) if scaled_foods else scale_factor
+    
     return {
         "Meal_ID": meal.get("Meal_ID"),
         "meal_name": meal.get("meal_name"),
@@ -98,7 +118,10 @@ def _rank_view(meal: Dict[str, Any], score: float, scaled_macros: Dict[str, floa
         "imageUrl": meal.get("image_ID") or "",
         # "diet_type": meal.get("diet_type"),
         # "time": meal.get("time") or "",
-        # "serving_size": meal.get("serving_size") or "",
+        "serving_size": serving_size_str,
+        "total_quantity": round(total_quantity, 1),
+        "total_quantity_unit": "g",
+        "foods_struct": scaled_foods,
         # "caution": meal.get("caution") or "",
         # "nutritive_values": format_nutritive_values(scaled_macros),
         "_macros": scaled_macros,
@@ -176,8 +199,8 @@ def rank_meals_for_meal_time(
                 continue
             seen.add(mid)
             ranked.append(m)
-            if len(ranked) >= int(limit):
-                break
+            # if len(ranked) >= int(limit):
+            #     break
 
     push_unique(score(strict))
 

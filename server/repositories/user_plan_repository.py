@@ -1,6 +1,6 @@
 from datetime import date
 from typing import Optional
-from sqlalchemy import select, update, and_, func, String, cast, desc, text
+from sqlalchemy import select, update, delete, and_, func, String, cast, desc, text
 from sqlalchemy.orm import selectinload, undefer
 from database.session import AsyncSessionLocal
 from database.models import DietPlan, DietPlanDay, DietPlanMeal, DietPlanMealFood, MealSession, UserHealthProfile, Meal
@@ -171,7 +171,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
     try:
         async with AsyncSessionLocal() as session:
             try:
-                uid = uuid.UUID(user_identifier)
+                uid = user_identifier
             except ValueError:
                 raise RepositoryException("Invalid user identifier format (expected UUID)")
                 
@@ -191,20 +191,11 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
 
             # only archive old plans if activating
             if status == 'active':
-                stmt = select(DietPlan).filter_by(user_id=uid, status='active')
-                res = await session.execute(stmt)
-                old_plans = res.scalars().all()
-                for op in old_plans:
-                    op.status = 'archived'
-                await session.flush()
+                archive_stmt = update(DietPlan).where(DietPlan.user_id == uid, DietPlan.status == 'active').values(status='archived')
+                await session.execute(archive_stmt)
             elif status == 'draft':
-                # Archive or delete previous draft
-                stmt = select(DietPlan).filter_by(user_id=uid, status='draft')
-                res = await session.execute(stmt)
-                old_drafts = res.scalars().all()
-                for od in old_drafts:
-                    await session.delete(od)
-                await session.flush()
+                delete_stmt = delete(DietPlan).where(DietPlan.user_id == uid, DietPlan.status == 'draft')
+                await session.execute(delete_stmt)
                 
             targets = plan_payload.get("targets", {})
             totals = plan_payload.get("totalsAll") or plan_payload.get("totals", {})
@@ -221,11 +212,16 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                 activity_mapping = {
                     "sedentary": "sedentary",
                     "light": "lightly_active",
+                    "lightly_active": "lightly_active",
                     "moderate": "moderately_active",
-                    "heavy": "very_active"
+                    "moderately_active": "moderately_active",
+                    "heavy": "very_active",
+                    "very_active": "very_active",
+                    "active": "very_active",
+                    "extra_active": "extra_active"
                 }
                 act_level = profile_data.get("activityLevel")
-                mapped_activity = activity_mapping.get(act_level, act_level)
+                mapped_activity = activity_mapping.get(act_level, "very_active")
 
                 uhp = UserHealthProfile(
                     user_id=uid,
@@ -279,7 +275,6 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                 ends_on=end_date
             )
             session.add(plan_obj)
-            await session.flush() # get plan_obj.id
             
             plans_arr = plan_payload.get("plans")
             if not plans_arr:
@@ -291,7 +286,6 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     
             for day_idx, day_data in enumerate(plans_arr):
                 day_obj = DietPlanDay(
-                    plan_id=plan_obj.id,
                     day_number=day_idx + 1,
                     calories_kcal=0.0,
                     protein_g=0.0,
@@ -299,8 +293,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     fat_g=0.0,
                     fiber_g=0.0
                 )
-                session.add(day_obj)
-                await session.flush()
+                plan_obj.days_rel.append(day_obj)
                 
                 for session_code, meal_data in day_data.items():
                     if session_code not in sessions_map: continue
@@ -318,7 +311,6 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                     c_id = cuisine_map.get(meal_cuisine_name)
 
                     meal_obj = DietPlanMeal(
-                        plan_day_id=day_obj.id,
                         meal_session_id=sessions_map[session_code],
                         meal_id=int(client_meal_id) if client_meal_id else None,
                         calories_kcal=meal_macros.get("caloriesKcal"),
@@ -327,20 +319,17 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                         fat_g=meal_macros.get("fatG"),
                         fiber_g=meal_macros.get("fiberG")
                     )
-                    session.add(meal_obj)
-                    await session.flush()
+                    day_obj.meals_rel.append(meal_obj)
                     
                     for food_data in meal_data.get("foods_struct", []):
                         client_food_id = str(food_data.get("id")) if food_data.get("id") is not None else None
                         
                         food_obj = DietPlanMealFood(
-                            plan_meal_id=meal_obj.id,
                             food_id=int(client_food_id) if client_food_id is not None else None,
                             quantity=food_data.get("quantity", 0),
                             unit=food_data.get("unit", "g")
                         )
-                        session.add(food_obj)
-                        await session.flush()
+                        meal_obj.meal_foods_rel.append(food_obj)
             
             await session.commit()
             

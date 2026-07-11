@@ -70,7 +70,7 @@ async def _load_all_meals_db(cuisine_code: str = None) -> List[Dict[str, Any]]:
                         "name": mf.food.food_name,
                         "serving_size": mf.serving_size,
                         "quantity": 1.0,
-                        "unit": "serving"
+                        "unit": mf.unit if mf.unit else "serving"
                     })
 
             ingredients_struct = []
