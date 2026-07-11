@@ -223,15 +223,35 @@ async def update_draft_plan(plan_id: str, user_id: str, version: int, operations
                     scaled_meal = scale_info["scaledMeal"]
                     db_new_meal_id = db_new_meal.id
 
+                    scale_factor = scale_info.get("scaleFactorApplied", 1.0)
                     upd_stmt = update(DietPlanMeal).where(DietPlanMeal.id == instance_id).values(
                         meal_id=db_new_meal_id,
                         calories_kcal=scaled_meal.get("macros", {}).get("caloriesKcal", 0.0),
                         protein_g=scaled_meal.get("macros", {}).get("proteinG", 0.0),
                         carbs_g=scaled_meal.get("macros", {}).get("carbsG", 0.0),
                         fat_g=scaled_meal.get("macros", {}).get("fatG", 0.0),
-                        fiber_g=scaled_meal.get("macros", {}).get("fiberG", 0.0)
+                        fiber_g=scaled_meal.get("macros", {}).get("fiberG", 0.0),
+                        scale_applied=scale_factor
                     )
                     await session.execute(upd_stmt)
+                    
+                    # Delete old foods for this meal instance
+                    stmt_del = delete(DietPlanMealFood).where(DietPlanMealFood.plan_meal_id == instance_id)
+                    await session.execute(stmt_del)
+                    
+                    # Insert new scaled food items
+                    foods = scaled_meal.get("foods_struct", [])
+                    for food in foods:
+                        client_food_id = food.get("id") or food.get("food_id")
+                        base_size = float(food.get("serving_size") or 1.0)
+                        food_obj = DietPlanMealFood(
+                            plan_meal_id=instance_id,
+                            food_id=int(client_food_id) if client_food_id is not None else None,
+                            unit=food.get("unit", "serving"),
+                            quantity=base_size * scale_factor,
+                        )
+                        session.add(food_obj)
+
                     await session.flush()
                     affected_day_ids.add(dp_day.id)
 
@@ -403,10 +423,13 @@ async def apply_meal_swap_to_db(plan_meal_id: str, new_meal_id: str, cuisine_typ
         
         foods = new_meal.get("foods_struct", [])
         for food in foods:
+            client_food_id = food.get("id") or food.get("food_id")
+            base_size = float(food.get("serving_size") or 1.0)
             food_obj = DietPlanMealFood(
                 plan_meal_id=pid,
+                food_id=int(client_food_id) if client_food_id is not None else None,
                 unit=food.get("unit", "serving"),
-                quantity=float(food.get("quantity", 1.0)) * scale_factor,
+                quantity=base_size * scale_factor,
             )
             session.add(food_obj)
             

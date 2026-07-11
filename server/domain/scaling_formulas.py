@@ -195,6 +195,8 @@ def scale_meal_payload_to_targets(
                 next_ing_qty = ing.quantity * qty_factor
                 ing.quantity = next_ing_qty
                 ing.macros = ing.macros.scale(qty_factor)
+            
+            food.recalculate_macros()
                 
         scaled.recalculate_macros()
         if scaled.macros.caloriesKcal <= 0 and base.macros.caloriesKcal > 0:
@@ -217,6 +219,7 @@ def scale_meal_to_targets(
         req, app, scaled = scale_meal_payload_to_targets(m, t)
         
         out = scaled.model_dump(by_alias=True, exclude_unset=True)
+        out["macros"] = out.get("_macros")
         # recompute ingredients struct list just in case
         flat_ingredients = []
         for food in out.get("foods_struct") or []:

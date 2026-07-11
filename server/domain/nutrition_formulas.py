@@ -104,11 +104,28 @@ def get_age_midpoint(age_str: Any) -> float:
     val = _to_safe_number(s, 30.0)
     return val
 
-def get_water_target(activity_level: str) -> Dict[str, float]:
+def get_water_target(activity_level: str, weight_kg: float) -> Dict[str, float]:
     activity = normalize_activity_level(activity_level)
-    if activity in ("sedentary", "light"):
-        return {"min": 3.0, "max": 3.5, "default": 3.25}
-    return {"min": 4.0, "max": 4.5, "default": 4.25}
+    base_ml = weight_kg * 35.0
+    
+    if activity == "light":
+        min_adj, max_adj = 250.0, 500.0
+    elif activity == "moderate":
+        min_adj, max_adj = 500.0, 750.0
+    elif activity == "heavy":
+        min_adj, max_adj = 750.0, 1000.0
+    else:  # sedentary
+        min_adj, max_adj = 0.0, 0.0
+        
+    min_l = (base_ml + min_adj) / 1000.0
+    max_l = (base_ml + max_adj) / 1000.0
+    default_l = (base_ml + (min_adj + max_adj) / 2.0) / 1000.0
+    
+    return {
+        "min": round(min_l, 2),
+        "max": round(max_l, 2),
+        "default": round(default_l, 2)
+    }
 
 def _protein_g_per_kg_target(bmi_category: str) -> float:
     c = str(bmi_category or "").lower()

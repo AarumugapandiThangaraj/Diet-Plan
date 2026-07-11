@@ -171,7 +171,7 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
     try:
         async with AsyncSessionLocal() as session:
             try:
-                uid = user_identifier
+                uid = uuid.UUID(user_identifier)
             except ValueError:
                 raise RepositoryException("Invalid user identifier format (expected UUID)")
                 
@@ -317,16 +317,21 @@ async def save_user_plan(user_identifier: str, start_date: date, end_date: date,
                         protein_g=meal_macros.get("proteinG"),
                         carbs_g=meal_macros.get("carbsG"),
                         fat_g=meal_macros.get("fatG"),
-                        fiber_g=meal_macros.get("fiberG")
+                        fiber_g=meal_macros.get("fiberG"),
+                        scale_applied=meal_data.get("scale", {}).get("applied", 1.0)
                     )
                     day_obj.meals_rel.append(meal_obj)
                     
                     for food_data in meal_data.get("foods_struct", []):
                         client_food_id = str(food_data.get("id")) if food_data.get("id") is not None else None
                         
+                        base_size = float(food_data.get("serving_size") or 1.0)
+                        scale_val = float(food_data.get("quantity") or 1.0)
+                        scaled_qty = base_size * scale_val
+                        
                         food_obj = DietPlanMealFood(
                             food_id=int(client_food_id) if client_food_id is not None else None,
-                            quantity=food_data.get("quantity", 0),
+                            quantity=scaled_qty,
                             unit=food_data.get("unit", "g")
                         )
                         meal_obj.meal_foods_rel.append(food_obj)

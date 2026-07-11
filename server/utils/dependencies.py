@@ -26,8 +26,8 @@ async def get_current_user_id(request: Request) -> str:
         print("Exception in get_current_user_id", e)  
 
     # Fallback to x-user-id header
-    # user_id = request.headers.get("x-user-id")
-    # if user_id:
-    #     return user_id
+    user_id = request.headers.get("x-user-id")
+    if user_id:
+        return user_id
 
-    # raise HTTPException(status_code=401, detail="User identification missing")
+    raise HTTPException(status_code=401, detail="User identification missing")

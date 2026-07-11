@@ -73,7 +73,7 @@ def calculate_daily_targets(profile: Dict[str, Any]) -> Dict[str, Any]:
     fiber_g_raw = int(round((daily_calories / 1000) * FIBER_G_PER_1000_KCAL))
     fiber_g = max(25, min(35, fiber_g_raw)) # Clamp between 25 and 35
 
-    water_target = get_water_target(profile.get("activityLevel"))
+    water_target = get_water_target(profile.get("activityLevel"), weight_kg)
     water_l_min = water_target["min"]
     water_l_max = water_target["max"]
     water_l = water_target["default"]

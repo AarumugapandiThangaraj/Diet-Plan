@@ -25,13 +25,13 @@ def format_active_plan(plan_payload: Dict[str, Any], consumed_meal_ids: set = No
                 for mk in day_totals.keys():
                     day_totals[mk] += float(macros.get(mk) or 0.0)
                     
-                meal_id = str(meal.get("Meal_ID") or "")
+                meal_id = str(meal.get("id") or "")
                 
                 foods = meal.get("foods_struct") or []
                 foods_list = []
                 for f in foods:
                     foods_list.append({
-                        "id": str(f.get("id") or f.get("ID") or f.get("food_id") or ""),
+                        "id": str(f.get("food_instance_id") or f.get("id") or ""),
                         "name": str(f.get("name") or f.get("food_name") or ""),
                         "servingSize": str(f.get("serving_size") or ""),
                         "quantity": float(f.get("quantity") or 1.0),
@@ -166,17 +166,33 @@ def format_draft_plan(plan_payload: Dict[str, Any], meal_lookup: Dict[str, Any] 
                     scheduled_time = time_map.get(session, "12:00 PM")
                 meal["scheduledTime"] = scheduled_time
                 
-                # Determine if food swappable
-                meal_foods = meal.get("foods") or meal.get("ingredients") or []
-                if isinstance(meal_foods, str):
-                    try:
-                        import json
-                        meal_foods = json.loads(meal_foods)
-                    except:
-                        meal_foods = meal_foods.split(',')
-                meal["is_food_swappable"] = len(meal_foods) > 1 if isinstance(meal_foods, list) else False
+                # Map foods_struct (containing database-scaled quantities) into foods
+                foods = meal.get("foods_struct") or []
+                foods_list = []
+                for f in foods:
+                    foods_list.append({
+                        "id": str(f.get("food_instance_id") or f.get("id") or ""),
+                        "name": str(f.get("name") or f.get("food_name") or ""),
+                        "servingSize": str(f.get("serving_size") or ""),
+                        "quantity": float(f.get("quantity") or 1.0),
+                        "unit": str(f.get("unit") or "serving")
+                    })
                 
-                day_meals.append(meal)
+                # Format the meal dictionary to standard layout containing scaled macros
+                macros = meal.get("macros") or {}
+                meal_formatted = {
+                    "mealId": str(meal.get("id") or ""),
+                    "name": meal["name"],
+                    "image_ID": meal["image_ID"],
+                    "session": display_session,
+                    "scheduledTime": scheduled_time,
+                    "macros": {k: float(v) for k, v in macros.items()},
+                    "foods": foods_list,
+                    "ingredients": meal.get("ingredients"),
+                    "is_food_swappable": len(foods_list) > 1 if foods_list else False
+                }
+                
+                day_meals.append(meal_formatted)
                 
         formatted_day["meals"] = day_meals
         formatted_days.append(formatted_day)
