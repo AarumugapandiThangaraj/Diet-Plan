@@ -7,7 +7,7 @@ import uuid
 from database.base import Base, TimestampMixin
 
 class UserHealthProfile(Base, TimestampMixin):
-    __tablename__ = "user_health_profiles"
+    __tablename__ = "nutri_user_health_profiles"
     __table_args__ = (
         Index("idx_uhp_latest", "user_id", unique=True, postgresql_where=text("is_latest = true")),
         CheckConstraint("age IS NULL OR age BETWEEN 1 AND 120", name="chk_age"),
@@ -18,7 +18,7 @@ class UserHealthProfile(Base, TimestampMixin):
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    id: Mapped[uuid.UUID] = mapped_column("assessment_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False) # Cross-schema FK to wellness_platform.users not strictly enforced in SQLAlchemy here unless both are mapped.
     legacy_user_identifier: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     
@@ -41,7 +41,7 @@ class UserHealthProfile(Base, TimestampMixin):
     is_latest: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
 
 class UserGoal(Base, TimestampMixin):
-    __tablename__ = "user_goals"
+    __tablename__ = "nutri_user_goals"
     __table_args__ = (
         UniqueConstraint("user_id", "primary_goal_id", name="uq_ug_user_primary"),
         UniqueConstraint("user_id", "secondary_goal_id", name="uq_ug_user_secondary"),
@@ -54,52 +54,52 @@ class UserGoal(Base, TimestampMixin):
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    id: Mapped[uuid.UUID] = mapped_column("user_goal_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    primary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.primary_goals.id", ondelete="RESTRICT"), nullable=True)
-    secondary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.secondary_goals.id", ondelete="RESTRICT"), nullable=True)
+    primary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_primary_goals.primary_goal_id", ondelete="RESTRICT"), nullable=True)
+    secondary_goal_id: Mapped[Optional[int]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_secondary_goals.secondary_goal_id", ondelete="RESTRICT"), nullable=True)
     goal_tier: Mapped[str] = mapped_column(String(20), nullable=False)
     sort_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="0")
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="true")
 
-class UserWeightLog(Base, TimestampMixin):
-    __tablename__ = "user_weight_logs"
-    __table_args__ = (
-        CheckConstraint("weight_kg BETWEEN 10 AND 400", name="chk_weight_log"),
-        {"schema": DATABASE_SCHEMA}
-    )
+# class UserWeightLog(Base, TimestampMixin):
+#     __tablename__ = "user_weight_logs"
+#     __table_args__ = (
+#         CheckConstraint("weight_kg BETWEEN 10 AND 400", name="chk_weight_log"),
+#         {"schema": DATABASE_SCHEMA}
+#     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    weight_kg: Mapped[float] = mapped_column(Numeric(5, 2), nullable=False)
-    bmi: Mapped[Optional[float]] = mapped_column(Numeric(4, 1), nullable=True)
-    bmi_category: Mapped[Optional[str]] = mapped_column(String(30), nullable=True)
-    bmr_kcal: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
-    target_weight_kg: Mapped[Optional[float]] = mapped_column(Numeric(5, 2), nullable=True)
-    water_l: Mapped[Optional[float]] = mapped_column(Numeric(4, 2), nullable=True)
-    notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
-    recorded_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
+#     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+#     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+#     weight_kg: Mapped[float] = mapped_column(Numeric(5, 2), nullable=False)
+#     bmi: Mapped[Optional[float]] = mapped_column(Numeric(4, 1), nullable=True)
+#     bmi_category: Mapped[Optional[str]] = mapped_column(String(30), nullable=True)
+#     bmr_kcal: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+#     target_weight_kg: Mapped[Optional[float]] = mapped_column(Numeric(5, 2), nullable=True)
+#     water_l: Mapped[Optional[float]] = mapped_column(Numeric(4, 2), nullable=True)
+#     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+#     recorded_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
 
-class UserDailyIntake(Base, TimestampMixin):
-    __tablename__ = "user_daily_intake"
-    __table_args__ = (
-        UniqueConstraint("user_id", "intake_date", name="uq_udi_user_date"),
-        {"schema": DATABASE_SCHEMA}
-    )
+# class UserDailyIntake(Base, TimestampMixin):
+#     __tablename__ = "user_daily_intake"
+#     __table_args__ = (
+#         UniqueConstraint("user_id", "intake_date", name="uq_udi_user_date"),
+#         {"schema": DATABASE_SCHEMA}
+#     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    intake_date: Mapped[Date] = mapped_column(Date, nullable=False)
+#     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+#     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+#     intake_date: Mapped[Date] = mapped_column(Date, nullable=False)
     
-    calories_consumed: Mapped[float] = mapped_column(Numeric(10, 2), nullable=False, server_default="0")
-    protein_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
-    carbs_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
-    fat_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
-    fiber_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
+#     calories_consumed: Mapped[float] = mapped_column(Numeric(10, 2), nullable=False, server_default="0")
+#     protein_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
+#     carbs_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
+#     fat_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
+#     fiber_consumed_g: Mapped[float] = mapped_column(Numeric(8, 2), nullable=False, server_default="0")
     
-    calories_target: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
-    protein_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
-    carbs_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
-    fat_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
-    fiber_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
+#     calories_target: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+#     protein_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
+#     carbs_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
+#     fat_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
+#     fiber_target_g: Mapped[Optional[float]] = mapped_column(Numeric(8, 2), nullable=True)
 

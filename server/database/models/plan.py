@@ -7,7 +7,7 @@ import uuid
 from database.base import Base, TimestampMixin
 
 class DietPlan(Base, TimestampMixin):
-    __tablename__ = "diet_plans"
+    __tablename__ = "nutri_diet_plans"
     __table_args__ = (
         Index("idx_dp_user_active", "user_id", unique=True, postgresql_where=text("status = 'active'")), # Partial index in SQL
         CheckConstraint("days BETWEEN 1 AND 90", name="chk_days"),
@@ -15,9 +15,9 @@ class DietPlan(Base, TimestampMixin):
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    id: Mapped[uuid.UUID] = mapped_column("plan_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    health_profile_id: Mapped[Optional[uuid.UUID]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.user_health_profiles.id", ondelete="SET NULL"), nullable=True)
+    health_profile_id: Mapped[Optional[uuid.UUID]] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_user_health_profiles.assessment_id", ondelete="SET NULL"), nullable=True)
     
     days: Mapped[int] = mapped_column(SmallInteger, nullable=False)
     status: Mapped[str] = mapped_column(String(30), nullable=False, server_default="'draft'")
@@ -62,15 +62,15 @@ class DietPlan(Base, TimestampMixin):
     days_rel: Mapped[list["DietPlanDay"]] = relationship("DietPlanDay", back_populates="plan", cascade="all, delete-orphan")
 
 class DietPlanDay(Base, TimestampMixin):
-    __tablename__ = "diet_plan_days"
+    __tablename__ = "nutri_diet_plan_days"
     __table_args__ = (
         UniqueConstraint("plan_id", "day_number", name="uq_dpd_plan_day"),
         CheckConstraint("day_number BETWEEN 1 AND 90", name="chk_day_number"),
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    plan_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plans.id", ondelete="CASCADE"), nullable=False)
+    id: Mapped[uuid.UUID] = mapped_column("day_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    plan_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_diet_plans.plan_id", ondelete="CASCADE"), nullable=False)
     day_number: Mapped[int] = mapped_column(SmallInteger, nullable=False)
     
     calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
@@ -81,19 +81,18 @@ class DietPlanDay(Base, TimestampMixin):
     
     plan: Mapped["DietPlan"] = relationship("DietPlan", back_populates="days_rel")
     meals_rel: Mapped[list["DietPlanMeal"]] = relationship("DietPlanMeal", back_populates="day", cascade="all, delete-orphan")
-    hydration_logs_rel: Mapped[list["DietPlanDayHydrationLog"]] = relationship("DietPlanDayHydrationLog", back_populates="plan_day", cascade="all, delete-orphan")
 
 class DietPlanMeal(Base, TimestampMixin):
-    __tablename__ = "diet_plan_meals"
+    __tablename__ = "nutri_diet_plan_meals"
     __table_args__ = (
         UniqueConstraint("plan_day_id", "meal_session_id", name="uq_dpm_day_session"),
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plan_days.id", ondelete="CASCADE"), nullable=False)
-    meal_session_id: Mapped[int] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.meal_sessions.id", ondelete="RESTRICT"), nullable=False)
-    meal_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.meals.id", ondelete="SET NULL"), nullable=True)
+    id: Mapped[uuid.UUID] = mapped_column("plan_meal_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_diet_plan_days.day_id", ondelete="CASCADE"), nullable=False)
+    meal_session_id: Mapped[int] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_meal_sessions.meal_session_id", ondelete="RESTRICT"), nullable=False)
+    meal_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.nutri_meals.meal_id", ondelete="SET NULL"), nullable=True)
     
     calories_kcal: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
     protein_g: Mapped[Optional[float]] = mapped_column(Numeric(10, 2), nullable=True)
@@ -105,19 +104,18 @@ class DietPlanMeal(Base, TimestampMixin):
     
     day: Mapped["DietPlanDay"] = relationship("DietPlanDay", back_populates="meals_rel")
     meal_foods_rel: Mapped[list["DietPlanMealFood"]] = relationship("DietPlanMealFood", back_populates="meal", cascade="all, delete-orphan")
-    consumptions_rel: Mapped[list["DietPlanMealConsumption"]] = relationship("DietPlanMealConsumption", back_populates="plan_meal", cascade="all, delete-orphan")
     meal: Mapped["Meal"] = relationship("Meal")
 
 class DietPlanMealFood(Base, TimestampMixin):
-    __tablename__ = "diet_plan_meal_foods"
+    __tablename__ = "nutri_diet_plan_meal_foods"
     __table_args__ = (
         CheckConstraint("quantity >= 0", name="chk_quantity"),
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    plan_meal_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plan_meals.id", ondelete="CASCADE"), nullable=False)
-    food_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.foods.id", ondelete="SET NULL"), nullable=True)
+    id: Mapped[uuid.UUID] = mapped_column("meal_food_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    plan_meal_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_diet_plan_meals.plan_meal_id", ondelete="CASCADE"), nullable=False)
+    food_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.nutri_foods.food_id", ondelete="SET NULL"), nullable=True)
     
     quantity: Mapped[float] = mapped_column(Float, nullable=False)
     unit: Mapped[str] = mapped_column(String(50), nullable=False)
@@ -127,56 +125,56 @@ class DietPlanMealFood(Base, TimestampMixin):
 
 
 
-class DietPlanMealConsumption(Base, TimestampMixin):
-    __tablename__ = "diet_plan_meal_consumption"
-    __table_args__ = (
-        UniqueConstraint("user_id", "plan_meal_id", name="uq_dpmc_plan_meal"),
-        CheckConstraint("state IN ('eaten','partial','skipped','planned')", name="chk_state"),
-        CheckConstraint("portion_factor BETWEEN 0.0 AND 5.0", name="chk_portion_factor"),
-        {"schema": DATABASE_SCHEMA}
-    )
+# class DietPlanMealConsumption(Base, TimestampMixin):
+#     __tablename__ = "diet_plan_meal_consumption"
+#     __table_args__ = (
+#         UniqueConstraint("user_id", "plan_meal_id", name="uq_dpmc_plan_meal"),
+#         CheckConstraint("state IN ('eaten','partial','skipped','planned')", name="chk_state"),
+#         CheckConstraint("portion_factor BETWEEN 0.0 AND 5.0", name="chk_portion_factor"),
+#         {"schema": DATABASE_SCHEMA}
+#     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    plan_meal_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plan_meals.id", ondelete="CASCADE"), nullable=False)
+#     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+#     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+#     plan_meal_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plan_meals.id", ondelete="CASCADE"), nullable=False)
     
-    state: Mapped[str] = mapped_column(String(20), nullable=False, server_default="'eaten'")
-    portion_factor: Mapped[float] = mapped_column(Numeric(4, 2), nullable=False, server_default="1.0")
-    consumed_at: Mapped[Optional[DateTime]] = mapped_column(DateTime(timezone=True), nullable=True)
-    consumed_date: Mapped[Date] = mapped_column(Date, nullable=False, server_default=text("CURRENT_DATE"))
-    notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+#     state: Mapped[str] = mapped_column(String(20), nullable=False, server_default="'eaten'")
+#     portion_factor: Mapped[float] = mapped_column(Numeric(4, 2), nullable=False, server_default="1.0")
+#     consumed_at: Mapped[Optional[DateTime]] = mapped_column(DateTime(timezone=True), nullable=True)
+#     consumed_date: Mapped[Date] = mapped_column(Date, nullable=False, server_default=text("CURRENT_DATE"))
+#     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
-    plan_meal: Mapped["DietPlanMeal"] = relationship("DietPlanMeal", back_populates="consumptions_rel")
+#     plan_meal: Mapped["DietPlanMeal"] = relationship("DietPlanMeal", back_populates="consumptions_rel")
 
-class DietPlanDayHydrationLog(Base):
-    __tablename__ = "diet_plan_day_hydration_log"
-    __table_args__ = (
-        CheckConstraint("glasses BETWEEN 1 AND 20", name="chk_glasses"),
-        CheckConstraint("volume_ml IS NULL OR volume_ml BETWEEN 1 AND 5000", name="chk_volume"),
-        CheckConstraint("source IN ('manual','imported','wearable')", name="chk_source"),
-        {"schema": DATABASE_SCHEMA}
-    )
+# class DietPlanDayHydrationLog(Base):
+#     __tablename__ = "diet_plan_day_hydration_log"
+#     __table_args__ = (
+#         CheckConstraint("glasses BETWEEN 1 AND 20", name="chk_glasses"),
+#         CheckConstraint("volume_ml IS NULL OR volume_ml BETWEEN 1 AND 5000", name="chk_volume"),
+#         CheckConstraint("source IN ('manual','imported','wearable')", name="chk_source"),
+#         {"schema": DATABASE_SCHEMA}
+#     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plan_days.id", ondelete="CASCADE"), nullable=False)
+#     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+#     user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+#     plan_day_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plan_days.id", ondelete="CASCADE"), nullable=False)
     
-    logged_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
-    glasses: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="1")
-    volume_ml: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
-    source: Mapped[str] = mapped_column(String(30), nullable=False, server_default="'manual'")
+#     logged_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False, server_default="now()")
+#     glasses: Mapped[int] = mapped_column(SmallInteger, nullable=False, server_default="1")
+#     volume_ml: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+#     source: Mapped[str] = mapped_column(String(30), nullable=False, server_default="'manual'")
 
-    plan_day: Mapped["DietPlanDay"] = relationship("DietPlanDay", back_populates="hydration_logs_rel")
+#     plan_day: Mapped["DietPlanDay"] = relationship("DietPlanDay", back_populates="hydration_logs_rel")
 
 
 class DietPlanEvent(Base, TimestampMixin):
-    __tablename__ = "diet_plan_events"
+    __tablename__ = "nutri_diet_plan_events"
     __table_args__ = (
         {"schema": DATABASE_SCHEMA}
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    plan_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.diet_plans.id", ondelete="CASCADE"), nullable=False)
+    id: Mapped[uuid.UUID] = mapped_column("event_id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    plan_id: Mapped[uuid.UUID] = mapped_column(ForeignKey(f"{DATABASE_SCHEMA}.nutri_diet_plans.plan_id", ondelete="CASCADE"), nullable=False)
     event_type: Mapped[str] = mapped_column(String(50), nullable=False) # e.g. "MEAL_SWAPPED", "PLAN_GENERATED"
     meal_instance_id: Mapped[Optional[uuid.UUID]] = mapped_column(UUID(as_uuid=True), nullable=True)
     details: Mapped[Optional[dict]] = mapped_column(JSONB, nullable=True)

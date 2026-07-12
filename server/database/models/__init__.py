@@ -8,8 +8,6 @@ from .catalog import (
     Meal,
     MealFood,
     MealIngredient,
-    Substitute,
-    FoodRole,
     PrimaryGoal,
     SecondaryGoal,
     MealPrimaryGoal,
@@ -22,8 +20,6 @@ from .plan import (
     DietPlanDay,
     DietPlanMeal,
     DietPlanMealFood,
-    DietPlanMealConsumption,
-    DietPlanDayHydrationLog,
     DietPlanEvent,
 )
 
@@ -31,18 +27,16 @@ from .plan import (
 from .user import (
     UserHealthProfile,
     UserGoal,
-    UserWeightLog,
-    UserDailyIntake,
 )
 
 # Preference models
-from .preference import UserPreference
+# from .preference import UserPreference
 
 # Concern/tag models
 from .concern import FoodConcernTag, MealConcernTag
 
 # Chat models
-from .chat import ChatSession, ChatMessage
+# from .chat import ChatSession, ChatMessage
 
 __all__ = [
     # Catalog
@@ -52,29 +46,19 @@ __all__ = [
     'Meal',
     'MealFood',
     'MealIngredient',
-    'Substitute',
     # Plan
     'DietPlan',
     'DietPlanDay',
     'DietPlanMeal',
     'DietPlanMealFood',
-    'DietPlanMealConsumption',
     'DietPlanEvent',
     # User
     'UserHealthProfile',
     'UserGoal',
-    'UserWeightLog',
-    'UserDailyIntake',
-    'DietPlanDayHydrationLog',
-    # Preferences
-    'UserPreference',
     # Concerns
     'FoodConcernTag',
     'MealConcernTag',
     # Chat
-    'ChatSession',
-    'ChatMessage',
-    'FoodRole',
     'PrimaryGoal',
     'SecondaryGoal',
     'MealPrimaryGoal',

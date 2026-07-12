@@ -18,6 +18,10 @@ from typing import Any, Dict, List, Set, Tuple
 from sqlalchemy import select, text
 from sqlalchemy.orm import selectinload
 
+# Add 'server' directory to sys.path to resolve module imports
+server_dir = Path(__file__).resolve().parent.parent
+sys.path.append(str(server_dir))
+
 from config.settings import settings
 from config.constants import VALID_CUISINES, GRAM_UNITS, MEAL_TIME_ORDER
 from domain.conversion_engine import UNIT_TO_GRAMS
@@ -27,10 +31,10 @@ from database.session import engine, AsyncSessionLocal
 import database.models
 from database.models.catalog import (
     Cuisine, Food, Meal, MealFood, MealIngredient,
-    Substitute, MealSession, FoodRole, PrimaryGoal, MealPrimaryGoal,
+    MealSession, PrimaryGoal, MealPrimaryGoal,
     SecondaryGoal, MealSecondaryGoal
 )
-from database.models.preference import UserPreference
+# from database.models.preference import UserPreference
 
 
 # Cuisines list matching the original settings
@@ -262,25 +266,45 @@ class ETLPipeline:
         print("\nWriting verified datasets to database...")
         target_schema = test_schema if test_schema else "Twellr_Nutri"
         
+        # Create local engine directly from .env to bypass AWS SSM config.py
+        from dotenv import load_dotenv
+        import os
+        load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+        
+        local_db_url = os.getenv("DATABASE_URL")
+        if not local_db_url:
+            local_db_url = "postgresql+asyncpg://postgres:postgres@localhost:5433/nutri"
+        if local_db_url.startswith("postgresql://"):
+            local_db_url = local_db_url.replace("postgresql://", "postgresql+asyncpg://", 1)
+
+        print(f"Using local DATABASE_URL: {local_db_url}")
+        
+        from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
+        local_engine = create_async_engine(local_db_url, echo=False, future=True, pool_size=20, max_overflow=10)
+        LocalAsyncSession = async_sessionmaker(bind=local_engine, class_=AsyncSession, expire_on_commit=False, autocommit=False, autoflush=False)
+
         # Schema translation mapping for SQLAlchemy models
         translate_map = {"Twellr_Nutri": target_schema} if test_schema else None
         
         # Create all tables cleanly by dropping the entire schema with CASCADE
-        engine_options = engine
+        engine_options = local_engine
         if translate_map:
-            engine_options = engine.execution_options(schema_translate_map=translate_map)
+            engine_options = local_engine.execution_options(schema_translate_map=translate_map)
             
         async with engine_options.begin() as conn:
-            await conn.execute(text(f"DROP SCHEMA IF EXISTS \"{target_schema}\" CASCADE"))
-            await conn.execute(text(f"CREATE SCHEMA \"{target_schema}\""))
+            # Create the target schema if it doesn't exist
+            await conn.execute(text(f'CREATE SCHEMA IF NOT EXISTS "{target_schema}"'))
+            
+            # Drop and recreate only the tables managed by SQLAlchemy models
+            await conn.run_sync(Base.metadata.drop_all)
             await conn.run_sync(Base.metadata.create_all)
                 
-        print(f"Database schemas created under {target_schema}.")
+        print(f"Database tables recreated successfully.")
 
         # Setup session with schema translation
-        session_factory = AsyncSessionLocal
+        session_factory = LocalAsyncSession
         if translate_map:
-            session_factory = lambda: AsyncSessionLocal(bind=engine.execution_options(schema_translate_map=translate_map))
+            session_factory = lambda: LocalAsyncSession(bind=local_engine.execution_options(schema_translate_map=translate_map))
 
         async with session_factory() as session:
             print("Seeding cuisines and meal sessions...")
@@ -305,12 +329,12 @@ class ETLPipeline:
                 await session.flush()
                 session_db_map[code] = session_obj.id
 
-            print("Seeding reference tables...")
-            roles = ['base', 'side', 'snack', 'dessert', 'beverage', 'condiment', 'other']
-            for r in roles:
-                role_obj = FoodRole(code=r, name_en=r.capitalize())
-                session.add(role_obj)
-            await session.commit()
+            # print("Seeding reference tables...")
+            # roles = ['base', 'side', 'snack', 'dessert', 'beverage', 'condiment', 'other']
+            # for r in roles:
+            #     role_obj = FoodRole(code=r, name_en=r.capitalize())
+            #     session.add(role_obj)
+            # await session.commit()
             
             # Since primary goals and secondary goals are now dynamic from JSON, we'll build them during meal insert
             primary_goal_map = {}
@@ -372,7 +396,8 @@ class ETLPipeline:
                     carbohydrates_g=float(nut.get("carbohydrates_g", 0.0)),
                     protein_g=float(nut.get("protein_g", 0.0)),
                     fat_g=float(nut.get("fat_g", 0.0)),
-                    dietary_fiber_g=float(nut.get("dietary_fiber_g", 0.0))
+                    dietary_fiber_g=float(nut.get("dietary_fiber_g", 0.0)),
+                    image=m.get("image")
                 )
                 session.add(meal_obj)
                 
@@ -413,10 +438,16 @@ class ETLPipeline:
                 match = re.search(r"([\d\.]+)", val)
                 parsed_size = float(match.group(1)) if match else 0.0
                 
+                unit_val = mf.get("unit")
+                if not unit_val and val:
+                    unit_match = re.search(r"[a-zA-Z]+", val)
+                    unit_val = unit_match.group(0) if unit_match else None
+                
                 mf_obj = MealFood(
                     meal_id=meal_map[real_m_id],
                     food_id=food_map[real_f_id],
-                    serving_size=parsed_size
+                    serving_size=parsed_size,
+                    unit=unit_val
                 )
                 session.add(mf_obj)
                 
@@ -442,45 +473,45 @@ class ETLPipeline:
 
             await session.commit()
             # 7. Seed Preferences & Substitutes
-            print("Seeding user preferences...")
-            pref_file = Path(__file__).resolve().parents[1] / "chat_memory" / "default_user.json"
-            if pref_file.exists():
-                try:
-                    prefs = json.loads(pref_file.read_text(encoding="utf-8"))
-                    pref_obj = UserPreference(
-                        user_identifier="default_user",
-                        likes=prefs.get("likes") or [],
-                        dislikes=prefs.get("dislikes") or [],
-                        allergies=prefs.get("allergies") or [],
-                        notes=prefs.get("notes") or []
-                    )
-                    session.add(pref_obj)
-                    await session.commit()
-                    print("Preferences seeded successfully.")
-                except Exception as e:
-                    print(f"Error seeding user preferences: {e}")
+            # print("Seeding user preferences...")
+            # pref_file = Path(__file__).resolve().parents[1] / "chat_memory" / "default_user.json"
+            # if pref_file.exists():
+            #     try:
+            #         prefs = json.loads(pref_file.read_text(encoding="utf-8"))
+            #         pref_obj = UserPreference(
+            #             user_identifier="default_user",
+            #             likes=prefs.get("likes") or [],
+            #             dislikes=prefs.get("dislikes") or [],
+            #             allergies=prefs.get("allergies") or [],
+            #             notes=prefs.get("notes") or []
+            #         )
+            #         session.add(pref_obj)
+            #         await session.commit()
+            #         print("Preferences seeded successfully.")
+            #     except Exception as e:
+            #         print(f"Error seeding user preferences: {e}")
 
-            print("Seeding substitutes...")
-            subs_file = self.data_root / "master_substituents.json"
-            if subs_file.exists():
-                try:
-                    sub_data = json.loads(subs_file.read_text(encoding="utf-8"))
-                    for item in sub_data:
-                        sub_id = item.get("Subsitutes_ID")
-                        allergen_name = item.get("allergen_name")
-                        if not sub_id or not allergen_name:
-                            continue
-                        sub_obj = Substitute(
-                            allergen_category=item.get("allergen_category"),
-                            allergen_code=allergen_name,
-                            name_en=allergen_name,
-                            substitutes=item.get("substitutes") or {}
-                        )
-                        session.add(sub_obj)
-                    await session.commit()
-                    print("Substitutes seeded successfully.")
-                except Exception as e:
-                    print(f"Error seeding substitutes: {e}")
+            # print("Seeding substitutes...")
+            # subs_file = self.data_root / "master_substituents.json"
+            # if subs_file.exists():
+            #     try:
+            #         sub_data = json.loads(subs_file.read_text(encoding="utf-8"))
+            #         for item in sub_data:
+            #             sub_id = item.get("Subsitutes_ID")
+            #             allergen_name = item.get("allergen_name")
+            #             if not sub_id or not allergen_name:
+            #                 continue
+            #             sub_obj = Substitute(
+            #                 allergen_category=item.get("allergen_category"),
+            #                 allergen_code=allergen_name,
+            #                 name_en=allergen_name,
+            #                 substitutes=item.get("substitutes") or {}
+            #             )
+            #             session.add(sub_obj)
+            #         await session.commit()
+            #         print("Substitutes seeded successfully.")
+            #     except Exception as e:
+            #         print(f"Error seeding substitutes: {e}")
 
             print("\nDatabase load and cache recompilation completed successfully!")
 
