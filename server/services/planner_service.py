@@ -39,7 +39,8 @@ def fetch_ranked_meals_service(profile: dict, meal_times: List[str], limit: int)
             profile=profile,
             meal_time=mt,
             targets=targets,
-            limit=limit
+            limit=limit,
+            meal_times=meal_times
         )["ranked"]
         
     return {

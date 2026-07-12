@@ -139,6 +139,7 @@ def rank_meals_for_meal_time(
     min_options: int = 7,
     allow_relax_goal: bool = True,
     allow_relax_diet: bool = False,
+    meal_times: Optional[List[str]] = None,
 ) -> Dict[str, Any]:
     if not targets:
         targets = calculate_daily_targets(profile)
@@ -146,7 +147,7 @@ def rank_meals_for_meal_time(
     goal = normalize_goal(profile.get("goal"))
     diet_type = profile.get("dietType")
     allergy_keywords = split_keywords(profile.get("allergies"))
-    expected = session_target_macros(targets, meal_time)
+    expected = session_target_macros(targets, meal_time, meal_times)
 
     weights = _macro_weights(targets.get("bmiCategory"))
     cuisine = profile.get("cuisineType") or "north_indian"

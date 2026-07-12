@@ -271,12 +271,19 @@ class ETLPipeline:
         import os
         load_dotenv(Path(__file__).resolve().parent.parent / ".env")
         
-        local_db_url = os.getenv("DATABASE_URL")
-        if not local_db_url:
-            local_db_url = "postgresql+asyncpg://postgres:postgres@localhost:5433/nutri"
-        if local_db_url.startswith("postgresql://"):
+        from config.config import DATABASE_URL as local_db_url
+        
+        # local_db_url = os.getenv("DATABASE_URL")
+        # if not local_db_url:
+        #     local_db_url = "postgresql+asyncpg://postgres:postgres@localhost:5432/nutri"
+        
+        if local_db_url and local_db_url.startswith("postgresql://"):
             local_db_url = local_db_url.replace("postgresql://", "postgresql+asyncpg://", 1)
 
+        # if local_db_url.startswith("postgresql://"):
+        #     local_db_url = local_db_url.replace("postgresql://", "postgresql+asyncpg://", 1)
+        #
+        # print(f"Using local DATABASE_URL: {local_db_url}")
         print(f"Using local DATABASE_URL: {local_db_url}")
         
         from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker

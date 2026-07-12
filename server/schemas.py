@@ -1504,3 +1504,5 @@ class RecipeDetailsResponse(BaseModel):
     preparation: Optional[str] = Field(None, description="Preparation steps for the entire recipe")
     ingredients: List[RecipeIngredient] = Field(default_factory=list, description="List of all ingredients for the entire meal")
     foods_struct: List[FoodRecipeInfo] = Field(default_factory=list, description="Component foods list")
+    total_quantity: Optional[float] = Field(None, description="Sum of all scaled food quantities.")
+    total_quantity_unit: Optional[str] = Field("g", description="Unit for the total quantity.")

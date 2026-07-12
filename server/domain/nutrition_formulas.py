@@ -74,13 +74,7 @@ def calculate_bmr(weight_kg: float, height_cm: float, age: float, gender: Any) -
 
 def calculate_tdee(bmr_kcal: float, activity_level: Any, bmi_adjustment: float = 0.0) -> float:
     activity = normalize_activity_level(activity_level)
-    mapping = {
-        "sedentary": 1.40,
-        "light": 1.55,
-        "moderate": 1.70,
-        "heavy": 1.90
-    }
-    mult = mapping.get(activity, 1.40)
+    mult = ACTIVITY_MULTIPLIERS.get(activity, 1.2)
     return bmr_kcal * mult + bmi_adjustment
 
 def get_bmi_adjustment(bmi: float) -> float:

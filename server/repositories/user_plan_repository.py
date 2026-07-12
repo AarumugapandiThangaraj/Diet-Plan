@@ -646,7 +646,7 @@ async def load_plan_meal_recipe(plan_meal_id: uuid.UUID) -> Optional[dict]:
             ingredients = [
                 {
                     "name": mi.ingredient_name,
-                    "quantity": float(mi.quantity) * scale_factor,
+                    "quantity": round(float(mi.quantity) * scale_factor, 0),
                     "unit": mi.unit or "g"
                 }
                 for mi in meal.meal_ingredients
@@ -663,6 +663,8 @@ async def load_plan_meal_recipe(plan_meal_id: uuid.UUID) -> Optional[dict]:
                     "unit": f["unit"]
                 })
 
+            total_quantity = sum(float(f["quantity"]) for f in foods) if foods else scale_factor
+
             recipe_details = {
                 "mealInstanceId": str(plan_meal.id),
                 "meal_id": plan_meal.meal_id,
@@ -670,15 +672,18 @@ async def load_plan_meal_recipe(plan_meal_id: uuid.UUID) -> Optional[dict]:
                 "description": meal.description,
                 "imageUrl": meal.image,
                 "macros": {
-                    "caloriesKcal": float(plan_meal.calories_kcal) if plan_meal.calories_kcal else 0.0,
-                    "proteinG": float(plan_meal.protein_g) if plan_meal.protein_g else 0.0,
-                    "carbsG": float(plan_meal.carbs_g) if plan_meal.carbs_g else 0.0,
-                    "fatG": float(plan_meal.fat_g) if plan_meal.fat_g else 0.0,
-                    "fiberG": float(plan_meal.fiber_g) if plan_meal.fiber_g else 0.0
+                    #round to 0 decimal place
+                    "caloriesKcal": round(float(plan_meal.calories_kcal), 0) if plan_meal.calories_kcal else 0.0,
+                    "proteinG": round(float(plan_meal.protein_g), 0) if plan_meal.protein_g else 0.0,
+                    "carbsG": round(float(plan_meal.carbs_g), 0) if plan_meal.carbs_g else 0.0,
+                    "fatG": round(float(plan_meal.fat_g), 0) if plan_meal.fat_g else 0.0,
+                    "fiberG": round(float(plan_meal.fiber_g), 0) if plan_meal.fiber_g else 0.0
                 },
                 "preparation": "\n".join(prep_steps) if prep_steps else "",
                 "ingredients": ingredients,
-                "foods_struct": foods_struct
+                "foods_struct": foods_struct,
+                "total_quantity": round(total_quantity, 1),
+                "total_quantity_unit": "g"
             }
             return recipe_details
 

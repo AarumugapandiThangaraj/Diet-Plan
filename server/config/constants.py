@@ -28,11 +28,11 @@ ACTIVITY_MULTIPLIERS: Dict[str, float] = {
 
 MEAL_DISTRIBUTION: Dict[str, float] = {
     "early_morning": 0.05,
-    "breakfast": 0.30,
+    "breakfast": 0.20,
     "mid_morning": 0.10,
     "lunch": 0.25,
     "evening": 0.10,
-    "dinner": 0.15,
+    "dinner": 0.25,
     "bedtime": 0.05,
 }
 

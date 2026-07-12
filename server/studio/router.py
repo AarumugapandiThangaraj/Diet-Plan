@@ -1604,5 +1604,7 @@ async def studio_get_recipe_details(mealInstanceId: str):
         "preparation_time": "30 mins prep",
         "preparation": recipe["preparation"],
         "ingredients": recipe["ingredients"],
-        "foods_struct": recipe["foods_struct"]
+        "foods_struct": recipe["foods_struct"],
+        "total_quantity": recipe.get("total_quantity"),
+        "total_quantity_unit": recipe.get("total_quantity_unit", "g")
     }
