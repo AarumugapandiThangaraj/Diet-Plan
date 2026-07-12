@@ -66,5 +66,5 @@ def build_database_url():
     return f"postgresql://{user}:{password}@{host}:{port}/{name}"
 
 
-# DATABASE_URL = build_database_url()
-DATABASE_URL = "postgresql+asyncpg://postgres:postgres@localhost:5433/nutri"
+DATABASE_URL = build_database_url()
+# DATABASE_URL = "postgresql+asyncpg://postgres:postgres@localhost:5433/nutri"
