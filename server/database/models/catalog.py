@@ -75,7 +75,7 @@ class Meal(Base, TimestampMixin):
     cuisine_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.nutri_cuisines.cuisine_id"), nullable=True)
     meal_session_id: Mapped[Optional[int]] = mapped_column(BigInteger, ForeignKey(f"{DATABASE_SCHEMA}.nutri_meal_sessions.meal_session_id"), nullable=True)
     session: Mapped[Optional[str]] = mapped_column(String(100), nullable=True, deferred=True)
-    recipe_name: Mapped[str] = mapped_column("name_en", String(255), nullable=False)
+    recipe_name: Mapped[str] = mapped_column("meal_name", String(255), nullable=False)
     time: Mapped[Optional[str]] = mapped_column(String(100), nullable=True, deferred=True)
     description: Mapped[Optional[str]] = mapped_column("description_en", Text, nullable=True)
     
