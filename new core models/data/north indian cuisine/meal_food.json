@@ -1,0 +1,2594 @@
+[
+  {
+    "meal_id": "MEAL_001",
+    "food_id": "FOOD_001",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_002",
+    "food_id": "FOOD_002",
+    "serving_size": 280.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_003",
+    "food_id": "FOOD_003",
+    "serving_size": 260.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_004",
+    "food_id": "FOOD_004",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_005",
+    "food_id": "FOOD_005",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_006",
+    "food_id": "FOOD_006",
+    "serving_size": 260.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_007",
+    "food_id": "FOOD_007",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_008",
+    "food_id": "FOOD_008",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_009",
+    "food_id": "FOOD_009",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_010",
+    "food_id": "FOOD_010",
+    "serving_size": 260.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_011",
+    "food_id": "FOOD_011",
+    "serving_size": 280.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_012",
+    "food_id": "FOOD_012",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_013",
+    "food_id": "FOOD_013",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_014",
+    "food_id": "FOOD_014",
+    "serving_size": 280.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_015",
+    "food_id": "FOOD_015",
+    "serving_size": 130.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_016",
+    "food_id": "FOOD_016",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_017",
+    "food_id": "FOOD_017",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_018",
+    "food_id": "FOOD_018",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_019",
+    "food_id": "FOOD_019",
+    "serving_size": 100.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_020",
+    "food_id": "FOOD_020",
+    "serving_size": 230.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_021",
+    "food_id": "FOOD_021",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_022",
+    "food_id": "FOOD_022",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_023",
+    "food_id": "FOOD_023",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_024",
+    "food_id": "FOOD_024",
+    "serving_size": 230.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_025",
+    "food_id": "FOOD_025",
+    "serving_size": 120.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_026",
+    "food_id": "FOOD_026",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_027",
+    "food_id": "FOOD_027",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_028",
+    "food_id": "FOOD_028",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_029",
+    "food_id": "FOOD_029",
+    "serving_size": 130.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_030",
+    "food_id": "FOOD_030",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_031",
+    "food_id": "FOOD_031",
+    "serving_size": 280.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_032",
+    "food_id": "FOOD_032",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_033",
+    "food_id": "FOOD_033",
+    "serving_size": 230.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_034",
+    "food_id": "FOOD_034",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_035",
+    "food_id": "FOOD_035",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_036",
+    "food_id": "FOOD_036",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_037",
+    "food_id": "FOOD_037",
+    "serving_size": 260.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_038",
+    "food_id": "FOOD_038",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_039",
+    "food_id": "FOOD_039",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_040",
+    "food_id": "FOOD_040",
+    "serving_size": 110.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_040",
+    "food_id": "FOOD_041",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_040",
+    "food_id": "FOOD_042",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_040",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_040",
+    "food_id": "FOOD_044",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_041",
+    "food_id": "FOOD_045",
+    "serving_size": 110.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_041",
+    "food_id": "FOOD_046",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_041",
+    "food_id": "FOOD_047",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_041",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_042",
+    "food_id": "FOOD_049",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_042",
+    "food_id": "FOOD_050",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_042",
+    "food_id": "FOOD_051",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_042",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_043",
+    "food_id": "FOOD_053",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_043",
+    "food_id": "FOOD_054",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_043",
+    "food_id": "FOOD_055",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_043",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_044",
+    "food_id": "FOOD_057",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_044",
+    "food_id": "FOOD_058",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_044",
+    "food_id": "FOOD_047",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_044",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_045",
+    "food_id": "FOOD_059",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_045",
+    "food_id": "FOOD_050",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_045",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_045",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_046",
+    "food_id": "FOOD_060",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_046",
+    "food_id": "FOOD_061",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_046",
+    "food_id": "FOOD_062",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_046",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_047",
+    "food_id": "FOOD_063",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_047",
+    "food_id": "FOOD_046",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_047",
+    "food_id": "FOOD_051",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_047",
+    "food_id": "FOOD_064",
+    "serving_size": 9.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_048",
+    "food_id": "FOOD_065",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_048",
+    "food_id": "FOOD_066",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_048",
+    "food_id": "FOOD_067",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_048",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_049",
+    "food_id": "FOOD_068",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_049",
+    "food_id": "FOOD_058",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_049",
+    "food_id": "FOOD_069",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_049",
+    "food_id": "FOOD_044",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_050",
+    "food_id": "FOOD_070",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_050",
+    "food_id": "FOOD_055",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_050",
+    "food_id": "FOOD_064",
+    "serving_size": 9.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_051",
+    "food_id": "FOOD_071",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_051",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_051",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_052",
+    "food_id": "FOOD_072",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_052",
+    "food_id": "FOOD_047",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_052",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_053",
+    "food_id": "FOOD_073",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_053",
+    "food_id": "FOOD_051",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_053",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_054",
+    "food_id": "FOOD_074",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_054",
+    "food_id": "FOOD_075",
+    "serving_size": 25.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_054",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_055",
+    "food_id": "FOOD_076",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_055",
+    "food_id": "FOOD_062",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_055",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_056",
+    "food_id": "FOOD_077",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_056",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_056",
+    "food_id": "FOOD_064",
+    "serving_size": 9.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_057",
+    "food_id": "FOOD_078",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_057",
+    "food_id": "FOOD_067",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_057",
+    "food_id": "FOOD_044",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_058",
+    "food_id": "FOOD_079",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_058",
+    "food_id": "FOOD_080",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_058",
+    "food_id": "FOOD_069",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_058",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_059",
+    "food_id": "FOOD_081",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_059",
+    "food_id": "FOOD_082",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_059",
+    "food_id": "FOOD_083",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_060",
+    "food_id": "FOOD_084",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_060",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_060",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_061",
+    "food_id": "FOOD_085",
+    "serving_size": 240.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_061",
+    "food_id": "FOOD_080",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_061",
+    "food_id": "FOOD_086",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_061",
+    "food_id": "FOOD_044",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_062",
+    "food_id": "FOOD_087",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_062",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_062",
+    "food_id": "FOOD_064",
+    "serving_size": 9.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_063",
+    "food_id": "FOOD_088",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_063",
+    "food_id": "FOOD_089",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_063",
+    "food_id": "FOOD_090",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_063",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_064",
+    "food_id": "FOOD_091",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_064",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_064",
+    "food_id": "FOOD_062",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_065",
+    "food_id": "FOOD_092",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_065",
+    "food_id": "FOOD_089",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_065",
+    "food_id": "FOOD_051",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_065",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_066",
+    "food_id": "FOOD_093",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_066",
+    "food_id": "FOOD_094",
+    "serving_size": 45.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_066",
+    "food_id": "FOOD_095",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_066",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_067",
+    "food_id": "FOOD_096",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_067",
+    "food_id": "FOOD_097",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_067",
+    "food_id": "FOOD_047",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_067",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_068",
+    "food_id": "FOOD_098",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_068",
+    "food_id": "FOOD_069",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_068",
+    "food_id": "FOOD_064",
+    "serving_size": 9.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_069",
+    "food_id": "FOOD_099",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_069",
+    "food_id": "FOOD_097",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_069",
+    "food_id": "FOOD_100",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_069",
+    "food_id": "FOOD_044",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_070",
+    "food_id": "FOOD_101",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_070",
+    "food_id": "FOOD_058",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_070",
+    "food_id": "FOOD_100",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_070",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_071",
+    "food_id": "FOOD_102",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_071",
+    "food_id": "FOOD_050",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_071",
+    "food_id": "FOOD_047",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_071",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_072",
+    "food_id": "FOOD_103",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_072",
+    "food_id": "FOOD_058",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_072",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_072",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_073",
+    "food_id": "FOOD_104",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_073",
+    "food_id": "FOOD_089",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_073",
+    "food_id": "FOOD_086",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_073",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_074",
+    "food_id": "FOOD_105",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_074",
+    "food_id": "FOOD_106",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_074",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_074",
+    "food_id": "FOOD_064",
+    "serving_size": 9.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_075",
+    "food_id": "FOOD_107",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_075",
+    "food_id": "FOOD_108",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_075",
+    "food_id": "FOOD_100",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_075",
+    "food_id": "FOOD_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_076",
+    "food_id": "FOOD_109",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_076",
+    "food_id": "FOOD_110",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_076",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_076",
+    "food_id": "FOOD_056",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_077",
+    "food_id": "FOOD_111",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_077",
+    "food_id": "FOOD_062",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_077",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_078",
+    "food_id": "FOOD_112",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_078",
+    "food_id": "FOOD_043",
+    "serving_size": 90.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_078",
+    "food_id": "FOOD_113",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_079",
+    "food_id": "FOOD_114",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_079",
+    "food_id": "FOOD_047",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_079",
+    "food_id": "FOOD_044",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_080",
+    "food_id": "FOOD_115",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_080",
+    "food_id": "FOOD_116",
+    "serving_size": 7.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_081",
+    "food_id": "FOOD_117",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_081",
+    "food_id": "FOOD_083",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_082",
+    "food_id": "FOOD_118",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_082",
+    "food_id": "FOOD_056",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_082",
+    "food_id": "FOOD_116",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_083",
+    "food_id": "FOOD_119",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_084",
+    "food_id": "FOOD_120",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_084",
+    "food_id": "FOOD_083",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_085",
+    "food_id": "FOOD_121",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_086",
+    "food_id": "FOOD_122",
+    "serving_size": 16.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_086",
+    "food_id": "FOOD_123",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_086",
+    "food_id": "FOOD_044",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_087",
+    "food_id": "FOOD_124",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_088",
+    "food_id": "FOOD_048",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_088",
+    "food_id": "FOOD_044",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_089",
+    "food_id": "FOOD_125",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_090",
+    "food_id": "FOOD_126",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_091",
+    "food_id": "FOOD_127",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_091",
+    "food_id": "FOOD_128",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_092",
+    "food_id": "FOOD_129",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_093",
+    "food_id": "FOOD_130",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_094",
+    "food_id": "FOOD_131",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_095",
+    "food_id": "FOOD_132",
+    "serving_size": 12.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_095",
+    "food_id": "FOOD_133",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_096",
+    "food_id": "FOOD_134",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_097",
+    "food_id": "FOOD_135",
+    "serving_size": 260.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_098",
+    "food_id": "FOOD_136",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_098",
+    "food_id": "FOOD_137",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_098",
+    "food_id": "FOOD_056",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_099",
+    "food_id": "FOOD_138",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_099",
+    "food_id": "FOOD_056",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_100",
+    "food_id": "FOOD_139",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_100",
+    "food_id": "FOOD_140",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_100",
+    "food_id": "FOOD_141",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_101",
+    "food_id": "FOOD_142",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_102",
+    "food_id": "FOOD_143",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_102",
+    "food_id": "FOOD_083",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_103",
+    "food_id": "FOOD_144",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_103",
+    "food_id": "FOOD_145",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_104",
+    "food_id": "FOOD_044",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_104",
+    "food_id": "FOOD_146",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_104",
+    "food_id": "FOOD_115",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_105",
+    "food_id": "FOOD_147",
+    "serving_size": 25.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_105",
+    "food_id": "FOOD_148",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_106",
+    "food_id": "FOOD_149",
+    "serving_size": 240.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_107",
+    "food_id": "FOOD_150",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_107",
+    "food_id": "FOOD_133",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_107",
+    "food_id": "FOOD_056",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_108",
+    "food_id": "FOOD_151",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_109",
+    "food_id": "FOOD_152",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_110",
+    "food_id": "FOOD_044",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_110",
+    "food_id": "FOOD_132",
+    "serving_size": 6.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_110",
+    "food_id": "FOOD_115",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_111",
+    "food_id": "FOOD_153",
+    "serving_size": 25.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_111",
+    "food_id": "FOOD_154",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_112",
+    "food_id": "FOOD_155",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_113",
+    "food_id": "FOOD_133",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_113",
+    "food_id": "FOOD_056",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_114",
+    "food_id": "FOOD_156",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_115",
+    "food_id": "FOOD_157",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_115",
+    "food_id": "FOOD_158",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_116",
+    "food_id": "FOOD_159",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_117",
+    "food_id": "FOOD_160",
+    "serving_size": 75.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_117",
+    "food_id": "FOOD_140",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_117",
+    "food_id": "FOOD_083",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_118",
+    "food_id": "FOOD_161",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_118",
+    "food_id": "FOOD_122",
+    "serving_size": 16.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_118",
+    "food_id": "FOOD_044",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_118",
+    "food_id": "FOOD_132",
+    "serving_size": 6.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_119",
+    "food_id": "FOOD_162",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_119",
+    "food_id": "FOOD_163",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_119",
+    "food_id": "FOOD_164",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_120",
+    "food_id": "FOOD_165",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_120",
+    "food_id": "FOOD_166",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_120",
+    "food_id": "FOOD_167",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_121",
+    "food_id": "FOOD_168",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_121",
+    "food_id": "FOOD_080",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_121",
+    "food_id": "FOOD_169",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_122",
+    "food_id": "FOOD_170",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_122",
+    "food_id": "FOOD_171",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_122",
+    "food_id": "FOOD_069",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_123",
+    "food_id": "FOOD_172",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_123",
+    "food_id": "FOOD_093",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_123",
+    "food_id": "FOOD_173",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_124",
+    "food_id": "FOOD_174",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_124",
+    "food_id": "FOOD_175",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_124",
+    "food_id": "FOOD_166",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_124",
+    "food_id": "FOOD_176",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_124",
+    "food_id": "FOOD_177",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_125",
+    "food_id": "FOOD_174",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_125",
+    "food_id": "FOOD_178",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_125",
+    "food_id": "FOOD_179",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_125",
+    "food_id": "FOOD_089",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_126",
+    "food_id": "FOOD_180",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_126",
+    "food_id": "FOOD_181",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_126",
+    "food_id": "FOOD_182",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_126",
+    "food_id": "FOOD_167",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_127",
+    "food_id": "FOOD_183",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_127",
+    "food_id": "FOOD_184",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_127",
+    "food_id": "FOOD_185",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_127",
+    "food_id": "FOOD_186",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_127",
+    "food_id": "FOOD_187",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_128",
+    "food_id": "FOOD_174",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_128",
+    "food_id": "FOOD_188",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_128",
+    "food_id": "FOOD_189",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_128",
+    "food_id": "FOOD_190",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_129",
+    "food_id": "FOOD_191",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_129",
+    "food_id": "FOOD_192",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_129",
+    "food_id": "FOOD_043",
+    "serving_size": 60.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_130",
+    "food_id": "FOOD_193",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_130",
+    "food_id": "FOOD_194",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_130",
+    "food_id": "FOOD_195",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_130",
+    "food_id": "FOOD_196",
+    "serving_size": 60.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_131",
+    "food_id": "FOOD_197",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_131",
+    "food_id": "FOOD_198",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_131",
+    "food_id": "FOOD_199",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_132",
+    "food_id": "FOOD_200",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_132",
+    "food_id": "FOOD_093",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_132",
+    "food_id": "FOOD_201",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_132",
+    "food_id": "FOOD_202",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_133",
+    "food_id": "FOOD_203",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_133",
+    "food_id": "FOOD_204",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_133",
+    "food_id": "FOOD_071",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_133",
+    "food_id": "FOOD_167",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_134",
+    "food_id": "FOOD_205",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_134",
+    "food_id": "FOOD_206",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_134",
+    "food_id": "FOOD_207",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_135",
+    "food_id": "FOOD_184",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_135",
+    "food_id": "FOOD_208",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_135",
+    "food_id": "FOOD_209",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_135",
+    "food_id": "FOOD_210",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_136",
+    "food_id": "FOOD_211",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_136",
+    "food_id": "FOOD_212",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_136",
+    "food_id": "FOOD_213",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_136",
+    "food_id": "FOOD_214",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_137",
+    "food_id": "FOOD_215",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_137",
+    "food_id": "FOOD_216",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_138",
+    "food_id": "FOOD_217",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_138",
+    "food_id": "FOOD_218",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_138",
+    "food_id": "FOOD_080",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_138",
+    "food_id": "FOOD_207",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_139",
+    "food_id": "FOOD_219",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_139",
+    "food_id": "FOOD_220",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_140",
+    "food_id": "FOOD_184",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_140",
+    "food_id": "FOOD_221",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_140",
+    "food_id": "FOOD_093",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_140",
+    "food_id": "FOOD_222",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_141",
+    "food_id": "FOOD_109",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_141",
+    "food_id": "FOOD_223",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_141",
+    "food_id": "FOOD_224",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_142",
+    "food_id": "FOOD_225",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_142",
+    "food_id": "FOOD_226",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_142",
+    "food_id": "FOOD_227",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_142",
+    "food_id": "FOOD_228",
+    "serving_size": 100.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_143",
+    "food_id": "FOOD_229",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_143",
+    "food_id": "FOOD_230",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_143",
+    "food_id": "FOOD_231",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_143",
+    "food_id": "FOOD_232",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_144",
+    "food_id": "FOOD_184",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_144",
+    "food_id": "FOOD_233",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_144",
+    "food_id": "FOOD_234",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_145",
+    "food_id": "FOOD_235",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_145",
+    "food_id": "FOOD_236",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_145",
+    "food_id": "FOOD_237",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_146",
+    "food_id": "FOOD_238",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_146",
+    "food_id": "FOOD_239",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_146",
+    "food_id": "FOOD_240",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_146",
+    "food_id": "FOOD_080",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_147",
+    "food_id": "FOOD_241",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_147",
+    "food_id": "FOOD_242",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_147",
+    "food_id": "FOOD_243",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_148",
+    "food_id": "FOOD_244",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_148",
+    "food_id": "FOOD_245",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_148",
+    "food_id": "FOOD_246",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_148",
+    "food_id": "FOOD_247",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_149",
+    "food_id": "FOOD_248",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_150",
+    "food_id": "FOOD_249",
+    "serving_size": 140.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_151",
+    "food_id": "FOOD_250",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_152",
+    "food_id": "FOOD_251",
+    "serving_size": 280.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_153",
+    "food_id": "FOOD_252",
+    "serving_size": 350.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_154",
+    "food_id": "FOOD_144",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_155",
+    "food_id": "FOOD_253",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_156",
+    "food_id": "FOOD_254",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_157",
+    "food_id": "FOOD_255",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_158",
+    "food_id": "FOOD_256",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_159",
+    "food_id": "FOOD_257",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_160",
+    "food_id": "FOOD_258",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_161",
+    "food_id": "FOOD_259",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_162",
+    "food_id": "FOOD_260",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_163",
+    "food_id": "FOOD_261",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_164",
+    "food_id": "FOOD_262",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_165",
+    "food_id": "FOOD_263",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_166",
+    "food_id": "FOOD_264",
+    "serving_size": 350.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_167",
+    "food_id": "FOOD_265",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_168",
+    "food_id": "FOOD_266",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_168",
+    "food_id": "FOOD_042",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_169",
+    "food_id": "FOOD_267",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_170",
+    "food_id": "FOOD_268",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_171",
+    "food_id": "FOOD_269",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_172",
+    "food_id": "FOOD_270",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_173",
+    "food_id": "FOOD_271",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_174",
+    "food_id": "FOOD_272",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_175",
+    "food_id": "FOOD_273",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_176",
+    "food_id": "FOOD_274",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_176",
+    "food_id": "FOOD_275",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_176",
+    "food_id": "FOOD_083",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_176",
+    "food_id": "FOOD_056",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_177",
+    "food_id": "FOOD_276",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_178",
+    "food_id": "FOOD_277",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_179",
+    "food_id": "FOOD_278",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_179",
+    "food_id": "FOOD_279",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_180",
+    "food_id": "FOOD_280",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_181",
+    "food_id": "FOOD_281",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_182",
+    "food_id": "FOOD_282",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_183",
+    "food_id": "FOOD_283",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_184",
+    "food_id": "FOOD_284",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_184",
+    "food_id": "FOOD_285",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_185",
+    "food_id": "FOOD_286",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_186",
+    "food_id": "FOOD_287",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_187",
+    "food_id": "FOOD_288",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_187",
+    "food_id": "FOOD_289",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_188",
+    "food_id": "FOOD_290",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_189",
+    "food_id": "FOOD_291",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_190",
+    "food_id": "FOOD_292",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_191",
+    "food_id": "FOOD_174",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_191",
+    "food_id": "FOOD_293",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_191",
+    "food_id": "FOOD_294",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_191",
+    "food_id": "FOOD_295",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_192",
+    "food_id": "FOOD_296",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_192",
+    "food_id": "FOOD_211",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_192",
+    "food_id": "FOOD_210",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_193",
+    "food_id": "FOOD_297",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "MEAL_194",
+    "food_id": "FOOD_298",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_195",
+    "food_id": "FOOD_299",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_196",
+    "food_id": "FOOD_300",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_197",
+    "food_id": "FOOD_301",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_198",
+    "food_id": "FOOD_302",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_199",
+    "food_id": "FOOD_303",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_200",
+    "food_id": "FOOD_304",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_201",
+    "food_id": "FOOD_305",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_202",
+    "food_id": "FOOD_306",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_203",
+    "food_id": "FOOD_145",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_204",
+    "food_id": "FOOD_307",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_205",
+    "food_id": "FOOD_308",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_206",
+    "food_id": "FOOD_309",
+    "serving_size": 220.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "MEAL_207",
+    "food_id": "FOOD_310",
+    "serving_size": 200.0,
+    "unit": "mL"
+  }
+]
