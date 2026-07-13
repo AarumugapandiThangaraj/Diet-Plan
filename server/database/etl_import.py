@@ -389,6 +389,15 @@ class ETLPipeline:
                     meal_map[real_m_id] = meal_counter
                     meal_counter += 1
                 
+                cuisine_folder = c_code.replace('_', '-')
+                if c_code == "north_indian":
+                    match = re.search(r'\d+', str(m_id))
+                    img_filename = f"NI_MEAL_{match.group().zfill(3)}.webp" if match else f"NI_{m_id}.webp"
+                else:
+                    match = re.search(r'\d+', str(m_id))
+                    img_filename = f"SI_MEAL_{match.group().zfill(4)}.webp" if match else f"SI_{m_id}.webp"
+                image_url = f"https://d3k2cziv2oniyb.cloudfront.net/nutri-analysis/images/{cuisine_folder}/{img_filename}"
+                
                 meal_obj = Meal(
                     id=meal_map[real_m_id],
                     cuisine_id=c_id,
@@ -404,7 +413,7 @@ class ETLPipeline:
                     protein_g=float(nut.get("protein_g", 0.0)),
                     fat_g=float(nut.get("fat_g", 0.0)),
                     dietary_fiber_g=float(nut.get("dietary_fiber_g", 0.0)),
-                    image=m.get("image")
+                    image=image_url
                 )
                 session.add(meal_obj)
                 
