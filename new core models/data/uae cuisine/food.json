@@ -1,0 +1,1578 @@
+[
+  {
+    "food_id": "uae_food_001",
+    "food_name": "warm water with ghee"
+  },
+  {
+    "food_id": "uae_food_002",
+    "food_name": "Beetroot Pomegranate Pumpkin Seed Shot"
+  },
+  {
+    "food_id": "uae_food_003",
+    "food_name": "Carrot Beetroot Collagen Drink"
+  },
+  {
+    "food_id": "uae_food_004",
+    "food_name": "Fenugreek Amla Sesame Tonic"
+  },
+  {
+    "food_id": "uae_food_005",
+    "food_name": "Clove Chia Lemon Morning Drink"
+  },
+  {
+    "food_id": "uae_food_006",
+    "food_name": "Pineapple Turmeric Glow Drink"
+  },
+  {
+    "food_id": "uae_food_007",
+    "food_name": "Celery Cucumber Kiwi Green Detox Drink"
+  },
+  {
+    "food_id": "uae_food_008",
+    "food_name": "Guava Ginger Glow Shot"
+  },
+  {
+    "food_id": "uae_food_009",
+    "food_name": "Mango Spinach Green Smoothie"
+  },
+  {
+    "food_id": "uae_food_010",
+    "food_name": "Watermelon Mint Splash"
+  },
+  {
+    "food_id": "uae_food_011",
+    "food_name": "Papaya Aloe Vera Detox Shot"
+  },
+  {
+    "food_id": "uae_food_012",
+    "food_name": "Hibiscus Berry Antioxidant Tonic"
+  },
+  {
+    "food_id": "uae_food_013",
+    "food_name": "Moringa Banana Green Shake"
+  },
+  {
+    "food_id": "uae_food_014",
+    "food_name": "Cardamom Ginger Warm Tonic"
+  },
+  {
+    "food_id": "uae_food_015",
+    "food_name": "Citrus Vitamin C Detox"
+  },
+  {
+    "food_id": "uae_food_016",
+    "food_name": "Apple Beetroot Carrot"
+  },
+  {
+    "food_id": "uae_food_017",
+    "food_name": "Soaked Raisin Detox Water"
+  },
+  {
+    "food_id": "uae_food_018",
+    "food_name": "Cucumber Spinach Green Shot"
+  },
+  {
+    "food_id": "uae_food_019",
+    "food_name": "Carrot Orange Solar Glow Shot"
+  },
+  {
+    "food_id": "uae_food_020",
+    "food_name": "Carrot Orange Curry Leaf Hair Growth Juice"
+  },
+  {
+    "food_id": "uae_food_021",
+    "food_name": "Black Sesame Amla Pigmentation Support Drink"
+  },
+  {
+    "food_id": "uae_food_022",
+    "food_name": "Smoked Salmon & Labneh Toast"
+  },
+  {
+    "food_id": "uae_food_023",
+    "food_name": "Berry Chia Smoothie"
+  },
+  {
+    "food_id": "uae_food_024",
+    "food_name": "Sourdough Bread"
+  },
+  {
+    "food_id": "uae_food_025",
+    "food_name": "Labneh & Za'atar Dip"
+  },
+  {
+    "food_id": "uae_food_026",
+    "food_name": "Whole Wheat Khameer Bread"
+  },
+  {
+    "food_id": "uae_food_027",
+    "food_name": "Pumpkin Seeds"
+  },
+  {
+    "food_id": "uae_food_028",
+    "food_name": "Olive Oil"
+  },
+  {
+    "food_id": "uae_food_029",
+    "food_name": "Emirati Chebab Pancakes"
+  },
+  {
+    "food_id": "uae_food_030",
+    "food_name": "Medjool Dates"
+  },
+  {
+    "food_id": "uae_food_031",
+    "food_name": "Walnut Halves"
+  },
+  {
+    "food_id": "uae_food_032",
+    "food_name": "Raw Honey"
+  },
+  {
+    "food_id": "uae_food_033",
+    "food_name": "Heritage Walnut Portion"
+  },
+  {
+    "food_id": "uae_food_034",
+    "food_name": "Boiled Egg"
+  },
+  {
+    "food_id": "uae_food_035",
+    "food_name": "Mixed Berries"
+  },
+  {
+    "food_id": "uae_food_036",
+    "food_name": "Baby Spinach"
+  },
+  {
+    "food_id": "uae_food_037",
+    "food_name": "Chia Seeds"
+  },
+  {
+    "food_id": "uae_food_038",
+    "food_name": "Whole Wheat Sandwich"
+  },
+  {
+    "food_id": "uae_food_039",
+    "food_name": "Boiled Eggs"
+  },
+  {
+    "food_id": "uae_food_040",
+    "food_name": "Hummus"
+  },
+  {
+    "food_id": "uae_food_041",
+    "food_name": "Fresh Spinach"
+  },
+  {
+    "food_id": "uae_food_042",
+    "food_name": "Cherry Tomato"
+  },
+  {
+    "food_id": "uae_food_043",
+    "food_name": "Grilled Halloumi"
+  },
+  {
+    "food_id": "uae_food_044",
+    "food_name": "Avocado"
+  },
+  {
+    "food_id": "uae_food_045",
+    "food_name": "Whole Wheat Toast"
+  },
+  {
+    "food_id": "uae_food_046",
+    "food_name": "Papaya Smoothie"
+  },
+  {
+    "food_id": "uae_food_047",
+    "food_name": "Walnut Spinach Egg Breakfast Bowl"
+  },
+  {
+    "food_id": "uae_food_048",
+    "food_name": "Berry Biotin Smoothie"
+  },
+  {
+    "food_id": "uae_food_049",
+    "food_name": "Baith Tomat"
+  },
+  {
+    "food_id": "uae_food_050",
+    "food_name": "Rolled Oats"
+  },
+  {
+    "food_id": "uae_food_051",
+    "food_name": "Almond Milk"
+  },
+  {
+    "food_id": "uae_food_052",
+    "food_name": "Almond Flakes"
+  },
+  {
+    "food_id": "uae_food_053",
+    "food_name": "Cinnamon"
+  },
+  {
+    "food_id": "uae_food_054",
+    "food_name": "Saffron Labneh"
+  },
+  {
+    "food_id": "uae_food_055",
+    "food_name": "Smoked Salmon"
+  },
+  {
+    "food_id": "uae_food_056",
+    "food_name": "Lemon Juice"
+  },
+  {
+    "food_id": "uae_food_057",
+    "food_name": "Fresh Coriander"
+  },
+  {
+    "food_id": "uae_food_058",
+    "food_name": "Sardine Fillets"
+  },
+  {
+    "food_id": "uae_food_059",
+    "food_name": "Smashed Avocado"
+  },
+  {
+    "food_id": "uae_food_060",
+    "food_name": "Emirati Regag Bread"
+  },
+  {
+    "food_id": "uae_food_061",
+    "food_name": "Scrambled Eggs with Pumpkin Seeds"
+  },
+  {
+    "food_id": "uae_food_062",
+    "food_name": "Sliced Avocado"
+  },
+  {
+    "food_id": "uae_food_063",
+    "food_name": "Shakshuka with Eggs"
+  },
+  {
+    "food_id": "uae_food_064",
+    "food_name": "Whole Wheat Bread"
+  },
+  {
+    "food_id": "uae_food_065",
+    "food_name": "Fresh Herb Garnish"
+  },
+  {
+    "food_id": "uae_food_066",
+    "food_name": "Salmon & Egg Scramble"
+  },
+  {
+    "food_id": "uae_food_067",
+    "food_name": "Crushed Walnuts"
+  },
+  {
+    "food_id": "uae_food_068",
+    "food_name": "Saffron Egg Frittata"
+  },
+  {
+    "food_id": "uae_food_069",
+    "food_name": "Cherry Tomatoes"
+  },
+  {
+    "food_id": "uae_food_070",
+    "food_name": "Soaked Saffron Chia Pudding"
+  },
+  {
+    "food_id": "uae_food_071",
+    "food_name": "Pomegranate Seeds"
+  },
+  {
+    "food_id": "uae_food_072",
+    "food_name": "Fresh Camel Milk"
+  },
+  {
+    "food_id": "uae_food_073",
+    "food_name": "Iron Boost Spinach Lentil Chickpea Plate"
+  },
+  {
+    "food_id": "uae_food_074",
+    "food_name": "Chebab Pancakes"
+  },
+  {
+    "food_id": "uae_food_075",
+    "food_name": "Poached Egg"
+  },
+  {
+    "food_id": "uae_food_076",
+    "food_name": "Wilted Baby Spinach"
+  },
+  {
+    "food_id": "uae_food_077",
+    "food_name": "Mixed Berry Chia Side"
+  },
+  {
+    "food_id": "uae_food_078",
+    "food_name": "Fresh Mango Chunks"
+  },
+  {
+    "food_id": "uae_food_079",
+    "food_name": "Chami Labneh"
+  },
+  {
+    "food_id": "uae_food_080",
+    "food_name": "Iron Boost Pomegranate Spinach Power Bowl"
+  },
+  {
+    "food_id": "uae_food_081",
+    "food_name": "Roasted Sweet Potato"
+  },
+  {
+    "food_id": "uae_food_082",
+    "food_name": "Poached Eggs"
+  },
+  {
+    "food_id": "uae_food_083",
+    "food_name": "Sautéed Spinach"
+  },
+  {
+    "food_id": "uae_food_084",
+    "food_name": "Lobia"
+  },
+  {
+    "food_id": "uae_food_085",
+    "food_name": "Spiced Pumpkin Puree"
+  },
+  {
+    "food_id": "uae_food_086",
+    "food_name": "Toasted Walnuts"
+  },
+  {
+    "food_id": "uae_food_087",
+    "food_name": "Saffron Scrambled Eggs"
+  },
+  {
+    "food_id": "uae_food_088",
+    "food_name": "Mixed Berry Chia Bowl"
+  },
+  {
+    "food_id": "uae_food_089",
+    "food_name": "Tofu Vegetable Scramble"
+  },
+  {
+    "food_id": "uae_food_090",
+    "food_name": "Gluten-Free Multigrain Toast"
+  },
+  {
+    "food_id": "uae_food_091",
+    "food_name": "Seed Topping"
+  },
+  {
+    "food_id": "uae_food_092",
+    "food_name": "Fresh Ripe Papaya"
+  },
+  {
+    "food_id": "uae_food_093",
+    "food_name": "Raw Shelled Pistachio Kernels"
+  },
+  {
+    "food_id": "uae_food_094",
+    "food_name": "Unsulphured Dried Figs"
+  },
+  {
+    "food_id": "uae_food_095",
+    "food_name": "Ripe Papaya"
+  },
+  {
+    "food_id": "uae_food_096",
+    "food_name": "Fresh Pomegranate Seeds"
+  },
+  {
+    "food_id": "uae_food_097",
+    "food_name": "Ripe Mango"
+  },
+  {
+    "food_id": "uae_food_098",
+    "food_name": "Fresh Carrot"
+  },
+  {
+    "food_id": "uae_food_099",
+    "food_name": "Ground Turmeric"
+  },
+  {
+    "food_id": "uae_food_100",
+    "food_name": "Fresh Seedless Watermelon"
+  },
+  {
+    "food_id": "uae_food_101",
+    "food_name": "Fresh Pink Guava"
+  },
+  {
+    "food_id": "uae_food_102",
+    "food_name": "Fresh Strawberries"
+  },
+  {
+    "food_id": "uae_food_103",
+    "food_name": "Fresh Baby Spinach"
+  },
+  {
+    "food_id": "uae_food_104",
+    "food_name": "Coconut Water"
+  },
+  {
+    "food_id": "uae_food_105",
+    "food_name": "Fresh Cucumber"
+  },
+  {
+    "food_id": "uae_food_106",
+    "food_name": "Fresh Mint"
+  },
+  {
+    "food_id": "uae_food_107",
+    "food_name": "Fresh Blueberries"
+  },
+  {
+    "food_id": "uae_food_108",
+    "food_name": "Ground Flaxseeds"
+  },
+  {
+    "food_id": "uae_food_109",
+    "food_name": "Oat Milk"
+  },
+  {
+    "food_id": "uae_food_110",
+    "food_name": "Ripe Avocado"
+  },
+  {
+    "food_id": "uae_food_111",
+    "food_name": "Unsweetened Coconut Water"
+  },
+  {
+    "food_id": "uae_food_112",
+    "food_name": "Fresh Cantaloupe"
+  },
+  {
+    "food_id": "uae_food_113",
+    "food_name": "Raw Pistachio Kernels"
+  },
+  {
+    "food_id": "uae_food_114",
+    "food_name": "Fresh Dragon Fruit"
+  },
+  {
+    "food_id": "uae_food_115",
+    "food_name": "Soaked Walnut Halves"
+  },
+  {
+    "food_id": "uae_food_116",
+    "food_name": "White Chia Seeds"
+  },
+  {
+    "food_id": "uae_food_117",
+    "food_name": "Black sesame seeds"
+  },
+  {
+    "food_id": "uae_food_118",
+    "food_name": "Raw almonds"
+  },
+  {
+    "food_id": "uae_food_119",
+    "food_name": "Sunflower seeds raw"
+  },
+  {
+    "food_id": "uae_food_120",
+    "food_name": "Dried mulberries"
+  },
+  {
+    "food_id": "uae_food_121",
+    "food_name": "Cinnamon powder"
+  },
+  {
+    "food_id": "uae_food_122",
+    "food_name": "Unsalted pistachio kernels"
+  },
+  {
+    "food_id": "uae_food_123",
+    "food_name": "Ground flaxseed"
+  },
+  {
+    "food_id": "uae_food_124",
+    "food_name": "Raw pumpkin seeds"
+  },
+  {
+    "food_id": "uae_food_125",
+    "food_name": "Medjool date pitted"
+  },
+  {
+    "food_id": "uae_food_126",
+    "food_name": "Grilled Kingfish"
+  },
+  {
+    "food_id": "uae_food_127",
+    "food_name": "Okra & Lentil Saloona"
+  },
+  {
+    "food_id": "uae_food_128",
+    "food_name": "Beetroot Pomegranate Salad"
+  },
+  {
+    "food_id": "uae_food_129",
+    "food_name": "Vegetable Madrouba"
+  },
+  {
+    "food_id": "uae_food_130",
+    "food_name": "Chicken Arseeyah"
+  },
+  {
+    "food_id": "uae_food_131",
+    "food_name": "Cucumber-Parsley Yogurt Salad"
+  },
+  {
+    "food_id": "uae_food_132",
+    "food_name": "Saffron Sweet Potato & Red Lentil Bowl"
+  },
+  {
+    "food_id": "uae_food_133",
+    "food_name": "Tahini Lemon Drizzle"
+  },
+  {
+    "food_id": "uae_food_134",
+    "food_name": "Herb Salad"
+  },
+  {
+    "food_id": "uae_food_135",
+    "food_name": "Musabbaha"
+  },
+  {
+    "food_id": "uae_food_136",
+    "food_name": "Tomato Parsley Salad"
+  },
+  {
+    "food_id": "uae_food_137",
+    "food_name": "Chicken Spinach Saloona"
+  },
+  {
+    "food_id": "uae_food_138",
+    "food_name": "Lentil Tabbouleh"
+  },
+  {
+    "food_id": "uae_food_139",
+    "food_name": "Fish Sayadieh Rice"
+  },
+  {
+    "food_id": "uae_food_140",
+    "food_name": "Cabbage Salad"
+  },
+  {
+    "food_id": "uae_food_141",
+    "food_name": "Chicken & Vegetable Jareesh"
+  },
+  {
+    "food_id": "uae_food_142",
+    "food_name": "Beetroot Parsley Salad"
+  },
+  {
+    "food_id": "uae_food_143",
+    "food_name": "Quinoa"
+  },
+  {
+    "food_id": "uae_food_144",
+    "food_name": "Tofu Mushroom Curry"
+  },
+  {
+    "food_id": "uae_food_145",
+    "food_name": "Kale Salad"
+  },
+  {
+    "food_id": "uae_food_146",
+    "food_name": "Beetroot Salad"
+  },
+  {
+    "food_id": "uae_food_147",
+    "food_name": "Grilled Sheri Fish"
+  },
+  {
+    "food_id": "uae_food_148",
+    "food_name": "Organic Quinoa"
+  },
+  {
+    "food_id": "uae_food_149",
+    "food_name": "Mixed Salad"
+  },
+  {
+    "food_id": "uae_food_150",
+    "food_name": "Brown Rice"
+  },
+  {
+    "food_id": "uae_food_151",
+    "food_name": "Shrimp Tomato Curry"
+  },
+  {
+    "food_id": "uae_food_152",
+    "food_name": "Kale & Spinach Citrus Salad"
+  },
+  {
+    "food_id": "uae_food_153",
+    "food_name": "Mishkak Chicken Skewers"
+  },
+  {
+    "food_id": "uae_food_154",
+    "food_name": "Cucumber Yogurt"
+  },
+  {
+    "food_id": "uae_food_155",
+    "food_name": "Freekeh"
+  },
+  {
+    "food_id": "uae_food_156",
+    "food_name": "Chicken Broccoli Curry"
+  },
+  {
+    "food_id": "uae_food_157",
+    "food_name": "Pomegranate Bell Pepper Salad"
+  },
+  {
+    "food_id": "uae_food_158",
+    "food_name": "Baked Turkey Kefta"
+  },
+  {
+    "food_id": "uae_food_159",
+    "food_name": "Broccoli Salad"
+  },
+  {
+    "food_id": "uae_food_160",
+    "food_name": "Shrimp Coconut Curry"
+  },
+  {
+    "food_id": "uae_food_161",
+    "food_name": "Garlic Spinach Sunflower Salad"
+  },
+  {
+    "food_id": "uae_food_162",
+    "food_name": "Grilled Chicken Wrap"
+  },
+  {
+    "food_id": "uae_food_163",
+    "food_name": "Beetroot Slaw"
+  },
+  {
+    "food_id": "uae_food_164",
+    "food_name": "Yuuma Deyay Lemon Chicken"
+  },
+  {
+    "food_id": "uae_food_165",
+    "food_name": "Saffron Brown Rice"
+  },
+  {
+    "food_id": "uae_food_166",
+    "food_name": "Arabic Salad"
+  },
+  {
+    "food_id": "uae_food_167",
+    "food_name": "Charred Veggie Medley"
+  },
+  {
+    "food_id": "uae_food_168",
+    "food_name": "Okra Stew"
+  },
+  {
+    "food_id": "uae_food_169",
+    "food_name": "Basmati Rice"
+  },
+  {
+    "food_id": "uae_food_170",
+    "food_name": "Jareesh Robian"
+  },
+  {
+    "food_id": "uae_food_171",
+    "food_name": "Vegetarian Harees"
+  },
+  {
+    "food_id": "uae_food_172",
+    "food_name": "Broccoli"
+  },
+  {
+    "food_id": "uae_food_173",
+    "food_name": "Citrus Salad"
+  },
+  {
+    "food_id": "uae_food_174",
+    "food_name": "Koshary"
+  },
+  {
+    "food_id": "uae_food_175",
+    "food_name": "Rocket Pomegranate Salad"
+  },
+  {
+    "food_id": "uae_food_176",
+    "food_name": "Chicken Jareesh"
+  },
+  {
+    "food_id": "uae_food_177",
+    "food_name": "Roasted Mixed Nuts"
+  },
+  {
+    "food_id": "uae_food_178",
+    "food_name": "Bezaar Okra"
+  },
+  {
+    "food_id": "uae_food_179",
+    "food_name": "Fresh Plain Yogurt"
+  },
+  {
+    "food_id": "uae_food_180",
+    "food_name": "Cucumber Mint Salad"
+  },
+  {
+    "food_id": "uae_food_181",
+    "food_name": "Stuffed Eggplant"
+  },
+  {
+    "food_id": "uae_food_182",
+    "food_name": "Fava Beans"
+  },
+  {
+    "food_id": "uae_food_183",
+    "food_name": "Green & White Bean Braise"
+  },
+  {
+    "food_id": "uae_food_184",
+    "food_name": "Garlic Broccoli"
+  },
+  {
+    "food_id": "uae_food_185",
+    "food_name": "Chaas"
+  },
+  {
+    "food_id": "uae_food_186",
+    "food_name": "Qar'a Bezaar Rice"
+  },
+  {
+    "food_id": "uae_food_187",
+    "food_name": "Soya Chunks"
+  },
+  {
+    "food_id": "uae_food_188",
+    "food_name": "Tahini Lemon Sauce"
+  },
+  {
+    "food_id": "uae_food_189",
+    "food_name": "Grilled Hammour"
+  },
+  {
+    "food_id": "uae_food_190",
+    "food_name": "Wilted Spinach"
+  },
+  {
+    "food_id": "uae_food_191",
+    "food_name": "Orange Cucumber Sesame Salad"
+  },
+  {
+    "food_id": "uae_food_192",
+    "food_name": "Chicken Shawarma"
+  },
+  {
+    "food_id": "uae_food_193",
+    "food_name": "Mixed Greens Pumpkin Seed Salad"
+  },
+  {
+    "food_id": "uae_food_194",
+    "food_name": "Chicken Shish Tawook"
+  },
+  {
+    "food_id": "uae_food_195",
+    "food_name": "Beetroot Tabbouleh"
+  },
+  {
+    "food_id": "uae_food_196",
+    "food_name": "Cucumber Yogurt Salad"
+  },
+  {
+    "food_id": "uae_food_197",
+    "food_name": "Kingfish Sayadieh"
+  },
+  {
+    "food_id": "uae_food_198",
+    "food_name": "Grilled Vegetables"
+  },
+  {
+    "food_id": "uae_food_199",
+    "food_name": "Lentil Curry"
+  },
+  {
+    "food_id": "uae_food_200",
+    "food_name": "Grilled Tofu Mushroom Bowl"
+  },
+  {
+    "food_id": "uae_food_201",
+    "food_name": "Turmeric Salmon"
+  },
+  {
+    "food_id": "uae_food_202",
+    "food_name": "Roasted Beet-Walnut Salad"
+  },
+  {
+    "food_id": "uae_food_203",
+    "food_name": "Tomato Garlic Dakkous"
+  },
+  {
+    "food_id": "uae_food_204",
+    "food_name": "Beetroot Yogurt Salad"
+  },
+  {
+    "food_id": "uae_food_205",
+    "food_name": "Paneer Bell Pepper Curry"
+  },
+  {
+    "food_id": "uae_food_206",
+    "food_name": "Spinach Stir-Fry"
+  },
+  {
+    "food_id": "uae_food_207",
+    "food_name": "Pomegranate Salad"
+  },
+  {
+    "food_id": "uae_food_208",
+    "food_name": "Saffron Rice"
+  },
+  {
+    "food_id": "uae_food_209",
+    "food_name": "Saffron Quinoa"
+  },
+  {
+    "food_id": "uae_food_210",
+    "food_name": "Avocado Cucumber Salad"
+  },
+  {
+    "food_id": "uae_food_211",
+    "food_name": "Mixed Bean Curry"
+  },
+  {
+    "food_id": "uae_food_212",
+    "food_name": "Cucumber Bell Pepper Salad"
+  },
+  {
+    "food_id": "uae_food_213",
+    "food_name": "Mint Yogurt"
+  },
+  {
+    "food_id": "uae_food_214",
+    "food_name": "Zaatar Chicken"
+  },
+  {
+    "food_id": "uae_food_215",
+    "food_name": "Spinach Pomegranate Salad"
+  },
+  {
+    "food_id": "uae_food_216",
+    "food_name": "Gulf Lobster"
+  },
+  {
+    "food_id": "uae_food_217",
+    "food_name": "White Rice"
+  },
+  {
+    "food_id": "uae_food_218",
+    "food_name": "Spiced Quail"
+  },
+  {
+    "food_id": "uae_food_219",
+    "food_name": "Bulgur Wheat"
+  },
+  {
+    "food_id": "uae_food_220",
+    "food_name": "Leafy Green Carrot Cucumber Salad"
+  },
+  {
+    "food_id": "uae_food_221",
+    "food_name": "Seafood Saloona"
+  },
+  {
+    "food_id": "uae_food_222",
+    "food_name": "Lentil Eggplant Musaka'a"
+  },
+  {
+    "food_id": "uae_food_223",
+    "food_name": "Whole Wheat Khubz"
+  },
+  {
+    "food_id": "uae_food_224",
+    "food_name": "Whole Wheat Khameer"
+  },
+  {
+    "food_id": "uae_food_225",
+    "food_name": "Chicken Maglooba"
+  },
+  {
+    "food_id": "uae_food_226",
+    "food_name": "Mango Pomegranate Salad"
+  },
+  {
+    "food_id": "uae_food_227",
+    "food_name": "Chicken Spinach Shish Barak"
+  },
+  {
+    "food_id": "uae_food_228",
+    "food_name": "Laban Sauce"
+  },
+  {
+    "food_id": "uae_food_229",
+    "food_name": "Emirati Garden Salad"
+  },
+  {
+    "food_id": "uae_food_230",
+    "food_name": "Zucchini Tomato Saloona"
+  },
+  {
+    "food_id": "uae_food_231",
+    "food_name": "Lentil Vermicelli Rice"
+  },
+  {
+    "food_id": "uae_food_232",
+    "food_name": "Herb Drizzle"
+  },
+  {
+    "food_id": "uae_food_233",
+    "food_name": "Red Lentil Brown Rice Mujadara"
+  },
+  {
+    "food_id": "uae_food_234",
+    "food_name": "Caramelised Onion Topping"
+  },
+  {
+    "food_id": "uae_food_235",
+    "food_name": "Arugula Salad"
+  },
+  {
+    "food_id": "uae_food_236",
+    "food_name": "Grilled Halloumi with Zaatar"
+  },
+  {
+    "food_id": "uae_food_237",
+    "food_name": "Garden Salad"
+  },
+  {
+    "food_id": "uae_food_238",
+    "food_name": "Whole Wheat Pita"
+  },
+  {
+    "food_id": "uae_food_239",
+    "food_name": "Stuffed Vine Leaves"
+  },
+  {
+    "food_id": "uae_food_240",
+    "food_name": "Tahini Sauce"
+  },
+  {
+    "food_id": "uae_food_241",
+    "food_name": "Chickpea Herb Salad"
+  },
+  {
+    "food_id": "uae_food_242",
+    "food_name": "Chickpea Spinach Emirati Curry"
+  },
+  {
+    "food_id": "uae_food_243",
+    "food_name": "Baked Falafel"
+  },
+  {
+    "food_id": "uae_food_244",
+    "food_name": "Sesame Roasted Cauliflower"
+  },
+  {
+    "food_id": "uae_food_245",
+    "food_name": "Tahini Herb Salad"
+  },
+  {
+    "food_id": "uae_food_246",
+    "food_name": "Whole Roasted Cauliflower"
+  },
+  {
+    "food_id": "uae_food_247",
+    "food_name": "Pumpkin Lentil Stew"
+  },
+  {
+    "food_id": "uae_food_248",
+    "food_name": "Fresh Grapes"
+  },
+  {
+    "food_id": "uae_food_249",
+    "food_name": "Vegetable Moussaka"
+  },
+  {
+    "food_id": "uae_food_250",
+    "food_name": "Tahini Béchamel"
+  },
+  {
+    "food_id": "uae_food_251",
+    "food_name": "Paneer Salad"
+  },
+  {
+    "food_id": "uae_food_252",
+    "food_name": "Baked Kingfish"
+  },
+  {
+    "food_id": "uae_food_253",
+    "food_name": "Bell Peppers"
+  },
+  {
+    "food_id": "uae_food_254",
+    "food_name": "Firm Tofu"
+  },
+  {
+    "food_id": "uae_food_255",
+    "food_name": "Saffron Basmati Rice"
+  },
+  {
+    "food_id": "uae_food_256",
+    "food_name": "Lemon Herb Broth"
+  },
+  {
+    "food_id": "uae_food_257",
+    "food_name": "Side Salad"
+  },
+  {
+    "food_id": "uae_food_258",
+    "food_name": "Chicken Majboos with Quinoa"
+  },
+  {
+    "food_id": "uae_food_259",
+    "food_name": "Green Vegetables"
+  },
+  {
+    "food_id": "uae_food_260",
+    "food_name": "Quinoa Tabbouleh"
+  },
+  {
+    "food_id": "uae_food_261",
+    "food_name": "Grilled Paneer"
+  },
+  {
+    "food_id": "uae_food_262",
+    "food_name": "Roasted Vegetables"
+  },
+  {
+    "food_id": "uae_food_263",
+    "food_name": "Grilled Sea Bass"
+  },
+  {
+    "food_id": "uae_food_264",
+    "food_name": "Kale"
+  },
+  {
+    "food_id": "uae_food_265",
+    "food_name": "Crispy Tofu"
+  },
+  {
+    "food_id": "uae_food_266",
+    "food_name": "Edamame"
+  },
+  {
+    "food_id": "uae_food_267",
+    "food_name": "Miso-Sesame Dressing"
+  },
+  {
+    "food_id": "uae_food_268",
+    "food_name": "Sliced Kiwi"
+  },
+  {
+    "food_id": "uae_food_269",
+    "food_name": "Toasted Almond Flakes"
+  },
+  {
+    "food_id": "uae_food_270",
+    "food_name": "Soaked Chia Seeds"
+  },
+  {
+    "food_id": "uae_food_271",
+    "food_name": "Honey"
+  },
+  {
+    "food_id": "uae_food_272",
+    "food_name": "Mini Cucumbers"
+  },
+  {
+    "food_id": "uae_food_273",
+    "food_name": "Egg Salad Filling"
+  },
+  {
+    "food_id": "uae_food_274",
+    "food_name": "Labneh"
+  },
+  {
+    "food_id": "uae_food_275",
+    "food_name": "Za'atar"
+  },
+  {
+    "food_id": "uae_food_276",
+    "food_name": "Greek Yogurt"
+  },
+  {
+    "food_id": "uae_food_277",
+    "food_name": "Rose Water"
+  },
+  {
+    "food_id": "uae_food_278",
+    "food_name": "Crushed Pistachios"
+  },
+  {
+    "food_id": "uae_food_279",
+    "food_name": "Toasted Pumpkin Seeds"
+  },
+  {
+    "food_id": "uae_food_280",
+    "food_name": "Steamed Edamame"
+  },
+  {
+    "food_id": "uae_food_281",
+    "food_name": "Sesame Seeds"
+  },
+  {
+    "food_id": "uae_food_282",
+    "food_name": "Tahini"
+  },
+  {
+    "food_id": "uae_food_283",
+    "food_name": "Pink Salt"
+  },
+  {
+    "food_id": "uae_food_284",
+    "food_name": "Chia Seeds soaked in Coconut Milk"
+  },
+  {
+    "food_id": "uae_food_285",
+    "food_name": "Fresh Mango Cubes"
+  },
+  {
+    "food_id": "uae_food_286",
+    "food_name": "Toasted Coconut Flakes"
+  },
+  {
+    "food_id": "uae_food_287",
+    "food_name": "Saffron Chia Pudding"
+  },
+  {
+    "food_id": "uae_food_288",
+    "food_name": "Chami Cheese"
+  },
+  {
+    "food_id": "uae_food_289",
+    "food_name": "Sliced Cucumber"
+  },
+  {
+    "food_id": "uae_food_290",
+    "food_name": "Extra Virgin Olive Oil"
+  },
+  {
+    "food_id": "uae_food_291",
+    "food_name": "Cocoa Nibs"
+  },
+  {
+    "food_id": "uae_food_292",
+    "food_name": "Traditional Rangeenak"
+  },
+  {
+    "food_id": "uae_food_293",
+    "food_name": "Paneer Zaatar Roll"
+  },
+  {
+    "food_id": "uae_food_294",
+    "food_name": "Dragon Fruit"
+  },
+  {
+    "food_id": "uae_food_295",
+    "food_name": "Coconut Milk"
+  },
+  {
+    "food_id": "uae_food_296",
+    "food_name": "Lime Juice"
+  },
+  {
+    "food_id": "uae_food_297",
+    "food_name": "Orange Almond Protein Muffin"
+  },
+  {
+    "food_id": "uae_food_298",
+    "food_name": "Kiwi"
+  },
+  {
+    "food_id": "uae_food_299",
+    "food_name": "Ground Black Sesame Seeds"
+  },
+  {
+    "food_id": "uae_food_300",
+    "food_name": "Cardamom"
+  },
+  {
+    "food_id": "uae_food_301",
+    "food_name": "Apple Slices"
+  },
+  {
+    "food_id": "uae_food_302",
+    "food_name": "Chia Seeds in Coconut Milk"
+  },
+  {
+    "food_id": "uae_food_303",
+    "food_name": "Cocoa Powder"
+  },
+  {
+    "food_id": "uae_food_304",
+    "food_name": "Pistachios"
+  },
+  {
+    "food_id": "uae_food_305",
+    "food_name": "Matcha Powder"
+  },
+  {
+    "food_id": "uae_food_306",
+    "food_name": "Roasted Vegetable & Halloumi Fatayer"
+  },
+  {
+    "food_id": "uae_food_307",
+    "food_name": "Rocket Leaves"
+  },
+  {
+    "food_id": "uae_food_308",
+    "food_name": "Saffron"
+  },
+  {
+    "food_id": "uae_food_309",
+    "food_name": "Dark Chocolate Shavings"
+  },
+  {
+    "food_id": "uae_food_310",
+    "food_name": "Fresh Mango"
+  },
+  {
+    "food_id": "uae_food_311",
+    "food_name": "Cranberry Walnut Chickpea Salad"
+  },
+  {
+    "food_id": "uae_food_312",
+    "food_name": "Egg & Vegetable Freekeh Majboos"
+  },
+  {
+    "food_id": "uae_food_313",
+    "food_name": "Beetroot Walnut Salad"
+  },
+  {
+    "food_id": "uae_food_314",
+    "food_name": "Antioxidant Golden Coconut Chickpea Soup"
+  },
+  {
+    "food_id": "uae_food_315",
+    "food_name": "Asparagus Anti-Inflammatory Power Salad"
+  },
+  {
+    "food_id": "uae_food_316",
+    "food_name": "Broccoli Soup"
+  },
+  {
+    "food_id": "uae_food_317",
+    "food_name": "Buckwheat Polyphenol Power Bowl"
+  },
+  {
+    "food_id": "uae_food_318",
+    "food_name": "Lentil Soup"
+  },
+  {
+    "food_id": "uae_food_319",
+    "food_name": "Mixed Green Salad"
+  },
+  {
+    "food_id": "uae_food_320",
+    "food_name": "Sauerkraut Guacamole Crunch Wrap"
+  },
+  {
+    "food_id": "uae_food_321",
+    "food_name": "Cashew-Herb Crusted Fish"
+  },
+  {
+    "food_id": "uae_food_322",
+    "food_name": "Roasted Brussels Sprouts"
+  },
+  {
+    "food_id": "uae_food_323",
+    "food_name": "Grilled Chicken"
+  },
+  {
+    "food_id": "uae_food_324",
+    "food_name": "Avocado Salad"
+  },
+  {
+    "food_id": "uae_food_325",
+    "food_name": "Creamy Mushroom Chicken Soup"
+  },
+  {
+    "food_id": "uae_food_326",
+    "food_name": "Grilled Chicken Pesto"
+  },
+  {
+    "food_id": "uae_food_327",
+    "food_name": "Baked Tofu"
+  },
+  {
+    "food_id": "uae_food_328",
+    "food_name": "Tahini Miso Dressing"
+  },
+  {
+    "food_id": "uae_food_329",
+    "food_name": "Shrimp Quesadillas"
+  },
+  {
+    "food_id": "uae_food_330",
+    "food_name": "BBQ Chicken Sandwich"
+  },
+  {
+    "food_id": "uae_food_331",
+    "food_name": "Green Salad"
+  },
+  {
+    "food_id": "uae_food_332",
+    "food_name": "Creamy Coconut Turmeric Tofu Soup"
+  },
+  {
+    "food_id": "uae_food_333",
+    "food_name": "Chicken Eggplant Gratin"
+  },
+  {
+    "food_id": "uae_food_334",
+    "food_name": "Red Cabbage Salad"
+  },
+  {
+    "food_id": "uae_food_335",
+    "food_name": "Spinach Lentil Soup"
+  },
+  {
+    "food_id": "uae_food_336",
+    "food_name": "Carrot Parsley Salad"
+  },
+  {
+    "food_id": "uae_food_337",
+    "food_name": "Vegetable Margoogat"
+  },
+  {
+    "food_id": "uae_food_338",
+    "food_name": "Omelette Florentine"
+  },
+  {
+    "food_id": "uae_food_339",
+    "food_name": "Emirati Lentil Rice"
+  },
+  {
+    "food_id": "uae_food_340",
+    "food_name": "Steamed Broccoli"
+  },
+  {
+    "food_id": "uae_food_341",
+    "food_name": "Creamy Spinach Cheese Club Sandwich"
+  },
+  {
+    "food_id": "uae_food_342",
+    "food_name": "Skin Glow Shot"
+  },
+  {
+    "food_id": "uae_food_343",
+    "food_name": "Chickpea Sweet Potato Saloona"
+  },
+  {
+    "food_id": "uae_food_344",
+    "food_name": "Fresh Tomato Soup"
+  },
+  {
+    "food_id": "uae_food_345",
+    "food_name": "Lebanese Grilled Fish"
+  },
+  {
+    "food_id": "uae_food_346",
+    "food_name": "Turmeric Roasted Cabbage"
+  },
+  {
+    "food_id": "uae_food_347",
+    "food_name": "Ginger Dressing"
+  },
+  {
+    "food_id": "uae_food_348",
+    "food_name": "Tomato Basil Soup"
+  },
+  {
+    "food_id": "uae_food_349",
+    "food_name": "Shredded Chicken"
+  },
+  {
+    "food_id": "uae_food_350",
+    "food_name": "Rosemary Grilled Fish"
+  },
+  {
+    "food_id": "uae_food_351",
+    "food_name": "Ratatouille"
+  },
+  {
+    "food_id": "uae_food_352",
+    "food_name": "Grilled Mushrooms"
+  },
+  {
+    "food_id": "uae_food_353",
+    "food_name": "Minced Chicken Sweetcorn Patties"
+  },
+  {
+    "food_id": "uae_food_354",
+    "food_name": "Vegetable Soup"
+  },
+  {
+    "food_id": "uae_food_355",
+    "food_name": "Baked Fish with Creole Sauce"
+  },
+  {
+    "food_id": "uae_food_356",
+    "food_name": "Chicken Corn Soup"
+  },
+  {
+    "food_id": "uae_food_357",
+    "food_name": "Roasted Root Vegetables"
+  },
+  {
+    "food_id": "uae_food_358",
+    "food_name": "Chicken Chow Mein"
+  },
+  {
+    "food_id": "uae_food_359",
+    "food_name": "Vegetable Saloona with Chicken Meatballs"
+  },
+  {
+    "food_id": "uae_food_360",
+    "food_name": "Fresh Parsley Salad"
+  },
+  {
+    "food_id": "uae_food_361",
+    "food_name": "Eggplant Tomato Gratin"
+  },
+  {
+    "food_id": "uae_food_362",
+    "food_name": "Chicken Meatballs"
+  },
+  {
+    "food_id": "uae_food_363",
+    "food_name": "Baked Okra"
+  },
+  {
+    "food_id": "uae_food_364",
+    "food_name": "Roasted Cauliflower"
+  },
+  {
+    "food_id": "uae_food_365",
+    "food_name": "Chamomile Honey Sleep Tea"
+  },
+  {
+    "food_id": "uae_food_366",
+    "food_name": "Turmeric Golden Milk"
+  },
+  {
+    "food_id": "uae_food_367",
+    "food_name": "Fennel Seed Digestive Tea"
+  },
+  {
+    "food_id": "uae_food_368",
+    "food_name": "Saffron Warm Milk / Kesar Doodh"
+  },
+  {
+    "food_id": "uae_food_369",
+    "food_name": "Ginger Turmeric Lemon Detox Tea"
+  },
+  {
+    "food_id": "uae_food_370",
+    "food_name": "Cumin Coriander Fennel"
+  },
+  {
+    "food_id": "uae_food_371",
+    "food_name": "Peppermint Digestive Tea"
+  },
+  {
+    "food_id": "uae_food_372",
+    "food_name": "Ashwagandha Warm Milk Tonic"
+  },
+  {
+    "food_id": "uae_food_373",
+    "food_name": "Rose Petal & Hibiscus Sleep Tea"
+  },
+  {
+    "food_id": "uae_food_374",
+    "food_name": "Evening Cacao Calm"
+  },
+  {
+    "food_id": "uae_food_375",
+    "food_name": "Turmeric Latte / Golden Latte"
+  },
+  {
+    "food_id": "uae_food_376",
+    "food_name": "Ginger Lemon Evening Tea"
+  },
+  {
+    "food_id": "uae_food_377",
+    "food_name": "Chamomile & Lavender Calm Tea"
+  },
+  {
+    "food_id": "uae_food_378",
+    "food_name": "Ginger Cinnamon Detox Tea"
+  },
+  {
+    "food_id": "uae_food_379",
+    "food_name": "Hormone Soothing Evening Drink"
+  },
+  {
+    "food_id": "uae_food_380",
+    "food_name": "Valerian Root Evening Brew"
+  },
+  {
+    "food_id": "uae_food_381",
+    "food_name": "Tart Cherry Sleep Juice"
+  },
+  {
+    "food_id": "uae_food_382",
+    "food_name": "Kiwi Mint Cooling Water"
+  },
+  {
+    "food_id": "uae_food_383",
+    "food_name": "Lemon Mint Refreshing Tea"
+  },
+  {
+    "food_id": "uae_food_384",
+    "food_name": "Apple Cinnamon Infused Water"
+  },
+  {
+    "food_id": "uae_food_385",
+    "food_name": "Kefir Probiotic Drink"
+  },
+  {
+    "food_id": "uae_food_386",
+    "food_name": "Ajwain Ginger Digestive Tea"
+  },
+  {
+    "food_id": "uae_food_387",
+    "food_name": "Clove Infused Warm Water"
+  },
+  {
+    "food_id": "uae_food_388",
+    "food_name": "Licorice & Peppermint Gut Soother Tea"
+  },
+  {
+    "food_id": "uae_food_389",
+    "food_name": "Triphala Digestive Evening Tea"
+  },
+  {
+    "food_id": "uae_food_390",
+    "food_name": "Cardamom & Ginger Post-Dinner Tea"
+  },
+  {
+    "food_id": "uae_food_391",
+    "food_name": "Yoghurt Lassi with Cumin"
+  },
+  {
+    "food_id": "uae_food_392",
+    "food_name": "Plain or lightly flavoured kombucha"
+  },
+  {
+    "food_id": "uae_food_393",
+    "food_name": "Fermented Beetroot Kvass"
+  },
+  {
+    "food_id": "uae_food_394",
+    "food_name": "Laban"
+  }
+]

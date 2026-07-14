@@ -11,15 +11,11 @@ async def get_current_user_id(request: Request) -> str:
     Falls back to 'x-user-id' header if token is missing or invalid.
     """
     try:
-        print("header", request.headers)
         gateway_user_id = get_gateway_user_id(request, required=False)
 
 
-        print("gateway_user_id", gateway_user_id)
         if gateway_user_id:
-            print("Going to get user _id")
             user_id = await get_user_id(gateway_user_id)
-            print("userid from jwt", user_id)
             if user_id:
                 return user_id
     except Exception as e:

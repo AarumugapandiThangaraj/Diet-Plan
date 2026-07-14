@@ -1,0 +1,3470 @@
+[
+  {
+    "meal_id": "uae_meal_001",
+    "food_id": "uae_food_001",
+    "serving_size": 230.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_002",
+    "food_id": "uae_food_002",
+    "serving_size": 195.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_003",
+    "food_id": "uae_food_003",
+    "serving_size": 412.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_004",
+    "food_id": "uae_food_004",
+    "serving_size": 160.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_005",
+    "food_id": "uae_food_005",
+    "serving_size": 272.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_006",
+    "food_id": "uae_food_006",
+    "serving_size": 351.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_007",
+    "food_id": "uae_food_007",
+    "serving_size": 409.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_008",
+    "food_id": "uae_food_008",
+    "serving_size": 114.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_009",
+    "food_id": "uae_food_009",
+    "serving_size": 385.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_010",
+    "food_id": "uae_food_010",
+    "serving_size": 370.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_011",
+    "food_id": "uae_food_011",
+    "serving_size": 165.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_012",
+    "food_id": "uae_food_012",
+    "serving_size": 342.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_013",
+    "food_id": "uae_food_013",
+    "serving_size": 305.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_014",
+    "food_id": "uae_food_014",
+    "serving_size": 315.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_015",
+    "food_id": "uae_food_015",
+    "serving_size": 340.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_016",
+    "food_id": "uae_food_016",
+    "serving_size": 440.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_017",
+    "food_id": "uae_food_017",
+    "serving_size": 272.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_018",
+    "food_id": "uae_food_018",
+    "serving_size": 310.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_019",
+    "food_id": "uae_food_019",
+    "serving_size": 255.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_020",
+    "food_id": "uae_food_020",
+    "serving_size": 408.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_021",
+    "food_id": "uae_food_021",
+    "serving_size": 266.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_022",
+    "food_id": "uae_food_022",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_022",
+    "food_id": "uae_food_023",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_022",
+    "food_id": "uae_food_024",
+    "serving_size": 25.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_023",
+    "food_id": "uae_food_025",
+    "serving_size": 110.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_023",
+    "food_id": "uae_food_026",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_023",
+    "food_id": "uae_food_027",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_023",
+    "food_id": "uae_food_028",
+    "serving_size": 8.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_024",
+    "food_id": "uae_food_029",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_024",
+    "food_id": "uae_food_030",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_024",
+    "food_id": "uae_food_031",
+    "serving_size": 25.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_024",
+    "food_id": "uae_food_032",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_025",
+    "food_id": "uae_food_033",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_025",
+    "food_id": "uae_food_034",
+    "serving_size": 55.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_025",
+    "food_id": "uae_food_035",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_025",
+    "food_id": "uae_food_036",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_025",
+    "food_id": "uae_food_026",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_025",
+    "food_id": "uae_food_037",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_026",
+    "food_id": "uae_food_038",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_026",
+    "food_id": "uae_food_039",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_026",
+    "food_id": "uae_food_040",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_026",
+    "food_id": "uae_food_041",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_026",
+    "food_id": "uae_food_042",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_027",
+    "food_id": "uae_food_043",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_027",
+    "food_id": "uae_food_044",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_027",
+    "food_id": "uae_food_045",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_027",
+    "food_id": "uae_food_046",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_028",
+    "food_id": "uae_food_047",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_028",
+    "food_id": "uae_food_045",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_028",
+    "food_id": "uae_food_048",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_029",
+    "food_id": "uae_food_049",
+    "serving_size": 427.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_050",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_037",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_051",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_035",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_032",
+    "serving_size": 7.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_030",
+    "food_id": "uae_food_053",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_031",
+    "food_id": "uae_food_054",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_031",
+    "food_id": "uae_food_055",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_031",
+    "food_id": "uae_food_044",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_031",
+    "food_id": "uae_food_026",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_031",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_031",
+    "food_id": "uae_food_057",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_032",
+    "food_id": "uae_food_058",
+    "serving_size": 90.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_032",
+    "food_id": "uae_food_059",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_032",
+    "food_id": "uae_food_060",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_032",
+    "food_id": "uae_food_027",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_033",
+    "food_id": "uae_food_061",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_033",
+    "food_id": "uae_food_026",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_033",
+    "food_id": "uae_food_062",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_034",
+    "food_id": "uae_food_063",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_034",
+    "food_id": "uae_food_064",
+    "serving_size": 35.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_034",
+    "food_id": "uae_food_065",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_035",
+    "food_id": "uae_food_066",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_035",
+    "food_id": "uae_food_062",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_035",
+    "food_id": "uae_food_036",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_036",
+    "food_id": "uae_food_039",
+    "serving_size": 110.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_036",
+    "food_id": "uae_food_059",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_036",
+    "food_id": "uae_food_067",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_036",
+    "food_id": "uae_food_027",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_036",
+    "food_id": "uae_food_035",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_037",
+    "food_id": "uae_food_068",
+    "serving_size": 170.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_037",
+    "food_id": "uae_food_035",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_037",
+    "food_id": "uae_food_067",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_037",
+    "food_id": "uae_food_069",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_038",
+    "food_id": "uae_food_070",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_038",
+    "food_id": "uae_food_035",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_038",
+    "food_id": "uae_food_071",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_038",
+    "food_id": "uae_food_072",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_039",
+    "food_id": "uae_food_073",
+    "serving_size": 388.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_040",
+    "food_id": "uae_food_074",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_040",
+    "food_id": "uae_food_075",
+    "serving_size": 55.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_040",
+    "food_id": "uae_food_076",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_040",
+    "food_id": "uae_food_077",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_041",
+    "food_id": "uae_food_078",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_041",
+    "food_id": "uae_food_079",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_041",
+    "food_id": "uae_food_055",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_041",
+    "food_id": "uae_food_037",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_041",
+    "food_id": "uae_food_027",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_042",
+    "food_id": "uae_food_080",
+    "serving_size": 371.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_043",
+    "food_id": "uae_food_081",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_043",
+    "food_id": "uae_food_082",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_043",
+    "food_id": "uae_food_083",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_043",
+    "food_id": "uae_food_027",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_043",
+    "food_id": "uae_food_028",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_044",
+    "food_id": "uae_food_084",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_044",
+    "food_id": "uae_food_076",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_044",
+    "food_id": "uae_food_062",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_044",
+    "food_id": "uae_food_035",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_044",
+    "food_id": "uae_food_027",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_045",
+    "food_id": "uae_food_085",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_045",
+    "food_id": "uae_food_055",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_045",
+    "food_id": "uae_food_075",
+    "serving_size": 55.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_045",
+    "food_id": "uae_food_027",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_046",
+    "food_id": "uae_food_086",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_046",
+    "food_id": "uae_food_037",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_046",
+    "food_id": "uae_food_055",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_046",
+    "food_id": "uae_food_036",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_046",
+    "food_id": "uae_food_035",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_047",
+    "food_id": "uae_food_087",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_047",
+    "food_id": "uae_food_055",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_047",
+    "food_id": "uae_food_076",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_047",
+    "food_id": "uae_food_088",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_048",
+    "food_id": "uae_food_089",
+    "serving_size": 191.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_048",
+    "food_id": "uae_food_090",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_048",
+    "food_id": "uae_food_044",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_048",
+    "food_id": "uae_food_091",
+    "serving_size": 25.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_049",
+    "food_id": "uae_food_092",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_050",
+    "food_id": "uae_food_093",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_051",
+    "food_id": "uae_food_094",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_052",
+    "food_id": "uae_food_095",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_052",
+    "food_id": "uae_food_096",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_053",
+    "food_id": "uae_food_097",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_053",
+    "food_id": "uae_food_098",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_053",
+    "food_id": "uae_food_051",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_053",
+    "food_id": "uae_food_099",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_054",
+    "food_id": "uae_food_100",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_055",
+    "food_id": "uae_food_101",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_056",
+    "food_id": "uae_food_102",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_056",
+    "food_id": "uae_food_103",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_056",
+    "food_id": "uae_food_104",
+    "serving_size": 180.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_057",
+    "food_id": "uae_food_105",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_057",
+    "food_id": "uae_food_106",
+    "serving_size": 16.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_057",
+    "food_id": "uae_food_104",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_058",
+    "food_id": "uae_food_107",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_058",
+    "food_id": "uae_food_108",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_058",
+    "food_id": "uae_food_109",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_059",
+    "food_id": "uae_food_110",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_059",
+    "food_id": "uae_food_111",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_060",
+    "food_id": "uae_food_112",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_060",
+    "food_id": "uae_food_113",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_061",
+    "food_id": "uae_food_114",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_061",
+    "food_id": "uae_food_115",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_062",
+    "food_id": "uae_food_102",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_062",
+    "food_id": "uae_food_116",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_062",
+    "food_id": "uae_food_104",
+    "serving_size": 80.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_063",
+    "food_id": "uae_food_031",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_063",
+    "food_id": "uae_food_117",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_063",
+    "food_id": "uae_food_032",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_064",
+    "food_id": "uae_food_118",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_064",
+    "food_id": "uae_food_119",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_064",
+    "food_id": "uae_food_120",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_064",
+    "food_id": "uae_food_121",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_065",
+    "food_id": "uae_food_122",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_065",
+    "food_id": "uae_food_123",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_065",
+    "food_id": "uae_food_102",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_065",
+    "food_id": "uae_food_032",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_066",
+    "food_id": "uae_food_124",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_066",
+    "food_id": "uae_food_125",
+    "serving_size": 24.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_066",
+    "food_id": "uae_food_121",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_067",
+    "food_id": "uae_food_126",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_067",
+    "food_id": "uae_food_127",
+    "serving_size": 240.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_067",
+    "food_id": "uae_food_128",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_068",
+    "food_id": "uae_food_129",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_068",
+    "food_id": "uae_food_130",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_068",
+    "food_id": "uae_food_131",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_069",
+    "food_id": "uae_food_132",
+    "serving_size": 350.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_069",
+    "food_id": "uae_food_133",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_069",
+    "food_id": "uae_food_134",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_070",
+    "food_id": "uae_food_135",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_070",
+    "food_id": "uae_food_130",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_070",
+    "food_id": "uae_food_136",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_070",
+    "food_id": "uae_food_064",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_071",
+    "food_id": "uae_food_137",
+    "serving_size": 350.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_071",
+    "food_id": "uae_food_138",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_072",
+    "food_id": "uae_food_139",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_072",
+    "food_id": "uae_food_130",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_072",
+    "food_id": "uae_food_140",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_073",
+    "food_id": "uae_food_141",
+    "serving_size": 350.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_073",
+    "food_id": "uae_food_142",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_074",
+    "food_id": "uae_food_143",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_074",
+    "food_id": "uae_food_144",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_074",
+    "food_id": "uae_food_145",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_074",
+    "food_id": "uae_food_146",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_075",
+    "food_id": "uae_food_147",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_075",
+    "food_id": "uae_food_148",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_075",
+    "food_id": "uae_food_130",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_075",
+    "food_id": "uae_food_149",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_076",
+    "food_id": "uae_food_150",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_076",
+    "food_id": "uae_food_151",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_076",
+    "food_id": "uae_food_152",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_077",
+    "food_id": "uae_food_153",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_077",
+    "food_id": "uae_food_026",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_077",
+    "food_id": "uae_food_154",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_078",
+    "food_id": "uae_food_155",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_078",
+    "food_id": "uae_food_156",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_078",
+    "food_id": "uae_food_157",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_079",
+    "food_id": "uae_food_158",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_079",
+    "food_id": "uae_food_081",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_079",
+    "food_id": "uae_food_159",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_080",
+    "food_id": "uae_food_143",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_080",
+    "food_id": "uae_food_160",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_080",
+    "food_id": "uae_food_161",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_081",
+    "food_id": "uae_food_162",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_081",
+    "food_id": "uae_food_163",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_082",
+    "food_id": "uae_food_164",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_082",
+    "food_id": "uae_food_165",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_082",
+    "food_id": "uae_food_166",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_083",
+    "food_id": "uae_food_167",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_083",
+    "food_id": "uae_food_168",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_083",
+    "food_id": "uae_food_130",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_083",
+    "food_id": "uae_food_169",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_084",
+    "food_id": "uae_food_170",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_084",
+    "food_id": "uae_food_166",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_085",
+    "food_id": "uae_food_171",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_085",
+    "food_id": "uae_food_172",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_085",
+    "food_id": "uae_food_173",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_086",
+    "food_id": "uae_food_174",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_086",
+    "food_id": "uae_food_026",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_086",
+    "food_id": "uae_food_175",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_087",
+    "food_id": "uae_food_176",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_087",
+    "food_id": "uae_food_177",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_087",
+    "food_id": "uae_food_178",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_087",
+    "food_id": "uae_food_142",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_088",
+    "food_id": "uae_food_179",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_088",
+    "food_id": "uae_food_026",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_088",
+    "food_id": "uae_food_130",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_088",
+    "food_id": "uae_food_180",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_089",
+    "food_id": "uae_food_181",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_089",
+    "food_id": "uae_food_182",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_089",
+    "food_id": "uae_food_026",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_089",
+    "food_id": "uae_food_173",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_090",
+    "food_id": "uae_food_183",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_090",
+    "food_id": "uae_food_026",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_090",
+    "food_id": "uae_food_184",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_090",
+    "food_id": "uae_food_185",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_091",
+    "food_id": "uae_food_186",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_091",
+    "food_id": "uae_food_187",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_091",
+    "food_id": "uae_food_188",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_092",
+    "food_id": "uae_food_155",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_092",
+    "food_id": "uae_food_189",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_092",
+    "food_id": "uae_food_190",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_092",
+    "food_id": "uae_food_191",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_093",
+    "food_id": "uae_food_192",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_093",
+    "food_id": "uae_food_150",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_093",
+    "food_id": "uae_food_166",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_094",
+    "food_id": "uae_food_189",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_094",
+    "food_id": "uae_food_130",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_094",
+    "food_id": "uae_food_193",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_095",
+    "food_id": "uae_food_194",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_095",
+    "food_id": "uae_food_195",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_095",
+    "food_id": "uae_food_196",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_096",
+    "food_id": "uae_food_197",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_096",
+    "food_id": "uae_food_130",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_096",
+    "food_id": "uae_food_198",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_097",
+    "food_id": "uae_food_150",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_097",
+    "food_id": "uae_food_199",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_097",
+    "food_id": "uae_food_200",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_098",
+    "food_id": "uae_food_201",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_098",
+    "food_id": "uae_food_155",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_098",
+    "food_id": "uae_food_202",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_099",
+    "food_id": "uae_food_174",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_099",
+    "food_id": "uae_food_203",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_099",
+    "food_id": "uae_food_204",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_100",
+    "food_id": "uae_food_150",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_100",
+    "food_id": "uae_food_205",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_100",
+    "food_id": "uae_food_206",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_100",
+    "food_id": "uae_food_207",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_101",
+    "food_id": "uae_food_147",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_101",
+    "food_id": "uae_food_208",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_101",
+    "food_id": "uae_food_175",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_102",
+    "food_id": "uae_food_189",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_102",
+    "food_id": "uae_food_209",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_102",
+    "food_id": "uae_food_210",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_103",
+    "food_id": "uae_food_150",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_103",
+    "food_id": "uae_food_211",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_103",
+    "food_id": "uae_food_212",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_103",
+    "food_id": "uae_food_213",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_104",
+    "food_id": "uae_food_214",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_104",
+    "food_id": "uae_food_150",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_104",
+    "food_id": "uae_food_215",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_105",
+    "food_id": "uae_food_216",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_105",
+    "food_id": "uae_food_217",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_105",
+    "food_id": "uae_food_198",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_106",
+    "food_id": "uae_food_218",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_106",
+    "food_id": "uae_food_219",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_106",
+    "food_id": "uae_food_220",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_107",
+    "food_id": "uae_food_221",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_107",
+    "food_id": "uae_food_208",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_107",
+    "food_id": "uae_food_142",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_108",
+    "food_id": "uae_food_222",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_108",
+    "food_id": "uae_food_223",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_108",
+    "food_id": "uae_food_175",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_109",
+    "food_id": "uae_food_153",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_109",
+    "food_id": "uae_food_224",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_109",
+    "food_id": "uae_food_196",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_110",
+    "food_id": "uae_food_225",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_110",
+    "food_id": "uae_food_208",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_110",
+    "food_id": "uae_food_226",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_111",
+    "food_id": "uae_food_227",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_111",
+    "food_id": "uae_food_228",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_111",
+    "food_id": "uae_food_229",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_112",
+    "food_id": "uae_food_230",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_112",
+    "food_id": "uae_food_231",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_112",
+    "food_id": "uae_food_232",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_113",
+    "food_id": "uae_food_233",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_113",
+    "food_id": "uae_food_234",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_113",
+    "food_id": "uae_food_235",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_114",
+    "food_id": "uae_food_236",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_114",
+    "food_id": "uae_food_237",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_114",
+    "food_id": "uae_food_040",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_114",
+    "food_id": "uae_food_238",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_115",
+    "food_id": "uae_food_239",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_115",
+    "food_id": "uae_food_240",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_115",
+    "food_id": "uae_food_229",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_115",
+    "food_id": "uae_food_241",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_116",
+    "food_id": "uae_food_242",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_116",
+    "food_id": "uae_food_223",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_117",
+    "food_id": "uae_food_243",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_117",
+    "food_id": "uae_food_244",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_117",
+    "food_id": "uae_food_245",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_118",
+    "food_id": "uae_food_246",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_118",
+    "food_id": "uae_food_240",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_118",
+    "food_id": "uae_food_138",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_118",
+    "food_id": "uae_food_134",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_119",
+    "food_id": "uae_food_247",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_119",
+    "food_id": "uae_food_223",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_119",
+    "food_id": "uae_food_248",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_120",
+    "food_id": "uae_food_249",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_120",
+    "food_id": "uae_food_250",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_120",
+    "food_id": "uae_food_223",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_121",
+    "food_id": "uae_food_168",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_121",
+    "food_id": "uae_food_169",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_121",
+    "food_id": "uae_food_251",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_122",
+    "food_id": "uae_food_139",
+    "serving_size": 240.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_122",
+    "food_id": "uae_food_252",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_122",
+    "food_id": "uae_food_172",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_122",
+    "food_id": "uae_food_253",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_123",
+    "food_id": "uae_food_254",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_123",
+    "food_id": "uae_food_255",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_123",
+    "food_id": "uae_food_256",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_123",
+    "food_id": "uae_food_257",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_124",
+    "food_id": "uae_food_258",
+    "serving_size": 320.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_124",
+    "food_id": "uae_food_259",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_125",
+    "food_id": "uae_food_260",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_125",
+    "food_id": "uae_food_261",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_125",
+    "food_id": "uae_food_040",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_125",
+    "food_id": "uae_food_262",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_126",
+    "food_id": "uae_food_263",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_126",
+    "food_id": "uae_food_155",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_126",
+    "food_id": "uae_food_264",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_126",
+    "food_id": "uae_food_173",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_127",
+    "food_id": "uae_food_150",
+    "serving_size": 130.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_127",
+    "food_id": "uae_food_265",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_127",
+    "food_id": "uae_food_044",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_127",
+    "food_id": "uae_food_266",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_127",
+    "food_id": "uae_food_267",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_128",
+    "food_id": "uae_food_268",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_128",
+    "food_id": "uae_food_269",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_128",
+    "food_id": "uae_food_270",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_128",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_128",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_129",
+    "food_id": "uae_food_272",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_129",
+    "food_id": "uae_food_273",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_129",
+    "food_id": "uae_food_274",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_129",
+    "food_id": "uae_food_275",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_130",
+    "food_id": "uae_food_276",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_130",
+    "food_id": "uae_food_107",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_130",
+    "food_id": "uae_food_277",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_130",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_130",
+    "food_id": "uae_food_278",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_131",
+    "food_id": "uae_food_035",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_131",
+    "food_id": "uae_food_279",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_131",
+    "food_id": "uae_food_037",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_131",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_131",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_132",
+    "food_id": "uae_food_280",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_132",
+    "food_id": "uae_food_279",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_132",
+    "food_id": "uae_food_281",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_132",
+    "food_id": "uae_food_282",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_132",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_132",
+    "food_id": "uae_food_283",
+    "serving_size": 1.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_133",
+    "food_id": "uae_food_284",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_133",
+    "food_id": "uae_food_285",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_133",
+    "food_id": "uae_food_286",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_133",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_134",
+    "food_id": "uae_food_035",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_134",
+    "food_id": "uae_food_270",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_134",
+    "food_id": "uae_food_051",
+    "serving_size": 100.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_134",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_134",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_135",
+    "food_id": "uae_food_287",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_135",
+    "food_id": "uae_food_269",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_135",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_136",
+    "food_id": "uae_food_288",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_136",
+    "food_id": "uae_food_289",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_136",
+    "food_id": "uae_food_279",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_136",
+    "food_id": "uae_food_106",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_136",
+    "food_id": "uae_food_290",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_137",
+    "food_id": "uae_food_086",
+    "serving_size": 30.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_137",
+    "food_id": "uae_food_291",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_137",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_138",
+    "food_id": "uae_food_292",
+    "serving_size": 53.7,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_139",
+    "food_id": "uae_food_293",
+    "serving_size": 126.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_140",
+    "food_id": "uae_food_294",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_140",
+    "food_id": "uae_food_295",
+    "serving_size": 100.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_140",
+    "food_id": "uae_food_270",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_140",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_140",
+    "food_id": "uae_food_296",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_141",
+    "food_id": "uae_food_297",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_036",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_044",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_298",
+    "serving_size": 60.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_051",
+    "serving_size": 100.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_037",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_142",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_143",
+    "food_id": "uae_food_295",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_143",
+    "food_id": "uae_food_299",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_143",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_143",
+    "food_id": "uae_food_300",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_144",
+    "food_id": "uae_food_301",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_144",
+    "food_id": "uae_food_282",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_144",
+    "food_id": "uae_food_031",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_144",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_144",
+    "food_id": "uae_food_053",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_144",
+    "food_id": "uae_food_056",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_145",
+    "food_id": "uae_food_302",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_145",
+    "food_id": "uae_food_035",
+    "serving_size": 70.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_145",
+    "food_id": "uae_food_269",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_145",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_145",
+    "food_id": "uae_food_296",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_146",
+    "food_id": "uae_food_051",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_146",
+    "food_id": "uae_food_276",
+    "serving_size": 50.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_146",
+    "food_id": "uae_food_303",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_146",
+    "food_id": "uae_food_052",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_146",
+    "food_id": "uae_food_271",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_147",
+    "food_id": "uae_food_051",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_147",
+    "food_id": "uae_food_304",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_147",
+    "food_id": "uae_food_305",
+    "serving_size": 3.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_147",
+    "food_id": "uae_food_271",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_148",
+    "food_id": "uae_food_306",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_148",
+    "food_id": "uae_food_307",
+    "serving_size": 27.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_149",
+    "food_id": "uae_food_035",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_149",
+    "food_id": "uae_food_276",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_149",
+    "food_id": "uae_food_277",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_149",
+    "food_id": "uae_food_271",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_149",
+    "food_id": "uae_food_037",
+    "serving_size": 8.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_149",
+    "food_id": "uae_food_300",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_150",
+    "food_id": "uae_food_072",
+    "serving_size": 150.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_150",
+    "food_id": "uae_food_304",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_150",
+    "food_id": "uae_food_308",
+    "serving_size": 0.3,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_150",
+    "food_id": "uae_food_037",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_150",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_150",
+    "food_id": "uae_food_300",
+    "serving_size": 0.5,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_151",
+    "food_id": "uae_food_276",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_151",
+    "food_id": "uae_food_309",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_151",
+    "food_id": "uae_food_278",
+    "serving_size": 15.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_151",
+    "food_id": "uae_food_071",
+    "serving_size": 20.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_151",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_152",
+    "food_id": "uae_food_310",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_152",
+    "food_id": "uae_food_276",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_152",
+    "food_id": "uae_food_037",
+    "serving_size": 10.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_152",
+    "food_id": "uae_food_051",
+    "serving_size": 60.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_152",
+    "food_id": "uae_food_271",
+    "serving_size": 5.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_152",
+    "food_id": "uae_food_296",
+    "serving_size": 5.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_153",
+    "food_id": "uae_food_311",
+    "serving_size": 350.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_154",
+    "food_id": "uae_food_312",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_154",
+    "food_id": "uae_food_313",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_155",
+    "food_id": "uae_food_314",
+    "serving_size": 400.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_156",
+    "food_id": "uae_food_315",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_156",
+    "food_id": "uae_food_316",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_157",
+    "food_id": "uae_food_317",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_157",
+    "food_id": "uae_food_318",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_158",
+    "food_id": "uae_food_039",
+    "serving_size": 110.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_158",
+    "food_id": "uae_food_148",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_158",
+    "food_id": "uae_food_062",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_158",
+    "food_id": "uae_food_319",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_159",
+    "food_id": "uae_food_320",
+    "serving_size": 350.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_160",
+    "food_id": "uae_food_321",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_160",
+    "food_id": "uae_food_322",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_161",
+    "food_id": "uae_food_323",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_161",
+    "food_id": "uae_food_324",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_162",
+    "food_id": "uae_food_325",
+    "serving_size": 400.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_163",
+    "food_id": "uae_food_326",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_163",
+    "food_id": "uae_food_319",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_164",
+    "food_id": "uae_food_327",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_164",
+    "food_id": "uae_food_150",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_164",
+    "food_id": "uae_food_262",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_164",
+    "food_id": "uae_food_328",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_165",
+    "food_id": "uae_food_329",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_165",
+    "food_id": "uae_food_241",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_166",
+    "food_id": "uae_food_330",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_166",
+    "food_id": "uae_food_331",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_167",
+    "food_id": "uae_food_332",
+    "serving_size": 400.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_168",
+    "food_id": "uae_food_333",
+    "serving_size": 280.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_168",
+    "food_id": "uae_food_334",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_169",
+    "food_id": "uae_food_335",
+    "serving_size": 350.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_169",
+    "food_id": "uae_food_336",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_170",
+    "food_id": "uae_food_337",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_170",
+    "food_id": "uae_food_338",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_171",
+    "food_id": "uae_food_339",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_171",
+    "food_id": "uae_food_340",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_172",
+    "food_id": "uae_food_341",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_172",
+    "food_id": "uae_food_342",
+    "serving_size": 100.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_173",
+    "food_id": "uae_food_343",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_173",
+    "food_id": "uae_food_340",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_174",
+    "food_id": "uae_food_344",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_174",
+    "food_id": "uae_food_323",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_175",
+    "food_id": "uae_food_345",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_175",
+    "food_id": "uae_food_346",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_176",
+    "food_id": "uae_food_055",
+    "serving_size": 100.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_176",
+    "food_id": "uae_food_266",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_176",
+    "food_id": "uae_food_044",
+    "serving_size": 80.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_176",
+    "food_id": "uae_food_340",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_176",
+    "food_id": "uae_food_347",
+    "serving_size": 40.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_177",
+    "food_id": "uae_food_348",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_177",
+    "food_id": "uae_food_349",
+    "serving_size": 150.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_178",
+    "food_id": "uae_food_350",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_178",
+    "food_id": "uae_food_351",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_178",
+    "food_id": "uae_food_352",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_179",
+    "food_id": "uae_food_353",
+    "serving_size": 180.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_179",
+    "food_id": "uae_food_354",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_180",
+    "food_id": "uae_food_355",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_180",
+    "food_id": "uae_food_198",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_181",
+    "food_id": "uae_food_356",
+    "serving_size": 300.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_181",
+    "food_id": "uae_food_357",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_182",
+    "food_id": "uae_food_358",
+    "serving_size": 250.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_182",
+    "food_id": "uae_food_316",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_183",
+    "food_id": "uae_food_359",
+    "serving_size": 300.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_183",
+    "food_id": "uae_food_360",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_184",
+    "food_id": "uae_food_361",
+    "serving_size": 220.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_184",
+    "food_id": "uae_food_362",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_184",
+    "food_id": "uae_food_363",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_185",
+    "food_id": "uae_food_364",
+    "serving_size": 200.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_185",
+    "food_id": "uae_food_362",
+    "serving_size": 160.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_185",
+    "food_id": "uae_food_363",
+    "serving_size": 120.0,
+    "unit": "g"
+  },
+  {
+    "meal_id": "uae_meal_186",
+    "food_id": "uae_food_365",
+    "serving_size": 260.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_187",
+    "food_id": "uae_food_366",
+    "serving_size": 209.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_188",
+    "food_id": "uae_food_367",
+    "serving_size": 253.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_189",
+    "food_id": "uae_food_368",
+    "serving_size": 207.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_190",
+    "food_id": "uae_food_369",
+    "serving_size": 278.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_191",
+    "food_id": "uae_food_370",
+    "serving_size": 304.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_192",
+    "food_id": "uae_food_371",
+    "serving_size": 255.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_193",
+    "food_id": "uae_food_372",
+    "serving_size": 210.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_194",
+    "food_id": "uae_food_373",
+    "serving_size": 262.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_195",
+    "food_id": "uae_food_374",
+    "serving_size": 214.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_196",
+    "food_id": "uae_food_375",
+    "serving_size": 210.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_197",
+    "food_id": "uae_food_376",
+    "serving_size": 277.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_198",
+    "food_id": "uae_food_377",
+    "serving_size": 261.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_199",
+    "food_id": "uae_food_378",
+    "serving_size": 309.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_200",
+    "food_id": "uae_food_379",
+    "serving_size": 261.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_201",
+    "food_id": "uae_food_380",
+    "serving_size": 256.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_202",
+    "food_id": "uae_food_381",
+    "serving_size": 250.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_203",
+    "food_id": "uae_food_382",
+    "serving_size": 479.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_204",
+    "food_id": "uae_food_383",
+    "serving_size": 270.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_205",
+    "food_id": "uae_food_384",
+    "serving_size": 578.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_206",
+    "food_id": "uae_food_385",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_207",
+    "food_id": "uae_food_386",
+    "serving_size": 308.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_208",
+    "food_id": "uae_food_387",
+    "serving_size": 252.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_209",
+    "food_id": "uae_food_388",
+    "serving_size": 305.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_210",
+    "food_id": "uae_food_389",
+    "serving_size": 253.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_211",
+    "food_id": "uae_food_390",
+    "serving_size": 307.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_212",
+    "food_id": "uae_food_391",
+    "serving_size": 251.5,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_213",
+    "food_id": "uae_food_392",
+    "serving_size": 200.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_214",
+    "food_id": "uae_food_393",
+    "serving_size": 705.0,
+    "unit": "mL"
+  },
+  {
+    "meal_id": "uae_meal_215",
+    "food_id": "uae_food_394",
+    "serving_size": 203.0,
+    "unit": "mL"
+  }
+]

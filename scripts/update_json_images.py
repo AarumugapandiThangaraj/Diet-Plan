@@ -28,7 +28,7 @@ def update_json_file(filepath, cuisine_type):
 
 if __name__ == "__main__":
     ni_file = r"d:\IAgami\Bioart Dataset\Diet Plan Updated\Diet-Plan-1\Diet-Plan\new core models\data\north indian cuisine\meal.json"
-    si_file = r"d:\IAgami\Bioart Dataset\Diet Plan Updated\Diet-Plan-1\Diet-Plan\new core models\data\south indian cuisine\meal.json"
+    # si_file = r"d:\IAgami\Bioart Dataset\Diet Plan Updated\Diet-Plan-1\Diet-Plan\new core models\data\south indian cuisine\meal.json"
     
     update_json_file(ni_file, "north")
-    update_json_file(si_file, "south")
+    # update_json_file(si_file, "south")
